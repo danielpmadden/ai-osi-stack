@@ -13,11 +13,19 @@ from __future__ import annotations
 import json
 import re
 from datetime import datetime, timezone
+from hashlib import sha512
 from pathlib import Path
 from typing import Any, Dict, Iterable, List
 from urllib.parse import urlparse
 
 SCHEMA_DIRECTORY = Path(__file__).resolve().parents[1] / "schemas"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+CANONICAL_MARKDOWN_FILES = (
+    REPO_ROOT / "source" / "AI_OSI_Stack_v4_Test_Integrated.md",
+    REPO_ROOT / "README.md",
+    REPO_ROOT / "docs" / "AEIP_Artifact_Schema_Templates.md",
+    REPO_ROOT / "INTEGRITY_NOTICE.md",
+)
 SCHEMA_FILES = {
     "InterpretiveTracePackage": "interpretive-trace-package.jsonld",
     "DecisionRationaleRecord": "decision-rationale-record.jsonld",
@@ -150,7 +158,73 @@ def demonstrate_integrity_linkage() -> None:
     assert entry["previous_entry"] == "urn:uuid:553e4567-e89b-42d3-a456-426614174040"
 
 
+def compute_sha512(path: Path) -> str:
+    digest = sha512()
+    with path.open("rb") as handle:
+        for chunk in iter(lambda: handle.read(8192), b""):
+            digest.update(chunk)
+    return digest.hexdigest()
+
+
+def format_timestamp(now: datetime) -> str:
+    return now.replace(microsecond=0).isoformat().replace("+00:00", "Z")
+
+
+def append_verified_hashes(records: Iterable[Dict[str, str]]) -> None:
+    notice_path = REPO_ROOT / "INTEGRITY_NOTICE.md"
+    heading = "## Verified Hashes and Temporal Seal Set v2"
+    custodian_heading = "### Custodianship and Authorship"
+    text = notice_path.read_text(encoding="utf-8")
+    new_entries = []
+    for record in records:
+        new_entries.append(
+            "- **Path:** `{path}`\n"
+            "  - **SHA-512:** `{hash}`\n"
+            "  - **Verified:** `{timestamp}`\n"
+            "  - **Signer:** {signer}\n".format(**record)
+        )
+    entries_block = "\n".join(new_entries).rstrip() + "\n"
+
+    if heading not in text:
+        insert_at = text.find(custodian_heading)
+        if insert_at == -1:
+            updated = text.rstrip() + "\n\n" + heading + "\n\n" + entries_block
+        else:
+            before = text[:insert_at].rstrip()
+            after = text[insert_at:]
+            updated = before + "\n\n" + heading + "\n\n" + entries_block + "\n" + after.lstrip("\n")
+    else:
+        heading_index = text.find(heading)
+        insert_at = text.find(custodian_heading, heading_index)
+        if insert_at == -1:
+            insert_at = len(text)
+            after = ""
+        else:
+            after = text[insert_at:]
+        before_section = text[:insert_at].rstrip()
+        updated = before_section + "\n\n" + entries_block + "\n" + after.lstrip("\n")
+
+    notice_path.write_text(updated.rstrip() + "\n", encoding="utf-8")
+
+
+def update_verified_hashes() -> None:
+    now = datetime.now(timezone.utc)
+    timestamp = format_timestamp(now)
+    records = []
+    for file_path in CANONICAL_MARKDOWN_FILES:
+        records.append(
+            {
+                "path": file_path.relative_to(REPO_ROOT).as_posix(),
+                "hash": compute_sha512(file_path),
+                "timestamp": timestamp,
+                "signer": "Repository Custodian",
+            }
+        )
+    append_verified_hashes(records)
+
+
 if __name__ == "__main__":
     validate_examples()
     demonstrate_integrity_linkage()
+    update_verified_hashes()
     print("AEIP schema examples validated and integrity ledger demonstration completed.")
