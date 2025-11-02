@@ -7,6 +7,11 @@ License: CC BY-NC-ND 4.0
 Signature: Pending governance signature
 -->
 
+> ## Normative Language Notice
+> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
+> “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
+> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+
 # Repository Integrity Notice — AI OSI Stack v4 (Expanded)
 
 **Version Hash:** TBD (compute via SHA-256 of repository archive prior to release).
