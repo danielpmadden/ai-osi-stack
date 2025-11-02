@@ -53,11 +53,12 @@ Madden, D. (2025). *The AI OSI Stack: Version 4 (Expanded).* Zenodo. https://doi
 
 © 2025 Daniel P. Madden. Licensed under Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0). All materials in this repository are governed by this license. Earlier versions are preserved solely for historical reference and are no longer normative.
 
+## Contact and Support
+
+Official correspondence and licensing requests go through https://danielpmadden.com.
+
 > ## Normative Language Notice
 > This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
 > “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
 > Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
 
-## Contact and Support
-
-Official correspondence and licensing requests go through https://danielpmadden.com.
