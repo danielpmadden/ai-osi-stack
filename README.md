@@ -15,6 +15,15 @@ The materials provided here cover:
 - Version-tracked updates to the expanded release, including migration notes from earlier editions.
 - Supporting artifacts used for formal assessments, audits, and assurance reporting.
 
+## Current Canonical Documents
+
+- `source/AI_OSI_Stack_v4_Test_Integrated.md` — Canonical governance specification for the AI OSI Stack v4 (Test Integration Draft). This document supersedes all prior stack versions in this repository.
+
+### Historical References
+
+- `source/AI_OSI_Stack_v4-TEST.pdf` — Previous draft retained for comparison only.
+- `versions/AI_OSI_Stack_v1.pdf`, `versions/AI_OSI_Stack_v2.pdf`, `versions/AI_OSI_Stack_v3.pdf` — Historical releases provided for archival study and SHALL NOT be treated as normative guidance.
+
 ## Repository Structure
 
 - `source/` – Primary specifications, canonical diagrams, and structured guidance for each layer.
@@ -39,7 +48,7 @@ Madden, D. (2025). *The AI OSI Stack: Version 4 (Expanded).* Zenodo. https://doi
 
 ## License
 
-© 2025 Daniel P. Madden. Licensed under Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0). Earlier versions were released under CC BY and are superseded.
+© 2025 Daniel P. Madden. Licensed under Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0). All materials in this repository are governed by this license. Earlier versions are preserved solely for historical reference and are no longer normative.
 
 ## Contact and Support
 
