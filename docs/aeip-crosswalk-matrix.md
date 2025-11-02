@@ -7,6 +7,11 @@ License: CC BY-NC-ND 4.0
 Signature: Pending governance signature
 -->
 
+> ## Normative Language Notice
+> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
+> “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
+> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+
 # AEIP Crosswalk Matrix — AEIP-Schema-1.0-2025-11
 
 **Integrity Notice:** Version hash: TBD. Generated on 2025-05-09T00:00:00Z.
