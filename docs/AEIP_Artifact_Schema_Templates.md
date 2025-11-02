@@ -11,7 +11,15 @@ Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 Inte
 **Release Timestamp:** 2025-11-21T00:00:00Z
 **Maintainer Signature:** Repository Custodian — AI OSI Stack (work branch)
 
+## Introduction
+
 > **Integrity and Verification:** This reference document enumerates canonical schema stubs for Adaptive Epistemic Infrastructure Protocol (AEIP) artifacts. Each template is scoped to AI OSI Stack Layer 6 (Assurance and Audit) while retaining explicit linkages to the other six layers for provenance continuity.
+
+### Jurisdictional Neutrality and Interpretive Authority  
+This framework is jurisdiction-neutral and intended for international application.  
+In the event of conflicting legal or linguistic interpretations, interpretive authority SHALL defer  
+to the author’s defined principles of transparency, accountability, and dignity by design —  
+not to localized or translated semantics.
 
 ## 1. Conformance Overview
 - **Layer Alignment:**
@@ -298,4 +306,10 @@ integrityLedger:
 
 ## 5. Change Log
 - **2025-11-21:** Initial release synchronized with AI OSI Stack v4 Test Integration draft.
+
+### Custodianship and Authorship  
+Daniel P. Madden retains moral and intellectual authorship of this framework.  
+This work SHALL NOT be modified, translated, or reissued under altered terminology without written consent.  
+Derived works or alternative semantic renderings that could misrepresent intent SHALL be considered  
+non-conformant and unauthorized under the CC BY-NC-ND 4.0 License.
 

@@ -49,6 +49,12 @@ Appendices:
 ## 1. Introduction and Purpose
 The AI OSI Stack v4 consolidates Daniel P. Madden’s governance architecture into a single canonical reference that aligns operational controls, epistemic integrity, and human dignity across the entire lifecycle of intelligent systems. This Test Integration Draft resolves fragmentation from earlier versions by embedding Persona Architecture, Epistemology by Design, and the AI Epistemic Infrastructure Protocol (AEIP) directly within the layered stack. The intent is to provide institutions with a deployable governance blueprint compatible with NIST AI RMF, ISO/IEC 42001, the EU AI Act, and the TRUST Framework while remaining adaptable to sector-specific constraints.
 
+### Jurisdictional Neutrality and Interpretive Authority  
+This framework is jurisdiction-neutral and intended for international application.  
+In the event of conflicting legal or linguistic interpretations, interpretive authority SHALL defer  
+to the author’s defined principles of transparency, accountability, and dignity by design —  
+not to localized or translated semantics.
+
 ## 2. Normative Definitions and Acronyms
 This document adopts normative language consistent with international governance standards. “SHALL” denotes mandatory requirements; “SHOULD” indicates strong recommendations; “MAY” introduces optional practices. Key acronyms include: AEIP (AI Epistemic Infrastructure Protocol), AGM (Adaptive Governance Metrics), CDI (Cognitive Diversity Index), GDS (Governance Disclosure Statement), ILE (Integrity Ledger Entry), IMM (Implementation Maturity Model), OAM (Oversight Action Memorandum), OIR (Open Implementation Registry), and Persona Architecture (PA). The lexicon harmonizes with prior publications such as *Persona Architecture: Designing Role-Specific AI Systems for Accountability and Trust* and *Epistemology by Design: Embedding Reasoning Integrity in AI Systems*.
 
@@ -176,3 +182,9 @@ Retiring AI systems requires deliberate closure. Organizations SHALL produce a F
 6. ISO/IEC, *42001:2023 Artificial Intelligence Management System*.
 7. European Union, *AI Act* (2024 provisional agreement).
 8. U.S. Department of Commerce, *TRUST Framework* (2024).
+
+### Custodianship and Authorship  
+Daniel P. Madden retains moral and intellectual authorship of this framework.  
+This work SHALL NOT be modified, translated, or reissued under altered terminology without written consent.  
+Derived works or alternative semantic renderings that could misrepresent intent SHALL be considered  
+non-conformant and unauthorized under the CC BY-NC-ND 4.0 License.
