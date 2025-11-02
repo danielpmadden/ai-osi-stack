@@ -11,6 +11,12 @@ The AI OSI Stack: Version 4 (Expanded) is the official release of Daniel P. Madd
 
 This repository curates the authoritative reference implementation and documentation for Version 4 (Expanded) of The AI OSI Stack. It is designed to help practitioners, auditors, and policymakers align AI initiatives with the stack's layered controls, evidentiary rigor, and ethical guardrails.
 
+### Jurisdictional Neutrality and Interpretive Authority  
+This framework is jurisdiction-neutral and intended for international application.  
+In the event of conflicting legal or linguistic interpretations, interpretive authority SHALL defer  
+to the author’s defined principles of transparency, accountability, and dignity by design —  
+not to localized or translated semantics.
+
 ## Scope
 
 The materials provided here cover:
@@ -61,3 +67,9 @@ Madden, D. (2025). *The AI OSI Stack: Version 4 (Expanded).* Zenodo. https://doi
 ## Contact and Support
 
 Official correspondence and licensing requests go through https://danielpmadden.com.
+
+### Custodianship and Authorship  
+Daniel P. Madden retains moral and intellectual authorship of this framework.  
+This work SHALL NOT be modified, translated, or reissued under altered terminology without written consent.  
+Derived works or alternative semantic renderings that could misrepresent intent SHALL be considered  
+non-conformant and unauthorized under the CC BY-NC-ND 4.0 License.
