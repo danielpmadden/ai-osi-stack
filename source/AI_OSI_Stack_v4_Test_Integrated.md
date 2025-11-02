@@ -1,6 +1,11 @@
 © 2025 Daniel P. Madden
 Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
 
+> ## Normative Language Notice  
+> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.  
+> “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.  
+> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+
 # The AI OSI Stack v4 — Test Integration Draft
 ## A Governance Blueprint for Scalable and Trusted AI
 **Author:** Daniel P. Madden, Independent AI Researcher  
