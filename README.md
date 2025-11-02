@@ -1,8 +1,3 @@
-> ## Normative Language Notice
-> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
-> “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
-> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
-
 # The AI OSI Stack: Version 4 (Expanded)
 
 The AI OSI Stack: Version 4 (Expanded) is the official release of Daniel P. Madden's seven-layer architecture for transparent and accountable AI governance. The stack interlocks operational layers with the AI Governance Trinity—Persona Architecture, Epistemology by Design, and the Adaptive Ethical Implementation Protocol (AEIP)—to deliver cohesive oversight from strategic framing through lifecycle assurance.
@@ -68,8 +63,8 @@ Madden, D. (2025). *The AI OSI Stack: Version 4 (Expanded).* Zenodo. https://doi
 
 Official correspondence and licensing requests go through https://danielpmadden.com.
 
-### Custodianship and Authorship  
-Daniel P. Madden retains moral and intellectual authorship of this framework.  
-This work SHALL NOT be modified, translated, or reissued under altered terminology without written consent.  
-Derived works or alternative semantic renderings that could misrepresent intent SHALL be considered  
-non-conformant and unauthorized under the CC BY-NC-ND 4.0 License.
+## Normative Language Notice
+This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
+“SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
+Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+
