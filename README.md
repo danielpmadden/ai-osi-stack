@@ -57,8 +57,8 @@ Madden, D. (2025). *The AI OSI Stack: Version 4 (Expanded).* Zenodo. https://doi
 
 Official correspondence and licensing requests go through https://danielpmadden.com.
 
-> ## Normative Language Notice
-> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
-> “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
-> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+## Normative Language Notice
+This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
+“SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
+Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
 
