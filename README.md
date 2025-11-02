@@ -27,15 +27,18 @@ The materials provided here cover:
 ## Repository Structure
 
 - `source/` – Primary specifications, canonical diagrams, and structured guidance for each layer.
-- `docs/` – Supplementary narratives, practitioner briefs, and crosswalks to regulatory frameworks.
+- `docs/` – Supplementary narratives, practitioner briefs, and crosswalks to regulatory frameworks. See `docs/aeip-crosswalk-matrix.md` for AI OSI, Persona Architecture, and EbD mappings.
+- `schemas/` – Machine-readable AEIP artifact definitions. Refer to `schemas/README.md` for usage guidance and workflow integration notes.
+- `tests/` – Validation exemplars that demonstrate schema conformance and ledger linkage expectations.
 - `versions/` – Archived materials from prior releases, maintained for traceability.
 - `LICENSE.txt` – Licensing terms governing use and distribution.
+- `INTEGRITY_NOTICE.md` – Repository-wide temporal integrity attestation awaiting governance signature.
 
 ## Usage Notes
 
 - Clone the repository to retain the directory hierarchy required for cross-referencing layers and governance modules.
 - Review `versions/` before upgrading implementations to understand deltas from earlier stacks.
-- Apply the guidance in `source/` together with the AI Governance Trinity components to maintain coherence between design intent and operational controls.
+- Apply the guidance in `source/` together with the AI Governance Trinity components to maintain coherence between design intent and operational controls. Reference the AEIP schemas and validation examples when instantiating governance artifacts to ensure interoperability and temporal integrity.
 - Engage organizational security teams when adapting artifacts to production environments to ensure contextual compliance.
 
 ## Integrity and Verification

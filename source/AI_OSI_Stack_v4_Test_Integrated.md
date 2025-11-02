@@ -64,7 +64,7 @@ Layer boundaries are permeable to guarantee system cohesion. Power geometry reco
 8. **Layer 7 – Governance Publication:** Releases GDS packages, ILE updates, and public accountability artifacts ensuring transparency, traceability, and trust.
 
 ## 6. Governance Artifacts and Audit Infrastructure
-The stack relies on reusable artifacts: Governance Disclosure Statements (GDS) synthesize cross-layer obligations; Integrity Ledger Entries (ILE) notarize decisions and maturity attestations; Oversight Action Memoranda (OAM) document interventions and remediations; Temporal Review Records (TRR) capture version checks; and Design Rationale Records (DRR) preserve architectural justification. AEIP provides the transport for these artifacts, guaranteeing interoperable audit traces. Artifacts SHALL be version-controlled, cryptographically signed, and exposed through Layer 7 portals.
+The stack relies on reusable artifacts: Governance Disclosure Statements (GDS) synthesize cross-layer obligations; Integrity Ledger Entries (ILE) notarize decisions and maturity attestations; Oversight Action Memoranda (OAM) document interventions and remediations; Temporal Review Records (TRR) capture version checks; Interpretive Trace Packages (ITP) reconstruct evidentiary reasoning; and Decision Rationale Records (DRR) preserve architectural justification. AEIP provides the transport for these artifacts, guaranteeing interoperable audit traces. Artifacts SHALL be version-controlled, cryptographically signed, and exposed through Layer 7 portals. Canonical JSON-LD definitions are maintained in the `schemas/` directory (AEIP-Schema-1.0-2025-11), with validation exemplars residing in `tests/aeip_schema_validation.py`.
 
 ## 7. Temporal Integrity and Semantic Version Control
 Governance is inherently temporal. Every change to Persona Architecture configurations, epistemic safeguards, or AEIP schemas requires semantic versioning anchored to custodial review. Temporal integrity is sustained through synchronized clocks, validity windows for each artifact, and automated drift alerts triggered by reasoning fingerprint deviation. Semantic version control couples model updates with governance obligations to prevent silent regression.
@@ -95,14 +95,14 @@ Organizations SHALL publish their IMM level annually as an Integrity Ledger Entr
 ## 13. Risk Taxonomy and Control Catalogue
 Each layer carries characteristic risks and prescribed controls:
 - **Layer 1:** Risks—hardware tampering, supply disruptions. Controls—certified facilities audits, redundant energy governance. Artifacts—GDS, DRR.
-- **Layer 2:** Risks—data poisoning, consent erosion. Controls—provenance validation, consent traceability. Artifacts—ITP (Instruction Transparency Packet), DRR.
+- **Layer 2:** Risks—data poisoning, consent erosion. Controls—provenance validation, consent traceability. Artifacts—ITP (Interpretive Trace Package), DRR.
 - **Layer 3:** Risks—model bias, evaluation blind spots. Controls—composite testing, adversarial benchmarking. Artifacts—OAM, GDS.
 - **Layer 4:** Risks—prompt injection, persona drift, unethical affect. Controls—Heartwood Core enforcement, refusal logic tests, persona regression suite. Artifacts—ITP, DRR, GDS.
 - **Layer 5:** Risks—ledger desynchronization, reasoning packet corruption. Controls—AEIP handshake validation, cross-node replay defenses. Artifacts—ILE, OAM.
 - **Layer 6:** Risks—deployment drift, integration conflicts. Controls—change gating, blue/green governance checkpoints. Artifacts—TRR, OAM.
 - **Layer 7:** Risks—opaque reporting, delayed disclosures. Controls—public GDS cadence, audit-ready publishing pipeline. Artifacts—GDS, ILE.
 
-Controls SHALL be catalogued with traceable references to the artifact classes: Instruction Transparency Packet (ITP), Design Rationale Record (DRR), Governance Disclosure Statement (GDS), Oversight Action Memorandum (OAM), Integrity Ledger Entry (ILE).
+Controls SHALL be catalogued with traceable references to the artifact classes: Interpretive Trace Package (ITP), Decision Rationale Record (DRR), Governance Decision Summary (GDS), Oversight Audit Memo (OAM), Integrity Ledger Entry (ILE).
 
 ## 14. Temporal Legitimacy Framework
 Temporal legitimacy binds authority to time. Each governance artifact receives a defined validity window during which its claims remain authoritative. Temporal amnesty clauses allow constrained grace periods to remediate violations without punitive escalation when self-disclosed promptly. Drift thresholds are codified: a 5% change in reasoning fingerprint triggers mandatory review and potential rollback. Quarterly temporal audits evaluate alignment between declared versions and deployed systems. All temporal legitimacy events SHALL be recorded as AEIP-compatible ledger entries to guarantee verifiable lineage.
