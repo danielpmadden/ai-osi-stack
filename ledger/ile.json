@@ -1,0 +1,28 @@
+{
+  "aeipDigest": {
+    "finalHash": "aeip-handshake-placeholder",
+    "handshakeId": "aeip-blueprint-0001",
+    "steps": [
+      "Intent",
+      "Justify",
+      "CounterSign",
+      "Commit",
+      "Update"
+    ]
+  },
+  "artifactRef": "gds-blueprint-archival",
+  "artifactType": "GDS",
+  "dignityCompliance": true,
+  "governanceClauses": [
+    "AI-OSI-L7-Disclosure",
+    "AEIP-v1-Handshakes"
+  ],
+  "hash": "52f214436f8a955853288b76d5e5482246b456e672ddec754cd92a93289d5140d8223d4f5167e564f531594cac1c69e1683241ab785649c3b734f84c01f72a1f",
+  "id": "ile-2025-11-03T16:29:59.095138+00:00",
+  "ledgerIndex": 1,
+  "personaId": "persona.generator",
+  "source": "blueprint.release",
+  "temporalSeal": "2025-11-03T16:29:59.095148+00:00::9c72c2336742e2ca299b75faa0323458917b5a810575cca88f5f202bcbdb225d2b19a9b3c94c01d61b23b3dcbd84d29b51894e31762b659ea13cb44daf79b2f8",
+  "timestamp": "2025-11-03T16:29:59.095138+00:00",
+  "version": "1.0"
+}

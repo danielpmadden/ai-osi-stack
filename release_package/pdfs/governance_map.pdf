@@ -1,0 +1,125 @@
+%PDF-1.4
+%
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 6 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2762 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+( 2025 Daniel P. Madden) Tj
+T*
+(**License:** CC BY-NC-ND 4.0) Tj
+T*
+T*
+(# AI OSI Stack  Governance Risk Map) Tj
+T*
+(**Author:** Daniel P. Madden) Tj
+T*
+(**Version:** v4  Blueprint Integration) Tj
+T*
+(**Date:** November 2025) Tj
+T*
+T*
+(> ## Normative Language Notice) Tj
+T*
+(> This document uses normative language consistent with ISO/IEC 42010 and NIST) Tj
+T*
+(conventions.) Tj
+T*
+(> SHALL denotes mandatory requirements, SHOULD denotes strong recommendations, and) Tj
+T*
+(MAY denotes optional practices.) Tj
+T*
+(> Interpretations SHALL preserve authorial intent: layered accountability, epistemic) Tj
+T*
+(integrity, and human dignity as binding design constraints.) Tj
+T*
+T*
+(## 1. Layer-to-Governance Control Matrix) Tj
+T*
+(| AI OSI Layer | Primary Governance Risks | Example Controls | Evidence Artifacts |) Tj
+T*
+(| --- | --- | --- | --- |) Tj
+T*
+(| L1  Physical Substrate | Hardware tampering, supply chain opacity, resilience failure |) Tj
+T*
+(Certified facility audits, redundant energy and cooling governance, tamper-evident custody) Tj
+T*
+(| GDS, DRR |) Tj
+T*
+(| L2  Data Stewardship | Consent erosion, provenance drift, epistemic contamination |) Tj
+T*
+(Consent traceability ledgers, dataset review boards, epistemic hygiene playbooks | ITP,) Tj
+T*
+(DRR |) Tj
+T*
+(| L3  Model Development | Bias amplification, evaluation blind spots, red-team blind) Tj
+T*
+(coverage | Composite evaluation harnesses, adversarial benchmarking cadences, persona-) Tj
+T*
+(aligned regression suites | OAM, GDS |) Tj
+T*
+(| L4  Instruction & Control | Prompt injection, persona drift, affect misalignment |) Tj
+T*
+(Persona mandate enforcement, refusal logic penetration testing, affect boundary audits |) Tj
+T*
+(ITP, DRR, GDS |) Tj
+T*
+(| L5  Reasoning Exchange | Ledger desynchronization, packet replay, counter-signature) Tj
+T*
+(gaps | AEIP handshake validation, deterministic replay checkpoints, cross-node quorum) Tj
+T*
+(review | ILE, OAM |) Tj
+T*
+(| L6  Deployment & Integration | Runtime drift, change conflicts, incident opacity |) Tj
+T*
+(Change gating with governance approvals, blue/green stewardship protocols, incident) Tj
+T*
+(rehearsal | TRR, OAM |) Tj
+T*
+(| L7  Governance Publication | Delayed disclosure, accountability gaps, civic legitimacy) Tj
+T*
+(erosion | Public disclosure cadence, multi-stakeholder review councils, archival) Tj
+T*
+(notarization | GDS, ILE |) Tj
+T*
+T*
+(## 2. Stewardship Notes) Tj
+T*
+(Governance councils SHALL maintain the above matrix as a living register. Controls MAY be) Tj
+T*
+(tailored to sectoral mandates provided equivalent rigor, transparency, and dignity-first) Tj
+T*
+(obligations are preserved. Artifact classes SHALL remain immutable to ensure cross-layer) Tj
+T*
+(auditability.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000137 00000 n 
+0000000263 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3077
+%%EOF

@@ -1,0 +1,137 @@
+[
+  {
+    "id": "itp-2025-11-03T16:29:26.441793+00:00",
+    "payload": {
+      "constraints": [
+        "dignity"
+      ],
+      "dignityCompliance": true,
+      "evaluationCriteria": [
+        "pass"
+      ],
+      "hash": "ccb80203af9862e78486d5f25ff711d0c28847d5b467c8cb75878944bbbb4d245862a2651cba0a71ac6af79f33d45ca371d1301ebf866480b48dbb0ed6e7d9e5",
+      "id": "itp-2025-11-03T16:29:26.441793+00:00",
+      "objective": "archival",
+      "personaId": "persona.generator",
+      "source": "blueprint.release",
+      "temporalSeal": "2025-11-03T16:29:26.441827+00:00::d040824c7d7f54902faafc17e3be24d2ffaf5fabf8878cf4a201ecd85394514f6281e6a332183cabdb6120d42ffbd13784edf7e55718025d75a59e4c3fc5c4cd",
+      "timestamp": "2025-11-03T16:29:26.441793+00:00",
+      "version": "1.0"
+    },
+    "timestamp": "2025-11-03T16:29:26.441793+00:00",
+    "type": "ITP"
+  },
+  {
+    "id": "drr-2025-11-03T16:29:59.093463+00:00",
+    "payload": {
+      "decisionSummary": "Document governance rationale for blueprint archival release.",
+      "dignityCompliance": true,
+      "hash": "b1d305b6726c994ef377003e75e6a32d88166b3a6cbe42f64e42d2eb289eb19eb2c553eb7bd9cf974678477d4afd6cf220c5e4a593b26f5ea60aa934d7e08121",
+      "id": "drr-2025-11-03T16:29:59.093463+00:00",
+      "personaId": "persona.generator",
+      "rationale": [
+        {
+          "evidence": "pytest governance suite",
+          "justification": "Validated schema coverage for blueprint release.",
+          "step": "integrity-review"
+        }
+      ],
+      "source": "blueprint.release",
+      "temporalSeal": "2025-11-03T16:29:59.093496+00:00::c9fa2f878e94ffb65063ccb74877fbeb2bc035a99b7fe0bad797c08d6393d45b39053dd467de157148d6ce826c838b1879e219291a5ff7a4dd8e01e201c45002",
+      "timestamp": "2025-11-03T16:29:59.093463+00:00",
+      "version": "1.0"
+    },
+    "timestamp": "2025-11-03T16:29:59.093463+00:00",
+    "type": "DRR"
+  },
+  {
+    "id": "gds-2025-11-03T16:29:59.094253+00:00",
+    "payload": {
+      "dignityCompliance": true,
+      "directives": [
+        {
+          "actions": [
+            "Run pytest suite prior to archival"
+          ],
+          "controlId": "L5-AEIP-01",
+          "metrics": [
+            "handshake.success.rate"
+          ],
+          "severity": "moderate",
+          "title": "Maintain offline handshake integrity"
+        }
+      ],
+      "hash": "4ca996c8c9089f5e953bcf43e74a8c03f74e310f67e4e29fe7447ed3c918a74010793fccee4b5def19ece1c506eed69747452a51df87c04bae495ca5ec7ab37a",
+      "id": "gds-2025-11-03T16:29:59.094253+00:00",
+      "oversightBody": "Blueprint Governance Council",
+      "personaId": "persona.generator",
+      "reviewCadence": "Quarterly",
+      "source": "blueprint.release",
+      "temporalSeal": "2025-11-03T16:29:59.094267+00:00::523d2ecadea4df0ff4931a658224574666cf41421b6c88d547ba2308d9af232c737f96936126c1b3b44475225a5082757c377fc6a606061daf05b1bc9ea2382c",
+      "timestamp": "2025-11-03T16:29:59.094253+00:00",
+      "version": "1.0"
+    },
+    "timestamp": "2025-11-03T16:29:59.094253+00:00",
+    "type": "GDS"
+  },
+  {
+    "id": "oam-2025-11-03T16:29:59.094670+00:00",
+    "payload": {
+      "dignityCompliance": true,
+      "hash": "26c6eb4cb62be01b386c888253b77109cc4c66954ac8b989c460c4182bf1d2ce7d103ddc4445d16f6908d251a9f00ad9fe270bca45f43456a0f3d47f6fa64b15",
+      "id": "oam-2025-11-03T16:29:59.094670+00:00",
+      "metrics": [
+        {
+          "interpretation": "Replay confirms deterministic ledger ordering",
+          "metricId": "ledger.replay.time",
+          "threshold": 2.0,
+          "unit": "seconds",
+          "value": 1.2
+        }
+      ],
+      "observations": [
+        "No anomalies detected during offline replay rehearsal."
+      ],
+      "personaId": "persona.generator",
+      "source": "blueprint.release",
+      "temporalSeal": "2025-11-03T16:29:59.094681+00:00::3ed3691498eacc98fc16e1a5ed2f7c5568028afaa2686cd6c35bf8c7a36e03a9c6fe8189a4b0e5e7e5ab849e79518806415c626442ab7c745834907aec1cd325",
+      "timestamp": "2025-11-03T16:29:59.094670+00:00",
+      "version": "1.0"
+    },
+    "timestamp": "2025-11-03T16:29:59.094670+00:00",
+    "type": "OAM"
+  },
+  {
+    "id": "ile-2025-11-03T16:29:59.095138+00:00",
+    "payload": {
+      "aeipDigest": {
+        "finalHash": "aeip-handshake-placeholder",
+        "handshakeId": "aeip-blueprint-0001",
+        "steps": [
+          "Intent",
+          "Justify",
+          "CounterSign",
+          "Commit",
+          "Update"
+        ]
+      },
+      "artifactRef": "gds-blueprint-archival",
+      "artifactType": "GDS",
+      "dignityCompliance": true,
+      "governanceClauses": [
+        "AI-OSI-L7-Disclosure",
+        "AEIP-v1-Handshakes"
+      ],
+      "hash": "52f214436f8a955853288b76d5e5482246b456e672ddec754cd92a93289d5140d8223d4f5167e564f531594cac1c69e1683241ab785649c3b734f84c01f72a1f",
+      "id": "ile-2025-11-03T16:29:59.095138+00:00",
+      "ledgerIndex": 1,
+      "personaId": "persona.generator",
+      "source": "blueprint.release",
+      "temporalSeal": "2025-11-03T16:29:59.095148+00:00::9c72c2336742e2ca299b75faa0323458917b5a810575cca88f5f202bcbdb225d2b19a9b3c94c01d61b23b3dcbd84d29b51894e31762b659ea13cb44daf79b2f8",
+      "timestamp": "2025-11-03T16:29:59.095138+00:00",
+      "version": "1.0"
+    },
+    "timestamp": "2025-11-03T16:29:59.095138+00:00",
+    "type": "ILE"
+  }
+]

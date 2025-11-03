@@ -1,0 +1,168 @@
+{
+  "$comment": "Oversight Audit Memo Schema | AEIP-Schema-1.0-2025-11",
+  "$comment:license": "CC BY-NC-ND 4.0",
+  "$comment:integrity": "Version hash: TBD | Generated: 2025-05-09T00:00:00Z",
+  "$comment:metadata": "Version: 1.0.0 | Timestamp: 2025-05-09T00:00:00Z | Author: Repository Architect | Signature: Pending governance signature.",
+  "@context": {
+    "schema": "https://schema.org/",
+    "artifact_type": "schema:Text",
+    "version": "schema:Text",
+    "uuid": "schema:Text",
+    "timestamp": "schema:DateTime",
+    "layer": "schema:Integer",
+    "issuer": "schema:Organization",
+    "summary": "schema:Text",
+    "audit_scope": "schema:Text",
+    "findings": "schema:Text",
+    "linked_artifacts": {
+      "@id": "schema:Thing",
+      "@container": "@set"
+    },
+    "signature": "schema:DigitalDocument",
+    "provenance": "schema:CreativeWork"
+  },
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Oversight Audit Memo",
+  "description": "JSON-LD schema for AEIP Oversight Audit Memo artifacts capturing assurance observations and remedial directives.",
+  "type": "object",
+  "required": [
+    "artifact_type",
+    "version",
+    "uuid",
+    "timestamp",
+    "layer",
+    "issuer",
+    "summary",
+    "audit_scope",
+    "findings",
+    "linked_artifacts",
+    "signature",
+    "provenance"
+  ],
+  "properties": {
+    "artifact_type": {
+      "type": "string",
+      "const": "OversightAuditMemo",
+      "$comment": "Designates the document as an oversight audit memo under AEIP controls."
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "$comment": "Semantic version enumerating memo issuance iterations."
+    },
+    "uuid": {
+      "type": "string",
+      "pattern": "^(urn:uuid:)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$",
+      "$comment": "Mandatory UUIDv4 identifier securing audit traceability."
+    },
+    "timestamp": {
+      "type": "string",
+      "format": "date-time",
+      "$comment": "UTC timestamp denoting when the audit memo was issued."
+    },
+    "layer": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 7,
+      "$comment": "Identifies the AI OSI Stack layer responsible for the oversight action."
+    },
+    "issuer": {
+      "type": "object",
+      "required": ["name", "role", "organization", "contact"],
+      "properties": {
+        "name": { "type": "string" },
+        "role": { "type": "string" },
+        "organization": { "type": "string" },
+        "contact": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false,
+      "$comment": "Identifies the oversight or audit body producing the memo."
+    },
+    "summary": {
+      "type": "string",
+      "$comment": "Concise articulation of audit purpose and key insights."
+    },
+    "audit_scope": {
+      "type": "string",
+      "$comment": "Defines the oversight coverage, control families, and observation boundaries."
+    },
+    "findings": {
+      "type": "string",
+      "$comment": "Summarizes observed strengths, deficiencies, and remediation directives."
+    },
+    "linked_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "anyOf": [
+          {
+            "type": "string",
+            "pattern": "^(urn:uuid:)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+          },
+          {
+            "type": "string",
+            "format": "uri"
+          }
+        ]
+      },
+      "$comment": "Links to evidence packages, decision records, or ledger entries referenced in the memo."
+    },
+    "signature": {
+      "type": "object",
+      "required": ["method", "key_id", "value"],
+      "properties": {
+        "method": { "type": "string" },
+        "key_id": { "type": "string" },
+        "value": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "$comment": "Cryptographic attestation of the oversight body's issuance."
+    },
+    "provenance": {
+      "type": "object",
+      "required": ["source_system", "collection_method", "jurisdiction"],
+      "properties": {
+        "source_system": { "type": "string" },
+        "collection_method": { "type": "string" },
+        "jurisdiction": { "type": "string" },
+        "confidence": { "type": "string" }
+      },
+      "additionalProperties": false,
+      "$comment": "Documents validation procedures enabling repeatable audits and oversight assurance."
+    }
+  },
+  "additionalProperties": false,
+  "examples": [
+    {
+      "artifact_type": "OversightAuditMemo",
+      "version": "1.0.0",
+      "uuid": "urn:uuid:443e4567-e89b-42d3-a456-426614174030",
+      "timestamp": "2025-05-09T12:45:00Z",
+      "layer": 6,
+      "issuer": {
+        "name": "Oversight Audit Directorate",
+        "role": "Layer 6 Audit Lead",
+        "organization": "AI Governance Council",
+        "contact": "https://governance.example.org/directorate/audit"
+      },
+      "summary": "Memo documenting control effectiveness assessment for adaptive monitoring release 2025.05.",
+      "audit_scope": "Layer 5 operational safeguards, temporal integrity controls, and escalation readiness.",
+      "findings": "Controls operated effectively with two minor remediation actions assigned to operations.",
+      "linked_artifacts": [
+        "urn:uuid:333e4567-e89b-42d3-a456-426614174020",
+        "urn:uuid:623e4567-e89b-42d3-a456-426614174444"
+      ],
+      "signature": {
+        "method": "Ed25519",
+        "key_id": "did:example:governance-keys#audit-directorate",
+        "value": "MEUCIQD..."
+      },
+      "provenance": {
+        "source_system": "Oversight Assurance Vault",
+        "collection_method": "Manual review with notarized attachments",
+        "jurisdiction": "Global",
+        "confidence": "High"
+      }
+    }
+  ]
+}

@@ -1,0 +1,836 @@
+%PDF-1.4
+%
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R] /Count 8 >>
+endobj
+3 0 obj
+
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2960 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+( 2025 Daniel P. Madden) Tj
+T*
+(Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International) Tj
+T*
+(\(CC BY-NC-ND 4.0\)) Tj
+T*
+T*
+(> ## Normative Language Notice) Tj
+T*
+(> This specification uses normative language consistent with ISO/IEC 42010 and NIST) Tj
+T*
+(conventions.) Tj
+T*
+(> SHALL denotes mandatory requirements, SHOULD denotes strong recommendations, and) Tj
+T*
+(MAY denotes optional practices.) Tj
+T*
+(> Interpretations of this document must preserve authorial intent  fidelity to layered) Tj
+T*
+(accountability, epistemic integrity, and human dignity as design constraints.) Tj
+T*
+T*
+(# The AI OSI Stack v4  Test Integration Draft) Tj
+T*
+(## A Governance Blueprint for Scalable and Trusted AI) Tj
+T*
+(**Author:** Daniel P. Madden, Independent AI Researcher) Tj
+T*
+(**Date:** November 2025) Tj
+T*
+(**Version:** Version 4.0-Test \(Supersedes all previous AI OSI Stack versions in this) Tj
+T*
+(repository.\)) Tj
+T*
+T*
+(> **NOTE:** This v4 integrates: maturity modeling, risk catalogue, temporal legitimacy,) Tj
+T*
+(affective constraints, cognitive diversity, distributed oversight, sectoral extensions,) Tj
+T*
+(and AEIP alignment.) Tj
+T*
+T*
+(## Table of Contents) Tj
+T*
+(1. [Introduction and Purpose]\(#1-introduction-and-purpose\)) Tj
+T*
+(2. [Normative Definitions and Acronyms]\(#2-normative-definitions-and-acronyms\)) Tj
+T*
+(3. [Architectural Foundations and Methodology]\(#3-architectural-foundations-and-) Tj
+T*
+(methodology\)) Tj
+T*
+(4. [Layer Interdependence and Power Geometry]\(#4-layer-interdependence-and-power-geometry\)) Tj
+T*
+(5. [Layer-by-Layer Framework]\(#5-layer-by-layer-framework\)) Tj
+T*
+(6. [Governance Artifacts and Audit Infrastructure]\(#6-governance-artifacts-and-audit-) Tj
+T*
+(infrastructure\)) Tj
+T*
+(7. [Temporal Integrity and Semantic Version Control]\(#7-temporal-integrity-and-semantic-) Tj
+T*
+(version-control\)) Tj
+T*
+(8. [Global Framework Interoperability Map]\(#8-global-framework-interoperability-map\)) Tj
+T*
+(9. [Adaptive Governance and Foresight]\(#9-adaptive-governance-and-foresight\)) Tj
+T*
+(10. [Implementation and Adoption Pathways]\(#10-implementation-and-adoption-pathways\)) Tj
+T*
+(11. [Custodianship and Change Management]\(#11-custodianship-and-change-management\)) Tj
+T*
+(12. [Implementation Maturity Model \(IMM\)]\(#12-implementation-maturity-model-imm\)) Tj
+T*
+(13. [Risk Taxonomy and Control Catalogue]\(#13-risk-taxonomy-and-control-catalogue\)) Tj
+T*
+(14. [Temporal Legitimacy Framework]\(#14-temporal-legitimacy-framework\)) Tj
+T*
+(15. [Adaptive Governance Metrics \(AGM\)]\(#15-adaptive-governance-metrics-agm\)) Tj
+T*
+(16. [Human Dignity and Affective Constraint Module]\(#16-human-dignity-and-affective-) Tj
+T*
+(constraint-module\)) Tj
+T*
+(17. [Cognitive Diversity Index \(CDI\)]\(#17-cognitive-diversity-index-cdi\)) Tj
+T*
+(18. [Governance Simulation and Stress Testing]\(#18-governance-simulation-and-stress-) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 3084 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(testing\)) Tj
+T*
+(19. [Distributed Oversight Architecture]\(#19-distributed-oversight-architecture\)) Tj
+T*
+(20. [Ethical AI Supply Chain Framework]\(#20-ethical-ai-supply-chain-framework\)) Tj
+T*
+(21. [Human-in-the-Governance Loop]\(#21-human-in-the-governance-loop\)) Tj
+T*
+(22. [Societal Foresight and Temporal Pluralism]\(#22-societal-foresight-and-temporal-) Tj
+T*
+(pluralism\)) Tj
+T*
+(23. [Open Implementation Registry \(OIR\)]\(#23-open-implementation-registry-oir\)) Tj
+T*
+(24. [Decommissioning and End-of-Life Governance]\(#24-decommissioning-and-end-of-life-) Tj
+T*
+(governance\)) Tj
+T*
+T*
+(Appendices:) Tj
+T*
+(- [Appendix A. Glossary]\(#appendix-a-glossary\)) Tj
+T*
+(- [Appendix B. Layer-to-Standard Concordance]\(#appendix-b-layer-to-standard-concordance\)) Tj
+T*
+(- [Appendix C. Version Change Log]\(#appendix-c-version-change-log\)) Tj
+T*
+(- [Appendix D. References]\(#appendix-d-references\)) Tj
+T*
+T*
+(## 1. Introduction and Purpose) Tj
+T*
+(The AI OSI Stack v4 consolidates Daniel P. Maddens governance architecture into a single) Tj
+T*
+(canonical reference that aligns operational controls, epistemic integrity, and human) Tj
+T*
+(dignity across the entire lifecycle of intelligent systems. This Test Integration Draft) Tj
+T*
+(resolves fragmentation from earlier versions by embedding Persona Architecture,) Tj
+T*
+(Epistemology by Design, and the AI Epistemic Infrastructure Protocol \(AEIP\) directly) Tj
+T*
+(within the layered stack. The intent is to provide institutions with a deployable) Tj
+T*
+(governance blueprint compatible with NIST AI RMF, ISO/IEC 42001, the EU AI Act, and the) Tj
+T*
+(TRUST Framework while remaining adaptable to sector-specific constraints.) Tj
+T*
+T*
+(### Jurisdictional Neutrality and Interpretive Authority) Tj
+T*
+(This framework is jurisdiction-neutral and intended for international application.) Tj
+T*
+(In the event of conflicting legal or linguistic interpretations, interpretive authority) Tj
+T*
+(SHALL defer) Tj
+T*
+(to the authors defined principles of transparency, accountability, and dignity by design) Tj
+T*
+() Tj
+T*
+(not to localized or translated semantics.) Tj
+T*
+T*
+(## 2. Normative Definitions and Acronyms) Tj
+T*
+(This document adopts normative language consistent with international governance) Tj
+T*
+(standards. SHALL denotes mandatory requirements; SHOULD indicates strong) Tj
+T*
+(recommendations; MAY introduces optional practices. Key acronyms include: AEIP \(AI) Tj
+T*
+(Epistemic Infrastructure Protocol\), AGM \(Adaptive Governance Metrics\), CDI \(Cognitive) Tj
+T*
+(Diversity Index\), GDS \(Governance Disclosure Statement\), ILE \(Integrity Ledger Entry\), IMM) Tj
+T*
+(\(Implementation Maturity Model\), OAM \(Oversight Action Memorandum\), OIR \(Open) Tj
+T*
+(Implementation Registry\), and Persona Architecture \(PA\). The lexicon harmonizes with prior) Tj
+T*
+(publications such as *Persona Architecture: Designing Role-Specific AI Systems for) Tj
+T*
+(Accountability and Trust* and *Epistemology by Design: Embedding Reasoning Integrity in AI) Tj
+T*
+(Systems*.) Tj
+T*
+T*
+ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 9 0 R >>
+endobj
+9 0 obj
+<< /Length 3621 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(## 3. Architectural Foundations and Methodology) Tj
+T*
+(The stack is engineered as infrastructure rather than policy prose. Its methodology) Tj
+T*
+(interleaves architectural decomposition with governance artifacts that provide audit-ready) Tj
+T*
+(evidence. Layered controls are validated via AEIP-compliant exchanges, ensuring that) Tj
+T*
+(reasoning states, decision artifacts, and socio-technical context remain inseparable. The) Tj
+T*
+(methodology favors design patterns that instantiate accountability at system inception,) Tj
+T*
+(echoing the stance articulated in *The AI OSI Stack: A Governance Blueprint for Scalable) Tj
+T*
+(and Trusted AI*. Each layer is treated as a contract surface that binds risk controls,) Tj
+T*
+(cognitive safeguards, and affective constraints.) Tj
+T*
+T*
+(## 4. Layer Interdependence and Power Geometry) Tj
+T*
+(Layer boundaries are permeable to guarantee system cohesion. Power geometry recognizes) Tj
+T*
+(that decision authority, data provenance, and execution logic concentrate differently) Tj
+T*
+(across layers. The stack addresses vertical power flow \(from infrastructure to user) Tj
+T*
+(interaction\) and horizontal influence \(across partner ecosystems\) to mitigate capture and) Tj
+T*
+(concentration risks. Persona Architecture anchors Layer 4 by establishing accountable) Tj
+T*
+(instruction sets, while AEIP operationalizes Layer 5 as the protocol spine that transmits) Tj
+T*
+(epistemic commitments. Governance artifacts at Layer 7 distribute power by exposing) Tj
+T*
+(stewardship evidence to external auditors and public stakeholders.) Tj
+T*
+T*
+(## 5. Layer-by-Layer Framework) Tj
+T*
+(1. **Layer 0  Civic Mandate \(Optional\):** Establishes jurisdictional legitimacy and) Tj
+T*
+(social license. It captures legislative authorization, community compacts, and public) Tj
+T*
+(trust obligations.) Tj
+T*
+(2. **Layer 1  Physical and Compute Substrate:** Covers data centers, chip governance, and) Tj
+T*
+(reliability engineering aligned with ISO/IEC 27001 controls. Monitoring includes) Tj
+T*
+(resilience audits and energy accountability.) Tj
+T*
+(3. **Layer 2  Data Stewardship:** Ensures provenance, consent, and representational) Tj
+T*
+(justice. Epistemology by Design applies here through provenance ledgers and reasoning) Tj
+T*
+(lineage documentation.) Tj
+T*
+(4. **Layer 3  Model Development:** Governs training protocols, evaluation harnesses, and) Tj
+T*
+(red-teaming. Includes model cards, risk statements, and fairness reviews.) Tj
+T*
+(5. **Layer 4  Instruction and Control:** Persona Architecture delivers structured roles,) Tj
+T*
+(refusal logic, and affect management to ensure the AI acts within declared mandates.) Tj
+T*
+(6. **Layer 5  Reasoning Exchange and Interface:** AEIP enforces structured dialogue) Tj
+T*
+(between AI services, auditors, and human supervisors using signed reasoning packets and) Tj
+T*
+(integrity fingerprints.) Tj
+T*
+(7. **Layer 6  Deployment and Integration:** Covers runtime environments, incident) Tj
+T*
+(response, and change control across organizational ecosystems.) Tj
+T*
+(8. **Layer 7  Governance Publication:** Releases GDS packages, ILE updates, and public) Tj
+T*
+(accountability artifacts ensuring transparency, traceability, and trust.) Tj
+T*
+T*
+(## 6. Governance Artifacts and Audit Infrastructure) Tj
+T*
+(The stack relies on reusable artifacts: Governance Disclosure Statements \(GDS\) synthesize) Tj
+T*
+(cross-layer obligations; Integrity Ledger Entries \(ILE\) notarize decisions and maturity) Tj
+T*
+(attestations; Oversight Action Memoranda \(OAM\) document interventions and remediations;) Tj
+T*
+ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 11 0 R >>
+endobj
+11 0 obj
+<< /Length 3425 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(Temporal Review Records \(TRR\) capture version checks; Interpretive Trace Packages \(ITP\)) Tj
+T*
+(reconstruct evidentiary reasoning; and Decision Rationale Records \(DRR\) preserve) Tj
+T*
+(architectural justification. AEIP provides the transport for these artifacts, guaranteeing) Tj
+T*
+(interoperable audit traces. Artifacts SHALL be version-controlled, cryptographically) Tj
+T*
+(signed, and exposed through Layer 7 portals. Canonical JSON-LD definitions are maintained) Tj
+T*
+(in the `schemas/` directory \(AEIP-Schema-1.0-2025-11\), with validation exemplars residing) Tj
+T*
+(in `tests/aeip_schema_validation.py`.) Tj
+T*
+T*
+(## 7. Temporal Integrity and Semantic Version Control) Tj
+T*
+(Governance is inherently temporal. Every change to Persona Architecture configurations,) Tj
+T*
+(epistemic safeguards, or AEIP schemas requires semantic versioning anchored to custodial) Tj
+T*
+(review. Temporal integrity is sustained through synchronized clocks, validity windows for) Tj
+T*
+(each artifact, and automated drift alerts triggered by reasoning fingerprint deviation.) Tj
+T*
+(Semantic version control couples model updates with governance obligations to prevent) Tj
+T*
+(silent regression.) Tj
+T*
+T*
+(## 8. Global Framework Interoperability Map) Tj
+T*
+(The stack crosswalks to prevailing frameworks: Layer 2 aligns with NIST AI RMF Data and) Tj
+T*
+(Data Governance; Layer 3 maps to ISO/IEC 42001 operational controls; Layer 4 satisfies EU) Tj
+T*
+(AI Act transparency and instruction mandates; Layer 5 implements TRUST Framework) Tj
+T*
+(interoperability principles. The interoperability map establishes translation guides so) Tj
+T*
+(that organizations can certify once and comply many times, minimizing audit friction while) Tj
+T*
+(preserving rigor.) Tj
+T*
+T*
+(## 9. Adaptive Governance and Foresight) Tj
+T*
+(Adaptive governance assumes AI systems encounter dynamic contexts. Scenario planning,) Tj
+T*
+(foresight scanning, and socio-technical sensing are embedded at Layer 6 and Layer 7.) Tj
+T*
+(Persona Architecture supplies the adjustable knobs, AEIP carries foresight signals, and) Tj
+T*
+(Governance Councils interpret the signals to recalibrate controls. The stack mandates) Tj
+T*
+(quarterly foresight reviews incorporating emergent risks, policy shifts, and cultural) Tj
+T*
+(feedback loops.) Tj
+T*
+T*
+(## 10. Implementation and Adoption Pathways) Tj
+T*
+(Organizations SHALL follow a staged adoption: inventory existing systems, map them to the) Tj
+T*
+(stack, implement Persona Architecture for instruction surfaces, deploy AEIP nodes, and) Tj
+T*
+(publish the first GDS. Sectoral extensionssuch as GERDY v1 for education or ARCHY v1 for) Tj
+T*
+(healthcareserve as reference templates. Adoption pathways emphasize co-design with) Tj
+T*
+(affected communities, aligning with the dignity-first ethos introduced in *Persona) Tj
+T*
+(Architecture*.) Tj
+T*
+T*
+(## 11. Custodianship and Change Management) Tj
+T*
+(Custodianship rests with a designated Governance Council empowered to approve changes,) Tj
+T*
+(review audits, and steward public accountability. Change management integrates AEIP change) Tj
+T*
+(requests, DRR updates, and OAM tracking. Custodians SHALL maintain a change ledger, ensure) Tj
+T*
+(training for human overseers, and coordinate with regulators to synchronize compliance) Tj
+T*
+(submissions. Custodianship is designed to be portable across organizations while) Tj
+T*
+ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 13 0 R >>
+endobj
+13 0 obj
+<< /Length 3394 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(preserving Daniel P. Maddens architectural intent.) Tj
+T*
+T*
+(## 12. Implementation Maturity Model \(IMM\)) Tj
+T*
+(The IMM defines six discrete levels of governance capability:) Tj
+T*
+(- **Level 0  No Governance:** Ad hoc AI usage without documented controls. Required) Tj
+T*
+(artifacts: none. Expected audit frequency: incident-driven only.) Tj
+T*
+(- **Level 1  Basic / Reactive Governance:** Minimal policies and reactive incident) Tj
+T*
+(handling. Required artifacts: baseline GDS, initial DRR. Expected audit frequency: annual) Tj
+T*
+(self-assessment.) Tj
+T*
+(- **Level 2  Integrated Layer Controls:** Stack-aligned controls implemented across) Tj
+T*
+(Layers 14 with Persona Architecture instantiated. Required artifacts: Persona briefs,) Tj
+T*
+(AEIP readiness report, TRR baseline. Expected audit frequency: semiannual internal audits.) Tj
+T*
+(- **Level 3  Adaptive / Temporal Governance:** Temporal integrity tooling, drift) Tj
+T*
+(monitoring, and AEIP ledger integration across Layers 16. Required artifacts: temporal) Tj
+T*
+(audit log, OAM register, IMM attestation. Expected audit frequency: quarterly governance) Tj
+T*
+(reviews.) Tj
+T*
+(- **Level 4  Trust Infrastructure:** Full AEIP deployment, public Layer 7 disclosures,) Tj
+T*
+(and cross-jurisdictional interoperability. Required artifacts: comprehensive GDS, signed) Tj
+T*
+(ILE packages, resilience playbooks. Expected audit frequency: continuous monitoring with) Tj
+T*
+(biannual external audits.) Tj
+T*
+(- **Level 5  Cognitive Stewardship:** Cognitive diversity orchestration, affective) Tj
+T*
+(constraint modules, and inter-organizational oversight. Required artifacts: CDI reports,) Tj
+T*
+(dignity compliance attestations, governance simulation results. Expected audit frequency:) Tj
+T*
+(continuous AEIP validation with annual third-party certification.) Tj
+T*
+T*
+(Organizations SHALL publish their IMM level annually as an Integrity Ledger Entry \(ILE\) to) Tj
+T*
+(maintain transparency and accountability.) Tj
+T*
+T*
+(## 13. Risk Taxonomy and Control Catalogue) Tj
+T*
+(Each layer carries characteristic risks and prescribed controls:) Tj
+T*
+(- **Layer 1:** Riskshardware tampering, supply disruptions. Controlscertified facilities) Tj
+T*
+(audits, redundant energy governance. ArtifactsGDS, DRR.) Tj
+T*
+(- **Layer 2:** Risksdata poisoning, consent erosion. Controlsprovenance validation,) Tj
+T*
+(consent traceability. ArtifactsITP \(Interpretive Trace Package\), DRR.) Tj
+T*
+(- **Layer 3:** Risksmodel bias, evaluation blind spots. Controlscomposite testing,) Tj
+T*
+(adversarial benchmarking. ArtifactsOAM, GDS.) Tj
+T*
+(- **Layer 4:** Risksprompt injection, persona drift, unethical affect. ControlsHeartwood) Tj
+T*
+(Core enforcement, refusal logic tests, persona regression suite. ArtifactsITP, DRR, GDS.) Tj
+T*
+(- **Layer 5:** Risksledger desynchronization, reasoning packet corruption. ControlsAEIP) Tj
+T*
+(handshake validation, cross-node replay defenses. ArtifactsILE, OAM.) Tj
+T*
+(- **Layer 6:** Risksdeployment drift, integration conflicts. Controlschange gating,) Tj
+T*
+(blue/green governance checkpoints. ArtifactsTRR, OAM.) Tj
+T*
+(- **Layer 7:** Risksopaque reporting, delayed disclosures. Controlspublic GDS cadence,) Tj
+T*
+(audit-ready publishing pipeline. ArtifactsGDS, ILE.) Tj
+T*
+T*
+(Controls SHALL be catalogued with traceable references to the artifact classes:) Tj
+T*
+ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 15 0 R >>
+endobj
+15 0 obj
+<< /Length 3213 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(Interpretive Trace Package \(ITP\), Decision Rationale Record \(DRR\), Governance Decision) Tj
+T*
+(Summary \(GDS\), Oversight Audit Memo \(OAM\), Integrity Ledger Entry \(ILE\).) Tj
+T*
+T*
+(## 14. Temporal Legitimacy Framework) Tj
+T*
+(Temporal legitimacy binds authority to time. Each governance artifact receives a defined) Tj
+T*
+(validity window during which its claims remain authoritative. Temporal amnesty clauses) Tj
+T*
+(allow constrained grace periods to remediate violations without punitive escalation when) Tj
+T*
+(self-disclosed promptly. Drift thresholds are codified: a 5% change in reasoning) Tj
+T*
+(fingerprint triggers mandatory review and potential rollback. Quarterly temporal audits) Tj
+T*
+(evaluate alignment between declared versions and deployed systems. All temporal legitimacy) Tj
+T*
+(events SHALL be recorded as AEIP-compatible ledger entries to guarantee verifiable) Tj
+T*
+(lineage.) Tj
+T*
+T*
+(## 15. Adaptive Governance Metrics \(AGM\)) Tj
+T*
+(Adaptive metrics provide continuous insight:) Tj
+T*
+(- **Transparency Ratio \(TR\):** Published governance artifacts  required artifacts.) Tj
+T*
+(Recorded in GDS.) Tj
+T*
+(- **Governance Coverage Score \(GCS\):** Implemented controls  identified controls for the) Tj
+T*
+(operational scope. Logged alongside IMM attestations.) Tj
+T*
+(- **Drift Index \(DI\):** Aggregated delta of performance and reasoning fingerprints) Tj
+T*
+(normalized over time. Stored in TRR and linked via AEIP.) Tj
+T*
+(- **Dignity Compliance Rate \(DCR\):** Verified adherence to affective constraints  total) Tj
+T*
+(evaluated interactions. Captured within GDS and ILE updates.) Tj
+T*
+T*
+(Organizations SHALL report AGM values quarterly and expose them through Layer 7 dashboards) Tj
+T*
+(for stakeholder review.) Tj
+T*
+T*
+(## 16. Human Dignity and Affective Constraint Module) Tj
+T*
+(Dignity operates as a non-negotiable constraint. Persona Architecture requires agents to) Tj
+T*
+(declare identity and intent at session initiation, ensuring clarity of role and) Tj
+T*
+(accountability. The module prohibits intimacy simulation, manipulative sentiment scripts,) Tj
+T*
+(and coercive affective cues. Violations trigger automatic Oversight Action Memoranda and) Tj
+T*
+(public disclosure through Layer 7 portals. This preserves the dignity as constraint) Tj
+T*
+(principle articulated across Daniel P. Maddens corpus while providing enforceable levers) Tj
+T*
+(for auditors.) Tj
+T*
+T*
+(## 17. Cognitive Diversity Index \(CDI\)) Tj
+T*
+(The CDI measures epistemic plurality. Defined as CDI = \(distinct epistemic families) Tj
+T*
+(engaged\)  \(total governance decisions\), it encourages inclusive stewardship. Inspired by) Tj
+T*
+(the cognitive scaffolding demonstrated in CASSI v1, organizations target a CDI of 0.4 or) Tj
+T*
+(higher for high-stakes domains. CDI reporting SHALL accompany IMM and AGM disclosures,) Tj
+T*
+(enabling auditors to detect monocultures that jeopardize resilience.) Tj
+T*
+T*
+(## 18. Governance Simulation and Stress Testing) Tj
+T*
+(Annual governance fire drills validate readiness for compound failures. Simulations) Tj
+T*
+(incorporate synthetic data breaches, sudden policy shifts, and model drift scenarios.) Tj
+T*
+ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 17 0 R >>
+endobj
+17 0 obj
+<< /Length 3232 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(Outputs are consolidated into an OAM-Resilience Report that documents response quality,) Tj
+T*
+(time-to-remediation, and lessons learned. AEIP facilitates replay and external) Tj
+T*
+(verification, ensuring simulations translate into tangible improvements.) Tj
+T*
+T*
+(## 19. Distributed Oversight Architecture) Tj
+T*
+(Distributed oversight balances local autonomy with global assurance. The architecture) Tj
+T*
+(comprises three tiers: Local Ledger Nodes maintain operational records; Regional) Tj
+T*
+(Custodians aggregate sector or jurisdiction data; and a Global Trust Anchor synchronizes) Tj
+T*
+(standards without centralizing control. AEIP secures inter-tier exchanges, enabling cross-) Tj
+T*
+(jurisdictional audits and mutual recognition agreements.) Tj
+T*
+T*
+(## 20. Ethical AI Supply Chain Framework) Tj
+T*
+(Supply chain governance requires all vendors to publish Stack-aligned Governance Cards) Tj
+T*
+(detailing Persona Architecture conformance, epistemic safeguards, and AEIP integration) Tj
+T*
+(status. Procurement processes SHALL mandate Stack-Aligned Reports assessing each) Tj
+T*
+(suppliers IMM level. All supply chain attestations are logged via ILE to preserve) Tj
+T*
+(accountability across the lifecycle.) Tj
+T*
+T*
+(## 21. Human-in-the-Governance Loop) Tj
+T*
+(Human stewards remain integral. Mandatory checkpoints occur during training data approval,) Tj
+T*
+(instruction design, deployment readiness, and audit sign-off. Escalation paths route) Tj
+T*
+(unresolved issues to the Governance Council, which can issue OAM directives or suspend) Tj
+T*
+(operations. AEIP records human approvals to ensure traceability and to prevent automation) Tj
+T*
+(from eroding oversight.) Tj
+T*
+T*
+(## 22. Societal Foresight and Temporal Pluralism) Tj
+T*
+(The stack embeds temporal pluralism to account for divergent futures. Scenario planning) Tj
+T*
+(explores three anchor futures for 20302040: **Fragmented Governance**, where) Tj
+T*
+(jurisdictions diverge; **Unified AEIP**, where interoperability prevails; and **AIHuman) Tj
+T*
+(Co-Governance**, where shared stewardship emerges. Inter-temporal arbitration mechanisms) Tj
+T*
+(reconcile decisions that impact multiple timelines, ensuring present-day actions remain) Tj
+T*
+(legitimate across futures.) Tj
+T*
+T*
+(## 23. Open Implementation Registry \(OIR\)) Tj
+T*
+(The OIR is a public or semi-public ledger enumerating adopters of the AI OSI Stack. Each) Tj
+T*
+(entry records organization name, IMM level, adoption date, and referenced artifacts.) Tj
+T*
+(Entries SHALL link to published GDS packages and ILE hashes, enabling external) Tj
+T*
+(verification while protecting sensitive details through selective disclosure.) Tj
+T*
+T*
+(## 24. Decommissioning and End-of-Life Governance) Tj
+T*
+(Retiring AI systems requires deliberate closure. Organizations SHALL produce a Final GDS) Tj
+T*
+(summarizing operational history, issue a Closure ILE indicating shutdown status, perform) Tj
+T*
+(memory redaction consistent with privacy commitments, and publish a public AI epitaph) Tj
+T*
+(explaining lessons learned. Ethical end-of-life practices honor affected communities and) Tj
+T*
+(prevent orphaned systems from resurfacing without governance.) Tj
+T*
+T*
+ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 20 0 R >> >> /Contents 19 0 R >>
+endobj
+19 0 obj
+<< /Length 2748 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(## Appendix A. Glossary) Tj
+T*
+(- **AEIP:** Protocol for exchanging reasoning artifacts with audit guarantees. Detailed in) Tj
+T*
+(*AEIP-00: The AI Epistemic Infrastructure Protocol*.) Tj
+T*
+(- **Governance Disclosure Statement \(GDS\):** Public artifact describing compliance) Tj
+T*
+(posture.) Tj
+T*
+(- **Integrity Ledger Entry \(ILE\):** Signed record anchoring governance claims in time.) Tj
+T*
+(- **Oversight Action Memorandum \(OAM\):** Formal notice of intervention or remediation.) Tj
+T*
+(- **Persona Architecture \(PA\):** Role-specific design methodology ensuring accountable AI) Tj
+T*
+(personas.) Tj
+T*
+T*
+(## Appendix B. Layer-to-Standard Concordance) Tj
+T*
+(- **Layer 1:** ISO/IEC 27001, NIST CSF.) Tj
+T*
+(- **Layer 2:** NIST AI RMF Data function, GDPR Articles 1322.) Tj
+T*
+(- **Layer 3:** ISO/IEC 42001 Clause 8, NIST AI RMF Measure.) Tj
+T*
+(- **Layer 4:** EU AI Act transparency requirements, Persona Architecture guidelines.) Tj
+T*
+(- **Layer 5:** TRUST Framework interoperability principles, AEIP handshake specifications.) Tj
+T*
+(- **Layer 6:** ITIL Change Management, NIST SP 800-53 IR controls.) Tj
+T*
+(- **Layer 7:** Open Government data publication norms, public accountability statutes.) Tj
+T*
+T*
+(## Appendix C. Version Change Log) Tj
+T*
+(- **v4.0-Test \(November 2025\):** Integrated maturity model, risk catalogue, temporal) Tj
+T*
+(legitimacy, affective constraints, cognitive diversity, distributed oversight, supply) Tj
+T*
+(chain governance, and new registries. Supersedes v1v3 and prior drafts.) Tj
+T*
+T*
+(## Appendix D. References) Tj
+T*
+(1. Daniel P. Madden, *Persona Architecture: Designing Role-Specific AI Systems for) Tj
+T*
+(Accountability and Trust*.) Tj
+T*
+(2. Daniel P. Madden, *Epistemology by Design: Embedding Reasoning Integrity in AI) Tj
+T*
+(Systems*.) Tj
+T*
+(3. Daniel P. Madden, *The AI OSI Stack: A Governance Blueprint for Scalable and Trusted) Tj
+T*
+(AI*.) Tj
+T*
+(4. Daniel P. Madden, *AEIP-00: The AI Epistemic Infrastructure Protocol*.) Tj
+T*
+(5. NIST, *AI Risk Management Framework* \(2023\).) Tj
+T*
+(6. ISO/IEC, *42001:2023 Artificial Intelligence Management System*.) Tj
+T*
+(7. European Union, *AI Act* \(2024 provisional agreement\).) Tj
+T*
+(8. U.S. Department of Commerce, *TRUST Framework* \(2024\).) Tj
+T*
+T*
+(### Custodianship and Authorship) Tj
+T*
+(Daniel P. Madden retains moral and intellectual authorship of this framework.) Tj
+T*
+(This work SHALL NOT be modified, translated, or reissued under altered terminology without) Tj
+T*
+(written consent.) Tj
+T*
+(Derived works or alternative semantic renderings that could misrepresent intent SHALL be) Tj
+T*
+(considered) Tj
+T*
+(non-conformant and unauthorized under the CC BY-NC-ND 4.0 License.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 20
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000168 00000 n 
+0000000184 00000 n 
+0000000311 00000 n 
+0000003323 00000 n 
+0000003450 00000 n 
+0000006586 00000 n 
+0000006713 00000 n 
+0000010386 00000 n 
+0000010515 00000 n 
+0000013993 00000 n 
+0000014122 00000 n 
+0000017569 00000 n 
+0000017698 00000 n 
+0000020964 00000 n 
+0000021093 00000 n 
+0000024378 00000 n 
+0000024507 00000 n 
+trailer
+<< /Size 20 /Root 1 0 R >>
+startxref
+27308
+%%EOF
