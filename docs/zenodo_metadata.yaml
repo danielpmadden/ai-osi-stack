@@ -1,0 +1,13 @@
+# © 2025 Daniel P. Madden
+# License: CC BY-NC-ND 4.0
+# Normative Language Notice: This metadata uses normative language consistent with ISO/IEC 42010 and NIST conventions. “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices. Interpretations SHALL preserve authorial intent: layered accountability, epistemic integrity, and human dignity as binding design constraints.
+title: "The AI OSI Stack: Version 4 (Expanded — Blueprint Integration Release)"
+author: "Daniel P. Madden"
+description: >
+  Canonical reference specification and offline blueprint implementation of the AI OSI Stack,
+  integrating AEIP v1 transport, layered governance schemas, and epistemic integrity artifacts.
+version: "v4-protocol-blueprint"
+keywords: [AI Governance, Epistemic Infrastructure, Accountability, Standards, OSI]
+license: "CC BY-NC-ND 4.0"
+publication_date: "2025-11-XX"
+notes: "Offline-first reference; no live services."

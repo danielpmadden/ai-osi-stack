@@ -1,0 +1,22 @@
+{
+  "dignityCompliance": true,
+  "hash": "26c6eb4cb62be01b386c888253b77109cc4c66954ac8b989c460c4182bf1d2ce7d103ddc4445d16f6908d251a9f00ad9fe270bca45f43456a0f3d47f6fa64b15",
+  "id": "oam-2025-11-03T16:29:59.094670+00:00",
+  "metrics": [
+    {
+      "interpretation": "Replay confirms deterministic ledger ordering",
+      "metricId": "ledger.replay.time",
+      "threshold": 2.0,
+      "unit": "seconds",
+      "value": 1.2
+    }
+  ],
+  "observations": [
+    "No anomalies detected during offline replay rehearsal."
+  ],
+  "personaId": "persona.generator",
+  "source": "blueprint.release",
+  "temporalSeal": "2025-11-03T16:29:59.094681+00:00::3ed3691498eacc98fc16e1a5ed2f7c5568028afaa2686cd6c35bf8c7a36e03a9c6fe8189a4b0e5e7e5ab849e79518806415c626442ab7c745834907aec1cd325",
+  "timestamp": "2025-11-03T16:29:59.094670+00:00",
+  "version": "1.0"
+}

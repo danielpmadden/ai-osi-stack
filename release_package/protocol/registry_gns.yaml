@@ -1,0 +1,5 @@
+nodes:
+  - id: gns://genesis/node
+    ledgerPath: ./ledger
+    lastEntry: 0
+    lastUpdated: 2024-01-01T00:00:00+00:00
