@@ -1,6 +1,6 @@
-**The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI**  
-Author: Daniel P. Madden – Independent AI Researcher  
-Version 4.0 (Expanded — Blueprint Integration Release, November 2025)
+# **The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI**  
+## Author: Daniel P. Madden – Independent AI Researcher  
+## Version 4.0 (Expanded, November 2025)
 
 # Abstract
 > Artificial intelligence is moving from discrete products to systemic infrastructure. Yet most AI is still designed and governed as if it were a single opaque system. This creates concentration risk, weak accountability, and an environment in which a few model or API providers can shape whole sectors. This paper proposes the AI OSI Stack, a seven layer architectural and governance framework for clarifying how AI is built, where risks concentrate, and how trust can be made portable. Inspired by the Open Systems Interconnection (OSI) model in networking, the AI OSI Stack separates the AI ecosystem into: (1) Physical / Hardware, (2) Model Architecture, (3) Training / Optimization, (4) Instruction / Control, (5) Interface / Protocol, (6) Application, and (7) Governance / Trust. This separation of concerns turns AI governance from a reactive afterthought into a design-time feature. It enables targeted regulation, auditable decision artifacts, persona-based safety layers, and protection against interface monopolies. The Stack is intended for AI labs, policymakers, enterprise architects, and standards bodies that need an operational map for trustworthy AI.
