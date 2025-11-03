@@ -13,18 +13,18 @@
 
 ## Release History
 - **v1.0 — Foundational Stack Overview**  
-  - **Date:** 2019-09-01  
+  - **Date:** 2024-09-09  
   - **Summary:** Introduced the seven-layer governance metaphor, integrity ledger concept, and initial stewardship obligations for AI services.
 - **v2.0 — Persona Architecture Expansion**  
-  - **Date:** 2020-12-15  
+  - **Date:** 2024-09-14  
   - **Summary:** Added Persona Architecture briefs, affective constraint models, and role-specific accountability patterns.
 - **v3.0 — Epistemology Alignment**  
-  - **Date:** 2022-03-10  
+  - **Date:** 2024-09-20  
   - **Summary:** Integrated Epistemology by Design, introduced Interpretive Trace Packages, and prepared AEIP compatibility guidance.
 - **v4.0 — Integrated Canonical Specification**  
-  - **Date:** 2024-07-22  
+  - **Date:** 2025-11-02  
   - **Summary:** Published *AI OSI Stack v4 Test Integrated*, harmonizing governance artifacts, temporal legitimacy, and the Implementation Maturity Model.
 - **v4-protocol-blueprint — Blueprint Complete Reference Implementation**  
-  - **Date:** 2025-11-30  
+  - **Date:** 2025-11-03  
   - **Summary:** Finalized offline-first blueprint codebase, added governance maps, deferred system registry, validation artifacts, and Zenodo-ready release package for archival DOI issuance.
 
