@@ -26,11 +26,9 @@ The Stack is intended for **AI labs, policymakers, enterprise architects, and st
 
 ## **Overview**
 
-The **AI OSI Stack** defines a layered model aligning technical, ethical, and institutional responsibilities.  
-Version 4 consolidates previous releases into a single reference that integrates *Persona Architecture*, *Epistemology by Design*, and the *AI Epistemic Infrastructure Protocol (AEIP)*.  
+The **AI OSI Stack** defines a layered model aligning technical, ethical, and institutional responsibilities. Version 4 consolidates previous releases into a single reference that integrates *Persona Architecture*, *Epistemology by Design*, and the *AI Epistemic Infrastructure Protocol (AEIP)*.  
 
-The Stack treats governance as a foundational design constraint and enables **trust to remain portable** across heterogeneous AI services, organizations, and jurisdictions.  
-It transforms governance into a form of infrastructure—where accountability becomes auditable, composable, and measurable.
+The Stack treats governance as a foundational design constraint and enables **trust to remain portable** across heterogeneous AI services, organizations, and jurisdictions. It transforms governance into a form of infrastructure—where accountability becomes auditable, composable, and measurable.
 
 ---
 
@@ -62,8 +60,7 @@ The blueprint demonstrates **executable governance concepts** through machine-re
 
 ## **Implementation Blueprint**
 
-The **Blueprint Implementation** anchors the conceptual stack in executable artifacts.  
-It demonstrates how layered governance can be expressed in machine-readable, testable form.
+The **Blueprint Implementation** anchors the conceptual stack in executable artifacts. It demonstrates how layered governance can be expressed in machine-readable, testable form.
 
 **Core Components:**
 
@@ -110,7 +107,7 @@ All components operate **offline-first** and are engineered to illustrate **desi
 
 # Citation
 ```
-Madden, D. (2025). *The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI (v4 Expanded — Blueprint Integration Release).* Zenodo. DOI: [placeholder]
+Madden, D. (2025). *The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI (v4 Expanded).* Zenodo. DOI: [placeholder]
 ```
 
 # Project Status
