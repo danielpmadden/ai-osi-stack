@@ -6,8 +6,7 @@
 
 ## **Abstract**
 
-Artificial intelligence is moving from discrete products to systemic infrastructure. Yet most AI is still designed and governed as if it were a single opaque system.  
-This creates concentration risk, weak accountability, and an environment in which a few model or API providers can shape whole sectors.
+Artificial intelligence is moving from discrete products to systemic infrastructure. Yet most AI is still designed and governed as if it were a single opaque system. This creates concentration risk, weak accountability, and an environment in which a few model or API providers can shape whole sectors.
 
 This paper proposes the **AI OSI Stack**, a seven-layer architectural and governance framework for clarifying how AI is built, where risks concentrate, and how trust can be made portable. Inspired by the Open Systems Interconnection (OSI) model in networking, the AI OSI Stack separates the AI ecosystem into:
 
