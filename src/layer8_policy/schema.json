@@ -1,0 +1,25 @@
+{
+  "$metadata": {
+    "name": "Layer8PolicyEnvelope",
+    "version": "1.0.0",
+    "description": "Policy overlays for civic governance"
+  },
+  "schema": {
+    "type": "object",
+    "required": ["layerId", "policyDirective", "dignityCompliance", "hash"],
+    "properties": {
+      "layerId": {"type": "string"},
+      "policyDirective": {
+        "type": "object",
+        "required": ["policyIntent", "temporalSeal", "stakeholderInputs"],
+        "properties": {
+          "policyIntent": {"type": "string"},
+          "temporalSeal": {"type": "string"},
+          "stakeholderInputs": {"type": "array"}
+        }
+      },
+      "dignityCompliance": {"type": "boolean"},
+      "hash": {"type": "string"}
+    }
+  }
+}

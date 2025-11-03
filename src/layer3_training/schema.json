@@ -1,0 +1,25 @@
+{
+  "$metadata": {
+    "name": "Layer3TrainingEnvelope",
+    "version": "1.0.0",
+    "description": "Training specifications exchanged between Layer 2 and Layer 4"
+  },
+  "schema": {
+    "type": "object",
+    "required": ["layerId", "trainingSpec", "dignityCompliance", "hash"],
+    "properties": {
+      "layerId": {"type": "string"},
+      "trainingSpec": {
+        "type": "object",
+        "required": ["dataset", "objectives", "temporalSeal"],
+        "properties": {
+          "dataset": {"type": "object"},
+          "objectives": {"type": "array"},
+          "temporalSeal": {"type": "string"}
+        }
+      },
+      "dignityCompliance": {"type": "boolean"},
+      "hash": {"type": "string"}
+    }
+  }
+}

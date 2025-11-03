@@ -1,0 +1,25 @@
+{
+  "$metadata": {
+    "name": "Layer2ArchitectureEnvelope",
+    "version": "1.0.0",
+    "description": "Architecture plan exchange between Layer 1 and Layer 3"
+  },
+  "schema": {
+    "type": "object",
+    "required": ["layerId", "architecturePlan", "dignityCompliance", "hash"],
+    "properties": {
+      "layerId": {"type": "string"},
+      "architecturePlan": {
+        "type": "object",
+        "required": ["personaGraph", "interfaces", "temporalSeal"],
+        "properties": {
+          "personaGraph": {"type": "array"},
+          "interfaces": {"type": "array"},
+          "temporalSeal": {"type": "string"}
+        }
+      },
+      "dignityCompliance": {"type": "boolean"},
+      "hash": {"type": "string"}
+    }
+  }
+}
