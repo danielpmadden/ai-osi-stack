@@ -104,6 +104,7 @@ All components operate **offline-first** and are engineered to illustrate **desi
 ├── tools/         # CLI utilities for artifact management
 ├── ledger/        # Local integrity ledger
 └── versions/      # Historical releases (non-normative)
+```
 
 # Citation
 ```
