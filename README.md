@@ -8,9 +8,7 @@ This repository curates the authoritative reference implementation and documenta
 
 ### Jurisdictional Neutrality and Interpretive Authority  
 This framework is jurisdiction-neutral and intended for international application.  
-In the event of conflicting legal or linguistic interpretations, interpretive authority SHALL defer  
-to the author’s defined principles of transparency, accountability, and dignity by design —  
-not to localized or translated semantics.
+In the event of conflicting legal or linguistic interpretations, interpretive authority SHALL defer to the author’s defined principles of transparency, accountability, and dignity by design — not to localized or translated semantics.
 
 ## Scope
 
