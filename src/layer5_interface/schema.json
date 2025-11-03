@@ -1,0 +1,27 @@
+{
+  "$metadata": {
+    "name": "Layer5InterfaceEnvelope",
+    "version": "1.0.0",
+    "description": "Interface envelope bridging instruction packets to transport"
+  },
+  "schema": {
+    "type": "object",
+    "required": ["layerId", "headers", "payload", "dignityCompliance", "hash"],
+    "properties": {
+      "layerId": {"type": "string"},
+      "headers": {
+        "type": "object",
+        "required": ["aeipVersion", "temporalSeal", "governanceScope"],
+        "properties": {
+          "aeipVersion": {"type": "string"},
+          "temporalSeal": {"type": "string"},
+          "personaSignature": {"type": "object"},
+          "governanceScope": {"type": "string"}
+        }
+      },
+      "payload": {"type": "object"},
+      "dignityCompliance": {"type": "boolean"},
+      "hash": {"type": "string"}
+    }
+  }
+}

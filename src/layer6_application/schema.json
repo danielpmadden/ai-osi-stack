@@ -1,0 +1,25 @@
+{
+  "$metadata": {
+    "name": "Layer6ApplicationEnvelope",
+    "version": "1.0.0",
+    "description": "Application responses and artifact descriptors"
+  },
+  "schema": {
+    "type": "object",
+    "required": ["layerId", "applicationResponse", "dignityCompliance", "hash"],
+    "properties": {
+      "layerId": {"type": "string"},
+      "applicationResponse": {
+        "type": "object",
+        "required": ["serviceOutput", "temporalSeal"],
+        "properties": {
+          "serviceOutput": {"type": "object"},
+          "temporalSeal": {"type": "string"},
+          "aeipVersion": {"type": "string"}
+        }
+      },
+      "dignityCompliance": {"type": "boolean"},
+      "hash": {"type": "string"}
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "ITP": {
+    "id": "itp-demo-1",
+    "version": "1.0",
+    "source": "persona-A",
+    "personaId": "persona-A",
+    "timestamp": "2024-01-01T00:00:00+00:00",
+    "hash": "demo-hash",
+    "dignityCompliance": true,
+    "objective": "demo",
+    "constraints": ["safety"],
+    "evaluationCriteria": ["accuracy"]
+  }
+}
