@@ -1,11 +1,3 @@
-© 2025 Daniel P. Madden  
-Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
-
-> ## Normative Language Notice
-> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
-> “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
-> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
-
 # The AI OSI Stack: Version 4 (Expanded)
 ## A Governance Blueprint for Scalable and Trusted AI
 - **Author:** Daniel P. Madden  
@@ -77,4 +69,9 @@ This repository, including the canonical documents and blueprint implementation,
 
 ---
 
-This repository consolidates five years of independent research on accountable AI design. It is released as an open blueprint for collective stewardship and future standardization.
+This repository consolidates years of independent research on accountable AI design. It is released as an open blueprint for collective stewardship and future standardization.
+
+> ## Normative Language Notice
+> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
+> “SHALL” denotes mandatory requirements, “SHOULD” denotes strong recommendations, and “MAY” denotes optional practices.
+> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
