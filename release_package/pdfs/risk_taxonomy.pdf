@@ -1,0 +1,218 @@
+%PDF-1.4
+%
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R] /Count 2 >>
+endobj
+3 0 obj
+
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 8 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2425 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+( 2025 Daniel P. Madden) Tj
+T*
+(**License:** CC BY-NC-ND 4.0) Tj
+T*
+T*
+(# AI OSI Stack  Condensed Risk Taxonomy) Tj
+T*
+(**Author:** Daniel P. Madden) Tj
+T*
+(**Version:** v4  Blueprint Integration) Tj
+T*
+(**Date:** November 2025) Tj
+T*
+T*
+(> ## Normative Language Notice) Tj
+T*
+(> This document uses normative language consistent with ISO/IEC 42010 and NIST) Tj
+T*
+(conventions.) Tj
+T*
+(> SHALL denotes mandatory requirements, SHOULD denotes strong recommendations, and) Tj
+T*
+(MAY denotes optional practices.) Tj
+T*
+(> Interpretations SHALL preserve authorial intent: layered accountability, epistemic) Tj
+T*
+(integrity, and human dignity as binding design constraints.) Tj
+T*
+T*
+(## 1. Layer 1  Physical and Compute Substrate) Tj
+T*
+(- **Risk Themes:** Hardware tampering, supply chain disruption, resilience degradation.) Tj
+T*
+(- **Sentinel Indicators:** Facility access anomalies, unscheduled firmware changes, energy) Tj
+T*
+(draw deviations.) Tj
+T*
+(- **Primary Controls:** Certified facility audits, redundant energy governance, tamper-) Tj
+T*
+(evident custody logs.) Tj
+T*
+(- **Required Evidence:** GDS section L1, DRR infrastructure appendix, ILE temporal seals) Tj
+T*
+(for facility inspections.) Tj
+T*
+T*
+(## 2. Layer 2  Data Stewardship) Tj
+T*
+(- **Risk Themes:** Data poisoning, consent erosion, epistemic contamination.) Tj
+T*
+(- **Sentinel Indicators:** Provenance gaps, unexplained distribution shifts, contested) Tj
+T*
+(consent revocations.) Tj
+T*
+(- **Primary Controls:** Consent traceability ledgers, dataset review boards, epistemic) Tj
+T*
+(hygiene playbooks.) Tj
+T*
+(- **Required Evidence:** ITP provenance bundles, DRR data stewardship summaries, AEIP) Tj
+T*
+(lineage signatures.) Tj
+T*
+T*
+(## 3. Layer 3  Model Development) Tj
+T*
+(- **Risk Themes:** Bias amplification, evaluation blind spots, adversarial regressions.) Tj
+T*
+(- **Sentinel Indicators:** Diverging fairness metrics, untested safety scenarios, failed) Tj
+T*
+(regression thresholds.) Tj
+T*
+(- **Primary Controls:** Composite evaluation harnesses, adversarial benchmarking cadences,) Tj
+T*
+(persona-aligned regression suites.) Tj
+T*
+(- **Required Evidence:** OAM evaluation actions, GDS validation annex, DRR design) Tj
+T*
+(decisions.) Tj
+T*
+T*
+(## 4. Layer 4  Instruction and Control) Tj
+T*
+(- **Risk Themes:** Prompt injection, persona drift, affect misalignment, refusal) Tj
+T*
+(degradation.) Tj
+T*
+ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 8 0 R >> >> /Contents 7 0 R >>
+endobj
+7 0 obj
+<< /Length 2442 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+(- **Sentinel Indicators:** Persona mismatch alerts, refusal override logs, affect boundary) Tj
+T*
+(excursions.) Tj
+T*
+(- **Primary Controls:** Persona mandate enforcement, refusal logic penetration testing,) Tj
+T*
+(affect boundary audits.) Tj
+T*
+(- **Required Evidence:** ITP instruction traces, DRR persona matrices, GDS instruction) Tj
+T*
+(governance statements.) Tj
+T*
+T*
+(## 5. Layer 5  Reasoning Exchange and Interface) Tj
+T*
+(- **Risk Themes:** Ledger desynchronization, packet replay, counter-signature gaps,) Tj
+T*
+(handshake tampering.) Tj
+T*
+(- **Sentinel Indicators:** Hash mismatches, delayed acknowledgements, anomalous replay) Tj
+T*
+(counts.) Tj
+T*
+(- **Primary Controls:** AEIP handshake validation, deterministic replay checkpoints,) Tj
+T*
+(cross-node quorum review.) Tj
+T*
+(- **Required Evidence:** ILE handshake bundles, OAM remediation logs, AEIP transcript) Tj
+T*
+(archives.) Tj
+T*
+T*
+(## 6. Layer 6  Deployment and Integration) Tj
+T*
+(- **Risk Themes:** Runtime drift, integration conflicts, incident opacity.) Tj
+T*
+(- **Sentinel Indicators:** Unauthorized configuration changes, failed deployment gates,) Tj
+T*
+(unreported incidents.) Tj
+T*
+(- **Primary Controls:** Change gating with governance approvals, blue/green stewardship) Tj
+T*
+(protocols, incident rehearsal cadences.) Tj
+T*
+(- **Required Evidence:** TRR release attestations, OAM incident records, ILE change) Tj
+T*
+(approvals.) Tj
+T*
+T*
+(## 7. Layer 7  Governance Publication) Tj
+T*
+(- **Risk Themes:** Delayed disclosure, accountability gaps, legitimacy erosion.) Tj
+T*
+(- **Sentinel Indicators:** Missed publication cadences, stakeholder complaints,) Tj
+T*
+(inconsistent disclosure metadata.) Tj
+T*
+(- **Primary Controls:** Public disclosure schedules, multi-stakeholder review councils,) Tj
+T*
+(archival notarization.) Tj
+T*
+(- **Required Evidence:** GDS transparency packs, ILE publication proofs, custodial meeting) Tj
+T*
+(minutes.) Tj
+T*
+T*
+(## 8. Cross-Cutting Dynamics) Tj
+T*
+(- **Temporal Integrity:** Validity windows SHALL be enforced with temporal seals and) Tj
+T*
+(quarterly audits.) Tj
+T*
+(- **Custodianship:** Governance councils SHALL document every change request, remediation,) Tj
+T*
+(and escalation in AEIP-compatible ledgers.) Tj
+T*
+(- **Human Dignity:** Affective constraint modules SHALL be monitored for erosion;) Tj
+T*
+(violations trigger immediate OAM issuance and persona retraining.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 8
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000127 00000 n 
+0000000143 00000 n 
+0000000269 00000 n 
+0000002746 00000 n 
+0000002872 00000 n 
+trailer
+<< /Size 8 /Root 1 0 R >>
+startxref
+5366
+%%EOF
