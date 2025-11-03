@@ -1,0 +1,27 @@
+{
+  "$metadata": {
+    "name": "Layer4InstructionEnvelope",
+    "version": "1.0.0",
+    "description": "Instruction packets for AEIP transport"
+  },
+  "schema": {
+    "type": "object",
+    "required": ["layerId", "instructionPacket", "hash"],
+    "properties": {
+      "layerId": {"type": "string"},
+      "instructionPacket": {
+        "type": "object",
+        "required": ["intent", "temporalSeal", "aeipVersion", "dignityCompliance", "payload"],
+        "properties": {
+          "intent": {"type": "string"},
+          "temporalSeal": {"type": "string"},
+          "aeipVersion": {"type": "string"},
+          "governanceScope": {"type": "string"},
+          "dignityCompliance": {"type": "boolean"},
+          "payload": {"type": "object"}
+        }
+      },
+      "hash": {"type": "string"}
+    }
+  }
+}
