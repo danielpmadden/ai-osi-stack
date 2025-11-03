@@ -1,0 +1,55 @@
+{
+  "$metadata": {
+    "name": "Integrated Ledger Entry",
+    "version": "1.0.0",
+    "description": "Ledger entry capturing artifact provenance, AEIP handshake digest, and governance clause references."
+  },
+  "schema": {
+    "type": "object",
+    "required": [
+      "id",
+      "version",
+      "source",
+      "personaId",
+      "timestamp",
+      "hash",
+      "dignityCompliance",
+      "artifactType",
+      "aeipDigest",
+      "governanceClauses"
+    ],
+    "properties": {
+      "id": {"type": "string"},
+      "version": {"type": "string"},
+      "source": {"type": "string"},
+      "personaId": {"type": "string"},
+      "timestamp": {"type": "string"},
+      "hash": {"type": "string"},
+      "hashAlgorithm": {"type": "string"},
+      "temporalSeal": {"type": "string"},
+      "aeipVersion": {"type": "string"},
+      "governanceScope": {"type": "string"},
+      "dignityCompliance": {"type": "boolean"},
+      "artifactType": {"type": "string"},
+      "artifactRef": {"type": "string"},
+      "aeipDigest": {
+        "type": "object",
+        "required": ["handshakeId", "steps", "finalHash"],
+        "properties": {
+          "handshakeId": {"type": "string"},
+          "steps": {
+            "type": "array",
+            "items": {"type": "string"}
+          },
+          "finalHash": {"type": "string"}
+        }
+      },
+      "governanceClauses": {
+        "type": "array",
+        "items": {"type": "string"}
+      },
+      "ledgerIndex": {"type": "integer"},
+      "personaSignature": {"type": "object"}
+    }
+  }
+}

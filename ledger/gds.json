@@ -1,0 +1,25 @@
+{
+  "dignityCompliance": true,
+  "directives": [
+    {
+      "actions": [
+        "Run pytest suite prior to archival"
+      ],
+      "controlId": "L5-AEIP-01",
+      "metrics": [
+        "handshake.success.rate"
+      ],
+      "severity": "moderate",
+      "title": "Maintain offline handshake integrity"
+    }
+  ],
+  "hash": "4ca996c8c9089f5e953bcf43e74a8c03f74e310f67e4e29fe7447ed3c918a74010793fccee4b5def19ece1c506eed69747452a51df87c04bae495ca5ec7ab37a",
+  "id": "gds-2025-11-03T16:29:59.094253+00:00",
+  "oversightBody": "Blueprint Governance Council",
+  "personaId": "persona.generator",
+  "reviewCadence": "Quarterly",
+  "source": "blueprint.release",
+  "temporalSeal": "2025-11-03T16:29:59.094267+00:00::523d2ecadea4df0ff4931a658224574666cf41421b6c88d547ba2308d9af232c737f96936126c1b3b44475225a5082757c377fc6a606061daf05b1bc9ea2382c",
+  "timestamp": "2025-11-03T16:29:59.094253+00:00",
+  "version": "1.0"
+}

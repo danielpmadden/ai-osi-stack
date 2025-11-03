@@ -1,0 +1,119 @@
+%PDF-1.4
+%
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [4 0 R] /Count 1 >>
+endobj
+3 0 obj
+
+endobj
+4 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 6 0 R >> >> /Contents 5 0 R >>
+endobj
+5 0 obj
+<< /Length 2941 >>
+stream
+BT
+/F1 12 Tf
+14 TL
+1 0 0 1 72 720 Tm
+( 2025 Daniel P. Madden) Tj
+T*
+(**License:** CC BY-NC-ND 4.0) Tj
+T*
+T*
+(# AI OSI Stack  Implementation Notes) Tj
+T*
+(**Author:** Daniel P. Madden) Tj
+T*
+(**Version:** v4  Blueprint Integration) Tj
+T*
+(**Date:** November 2025) Tj
+T*
+T*
+(> ## Normative Language Notice) Tj
+T*
+(> This document uses normative language consistent with ISO/IEC 42010 and NIST) Tj
+T*
+(conventions.) Tj
+T*
+(> SHALL denotes mandatory requirements, SHOULD denotes strong recommendations, and) Tj
+T*
+(MAY denotes optional practices.) Tj
+T*
+(> Interpretations SHALL preserve authorial intent: layered accountability, epistemic) Tj
+T*
+(integrity, and human dignity as binding design constraints.) Tj
+T*
+T*
+(## 1. Design Philosophy  Design Now, Instantiate Later) Tj
+T*
+(The AI OSI Stack operates as a governance-first reference implementation. Architectural) Tj
+T*
+(intent is finalized in this blueprint; operational deployment is deferred until custodial) Tj
+T*
+(councils confirm readiness. Each module, schema, and artifact is engineered to demonstrate) Tj
+T*
+(how stewardship evidence MAY be produced, validated, and archived. Implementers SHALL) Tj
+T*
+(treat the codebase as a canonical rehearsal environment rather than a production network.) Tj
+T*
+T*
+(## 2. Offline-Only Execution Constraints) Tj
+T*
+(All tooling, tests, and examples SHALL execute without network access. Offline execution) Tj
+T*
+(preserves audit reproducibility, protects unfinished persona credentials, and prevents) Tj
+T*
+(accidental data egress. Where integrations with external systems are envisioned \(e.g.,) Tj
+T*
+(Persona-PKI, Open Governance Registry\), the repository provides placeholders and schema) Tj
+T*
+(contracts only. Operators SHALL stage integrations in isolated sandboxes and SHALL NOT) Tj
+T*
+(connect this blueprint to live infrastructure without explicit custodial authorization.) Tj
+T*
+T*
+(## 3. Artifact Integrity and Temporal Governance) Tj
+T*
+(Schemas within `/schemas/` and validation logic under `/tests/` enforce deterministic) Tj
+T*
+(hashing, temporal seals, and cross-layer traceability. Generated artifacts SHALL include) Tj
+T*
+(SHA3-512 fingerprints, persona identifiers, and timestamps bound to UTC. Temporal) Tj
+T*
+(legitimacy reviews MAY be rehearsed using the provided ledger utilities; actual regulatory) Tj
+T*
+(submissions SHALL reference the canonical documents in `/source/` and `/docs/`.) Tj
+T*
+T*
+(## 4. Authorship Statement) Tj
+T*
+(All original research, specifications, and blueprint logic remain authored by **Daniel P.) Tj
+T*
+(Madden**. This repository is released to preserve the canonical architecture for future) Tj
+T*
+(standardization and public stewardship. Derivative works SHALL obtain explicit consent) Tj
+T*
+(prior to modification. Attribution SHALL reference the title *The AI OSI Stack: Version 4) Tj
+T*
+(\(Expanded  Blueprint Integration Release\)* and SHALL cite the Zenodo DOI once issued.) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000015 00000 n 
+0000000064 00000 n 
+0000000121 00000 n 
+0000000137 00000 n 
+0000000263 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+3256
+%%EOF
