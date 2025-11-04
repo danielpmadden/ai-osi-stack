@@ -132,9 +132,10 @@ Download the canonical 73-page PDF directly from Zenodo:
 Earlier versions remain in `/versions/` and on Zenodo for historical comparison only.
 
 ## Normative Language Notice
-This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.  
-"SHALL" denotes mandatory requirements, "SHOULD" denotes strong recommendations, and "MAY" denotes optional practices.  
-Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions. "SHALL" denotes mandatory requirements, "SHOULD" denotes strong recommendations, and "MAY" denotes optional practices. Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+
+## Note on Minor Inconsistencies
+This canonical edition retains a few minor typographic and cross-reference inconsistencies that appeared during the final LaTeX build. They do not affect the technical accuracy or normative intent of the specification and are preserved intentionally as evidence of human authorship and iterative development. Subsequent releases will maintain this practice of transparent revision to document the Stack’s evolution in real time.
 
 ## Header & License
 Copyright © 2025 Daniel P. Madden  
