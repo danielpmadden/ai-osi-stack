@@ -118,14 +118,27 @@ Maintained by a single independent researcher. Blueprint-complete reference impl
 This work is distributed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/).
 
 # Acknowledgements
-> “Developed as an open architecture for accountable intelligence. Released for public stewardship and future standardization.”
+Developed as an open architecture for accountable intelligence. Released for public stewardship and future standardization.
 
 # Header & License
 
 Copyright © 2025 Daniel P. Madden  
 Licensed under CC BY-NC-ND 4.0  
 
-> ## Normative Language Notice
-> This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.  
-> "SHALL" denotes mandatory requirements, "SHOULD" denotes strong recommendations, and "MAY" denotes optional practices.  
-> Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
+---
+
+# Canonical Version Notice
+Versions 1–3 of *The AI OSI Stack* (2025-09 to 2025-10) were open drafts released under **CC BY 4.0** and are retained for archival transparency only. They SHALL NOT be used for governance or implementation. All current and future work MUST reference:
+
+**Version 4.0 — Expanded Canonical Blueprint Integration**  
+DOI [10.5281/zenodo.17517241](https://doi.org/10.5281/zenodo.17517241)  •  CC BY-NC-ND 4.0  
+
+Download the canonical 73-page PDF directly from Zenodo:  
+[Download AI OSI Stack v4 (Canonical)](https://zenodo.org/record/17517241)
+
+Earlier versions remain in `/versions/` and on Zenodo for historical comparison only.
+
+# Normative Language Notice
+This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.  
+"SHALL" denotes mandatory requirements, "SHOULD" denotes strong recommendations, and "MAY" denotes optional practices.  
+Interpretations of this document must preserve authorial intent — fidelity to layered accountability, epistemic integrity, and human dignity as design constraints.
