@@ -4,10 +4,10 @@ AI OSI Stack v5 treats security as governance infrastructure rather than a perim
 
 # Key principles:
 
-## Integrity First — Every release, ledger entry, and artifact is cryptographically signed (SHA-512 + GPG).
+- Integrity First — Every release, ledger entry, and artifact is cryptographically signed (SHA-512 + GPG).
 
-## Transparency with Consent — Disclosure is proportionate and privacy-preserving (“Transparency must never become surveillance”).
+- Transparency with Consent — Disclosure is proportionate and privacy-preserving (“Transparency must never become surveillance”).
 
-## Custodianship over Ownership — Maintainers act as trustees of the public record.
+- Custodianship over Ownership — Maintainers act as trustees of the public record.
 
-## Right-to-Opacity and Human Dignity remain non-revocable interpretive principles.
+- Right-to-Opacity and Human Dignity remain non-revocable interpretive principles.
