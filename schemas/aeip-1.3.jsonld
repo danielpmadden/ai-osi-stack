@@ -1,0 +1,71 @@
+{
+  "@context": {
+    "aeip": "https://danielpmadden.com/ns/aeip#",
+    "schema": "http://schema.org/",
+    "dct": "http://purl.org/dc/terms/",
+    "security": "https://w3id.org/security#",
+    "privacy": "https://danielpmadden.com/ns/privacy#",
+    "consent": "https://danielpmadden.com/ns/consent#"
+  },
+  "@id": "aeip:AEIPArtifact",
+  "@type": "@id",
+  "required": [
+    "aeip:artifactId",
+    "aeip:version",
+    "aeip:lifecycleStage",
+    "privacy:processingBasis",
+    "privacy:dataCategories",
+    "consent:record",
+    "consent:scope"
+  ],
+  "definitions": {
+    "aeip:artifactId": {
+      "@type": "schema:Text",
+      "description": "Deterministic identifier for the AEIP governed artifact."
+    },
+    "aeip:version": {
+      "@type": "schema:Text",
+      "description": "Semantic version of the artifact aligned to Update Plans."
+    },
+    "aeip:lifecycleStage": {
+      "@type": "schema:Text",
+      "description": "Canonical lifecycle state name (design, validation, deployment, archive)."
+    },
+    "aeip:layerPath": {
+      "@type": "schema:Text",
+      "description": "Stack layer lineage for the artifact, expressed as dotted path (e.g., L5.RX)."
+    },
+    "aeip:receipts": {
+      "@type": "@id",
+      "description": "Linked list of attested receipts maintained within the hermeneutic ledger."
+    },
+    "privacy:processingBasis": {
+      "@type": "schema:Text",
+      "description": "Lawful basis for processing personal data, including article references where applicable."
+    },
+    "privacy:dataCategories": {
+      "@type": "schema:Text",
+      "description": "Enumerated category list describing personal data classes that intersect with the artifact."
+    },
+    "privacy:retentionSchedule": {
+      "@type": "schema:Text",
+      "description": "Retention period specification referencing human rights safeguards."
+    },
+    "privacy:mitigations": {
+      "@type": "schema:Text",
+      "description": "Implemented mitigations that limit exposure and enable redress."
+    },
+    "consent:record": {
+      "@type": "schema:URL",
+      "description": "Location of the cryptographically sealed consent log supporting the artifact."
+    },
+    "consent:scope": {
+      "@type": "schema:Text",
+      "description": "Narrative definition of the consent envelope, including withdrawal pathways."
+    },
+    "consent:status": {
+      "@type": "schema:Text",
+      "description": "Current consent status (active, lapsed, revoked, superseded)."
+    }
+  }
+}
