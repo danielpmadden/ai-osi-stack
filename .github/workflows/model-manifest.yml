@@ -1,0 +1,59 @@
+name: Model Card Publishing
+
+on:
+  push:
+    paths:
+      - 'models/**'
+      - 'src/models/**'
+      - '.github/workflows/model-manifest.yml'
+  workflow_dispatch:
+
+jobs:
+  generate-model-card:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build model card payload
+        run: |
+          mkdir -p governance/models
+          cat <<'JSON' > governance/models/modelcard.json
+          {
+            "model_name": "example-transformer",
+            "model_version": "${{ github.sha }}",
+            "training_data": {
+              "summary": "Synthetic sample for automation",
+              "size": "1.2M records",
+              "sources": ["s3://datasets/training-corpus"]
+            },
+            "evaluation": {
+              "metrics": ["accuracy:0.92", "f1:0.89"],
+              "methodology": "CI smoke evaluation",
+              "limitations": "Synthetic placeholder"
+            },
+            "reproducibility": {
+              "docker_image": "ghcr.io/${{ github.repository }}/training:${{ github.sha }}",
+              "commit": "${{ github.sha }}",
+              "hardware": "A10G"
+            }
+          }
+          JSON
+      - name: Generate manifest
+        run: |
+          python -m tools.governance.manifest_builder \
+            --artifact-type model-card \
+            --layer L3 \
+            --custodian "ml-foundation" \
+            --context-uri "https://github.com/${{ github.repository }}" \
+            --payload governance/models/modelcard.json \
+            --payload-uri "s3://governance/${{ github.repository }}/models/modelcard.json" \
+            --schema-ref modelcard.schema.json \
+            --tags model card reproducibility \
+            --extra-path governance/models/modelcard.json \
+            --output governance/models/manifest.json
+      - name: Commit manifest
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(governance): refresh model card manifest"
+          file_pattern: governance/models/**

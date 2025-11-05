@@ -1,0 +1,59 @@
+name: Incident Report Automation
+
+on:
+  workflow_dispatch:
+    inputs:
+      incident_id:
+        description: External incident identifier
+        required: true
+      severity:
+        description: Severity label
+        required: true
+      status:
+        description: Current status
+        required: true
+      description:
+        description: Summary of the incident
+        required: true
+
+jobs:
+  create-incident-manifest:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build incident payload
+        run: |
+          mkdir -p governance/deployment
+          cat <<'JSON' > governance/deployment/incident_payload.json
+          {
+            "incident_id": "${{ github.event.inputs.incident_id }}",
+            "severity": "${{ github.event.inputs.severity }}",
+            "status": "${{ github.event.inputs.status }}",
+            "timeline": [
+              {
+                "timestamp": "$(date -u +%Y-%m-%dT%H:%M:%SZ)",
+                "description": "${{ github.event.inputs.description }}"
+              }
+            ]
+          }
+          JSON
+      - name: Generate manifest
+        run: |
+          python -m tools.governance.manifest_builder \
+            --artifact-type incident-report \
+            --layer L7 \
+            --custodian "resilience-team" \
+            --context-uri "https://github.com/${{ github.repository }}" \
+            --payload governance/deployment/incident_payload.json \
+            --payload-uri "s3://governance/${{ github.repository }}/deployment/incident_${{ github.event.inputs.incident_id }}.json" \
+            --schema-ref incident_report.schema.json \
+            --tags incident response pagerduty \
+            --extra-path governance/deployment/incident_payload.json \
+            --output governance/deployment/incident_manifest.json
+      - name: Commit manifest
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(governance): record incident ${{ github.event.inputs.incident_id }}"
+          file_pattern: governance/deployment/incident_*

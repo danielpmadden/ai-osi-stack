@@ -1,0 +1,57 @@
+name: Data Stewardship Provenance
+
+on:
+  push:
+    paths:
+      - 'src/data/**'
+      - '.github/workflows/data-provenance.yml'
+  workflow_dispatch:
+
+jobs:
+  emit-ccm:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Export pipeline metadata
+        run: |
+          mkdir -p governance/data
+          cat <<'JSON' > governance/data/provenance.json
+          {
+            "datasets": [
+              {
+                "name": "training-corpus",
+                "uri": "s3://datasets/training-corpus",
+                "governance_tier": "tier-2",
+                "update_frequency": "daily",
+                "quality_checks": ["schema", "pii-scan"]
+              },
+              {
+                "name": "evaluation-set",
+                "uri": "s3://datasets/eval",
+                "governance_tier": "tier-1",
+                "update_frequency": "weekly",
+                "quality_checks": ["drift"]
+              }
+            ]
+          }
+          JSON
+      - name: Generate manifest
+        run: |
+          python -m tools.governance.manifest_builder \
+            --artifact-type data-stewardship \
+            --layer L2 \
+            --custodian "data-office" \
+            --context-uri "https://github.com/${{ github.repository }}" \
+            --payload governance/data/provenance.json \
+            --payload-uri "s3://governance/${{ github.repository }}/data/provenance.json" \
+            --schema-ref ccm.schema.json \
+            --tags data provenance ccm \
+            --extra-path governance/data/provenance.json \
+            --output governance/data/manifest.json
+      - name: Commit manifest
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(governance): update data stewardship manifest"
+          file_pattern: governance/data/**
