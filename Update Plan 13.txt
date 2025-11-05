@@ -1,0 +1,85 @@
+Update Plan 13 — “Federation & Policy Partnership Edition”
+
+“Architecture becomes institution when it welcomes others.”
+
+1 · Purpose
+
+To open the AI OSI Stack v5 to structured collaboration with policymakers, standards bodies, and civil-society institutions — beginning with the European Union — while maintaining canonical control, rights protection, and semantic integrity.
+
+2 · Objectives
+
+Establish legitimate pathways for EU policy engagement and cooperative research.
+
+Create a Federated Custodianship Framework allowing institutions to contribute without fragmenting the canonical stack.
+
+Define a Policy Partnership Charter (PPC) compatible with EU AI Act Article 52, ISO 42001, and NIST RMF governance principles.
+
+Preserve personal authorship while preparing for eventual institutional succession (“handing over the keys”).
+
+3 · Federated Custodianship Framework
+
+Normative additions (Layer 7 & Appendix I):
+
+Federated Partner Definition —
+Federated Custodian = an accredited public or academic body contributing to canonical maintenance under AEIP oversight.
+
+Membership Criteria —
+• Sign the Policy Partnership Charter.
+• Maintain a Civic Charter (L0) and Custodial Self-Audit (L7).
+• Agree to AEIP fidelity tests and Contextual Transparency Tier II disclosure.
+
+Governance Contract —
+Each partner SHALL publish a “Federated Contribution Record” (FCR) containing:
+• scope of input (policy, technical, educational);
+• timestamp & signature;
+• canonical cross-hash link to v5 ledger.
+
+Non-Fragmentation Clause —
+Federated partners MAY extend layers locally but SHALL not redefine core clauses or license terms.
+
+4 · Policy Partnership Charter (PPC)
+
+A new normative artifact under /docs/Policy-Partnership-Charter.md
+
+Sections:
+
+Purpose & Scope — bridging AI OSI governance with public policy.
+
+EU Alignment — explicit cross-reference to EU AI Act Recitals 9, 14, Annex IV, and Charter Arts 7–8.
+
+Shared Values — dignity as constraint, Right-to-Opacity, Transparency ≠ Surveillance.
+
+Engagement Mechanism — biannual joint review workshops and co-authored interpretive notes.
+
+Succession Intent — acknowledging that the canonical author may delegate stewardship to a multi-institutional consortium upon ratification of v6.
+
+5 · EU Engagement Deliverables
+Deliverable	Description	Alignment
+EU Policy Outreach Pack (/docs/EU-Outreach-Pack/)	Brief, letter, and narrative summary for DG CONNECT, ENISA, and EDPS.	EU AI Act Art. 52 Transparency
+Cross-Framework Mapping 2.0	Update Annex IV Crosswalk + EU Rights Matrix for v5 semantics.	GDPR & EU Charter
+Federation Pilot MOU	Template Memorandum of Understanding for research or policy co-development.	ISO 42001 Clauses 4–10
+Custodial Succession White Paper	Public statement on future handover and institutional continuity.	OECD Trustworthy AI Principles
+6 · Layer and Appendix Integrations
+
+Layer 0 (Civic Mandate) → Add “Federated Consent Clause”: public bodies joining the Stack must demonstrate democratic authorization.
+
+Layer 7 (Governance Publication) → Add “Policy Interface Channel” for regulatory submissions and joint audits.
+
+Appendix I (Custodianship & Succession) → Add “Federation Protocol and Key Transfer Process.”
+
+Appendix N (Human-Rights Safeguards) → Confirm EU Charter alignment as baseline for all partnerships.
+
+7 · Communications and Outreach
+
+Draft Epilogue Addition titled “Toward Shared Stewardship — An Open Invitation to Policymakers.”
+Language emphasizes collaboration, succession readiness, and collective ownership of trust.
+
+Launch official announcement on aiosi.org and Zenodo v5 snapshot update.
+
+Offer briefings to DG CONNECT, ENISA, and Council of Europe AI & Human Rights Unit.
+
+8 · Repository Additions
+/docs/Policy-Partnership-Charter.md
+/docs/EU-Outreach-Pack/ (brief, letter, one-pager)
+/appendices/Appendix-O-Federated-Governance.md
+/tools/federation-validator.py (checks AEIP + FCR conformity)
