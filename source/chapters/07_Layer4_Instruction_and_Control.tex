@@ -1,23 +1,87 @@
-% AI OSI Stack v5 — Canonical Edition
-% Daniel P. Madden — Independent AI Researcher
-% Created: 2025-11-04
-% File: 07_Layer4_Instruction_and_Control.tex
-% Purpose: Chapter 07 rewritten for Layer 4 Instruction and Control Governance
+% AI OSI Stack v5 — Canonical Deepbuild
+% Chapter 07 — Layer 4: Instruction and Control
+% Sources: Version 5 Draft, Persona Architecture v2, AEIP v1, Update Plans 5, 8, Appendix G
+
 \narrative{
-Layer 4 governs how systems are instructed, configured, and restrained. Building on persona architecture research and Update Plan 10 insights, the narrative details how instructions, prompts, control policies, and operational guardrails are orchestrated to respect civic mandates. Custodians establish instruction taxonomies that differentiate between civic services, administrative tasks, escalation protocols, and prohibited behaviours. Persona simulations are used to test how different user archetypes interact with the system, ensuring that the controls protect vulnerable communities while preserving utility.
+Layer 4 governs how humans and systems communicate through instructions, prompts, control policies, and persona interfaces. It
+ensures that operational directives align with civic mandates, ethical charters, and model capabilities. The narrative explores how
+instruction governance prevents misuse, preserves agency, and enables contestable control over intelligent systems.
+}
 
-\subsection*{Control Plane Design}
-Instruction governance involves version-controlled policy sets, moderation rules, and interface constraints stored in AEIP instruction bundles. Developers collaborate with oversight teams to design fallback behaviours, manual review triggers, and response templates that ensure the system can be interrupted or redirected by human operators. The narrative highlights control rooms where operators rehearse incident scenarios, verifying that instructions remain interpretable and contestable.
-
-\subsection*{Alignment and Appeals}
-Layer 4 serves as the bridge between model capabilities and civic expectations. Instructions incorporate ethical charter requirements, data stewardship limitations, and model assurance constraints. Appeals pathways are embedded into the interface: when a user contests a decision, the system logs the instruction context, model outputs, and human interventions for review by oversight forums described in Appendix H §2 and Appendix N §1. Transparency is maintained without surveillance by publishing redacted instruction catalogs that citizens can inspect to understand permitted behaviours.
+\section*{Instruction Taxonomy}
+\narrative{
+Instruction governance begins with a taxonomy that categorises prompts, commands, supervisory policies, and automated workflows.
+Persona Architecture v2 enriches this taxonomy by defining persona roles, authority scopes, and escalation paths. The narrative
+explains how Update Plan 8 aligned instruction categories with AEIP evidence requirements to ensure traceability.
 }
 \normative{
-\begin{itemize}
-  \item Instruction policies, prompts, and control rules SHALL be documented, versioned, and linked to corresponding ethical and data stewardship obligations within AEIP instruction governance bundles (AEIP §O.4).
-  \item Persona-based testing suites SHALL be executed prior to instruction changes; results SHALL record impacts on equity, accessibility, and safety, and SHALL be published in Governance Disclosure Systems with accessible summaries.
-  \item Manual override, escalation, and shutdown procedures SHALL be defined, rehearsed, and logged; failure to maintain operable controls SHALL be treated as a critical compliance breach requiring immediate remediation under Appendix B §3.
-  \item Appeals and dispute records SHALL capture instruction context, decision rationale, and outcome resolutions, ensuring cross-references to Appendix H §2 oversight forums and Appendix N §1 civic participation channels; absence of such records SHALL invalidate claims of compliance.
-\end{itemize}
+Organizations SHALL define instruction taxonomies covering human-issued prompts, automated routines, and persona-mediated actions.
+Each category MUST include allowed actions, prohibited actions, and escalation procedures. Taxonomies SHALL be recorded in (AEIP
+§O.3) and SHALL be reviewed alongside ethical charters. Implementers SHALL NOT deploy instruction channels lacking taxonomy
+coverage.
 }
+
+\section*{Control Policies and Safeguards}
+\narrative{
+Control policies translate taxonomies into operational safeguards. Policies define guardrails, rate limits, approval workflows, and
+fallback procedures. The narrative describes how community oversight boards help configure policies to prevent coercive or harmful
+interactions. Layer 4 ensures that control rests with authorised actors and remains contestable.
+}
+\normative{
+Control policies SHALL specify approval requirements, monitoring triggers, and shutoff capabilities. Policies MUST be mapped to
+charter clauses and SHALL be tested before activation. AEIP (AEIP §O.4) SHALL log policy configurations, change histories, and test
+results. Custodians SHALL provide civic auditors with the ability to inspect and simulate control policies without risking live
+operations.
+}
+
+\section*{Persona Governance}
+\narrative{
+Personas mediate interactions between communities and systems. Persona Architecture v2 defines persona capabilities, scripts, and
+limits. The narrative illustrates how personas represent civic bodies, deliver plain-language explanations, and enforce community
+constraints during dialogue with AI systems.
+}
+\normative{
+Persona definitions SHALL include authority scope, behavioural guidelines, language profiles, and accountability hooks. Personas
+MUST refuse instructions that violate mandates or charters and SHALL document refusals in (AEIP §O.4). Custodians SHALL train
+personas on community-approved corpora and SHALL monitor for drift or misuse. Community representatives SHALL periodically review
+persona transcripts to ensure fidelity.
+}
+
+\section*{Prompt and Response Logging}
+\narrative{
+Layer 4 insists on detailed logging of prompts, responses, and control actions. Logs enable oversight and remediation without
+exposing sensitive data. The narrative references Appendix G participation rights, ensuring communities can inspect dialogues that
+shape decisions affecting them.
+}
+\normative{
+Instruction logs SHALL capture prompt metadata, response summaries, decision outcomes, and escalation events. Logs MUST respect
+privacy constraints in Appendix E §3, employing redaction or aggregation where necessary. Access to logs SHALL be role-controlled
+and documented in (AEIP §O.5). When logs reveal misuse or harm, incident workflows SHALL activate immediately.
+}
+
+\section*{Human-in-the-Loop Assurance}
+\narrative{
+Human oversight remains central. The narrative depicts control rooms where operators review automated decisions, intervene when
+necessary, and document rationales. Update Plan 5 introduced minimum oversight coverage requirements, ensuring humans remain
+accountable at critical junctures.
+}
+\normative{
+Systems SHALL maintain human-in-the-loop checkpoints for high-risk actions. Oversight roles MUST have authority to pause or override
+operations. AEIP (AEIP §O.3) SHALL record oversight decisions, including rationale and supporting evidence. Training for oversight
+roles SHALL be documented, and rotations SHOULD prevent fatigue or capture. Delegation to automated monitors SHALL require explicit
+charter authorization.
+}
+
+\section*{Appeals and Contestation}
+\narrative{
+Layer 4 ties into civic participation by providing immediate pathways to contest instructions or outcomes. Citizens can flag
+harmful prompts or request review of automated responses. The narrative describes community help desks and digital portals that make
+contestation accessible.
+}
+\normative{
+Instruction channels SHALL provide appeal mechanisms embedded in user interfaces. Appeals MUST be acknowledged within defined
+service levels and SHALL be tracked in (AEIP §O.7). Custodians SHALL communicate outcomes to appellants and SHALL integrate lessons
+into policy updates. Retaliation against appellants SHALL be prohibited and enforced through Appendix B sanctions.
+}
+
 \clearpage

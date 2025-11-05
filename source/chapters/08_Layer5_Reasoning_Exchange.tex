@@ -1,23 +1,87 @@
-% AI OSI Stack v5 — Canonical Edition
-% Daniel P. Madden — Independent AI Researcher
-% Created: 2025-11-04
-% File: 08_Layer5_Reasoning_Exchange.tex
-% Purpose: Chapter 08 rewritten for Layer 5 Reasoning Exchange and Interface Protocol
+% AI OSI Stack v5 — Canonical Deepbuild
+% Chapter 08 — Layer 5: Reasoning Exchange
+% Sources: Version 5 Draft, AEIP v1, Persona Architecture v2, Epistemology by Design v1, Update Plans 6, 10
+
 \narrative{
-Layer 5 manages reasoning exchanges between AI systems, human operators, and civic participants. It implements the AI Epistemic Infrastructure Protocol (AEIP) as the dialogue fabric that allows insights, explanations, and evidence to circulate without eroding privacy. The narrative portrays public service desks, emergency coordination rooms, and research labs where human experts collaborate with AI agents through structured interfaces. Each exchange is logged with contextual metadata—who asked, what was provided, which safeguards were invoked—so that dialogue remains accountable and replayable.
+Layer 5 manages the dialogue between systems, humans, and institutions. Reasoning exchange encompasses deliberation protocols,
+explanation interfaces, and hermeneutic ledgers that capture how decisions are justified. The narrative emphasises that governance
+requires more than accurate outputs; it demands transparent conversations where reasoning can be scrutinised, contested, and
+revised.
+}
 
-\subsection*{Interface Protocols}
-Interfaces are designed to balance usability with verifiability. Interaction schemas define question types, permissible responses, escalation triggers, and redaction rules. AEIP connectors ensure that reasoning steps, supporting data, and model provenance are attached to each response. The narrative highlights how federated partners synchronise their protocols using Appendix N §1 guidance, enabling multi-jurisdictional cooperation while respecting local mandates. Accessibility features ensure that citizens receive explanations in plain language, alternative formats, or translation as needed.
-
-\subsection*{Evidence Circulation}
-Reasoning exchanges fuel oversight. Outputs feed into Governance Disclosure Systems, oversight dashboards, and civic appeal records. Appendix E §3 and Appendix H §2 inform which details can be shared publicly and which must remain redacted to preserve safety or privacy. Update Plans introduced hermeneutic hooks that allow interpretive principles to tag each exchange, clarifying the ethical rationale behind responses. The narrative concludes with a reminder that transparency remains bounded: the protocol reveals enough to empower citizens while guarding against surveillance or misuse.
+\section*{Dialogue Protocols}
+\narrative{
+Dialogue protocols define how reasoning flows across stakeholders. Drawing from Persona Architecture v2 and Epistemology by Design
+v1, protocols include turn-taking rules, evidence citation formats, and escalation procedures. Update Plan 6 emphasised ensuring
+that dialogues remain inclusive and accessible, supporting multilingual and multimodal communication.
 }
 \normative{
-\begin{itemize}
-  \item All reasoning exchanges SHALL be conducted through AEIP-compliant interfaces that capture context, provenance, and safeguard references; logs SHALL be retained in accordance with Appendix E §3 and AEIP §O.3 requirements.
-  \item Explanations provided to citizens, policymakers, or auditors SHALL include verifiable evidence references, redaction rationales, and appeal instructions; omission of these elements SHALL constitute a governance violation requiring remediation.
-  \item Cross-jurisdictional exchanges SHALL document consent, data minimisation measures, and jurisdictional constraints within AEIP exchange bundles, referencing Appendix N §1 coordination agreements.
-  \item Interface updates affecting explanation quality, accessibility, or privacy controls SHALL undergo review by custodial oversight bodies, with decisions recorded in Governance Disclosure Systems and linked to interpretive principles to demonstrate alignment with the non-revocable clause.
-\end{itemize}
+Organizations SHALL formalise reasoning dialogue protocols, specifying participant roles, evidence requirements, and escalation
+paths. Protocols MUST be published and SHALL reference relevant appendices, including Appendix G participation safeguards.
+Implementation details SHALL be documented in (AEIP §O.3). Systems SHALL NOT engage in high-stakes reasoning without an approved
+protocol.
 }
+
+\section*{Hermeneutic Logging}
+\narrative{
+Hermeneutic logs capture the interpretive journey of decision-making. They record questions asked, evidence considered, values
+invoked, and dissent raised. The narrative explains how logs enable retrospective understanding of why a decision was made and how
+it aligned with the civic mandate. Logs also provide material for future training, audits, and amendments.
+}
+\normative{
+Reasoning exchanges SHALL generate hermeneutic logs stored in (AEIP §O.4). Logs MUST include timestamps, participants, evidence
+references, and decision outcomes. Sensitive content SHALL be redacted in accordance with Appendix E §3, with access controls noted
+in AEIP metadata. Custodians SHALL ensure logs are discoverable for oversight and SHALL provide summaries for public review when
+full disclosure would compromise privacy.
+}
+
+\section*{Explanation Interfaces}
+\narrative{
+Explanation interfaces deliver reasoning to audiences in meaningful formats. The narrative explores layered explanations: technical
+details for engineers, legal rationales for policymakers, and accessible narratives for citizens. Persona Architecture v2 supports
+context-aware explanations tailored to community norms.
+}
+\normative{
+Explanation interfaces SHALL present consistent information across audiences while adapting depth and language. Interfaces MUST
+reference charter clauses, mandate obligations, and AEIP evidence IDs. Updates to reasoning or outcomes SHALL trigger interface
+refreshes within defined service windows. Accessibility standards, including support for assistive technologies and multilingual
+content, SHALL be met.
+}
+
+\section*{Deliberative Review}
+\narrative{
+Deliberative review invites communities to evaluate reasoning quality. Citizens, experts, and oversight bodies convene to assess
+whether decisions reflected values, evidence, and rights commitments. The narrative highlights review assemblies documented in
+Update Plan 10, where participants debated trade-offs and recommended adjustments to charters and mandates.
+}
+\normative{
+Deliberative reviews SHALL occur at scheduled intervals and after major incidents. Reviews MUST include diverse stakeholders and
+SHALL be documented in (AEIP §O.6) with agendas, minutes, and outcomes. Recommendations SHALL receive formal responses from
+custodians within 60 days. Failure to conduct reviews SHALL trigger audits under Appendix H oversight provisions.
+}
+
+\section*{Conflict Resolution and Mediation}
+\narrative{
+Reasoning exchange includes structured mediation when disputes arise. Mediators help reconcile conflicting interpretations of data,
+values, or obligations. The narrative discusses mediation frameworks that respect community autonomy and preserve rights.
+}
+\normative{
+Mediation protocols SHALL be established in alignment with Appendix B remediation processes. Mediators MUST be impartial, trained,
+and recorded in (AEIP §O.5). Mediation outcomes SHALL specify whether charters, mandates, or operational policies require updates.
+Parties SHALL receive written summaries, and unresolved disputes MAY escalate to mandate review.
+}
+
+\section*{Continuous Learning}
+\narrative{
+Layer 5 closes the loop by feeding insights back into governance. Lessons from reasoning exchanges inform updates to charters,
+data stewardship, and model design. The narrative emphasises iterative learning, drawing parallels to the living constitution theme
+in later chapters.
+}
+\normative{
+Insights derived from reasoning exchanges SHALL be synthesised into learning reports stored in (AEIP §O.7). Reports MUST highlight
+implications for each preceding layer and SHALL recommend actions or amendments. Custodians SHALL track implementation of learning
+recommendations and SHALL report progress through Governance Publication channels. Neglecting continuous learning SHALL be treated
+as a governance deficiency subject to oversight intervention.
+}
+
 \clearpage
