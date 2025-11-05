@@ -1,19 +1,83 @@
-% AI OSI Stack v5 — Canonical Edition
-% Daniel P. Madden — Independent AI Researcher
-% Created: 2025-11-04
-% File: 03_Layer0_Civic_Mandate.tex
-% Purpose: Chapter 03 rewritten for Layer 0 civic mandate
-\narrative{
-Layer 0 is the civic covenant that authorises every subsequent layer. Consent precedes computation: no model is trained, no dataset is ingested, and no interface is deployed until a community has ratified the mandate that defines purpose, limits, and accountability. The narrative describes councils, cooperatives, or public agencies convening assemblies to deliberate on the intended service, the rights at stake, and the mechanisms of appeal. Version 5 emphasises custodianship as public trust—custodians are not silent administrators but named stewards who hold legal, ethical, and technical responsibilities. Their legitimacy stems from transparent selection, recorded attestations, and recurring renewal rituals documented in AEIP civic bundles.
+% AI OSI Stack v5 — Canonical Deepbuild
+% Chapter 03 — Layer 0: Civic Mandate
+% Sources: Version 5 Draft, Update Plans 1, 4, 7, AEIP v1, Persona Architecture v2
 
-The chapter illustrates how the civic mandate anchors the entire governance architecture. Mandate charters specify lawful bases, equity benchmarks, and anticipated harms. They define how Layer 1’s ethical charter is drafted, how Layer 2’s data stewardship policies are constrained, and how Layers 3–5 prove integrity through evidence. By embedding references to (AEIP §O.4), Appendix H §2, and Appendix N §1, the narrative clarifies that civic oversight, appeals, and escalation forums are not optional extras—they are structural components that convert consent into enforceable power. When the community renews or withdraws consent, the rest of the stack must respond.
+\narrative{
+Layer 0 defines the civic mandate that legitimises every subsequent layer. It codifies how communities authorise, oversee, and
+revoke the use of intelligent systems. The narrative emphasises that without a clear mandate, the stack collapses: technical
+controls lack legitimacy, and transparency risks becoming spectacle. Historical consultations captured in Update Plans 1, 4, and 7
+stress that communities must not merely be informed—they must co-govern. Layer 0, therefore, combines constitutional commitments,
+participatory procedures, and evidence obligations into a single foundational covenant.
+}
+
+\section*{Mandate Formation}
+\narrative{
+Mandates originate in public deliberation. Citizens articulate goals, boundaries, and accountability expectations. Persona
+Architecture v2 records how representative personas are authorised to speak on behalf of communities. Municipal charters or
+institutional bylaws then formalise the mandate, referencing Appendix C for constitutional alignment. AEIP receipts log each stage:
+proposal, consultation, ratification, and publication.
 }
 \normative{
-\begin{itemize}
-  \item A Civic Charter SHALL be ratified through documented public deliberation before any AI OSI Stack layer is implemented; the charter SHALL define scope, rights impacts, appeal structures, and oversight bodies, with records stored in AEIP civic mandate bundles (AEIP §O.4).
-  \item Custodians MUST be named, vetted, and publicly disclosed within the charter; their roles, tenure, and accountability pathways SHALL be recorded in Appendix H §2-aligned registers and cross-referenced with Appendix N §1 escalation forums.
-  \item Mandate renewals, amendments, or withdrawals SHALL be logged through AEIP renewal receipts within thirty days of the decision, including signatures from civic representatives and custodial stewards; absence of a current renewal SHALL be treated as non-compliance and SHALL trigger suspension procedures.
-  \item Any service operating without a valid, recorded civic mandate SHALL be classified as non-compliant; custodians MUST cease deployment activities until a new mandate is ratified and registered in the canonical ledger.
-\end{itemize}
+Entities deploying the stack SHALL secure a documented civic mandate before any technical implementation. The mandate MUST include
+purpose statements, scope limitations, rights protections, and appeal pathways. Ratification procedures SHALL meet quorum and
+participation thresholds defined in Appendix G. AEIP entries in (AEIP §O.3) SHALL record consultation minutes, voting tallies, and
+ratification evidence. Implementers SHALL NOT commence data collection or model development absent a valid mandate.
 }
+
+\section*{Mandate Maintenance}
+\narrative{
+Mandates require upkeep. Communities evolve; so must the authorisations. Layer 0 introduces periodic renewal cycles, typically
+annual but adjustable per community preference. Renewal integrates learning from oversight reports, incident reviews, and civic
+feedback. The narrative recounts how Update Plan 7 introduced adaptive renewal to accommodate emergent risks discovered during
+pilot deployments.
+}
+\normative{
+Custodians SHALL schedule mandate reviews at least annually and MUST initiate an extraordinary review when material risks emerge.
+Renewal processes SHALL solicit input from affected groups, including marginalized communities identified in AEIP demographics.
+Any changes SHALL be documented in (AEIP §O.6) amendment logs and SHALL be cross-referenced with Appendix B remediation outcomes.
+If a mandate lapses, operations MUST pause until renewal is completed and published.
+}
+
+\section*{Mandate Enforcement}
+\narrative{
+Mandates are enforceable commitments. Oversight councils, ombuds offices, and civic auditors verify that operations adhere to the
+mandated purpose. AEIP enables automatic alerts when actions deviate from authorised scope. The narrative details how communities
+use dashboards to monitor compliance indicators, ensuring the mandate remains a living guardrail rather than a ceremonial charter.
+}
+\normative{
+Oversight bodies SHALL have real-time access to compliance dashboards and AEIP exception logs. Deviations from mandate scope MUST
+trigger Appendix B remediation workflows within defined service-level windows. Custodians SHALL provide enforcement authorities
+with subpoena-ready evidence packages, including communication trails and decision logs. Implementers SHALL document corrective
+actions in (AEIP §O.5) and SHALL brief the public on resolution outcomes through Governance Publication channels.
+}
+
+\section*{Mandate Revocation and Suspension}
+\narrative{
+Communities retain the right to suspend or revoke mandates. Revocation can occur when harms persist, transparency falters, or
+trust erodes. Suspension mechanisms allow temporary halts while investigations proceed. Historical cases documented in
+\texttt{versions/historical/} show how revocation powers restored public confidence by demonstrating that civic control is
+substantive.
+}
+\normative{
+Mandates SHALL include explicit revocation and suspension clauses. When triggered, custodians MUST halt affected operations,
+preserve evidence, and notify stakeholders within the timeframe defined in Appendix B. Revocation proceedings SHALL be recorded in
+(AEIP §O.7) communication logs and SHALL invite independent observers. Restoration of operations SHALL require a renewed mandate and
+public attestation of corrective measures.
+}
+
+\section*{Mandate Transparency}
+\narrative{
+Transparency about mandates is essential for legitimacy. Layer 0 mandates public portals showing the scope, obligations, and
+renewal status of each mandate. Personas representing communities provide narrative explanations so that citizens can understand
+the commitments without legal training. The narrative highlights how interactive ledgers allow residents to inspect obligations and
+track their fulfilment.
+}
+\normative{
+Custodians SHALL maintain publicly accessible mandate registries with machine-readable and human-readable formats. Registries MUST
+include purpose statements, decision logs, renewal dates, and contact points for appeals. Updates SHALL be published within 48
+hours of any change. Privacy considerations SHALL be handled according to Appendix E §3, ensuring sensitive details are protected
+without obscuring accountability. Civic interfaces SHALL comply with accessibility standards and SHOULD support multilingual
+presentations.
+}
+
 \clearpage

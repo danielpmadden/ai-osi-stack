@@ -1,23 +1,91 @@
-% AI OSI Stack v5 — Canonical Edition
-% Daniel P. Madden — Independent AI Researcher
-% Created: 2025-11-04
-% File: 05_Layer2_Data_Stewardship.tex
-% Purpose: Chapter 05 rewritten for Layer 2 Data Stewardship and Privacy Integrity
+% AI OSI Stack v5 — Canonical Deepbuild
+% Chapter 05 — Layer 2: Data Stewardship
+% Sources: Version 5 Draft, Appendix E, Update Plans 3, 5, 10, AEIP v1
+
 \narrative{
-Layer 2 safeguards data dignity. Building on Update Plans 8 and 10, the chapter narrates how custodians map data flows from intake to archival, ensuring that privacy integrity is not an aspirational slogan but a verifiable practice. Communities contribute lived experience testimonies that highlight risks of marginalisation or surveillance. Data stewards pair these testimonies with regulatory baselines—GDPR principles, Annex IV safeguards, and Appendix E §3 protections—to construct stewardship matrices. The narrative follows a lifecycle review that inspects consent records, lawful bases, minimisation strategies, retention schedules, and deletion rehearsals. Each action is logged into AEIP privacy bundles so that auditors and civic overseers can reconstruct decisions without exposing personal data.
+Layer 2 anchors trustworthy AI on rigorous data stewardship. It governs how data is collected, classified, protected, and shared.
+The narrative underscores that data is not raw material but a reflection of people and communities. Stewardship is therefore a
+moral and legal duty. Drawing from Appendix E and Update Plans 3, 5, and 10, the chapter explains how rights-respecting data
+practices support the stack’s higher layers and ensure that transparency never becomes surveillance.
+}
 
-\subsection*{Stewardship Operations}
-Operational teams design data inventories, provenance maps, and redaction protocols aligned with (AEIP §O.4) evidence hooks. Persona architecture updates from Update Plan 10 inform segmentation rules that prevent discriminatory outcomes. Technical controls such as differential privacy, secure enclaves, and encrypted telemetry are evaluated alongside procedural measures like access approvals, purpose limitation checks, and third-party vetting. The narrative emphasises collaborative governance: data scientists, legal counsel, privacy engineers, and citizen advocates share responsibility for stewardship quality.
-
-\subsection*{Transparency Without Surveillance}
-Layer 2 demonstrates how transparency can exist without intrusive monitoring. Governance Disclosure Systems publish high-level flow diagrams, retention policies, and audit schedules while withholding sensitive identifiers. Citizens can verify that their rights are respected through accessible summaries and appeals interfaces described in Appendix H §2. When data sharing with federated partners is necessary, AEIP exchange bundles capture minimisation decisions and safeguards, ensuring cross-jurisdictional accountability.
+\section*{Data Inventory and Classification}
+\narrative{
+Effective stewardship begins with comprehensive inventories. Teams map data sources, types, sensitivity levels, and provenance.
+Community consultations inform which datasets require heightened safeguards. The narrative walks through the creation of custodial
+catalogues and linkages to AEIP receipts, ensuring every dataset can be traced back to its authorisation under Layer 0 mandates and
+Layer 1 charters.
 }
 \normative{
-\begin{itemize}
-  \item Data inventories, lawful bases, and consent records SHALL be documented and versioned through AEIP privacy integrity bundles, including traceability from source to use and to deletion or anonymisation checkpoints (AEIP §O.4).
-  \item Custodians SHALL enforce minimisation and purpose limitation policies; any exception MUST be approved by the data stewardship council, recorded within seven days, and published to oversight registers referenced in Appendix E §3.
-  \item Access controls, retention schedules, and deletion procedures SHALL be tested at least annually; results SHALL be logged in Governance Disclosure Systems with public summaries that protect personal data while demonstrating compliance.
-  \item Data sharing with third parties or federated jurisdictions SHALL employ privacy-preserving interfaces, SHALL include contractual obligations aligning with Appendix H §2 and Appendix N §1, and SHALL not proceed without recorded AEIP evidence demonstrating safeguards.
-\end{itemize}
+Custodians SHALL maintain living data inventories that record origin, lawful basis, sensitivity classification, retention policies,
+and mandated safeguards. Inventories MUST be version-controlled, with changes logged in (AEIP §O.5). Sensitive data categories, as
+defined in Appendix E §3, SHALL trigger enhanced protections, including minimisation, encryption, and differential privacy where
+appropriate. No dataset SHALL enter operational pipelines without documented authorization.
 }
+
+\section*{Collection and Consent}
+\narrative{
+Collection practices must respect community agency. The narrative describes how consent frameworks, community agreements, and legal
+bases are negotiated. Update Plan 3 introduced participatory consent models allowing community representatives to co-govern shared
+data. AEIP logs capture consent artefacts, ensuring they can be audited and revoked when necessary.
+}
+\normative{
+Data collection SHALL adhere to explicit legal or community-authorised bases. Consent processes MUST be understandable, revocable,
+and recorded in (AEIP §O.3). Collective data agreements SHALL reflect community governance structures and SHALL include dispute
+resolution mechanisms. Implementers SHALL immediately honour withdrawal requests and MUST update downstream systems to reflect the
+change, documenting actions in Appendix B remediation logs if necessary.
+}
+
+\section*{Protection and Access Control}
+\narrative{
+Protection mechanisms guard against misuse. The narrative covers encryption, access segmentation, secure enclaves, and accountability
+audits. Communities insisted during Update Plan 5 consultations that access controls must be transparent, allowing citizens to know
+who interacts with their data and why. AEIP integration ensures that every access event leaves an auditable trace.
+}
+\normative{
+Data at rest and in transit SHALL be protected using state-of-the-art cryptographic controls commensurate with sensitivity.
+Access SHALL follow least-privilege principles, with roles defined in Appendix I security matrices. Every access event MUST be
+logged to (AEIP §O.4) with user identity, purpose, and legal basis. Periodic access reviews SHALL be conducted quarterly, and
+unauthorised access SHALL trigger immediate incident response under Appendix B.
+}
+
+\section*{Quality, Integrity, and Bias Mitigation}
+\narrative{
+Stewardship includes ensuring data quality and mitigating bias. Narrative sections discuss validation pipelines, provenance checks,
+and community review boards that evaluate representational balance. Update Plan 10 emphasised the need for reflexive audits where
+communities inspect datasets for harmful proxies or omissions.
+}
+\normative{
+Implementers SHALL establish quality assurance processes covering data accuracy, completeness, and timeliness. Bias assessments
+MUST be conducted prior to model training and SHALL involve community reviewers where feasible. Findings SHALL be recorded in (AEIP
+§O.5) and SHALL feed into mitigation plans referencing Appendix F fairness guidelines. Datasets failing quality or equity checks
+SHALL NOT be deployed until remediated.
+}
+
+\section*{Retention and Deletion}
+\narrative{
+Responsible stewardship includes clear retention and deletion practices. The narrative outlines how custodians set retention
+schedules aligned with legal obligations and community expectations. Deletion ceremonies, documented in the historical corpus,
+demonstrate accountability when data is no longer necessary.
+}
+\normative{
+Retention schedules SHALL be published and SHALL align with legal requirements and community agreements. Data MUST be deleted or
+irreversibly anonymised once retention periods expire unless a renewed mandate authorises continued use. Deletion events SHALL be
+logged in (AEIP §O.6) with verification evidence. Custodians SHALL provide public summaries of deletion activities, ensuring that
+records of destruction do not expose personal data while confirming compliance.
+}
+
+\section*{Sharing and Interoperability}
+\narrative{
+When data must be shared across agencies or jurisdictions, stewardship principles travel with it. The narrative explains how data
+sharing agreements embed charter obligations, privacy safeguards, and audit hooks. Interoperability is designed to support civic
+collaboration, not to enable surveillance networks.
+}
+\normative{
+Data sharing SHALL occur only under agreements that restate relevant mandates, charters, and Appendix E safeguards. Receiving
+parties MUST commit to equivalent or stronger protections and SHALL log their compliance in AEIP-compatible registries. Cross-
+jurisdictional transfers SHALL undergo risk assessments, and results SHALL be shared with affected communities. Interoperability
+interfaces SHOULD implement privacy-preserving technologies to minimise exposure while enabling accountability.
+}
+
 \clearpage
