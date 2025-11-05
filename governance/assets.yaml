@@ -1,0 +1,16 @@
+- asset_id: mdl-governance-spine
+  name: Governance Spine Model
+  type: model
+  owner: AI Governance Team
+  registered_at: 2024-01-10T12:00:00Z
+  required_artifacts:
+    - ModelCard
+    - AEIP
+- asset_id: ds-ethics-observatory
+  name: Ethics Observatory Dataset
+  type: dataset
+  owner: Data Stewardship Guild
+  registered_at: 2024-01-11T09:30:00Z
+  required_artifacts:
+    - CCM
+    - Provenance
