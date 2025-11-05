@@ -1,0 +1,24 @@
+\documentclass[11pt]{article}
+\usepackage{geometry,hyperref,xcolor}
+\geometry{margin=1in}
+\title{The AI OSI Stack\\\large A Governance Blueprint for Scalable and Trusted AI\\[4pt]\normalsize Version 5 — Canonical Edition (Nov 2025)}
+\author{Daniel P. Madden}
+\date{}
+
+\input{frontmatter/00_Titlepage}
+\input{frontmatter/01_Copyright_and_License}
+\input{frontmatter/02_Abstract}
+\input{frontmatter/03_Preface}
+\input{frontmatter/05_Custodianship_Notice}
+\input{frontmatter/06_Interpretive_Principles}
+
+\foreach \x in {00,01,02,03,04,05,06,07,08,09,10,11,12,13,14,15,16,17,18,19}{
+  \input{chapters/\x_*}
+}
+
+\appendix
+\foreach \a in {A,B,C,D,E,F,G,H,I,J,K,L,M,N,O}{
+  \input{appendices/\a_*}
+}
+
+\end{document}
