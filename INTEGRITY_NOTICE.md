@@ -1,7 +1,3 @@
-# Integrity Notice — AI OSI Stack v5 (Canonical Edition)
-- Canonical Version: v5
-- Canonical Date: 2025-11-04
-- Repository: https://github.com/danielpmadden/ai-osi-stack
-- Official Website: https://danielpmadden.com
-- License: CC BY-NC-ND 4.0
-- Notes: Initial scaffold created via Codex automation.
+3714ed04da77f4db5151f21ef8da1be86ef0df45db8d285f56a5571efbf5ae9780f20abc623be7afa56e05b7bfab4ede43e8d0627527afcdb21e48947a144d88  ledger/hermeneutic/sample_interpretive_record.jsonld
+b1ccaa122ecaec1a21ecfd1dc1db7988e7ada789f53268fe6df2e4fb50d2d93c24b1c7cbc24dfb6f4311188cda5cd4f89f96952d7cbd6cf72ba2bbb79367d9a6  ledger/integrity/sample_integrity_manifest.jsonld
+d166a7e0ff599d329c2bda51e3d5bc3fe03148185282709bd30e5056c3184dea2416486aa43a592444dcfa9f7eecf227a70b67f9402c6c79704b17c4564d8c7a  ledger/meta-audit/sample_audit_entry.jsonld
