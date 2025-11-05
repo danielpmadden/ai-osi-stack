@@ -2,6 +2,12 @@
 % Daniel P. Madden — Independent AI Researcher
 % Created: 2025-11-04
 % File: 05_Layer2_Data_Stewardship.tex
-% Purpose: Placeholder for canonical chapter
-\narrative{Draft content for 05_Layer2_Data_Stewardship.}
-\normative{Normative requirements for 05_Layer2_Data_Stewardship.}
+% Purpose: Canonical chapter content for Layer 2
+\narrative{
+Layer 2 narrates how data stewardship practices uphold privacy, consent, and provenance commitments. The chapter details data classification schemes, consent negotiation workflows, and retention policies anchored in Update Plan 10. It explains how the privacy conformance CLI and the AEIP schema collaborate to produce verifiable records of lawful processing.
+
+Illustrative stories highlight how communities requested reclassification, how custodians responded to deletion requests, and how interpretive metadata kept datasets legible. The text emphasises the stack's refusal to treat data as raw material; instead, it honours data subjects as rights-bearing participants.
+}
+\normative{
+Layer 2 SHALL require documented processing bases, consent scopes, and retention schedules for every dataset. Custodians MUST verify conformance using the privacy CLI prior to integration. Data transfers SHALL be conditioned on cryptographic receipts and MUST reference Layer 0 mandates. Any deviation from declared processing SHALL trigger a remediation workflow with public notice. Deletion and redress requests MUST be executed within the timelines defined in Appendix B.
+}
