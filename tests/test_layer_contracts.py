@@ -1,21 +1,21 @@
 from __future__ import annotations
 
-from src.layer1_physical import Layer1Physical
-from src.layer1_physical.validator import validate as validate_l1
-from src.layer2_architecture import Layer2Architecture
-from src.layer2_architecture.validator import validate as validate_l2
-from src.layer3_training import Layer3Training
-from src.layer3_training.validator import validate as validate_l3
-from src.layer4_instruction import Layer4Instruction
-from src.layer4_instruction.validator import validate as validate_l4
-from src.layer5_interface import Layer5Interface
-from src.layer5_interface.validator import validate as validate_l5
-from src.layer6_application import Layer6Application
-from src.layer6_application.validator import validate as validate_l6
-from src.layer7_governance import Layer7Governance
-from src.layer7_governance.validator import validate as validate_l7
-from src.layer8_policy import Layer8Policy
-from src.layer8_policy.validator import validate as validate_l8
+from govspine.layer01physical import Layer1Physical
+from govspine.layer01physical.validator import validate as validate_l1
+from govspine.layer02architecture import Layer2Architecture
+from govspine.layer02architecture.validator import validate as validate_l2
+from govspine.layer03training import Layer3Training
+from govspine.layer03training.validator import validate as validate_l3
+from govspine.layer04instruction import Layer4Instruction
+from govspine.layer04instruction.validator import validate as validate_l4
+from govspine.layer05interface import Layer5Interface
+from govspine.layer05interface.validator import validate as validate_l5
+from govspine.layer06application import Layer6Application
+from govspine.layer06application.validator import validate as validate_l6
+from govspine.layer07governance import Layer7Governance
+from govspine.layer07governance.validator import validate as validate_l7
+from govspine.layer08policy import Layer8Policy
+from govspine.layer08policy.validator import validate as validate_l8
 
 
 def test_layer_chain_contracts() -> None:
