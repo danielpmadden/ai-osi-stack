@@ -1,9 +1,16 @@
+% AI OSI Stack v5 — Canonical Edition
 % Appendix F — AEIP Operational Annex
 \narrative{
-Appendix F provides operational details for implementing AEIP across tooling and governance workflows. Narrative sections describe how evidence packages are prepared, transmitted, and verified within federated environments. Examples include integration with continuous delivery pipelines and human-in-the-loop review stations.
+Appendix F provides detailed operations guidance for the AI Epistemic Infrastructure Protocol. The narrative follows AEIP operations engineer Lin and civic archivist Priyanka as they maintain the protocol’s pipelines. They oversee ingest services that collect evidence from each layer, validators that enforce schema requirements, and publication channels that share attestations with the public. The annex reads like a day-in-the-life chronicle: morning checks of signature chains, mid-day integrations of new manifests, and evening reconciliations with federated partners.
 
-The annex also records lessons from interoperability testing, highlighting the importance of consistent schema usage and secure channel management.
+Lin demonstrates how AEIP manifests flow from creation to publication. When a Layer 6 deployment produces a test report, the report is hashed, annotated with persona references, and queued for validation. Priyanka reviews hermeneutic notes to ensure interpretive context accompanies the technical artefacts. The narrative describes resilience features—redundant storage, tamper-evident logs, and failover validators—that protect integrity. It also highlights collaboration: federation partners submit manifests for co-signing, while civic observers monitor public indices for anomalies.
+
+The annex explores advanced topics, including schema evolution management, privacy-preserving analytics on ledger data, and integration with Appendix N attestation portals. Lin and Priyanka show how version negotiation occurs when partners use different AEIP revisions. They maintain compatibility bridges that translate manifests while preserving canonical semantics. The narrative emphasises care: AEIP is not an inert tool but a stewardship practice requiring attention, ethics, and technical excellence.
 }
 \normative{
-Operational teams SHALL follow this annex when generating AEIP packages. Each package MUST include lifecycle stage, privacy and consent metadata, and receipt signatures. Transmission channels SHALL use authenticated encryption, and verification endpoints MUST reject packages lacking required fields. Updates to operational procedures SHALL be versioned and communicated to all federation partners.
+AEIP operations SHALL maintain continuous monitoring of manifest ingestion, validation, storage, and publication pipelines. Monitoring MUST include integrity checks, privacy validator status, performance metrics, and anomaly detection alerts. Operational runbooks SHALL document response procedures for failures, referencing Appendices B, I, and M.
+
+Schema updates SHALL follow a controlled process that includes compatibility analysis, stakeholder consultation, regression testing, and custodial approval. New versions MUST provide migration guidance, fallback strategies, and updated documentation. AEIP operators SHALL retain backward compatibility for a defined sunset period, during which manifests from prior versions can be translated without data loss or semantic ambiguity.
+
+Public attestation endpoints SHALL expose manifest indices, signature verification instructions, and retrieval APIs consistent with Appendix N. Access controls MUST balance transparency with privacy, ensuring sensitive details remain protected. All operational activities, including maintenance windows, incidents, and partner integrations, SHALL be recorded in AEIP manifests and shared with federated custodians through Appendix G governance channels.
 }
