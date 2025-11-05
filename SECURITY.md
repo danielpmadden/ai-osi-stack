@@ -2,8 +2,6 @@
 
 AI OSI Stack v5 treats security as governance infrastructure rather than a perimeter feature. All security controls map to normative layers and are verifiable through the AI Epistemic Infrastructure Protocol (AEIP).
 
-# Key principles:
-
 - Integrity First — Every release, ledger entry, and artifact is cryptographically signed (SHA-512 + GPG).
 
 - Transparency with Consent — Disclosure is proportionate and privacy-preserving (“Transparency must never become surveillance”).
