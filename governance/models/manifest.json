@@ -1,0 +1,40 @@
+{
+  "uuid": "ccf0c68a-34c0-4d10-be14-4c938457be27",
+  "layer": "L3",
+  "timestamp": "2025-11-05T10:21:30.371838+00:00",
+  "custodian": "ml-foundation",
+  "context_uri": "https://github.com/danielpmadden/ai-osi-stack",
+  "evidence_hash": "1a0deae97f07af250dae9f540625cf87b265aef7ce9f1eb918c975d4ad0b630f8210013fb7a5df2b5291753b11c4f0be2c20d5189eb296ddd5280a79c1949db0",
+  "signature": "UNSIGNED",
+  "tags": [
+    "model",
+    "card",
+    "reproducibility"
+  ],
+  "artifact_type": "model-card",
+  "schema_version": "1.0.0",
+  "payload_uri": "s3://governance/danielpmadden/ai-osi-stack/models/modelcard.json",
+  "schema_ref": "modelcard.schema.json",
+  "model_name": "example-transformer",
+  "model_version": "602e2050447522450561d98b7bbc861a98042324",
+  "training_data": {
+    "summary": "Synthetic sample for automation",
+    "size": "1.2M records",
+    "sources": [
+      "s3://datasets/training-corpus"
+    ]
+  },
+  "evaluation": {
+    "metrics": [
+      "accuracy:0.92",
+      "f1:0.89"
+    ],
+    "methodology": "CI smoke evaluation",
+    "limitations": "Synthetic placeholder"
+  },
+  "reproducibility": {
+    "docker_image": "ghcr.io/danielpmadden/ai-osi-stack/training:602e2050447522450561d98b7bbc861a98042324",
+    "commit": "602e2050447522450561d98b7bbc861a98042324",
+    "hardware": "A10G"
+  }
+}

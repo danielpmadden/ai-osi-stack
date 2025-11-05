@@ -1,0 +1,33 @@
+name: AEIP Frame Assembly
+
+on:
+  push:
+    paths:
+      - 'governance/**'
+      - '.github/workflows/aeip-frame.yml'
+  schedule:
+    - cron: '30 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  assemble-frame:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build AEIP frame payload
+        run: |
+          python -m tools.governance.aeip_frame_builder \
+            --manifests governance/charter governance/compute governance/data governance/models governance/control \
+            --custodian "governance-office" \
+            --context-uri "https://github.com/${{ github.repository }}" \
+            --payload governance/aeip/frame_payload.json \
+            --payload-uri "s3://governance/${{ github.repository }}/aeip/frame_payload.json" \
+            --output governance/aeip/manifest.json \
+            --tags aeip frame daily
+      - name: Commit AEIP frame
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore(governance): refresh AEIP frame"
+          file_pattern: governance/aeip/**

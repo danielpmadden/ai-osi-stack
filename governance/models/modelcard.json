@@ -1,0 +1,19 @@
+{
+  "model_name": "example-transformer",
+  "model_version": "602e2050447522450561d98b7bbc861a98042324",
+  "training_data": {
+    "summary": "Synthetic sample for automation",
+    "size": "1.2M records",
+    "sources": ["s3://datasets/training-corpus"]
+  },
+  "evaluation": {
+    "metrics": ["accuracy:0.92", "f1:0.89"],
+    "methodology": "CI smoke evaluation",
+    "limitations": "Synthetic placeholder"
+  },
+  "reproducibility": {
+    "docker_image": "ghcr.io/danielpmadden/ai-osi-stack/training:602e2050447522450561d98b7bbc861a98042324",
+    "commit": "602e2050447522450561d98b7bbc861a98042324",
+    "hardware": "A10G"
+  }
+}
