@@ -1,0 +1,99 @@
+Update Plan 11 — Canonical Consolidation & Version 5 Declaration
+
+“All roads lead to v5.”
+
+1 · Purpose
+
+This plan formally consolidates every prior update (Plans 1–10, v 4.2.1 – v 4.2.10) into a single major release:
+
+AI OSI Stack v5 (Canonical Edition)
+
+It retires the 4.x naming scheme and establishes v5 as the sole active, authoritative version going forward.
+
+2 · Background
+
+v1–v2 (Sept 9 2025): Initial blog publication introducing the seven-layer AI OSI Stack.
+
+v3 (Oct 31 2025): First full framework draft with persona integration.
+
+v4 (Nov 2 2025): Normative Master Edition establishing the layered specification.
+
+v 4.2.1 – v 4.2.10 (Nov 3–4 2025): Successive refinements covering semantic integrity, readability, custodial continuity, human-rights safeguards, and alignment artifacts.
+
+Each of those incremental updates remains historically valid as part of the provenance chain but is now archived within v5.
+
+3 · Canonical Transition
+From	To	Action
+v 4.2.1 – v 4.2.10	v5	Merged and finalized
+AI OSI Stack v4 (Master Edition)**	Superseded	Retained for historical citation only
+GitHub Repository	Continues as repository of record	Branch /v5 becomes main
+Domain (aiosi.org)	Continues as domain of record	Hosts canonical release v5
+4 · Canonical Declaration
+
+AI OSI Stack v5 (2025-11-04)
+
+Consolidates all prior refinements into one stable, custodially signed edition.
+Supersedes every 4.x version and sub-release.
+
+canonical_version: "AI OSI Stack v5"
+canonical_date: "2025-11-04"
+repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
+domain_of_record: "https://aiosi.org"
+supersedes_versions: ["v1","v2","v3","v4","v4.2.1-4.2.10"]
+author: "Daniel P. Madden"
+license: "CC BY-NC-ND 4.0"
+timeline_verified: true
+notes: >
+  v5 integrates Update Plans 1–10 as its internal changelog.
+  All earlier metadata and knowledge-base entries are non-canonical.
+
+5 · Implementation Steps
+
+Finalize & Sign
+
+Generate AI_OSI_Stack_v5.pdf
+
+Update hashes and GPG signatures in INTEGRITY_NOTICE.md
+
+Archive v 4.x folder under /versions/historical/
+
+Repository Updates
+
+Set branch main → v5
+
+Update README.md header to read “AI OSI Stack v5 — Canonical Edition (Nov 4 2025)”
+
+Append this document to /docs/Update Plan 11.md
+
+Public Notice
+
+Post signed verification notice on aiosi.org announcing v5 release and supersession of 4.x.
+
+6 · Change-Log Summary
+Legacy Plan	Integrated in v5 as	Core Theme
+1	4.2.1	Narrative & Semantic Integrity Edition
+2	4.2.2	Reader Accessibility & Philosophical Grounding
+3	4.2.3	Interpretive & Continuity Edition
+4	4.2.4	Custodial Hardening Finisher
+5	4.2.5	Canonical Defense & Continuity
+6	4.2.6	Integration & Adoption Framework
+7	4.2.7	Custodial Integrity & Adversarial Resilience
+8	4.2.8	Human-Rights Safeguard Edition
+9	4.2.9	Formal Alignment & Recognition
+10	4.2.10	Implementation Closure & Compliance Hardening
+→ 11	v5	Canonical Consolidation & Successor Declaration
+7 · Outcome
+
+v5 is the current canonical specification of The AI OSI Stack.
+
+All v 1–v 4.x releases are archived historical versions.
+
+The update-plan era is officially closed.
+
+Future developments (e.g., federation, ISO alignment, or AEIP v 2.0) will proceed under the v5 branch, not as new 4.x revisions.
+
+8 · Closing Statement
+
+AI OSI Stack v5 stands as the unified culmination of every preceding refinement.
+All prior versions remain part of its verified lineage,
+but the canonical torch now burns under a single name: Version 5.
