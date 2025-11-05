@@ -2,12 +2,22 @@
 % Daniel P. Madden — Independent AI Researcher
 % Created: 2025-11-04
 % File: 08_Layer5_Reasoning_Exchange.tex
-% Purpose: Canonical chapter content for Layer 5
+% Purpose: Chapter 08 rewritten for Layer 5 Reasoning Exchange and Interface Protocol
 \narrative{
-Layer 5 narrates how reasoning exchanges capture deliberative dialogue between models and stakeholders. The chapter describes interpretive session logs, debate protocols, and arbitration formats that ensure outputs remain contestable. It highlights the design of reasoning exchanges as civic forums where evidence, context, and counterfactuals are surfaced in dual registers.
+Layer 5 manages reasoning exchanges between AI systems, human operators, and civic participants. It implements the AI Epistemic Infrastructure Protocol (AEIP) as the dialogue fabric that allows insights, explanations, and evidence to circulate without eroding privacy. The narrative portrays public service desks, emergency coordination rooms, and research labs where human experts collaborate with AI agents through structured interfaces. Each exchange is logged with contextual metadata—who asked, what was provided, which safeguards were invoked—so that dialogue remains accountable and replayable.
 
-Stories from pilot engagements demonstrate how reasoning exchanges exposed latent biases, triggered remediation, and generated public-facing summaries. The narrative emphasises the connection between these exchanges and the stack's broader goal of sustaining trust.
+\subsection*{Interface Protocols}
+Interfaces are designed to balance usability with verifiability. Interaction schemas define question types, permissible responses, escalation triggers, and redaction rules. AEIP connectors ensure that reasoning steps, supporting data, and model provenance are attached to each response. The narrative highlights how federated partners synchronise their protocols using Appendix N §1 guidance, enabling multi-jurisdictional cooperation while respecting local mandates. Accessibility features ensure that citizens receive explanations in plain language, alternative formats, or translation as needed.
+
+\subsection*{Evidence Circulation}
+Reasoning exchanges fuel oversight. Outputs feed into Governance Disclosure Systems, oversight dashboards, and civic appeal records. Appendix E §3 and Appendix H §2 inform which details can be shared publicly and which must remain redacted to preserve safety or privacy. Update Plans introduced hermeneutic hooks that allow interpretive principles to tag each exchange, clarifying the ethical rationale behind responses. The narrative concludes with a reminder that transparency remains bounded: the protocol reveals enough to empower citizens while guarding against surveillance or misuse.
 }
 \normative{
-Layer 5 SHALL require authenticated logging of all critical reasoning exchanges, including participant roles, decision context, and interpretive annotations. Exchanges MUST be indexed to AEIP receipts and SHALL support public transparency tiers defined in Appendix K. Disputed exchanges SHALL initiate mediation workflows, and their resolutions MUST update Layer 4 instructions and Layer 6 deployment records. Reasoning outputs SHALL never bypass oversight controls.
+\begin{itemize}
+  \item All reasoning exchanges SHALL be conducted through AEIP-compliant interfaces that capture context, provenance, and safeguard references; logs SHALL be retained in accordance with Appendix E §3 and AEIP §O.3 requirements.
+  \item Explanations provided to citizens, policymakers, or auditors SHALL include verifiable evidence references, redaction rationales, and appeal instructions; omission of these elements SHALL constitute a governance violation requiring remediation.
+  \item Cross-jurisdictional exchanges SHALL document consent, data minimisation measures, and jurisdictional constraints within AEIP exchange bundles, referencing Appendix N §1 coordination agreements.
+  \item Interface updates affecting explanation quality, accessibility, or privacy controls SHALL undergo review by custodial oversight bodies, with decisions recorded in Governance Disclosure Systems and linked to interpretive principles to demonstrate alignment with the non-revocable clause.
+\end{itemize}
 }
+\clearpage

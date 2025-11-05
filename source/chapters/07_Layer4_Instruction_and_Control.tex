@@ -2,12 +2,22 @@
 % Daniel P. Madden — Independent AI Researcher
 % Created: 2025-11-04
 % File: 07_Layer4_Instruction_and_Control.tex
-% Purpose: Canonical chapter content for Layer 4
+% Purpose: Chapter 07 rewritten for Layer 4 Instruction and Control Governance
 \narrative{
-Layer 4 focuses on instruction design and control surfaces that mediate how humans interact with deployed models. The narrative explains the pedagogy of prompt engineering, policy alignment, and guardrail scripting carried out through the rebuild. Examples show how instruction sets were co-created with subject-matter experts to preserve context sensitivity and cultural respect.
+Layer 4 governs how systems are instructed, configured, and restrained. Building on persona architecture research and Update Plan 10 insights, the narrative details how instructions, prompts, control policies, and operational guardrails are orchestrated to respect civic mandates. Custodians establish instruction taxonomies that differentiate between civic services, administrative tasks, escalation protocols, and prohibited behaviours. Persona simulations are used to test how different user archetypes interact with the system, ensuring that the controls protect vulnerable communities while preserving utility.
 
-Control mechanisms—including override workflows, audit triggers, and disengagement options—are explored through stories of field testing. The chapter demonstrates how iterative feedback from civic partners informed refinements to instruction repositories and controller APIs.
+\subsection*{Control Plane Design}
+Instruction governance involves version-controlled policy sets, moderation rules, and interface constraints stored in AEIP instruction bundles. Developers collaborate with oversight teams to design fallback behaviours, manual review triggers, and response templates that ensure the system can be interrupted or redirected by human operators. The narrative highlights control rooms where operators rehearse incident scenarios, verifying that instructions remain interpretable and contestable.
+
+\subsection*{Alignment and Appeals}
+Layer 4 serves as the bridge between model capabilities and civic expectations. Instructions incorporate ethical charter requirements, data stewardship limitations, and model assurance constraints. Appeals pathways are embedded into the interface: when a user contests a decision, the system logs the instruction context, model outputs, and human interventions for review by oversight forums described in Appendix H §2 and Appendix N §1. Transparency is maintained without surveillance by publishing redacted instruction catalogs that citizens can inspect to understand permitted behaviours.
 }
 \normative{
-Layer 4 SHALL maintain a controlled instruction registry with versioned change logs and AEIP signatures. All instruction sets SHALL document provenance, stakeholder reviewers, and intended scope. Control systems MUST provide manual override capabilities and SHALL enforce rate-limited disengagement when risk thresholds are exceeded. Instruction updates SHALL not be deployed without recorded consent where applicable and MUST be linked to Layer 5 reasoning contracts.
+\begin{itemize}
+  \item Instruction policies, prompts, and control rules SHALL be documented, versioned, and linked to corresponding ethical and data stewardship obligations within AEIP instruction governance bundles (AEIP §O.4).
+  \item Persona-based testing suites SHALL be executed prior to instruction changes; results SHALL record impacts on equity, accessibility, and safety, and SHALL be published in Governance Disclosure Systems with accessible summaries.
+  \item Manual override, escalation, and shutdown procedures SHALL be defined, rehearsed, and logged; failure to maintain operable controls SHALL be treated as a critical compliance breach requiring immediate remediation under Appendix B §3.
+  \item Appeals and dispute records SHALL capture instruction context, decision rationale, and outcome resolutions, ensuring cross-references to Appendix H §2 oversight forums and Appendix N §1 civic participation channels; absence of such records SHALL invalidate claims of compliance.
+\end{itemize}
 }
+\clearpage

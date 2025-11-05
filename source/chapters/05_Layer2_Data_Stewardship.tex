@@ -2,12 +2,22 @@
 % Daniel P. Madden — Independent AI Researcher
 % Created: 2025-11-04
 % File: 05_Layer2_Data_Stewardship.tex
-% Purpose: Canonical chapter content for Layer 2
+% Purpose: Chapter 05 rewritten for Layer 2 Data Stewardship and Privacy Integrity
 \narrative{
-Layer 2 narrates how data stewardship practices uphold privacy, consent, and provenance commitments. The chapter details data classification schemes, consent negotiation workflows, and retention policies anchored in Update Plan 10. It explains how the privacy conformance CLI and the AEIP schema collaborate to produce verifiable records of lawful processing.
+Layer 2 safeguards data dignity. Building on Update Plans 8 and 10, the chapter narrates how custodians map data flows from intake to archival, ensuring that privacy integrity is not an aspirational slogan but a verifiable practice. Communities contribute lived experience testimonies that highlight risks of marginalisation or surveillance. Data stewards pair these testimonies with regulatory baselines—GDPR principles, Annex IV safeguards, and Appendix E §3 protections—to construct stewardship matrices. The narrative follows a lifecycle review that inspects consent records, lawful bases, minimisation strategies, retention schedules, and deletion rehearsals. Each action is logged into AEIP privacy bundles so that auditors and civic overseers can reconstruct decisions without exposing personal data.
 
-Illustrative stories highlight how communities requested reclassification, how custodians responded to deletion requests, and how interpretive metadata kept datasets legible. The text emphasises the stack's refusal to treat data as raw material; instead, it honours data subjects as rights-bearing participants.
+\subsection*{Stewardship Operations}
+Operational teams design data inventories, provenance maps, and redaction protocols aligned with (AEIP §O.4) evidence hooks. Persona architecture updates from Update Plan 10 inform segmentation rules that prevent discriminatory outcomes. Technical controls such as differential privacy, secure enclaves, and encrypted telemetry are evaluated alongside procedural measures like access approvals, purpose limitation checks, and third-party vetting. The narrative emphasises collaborative governance: data scientists, legal counsel, privacy engineers, and citizen advocates share responsibility for stewardship quality.
+
+\subsection*{Transparency Without Surveillance}
+Layer 2 demonstrates how transparency can exist without intrusive monitoring. Governance Disclosure Systems publish high-level flow diagrams, retention policies, and audit schedules while withholding sensitive identifiers. Citizens can verify that their rights are respected through accessible summaries and appeals interfaces described in Appendix H §2. When data sharing with federated partners is necessary, AEIP exchange bundles capture minimisation decisions and safeguards, ensuring cross-jurisdictional accountability.
 }
 \normative{
-Layer 2 SHALL require documented processing bases, consent scopes, and retention schedules for every dataset. Custodians MUST verify conformance using the privacy CLI prior to integration. Data transfers SHALL be conditioned on cryptographic receipts and MUST reference Layer 0 mandates. Any deviation from declared processing SHALL trigger a remediation workflow with public notice. Deletion and redress requests MUST be executed within the timelines defined in Appendix B.
+\begin{itemize}
+  \item Data inventories, lawful bases, and consent records SHALL be documented and versioned through AEIP privacy integrity bundles, including traceability from source to use and to deletion or anonymisation checkpoints (AEIP §O.4).
+  \item Custodians SHALL enforce minimisation and purpose limitation policies; any exception MUST be approved by the data stewardship council, recorded within seven days, and published to oversight registers referenced in Appendix E §3.
+  \item Access controls, retention schedules, and deletion procedures SHALL be tested at least annually; results SHALL be logged in Governance Disclosure Systems with public summaries that protect personal data while demonstrating compliance.
+  \item Data sharing with third parties or federated jurisdictions SHALL employ privacy-preserving interfaces, SHALL include contractual obligations aligning with Appendix H §2 and Appendix N §1, and SHALL not proceed without recorded AEIP evidence demonstrating safeguards.
+\end{itemize}
 }
+\clearpage
