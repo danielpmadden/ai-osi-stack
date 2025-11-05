@@ -2,6 +2,12 @@
 % Daniel P. Madden — Independent AI Researcher
 % Created: 2025-11-04
 % File: 12_AEIP_Framework_and_Operations.tex
-% Purpose: Placeholder for canonical chapter
-\narrative{Draft content for 12_AEIP_Framework_and_Operations.}
-\normative{Normative requirements for 12_AEIP_Framework_and_Operations.}
+% Purpose: Canonical chapter content for AEIP framework
+\narrative{
+This chapter narrates the architecture and operations of the AI Epistemic Infrastructure Protocol (AEIP). It explains the lifecycle of evidence packages, from creation to verification, and illustrates how receipts, signatures, and layer paths maintain canonical provenance. Operational stories describe joint exercises with federation partners to rehearse incident response and ensure reciprocal recognition of attestations.
+
+The narrative highlights new features introduced in v5, including privacy-aware descriptors, consent status propagation, and lifecycle validators embedded into continuous integration pipelines. It situates AEIP as the connective tissue that keeps the stack auditable and trustworthy.
+}
+\normative{
+AEIP implementations SHALL conform to schema version 1.3, including privacy processing bases, consent scopes, and lifecycle stage declarations. Every artifact SHALL reference a valid layer path and SHALL maintain an ordered receipt chain with cryptographic signatures. Operational tooling MUST expose verification APIs for federation validators and SHALL enforce rejection of incomplete evidence packages. Custodians SHALL review AEIP telemetry quarterly and MUST remediate anomalies within defined service windows.
+}
