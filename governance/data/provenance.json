@@ -1,0 +1,18 @@
+{
+  "datasets": [
+    {
+      "name": "training-corpus",
+      "uri": "s3://datasets/training-corpus",
+      "governance_tier": "tier-2",
+      "update_frequency": "daily",
+      "quality_checks": ["schema", "pii-scan"]
+    },
+    {
+      "name": "evaluation-set",
+      "uri": "s3://datasets/eval",
+      "governance_tier": "tier-1",
+      "update_frequency": "weekly",
+      "quality_checks": ["drift"]
+    }
+  ]
+}
