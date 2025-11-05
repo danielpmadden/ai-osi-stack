@@ -1,0 +1,11 @@
+artifact: IncidentReport
+version: 1.0
+fields:
+  incident_id: 
+  severity: 
+  summary: 
+external_refs:
+  - framework: ISO 27001
+    control: A.16.1
+  - framework: EU AI Act
+    control: Article 65

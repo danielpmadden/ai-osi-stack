@@ -1,0 +1,9 @@
+change_id: CCR-2025-001
+timestamp: 2025-01-07T12:00:00Z
+layer: L2
+summary: Quarterly policy refresh for Governance Spine metrics pipeline.
+approved_by:
+  - Riley Chen
+  - Priya Das
+hash_before: 1234567890abcdef1234567890abcdef12345678
+hash_after: abcdef1234567890abcdef1234567890abcdef12

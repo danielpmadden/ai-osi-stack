@@ -1,0 +1,11 @@
+artifact: ModelCard
+version: 1.0
+fields:
+  name: 
+  owner: 
+  purpose: 
+external_refs:
+  - framework: NIST AI RMF
+    control: MAP-1
+  - framework: EU AI Act
+    control: Article 13

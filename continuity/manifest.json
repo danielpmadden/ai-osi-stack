@@ -1,0 +1,19 @@
+{
+  "archives": [
+    {
+      "location": "s3://ai-osi-governance-mirror",
+      "frequency": "daily",
+      "retention_years": 5
+    },
+    {
+      "location": "https://zenodo.org/communities/ai-osi",
+      "frequency": "quarterly",
+      "retention_years": 10
+    },
+    {
+      "location": "https://archive.org/details/ai-osi-governance",
+      "frequency": "annual",
+      "retention_years": 10
+    }
+  ]
+}

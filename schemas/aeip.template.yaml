@@ -1,0 +1,11 @@
+artifact: AEIP
+version: 1.3
+fields:
+  frame_id: 
+  signatory: 
+  obligations: []
+external_refs:
+  - framework: EU AI Act
+    control: Article 9
+  - framework: NIST AI RMF
+    control: GOVERN-1
