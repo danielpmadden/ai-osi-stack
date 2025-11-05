@@ -2,12 +2,22 @@
 % Daniel P. Madden — Independent AI Researcher
 % Created: 2025-11-04
 % File: 06_Layer3_Model_Development.tex
-% Purpose: Canonical chapter content for Layer 3
+% Purpose: Chapter 06 rewritten for Layer 3 Model Development and Optimization Integrity
 \narrative{
-Layer 3 chronicles the disciplined approach to model development, from hypothesis framing to evaluation. It highlights collaborative design reviews, dataset readiness checks, and interpretability experiments that were conducted during the v5 rebuild. Narrative attention is given to the interplay between technical ambition and civic safeguards, ensuring that models reflect documented community needs.
+Layer 3 transforms ethical intent and data stewardship into model development practices that can withstand civic scrutiny. Drawing from Version 4 master lessons and Update Plan 9 refinements, the narrative follows multidisciplinary teams through design, training, evaluation, and optimisation cycles. Model cards, risk registers, and evaluation matrices are prepared before code is written, using persona-driven scenarios to anticipate misuse, bias, and safety failures. Development sprints include checkpoints where legal, ethical, and technical custodians review AEIP development bundles to confirm that updates remain aligned with the Civic Charter and Layer 1 commitments.
 
-The chapter documents tooling such as reproducible notebooks, simulation harnesses, and interpretive trace packages. It describes how these artefacts feed into the AEIP lifecycle validator to guarantee that every release candidate carries the necessary receipts and signatures.
+\subsection*{Design Controls}
+Design begins with hypothesis statements that describe the model’s intended role, constraints, and success metrics. Engineers collaborate with domain experts to encode guardrails that limit autonomy, enforce explainability, and prevent unsupervised escalation. The narrative highlights version-controlled experiment logs, dataset lineage documentation, and reproducibility protocols that allow auditors to recreate training processes. Annex IV requirements and Appendix I security controls are referenced to ensure that optimisation does not erode safety.
+
+\subsection*{Evaluation Integrity}
+Testing extends beyond accuracy. Models undergo fairness analyses, robustness checks, privacy impact simulations, and adversarial probing. Results are stored in AEIP evaluation receipts, cross-linked with Appendix H §2 oversight reviews. When issues are identified, teams iterate through corrective actions logged in the remediation ledger, ensuring transparency about failures and fixes. Optimisation decisions are justified through interpretive statements that explain trade-offs and residual risks.
 }
 \normative{
-Layer 3 SHALL define minimum evidence requirements for model readiness, including bias assessments, interpretability artefacts, and safety benchmarks. Development pipelines MUST capture AEIP receipts at each gate and SHALL link them to hermeneutic ledger entries. Experiments SHALL be reproducible, and parameter changes MUST be documented with consent for any affected data subjects. No model SHALL advance to Layer 4 without a validated lifecycle report.
+\begin{itemize}
+  \item Model development SHALL be governed by documented design hypotheses, dataset inventories, and risk registers maintained within AEIP development bundles (AEIP §O.4); entries SHALL include citations to ethical charter requirements and data stewardship constraints.
+  \item Training and evaluation artefacts—including hyperparameters, optimisation objectives, and test results—SHALL be versioned, reproducible, and linked to the Canonical Provenance Statement; untracked experiments SHALL NOT advance to deployment pathways.
+  \item Fairness, robustness, and privacy evaluations SHALL be conducted before each release candidate; failures MUST trigger remediation plans recorded in Appendix B §2 workflows, with public summaries published through Governance Disclosure Systems.
+  \item Any model update affecting safety, explainability, or civic impact SHALL obtain joint approval from technical leads and governance custodians, documented via AEIP §O.6 integrity attestations prior to promotion into Layer 4 instruction governance.
+\end{itemize}
 }
+\clearpage
