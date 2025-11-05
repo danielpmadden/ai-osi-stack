@@ -1,0 +1,15 @@
+- layer: L1
+  role: Data Steward
+  holder: Riley Chen
+  key_id: 3F12A9E5B7
+  last_rotation: 2025-10-10T00:00:00Z
+- layer: L2
+  role: Model Owner
+  holder: Jordan Singh
+  key_id: A1B2C3D4F5
+  last_rotation: 2025-10-12T00:00:00Z
+- layer: L3
+  role: AEIP Guardian
+  holder: Priya Das
+  key_id: FEDCBA9876
+  last_rotation: 2025-10-14T00:00:00Z

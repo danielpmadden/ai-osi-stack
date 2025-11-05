@@ -1,0 +1,11 @@
+artifact: GDS
+version: 1.0
+sections:
+  - Executive Summary
+  - Metrics
+  - Custodian Updates
+external_refs:
+  - framework: NIST AI RMF
+    control: MEASURE-4
+  - framework: GDPR
+    control: Article 5
