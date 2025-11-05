@@ -1,0 +1,62 @@
+{
+  "@context": [
+    "https://schema.org/",
+    {
+      "aeip": "https://example.org/aeip#",
+      "audit": "aeip:audit",
+      "privacy": "aeip:privacy",
+      "provenance": "aeip:provenance",
+      "signature": "aeip:signature"
+    }
+  ],
+  "@id": "urn:aeip:audit:meta:2025-10-30:annual-review",
+  "type": "aeip:MetaAuditRecord",
+  "artifact": {
+    "type": "Report",
+    "name": "Meta-Audit Annual Review 2025",
+    "hashAlgorithm": "SHA-512",
+    "hashValue": "a1f7c83b49ecb5b80c36f1f5cb9f3fcb9b2a14186aef85c0124f4c5c0f59e4f86c213d09c61e45e0b5f5e71ac1dc542fb4a57f6ad3c857bd6c8659d3af3d6dd1"
+  },
+  "custodian": {
+    "name": "Meta-Audit Guild",
+    "role": "Auditor",
+    "contact": "mailto:meta-audit@ai-osi-stack.example"
+  },
+  "privacy": {
+    "lawfulBasis": "Public Accountability",
+    "consentScope": "Aggregated interview notes",
+    "retention": "P7Y",
+    "dataMinimisation": true
+  },
+  "provenance": {
+    "layerPath": ["L0", "L7", "L8"],
+    "aeipVersion": "1.3",
+    "createdAt": "2025-10-30T14:30:00Z",
+    "auditScope": [
+      "Governance maturity milestones",
+      "Custodial succession readiness",
+      "Transparency tier adherence"
+    ],
+    "findings": {
+      "status": "partially-compliant",
+      "remediation": [
+        {
+          "id": "urn:aeip:remediation:2025-11:transparency-training",
+          "description": "Expand transparency workshops for rural communities",
+          "dueDate": "2026-01-15"
+        },
+        {
+          "id": "urn:aeip:remediation:2025-12:ledger-backups",
+          "description": "Increase redundancy for interpretive ledger archives",
+          "dueDate": "2025-12-31"
+        }
+      ]
+    }
+  },
+  "signature": {
+    "algorithm": "EdDSA-Ed25519",
+    "publicKey": "z6Mkg7MetaAuditKeyExample",
+    "signedAt": "2025-10-30T15:00:00Z",
+    "signatureValue": "q2HdExampleMetaAuditSignature=="
+  }
+}
