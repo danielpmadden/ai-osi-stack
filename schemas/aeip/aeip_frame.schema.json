@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AEIP Frame Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "uuid",
+    "layer",
+    "timestamp",
+    "custodian",
+    "context_uri",
+    "evidence_hash",
+    "signature",
+    "tags",
+    "artifact_type",
+    "schema_version",
+    "payload_uri",
+    "schema_ref",
+    "artifacts",
+    "frame_version"
+  ],
+  "properties": {
+    "uuid": { "type": "string" },
+    "layer": { "type": "string", "enum": ["L4", "L5", "L6", "L7"] },
+    "timestamp": { "type": "string" },
+    "custodian": { "type": "string" },
+    "context_uri": { "type": "string" },
+    "evidence_hash": { "type": "string" },
+    "signature": { "type": "string" },
+    "schema_ref": { "type": "string", "enum": ["aeip_frame.schema.json"] },
+    "schema_version": { "type": "string" },
+    "artifact_type": { "type": "string", "enum": ["aeip-frame"] },
+    "payload_uri": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "frame_version": { "type": "string" },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["artifact_type", "uuid", "schema_ref"],
+        "properties": {
+          "artifact_type": { "type": "string" },
+          "uuid": { "type": "string" },
+          "schema_ref": { "type": "string" },
+          "layer": { "type": "string" }
+        }
+      }
+    },
+    "signatures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["signee", "signature"],
+        "properties": {
+          "signee": { "type": "string" },
+          "signature": { "type": "string" }
+        }
+      }
+    }
+  }
+}
