@@ -1,0 +1,52 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Instruction Log Manifest",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "uuid",
+    "layer",
+    "timestamp",
+    "custodian",
+    "context_uri",
+    "evidence_hash",
+    "signature",
+    "tags",
+    "artifact_type",
+    "schema_version",
+    "payload_uri",
+    "schema_ref",
+    "events"
+  ],
+  "properties": {
+    "uuid": { "type": "string" },
+    "layer": { "type": "string", "enum": ["L4"] },
+    "timestamp": { "type": "string" },
+    "custodian": { "type": "string" },
+    "context_uri": { "type": "string" },
+    "evidence_hash": { "type": "string" },
+    "signature": { "type": "string" },
+    "schema_ref": { "type": "string", "enum": ["instruction_log.schema.json"] },
+    "schema_version": { "type": "string" },
+    "artifact_type": { "type": "string", "enum": ["instruction-log"] },
+    "payload_uri": { "type": "string" },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["timestamp", "action", "actor"],
+        "properties": {
+          "timestamp": { "type": "string" },
+          "action": { "type": "string" },
+          "actor": { "type": "string" },
+          "result": { "type": "string" },
+          "request_id": { "type": "string" }
+        }
+      }
+    }
+  }
+}
