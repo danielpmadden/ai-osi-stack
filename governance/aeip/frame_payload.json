@@ -1,0 +1,28 @@
+{
+  "artifacts": [
+    {
+      "artifact_type": "data-stewardship",
+      "uuid": "4e2e3bc1-5682-4327-850c-6cb49ca05e7f",
+      "schema_ref": "ccm.schema.json",
+      "layer": "L2"
+    },
+    {
+      "artifact_type": "unknown",
+      "uuid": "",
+      "schema_ref": "",
+      "layer": ""
+    },
+    {
+      "artifact_type": "model-card",
+      "uuid": "ccf0c68a-34c0-4d10-be14-4c938457be27",
+      "schema_ref": "modelcard.schema.json",
+      "layer": "L3"
+    },
+    {
+      "artifact_type": "unknown",
+      "uuid": "",
+      "schema_ref": "",
+      "layer": ""
+    }
+  ]
+}
