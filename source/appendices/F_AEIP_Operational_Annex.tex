@@ -1,5 +1,9 @@
-% AI OSI Stack v5 — Canonical Edition Appendix
-% Created: 2025-11-04
-% File: F_AEIP_Operational_Annex.tex
-\narrative{Appendix F_AEIP_Operational_Annex narrative content placeholder.}
-\normative{Normative clauses and references for Appendix F_AEIP_Operational_Annex.}
+% Appendix F — AEIP Operational Annex
+\narrative{
+Appendix F provides operational details for implementing AEIP across tooling and governance workflows. Narrative sections describe how evidence packages are prepared, transmitted, and verified within federated environments. Examples include integration with continuous delivery pipelines and human-in-the-loop review stations.
+
+The annex also records lessons from interoperability testing, highlighting the importance of consistent schema usage and secure channel management.
+}
+\normative{
+Operational teams SHALL follow this annex when generating AEIP packages. Each package MUST include lifecycle stage, privacy and consent metadata, and receipt signatures. Transmission channels SHALL use authenticated encryption, and verification endpoints MUST reject packages lacking required fields. Updates to operational procedures SHALL be versioned and communicated to all federation partners.
+}
