@@ -18,36 +18,6 @@ The AI OSI Stack v5 Canonical Edition preserves the institutional specification 
 | `tests/` | Validation suites covering AEIP lifecycle, layer contracts, and governance simulations. |
 | `versions/` | Historical releases, update plans, and archived prototypes (including legacy release packages). |
 
-## Build & Validation
-1. **Install dependencies**
-   ```bash
-   python3 -m venv .venv
-   source .venv/bin/activate
-   pip install -r requirements.txt  # curate per deployment needs
-   ```
-2. **Run test suites**
-   ```bash
-   make test
-   ```
-3. **Compile the canonical manuscript**
-   ```bash
-   cd source
-   latexmk -pdf ai-osi-stack-v5.tex
-   ```
-4. **Validate AEIP artifacts**
-   ```bash
-   python tools/validate-artifact.py governance-spine/aeip/frame-payload.json
-   python tools/verify-aeip-signatures.py
-   ```
-
-## Integrity Verification
-1. Compare repository state with the published digest:
-   ```bash
-   sha512sum -c ledger/integrity/notices/integrity-notice.md
-   ```
-2. Review canonical provenance statements under `ledger/integrity/notices/` for custody, signature, and supersession context.
-3. Cross-check ledger manifests (e.g., `ledger/meta-audit/continuity-manifest.json`) against governance deployment records in `governance-spine/deployments/`.
-
 ## License & Citation
 - **License:** Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0). See [`license.txt`](license.txt).
 - **Preferred citation:**
