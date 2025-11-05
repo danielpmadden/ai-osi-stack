@@ -3,9 +3,9 @@ from __future__ import annotations
 from datetime import datetime, timezone
 
 from protocol.aeip_handshake import AEIPHandshake, AEIP_STEPS
-from src.common.artifacts import Artifact
-from src.common.crypto import sha3_512_hex
-from src.common.schema import json_dumps, load_schema
+from govspine.common.artifacts import Artifact
+from govspine.common.crypto import sha3_512_hex
+from govspine.common.schema import json_dumps, load_schema
 
 
 def _itp_payload() -> dict:
@@ -38,7 +38,7 @@ def test_handshake_full_cycle() -> None:
     assert transcript["handshakeId"] == "test"
     assert transcript["steps"][0]["step"] == "Intent"
 
-    schema = load_schema("schemas/itp_schema.json")
+    schema = load_schema("schemas/itp-schema.json")
     artifact = Artifact(schema=schema, payload=_itp_payload())
     artifact.validate()
     ledger_payload = handshake.attach_artifact(artifact)
