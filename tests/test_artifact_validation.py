@@ -5,9 +5,9 @@ from pathlib import Path
 
 from protocol.aeip_handshake import AEIPHandshake, AEIP_STEPS
 from protocol.ledger_node import GovernanceLedgerNode
-from src.common.artifacts import Artifact
-from src.common.crypto import sha3_512_hex
-from src.common.schema import json_dumps, load_schema
+from govspine.common.artifacts import Artifact
+from govspine.common.crypto import sha3_512_hex
+from govspine.common.schema import json_dumps, load_schema
 
 
 def _timestamp() -> str:
@@ -113,10 +113,10 @@ def _ile(handshake_dict: dict) -> dict:
 
 def test_artifact_schemas_roundtrip(tmp_path: Path) -> None:
     schemas = {
-        "ITP": (_itp(), "schemas/itp_schema.json"),
-        "DRR": (_drr(), "schemas/drr_schema.yaml"),
-        "GDS": (_gds(), "schemas/gds_schema.json"),
-        "OAM": (_oam(), "schemas/oam_schema.yaml"),
+        "ITP": (_itp(), "schemas/itp-schema.json"),
+        "DRR": (_drr(), "schemas/drr-schema.yaml"),
+        "GDS": (_gds(), "schemas/gds-schema.json"),
+        "OAM": (_oam(), "schemas/oam-schema.yaml"),
     }
     for name, (payload, schema_path) in schemas.items():
         schema = load_schema(schema_path)
@@ -129,7 +129,7 @@ def test_artifact_schemas_roundtrip(tmp_path: Path) -> None:
         handshake.record(step=step, persona_id=f"persona-{step}", payload={"detail": step})
     handshake_dict = handshake.to_dict()
 
-    ile_schema = load_schema("schemas/ile_schema.json")
+    ile_schema = load_schema("schemas/ile-schema.json")
     ile_artifact = Artifact(schema=ile_schema, payload=_ile(handshake_dict))
     ile_artifact.validate()
 
