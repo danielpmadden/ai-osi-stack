@@ -1,0 +1,33 @@
+$id: https://ai-osi.org/schemas/ccr.schema.yaml
+$schema: https://json-schema.org/draft/2020-12/schema
+
+required:
+  - change_id
+  - timestamp
+  - layer
+  - summary
+  - approved_by
+  - hash_before
+  - hash_after
+type: object
+properties:
+  change_id:
+    type: string
+  timestamp:
+    type: string
+    format: date-time
+  layer:
+    type: string
+  summary:
+    type: string
+  approved_by:
+    type: array
+    items:
+      type: string
+    minItems: 1
+  hash_before:
+    type: string
+    pattern: "^[a-f0-9]{40}$"
+  hash_after:
+    type: string
+    pattern: "^[a-f0-9]{40}$"

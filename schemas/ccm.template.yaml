@@ -1,0 +1,10 @@
+artifact: CCM
+version: 1.0
+controls:
+  - id: CCM-01
+    description: 
+external_refs:
+  - framework: GDPR
+    control: Article 30
+  - framework: ISO 27001
+    control: A.12.4
