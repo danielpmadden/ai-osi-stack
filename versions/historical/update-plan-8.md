@@ -70,7 +70,7 @@ Layer	Change
 
 Add Appendix N – Human Rights Safeguards (as normative).
 
-Update INTEGRITY_NOTICE.md → new section “Human-Rights Baseline.”
+Update meta/INTEGRITY_NOTICE.md → new section “Human-Rights Baseline.”
 
 AUTHOR_SELF_AUDIT.md → verify no artifact collects personal data without consent metadata.
 

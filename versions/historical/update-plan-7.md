@@ -28,7 +28,7 @@ ENGAGEMENT_RECORD.md	/ledger/evidence/ENGAGEMENT_RECORD.md	Historical outreach l
 PRESS_AND_RESPONSE.md	/legal/press/PRESS_AND_RESPONSE.md	Official response lines and press-ready clarifications for common narratives.
 ADVERSARIAL_PLAYBOOK.md	/appendices/Appendix-M-Adversarial-Playbook.md	Describes likely institutional and personal attacks and provides structured rebuttals.
 
-All files SHALL be signed with the canonical GPG key and cross-referenced in INTEGRITY_NOTICE.md.
+All files SHALL be signed with the canonical GPG key and cross-referenced in meta/INTEGRITY_NOTICE.md.
 
 4 · AEIP Metadata Extension (1.2 Revision)
 
@@ -108,7 +108,7 @@ Local contextualization potential
 7 · Custodial Governance Improvements
 7.1 Non-Rewritability Clause (Preface Addition)
 
-“Only artifacts signed with the canonical GPG key listed in INTEGRITY_NOTICE.md and archived under DOI 10.5281/zenodo.17517241 SHALL be considered normative. Forks, summaries, or derivatives MUST declare non-canonical status.”
+“Only artifacts signed with the canonical GPG key listed in meta/INTEGRITY_NOTICE.md and archived under DOI 10.5281/zenodo.17517241 SHALL be considered normative. Forks, summaries, or derivatives MUST declare non-canonical status.”
 
 7.2 Public Self-Audit Mechanism
 

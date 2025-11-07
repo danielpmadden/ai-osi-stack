@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Dict, List, Sequence
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-SPINE_ROOT = REPO_ROOT / "governance-spine"
+SPINE_ROOT = REPO_ROOT / "govspine"
 
 ASSET_MAP: Dict[str, str] = {
     "charter": "charters",
@@ -215,7 +215,7 @@ def parse_args() -> ManifestOptions:
     parser.add_argument(
         "--output",
         type=Path,
-        help="Override output file path (defaults to governance-spine/<type>/<artifact>.aeip.json).",
+        help="Override output file path (defaults to govspine/<type>/<artifact>.aeip.json).",
     )
 
     args = parser.parse_args()

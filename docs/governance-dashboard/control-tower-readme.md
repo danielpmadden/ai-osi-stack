@@ -7,7 +7,7 @@ The Control Tower pairs a FastAPI back-end with a React dashboard to register go
 - **FastAPI service (`apps/control_tower/api`)**
   - REST endpoints for `POST /asset`, `POST /manifest`, and `GET /audit`.
   - SQLite persistence via SQLModel with tables for assets, manifests, and audit events.
-  - Background tasks publish integrity summaries to `governance-spine/` manifests.
+  - Background tasks publish integrity summaries to `govspine/` manifests.
 - **React dashboard (`apps/control_tower/dashboard`)**
   - Vite + TypeScript scaffold with components for asset registry, manifest crosswalk, and risk metrics timeline.
   - Consumes the FastAPI endpoints using the shared schema definitions in `apps/control_tower/api/schemas.ts`.
@@ -30,7 +30,7 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8082
   - Response: Stored asset row with timestamps and layer metadata.
 - `POST /manifest`
   - Request body mirrors the AEIP manifest schema; payloads are versioned and linked to registered assets.
-  - Side-effect: writes the manifest JSON to the appropriate `governance-spine/<type>/` directory via `tools/governance_manifest.py` helpers.
+  - Side-effect: writes the manifest JSON to the appropriate `govspine/<type>/` directory via `tools/governance_manifest.py` helpers.
 - `GET /audit`
   - Returns paginated audit events including ledger receipt references, AEIP validation summaries, and outstanding remediation tasks.
 
