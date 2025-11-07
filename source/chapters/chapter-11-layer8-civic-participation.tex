@@ -73,6 +73,17 @@ structured dialogue protocol is invoked. Mediators review AEIP evidence, consult
 commitments. The narrative closes with a federated pledge: partners sign a mutual assurance charter reaffirming transparency-with-
 consent, collective responsibility, and the shared duty to keep civic interfaces accessible to all residents.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 8 addresses the exclusion residents feel when AI governance proceeds without their input, specifying how participatory mechanisms must be recorded and honoured.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Custodians SHALL register participation sessions via \texttt{schemas/aeip/tecl-schema.json} to show who was invited and how feedback shaped obligations.
+\item Engagement leads SHALL attach dialogue archives within \texttt{schemas/interpretive-trace-package.jsonld} for public review.
+\item Facilitators SHOULD refresh participation glossaries through \texttt{schemas/svc/semantic-registry.jsonld} so residents understand procedural terms.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This layer guarantees that community voices are not symbolic. It records meetings, attendance, and how ideas change the stack. People can see whether their feedback mattered. The language is kept clear so newcomers can engage.
+
 \normative{
 Implementations of Layer 8 SHALL provide accessible civic portals, APIs, and documentation that allow citizens to inspect
 operations, review evidence summaries, and understand rights. Interfaces SHALL meet accessibility standards, support
@@ -98,3 +109,5 @@ non-fragmentation clauses from Appendix H §2. Shared governance sessions MUST e
 status, civic feedback trends, and oversight attestations. Disputes SHALL trigger mediation workflows referencing Appendix E
 safeguards and MUST conclude with documented resolutions accessible through the civic portal.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/aeip/tecl-schema.json}, \texttt{schemas/interpretive-trace-package.jsonld}, and \texttt{schemas/svc/semantic-registry.jsonld} and corresponding AEIP audit records.

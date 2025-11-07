@@ -15,6 +15,17 @@ Integration culminates in a joint rehearsal. Amina and Arturo sit alongside deve
 
 The chapter closes with a civic symposium where persona storytellers present their findings alongside normative commitments. Citizens sign up to become co-curators, extending the Persona Architecture beyond the project team. The dual register is literal: participants hear the narrative rationale, then ratify the modal obligations. The Stack’s persona practice becomes a public institution, reinforcing the canon’s principle that governance is co-produced with the people it serves.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} This chapter addresses the confusion that arises when human and synthetic personas blur, guiding how roles, permissions, and accountability boundaries stay intelligible across systems.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Integrators SHALL map persona capabilities within \texttt{schemas/persona/persona-manifest.jsonld} before exposing them to civic interfaces.
+\item Custodians SHALL register stewardship assignments in \texttt{schemas/persona/registry.jsonld} so role limits are machine-readable.
+\item Auditors SHOULD connect behavioural reviews to \texttt{schemas/interpretive-trace-package.jsonld} artefacts for contextual accountability.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter explains who is allowed to act on behalf of the stack. It documents what each persona can and cannot do. The records make it clear when a persona changes or is removed. People can check those logs to see whether boundaries are respected.
+
 \normative{
 Persona development SHALL follow a documented interpretive process that includes stakeholder engagement, field observation, and ethical review, with outputs recorded in the hermeneutic ledger per Appendix L. Each persona manifest MUST include narrative context, normative obligations, operational constraints, and AEIP linkage identifiers that bind the persona to Layer 0–Layer 8 artefacts.
 
@@ -22,3 +33,5 @@ Personas guiding frontline or high-risk interactions SHALL encode explicit priva
 
 Institutional personas for custodians, policymakers, or procurement officers MUST reference applicable legal frameworks (including Annex IV, GDPR, and EU AI Act obligations), federation agreements (Appendix G), and custodianship protocols (Appendix H). AEIP validators SHALL enforce persona linkage for every major change request, ensuring that evidence bundles cite the relevant persona obligations. Persona updates SHALL be versioned, co-signed by civic representatives, and communicated through public attestation channels described in Appendix N.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/persona/persona-manifest.jsonld}, \texttt{schemas/persona/registry.jsonld}, and \texttt{schemas/interpretive-trace-package.jsonld} and corresponding AEIP audit records.

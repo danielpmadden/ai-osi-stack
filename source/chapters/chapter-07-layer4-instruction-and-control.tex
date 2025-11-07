@@ -9,6 +9,17 @@ ensures that operational directives align with civic mandates, ethical charters,
 instruction governance prevents misuse, preserves agency, and enables contestable control over intelligent systems.
 }
 
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 4 responds to the practical risk that instructions and prompts can quietly override safeguards, mandating a control regime that treats command channels as auditable infrastructure.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Operators SHALL register instructional flows with \texttt{schemas/aeip/instruction-log-schema.json} to expose who issued which commands and why.
+\item Stewards SHALL link contested instruction sessions to \texttt{schemas/interpretive-trace-package.jsonld} artefacts for reconstructing context.
+\item Oversight reviewers SHOULD summarise control efficacy within \texttt{schemas/oversight-audit-memo.jsonld} to capture governance responses.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This layer makes sure every instruction given to an AI system is traceable. It records who said what, how the system responded, and whether the process was safe. When questions arise, investigators can replay the context. Public reviewers also see how control lessons feed back into governance.
+
+
 \section*{Instruction Taxonomy}
 \narrative{
 Instruction governance begins with a taxonomy that categorises prompts, commands, supervisory policies, and automated workflows.
@@ -85,4 +96,6 @@ service levels and SHALL be tracked in (AEIP §O.7). Custodians SHALL communicat
 into policy updates. Retaliation against appellants SHALL be prohibited and enforced through Appendix B sanctions.
 }
 
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/aeip/instruction-log-schema.json}, \texttt{schemas/interpretive-trace-package.jsonld}, and \texttt{schemas/oversight-audit-memo.jsonld} and corresponding AEIP audit records.
 \clearpage

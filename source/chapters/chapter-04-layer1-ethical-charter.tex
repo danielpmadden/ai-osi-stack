@@ -11,6 +11,17 @@ translated into operational controls, review criteria, and public accountabiliti
 but as a binding contract with the communities whose lives are impacted by intelligent systems.
 }
 
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 1 tackles the frequent gap between stated corporate values and enforceable duties by translating the ethical charter into testable commitments that teams cannot ignore.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Stewards SHALL encode charter clauses in \texttt{schemas/aeip/ccm-schema.json} before any development milestone is approved.
+\item Compliance leads SHALL update charter change logs through \texttt{schemas/ccm-template.yaml} whenever values evolve or conflicts are resolved.
+\item Narrative editors SHOULD cross-reference terms with \texttt{schemas/svc/semantic-registry.jsonld} so that ethical language stays consistent across layers.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter turns value statements into obligations people can check. It tells teams where to store the formal charter and how to record updates. The guidance keeps words like fairness and dignity tied to specific controls. Readers can see how ethical promises become requirements they can test.
+
+
 \section*{Charter Composition}
 \narrative{
 Charters are co-authored documents that encode values into enforceable clauses. Update Plan 6 introduced a template linking each
@@ -82,4 +93,6 @@ operations dependent on that clause MUST pause until replacement guidance is rat
 Appendix B provisions but SHALL undergo retrospective review within 30 days.
 }
 
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/aeip/ccm-schema.json}, \texttt{schemas/ccm-template.yaml}, and \texttt{schemas/svc/semantic-registry.jsonld} and corresponding AEIP audit records.
 \clearpage

@@ -15,6 +15,17 @@ As the gathering concludes, custodians seal the canonical release. They sign the
 
 The final scene shifts to a quiet municipal library where a student accesses the Stack through the public archive. They cross-check the hash, read the appendices, and annotate questions for the next civic forum. The living constitution breathes through such acts of engagement. The canon remains open, accountable, and rooted in the shared conviction that transparency is a public good only when paired with dignity and restraint.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} The epilogue addresses the challenge of keeping the stack a living constitution, emphasising how stewardship, public oversight, and iterative amendments stay synchronised.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Custodians SHALL log constitutional updates within \texttt{schemas/integrity-ledger-entry.jsonld} to evidence legitimacy.
+\item Governance councils SHALL publish amendment rationales via \texttt{schemas/governance-decision-summary.jsonld} for civic review.
+\item Stewards SHOULD refresh lifecycle commitments through \texttt{schemas/aeip-template.yaml} whenever the constitution evolves.
+\end{itemize}
+\textbf{Plain-Speak Summary:} The epilogue reminds readers that the stack must keep adapting without losing its soul. It records how changes are logged, explained, and adopted. People can see which commitments endure and which are reworked. The framework stays alive because every change is accountable.
+
 \normative{
 The canonical release SHALL be accompanied by public verification materials, including integrity hashes, provenance signatures, and attestation guides aligned with Appendices N and O. Custodians MUST convene annual renewal assemblies to review canonical obligations, record interpretive updates, and invite civic participation. Outcomes SHALL be documented in the hermeneutic ledger and incorporated into Appendix C change logs.
 
@@ -22,3 +33,5 @@ Citizens and partners SHALL retain the right to petition for amendments, audits,
 
 Every distribution of the canonical edition SHALL reference the non-revocable principle and the obligations to prevent transparency from morphing into surveillance. Implementers MUST honour persona commitments, epistemic safeguards, and human rights protections described throughout the canon. Failure to do so triggers custodial review, public notice, and potential succession under Appendix H, preserving the canon’s integrity for future generations.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/integrity-ledger-entry.jsonld}, \texttt{schemas/governance-decision-summary.jsonld}, and \texttt{schemas/aeip-template.yaml} and corresponding AEIP audit records.
