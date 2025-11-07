@@ -5,11 +5,9 @@
 
 ## Overview
 
-The **AI OSI Stack** is a complete open-standard framework for governing artificial-intelligence systems from civic intent to technical implementation.  
-It provides a **layered architecture**—analogous to the Internet’s OSI model—where every layer of an AI system carries explicit duties, evidence records, and public-interest safeguards.
+The **AI OSI Stack** is a complete open-standard framework for governing artificial-intelligence systems from civic intent to technical implementation. It provides a **layered architecture**—analogous to the Internet’s OSI model—where every layer of an AI system carries explicit duties, evidence records, and public-interest safeguards.
 
-v5.0 represents the **canonical edition** of the Stack: fully audited for conceptual coherence, continuity, clarity, and intent.  
-It unifies technical, ethical, legal, and civic disciplines into a single verifiable structure for **AI accountability by design**.
+v5.0 represents the **canonical edition** of the Stack: fully audited for conceptual coherence, continuity, clarity, and intent. It unifies technical, ethical, legal, and civic disciplines into a single verifiable structure for **AI accountability by design**.
 
 The Stack translates civic mandates and ethical commitments into operational controls, making every stage of intelligent system design and deployment legible, testable, and auditable. It binds social contracts, organizational practice, and technical enforcement so oversight bodies can shape system behavior in real time. The repository is structured so practitioners can regenerate official publications, execute validation suites, and confirm provenance from local environments.
 
@@ -17,9 +15,7 @@ The Stack translates civic mandates and ethical commitments into operational con
 
 ## Why It Matters
 
-Modern AI operates faster than existing governance can adapt.  
-Most organizations manage AI risk piecemeal—through model cards, privacy reviews, or ethics boards—without a common backbone.  
-The AI OSI Stack solves this fragmentation by defining a **governance spine** that any institution can adopt, audit, or extend.
+Modern AI operates faster than existing governance can adapt. Most organizations manage AI risk piecemeal—through model cards, privacy reviews, or ethics boards—without a common backbone. The AI OSI Stack solves this fragmentation by defining a **governance spine** that any institution can adopt, audit, or extend.
 
 Its benefits:
 
@@ -85,11 +81,9 @@ Representative materials can be found in `source/interpretive/` (LaTeX sources) 
 
 ## AEIP – AI Epistemic Infrastructure Protocol
 
-The **AEIP** is the Stack’s data layer: a protocol and schema set for encoding evidence.  
-It defines artefacts such as Decision Rationale Records, Governance Directive Sets, Integrity Ledger Entries, and Interpretive Trace Packages.
+The **AEIP** is the Stack’s data layer: a protocol and schema set for encoding evidence. It defines artefacts such as Decision Rationale Records, Governance Directive Sets, Integrity Ledger Entries, and Interpretive Trace Packages.
 
-Each artefact is machine-verifiable through JSON-LD/YAML schemas in [`schemas/`](schemas/).  
-Together, they make the Stack *provable* rather than merely declarative.
+Each artefact is machine-verifiable through JSON-LD/YAML schemas in [`schemas/`](schemas/). Together, they make the Stack *provable* rather than merely declarative.
 
 **Canonical Resources**
 
@@ -101,8 +95,7 @@ Together, they make the Stack *provable* rather than merely declarative.
 
 ## Governance Spine Implementation
 
-The `govspine/` package is the **runtime reference implementation** of the Stack.  
-It mirrors the eight layers and provides utilities for:
+The `govspine/` package is the **runtime reference implementation** of the Stack. It mirrors the eight layers and provides utilities for:
 
 * AEIP handshakes and ledger operations  
 * Governance manifest generation  
