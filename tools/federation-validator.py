@@ -39,9 +39,7 @@ def validate_root(manifest: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     missing = REQUIRED_ROOT_KEYS - manifest.keys()
     if missing:
-        errors.append(
-            "Missing required top-level keys: " + ", ".join(sorted(missing))
-        )
+        errors.append("Missing required top-level keys: " + ", ".join(sorted(missing)))
         return errors
 
     if not isinstance(manifest["federation"], dict):
@@ -58,7 +56,9 @@ def validate_root(manifest: dict[str, Any]) -> list[str]:
         if "registryId" not in fcr:
             errors.append("FCR registryId is required to trace credential scope.")
         if "partnerRegistry" not in fcr or not isinstance(fcr["partnerRegistry"], list):
-            errors.append("FCR partnerRegistry must list registered partner identifiers.")
+            errors.append(
+                "FCR partnerRegistry must list registered partner identifiers."
+            )
     return errors
 
 
@@ -72,17 +72,13 @@ def iter_partners(manifest: dict[str, Any]) -> Iterable[dict[str, Any]]:
 def validate_partners(manifest: dict[str, Any]) -> list[str]:
     errors: list[str] = []
     registered = set()
-    fcr_registry = set(
-        manifest.get("fcr", {}).get("partnerRegistry", [])
-    )
+    fcr_registry = set(manifest.get("fcr", {}).get("partnerRegistry", []))
     for partner in iter_partners(manifest):
         partner_id = partner.get("id", "<unknown>")
         registered.add(partner_id)
         missing = [key for key in REQUIRED_PARTNER_KEYS if key not in partner]
         if missing:
-            errors.append(
-                f"Partner {partner_id} missing fields: {', '.join(missing)}"
-            )
+            errors.append(f"Partner {partner_id} missing fields: {', '.join(missing)}")
         hook = partner.get("aeipHook")
         if hook and not hook.startswith("https://"):
             errors.append(
@@ -97,7 +93,9 @@ def validate_partners(manifest: dict[str, Any]) -> list[str]:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("manifest", type=Path, help="Path to federation manifest (JSON or YAML)")
+    parser.add_argument(
+        "manifest", type=Path, help="Path to federation manifest (JSON or YAML)"
+    )
     args = parser.parse_args(argv)
 
     manifest = load_manifest(args.manifest)
@@ -110,7 +108,9 @@ def main(argv: list[str] | None = None) -> int:
         print("Federation manifest does not comply with Policy Partnership Charter.")
         return 1
 
-    print("Federation manifest validated against FCR and AEIP integration requirements.")
+    print(
+        "Federation manifest validated against FCR and AEIP integration requirements."
+    )
     return 0
 
 

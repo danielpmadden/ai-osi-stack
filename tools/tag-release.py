@@ -18,7 +18,9 @@ def determine_quarter(date: dt.date) -> str:
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--date", help="ISO date for tagging (defaults to today)")
-    parser.add_argument("--dry-run", action="store_true", help="Print tag without creating it")
+    parser.add_argument(
+        "--dry-run", action="store_true", help="Print tag without creating it"
+    )
     args = parser.parse_args()
 
     today = dt.date.fromisoformat(args.date) if args.date else dt.date.today()

@@ -5,6 +5,7 @@ layer paths for AEIP governed artifacts. These utilities support future
 integration with governance pipelines and ensure Update Plan 12 requirements
 remain testable.
 """
+
 from __future__ import annotations
 
 from typing import Iterable
@@ -55,6 +56,7 @@ def validate_layer_path(layer_path: str) -> bool:
 # Pytest integration
 # -------------------
 
+
 def test_validate_receipts_success():
     receipts = [
         {"receiptId": "R-001", "signature": {"signer": "custodian", "hash": "abc"}},
@@ -83,9 +85,7 @@ def test_validate_signatures_failure_missing_block():
 
 
 def test_validate_signatures_failure_empty_fields():
-    receipts = [
-        {"receiptId": "R-001", "signature": {"signer": "", "hash": ""}}
-    ]
+    receipts = [{"receiptId": "R-001", "signature": {"signer": "", "hash": ""}}]
     assert validate_signatures(receipts) is False
 
 

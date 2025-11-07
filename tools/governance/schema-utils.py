@@ -1,4 +1,5 @@
 """Utilities for loading and validating governance schemas."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -31,7 +32,9 @@ class SimpleValidator:
     def validate(self, instance: Any) -> None:
         self._validate(instance, self._schema, path=())
 
-    def _validate(self, instance: Any, schema: Mapping[str, Any], path: tuple[str, ...]) -> None:
+    def _validate(
+        self, instance: Any, schema: Mapping[str, Any], path: tuple[str, ...]
+    ) -> None:
         schema_type = schema.get("type")
         if schema_type:
             self._check_type(instance, schema_type, path)
@@ -43,9 +46,13 @@ class SimpleValidator:
 
         enum = schema.get("enum")
         if enum is not None and instance not in enum:
-            raise ValidationError(f"Expected one of {enum!r} but received {instance!r}", path)
+            raise ValidationError(
+                f"Expected one of {enum!r} but received {instance!r}", path
+            )
 
-    def _check_type(self, instance: Any, schema_type: str | list[str], path: tuple[str, ...]) -> None:
+    def _check_type(
+        self, instance: Any, schema_type: str | list[str], path: tuple[str, ...]
+    ) -> None:
         types = [schema_type] if isinstance(schema_type, str) else schema_type
         matches = False
         for type_name in types:
@@ -57,16 +64,27 @@ class SimpleValidator:
                 matches = True
             elif type_name == "number" and isinstance(instance, (int, float)):
                 matches = True
-            elif type_name == "integer" and isinstance(instance, int) and not isinstance(instance, bool):
+            elif (
+                type_name == "integer"
+                and isinstance(instance, int)
+                and not isinstance(instance, bool)
+            ):
                 matches = True
             elif type_name == "boolean" and isinstance(instance, bool):
                 matches = True
             elif type_name == "null" and instance is None:
                 matches = True
         if not matches:
-            raise ValidationError(f"Value does not match expected type(s) {types}", path)
+            raise ValidationError(
+                f"Value does not match expected type(s) {types}", path
+            )
 
-    def _validate_object(self, instance: Mapping[str, Any], schema: Mapping[str, Any], path: tuple[str, ...]) -> None:
+    def _validate_object(
+        self,
+        instance: Mapping[str, Any],
+        schema: Mapping[str, Any],
+        path: tuple[str, ...],
+    ) -> None:
         if not isinstance(instance, Mapping):
             raise ValidationError("Expected object", path)
         required = schema.get("required", [])
@@ -78,7 +96,9 @@ class SimpleValidator:
             if key in properties:
                 self._validate(value, properties[key], path + (key,))
 
-    def _validate_array(self, instance: Iterable[Any], schema: Mapping[str, Any], path: tuple[str, ...]) -> None:
+    def _validate_array(
+        self, instance: Iterable[Any], schema: Mapping[str, Any], path: tuple[str, ...]
+    ) -> None:
         if not isinstance(instance, list):
             raise ValidationError("Expected array", path)
         items_schema = schema.get("items")
