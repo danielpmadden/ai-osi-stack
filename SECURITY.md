@@ -1,12 +1,3 @@
----
-canonical_version: "AI OSI Stack v5"
-canonical_date: "2025-11-07"
-aeip_version: "1.3"
-repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
-domain_of_record: "https://aiosi.org"
-supersedes_all_prior_metadata: true
----
-
 # Security Policy — AI OSI Stack v5
 
 ## Threat Model Overview
@@ -19,7 +10,7 @@ AI OSI Stack v5 treats security as governance infrastructure. The primary threat
 Controls are layered: cryptographic hashes (SHA-512) secure artifacts, AEIP signatures bind payloads to custodians, and governance ledgers expose every change for public audit.
 
 ## Coordinated Disclosure Process
-Report suspected vulnerabilities or integrity failures to **security@aiosi.org** with the subject line “AI OSI Stack v5 Security Disclosure.” Include:
+Report suspected vulnerabilities or integrity failures to **security@aiosi.org (test example)** with the subject line “AI OSI Stack v5 Security Disclosure.” Include:
 1. A detailed description of the issue and reproduction steps.
 2. Potential impact across AEIP layers or governance operations.
 3. Any proof-of-concept materials.
