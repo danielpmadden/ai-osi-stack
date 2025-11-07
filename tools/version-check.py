@@ -18,7 +18,10 @@ def main() -> None:
         versions[path.name] = schema.version
     missing = [name for name in versions if name not in DOC_PATH.read_text()]
     if missing:
-        print("Warning: documentation does not reference schema versions for", ", ".join(missing))
+        print(
+            "Warning: documentation does not reference schema versions for",
+            ", ".join(missing),
+        )
     else:
         print("Documentation references all schema artifacts.")
     for name, version in sorted(versions.items()):

@@ -30,7 +30,9 @@ def test_handshake_full_cycle() -> None:
     handshake = AEIPHandshake(handshake_id="test", governance_scope="pytest")
     for index, step in enumerate(AEIP_STEPS):
         payload = {"message": step, "sequence": index}
-        message = handshake.record(step=step, persona_id=f"persona-{index}", payload=payload)
+        message = handshake.record(
+            step=step, persona_id=f"persona-{index}", payload=payload
+        )
         assert message.signature is not None
         assert message.dignity_compliance is True
     transcript = handshake.to_dict()

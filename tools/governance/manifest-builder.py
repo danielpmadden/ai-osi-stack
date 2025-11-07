@@ -1,4 +1,5 @@
 """Generate Governance Spine manifests and update registry files."""
+
 from __future__ import annotations
 
 import argparse
@@ -19,7 +20,11 @@ except ModuleNotFoundError:  # pragma: no cover - optional dependency
 
 if __package__ in (None, ""):
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2]))
-    from tools.governance.schema_utils import SchemaRegistry, ValidationError, validate_manifest
+    from tools.governance.schema_utils import (
+        SchemaRegistry,
+        ValidationError,
+        validate_manifest,
+    )
 else:
     from .schema_utils import SchemaRegistry, ValidationError, validate_manifest
 
@@ -89,20 +94,30 @@ def build_manifest(args: argparse.Namespace) -> Dict[str, Any]:
 
 def parse_args(argv: list[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Generate governance manifests")
-    parser.add_argument("--artifact-type", required=True, help="Artifact type identifier")
+    parser.add_argument(
+        "--artifact-type", required=True, help="Artifact type identifier"
+    )
     parser.add_argument("--layer", required=True, help="Governance layer (e.g., L0)")
     parser.add_argument("--custodian", required=True, help="Manifest custodian")
-    parser.add_argument("--context-uri", required=True, help="Link to the relevant system or repo")
+    parser.add_argument(
+        "--context-uri", required=True, help="Link to the relevant system or repo"
+    )
     parser.add_argument("--payload", required=True, help="Path to the evidence payload")
     parser.add_argument("--payload-uri", help="External URI for the payload")
-    parser.add_argument("--schema-ref", required=True, help="Schema filename under schemas/aeip/")
+    parser.add_argument(
+        "--schema-ref", required=True, help="Schema filename under schemas/aeip/"
+    )
     parser.add_argument("--schema-version", help="Schema version string")
     parser.add_argument("--tags", nargs="*", help="Tags to include in the manifest")
     parser.add_argument("--signature", help="Explicit signature value")
     parser.add_argument("--signature-file", help="Read signature from file")
-    parser.add_argument("--extra-path", help="JSON file containing extra fields to merge")
+    parser.add_argument(
+        "--extra-path", help="JSON file containing extra fields to merge"
+    )
     parser.add_argument("--extra-json", help="JSON string of extra fields")
-    parser.add_argument("--output", required=True, help="Output manifest path (.json or .yaml)")
+    parser.add_argument(
+        "--output", required=True, help="Output manifest path (.json or .yaml)"
+    )
     return parser.parse_args(argv)
 
 

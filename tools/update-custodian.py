@@ -49,7 +49,12 @@ def dump_registry(entries: List[Dict[str, Any]]) -> None:
 
 def render_roster(entries: List[Dict[str, Any]]) -> None:
     ROSTER_PATH.parent.mkdir(parents=True, exist_ok=True)
-    lines = ["# Custodian Roster", "", "| Layer | Role | Holder | Key ID | Last Rotation |", "| --- | --- | --- | --- | --- |"]
+    lines = [
+        "# Custodian Roster",
+        "",
+        "| Layer | Role | Holder | Key ID | Last Rotation |",
+        "| --- | --- | --- | --- | --- |",
+    ]
     for entry in entries:
         lines.append(
             f"| {entry['layer']} | {entry['role']} | {entry['holder']} | {entry['key_id']} | {entry['last_rotation']} |"
@@ -57,21 +62,28 @@ def render_roster(entries: List[Dict[str, Any]]) -> None:
     ROSTER_PATH.write_text("\n".join(lines) + "\n", encoding="utf-8")
 
 
-def rotate_entry(entries: List[Dict[str, Any]], layer: str, role: str, holder: str, key_id: str) -> None:
+def rotate_entry(
+    entries: List[Dict[str, Any]], layer: str, role: str, holder: str, key_id: str
+) -> None:
     now = dt.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"
     for entry in entries:
-        if entry["layer"].lower() == layer.lower() and entry["role"].lower() == role.lower():
+        if (
+            entry["layer"].lower() == layer.lower()
+            and entry["role"].lower() == role.lower()
+        ):
             entry["holder"] = holder
             entry["key_id"] = key_id
             entry["last_rotation"] = now
             return
-    entries.append({
-        "layer": layer,
-        "role": role,
-        "holder": holder,
-        "key_id": key_id,
-        "last_rotation": now,
-    })
+    entries.append(
+        {
+            "layer": layer,
+            "role": role,
+            "holder": holder,
+            "key_id": key_id,
+            "last_rotation": now,
+        }
+    )
 
 
 def commit_changes(message: str, sign: bool) -> None:
@@ -87,8 +99,12 @@ def main():
     parser.add_argument("role", help="Custodian role")
     parser.add_argument("holder", help="New holder name")
     parser.add_argument("key_id", help="New signing key fingerprint")
-    parser.add_argument("--sign", action="store_true", help="Sign the git commit with -S")
-    parser.add_argument("--commit", action="store_true", help="Create git commit for the rotation")
+    parser.add_argument(
+        "--sign", action="store_true", help="Sign the git commit with -S"
+    )
+    parser.add_argument(
+        "--commit", action="store_true", help="Create git commit for the rotation"
+    )
     args = parser.parse_args()
 
     entries = parse_registry()
@@ -107,7 +123,9 @@ def main():
 
     if args.commit:
         try:
-            commit_changes(f"chore: rotate custodian {args.layer} {args.role}", args.sign)
+            commit_changes(
+                f"chore: rotate custodian {args.layer} {args.role}", args.sign
+            )
         except subprocess.CalledProcessError as exc:
             raise SystemExit(f"git commit failed: {exc}")
 

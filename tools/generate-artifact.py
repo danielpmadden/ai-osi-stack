@@ -39,7 +39,9 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("artifact_type", choices=SCHEMA_FILES.keys())
     parser.add_argument("--output", "-o", type=Path, help="File to write JSON artifact")
-    parser.add_argument("--set", action="append", default=[], help="Override key=value pairs")
+    parser.add_argument(
+        "--set", action="append", default=[], help="Override key=value pairs"
+    )
     args = parser.parse_args()
 
     overrides: Dict[str, Any] = {}

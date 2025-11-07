@@ -69,7 +69,9 @@ def build_report(artifact: dict) -> str:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("artifact", type=Path, help="Path to the AEIP artifact JSON file")
+    parser.add_argument(
+        "artifact", type=Path, help="Path to the AEIP artifact JSON file"
+    )
     parser.add_argument(
         "--report",
         action="store_true",

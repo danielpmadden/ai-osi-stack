@@ -1,4 +1,12 @@
 {
+  "canonicalMetadata": {
+    "canonical_version": "AI OSI Stack v5",
+    "canonical_date": "2025-11-07",
+    "aeip_version": "1.3",
+    "repository_of_record": "https://github.com/danielpmadden/ai-osi-stack",
+    "domain_of_record": "https://aiosi.org",
+    "supersedes_all_prior_metadata": true
+  },
   "$comment": "Integrity Ledger Entry Schema | AEIP-Schema-1.0-2025-11",
   "$comment:license": "CC BY-NC-ND 4.0",
   "$comment:integrity": "Version hash: TBD | Generated: 2025-05-09T00:00:00Z",
@@ -43,49 +51,63 @@
     "artifact_type": {
       "type": "string",
       "const": "IntegrityLedgerEntry",
-      "$comment": "Designates this record as a ledger event maintaining AEIP chain-of-custody." 
+      "$comment": "Designates this record as a ledger event maintaining AEIP chain-of-custody."
     },
     "version": {
       "type": "string",
       "pattern": "^\\d+\\.\\d+\\.\\d+$",
-      "$comment": "Semantic version identifying the ledger entry template iteration." 
+      "$comment": "Semantic version identifying the ledger entry template iteration."
     },
     "uuid": {
       "type": "string",
       "pattern": "^(urn:uuid:)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$",
-      "$comment": "Mandatory UUIDv4 identifier for ledger indexing." 
+      "$comment": "Mandatory UUIDv4 identifier for ledger indexing."
     },
     "timestamp": {
       "type": "string",
       "format": "date-time",
-      "$comment": "UTC timestamp ensuring temporal sequencing fidelity." 
+      "$comment": "UTC timestamp ensuring temporal sequencing fidelity."
     },
     "layer": {
       "type": "integer",
       "minimum": 1,
       "maximum": 7,
-      "$comment": "Identifies the AI OSI Stack layer that generated the ledger entry." 
+      "$comment": "Identifies the AI OSI Stack layer that generated the ledger entry."
     },
     "issuer": {
       "type": "object",
-      "required": ["name", "role", "organization", "contact"],
+      "required": [
+        "name",
+        "role",
+        "organization",
+        "contact"
+      ],
       "properties": {
-        "name": { "type": "string" },
-        "role": { "type": "string" },
-        "organization": { "type": "string" },
-        "contact": { "type": "string", "format": "uri" }
+        "name": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "organization": {
+          "type": "string"
+        },
+        "contact": {
+          "type": "string",
+          "format": "uri"
+        }
       },
       "additionalProperties": false,
-      "$comment": "Identifies the ledger service or authority responsible for the entry." 
+      "$comment": "Identifies the ledger service or authority responsible for the entry."
     },
     "summary": {
       "type": "string",
-      "$comment": "Concise explanation of the governance event being notarized." 
+      "$comment": "Concise explanation of the governance event being notarized."
     },
     "hash": {
       "type": "string",
       "pattern": "^[A-Fa-f0-9]{64}$",
-      "$comment": "Hex-encoded SHA-256 hash binding the entry to its payload content." 
+      "$comment": "Hex-encoded SHA-256 hash binding the entry to its payload content."
     },
     "previous_entry": {
       "type": "string",
@@ -96,10 +118,12 @@
         },
         {
           "type": "string",
-          "enum": ["GENESIS"]
+          "enum": [
+            "GENESIS"
+          ]
         }
       ],
-      "$comment": "UUID of the prior ledger entry or GENESIS for the initial record." 
+      "$comment": "UUID of the prior ledger entry or GENESIS for the initial record."
     },
     "linked_artifacts": {
       "type": "array",
@@ -116,30 +140,52 @@
           }
         ]
       },
-      "$comment": "Artifacts or evidence packages notarized by the ledger entry." 
+      "$comment": "Artifacts or evidence packages notarized by the ledger entry."
     },
     "signature": {
       "type": "object",
-      "required": ["method", "key_id", "value"],
+      "required": [
+        "method",
+        "key_id",
+        "value"
+      ],
       "properties": {
-        "method": { "type": "string" },
-        "key_id": { "type": "string" },
-        "value": { "type": "string" }
+        "method": {
+          "type": "string"
+        },
+        "key_id": {
+          "type": "string"
+        },
+        "value": {
+          "type": "string"
+        }
       },
       "additionalProperties": false,
-      "$comment": "Cryptographic binding of the ledger entry to an issuing authority." 
+      "$comment": "Cryptographic binding of the ledger entry to an issuing authority."
     },
     "provenance": {
       "type": "object",
-      "required": ["source_system", "collection_method", "jurisdiction"],
+      "required": [
+        "source_system",
+        "collection_method",
+        "jurisdiction"
+      ],
       "properties": {
-        "source_system": { "type": "string" },
-        "collection_method": { "type": "string" },
-        "jurisdiction": { "type": "string" },
-        "confidence": { "type": "string" }
+        "source_system": {
+          "type": "string"
+        },
+        "collection_method": {
+          "type": "string"
+        },
+        "jurisdiction": {
+          "type": "string"
+        },
+        "confidence": {
+          "type": "string"
+        }
       },
       "additionalProperties": false,
-      "$comment": "Documents chain-of-custody context for temporal integrity enforcement." 
+      "$comment": "Documents chain-of-custody context for temporal integrity enforcement."
     }
   },
   "additionalProperties": false,
