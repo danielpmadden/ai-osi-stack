@@ -1,6 +1,14 @@
-© 2025 Daniel P. Madden
-Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+---
+canonical_version: "AI OSI Stack v5"
+canonical_date: "2025-11-07"
+aeip_version: "1.3"
+repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
+domain_of_record: "https://aiosi.org"
+supersedes_all_prior_metadata: true
+---
 
-# Historical Stack Versions
+# Release Archive
 
-This directory retains AI OSI Stack v1–v3 for reference. Current canonical version is `source/ai-osi-stack-v5.tex`. Current license is CC BY-NC-ND 4.0. Materials herein SHALL NOT be deployed for active governance.
+`versions/ai-osi-stack-v5.pdf` is the canonical compiled manuscript for AI OSI Stack v5.
+
+Historical releases, drafts, and update plans are preserved under `versions/historical/`. They remain available for citation but are superseded by the metadata declared in this repository.

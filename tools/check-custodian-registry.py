@@ -46,9 +46,14 @@ def main() -> int:
             return 1
         raw = entry.get("last_rotation")
         try:
-            ts = dt.datetime.fromisoformat(raw.replace("Z", "+00:00")).astimezone(dt.timezone.utc)
+            ts = dt.datetime.fromisoformat(raw.replace("Z", "+00:00")).astimezone(
+                dt.timezone.utc
+            )
         except Exception:
-            print(f"invalid timestamp for {entry['layer']} {entry['role']}", file=sys.stderr)
+            print(
+                f"invalid timestamp for {entry['layer']} {entry['role']}",
+                file=sys.stderr,
+            )
             return 1
         age = (now - ts).days
         if age > MAX_AGE_DAYS:

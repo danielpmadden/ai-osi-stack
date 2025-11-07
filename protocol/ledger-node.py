@@ -1,4 +1,5 @@
 """Governance ledger node daemon."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass
@@ -67,7 +68,9 @@ class GovernanceLedgerNode:
         entry = self._build_ledger_entry(artifact_type, artifact_payload, handshake)
         index = self._next_index()
         entry["ledgerIndex"] = index
-        entry["hash"] = sha3_512_hex(json_dumps({k: v for k, v in entry.items() if k != "hash"}))
+        entry["hash"] = sha3_512_hex(
+            json_dumps({k: v for k, v in entry.items() if k != "hash"})
+        )
         path = self.ledger_dir / f"entry_{index:05d}.json"
         path.write_text(json.dumps(entry, indent=2, sort_keys=True))
         self._update_registry(index)
@@ -170,7 +173,9 @@ class GovernanceLedgerNode:
 
             self.registry_path.write_text(yaml.safe_dump(registry, sort_keys=True))
         except Exception:
-            self.registry_path.write_text(json.dumps(registry, indent=2, sort_keys=True))
+            self.registry_path.write_text(
+                json.dumps(registry, indent=2, sort_keys=True)
+            )
 
     # ------------------------------------------------------------------
     # HTTP daemon
@@ -193,7 +198,11 @@ class GovernanceLedgerNode:
                         artifact_payload=request["artifact"],
                         handshake=request["handshake"],
                     )
-                except (KeyError, LedgerVerificationError, SchemaValidationError) as exc:
+                except (
+                    KeyError,
+                    LedgerVerificationError,
+                    SchemaValidationError,
+                ) as exc:
                     self.send_response(400)
                     self.end_headers()
                     self.wfile.write(json.dumps({"error": str(exc)}).encode("utf-8"))
@@ -206,7 +215,11 @@ class GovernanceLedgerNode:
                 self.send_response(201)
                 self.send_header("Content-Type", "application/json")
                 self.end_headers()
-                self.wfile.write(json.dumps({"index": result.index, "path": str(result.path)}).encode("utf-8"))
+                self.wfile.write(
+                    json.dumps(
+                        {"index": result.index, "path": str(result.path)}
+                    ).encode("utf-8")
+                )
 
             def log_message(self, format: str, *args: Any) -> None:  # pragma: no cover
                 return  # Quiet logs for deterministic tests

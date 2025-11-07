@@ -1,4 +1,5 @@
 """AEIP v1 five-step handshake implementation."""
+
 from __future__ import annotations
 
 from dataclasses import dataclass, field
@@ -7,7 +8,12 @@ import json
 from typing import Any, Dict, List, Sequence
 
 from govspine.common.artifacts import Artifact
-from govspine.common.crypto import HASH_ALGORITHM, PersonaSignature, sha3_512_hex, temporal_seal
+from govspine.common.crypto import (
+    HASH_ALGORITHM,
+    PersonaSignature,
+    sha3_512_hex,
+    temporal_seal,
+)
 from govspine.common.schema import json_dumps
 
 AEIP_STEPS: Sequence[str] = ("Intent", "Justify", "CounterSign", "Commit", "Update")
@@ -33,11 +39,15 @@ class HandshakeMessage:
             "payload": self.payload,
             "dignityCompliance": self.dignity_compliance,
             "temporalSeal": self.temporal_seal,
-            "signature": None if self.signature is None else {
-                "personaId": self.signature.persona_id,
-                "signature": self.signature.signature,
-                "algorithm": self.signature.algorithm,
-            },
+            "signature": (
+                None
+                if self.signature is None
+                else {
+                    "personaId": self.signature.persona_id,
+                    "signature": self.signature.signature,
+                    "algorithm": self.signature.algorithm,
+                }
+            ),
         }
 
 
@@ -80,7 +90,9 @@ class AEIPHandshake:
             payload=payload,
             dignity_compliance=dignity_compliance,
         )
-        message.signature = PersonaSignature.sign(persona_id, self._canonical_message_payload(message))
+        message.signature = PersonaSignature.sign(
+            persona_id, self._canonical_message_payload(message)
+        )
         if not message.signature.verify(self._canonical_message_payload(message)):
             raise HandshakeError("Unable to verify freshly generated signature")
         self._messages.append(message)

@@ -79,7 +79,9 @@ def main() -> None:
             notes = entry["control"] or entry["notes"]
             lines.append(f"| {framework} | {entry['artifact']} | {notes} |")
 
-    (OUTPUT_DIR / "framework-crosswalk.md").write_text("\n".join(lines), encoding="utf-8")
+    (OUTPUT_DIR / "framework-crosswalk.md").write_text(
+        "\n".join(lines), encoding="utf-8"
+    )
 
 
 if __name__ == "__main__":

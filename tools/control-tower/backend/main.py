@@ -28,10 +28,7 @@ SHARED_ARTIFACTS = {
 
 app = FastAPI(title="Governance Control Tower API")
 app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"]
+    CORSMiddleware, allow_origins=["*"], allow_credentials=True, allow_methods=["*"]
 )
 
 
@@ -203,7 +200,9 @@ def metrics():
         raise HTTPException(status_code=404, detail="Metrics unavailable")
     with METRICS_FILE.open("r", encoding="utf-8") as handle:
         payload = json.load(handle)
-    return MetricsResponse(generated_at=payload["generated_at"], values=payload["values"])
+    return MetricsResponse(
+        generated_at=payload["generated_at"], values=payload["values"]
+    )
 
 
 @app.get("/api/templates")
@@ -220,10 +219,12 @@ def outstanding_tasks():
     tasks = []
     for asset in assets:
         for artifact in asset.missing_artifacts:
-            tasks.append({
-                "asset_id": asset.asset_id,
-                "artifact": artifact,
-                "owner": asset.owner,
-                "status": asset.status
-            })
+            tasks.append(
+                {
+                    "asset_id": asset.asset_id,
+                    "artifact": artifact,
+                    "owner": asset.owner,
+                    "status": asset.status,
+                }
+            )
     return tasks
