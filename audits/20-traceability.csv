@@ -1,0 +1,79 @@
+Chapter,Clause ID,Schema,Tool,Layer,Status
+chapter-00-introduction-and-purpose,chapter-00-introduction-and-purpose-C01,schemas/aeip/aeip-frame-schema.json,,Preface,Schema linked; no tool reference
+chapter-00-introduction-and-purpose,chapter-00-introduction-and-purpose-C02,schemas/aeip-template.yaml,,Preface,Schema linked; no tool reference
+chapter-00-introduction-and-purpose,chapter-00-introduction-and-purpose-C03,schemas/svc/semantic-registry.jsonld,,Preface,Schema linked; no tool reference
+chapter-01-historical-and-technical-lineage,chapter-01-historical-and-technical-lineage-C01,schemas/interpretive-trace-package.jsonld,,Lineage,Schema linked; no tool reference
+chapter-01-historical-and-technical-lineage,chapter-01-historical-and-technical-lineage-C02,schemas/integrity-ledger-entry.jsonld,,Lineage,Schema linked; no tool reference
+chapter-01-historical-and-technical-lineage,chapter-01-historical-and-technical-lineage-C03,schemas/aeip/aeip-frame-schema.json,,Lineage,Schema linked; no tool reference
+chapter-02-philosophical-foundations,chapter-02-philosophical-foundations-C01,schemas/svc/semantic-registry.jsonld,,Foundations,Schema linked; no tool reference
+chapter-02-philosophical-foundations,chapter-02-philosophical-foundations-C02,schemas/aeip/aeip-frame-schema.json,,Foundations,Schema linked; no tool reference
+chapter-02-philosophical-foundations,chapter-02-philosophical-foundations-C03,schemas/oversight-audit-memo.jsonld,,Foundations,Schema linked; no tool reference
+chapter-03-layer0-civic-mandate,chapter-03-layer0-civic-mandate-C01,schemas/aeip/civic-charter-schema.json,,Layer 0,Schema linked; no tool reference
+chapter-03-layer0-civic-mandate,chapter-03-layer0-civic-mandate-C02,schemas/aeip/incident-report-schema.json,,Layer 0,Schema linked; no tool reference
+chapter-03-layer0-civic-mandate,chapter-03-layer0-civic-mandate-C03,schemas/integrity-ledger-entry.jsonld,,Layer 0,Schema linked; no tool reference
+chapter-04-layer1-ethical-charter,chapter-04-layer1-ethical-charter-C01,schemas/aeip/ccm-schema.json,,Layer 1,Schema linked; no tool reference
+chapter-04-layer1-ethical-charter,chapter-04-layer1-ethical-charter-C02,schemas/ccm-template.yaml,,Layer 1,Schema linked; no tool reference
+chapter-04-layer1-ethical-charter,chapter-04-layer1-ethical-charter-C03,schemas/svc/semantic-registry.jsonld,,Layer 1,Schema linked; no tool reference
+chapter-05-layer2-data-stewardship,chapter-05-layer2-data-stewardship-C01,schemas/drr-schema.yaml,"protocol/ledger-node.py, tools/generate-artifact.py, tools/validate-artifact.py",Layer 2,Schema linked
+chapter-05-layer2-data-stewardship,chapter-05-layer2-data-stewardship-C02,schemas/aeip/incident-report-schema.json,,Layer 2,Schema linked; no tool reference
+chapter-05-layer2-data-stewardship,chapter-05-layer2-data-stewardship-C03,schemas/aeip-template.yaml,,Layer 2,Schema linked; no tool reference
+chapter-06-layer3-model-development,chapter-06-layer3-model-development-C01,schemas/aeip/modelcard-schema.json,,Layer 3,Schema linked; no tool reference
+chapter-06-layer3-model-development,chapter-06-layer3-model-development-C02,schemas/modelcard-template.yaml,,Layer 3,Schema linked; no tool reference
+chapter-06-layer3-model-development,chapter-06-layer3-model-development-C03,schemas/decision-rationale-record.jsonld,,Layer 3,Schema linked; no tool reference
+chapter-07-layer4-instruction-and-control,chapter-07-layer4-instruction-and-control-C01,schemas/aeip/instruction-log-schema.json,,Layer 4,Schema linked; no tool reference
+chapter-07-layer4-instruction-and-control,chapter-07-layer4-instruction-and-control-C02,schemas/interpretive-trace-package.jsonld,,Layer 4,Schema linked; no tool reference
+chapter-07-layer4-instruction-and-control,chapter-07-layer4-instruction-and-control-C03,schemas/oversight-audit-memo.jsonld,,Layer 4,Schema linked; no tool reference
+chapter-08-layer5-reasoning-exchange,chapter-08-layer5-reasoning-exchange-C01,schemas/interpretive-trace-package.jsonld,,Layer 5,Schema linked; no tool reference
+chapter-08-layer5-reasoning-exchange,chapter-08-layer5-reasoning-exchange-C02,schemas/svc/semantic-registry.jsonld,,Layer 5,Schema linked; no tool reference
+chapter-08-layer5-reasoning-exchange,chapter-08-layer5-reasoning-exchange-C03,schemas/governance-decision-summary.jsonld,,Layer 5,Schema linked; no tool reference
+chapter-09-layer6-deployment-and-integration,chapter-09-layer6-deployment-and-integration-C01,schemas/decision-rationale-record.jsonld,,Layer 6,Schema linked; no tool reference
+chapter-09-layer6-deployment-and-integration,chapter-09-layer6-deployment-and-integration-C02,schemas/aeip/incident-report-schema.json,,Layer 6,Schema linked; no tool reference
+chapter-09-layer6-deployment-and-integration,chapter-09-layer6-deployment-and-integration-C03,schemas/oam-schema.yaml,"protocol/ledger-node.py, tools/generate-artifact.py, tools/validate-artifact.py",Layer 6,Schema linked
+chapter-10-layer7-governance-publication,chapter-10-layer7-governance-publication-C01,schemas/governance-decision-summary.jsonld,,Layer 7,Schema linked; no tool reference
+chapter-10-layer7-governance-publication,chapter-10-layer7-governance-publication-C02,schemas/oam-schema.yaml,"protocol/ledger-node.py, tools/generate-artifact.py, tools/validate-artifact.py",Layer 7,Schema linked
+chapter-10-layer7-governance-publication,chapter-10-layer7-governance-publication-C03,schemas/oversight-audit-memo.jsonld,,Layer 7,Schema linked; no tool reference
+chapter-11-layer8-civic-participation,chapter-11-layer8-civic-participation-C01,schemas/aeip/tecl-schema.json,,Layer 8,Schema linked; no tool reference
+chapter-11-layer8-civic-participation,chapter-11-layer8-civic-participation-C02,schemas/interpretive-trace-package.jsonld,,Layer 8,Schema linked; no tool reference
+chapter-11-layer8-civic-participation,chapter-11-layer8-civic-participation-C03,schemas/svc/semantic-registry.jsonld,,Layer 8,Schema linked; no tool reference
+chapter-12-aeip-framework-and-operations,chapter-12-aeip-framework-and-operations-C01,schemas/aeip-template.yaml,,General,Schema linked; no tool reference
+chapter-12-aeip-framework-and-operations,chapter-12-aeip-framework-and-operations-C02,schemas/aeip-1-3.jsonld,,General,Schema linked; no tool reference
+chapter-12-aeip-framework-and-operations,chapter-12-aeip-framework-and-operations-C03,schemas/aeip/aeip-frame-schema.json,,General,Schema linked; no tool reference
+chapter-13-persona-architecture-integration,chapter-13-persona-architecture-integration-C01,schemas/persona/persona-manifest.jsonld,,General,Schema linked; no tool reference
+chapter-13-persona-architecture-integration,chapter-13-persona-architecture-integration-C02,schemas/persona/registry.jsonld,,General,Schema linked; no tool reference
+chapter-13-persona-architecture-integration,chapter-13-persona-architecture-integration-C03,schemas/interpretive-trace-package.jsonld,,General,Schema linked; no tool reference
+chapter-14-epistemology-by-design,chapter-14-epistemology-by-design-C01,schemas/svc/semantic-registry.jsonld,,General,Schema linked; no tool reference
+chapter-14-epistemology-by-design,chapter-14-epistemology-by-design-C02,schemas/integrity-ledger-entry.jsonld,,General,Schema linked; no tool reference
+chapter-14-epistemology-by-design,chapter-14-epistemology-by-design-C03,schemas/interpretive-trace-package.jsonld,,General,Schema linked; no tool reference
+chapter-15-governance-transport-and-maturity-model,chapter-15-governance-transport-and-maturity-model-C01,schemas/oam-schema.yaml,"protocol/ledger-node.py, tools/generate-artifact.py, tools/validate-artifact.py",General,Schema linked
+chapter-15-governance-transport-and-maturity-model,chapter-15-governance-transport-and-maturity-model-C02,schemas/governance-decision-summary.jsonld,,General,Schema linked; no tool reference
+chapter-15-governance-transport-and-maturity-model,chapter-15-governance-transport-and-maturity-model-C03,schemas/oversight-audit-memo.jsonld,,General,Schema linked; no tool reference
+chapter-16-strategic-resilience-and-risk-mitigation,chapter-16-strategic-resilience-and-risk-mitigation-C01,schemas/integrity-ledger-entry.jsonld,,General,Schema linked; no tool reference
+chapter-16-strategic-resilience-and-risk-mitigation,chapter-16-strategic-resilience-and-risk-mitigation-C02,schemas/aeip/incident-report-schema.json,,General,Schema linked; no tool reference
+chapter-16-strategic-resilience-and-risk-mitigation,chapter-16-strategic-resilience-and-risk-mitigation-C03,schemas/interpretive-trace-package.jsonld,,General,Schema linked; no tool reference
+chapter-17-meta-audit-and-self-accountability,chapter-17-meta-audit-and-self-accountability-C01,schemas/oversight-audit-memo.jsonld,,General,Schema linked; no tool reference
+chapter-17-meta-audit-and-self-accountability,chapter-17-meta-audit-and-self-accountability-C02,schemas/integrity-ledger-entry.jsonld,,General,Schema linked; no tool reference
+chapter-17-meta-audit-and-self-accountability,chapter-17-meta-audit-and-self-accountability-C03,schemas/aeip/aeip-frame-schema.json,,General,Schema linked; no tool reference
+chapter-18-interpretive-and-temporal-continuity,chapter-18-interpretive-and-temporal-continuity-C01,schemas/interpretive-trace-package.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-18-interpretive-and-temporal-continuity,chapter-18-interpretive-and-temporal-continuity-C02,schemas/svc/semantic-registry.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-18-interpretive-and-temporal-continuity,chapter-18-interpretive-and-temporal-continuity-C03,schemas/integrity-ledger-entry.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-19-epilogue-the-stack-as-living-constitution,chapter-19-epilogue-the-stack-as-living-constitution-C01,schemas/integrity-ledger-entry.jsonld,,General,Schema linked; no tool reference
+chapter-19-epilogue-the-stack-as-living-constitution,chapter-19-epilogue-the-stack-as-living-constitution-C02,schemas/governance-decision-summary.jsonld,,General,Schema linked; no tool reference
+chapter-19-epilogue-the-stack-as-living-constitution,chapter-19-epilogue-the-stack-as-living-constitution-C03,schemas/aeip-template.yaml,,General,Schema linked; no tool reference
+chapter-19a-usage-and-trust,chapter-19a-usage-and-trust-C01,schemas/aeip/tecl-schema.json,,Interpretive,Schema linked; no tool reference
+chapter-19a-usage-and-trust,chapter-19a-usage-and-trust-C02,schemas/aeip/incident-report-schema.json,,Interpretive,Schema linked; no tool reference
+chapter-19a-usage-and-trust,chapter-19a-usage-and-trust-C03,schemas/integrity-ledger-entry.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-20-rhetoric-and-semantics,chapter-20-rhetoric-and-semantics-C01,schemas/svc/semantic-registry.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-20-rhetoric-and-semantics,chapter-20-rhetoric-and-semantics-C02,schemas/interpretive-trace-package.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-20-rhetoric-and-semantics,chapter-20-rhetoric-and-semantics-C03,schemas/governance/ai-assisted-drafting.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-21-companion-trap,chapter-21-companion-trap-C01,schemas/persona/registry.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-21-companion-trap,chapter-21-companion-trap-C02,schemas/persona/persona-manifest.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-21-companion-trap,chapter-21-companion-trap-C03,schemas/therapy/credential-verification.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-22-persona-architecture,chapter-22-persona-architecture-C01,schemas/persona/persona-manifest.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-22-persona-architecture,chapter-22-persona-architecture-C02,schemas/persona/registry.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-22-persona-architecture,chapter-22-persona-architecture-C03,schemas/aeip/aeip-frame-schema.json,,Interpretive,Schema linked; no tool reference
+chapter-23-therapy-tech-and-governance-of-care,chapter-23-therapy-tech-and-governance-of-care-C01,schemas/therapy/credential-verification.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-23-therapy-tech-and-governance-of-care,chapter-23-therapy-tech-and-governance-of-care-C02,schemas/aeip/incident-report-schema.json,,Interpretive,Schema linked; no tool reference
+chapter-23-therapy-tech-and-governance-of-care,chapter-23-therapy-tech-and-governance-of-care-C03,schemas/persona/persona-manifest.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-24-governance-paradox,chapter-24-governance-paradox-C01,schemas/governance/ai-assisted-drafting.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-24-governance-paradox,chapter-24-governance-paradox-C02,schemas/oversight-audit-memo.jsonld,,Interpretive,Schema linked; no tool reference
+chapter-24-governance-paradox,chapter-24-governance-paradox-C03,schemas/integrity-ledger-entry.jsonld,,Interpretive,Schema linked; no tool reference
