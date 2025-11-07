@@ -17,6 +17,16 @@ AI OSI Stack v5 serves governments, enterprises, auditors, and citizens. Policym
 - **Layer 7 – Governance Publication:** Publishes attestations, oversight reports, and civic accountability artifacts.
 - **Layer 8 – Civic Participation:** Creates deliberative feedback channels and co-governance records for communities.
 
+**Part IV – Interpretive and Applied Canon (Chs 19A–24)**
+- **19A – Usage, Trust & Social Reality:** Empirical usage narratives justify semantic governance and reinforce civic evidence loops for trust calibration. [`chapter-19a-usage-and-trust.tex`](source/interpretive/chapter-19a-usage-and-trust.tex)
+- **20 – Rhetoric & Semantics:** Establishes linguistic integrity, semantic version control, and verifiable language governance through registry-based accountability. [`chapter-20-rhetoric-and-semantics.tex`](source/interpretive/chapter-20-rhetoric-and-semantics.tex) · [`semantic-registry.jsonld`](schemas/svc/semantic-registry.jsonld)
+- **21 – The Companion Trap:** Governs affective AI, engineered warmth, and consent safeguards to prevent exploitative intimacy loops. [`chapter-21-companion-trap.tex`](source/interpretive/chapter-21-companion-trap.tex)
+- **22 – Persona Architecture:** Codifies bounded personas as ethical design units with manifest-based accountability and lifecycle governance. [`chapter-22-persona-architecture.tex`](source/interpretive/chapter-22-persona-architecture.tex) · [`persona/registry.jsonld`](schemas/persona/registry.jsonld)
+- **23 – Therapy-Tech & Governance of Care:** Applies Stack principles to mental-health ecosystems, harmonising duty-of-care, credential verification, and crisis response. [`chapter-23-therapy-tech-and-governance-of-care.tex`](source/interpretive/chapter-23-therapy-tech-and-governance-of-care.tex) · [`therapy/credential-verification.jsonld`](schemas/therapy/credential-verification.jsonld)
+- **24 – Governance Paradox:** Formalises AI-assisted authorship, recursive drafting, and transparent ratification of governance artifacts. [`chapter-24-governance-paradox.tex`](source/interpretive/chapter-24-governance-paradox.tex) · [`governance/ai-assisted-drafting.jsonld`](schemas/governance/ai-assisted-drafting.jsonld)
+
+These chapters expand governance guidance into semantics, intimacy, care, and meta-authorship while remaining anchored to Layers 0–8 and existing AEIP schemas.
+
 ## Canonical Resources
 - **Canonical PDF:** [`versions/ai-osi-stack-v5.pdf`](versions/ai-osi-stack-v5.pdf)
 - **AEIP Schemas:** [`schemas/`](schemas/)

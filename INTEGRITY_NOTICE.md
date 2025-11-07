@@ -35,3 +35,16 @@ Recompute the hashes locally using `sha512sum <path>` and match each value again
 
 ## Governance Statement
 This is the canonical public record of the AI OSI Stack v5. Any derivative without this notice is non-canonical. Store the notice with the manifest, PDF, and AEIP schemas to preserve verifiability across mirrors and archives.
+
+“Chapters 19A–24 incorporated into canonical v5.0 build on 2025-11-07.  
+No change to version or cryptographic lineage; additional chapters extend interpretive scope only.”
+
+### Newly Added Canonical Texts (SHA-512)
+| Chapter | Path | SHA-512 |
+| --- | --- | --- |
+| 19A – Usage, Trust & Social Reality | `source/interpretive/chapter-19a-usage-and-trust.tex` | `d9c4e99655fb913da1aad63cfe31ceaaa5e0051afb9bfd73477a9fec2166e30573efc5e94be90997534147635639e3a4523d82d932d58eb2a5578262f71be385` |
+| 20 – Rhetoric & Semantics | `source/interpretive/chapter-20-rhetoric-and-semantics.tex` | `50843a24110495c7016ae228becb1298c23538cdf65a3a68f221b8401e31d80b52cda9cb1ac18f6d53ff42ce6d42624830d043a2d8ce7bac043398fafe7fbc97` |
+| 21 – The Companion Trap | `source/interpretive/chapter-21-companion-trap.tex` | `501825c46b0c968b14ee3f6cc4817d23f7d46965160e6ea7989e0471042e9c2f7232c758ae7c7ee2a975b2fd2e5f3205b832a28fc7c747d87056f601c5390d53` |
+| 22 – Persona Architecture | `source/interpretive/chapter-22-persona-architecture.tex` | `d2cbdb666ce5eb71e292e5194c2e773f370f1e2aa982faed4cfdce7833bd95ef9b714d94c273dd2150e04f2e4c14214939366a6c8a6e8daa8b62fbc8775c9d3a` |
+| 23 – Therapy-Tech & Governance of Care | `source/interpretive/chapter-23-therapy-tech-and-governance-of-care.tex` | `844ffd66fac8d1cb5dae77b0e63cab5d9b4de56ecbb092c22fe655c5e71c7fc2564ba1037cfe73ca44d270a9d4abd48e64b67736128316285531e53ab16b506d` |
+| 24 – Governance Paradox | `source/interpretive/chapter-24-governance-paradox.tex` | `5d3150cf7b71880b1af6763b72cc4df22d4c477670c336bd8bed933755bedb3105d609ec347875fa1f0cadb533ab6a0027cb30909a02fcce3e91e199b8722e56` |
