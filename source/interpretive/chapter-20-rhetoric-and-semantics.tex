@@ -9,8 +9,21 @@ Chapter 20 codifies rhetoric as infrastructure. It narrates convenings where lin
 
 The chapter illustrates verifiable language governance in action. AEIP bundles record speech-act provenance, schema-aligned claims, and consent for quotation. Semantic registrars oversee updates, enforce context windows, and prevent rhetorical weaponisation. Communities participate through controlled vocabularies, contested term hearings, and public semantic audits. By the conclusion, rhetoric is repositioned as a shared civic asset requiring maintenance, traceability, and rights of appeal.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} This chapter tackles semantic drift and rhetorical manipulation, ensuring language across the stack remains faithful to civic intent rather than marketing spin.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Semantic stewards SHALL register contested or novel terms in \texttt{schemas/svc/semantic-registry.jsonld} before publication.
+\item Authors SHALL attach annotated discourse records via \texttt{schemas/interpretive-trace-package.jsonld} to expose persuasive context.
+\item Drafting teams SHOULD log AI-assisted edits through \texttt{schemas/governance/ai-assisted-drafting.jsonld} to disclose machine contributions.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter keeps the stack’s language honest. It records definitions, rhetorical context, and AI editing trails. Readers can see how words are chosen and challenged. That clarity protects the public from subtle semantic shifts.
+
 \normative{
 Canonical deployments SHALL maintain semantic registries using verifiable version control, ensuring every normative statement, refusal rationale, and disclosure notice links to immutable provenance records. Updates to rhetorical baselines MUST pass through participatory review with ledger-backed deliberation trails. Custodians SHALL provide multilingual reconciliations and publish diff reports that trace semantic evolution across jurisdictions.
 
 Implementers MUST integrate linguistic integrity checks into release pipelines so that model updates cannot ship with ambiguous or conflicting obligations. External auditors SHALL be granted read access to semantic registries under transparency-with-consent safeguards, enabling independent verification of rhetorical commitments.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/svc/semantic-registry.jsonld}, \texttt{schemas/interpretive-trace-package.jsonld}, and \texttt{schemas/governance/ai-assisted-drafting.jsonld} and corresponding AEIP audit records.

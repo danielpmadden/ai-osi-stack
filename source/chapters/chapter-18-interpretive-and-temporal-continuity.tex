@@ -15,6 +15,17 @@ The chapter then follows a time capsule project. Youth delegates collaborate wit
 
 Finally, the Circle hosts a Continuity Forum where participants rehearse disaster recovery of meaning. They simulate a situation where key records are lost or misinterpreted. Using redundant archives, community oral histories, and cross-jurisdictional partnerships, they reconstruct the canon’s intent. The exercise affirms that continuity requires plurality—multiple perspectives, redundant storage, and shared ownership. The chapter ends with the Circle publishing an annual continuity letter summarizing interpretive themes, emerging risks, and commitments for the coming year.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} This chapter solves the risk of obligations drifting over time by enforcing interpretive continuity, showing how each era’s context is preserved for future stewards.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Custodians SHALL maintain continuity dossiers within \texttt{schemas/interpretive-trace-package.jsonld} so future readers inherit full context.
+\item Semantic stewards SHALL track evolving terminology through \texttt{schemas/svc/semantic-registry.jsonld} to flag meaning shifts.
+\item Governance historians SHOULD document temporal reconciliations in \texttt{schemas/integrity-ledger-entry.jsonld} to evidence why clauses persist or change.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter keeps the stack understandable across decades. It stores context packages, vocabulary updates, and ledger entries together. Future teams can see why decisions were made. That transparency prevents quiet rewrites of civic commitments.
+
 \normative{
 The Stack SHALL maintain a Continuity Stewardship Circle responsible for interpretive and temporal continuity. The Circle MUST curate hermeneutic dossiers, change logs, persona archives, and AEIP manifests to preserve institutional memory. Continuity reviews SHALL occur at least biannually, producing public summaries aligned with transparency tiers in Appendix K.
 
@@ -22,3 +33,5 @@ Custodial transitions SHALL follow Appendix H succession protocols, including ke
 
 Continuity archives SHALL maintain redundant storage across jurisdictions, incorporating physical, digital, and community-hosted repositories. Interpretive materials MUST be indexed with provenance signatures per Appendix O and linked to relevant appendices and chapters. Annual continuity letters SHALL summarise interpretive insights, risk outlooks, and planned updates, inviting civic comment and international collaboration to sustain collective memory.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/interpretive-trace-package.jsonld}, \texttt{schemas/svc/semantic-registry.jsonld}, and \texttt{schemas/integrity-ledger-entry.jsonld} and corresponding AEIP audit records.

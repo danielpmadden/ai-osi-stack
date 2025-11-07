@@ -81,6 +81,17 @@ obligations. Through shared schemas and privacy-preserving exchange protocols, L
 ritual rather than a closed-door operation. The chapter closes with the image of a deployment steward handing the evidence
 bundle to a citizen oversight delegate, reinforcing the canonical principle that transparency must never become surveillance.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 6 confronts the operational fear that models will be deployed without context-aware safeguards, linking rollout decisions to observable accountability checkpoints.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Release managers SHALL register launch justifications within \texttt{schemas/decision-rationale-record.jsonld} before systems go live.
+\item Operational leads SHALL associate each integration with \texttt{schemas/aeip/incident-report-schema.json} triggers to pre-plan remediation pathways.
+\item Auditors SHOULD reference \texttt{schemas/oam-schema.yaml} when documenting deployment oversight findings for the public record.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This layer explains how deployments are approved and monitored. It captures the reasoning behind go-live decisions and the safety nets around them. Teams learn which records to check before shipping updates. Residents can see what will happen if things fail.
+
 \normative{
 Layer 6 deployments SHALL define explicit risk thresholds, safety test matrices, rollback triggers, and recovery procedures in
 accordance with Appendix B §2–§4. Each threshold SHALL reference the corresponding Annex IV requirement, GDPR principle, and
@@ -108,3 +119,5 @@ Federated partners SHALL receive synchronized exports when joint services are af
 ensuring lifecycle integrity, verifiable signatures, and readiness for independent audit without exposing unnecessary personal
 data.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/decision-rationale-record.jsonld}, \texttt{schemas/aeip/incident-report-schema.json}, and \texttt{schemas/oam-schema.yaml} and corresponding AEIP audit records.

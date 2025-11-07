@@ -15,6 +15,17 @@ The meta-audit culminates in a public accountability session. Guild members pres
 
 The chapter closes by emphasising self-renewal. The Meta-Audit Guild publishes a methodological appendix describing lessons learned, tool improvements, and areas for expansion—such as integrating algorithmic impact assessments or extending participation to international observers. Self-accountability is portrayed as a cycle that strengthens legitimacy by confronting shortcomings openly.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Meta-audit addresses the question of who watches the guardians, describing how the stack inspects its own controls and invites external challenge.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Audit anchors SHALL produce oversight verdicts via \texttt{schemas/oversight-audit-memo.jsonld} to display method and scope.
+\item Custodians SHALL register self-audit findings within \texttt{schemas/integrity-ledger-entry.jsonld} to expose remedial actions.
+\item Governance leads SHOULD compare self-assessment outcomes with \texttt{schemas/aeip/aeip-frame-schema.json} to ensure each layer remains covered.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter explains how the stack audits itself. It records findings in shared ledgers and templates. The process keeps self-review honest by inviting outside scrutiny. Readers can trace how identified issues are resolved.
+
 \normative{
 The Stack SHALL maintain an independent Meta-Audit Guild with authority to evaluate governance processes, custodial performance, and system impacts. Meta-audits MUST occur annually and SHALL encompass scoping, fieldwork, public reporting, and follow-up verification. Audit scopes SHALL cross-reference AEIP manifests, Appendices B, C, E, H, K, L, N, and O to ensure comprehensive coverage of obligations.
 
@@ -22,3 +33,5 @@ Audit evidence SHALL include interviews, document reviews, system replays, and l
 
 Public accountability sessions SHALL present audit results in accessible formats, aligning with transparency tiers in Appendix K. Responses from custodians MUST be recorded and appended to the audit record. Failure to implement corrective actions within agreed timelines SHALL escalate to custodial succession reviews per Appendix H and, where relevant, federated governance forums outlined in Appendix G.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/oversight-audit-memo.jsonld}, \texttt{schemas/integrity-ledger-entry.jsonld}, and \texttt{schemas/aeip/aeip-frame-schema.json} and corresponding AEIP audit records.

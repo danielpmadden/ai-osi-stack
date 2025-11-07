@@ -15,6 +15,17 @@ Lifecycle maintenance rounds out the narrative. AEIP operations staff convene we
 
 The narrative concludes with a reflection on memory. AEIP is portrayed as the Stack’s conscience, a protocol that remembers promises, surfaces rationales, and invites oversight. Its operations bind engineers, policymakers, and civic custodians together through shared observability. The final scene shows a student journalist verifying the bundle’s hash via the public attestation guide, demonstrating that AEIP’s machinery empowers civic literacy rather than overwhelming it.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} This chapter tackles the coordination burden of evidence gathering by explaining how the AEIP becomes the backbone for lifecycle assurance and multi-party accountability.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Implementers SHALL instantiate assurance packages using \texttt{schemas/aeip-template.yaml} before work enters regulated stages.
+\item Programme leads SHALL align lifecycle checkpoints with the enumerations in \texttt{schemas/aeip-1-3.jsonld} to maintain interoperability across jurisdictions.
+\item Custodians SHOULD validate cross-layer linkages against \texttt{schemas/aeip/aeip-frame-schema.json} prior to closing audits.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter shows how the AEIP keeps every promise and artefact stitched together. It walks teams through the templates that must be filled out. Readers see how those records travel across legal and technical reviews. Following the AEIP makes audits faster and fairer.
+
 \normative{
 AEIP implementations SHALL conform to schema version 1.3 and MUST declare artifact.type, lifecycle.stage, and provenance.signature fields for every manifest. Each manifest SHALL reference the applicable layer path, Appendix cross-references, and AEIP §O.3–§O.7 clauses that justify retention, access, and disclosure. Evidence bundles MUST maintain an ordered chain of receipts using SHA-512 or stronger digests, with signing keys rotated according to Appendix H custodianship controls.
 
@@ -22,3 +33,5 @@ Operational tooling SHALL enforce privacy.* validators that capture lawful basis
 
 AEIP custodians SHALL maintain weekly anomaly reviews that reconcile validator alerts, incomplete manifests, and signature expirations. Incident response involving evidence integrity MUST follow Appendix B remediation procedures, rotate keys, regenerate hashes, and append public notices within 24 hours. Public attestation endpoints SHALL expose bundle indices, hash proofs, and verification instructions consistent with Appendix N so that citizens and partners can independently confirm authenticity without escalating surveillance.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/aeip-template.yaml}, \texttt{schemas/aeip-1-3.jsonld}, and \texttt{schemas/aeip/aeip-frame-schema.json} and corresponding AEIP audit records.

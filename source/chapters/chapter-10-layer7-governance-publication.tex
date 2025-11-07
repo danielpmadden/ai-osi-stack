@@ -76,6 +76,17 @@ learn not only what the system does but how institutions hold each other account
 a mirror: it reveals operational truth and reflects oversight commitments back to the public. Layer 7 stands as the civic
 recordkeeper that keeps democratic control alive between deployments.
 }
+
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 7 responds to the common opacity of governance outputs by detailing how deliberations, approvals, and remediation reports must be published in accessible formats.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Governance offices SHALL release canonical summaries using \texttt{schemas/governance-decision-summary.jsonld} within statutory publication windows.
+\item Oversight chairs SHALL lodge review conclusions through \texttt{schemas/oam-schema.yaml} whenever audits touch multiple layers.
+\item Communications teams SHOULD cross-link civic briefings to \texttt{schemas/oversight-audit-memo.jsonld} artefacts to preserve interpretive transparency.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter tells institutions how to publish their decisions. It ensures the same templates are used so people know where to look. It also keeps audit findings tied to official releases. Readers get a predictable path to the evidence behind announcements.
+
 \normative{
 Institutions operating at Layer 7 SHALL publish Governance Disclosure Statements that summarise purpose, risk models, control
 mappings, and civic obligations. Each GDS SHALL include indices of non-sensitive AEIP receipts or corresponding hashes, enabling
@@ -101,3 +112,5 @@ artifacts, including legal authorities, handling safeguards, and accountability 
 apply to all federated exchanges: any request for deeper access MUST be matched with an attested statement of oversight duties
 and AEIP verification tokens. Failure to reciprocate SHALL pause evidence transfer until obligations are met.
 }
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/governance-decision-summary.jsonld}, \texttt{schemas/oam-schema.yaml}, and \texttt{schemas/oversight-audit-memo.jsonld} and corresponding AEIP audit records.
