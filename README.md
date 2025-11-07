@@ -1,12 +1,3 @@
----
-canonical_version: "AI OSI Stack v5"
-canonical_date: "2025-11-07"
-aeip_version: "1.3"
-repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
-domain_of_record: "https://aiosi.org"
-supersedes_all_prior_metadata: true
----
-
 # AI OSI Stack v5 — Canonical Edition
 
 The AI OSI Stack is a layered governance architecture for verifiable AI accountability. It translates civic mandates and ethical commitments into operational controls, making every stage of intelligent system design and deployment legible, testable, and auditable. The stack binds social contracts, organizational practice, and technical enforcement so oversight bodies can see and shape system behavior in real time.
