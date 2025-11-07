@@ -1,40 +1,28 @@
----
-canonical_version: "AI OSI Stack v5"
-canonical_date: "2025-11-07"
-aeip_version: "1.3"
-repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
-domain_of_record: "https://aiosi.org"
-supersedes_all_prior_metadata: true
----
+# Schema Cross-Reference
 
-# AEIP Schema Catalogue — Canonical Reference
-
-**Integrity Notice:** Version hash: TBD. Generated on 2025-11-07T00:00:00Z.
-
-## Purpose
-
-This catalogue enumerates the AEIP artifact schemas that safeguard interoperability, temporal integrity, and ethical accountability across the AI OSI Stack v5. Each schema is authored in JSON-LD or JSON Schema and aligned with AEIP 1.3 to guarantee machine-readable conformance and governance traceability.
-
-## Artifact Purposes and Layer Mappings
-
-| Artifact Type | Governance Purpose | Primary AI OSI Layer Alignment |
-| --- | --- | --- |
-| Interpretive Trace Package (ITP) | Captures interpretive reasoning chains and evidence supporting model understanding | Layer 3 – Model Development |
-| Decision Rationale Record (DRR) | Documents deliberative justification for governance determinations | Layer 4 – Instruction & Control |
-| Governance Decision Summary (GDS) | Communicates finalized governance outcomes and mandated actions | Layer 6 – Deployment & Integration |
-| Oversight Audit Memo (OAM) | Records oversight findings, assurance results, and remediation directives | Layer 7 – Governance Publication |
-| Integrity Ledger Entry (ILE) | Notarizes governance events with temporal sequencing and cryptographic assurance | Layer 7 – Governance Publication |
-| Civic Charter | Establishes civic mandate, consent, and rights alignment | Layer 0 – Civic Mandate |
-| Custodial Controls Matrix (CCM) | Maps fiduciary obligations and custodial controls | Layer 2 – Data Stewardship |
-| Temporal Exchange Chain Log (TECL) | Traces AI reasoning exchanges for interpretability | Layer 5 – Reasoning Exchange |
-| AEIP Frame | Packages deployment-ready payloads with manifest bindings | Layer 6 – Deployment & Integration |
-
-## Workflow Overview
-
-1. **Creation:** Layer-specific authorities generate AEIP-compliant artifacts (e.g., interpretive stewards issue ITPs) using the corresponding schemas, embedding UUID identifiers, UTC timestamps, and provenance metadata.
-2. **Verification:** Governance infrastructure validates each artifact against its schema, confirms digital signatures, and checks cross-artifact linkages (e.g., DRRs must reference relevant ITPs or OAMs).
-3. **Ledger Entry:** Once verified, an Integrity Ledger Entry notarizes the event by hashing the payload, recording the prior ledger UUID, and cataloguing linked artifacts to uphold temporal integrity.
-
-## Citation and Licensing
-
-All schema materials are © 2025 Daniel P. Madden and licensed under CC BY-NC-ND 4.0. Cite as: Madden, D. (2025). *AEIP Artifact Schemas for the AI OSI Stack v5*. Zenodo (forthcoming). Redistribution requires attribution, prohibits commercial use, and disallows derivative works without explicit authorization.
+| Schema | Purpose | Referenced In |
+|---------|----------|---------------|
+| schemas/aeip-1-3.jsonld | Defines AEIP lifecycle stages and minimum evidence for phases 1–3 | Ch.12 |
+| schemas/aeip-template.yaml | Blueprint for composing AEIP assurance packages | Ch.00, Ch.05, Ch.12, Ch.19 |
+| schemas/aeip/aeip-frame-schema.json | Maps AEIP records to Stack layers and oversight checkpoints | Ch.00, Ch.01, Ch.02, Ch.09, Ch.12, Ch.17, Ch.22 |
+| schemas/aeip/ccm-schema.json | Structures ethical charter commitments and change tracking | Ch.04 |
+| schemas/aeip/civic-charter-schema.json | Captures civic mandate terms and accountability triggers | Ch.03 |
+| schemas/aeip/gds-schema.json | Summarises governance design decisions for publication | Ch.05 |
+| schemas/aeip/incident-report-schema.json | Standard incident reporting payload for remediation workflows | Ch.03, Ch.05, Ch.09, Ch.11, Ch.16, Ch.19A, Ch.23 |
+| schemas/aeip/instruction-log-schema.json | Logs instruction sequences and control evidence | Ch.07 |
+| schemas/aeip/modelcard-schema.json | Collects model development metadata for regulated releases | Ch.06 |
+| schemas/aeip/tecl-schema.json | Records trust and engagement covenant ledgers | Ch.08, Ch.11, Ch.19A |
+| schemas/ccm-template.yaml | Template for civic charter maintenance and consultations | Ch.04 |
+| schemas/decision-rationale-record.jsonld | Documents deployment and integration justifications | Ch.06, Ch.09 |
+| schemas/drr-schema.yaml | Defines data request and retention stewardship evidence | Ch.05 |
+| schemas/governance-decision-summary.jsonld | Publishes formal governance decisions for civic review | Ch.08, Ch.10, Ch.15, Ch.19 |
+| schemas/governance/ai-assisted-drafting.jsonld | Discloses AI-assisted policy drafting contributions | Ch.20, Ch.24 |
+| schemas/integrity-ledger-entry.jsonld | Registers integrity ledger attestations across layers | Ch.01, Ch.03, Ch.14, Ch.16, Ch.17, Ch.18, Ch.19, Ch.19A, Ch.24 |
+| schemas/interpretive-trace-package.jsonld | Packages contextual evidence for interpretive analysis | Ch.01, Ch.07, Ch.08, Ch.11, Ch.13, Ch.14, Ch.16, Ch.18, Ch.20 |
+| schemas/modelcard-template.yaml | Template for extended model cards and evaluation details | Ch.06 |
+| schemas/oam-schema.yaml | Oversight assessment memorandum structure | Ch.09, Ch.10, Ch.15 |
+| schemas/oversight-audit-memo.jsonld | Captures oversight audit findings and remediation directives | Ch.02, Ch.07, Ch.10, Ch.15, Ch.17, Ch.24 |
+| schemas/persona/persona-manifest.jsonld | Defines persona capabilities, safeguards, and limits | Ch.13, Ch.21, Ch.22, Ch.23 |
+| schemas/persona/registry.jsonld | Indexes approved personas and stewardship assignments | Ch.13, Ch.21, Ch.22 |
+| schemas/svc/semantic-registry.jsonld | Tracks semantic definitions and mitigates vocabulary drift | Ch.00, Ch.02, Ch.04, Ch.08, Ch.11, Ch.14, Ch.18, Ch.20 |
+| schemas/therapy/credential-verification.jsonld | Verifies clinician credentials for therapy technology | Ch.21, Ch.23 |

@@ -12,6 +12,17 @@ provenance statement anchors each milestone to signed releases, while Update Pla
 brought the stack into alignment with community demands.
 }
 
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} The lineage chapter addresses the recurring problem of institutional amnesia, detailing how public records, technical decisions, and civic mandates evolved so implementers do not reinvent past mistakes.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Archivists SHALL compile provenance packets using \texttt{schemas/interpretive-trace-package.jsonld} to demonstrate continuity from prior stack versions.
+\item Custodians SHALL register lineage claims within \texttt{schemas/integrity-ledger-entry.jsonld} so that auditors can trace when obligations first appeared.
+\item Policy leads SHOULD cite Layer 0 mandates alongside \texttt{schemas/aeip/aeip-frame-schema.json} entries when briefing legislators on the stack’s history.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This chapter retells how the stack was built and why each revision mattered. It urges teams to keep a public memory so lessons from earlier deployments stay visible. Readers learn which artefacts capture these commitments. Anyone checking the history can inspect those logs to confirm what changed and why.
+
+
 \section*{Early Experiments}
 \narrative{
 The stack began as a response to civic concern: automated decision systems were deployed without clear accountability. Early
@@ -88,4 +99,6 @@ communities. Evolution MAY occur, but it SHALL never erase the public’s right 
 time.
 }
 
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/interpretive-trace-package.jsonld}, \texttt{schemas/integrity-ledger-entry.jsonld}, and \texttt{schemas/aeip/aeip-frame-schema.json} and corresponding AEIP audit records.
 \clearpage

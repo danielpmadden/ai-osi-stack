@@ -10,6 +10,17 @@ The narrative shows how Version 5 integrates AEIP workflows, fairness protocols,
 accountable models.
 }
 
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 3 addresses the opacity of model engineering by prescribing transparent development records that align safety, accountability, and iterative improvement.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Engineers SHALL document architectural choices in \texttt{schemas/aeip/modelcard-schema.json} before models exit sandbox testing.
+\item Product owners SHALL supplement release packages with \texttt{schemas/modelcard-template.yaml} attachments so evaluators can reuse evidence structures.
+\item Risk reviewers SHOULD link mitigation decisions to \texttt{schemas/decision-rationale-record.jsonld} entries for traceability across layers.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This layer makes model building legible to outsiders. It requires structured model cards and decision logs before release. Teams learn which forms to use so audits are repeatable. The process keeps technical improvements tied to governance expectations.
+
+
 \section*{Design Specification}
 \narrative{
 Model development begins with detailed design specifications translating civic mandates and ethical charters into requirements.
@@ -87,4 +98,6 @@ include design specifications, training logs, evaluation reports, and risk mitig
 public notification through Layer 7 channels.
 }
 
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/aeip/modelcard-schema.json}, \texttt{schemas/modelcard-template.yaml}, and \texttt{schemas/decision-rationale-record.jsonld} and corresponding AEIP audit records.
 \clearpage
