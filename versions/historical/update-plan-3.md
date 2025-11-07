@@ -17,7 +17,7 @@ Repository: /ledger/hermeneutic/ with Markdown entries signed and timestamped vi
 
 Each entry links clause ID → “reason for existence + context citation.”
 
-Quarterly summary appended to INTEGRITY_NOTICE.md.
+Quarterly summary appended to meta/INTEGRITY_NOTICE.md.
 
 Outcome:
 Future editors can distinguish reinterpretation from corruption.

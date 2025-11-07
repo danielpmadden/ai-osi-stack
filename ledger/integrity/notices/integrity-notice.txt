@@ -1,4 +1,4 @@
-INTEGRITY_NOTICE.md
+meta/INTEGRITY_NOTICE.md
 
 Canonical Provenance & Temporal Authority Declaration
 (AI OSI Stack — Version 4, Master Edition)
@@ -64,7 +64,7 @@ To verify authenticity:
 curl -O https://aiosi.org/releases/ai-osi-stack-v5.pdf
 sha512sum ai-osi-stack-v5.pdf
 # Compare to canonical_hash above
-gpg --verify INTEGRITY_NOTICE.md.sig INTEGRITY_NOTICE.md
+gpg --verify meta/INTEGRITY_NOTICE.md.sig meta/INTEGRITY_NOTICE.md
 
 7. Enforcement of Canonical Timeline
 

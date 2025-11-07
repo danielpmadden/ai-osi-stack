@@ -34,6 +34,6 @@
 - **Meta-Governance:** Strategic resilience, meta-audit procedures, and temporal continuity to ensure the Stack remains a living constitution.
 
 ## How to Verify Adoption
-- Review the current [Integrity Notice](../INTEGRITY_NOTICE.md) for SHA-512 attestations and manifest references.
-- Inspect `v5-manifest.yaml` and AEIP templates for system-level evidence bundles.
+- Review the current [Integrity Notice](../meta/INTEGRITY_NOTICE.md) for SHA-512 attestations and manifest references.
+- Inspect `meta/v5-manifest.yaml` and AEIP templates for system-level evidence bundles.
 - Re-run `tools/integrity-check.py` and compare output with published hashes to confirm provenance.

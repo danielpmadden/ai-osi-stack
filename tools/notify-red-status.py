@@ -35,7 +35,7 @@ def find_missing(asset):
     missing = []
     for item in expected:
         if (
-            not list(REPO_ROOT.glob(f"governance-spine/**/*{asset_id}_{item}.yaml"))
+            not list(REPO_ROOT.glob(f"govspine/**/*{asset_id}_{item}.yaml"))
             and item != "GDS"
         ):
             missing.append(item)

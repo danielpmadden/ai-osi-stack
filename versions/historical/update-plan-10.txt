@@ -32,7 +32,7 @@ Conformance Classes & Attestation	/docs/Conformance-Classes-and-Attestation-Temp
 Liability Bridge Note	/docs/Liability-Bridge-Note.md	Explains how AEIP ledgers preserve evidence for EU AI Liability Directive presumptions.
 Privacy Conformance Validator Tool	/tools/privacy-conformance-cli.py	Parses AEIP artifacts → fail if consent/metadata absent; logs reasons.
 Preface & Glossary Edits	Main spec & GLOSSARY.md	Insert non-revocable principle: “Transparency must never become surveillance.”
-Integrity Notice Update	INTEGRITY_NOTICE.md	Add “Human-Rights Baseline” section and new SHA512 hashes.
+Integrity Notice Update	meta/INTEGRITY_NOTICE.md	Add “Human-Rights Baseline” section and new SHA512 hashes.
 4 · Normative Rules Added
 
 Conformance Rejection Rule — AEIP validators MUST reject any artifact lacking consent or privacy metadata.

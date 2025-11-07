@@ -8,7 +8,7 @@ import sys
 
 _RUNTIME_DIR = (
     Path(__file__).resolve().parent.parent.parent
-    / "governance-spine"
+    / "govspine"
     / "runtime"
     / "layer3-training"
 )

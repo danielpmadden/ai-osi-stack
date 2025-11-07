@@ -145,7 +145,7 @@ Extend AEIP schema with optional “interpretation_type” field (canonical | su
 
 Add an AI Interpretation Validator script to /tests/, which compares generated summaries or outputs to canonical hashes and scores semantic drift.
 
-Document these rules in INTEGRITY_NOTICE.md under Semantic Fidelity Controls.
+Document these rules in meta/INTEGRITY_NOTICE.md under Semantic Fidelity Controls.
 
 15 · Plain-Language Warning for Public Readers
 
