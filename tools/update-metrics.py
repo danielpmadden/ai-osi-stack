@@ -8,19 +8,19 @@ from pathlib import Path
 from typing import Dict, List
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-GOV_DIR = REPO_ROOT / "governance-spine"
+GOV_DIR = REPO_ROOT / "govspine"
 METRICS_DIR = GOV_DIR / "metrics"
 METRICS_DIR.mkdir(parents=True, exist_ok=True)
 METRICS_FILE = METRICS_DIR / "metrics.json"
 HISTORY_FILE = METRICS_DIR / "history.json"
 
 ARTIFACT_PATTERNS: Dict[str, List[str]] = {
-    "CCM": ["governance-spine/**/*_CCM.yaml"],
-    "ModelCard": ["governance-spine/**/*_ModelCard.yaml"],
-    "IR": ["governance-spine/**/*_IR.yaml"],
-    "AEIP": ["governance-spine/aeip/*.json"],
-    "GDS": ["governance-spine/deployments/gds_*.md"],
-    "Provenance": ["governance-spine/**/*_Provenance.yaml"],
+    "CCM": ["govspine/**/*_CCM.yaml"],
+    "ModelCard": ["govspine/**/*_ModelCard.yaml"],
+    "IR": ["govspine/**/*_IR.yaml"],
+    "AEIP": ["govspine/aeip/*.json"],
+    "GDS": ["govspine/deployments/gds_*.md"],
+    "Provenance": ["govspine/**/*_Provenance.yaml"],
 }
 
 

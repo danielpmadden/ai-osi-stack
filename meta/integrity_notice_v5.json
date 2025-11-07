@@ -7,9 +7,9 @@
     "domain_of_record": "https://aiosi.org",
     "supersedes_all_prior_metadata": true
   },
-  "manifest": "v5-manifest.yaml",
-  "integrity_notice": "INTEGRITY_NOTICE.md",
+  "manifest": "meta/v5-manifest.yaml",
+  "integrity_notice": "meta/INTEGRITY_NOTICE.md",
   "pdf": "versions/ai-osi-stack-v5.pdf",
   "provenance": "https://zenodo.org/records/17517241",
-  "notes": "Use SHA-512 checksums listed in INTEGRITY_NOTICE.md and verify AEIP signatures with tools/verify-aeip-signatures.py."
+  "notes": "Use SHA-512 checksums listed in meta/INTEGRITY_NOTICE.md and verify AEIP signatures with tools/verify-aeip-signatures.py."
 }

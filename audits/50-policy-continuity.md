@@ -8,5 +8,5 @@
   - source/chapters/chapter-13-persona-architecture-integration.tex
 
 - WARNING: README.md missing canonical version reference v5.0.0.
-- WARNING: INTEGRITY_NOTICE.md missing canonical version reference v5.0.0.
-- WARNING: v5-manifest.yaml missing canonical version reference v5.0.0.
+- WARNING: meta/INTEGRITY_NOTICE.md missing canonical version reference v5.0.0.
+- WARNING: meta/v5-manifest.yaml missing canonical version reference v5.0.0.

@@ -72,4 +72,4 @@ Updates to this specification MUST be captured as GDS and DRR artifacts, anchore
 
 ---
 
-*This living document is published under CC BY-NC-ND 4.0 and inherits the Normative Language Notice from INTEGRITY_NOTICE.md.*
+*This living document is published under CC BY-NC-ND 4.0 and inherits the Normative Language Notice from meta/INTEGRITY_NOTICE.md.*

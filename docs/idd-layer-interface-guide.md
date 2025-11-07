@@ -1,20 +1,20 @@
 # Interface Definition Document (IDD) Guide
 
 ## Purpose
-This guide codifies the Interface Definition Documents (IDDs) that connect adjacent layers in the AI OSI reference stack.  Each IDD is represented as a JSON Schema stored alongside layer packages under `/governance-spine/runtime/layer*-layer/schema.json`.  Validators within each layer enforce these contracts and compute SHA3-512 hashes across canonical payloads.
+This guide codifies the Interface Definition Documents (IDDs) that connect adjacent layers in the AI OSI reference stack.  Each IDD is represented as a JSON Schema stored alongside layer packages under `/govspine/runtime/layer*-layer/schema.json`.  Validators within each layer enforce these contracts and compute SHA3-512 hashes across canonical payloads.
 
 ## Layer Interfaces
 
 | Producer | Consumer | Schema Path | Notes |
 | --- | --- | --- | --- |
-| Layer1Physical | Layer2Architecture | `governance-spine/runtime/layer1-physical/schema.json` | Physical telemetry envelope, ensures `temporalSeal`. |
-| Layer2Architecture | Layer3Training | `governance-spine/runtime/layer2-architecture/schema.json` | Persona graph and AEIP interface negotiation. |
-| Layer3Training | Layer4Instruction | `governance-spine/runtime/layer3-training/schema.json` | Training spec including dataset provenance. |
-| Layer4Instruction | Layer5Interface | `governance-spine/runtime/layer4-instruction/schema.json` | AEIP-ready instruction packets, includes `aeipVersion`. |
-| Layer5Interface | Layer6Application | `governance-spine/runtime/layer5-interface/schema.json` | AEIP headers plus persona signature propagation. |
-| Layer6Application | Layer7Governance | `governance-spine/runtime/layer6-application/schema.json` | Application responses providing service outcome context. |
-| Layer7Governance | Layer8Policy | `governance-spine/runtime/layer7-governance/schema.json` | Governance decisions, ledger digest, normative clause pointers. |
-| Layer8Policy | External Civic Nodes | `governance-spine/runtime/layer8-policy/schema.json` | Civic directives for participatory governance feedback. |
+| Layer1Physical | Layer2Architecture | `govspine/runtime/layer1-physical/schema.json` | Physical telemetry envelope, ensures `temporalSeal`. |
+| Layer2Architecture | Layer3Training | `govspine/runtime/layer2-architecture/schema.json` | Persona graph and AEIP interface negotiation. |
+| Layer3Training | Layer4Instruction | `govspine/runtime/layer3-training/schema.json` | Training spec including dataset provenance. |
+| Layer4Instruction | Layer5Interface | `govspine/runtime/layer4-instruction/schema.json` | AEIP-ready instruction packets, includes `aeipVersion`. |
+| Layer5Interface | Layer6Application | `govspine/runtime/layer5-interface/schema.json` | AEIP headers plus persona signature propagation. |
+| Layer6Application | Layer7Governance | `govspine/runtime/layer6-application/schema.json` | Application responses providing service outcome context. |
+| Layer7Governance | Layer8Policy | `govspine/runtime/layer7-governance/schema.json` | Governance decisions, ledger digest, normative clause pointers. |
+| Layer8Policy | External Civic Nodes | `govspine/runtime/layer8-policy/schema.json` | Civic directives for participatory governance feedback. |
 
 ## Validation Contract
 

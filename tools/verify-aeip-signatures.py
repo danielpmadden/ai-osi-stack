@@ -5,7 +5,7 @@ from pathlib import Path
 import sys
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
-AEIP_FILES = list(REPO_ROOT.glob("governance-spine/aeip/*.json"))
+AEIP_FILES = list(REPO_ROOT.glob("govspine/aeip/*.json"))
 
 
 def main() -> int:

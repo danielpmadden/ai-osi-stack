@@ -53,7 +53,7 @@ Finalize & Sign
 
 Generate AI_OSI_Stack_v5.pdf
 
-Update hashes and GPG signatures in INTEGRITY_NOTICE.md
+Update hashes and GPG signatures in meta/INTEGRITY_NOTICE.md
 
 Archive v 4.x folder under /versions/historical/
 

@@ -119,7 +119,7 @@ tests/       schema validation scripts
 versions/    archived PDFs (v1–v4.1)
 LICENSE.txt  CC BY-NC-ND 4.0
 README.md    summary + Contextual Transparency notice
-INTEGRITY_NOTICE.md  ledger signature + v 4.2 timestamp
+meta/INTEGRITY_NOTICE.md  ledger signature + v 4.2 timestamp
 
 
 Confirm automated AEIP schema validator runs clean on final build.

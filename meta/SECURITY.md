@@ -18,9 +18,9 @@ Report suspected vulnerabilities or integrity failures to **security@aiosi.org (
 The maintainer acknowledges receipt within 3 business days and coordinates remediation timelines with the reporter. Critical issues may trigger temporary embargoes to protect at-risk communities.
 
 ## Verification Guidance
-- Validate AEIP signatures and manifest integrity using `python tools/verify-aeip-signatures.py --manifest v5-manifest.yaml`.
-- Confirm SHA-512 checksums listed in `INTEGRITY_NOTICE.md` by running `sha512sum` locally.
-- Inspect `v5-manifest.yaml` for the active commit hash and ensure it matches `git rev-parse HEAD` of the retrieved repository.
+- Validate AEIP signatures and manifest integrity using `python tools/verify-aeip-signatures.py --manifest meta/v5-manifest.yaml`.
+- Confirm SHA-512 checksums listed in `meta/INTEGRITY_NOTICE.md` by running `sha512sum` locally.
+- Inspect `meta/v5-manifest.yaml` for the active commit hash and ensure it matches `git rev-parse HEAD` of the retrieved repository.
 
 ## Privacy & Data Handling
 The repository contains governance exemplars and synthetic records only. No personal data is stored. When sharing incident reports or governance decision summaries, redact identifying details before publication. Logs created by tools default to local storage; do not upload them to public services without consent from affected custodians.
