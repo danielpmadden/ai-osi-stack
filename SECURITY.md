@@ -35,3 +35,6 @@ The maintainer acknowledges receipt within 3 business days and coordinates remed
 The repository contains governance exemplars and synthetic records only. No personal data is stored. When sharing incident reports or governance decision summaries, redact identifying details before publication. Logs created by tools default to local storage; do not upload them to public services without consent from affected custodians.
 
 For additional context on protective obligations, consult `source/chapters/chapter-05-layer2-data-stewardship.tex` and associated AEIP schemas.
+
+## Editorial Expansion (Chs 19A–24)
+The interpretive chapters introduced in Part IV add no executable code, cryptographic primitives, or automated tooling. They consist solely of narrative and normative text that extends governance guidance into semantics, intimacy, care, and meta-authorship. No security posture changes are required; existing verification workflows, manifests, and signature chains remain authoritative.
