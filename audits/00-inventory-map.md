@@ -1,11 +1,11 @@
 | Path | Class | Notes |
 | --- | --- | --- |
-| .gitignore | COMMUNICATION | Repository meta |
-| .pre-commit-config.yaml | COMMUNICATION | Repository meta |
-| CHANGELOG.md | COMMUNICATION | Changelog |
-| INTEGRITY_NOTICE.md | INTERFACE | Integrity manifest |
-| README.md | COMMUNICATION | Root README |
-| SECURITY.md | COMMUNICATION | Security policy |
+| ops/.gitignore | COMMUNICATION | Repository meta |
+| ops/.pre-commit-config.yaml | COMMUNICATION | Repository meta |
+| meta/CHANGELOG.md | COMMUNICATION | Changelog |
+| meta/INTEGRITY_NOTICE.md | INTERFACE | Integrity manifest |
+| meta/README.md | COMMUNICATION | Root README |
+| meta/SECURITY.md | COMMUNICATION | Security policy |
 | audits/ai-osi-stack-v5-plaintext.txt | COMMUNICATION | Prior audit note |
 | audits/chapter-00-audit.md | COMMUNICATION | Prior audit note |
 | audits/chapter-01-audit.md | COMMUNICATION | Prior audit note |
@@ -75,72 +75,72 @@
 | docs/test-results.md | COMMUNICATION | Documentation asset |
 | docs/verify/readme.md | COMMUNICATION | Documentation asset |
 | docs/zenodo-metadata.yaml | COMMUNICATION | Documentation asset |
-| governance-spine/aeip/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/aeip/frame-payload.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/aeip/manifest.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/aeip-retention-policy.md | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/attestation-registry.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/charters/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/compute/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/control/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/control/change-control-records/ccr-schema.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/control/change-control-records/sample-ccr.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/custodian-registry.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/data/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/data/assets/mdl-governance-spine-aeip.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/data/datasets/ds-ethics-observatory-ccm.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/data/datasets/ds-ethics-observatory-ir.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/data/datasets/ds-ethics-observatory-provenance.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/deployments/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/deployments/gds-2025q1.md | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/deployments/gds-2025q4.md | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/incidents/sim-data-breach-2025-11-05.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/models/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/models/mdl-governance-spine-ccm.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/models/mdl-governance-spine-ir.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/models/mdl-governance-spine-modelcard.yaml | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/postmortems/incident-2025-01-05.md | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/postmortems/incident-2025-11-05.md | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/postmortems/incident-template.md | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/readme.md | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/common/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/common/artifacts.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/common/crypto.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/common/interface.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/common/layer.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/common/schema.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer1-physical/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer1-physical/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer1-physical/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer1-physical/validator.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer2-architecture/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer2-architecture/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer2-architecture/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer2-architecture/validator.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer3-training/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer3-training/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer3-training/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer3-training/validator.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer4-instruction/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer4-instruction/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer4-instruction/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer4-instruction/validator.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer5-interface/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer5-interface/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer5-interface/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer5-interface/validator.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer6-application/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer6-application/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer6-application/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer6-application/validator.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer7-governance/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer7-governance/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer7-governance/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer7-governance/validator.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer8-policy/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer8-policy/schema.json | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer8-policy/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
-| governance-spine/runtime/layer8-policy/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/aeip/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/aeip/frame-payload.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/aeip/manifest.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/aeip-retention-policy.md | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/attestation-registry.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/charters/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/compute/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/control/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/control/change-control-records/ccr-schema.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/control/change-control-records/sample-ccr.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/custodian-registry.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/data/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/data/assets/mdl-govspine-aeip.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/data/datasets/ds-ethics-observatory-ccm.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/data/datasets/ds-ethics-observatory-ir.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/data/datasets/ds-ethics-observatory-provenance.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/deployments/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/deployments/gds-2025q1.md | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/deployments/gds-2025q4.md | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/incidents/sim-data-breach-2025-11-05.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/models/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/models/mdl-govspine-ccm.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/models/mdl-govspine-ir.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/models/mdl-govspine-modelcard.yaml | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/postmortems/incident-2025-01-05.md | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/postmortems/incident-2025-11-05.md | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/postmortems/incident-template.md | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/readme.md | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/common/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/common/artifacts.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/common/crypto.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/common/interface.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/common/layer.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/common/schema.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer1-physical/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer1-physical/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer1-physical/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer1-physical/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer2-architecture/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer2-architecture/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer2-architecture/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer2-architecture/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer3-training/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer3-training/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer3-training/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer3-training/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer4-instruction/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer4-instruction/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer4-instruction/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer4-instruction/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer5-interface/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer5-interface/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer5-interface/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer5-interface/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer6-application/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer6-application/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer6-application/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer6-application/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer7-governance/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer7-governance/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer7-governance/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer7-governance/validator.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer8-policy/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer8-policy/schema.json | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer8-policy/tests/__init__.py | IMPLEMENTATION | Legacy governance spine asset |
+| govspine/runtime/layer8-policy/validator.py | IMPLEMENTATION | Legacy governance spine asset |
 | govspine/__init__.py | IMPLEMENTATION | Bridge runtime module |
 | govspine/common/__init__.py | IMPLEMENTATION | Bridge runtime module |
 | govspine/common/artifacts.py | IMPLEMENTATION | Bridge runtime module |
@@ -156,7 +156,7 @@
 | govspine/layer06application/__init__.py | IMPLEMENTATION | Bridge runtime module |
 | govspine/layer07governance/__init__.py | IMPLEMENTATION | Bridge runtime module |
 | govspine/layer08policy/__init__.py | IMPLEMENTATION | Bridge runtime module |
-| integrity_notice_v5.json | INTERFACE | Integrity notice JSON |
+| meta/integrity_notice_v5.json | INTERFACE | Integrity notice JSON |
 | ledger/drr.json | INTERFACE | Ledger evidence artefact |
 | ledger/gds.json | INTERFACE | Ledger evidence artefact |
 | ledger/hermeneutic/sample-interpretive-record.jsonld | INTERFACE | Ledger evidence artefact |
@@ -170,8 +170,8 @@
 | ledger/meta-audit/continuity-manifest.json | INTERFACE | Ledger evidence artefact |
 | ledger/meta-audit/sample-audit-entry.jsonld | INTERFACE | Ledger evidence artefact |
 | ledger/oam.json | INTERFACE | Ledger evidence artefact |
-| license.txt | COMMUNICATION | License notice |
-| makefile | COMMUNICATION | Build tooling |
+| meta/license.txt | COMMUNICATION | License notice |
+| ops/makefile | COMMUNICATION | Build tooling |
 | press-kit/fact-sheet.md | COMMUNICATION | Press kit material |
 | press-kit/faq.md | COMMUNICATION | Press kit material |
 | press-kit/media-assets/README.md | COMMUNICATION | Press kit material |
@@ -326,7 +326,7 @@
 | tools/validate-artifact.py | IMPLEMENTATION | Operational tooling |
 | tools/verify-aeip-signatures.py | IMPLEMENTATION | Operational tooling |
 | tools/version-check.py | IMPLEMENTATION | Operational tooling |
-| v5-manifest.yaml | INTERFACE | Integrity manifest |
+| meta/v5-manifest.yaml | INTERFACE | Integrity manifest |
 | versions/ai-osi-stack-v5.pdf | INTERFACE | Versioned release artefact |
 | versions/historical/prototypes/release-package/aeip-spec-v1.md | HISTORICAL | Historical archive asset |
 | versions/historical/prototypes/release-package/ai-osi-protocol-spec.md | HISTORICAL | Historical archive asset |

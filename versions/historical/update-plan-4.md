@@ -11,7 +11,7 @@ This plan consolidates legal, cryptographic, operational, and social safeguards 
 
 Sign all PDF and source tarballs with your GPG key.
 
-Store signature and SHA512 hash in INTEGRITY_NOTICE.md.
+Store signature and SHA512 hash in meta/INTEGRITY_NOTICE.md.
 
 Require AEIP validator pass before tagging a release.
 
@@ -27,14 +27,14 @@ Add to README:
 
 curl -O https://raw.githubusercontent.com/danielpmadden/ai-osi-stack/main/AI_OSI_Stack_v4.2.pdf
 sha512sum AI_OSI_Stack_v4.2.pdf
-# compare to hash in INTEGRITY_NOTICE.md
-gpg --verify INTEGRITY_NOTICE.md.sig INTEGRITY_NOTICE.md
+# compare to hash in meta/INTEGRITY_NOTICE.md
+gpg --verify meta/INTEGRITY_NOTICE.md.sig meta/INTEGRITY_NOTICE.md
 
 2.3 Notarization
 
 Notarize hashes via OpenTimestamps and Zenodo (creates DOI + archival).
 
-Record transaction IDs and DOI in INTEGRITY_NOTICE.md.
+Record transaction IDs and DOI in meta/INTEGRITY_NOTICE.md.
 
 3 · Legal and Brand Anchors
 3.1 License Consistency
@@ -135,7 +135,7 @@ Announce canonical release publicly once signatures and DOI are live.
 
 11 · Prepared Templates (keep ready)
 Artifact	Purpose
-INTEGRITY_NOTICE.md	Canonical hashes, signatures, notarization links
+meta/INTEGRITY_NOTICE.md	Canonical hashes, signatures, notarization links
 NOTICE	Legal statement of canonicality
 how-to-verify-canonical-release.pdf	Public verification guide
 DMCA_template.txt / CeaseAndDesist.txt	Enforcement letters

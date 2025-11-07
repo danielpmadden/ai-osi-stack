@@ -10,7 +10,7 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 ROOT = Path(__file__).resolve().parents[1]
-MANIFEST_PATH = ROOT / "v5-manifest.yaml"
+MANIFEST_PATH = ROOT / "meta" / "v5-manifest.yaml"
 
 
 def _extract_manifest_metadata() -> Tuple[str | None, List[Tuple[str, str]]]:

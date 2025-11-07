@@ -1,0 +1,54 @@
+canonical_version: "5.0.0"
+canonical_date: "2025-11-07"
+aeip_version: "1.3"
+layers: [0, 1, 2, 3, 4, 5, 6, 7, 8]
+interpretive_and_applied_chapters:
+  - 19A: Usage, Trust & Social Reality
+  - 20: Rhetoric & Semantics
+  - 21: The Companion Trap
+  - 22: Persona Architecture
+  - 23: Therapy-Tech & Governance of Care
+  - 24: Governance Paradox
+appendices: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"]
+build_hash: 1bf9c6a67aa34086a5cb7da4c8f01fd0e19816cc
+pdf: versions/ai-osi-stack-v5.pdf
+integrity_notice: integrity_notice_v5.json
+provenance: https://zenodo.org/records/17517241
+notes: "Canonical AI OSI Stack v5 compiled release."
+moves:
+  - moved_from: governance-spine/
+    moved_to: govspine/
+    rationale: canonical naming merge
+  - moved_from: README.md
+    moved_to: meta/README.md
+    rationale: repository metadata consolidation
+  - moved_from: INTEGRITY_NOTICE.md
+    moved_to: meta/INTEGRITY_NOTICE.md
+    rationale: repository metadata consolidation
+  - moved_from: integrity_notice_v5.json
+    moved_to: meta/integrity_notice_v5.json
+    rationale: repository metadata consolidation
+  - moved_from: v5-manifest.yaml
+    moved_to: meta/v5-manifest.yaml
+    rationale: repository metadata consolidation
+  - moved_from: license.txt
+    moved_to: meta/license.txt
+    rationale: repository metadata consolidation
+  - moved_from: CHANGELOG.md
+    moved_to: meta/CHANGELOG.md
+    rationale: repository metadata consolidation
+  - moved_from: SECURITY.md
+    moved_to: meta/SECURITY.md
+    rationale: repository metadata consolidation
+  - moved_from: makefile
+    moved_to: ops/makefile
+    rationale: operational tooling organization
+  - moved_from: .pre-commit-config.yaml
+    moved_to: ops/.pre-commit-config.yaml
+    rationale: operational tooling organization
+  - moved_from: .gitignore
+    moved_to: ops/.gitignore
+    rationale: operational tooling organization
+  - moved_from: .github/
+    moved_to: ops/.github/
+    rationale: operational tooling organization

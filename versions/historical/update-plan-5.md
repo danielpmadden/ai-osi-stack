@@ -34,7 +34,7 @@ Include creation and publication timestamps in Hermeneutic Ledger.
 
 Sign each build (PDF + tarball) with hardware-secured GPG key.
 
-Publish public key in README and INTEGRITY_NOTICE.md.
+Publish public key in README and meta/INTEGRITY_NOTICE.md.
 
 Record signature hash + OpenTimestamps txid + Zenodo DOI.
 
@@ -44,7 +44,7 @@ Embed in README:
 
 curl -O https://github.com/danielpmadden/ai-osi-stack/releases/download/v4.2/AI_OSI_Stack_v4.2.pdf
 sha512sum AI_OSI_Stack_v4.2.pdf
-gpg --verify INTEGRITY_NOTICE.md.sig INTEGRITY_NOTICE.md
+gpg --verify meta/INTEGRITY_NOTICE.md.sig meta/INTEGRITY_NOTICE.md
 
 3.3 DNS Proof
 

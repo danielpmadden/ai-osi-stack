@@ -1,5 +1,5 @@
 version: 1.0
-asset_id: mdl-governance-spine
+asset_id: mdl-govspine
 summary: |
   Model card describing the Governance Spine automation model.
 compliance:

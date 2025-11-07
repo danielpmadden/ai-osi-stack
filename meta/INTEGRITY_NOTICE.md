@@ -15,7 +15,7 @@ This notice anchors the canonical public record for AI OSI Stack v5. Verify the 
 | Artifact | Path | SHA-512 |
 | --- | --- | --- |
 | Canonical PDF | `versions/ai-osi-stack-v5.pdf` | `87d0414872ab29393ee46e585c7dd49bf30c7c13bcf2637ff2bd52078c558b4b6a4598c0b3ffbebfe87588c391f9a002cac4f636efa392df04275266fee08156` |
-| Canonical Manifest | `v5-manifest.yaml` | `651a274b11c54e391ef375e7bd2caf2f68e53c2d79efff417ac83722c914d546a30efe3d671772c51317da7c982483be763002291a4a2490eeebf0afdb46b385` |
+| Canonical Manifest | `meta/v5-manifest.yaml` | `651a274b11c54e391ef375e7bd2caf2f68e53c2d79efff417ac83722c914d546a30efe3d671772c51317da7c982483be763002291a4a2490eeebf0afdb46b385` |
 | AEIP Frame Schema | `schemas/aeip/aeip-frame-schema.json` | `2696805e40a11c02fbcbda706f0fa70a9ac0e61354ec4a289ca1cda3e6a31b090fda5763baef62bf6cd1809e0a222f9adc78a91c93731091d26593bc5cf1868b` |
 | Civic Charter Schema | `schemas/aeip/civic-charter-schema.json` | `e6f054e269813ccb112a0e3aef54f4dd39507d1016efa39bf336ef75adbd792fd1eb27a2e86615ac688d16128a2df10e8382bacf224ffdc2ea29bb1d31349188` |
 | Custodial Controls Matrix | `schemas/aeip/ccm-schema.json` | `4e6c51e2d955d5c244111bf043464781e7095e2417d2fb29f64dab869b06a0445b0eeec93eebec8d011eb0f9316a6d6086883e5d6da7bc862757681eca1bc31a` |
@@ -28,9 +28,9 @@ This notice anchors the canonical public record for AI OSI Stack v5. Verify the 
 Recompute the hashes locally using `sha512sum <path>` and match each value against this table. If any checksum diverges, halt verification and notify the maintainers immediately.
 
 ## Signature Verification Procedure
-1. Ensure the canonical manifest (`v5-manifest.yaml`) is present alongside this notice.
+1. Ensure the canonical manifest (`meta/v5-manifest.yaml`) is present alongside this notice.
 2. Install repository dependencies (`pip install -e .` or equivalent virtual environment setup).
-3. Execute `python tools/verify-aeip-signatures.py --manifest v5-manifest.yaml`.
+3. Execute `python tools/verify-aeip-signatures.py --manifest meta/v5-manifest.yaml`.
 4. Confirm the script reports valid signatures for all AEIP payloads and that the manifest hash chain is intact.
 
 ## Governance Statement

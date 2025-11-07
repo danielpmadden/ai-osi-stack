@@ -65,7 +65,7 @@ All carry normative tags ([Normative Appendix]) and version signatures under the
 
 7 · Custodial Charter Updates
 
-Add “Alignment & Recognition” chapter to INTEGRITY_NOTICE.md.
+Add “Alignment & Recognition” chapter to meta/INTEGRITY_NOTICE.md.
 
 Require external crosswalks to preserve Right-to-Opacity from Update 8.
 

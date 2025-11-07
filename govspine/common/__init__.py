@@ -8,7 +8,7 @@ import sys
 
 _RUNTIME_BASE = (
     Path(__file__).resolve().parent.parent.parent
-    / "governance-spine"
+    / "govspine"
     / "runtime"
     / "common"
 )
