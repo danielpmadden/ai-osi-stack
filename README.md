@@ -3,7 +3,7 @@
 
 ---
 
-## 1  Overview
+## Overview
 
 The **AI OSI Stack** is a complete open-standard framework for governing artificial-intelligence systems from civic intent to technical implementation.  
 It provides a **layered architecture**—analogous to the Internet’s OSI model—where every layer of an AI system carries explicit duties, evidence records, and public-interest safeguards.
@@ -15,7 +15,7 @@ The Stack translates civic mandates and ethical commitments into operational con
 
 ---
 
-## 2  Why It Matters
+## Why It Matters
 
 Modern AI operates faster than existing governance can adapt.  
 Most organizations manage AI risk piecemeal—through model cards, privacy reviews, or ethics boards—without a common backbone.  
@@ -32,7 +32,7 @@ The Stack turns “AI ethics” from aspiration into infrastructure.
 
 ---
 
-## 3  Architecture at a Glance
+## Architecture at a Glance
 
 | Layer | Name | Purpose |
 |-------|------|----------|
@@ -62,7 +62,7 @@ Beyond Layer 8, **Part IV – Interpretive and Applied Canon (19A–24)** expand
 
 ---
 
-## 4  Interpretive and Applied Canon (Chs 19A–24)
+## Interpretive and Applied Canon (Chs 19A–24)
 
 | Chapter | Focus | Key Idea |
 |----------|--------|----------|
@@ -83,7 +83,7 @@ Representative materials can be found in `source/interpretive/` (LaTeX sources) 
 
 ---
 
-## 5  AEIP – AI Epistemic Infrastructure Protocol
+## AEIP – AI Epistemic Infrastructure Protocol
 
 The **AEIP** is the Stack’s data layer: a protocol and schema set for encoding evidence.  
 It defines artefacts such as Decision Rationale Records, Governance Directive Sets, Integrity Ledger Entries, and Interpretive Trace Packages.
@@ -99,7 +99,7 @@ Together, they make the Stack *provable* rather than merely declarative.
 
 ---
 
-## 6  Governance Spine Implementation
+## Governance Spine Implementation
 
 The `govspine/` package is the **runtime reference implementation** of the Stack.  
 It mirrors the eight layers and provides utilities for:
@@ -122,7 +122,7 @@ Install the runtime locally with `pip install -e .` and execute `pytest` from th
 
 ---
 
-## 7  Audits and Verification
+## Audits and Verification
 
 All source chapters and schemas have been audited for:
 
@@ -143,7 +143,7 @@ Verification artefacts are non-negotiable: if an archive lacks the manifest, int
 
 ---
 
-## 8  Standards Alignment
+## Standards Alignment
 
 A full crosswalk is provided in [`docs/standards-alignment-brief.md`](docs/standards-alignment-brief.md).
 
@@ -156,7 +156,7 @@ A full crosswalk is provided in [`docs/standards-alignment-brief.md`](docs/stand
 
 ---
 
-## 9  Using the Stack
+## Using the Stack
 
 - Reference the LaTeX chapters or Markdown exports to design governance policy.
 - Implement AEIP schemas within development and audit pipelines.
@@ -181,7 +181,7 @@ The Stack is modular—organizations can adopt one layer at a time and still gai
 
 ---
 
-## 10  Repository Layout
+## Repository Layout
 
 ```
 source/                → LaTeX source for canonical specification
@@ -199,7 +199,7 @@ versions/              → Canonical release artefacts and historical packages
 
 ---
 
-## 11  Building and Reviewing
+## Building and Reviewing
 
 To compile the canonical PDF locally:
 
@@ -213,7 +213,7 @@ For review without LaTeX, open [`audits/ai-osi-stack-v5-plaintext.txt`](audits/a
 
 ---
 
-## 12  Status and Integrity Notice
+## Status and Integrity Notice
 
 Canonical version: **5.0.0**  
 Purpose: conceptual and academic review.  
@@ -230,10 +230,10 @@ Canonical metadata:
 
 ---
 
-## 13  Contact and Citation
+## Contact and Citation
 
 Author: Daniel P. Madden  
-Website: https://aiosi.org  
+Website: https://danielpmadden.com
 Repository: https://github.com/danielpmadden/ai-osi-stack
 
 Suggested citation:
@@ -242,7 +242,7 @@ Suggested citation:
 
 ---
 
-## 14  License
+## License
 
 Released under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.  
 Use, modify, and build upon the work with attribution and share-alike distribution.
