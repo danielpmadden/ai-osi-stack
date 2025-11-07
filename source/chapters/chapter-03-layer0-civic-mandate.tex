@@ -11,6 +11,17 @@ stress that communities must not merely be informed—they must co-govern. Layer
 participatory procedures, and evidence obligations into a single foundational covenant.
 }
 
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 0 responds to the democratic deficit that occurs when AI deployments skip explicit civic authorization, ensuring communities can see and challenge the mandate that permits governance technology.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Custodians SHALL encode mandate terms within \texttt{schemas/aeip/civic-charter-schema.json} before any Layer 0 service is activated.
+\item Oversight teams SHALL log accountability triggers using \texttt{schemas/aeip/incident-report-schema.json} whenever mandate duties are breached.
+\item Civic monitors SHOULD publish summary ledgers referencing \texttt{schemas/integrity-ledger-entry.jsonld} so residents can verify fulfilment of obligations.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This layer states that no AI system should operate without a public license to do so. It shows how to record that permission and what happens if the mandate is broken. People can read the logged promises and compare them with reality. If something goes wrong, the records explain who must fix it.
+
+
 \section*{Mandate Formation}
 \narrative{
 Mandates originate in public deliberation. Citizens articulate goals, boundaries, and accountability expectations. Persona
@@ -81,4 +92,6 @@ without obscuring accountability. Civic interfaces SHALL comply with accessibili
 presentations.
 }
 
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/aeip/civic-charter-schema.json}, \texttt{schemas/aeip/incident-report-schema.json}, and \texttt{schemas/integrity-ledger-entry.jsonld} and corresponding AEIP audit records.
 \clearpage

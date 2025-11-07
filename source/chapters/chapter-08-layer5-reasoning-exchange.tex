@@ -10,6 +10,17 @@ requires more than accurate outputs; it demands transparent conversations where 
 revised.
 }
 
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 5 is designed for the human problem of inscrutable AI deliberations, forcing conversation trails to be legible, contestable, and aligned with civic norms.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Dialogue stewards SHALL preserve exchange transcripts within \texttt{schemas/interpretive-trace-package.jsonld} to capture context and participants.
+\item Facilitators SHALL reconcile vocabulary conflicts using \texttt{schemas/svc/semantic-registry.jsonld} before approving automated reasoning policies.
+\item Governance publishers SHOULD summarise debate outcomes through \texttt{schemas/governance-decision-summary.jsonld} so civic readers see the implications.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This layer keeps AI-human conversations accountable. It stores dialogue, checks language, and reports what decisions came out of the exchange. People can replay the reasoning trail without special tools. That visibility protects against hidden persuasion or bias.
+
+
 \section*{Dialogue Protocols}
 \narrative{
 Dialogue protocols define how reasoning flows across stakeholders. Drawing from Persona Architecture v2 and Epistemology by Design
@@ -85,4 +96,6 @@ recommendations and SHALL report progress through Governance Publication channel
 as a governance deficiency subject to oversight intervention.
 }
 
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/interpretive-trace-package.jsonld}, \texttt{schemas/svc/semantic-registry.jsonld}, and \texttt{schemas/governance-decision-summary.jsonld} and corresponding AEIP audit records.
 \clearpage

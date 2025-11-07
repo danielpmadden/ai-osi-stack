@@ -10,6 +10,17 @@ moral and legal duty. Drawing from Appendix E and Update Plans 3, 5, and 10, the
 practices support the stack’s higher layers and ensure that transparency never becomes surveillance.
 }
 
+\subsection*{Triple Register}
+\textbf{Narrative Intent:} Layer 2 recognises that communities fear losing control of their data, so it articulates how stewardship, consent, and remedy pathways are enforced throughout the lifecycle.
+\textbf{Normative Clauses:}
+\begin{itemize}
+\item Data custodians SHALL catalogue collection and usage rules in \texttt{schemas/drr-schema.yaml} prior to ingesting records.
+\item Incident commanders SHALL document breaches of stewardship duties through \texttt{schemas/aeip/incident-report-schema.json} within mandated timeframes.
+\item Programme owners SHOULD update trust briefings with citations to \texttt{schemas/aeip-template.yaml} so residents know where stewardship evidence lives.
+\end{itemize}
+\textbf{Plain-Speak Summary:} This layer explains how the stack protects the data it relies on. It points to the forms that describe lawful use, incidents, and responses. Readers can trace who is responsible for each dataset. Those records make it clear how to challenge misuse.
+
+
 \section*{Data Inventory and Classification}
 \narrative{
 Effective stewardship begins with comprehensive inventories. Teams map data sources, types, sensitivity levels, and provenance.
@@ -89,4 +100,6 @@ jurisdictional transfers SHALL undergo risk assessments, and results SHALL be sh
 interfaces SHOULD implement privacy-preserving technologies to minimise exposure while enabling accountability.
 }
 
+\n\subsection*{Verification and Enforcement}
+Conformance is evidenced through artefacts \texttt{schemas/drr-schema.yaml}, \texttt{schemas/aeip/incident-report-schema.json}, and \texttt{schemas/aeip-template.yaml} and corresponding AEIP audit records.
 \clearpage
