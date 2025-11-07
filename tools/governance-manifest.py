@@ -74,14 +74,18 @@ def _parse_kv(values: Sequence[str]) -> List[Dict[str, str]]:
 
 
 def build_manifest(opts: ManifestOptions) -> Dict[str, object]:
-    data_categories = [item for item in (cat.strip() for cat in opts.data_categories) if item]
+    data_categories = [
+        item for item in (cat.strip() for cat in opts.data_categories) if item
+    ]
     if not data_categories:
         data_categories = ["metadata"]
 
     tags = [item for item in (tag.strip() for tag in opts.tags) if item]
     receipts = [item for item in (rcpt.strip() for rcpt in opts.receipts) if item]
     links = [item for item in (lnk.strip() for lnk in opts.links) if item]
-    controls = [mapping for mapping in _parse_kv(opts.control_mappings) if mapping["framework"]]
+    controls = [
+        mapping for mapping in _parse_kv(opts.control_mappings) if mapping["framework"]
+    ]
 
     manifest: Dict[str, object] = {
         "@context": CONTEXT,
@@ -111,7 +115,7 @@ def _resolve_output(opts: ManifestOptions) -> Path:
     target_dir = SPINE_ROOT / ASSET_MAP[opts.asset_type]
     target_dir.mkdir(parents=True, exist_ok=True)
     file_stem = _slugify(opts.artifact_id) or opts.artifact_id
-    return (opts.output or target_dir / f"{file_stem}.aeip.json")
+    return opts.output or target_dir / f"{file_stem}.aeip.json"
 
 
 def parse_args() -> ManifestOptions:
@@ -129,15 +133,27 @@ def parse_args() -> ManifestOptions:
             help=f"Generate a manifest for {asset_choice} assets.",
         )
 
-    parser.add_argument("--artifact-id", required=True, help="Deterministic identifier for the governed asset.")
-    parser.add_argument("--version", default="1.3.0", help="Semantic version for the manifested artifact.")
+    parser.add_argument(
+        "--artifact-id",
+        required=True,
+        help="Deterministic identifier for the governed asset.",
+    )
+    parser.add_argument(
+        "--version",
+        default="1.3.0",
+        help="Semantic version for the manifested artifact.",
+    )
     parser.add_argument(
         "--lifecycle",
         default="design",
         help="Lifecycle state for the asset (design, validation, deployment, archive).",
     )
-    parser.add_argument("--layer", default="L0", help="Stack layer lineage (e.g., L3.RX).")
-    parser.add_argument("--owner", required=True, help="Governance owner or custodial body.")
+    parser.add_argument(
+        "--layer", default="L0", help="Stack layer lineage (e.g., L3.RX)."
+    )
+    parser.add_argument(
+        "--owner", required=True, help="Governance owner or custodial body."
+    )
     parser.add_argument(
         "--description",
         default="",
@@ -165,7 +181,9 @@ def parse_args() -> ManifestOptions:
         default="ledger://consent/placeholder",
         help="Reference to the consent record in the hermeneutic ledger.",
     )
-    parser.add_argument("--risk-tier", default="T2", help="Risk tier classification for the asset.")
+    parser.add_argument(
+        "--risk-tier", default="T2", help="Risk tier classification for the asset."
+    )
     parser.add_argument(
         "--tag",
         action="append",
@@ -227,7 +245,9 @@ def main() -> int:
     opts = parse_args()
     manifest = build_manifest(opts)
     output_path = _resolve_output(opts)
-    output_path.write_text(json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    output_path.write_text(
+        json.dumps(manifest, indent=2, sort_keys=True) + "\n", encoding="utf-8"
+    )
     print(f"AEIP manifest generated: {output_path.relative_to(REPO_ROOT)}")
     return 0
 

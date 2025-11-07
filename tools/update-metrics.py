@@ -61,7 +61,9 @@ def compute_completion_ratio(artifact: str, total: int) -> float:
     return min(count_artifact(artifact) / total, 1.0)
 
 
-def update_history(timestamp: str, metrics: Dict[str, float]) -> List[Dict[str, object]]:
+def update_history(
+    timestamp: str, metrics: Dict[str, float]
+) -> List[Dict[str, object]]:
     if HISTORY_FILE.exists():
         history = json.loads(HISTORY_FILE.read_text(encoding="utf-8"))
     else:
@@ -72,25 +74,31 @@ def update_history(timestamp: str, metrics: Dict[str, float]) -> List[Dict[str, 
     return history
 
 
-def build_trends_markdown(timestamp: str, metrics: Dict[str, float], history: List[Dict[str, object]]):
+def build_trends_markdown(
+    timestamp: str, metrics: Dict[str, float], history: List[Dict[str, object]]
+):
     md_path = REPO_ROOT / "docs" / "metrics-trends.md"
     lines = ["# Governance Metrics Trends", "", f"_Generated at {timestamp}_.", ""]
     for key, value in metrics.items():
         lines.append(f"- **{key}**: {value:.2%}")
     lines.append("")
-    lines.append("<div id=\"metrics-trend-chart\"></div>")
-    lines.append("<script src=\"https://cdn.plot.ly/plotly-latest.min.js\"></script>")
+    lines.append('<div id="metrics-trend-chart"></div>')
+    lines.append('<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>')
     lines.append("<script>")
     lines.append("const history = " + json.dumps(history) + ";")
     lines.append("const timestamps = history.map(point => point.timestamp);")
     for metric in metrics.keys():
         lines.append(
-            "const series_" + metric.lower() + " = {" +
-            f"x: timestamps, y: history.map(point => point.values['{metric}']), name: '{metric}', mode: 'lines+markers'" +
-            "};"
+            "const series_"
+            + metric.lower()
+            + " = {"
+            + f"x: timestamps, y: history.map(point => point.values['{metric}']), name: '{metric}', mode: 'lines+markers'"
+            + "};"
         )
     series_list = ", ".join([f"series_{metric.lower()}" for metric in metrics.keys()])
-    lines.append(f"Plotly.newPlot('metrics-trend-chart', [{series_list}], {{title: 'Governance Metric Trends', yaxis: {{tickformat: '.0%'}}}});")
+    lines.append(
+        f"Plotly.newPlot('metrics-trend-chart', [{series_list}], {{title: 'Governance Metric Trends', yaxis: {{tickformat: '.0%'}}}});"
+    )
     lines.append("</script>")
     md_path.write_text("\n".join(lines), encoding="utf-8")
 

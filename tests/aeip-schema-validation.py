@@ -33,7 +33,9 @@ SCHEMA_FILES = {
     "OversightAuditMemo": "oversight-audit-memo.jsonld",
     "IntegrityLedgerEntry": "integrity-ledger-entry.jsonld",
 }
-UUID_PATTERN = re.compile(r"^(?:urn:uuid:)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$")
+UUID_PATTERN = re.compile(
+    r"^(?:urn:uuid:)?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-4[0-9a-fA-F]{3}-[89abAB][0-9a-fA-F]{3}-[0-9a-fA-F]{12}$"
+)
 HASH_PATTERN = re.compile(r"^[A-Fa-f0-9]{64}$")
 
 
@@ -62,19 +64,25 @@ def validate_timestamp(value: str) -> datetime:
 
 
 def validate_uuid(value: str) -> None:
-    assert isinstance(value, str) and UUID_PATTERN.match(value), "UUID must follow UUIDv4 or URN UUIDv4 format"
+    assert isinstance(value, str) and UUID_PATTERN.match(
+        value
+    ), "UUID must follow UUIDv4 or URN UUIDv4 format"
 
 
 def validate_signature(signature: Dict[str, Any]) -> None:
     assert isinstance(signature, dict), "Signature block must be an object"
     for key in ("method", "key_id", "value"):
-        assert key in signature and isinstance(signature[key], str) and signature[key], f"Signature missing {key}"
+        assert (
+            key in signature and isinstance(signature[key], str) and signature[key]
+        ), f"Signature missing {key}"
 
 
 def validate_provenance(provenance: Dict[str, Any]) -> None:
     assert isinstance(provenance, dict), "Provenance block must be an object"
     for key in ("source_system", "collection_method", "jurisdiction"):
-        assert key in provenance and isinstance(provenance[key], str) and provenance[key], f"Provenance missing {key}"
+        assert (
+            key in provenance and isinstance(provenance[key], str) and provenance[key]
+        ), f"Provenance missing {key}"
 
 
 def validate_linked_artifacts(items: Iterable[Any]) -> List[str]:
@@ -95,20 +103,26 @@ def validate_examples() -> None:
         examples: Iterable[Dict[str, Any]] = schema.get("examples", [])
         for index, payload in enumerate(examples):
             validate_required_fields(payload, schema)
-            assert payload.get("artifact_type") == artifact_type, (
-                f"Example {index} in {file_name} does not advertise {artifact_type}."
-            )
+            assert (
+                payload.get("artifact_type") == artifact_type
+            ), f"Example {index} in {file_name} does not advertise {artifact_type}."
             validate_uuid(payload["uuid"])
             validate_timestamp(payload["timestamp"])
             validate_signature(payload["signature"])
             validate_provenance(payload["provenance"])
             validate_linked_artifacts(payload["linked_artifacts"])
             layer = payload["layer"]
-            assert isinstance(layer, int) and 1 <= layer <= 7, "Layer must be between 1 and 7"
+            assert (
+                isinstance(layer, int) and 1 <= layer <= 7
+            ), "Layer must be between 1 and 7"
             if artifact_type == "IntegrityLedgerEntry":
-                assert HASH_PATTERN.match(payload["hash"]), "Integrity hash must be 64 hex characters"
+                assert HASH_PATTERN.match(
+                    payload["hash"]
+                ), "Integrity hash must be 64 hex characters"
                 prev = payload["previous_entry"]
-                assert isinstance(prev, str) and (prev == "GENESIS" or UUID_PATTERN.match(prev)), "Invalid previous_entry reference"
+                assert isinstance(prev, str) and (
+                    prev == "GENESIS" or UUID_PATTERN.match(prev)
+                ), "Invalid previous_entry reference"
 
 
 def build_integrity_entry(linked: Iterable[str]) -> Dict[str, Any]:
@@ -124,7 +138,7 @@ def build_integrity_entry(linked: Iterable[str]) -> Dict[str, Any]:
             "name": "Integrity Ledger Custodian",
             "role": "Layer 7 Custodian",
             "organization": "AI Governance Council",
-            "contact": "https://governance.example.org/custodian/ledger"
+            "contact": "https://governance.example.org/custodian/ledger",
         },
         "summary": "Ledger entry chaining oversight artifacts for release 2025.05 post-audit closure.",
         "hash": "B4E6D7C8F90123456789ABCDEF0123456789ABCDEF0123456789ABCDEF012345",
@@ -133,14 +147,14 @@ def build_integrity_entry(linked: Iterable[str]) -> Dict[str, Any]:
         "signature": {
             "method": "Ed25519",
             "key_id": "did:example:governance-keys#ledger-custodian",
-            "value": "MEQCIG..."
+            "value": "MEQCIG...",
         },
         "provenance": {
             "source_system": "Integrity Ledger Service",
             "collection_method": "Automated notarization with human oversight",
             "jurisdiction": "Global",
-            "confidence": "Authoritative"
-        }
+            "confidence": "Authoritative",
+        },
     }
 
 
@@ -192,7 +206,15 @@ def append_verified_hashes(records: Iterable[Dict[str, str]]) -> None:
         else:
             before = text[:insert_at].rstrip()
             after = text[insert_at:]
-            updated = before + "\n\n" + heading + "\n\n" + entries_block + "\n" + after.lstrip("\n")
+            updated = (
+                before
+                + "\n\n"
+                + heading
+                + "\n\n"
+                + entries_block
+                + "\n"
+                + after.lstrip("\n")
+            )
     else:
         heading_index = text.find(heading)
         insert_at = text.find(custodian_heading, heading_index)
@@ -227,4 +249,6 @@ if __name__ == "__main__":
     validate_examples()
     demonstrate_integrity_linkage()
     update_verified_hashes()
-    print("AEIP schema examples validated and integrity ledger demonstration completed.")
+    print(
+        "AEIP schema examples validated and integrity ledger demonstration completed."
+    )

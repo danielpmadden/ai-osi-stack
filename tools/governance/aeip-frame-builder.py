@@ -1,4 +1,5 @@
 """Build AEIP frame manifests by aggregating existing governance artifacts."""
+
 from __future__ import annotations
 
 import argparse
@@ -15,7 +16,11 @@ except ModuleNotFoundError:  # pragma: no cover - optional dependency
 if __package__ in (None, ""):
     sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[2]))
     from tools.governance import manifest_builder
-    from tools.governance.schema_utils import SchemaRegistry, ValidationError, validate_manifest
+    from tools.governance.schema_utils import (
+        SchemaRegistry,
+        ValidationError,
+        validate_manifest,
+    )
 else:  # pragma: no cover - executed when run as module
     from . import manifest_builder
     from .schema_utils import SchemaRegistry, ValidationError, validate_manifest
@@ -54,7 +59,7 @@ def build_frame_payload(manifest_paths: Iterable[pathlib.Path]) -> Dict[str, Any
                 "artifact_type": manifest.get("artifact_type", "unknown"),
                 "uuid": manifest.get("uuid", ""),
                 "schema_ref": manifest.get("schema_ref", ""),
-                "layer": manifest.get("layer", "")
+                "layer": manifest.get("layer", ""),
             }
         )
     return {"artifacts": artifacts}
@@ -62,16 +67,28 @@ def build_frame_payload(manifest_paths: Iterable[pathlib.Path]) -> Dict[str, Any
 
 def parse_args(argv: List[str]) -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Build an AEIP frame manifest")
-    parser.add_argument("--manifests", nargs="+", help="Manifest files or directories to include")
-    parser.add_argument("--layer", default="L6", help="Governance layer to assign to the frame")
+    parser.add_argument(
+        "--manifests", nargs="+", help="Manifest files or directories to include"
+    )
+    parser.add_argument(
+        "--layer", default="L6", help="Governance layer to assign to the frame"
+    )
     parser.add_argument("--custodian", required=True, help="Frame custodian")
-    parser.add_argument("--context-uri", required=True, help="Reference to the repository or system")
-    parser.add_argument("--payload", required=True, help="Path to write the aggregated payload JSON")
+    parser.add_argument(
+        "--context-uri", required=True, help="Reference to the repository or system"
+    )
+    parser.add_argument(
+        "--payload", required=True, help="Path to write the aggregated payload JSON"
+    )
     parser.add_argument("--payload-uri", help="External URI for the payload")
-    parser.add_argument("--output", required=True, help="Path to write the AEIP frame manifest")
+    parser.add_argument(
+        "--output", required=True, help="Path to write the AEIP frame manifest"
+    )
     parser.add_argument("--tags", nargs="*", help="Tags to apply to the frame manifest")
     parser.add_argument("--schema-version", help="Schema version override")
-    parser.add_argument("--frame-version", default=DEFAULT_FRAME_VERSION, help="Frame release version")
+    parser.add_argument(
+        "--frame-version", default=DEFAULT_FRAME_VERSION, help="Frame release version"
+    )
     parser.add_argument("--signature", help="Signature override")
     parser.add_argument("--signature-file", help="Read signature from file")
     return parser.parse_args(argv)
@@ -101,7 +118,7 @@ def main(argv: List[str] | None = None) -> None:
         extra_json=json.dumps(
             {
                 "artifacts": payload_data["artifacts"],
-                "frame_version": args.frame_version
+                "frame_version": args.frame_version,
             }
         ),
         output=args.output,

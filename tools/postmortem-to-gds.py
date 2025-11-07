@@ -35,7 +35,11 @@ def determine_quarter(date: dt.date) -> str:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--date", help="ISO date for determining target quarter", default=dt.date.today().isoformat())
+    parser.add_argument(
+        "--date",
+        help="ISO date for determining target quarter",
+        default=dt.date.today().isoformat(),
+    )
     args = parser.parse_args()
 
     quarter = determine_quarter(dt.date.fromisoformat(args.date))
@@ -56,14 +60,23 @@ def main():
         content += "\n\n## Incident Lessons\n"
     content_lines = content.splitlines()
 
-    insertion_index = next((i for i, line in enumerate(content_lines) if line.strip() == "## Incident Lessons"), None)
+    insertion_index = next(
+        (
+            i
+            for i, line in enumerate(content_lines)
+            if line.strip() == "## Incident Lessons"
+        ),
+        None,
+    )
     if insertion_index is None:
         content_lines.extend(["## Incident Lessons", "- " + lessons[0]])
         for item in lessons[1:]:
             content_lines.append(f"- {item}")
     else:
         insertion_index += 1
-        while insertion_index < len(content_lines) and content_lines[insertion_index].startswith("-"):
+        while insertion_index < len(content_lines) and content_lines[
+            insertion_index
+        ].startswith("-"):
             insertion_index += 1
         for item in lessons:
             if f"- {item}" not in content_lines:

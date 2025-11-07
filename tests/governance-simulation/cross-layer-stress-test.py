@@ -115,7 +115,9 @@ class CrossLayerGovernanceSimulation:
                 schema = json.load(handle)
             examples = schema.get("examples") or []
             if not examples:
-                raise ValueError(f"Schema {filename} does not provide exemplar payloads.")
+                raise ValueError(
+                    f"Schema {filename} does not provide exemplar payloads."
+                )
             exemplar = examples[0]
             artifacts[artifact_type] = Artifact(
                 artifact_type=artifact_type,
@@ -172,14 +174,20 @@ class CrossLayerGovernanceSimulation:
                     continue
                 base = self.base_metrics[artifact_type]
                 dependency_score = self._apply_degradation(
-                    base.dependency_score, scenario.link_degradation.get(artifact_type, 0.0)
+                    base.dependency_score,
+                    scenario.link_degradation.get(artifact_type, 0.0),
                 )
                 latency_offset = scenario.latency_offset_minutes.get(artifact_type, 0.0)
-                temporal_score = self._temporal_score(base.mean_latency_minutes + latency_offset)
-                signature_score = self._apply_degradation(
-                    base.signature_score, scenario.signature_compromise.get(artifact_type, 0.0)
+                temporal_score = self._temporal_score(
+                    base.mean_latency_minutes + latency_offset
                 )
-                resilience_index = self._resilience_index(dependency_score, temporal_score, signature_score)
+                signature_score = self._apply_degradation(
+                    base.signature_score,
+                    scenario.signature_compromise.get(artifact_type, 0.0),
+                )
+                resilience_index = self._resilience_index(
+                    dependency_score, temporal_score, signature_score
+                )
                 layer_results[artifact.layer] = ScenarioMetrics(
                     dependency_score=dependency_score,
                     temporal_score=temporal_score,
@@ -198,8 +206,12 @@ class CrossLayerGovernanceSimulation:
         for scenario_name, result in simulation_results.items():
             print(f"Scenario: {scenario_name}")
             print("Description: " + result.description)
-            print("Layer | Artifact Type | Dependency | Temporal | Signature | Resilience")
-            print("------|----------------|-----------|----------|-----------|-----------")
+            print(
+                "Layer | Artifact Type | Dependency | Temporal | Signature | Resilience"
+            )
+            print(
+                "------|----------------|-----------|----------|-----------|-----------"
+            )
             for layer in sorted(result.layer_metrics):
                 artifact = self._artifact_by_layer(layer)
                 metrics = result.layer_metrics[layer]
@@ -237,7 +249,9 @@ class CrossLayerGovernanceSimulation:
                 resolved.append(dependency)
         return resolved
 
-    def _compute_latency_minutes(self, artifact: Artifact, dependencies: Sequence[Artifact]) -> float:
+    def _compute_latency_minutes(
+        self, artifact: Artifact, dependencies: Sequence[Artifact]
+    ) -> float:
         if not dependencies:
             return 0.0
         deltas = [
@@ -259,7 +273,9 @@ class CrossLayerGovernanceSimulation:
         adjusted = baseline * (1.0 - max(0.0, min(degradation, 1.0)))
         return round(max(0.0, adjusted), 3)
 
-    def _resilience_index(self, dependency: float, temporal: float, signature: float) -> float:
+    def _resilience_index(
+        self, dependency: float, temporal: float, signature: float
+    ) -> float:
         score = (
             dependency * WEIGHTS["dependency"]
             + temporal * WEIGHTS["temporal"]
@@ -320,6 +336,7 @@ DEFAULT_SCENARIOS: Sequence[StressScenario] = (
         },
     ),
 )
+
 
 def main() -> None:
     simulation = CrossLayerGovernanceSimulation()

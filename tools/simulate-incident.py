@@ -92,7 +92,9 @@ def update_dashboard(record: dict) -> None:
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("scenario", choices=list(SCENARIOS.keys()), help="Incident scenario to simulate")
+    parser.add_argument(
+        "scenario", choices=list(SCENARIOS.keys()), help="Incident scenario to simulate"
+    )
     args = parser.parse_args()
 
     record = simulate(args.scenario)

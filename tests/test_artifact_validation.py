@@ -60,7 +60,12 @@ def _gds() -> dict:
         "timestamp": _timestamp(),
         "dignityCompliance": True,
         "directives": [
-            {"controlId": "ctrl-1", "title": "Log", "severity": "medium", "actions": ["log"]}
+            {
+                "controlId": "ctrl-1",
+                "title": "Log",
+                "severity": "medium",
+                "actions": ["log"],
+            }
         ],
     }
     payload["hash"] = _hash(payload)
@@ -126,14 +131,18 @@ def test_artifact_schemas_roundtrip(tmp_path: Path) -> None:
 
     handshake = AEIPHandshake(handshake_id="artifact-test", governance_scope="pytest")
     for step in AEIP_STEPS:
-        handshake.record(step=step, persona_id=f"persona-{step}", payload={"detail": step})
+        handshake.record(
+            step=step, persona_id=f"persona-{step}", payload={"detail": step}
+        )
     handshake_dict = handshake.to_dict()
 
     ile_schema = load_schema("schemas/ile-schema.json")
     ile_artifact = Artifact(schema=ile_schema, payload=_ile(handshake_dict))
     ile_artifact.validate()
 
-    node = GovernanceLedgerNode(ledger_dir=tmp_path / "ledger", registry_path=tmp_path / "registry.yaml")
+    node = GovernanceLedgerNode(
+        ledger_dir=tmp_path / "ledger", registry_path=tmp_path / "registry.yaml"
+    )
     result = node.submit_artifact(
         artifact_type="ITP",
         artifact_payload=_itp(),

@@ -34,9 +34,14 @@ def find_missing(asset):
     expected = {"ModelCard", "CCM", "IR", "AEIP", "GDS"}
     missing = []
     for item in expected:
-        if not list(REPO_ROOT.glob(f"governance-spine/**/*{asset_id}_{item}.yaml")) and item != "GDS":
+        if (
+            not list(REPO_ROOT.glob(f"governance-spine/**/*{asset_id}_{item}.yaml"))
+            and item != "GDS"
+        ):
             missing.append(item)
-        if item == "GDS" and not list((REPO_ROOT / "governance" / "deployment").glob("gds_*.md")):
+        if item == "GDS" and not list(
+            (REPO_ROOT / "governance" / "deployment").glob("gds_*.md")
+        ):
             missing.append("GDS")
     return missing
 
@@ -47,7 +52,9 @@ def send_slack(message: str):
         print(message)
         return
     data = json.dumps({"text": message}).encode("utf-8")
-    req = urllib.request.Request(webhook, data=data, headers={"Content-Type": "application/json"})
+    req = urllib.request.Request(
+        webhook, data=data, headers={"Content-Type": "application/json"}
+    )
     urllib.request.urlopen(req)
 
 
