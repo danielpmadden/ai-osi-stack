@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer 2 — Architecture design and persona topology."""
 from __future__ import annotations
 

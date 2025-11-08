@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 11 — Layer 8 Civic Participation Audit
 
 ## Strengths

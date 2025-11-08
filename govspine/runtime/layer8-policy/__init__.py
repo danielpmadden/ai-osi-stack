@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer 8 — Civic and policy extension."""
 from __future__ import annotations
 

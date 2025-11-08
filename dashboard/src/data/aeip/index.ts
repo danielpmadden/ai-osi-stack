@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import reasoningTrace from "./reasoning_trace.aeip.jsonld";
 import civicCharter from "./civic_charter.aeip.jsonld";
 import instructionTrace from "./instruction_trace.aeip.jsonld";

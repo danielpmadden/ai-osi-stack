@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Accessibility & Semantic Integrity Checklist
 
 The following checklist operationalizes Update Plans 2 and 3, focusing on civic accessibility, semantic integrity, and dignity safeguards.

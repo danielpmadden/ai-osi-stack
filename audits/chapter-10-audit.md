@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 10 — Layer 7 Governance Publication Audit
 
 ## Strengths

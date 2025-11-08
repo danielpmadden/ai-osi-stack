@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 19A — Usage and Trust Audit
 
 ## Strengths

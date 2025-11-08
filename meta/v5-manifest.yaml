@@ -9,12 +9,22 @@ interpretive_and_applied_chapters:
   - 22: Persona Architecture
   - 23: Therapy-Tech & Governance of Care
   - 24: Governance Paradox
-appendices: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O"]
-build_hash: 1bf9c6a67aa34086a5cb7da4c8f01fd0e19816cc
+appendices: ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P"]
 pdf: versions/ai-osi-stack-v5.pdf
-integrity_notice: integrity_notice_v5.json
 provenance: https://zenodo.org/records/17517241
 notes: "Canonical AI OSI Stack v5 compiled release."
+authorship_provenance_statement: >-
+  Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
+ai_assistance_disclosure: >-
+  Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.
+integrity_notice:
+  type: "advisory"
+  method_recommended: "SHA-512 or equivalent"
+  note: "Repository does not provide formal signing or cryptographic proof."
+authorship:
+  author: "Daniel P. Madden"
+  backing: "None (self-funded)"
+  disclaimer: "Any institutional or organizational references are placeholders; no such body currently exists."
 moves:
   - moved_from: governance-spine/
     moved_to: govspine/

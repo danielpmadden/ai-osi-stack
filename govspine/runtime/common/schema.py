@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Lightweight schema loader and validator for AI OSI artifacts."""
 from __future__ import annotations
 

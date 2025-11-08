@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Bridge module for governance spine common interface."""
 
 from __future__ import annotations

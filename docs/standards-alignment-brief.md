@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Standards Alignment Brief
 
 | Layer/Schema | ISO reference | IEEE/NIST/EU reference | Practical use note |

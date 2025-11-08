@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 12 — AEIP Framework and Operations Audit
 
 ## Strengths

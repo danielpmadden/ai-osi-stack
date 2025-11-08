@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 19 — Epilogue: The Stack as Living Constitution Audit
 
 ## Strengths

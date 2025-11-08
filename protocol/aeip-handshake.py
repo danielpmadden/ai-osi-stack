@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """AEIP v1 five-step handshake implementation."""
 
 from __future__ import annotations

@@ -7,11 +7,11 @@
     "_meta": { "$ref": "#/definitions/meta" },
     "canonical_version": {
       "type": "object",
-      "required": ["label", "doi", "sha512", "integrity_notice", "last_reviewed"],
+      "required": ["label", "doi", "checksum_guidance", "integrity_notice", "last_reviewed"],
       "properties": {
         "label": { "type": "string" },
         "doi": { "type": "string" },
-        "sha512": { "type": "string", "pattern": "^[a-f0-9]{128}$" },
+        "checksum_guidance": { "type": "string" },
         "integrity_notice": { "type": "string" },
         "last_reviewed": { "type": "string", "format": "date" }
       },

@@ -1,10 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 """
 Title: AEIP Cross-Layer Governance Simulation Module
 Version: 1.0.0
 Date: 2025-05-09T00:00:00Z
 Author: Repository Architect
-License: CC BY-NC-ND 4.0
+License: CC BY-SA 4.0
 Signature: Pending governance signature
 
 Simulates cross-layer governance stress tests using AEIP artifact exchanges.

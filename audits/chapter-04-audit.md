@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 04 — Layer 1 Ethical Charter Audit
 
 ## Strengths

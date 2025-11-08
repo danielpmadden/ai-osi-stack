@@ -1,9 +1,11 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 <!--
 Title: AEIP Crosswalk Matrix
 Version: 1.0.0
 Date: 2025-05-09T00:00:00Z
 Author: Repository Architect
-License: CC BY-NC-ND 4.0
+License: CC BY-SA 4.0
 Signature: Pending governance signature
 -->
 
@@ -36,4 +38,4 @@ This matrix situates the AI Epistemic Infrastructure Protocol (AEIP) artifacts i
 
 ## Citation
 
-Madden, D. (2025). *AI OSI Stack v4 – AEIP Crosswalk Matrix*. Zenodo (forthcoming). Licensed under CC BY-NC-ND 4.0.
+Madden, D. (2025). *AI OSI Stack v4 – AEIP Crosswalk Matrix*. Zenodo (forthcoming). Licensed under CC BY-SA 4.0.

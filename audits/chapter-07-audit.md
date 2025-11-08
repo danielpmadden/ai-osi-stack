@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 07 — Layer 4 Instruction and Control Audit
 
 ## Strengths

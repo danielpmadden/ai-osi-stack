@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer 6 — Application semantics and service behaviours."""
 from __future__ import annotations
 

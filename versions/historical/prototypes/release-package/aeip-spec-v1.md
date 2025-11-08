@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AEIP v1 Specification
 
 **Status:** Reference Implementation Alignment  

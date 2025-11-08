@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Policy Continuity Review
 
 - Modality tokens scanned: 512 occurrences of SHALL/SHOULD/MAY/MUST/WILL.

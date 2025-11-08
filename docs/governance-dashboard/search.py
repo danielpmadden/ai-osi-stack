@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Search governance manifests using an in-memory SQLite index."""
 from __future__ import annotations
 

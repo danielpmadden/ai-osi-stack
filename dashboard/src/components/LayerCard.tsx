@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import React, { useCallback, useMemo, useState } from "react";
 import type { Layer, TripleRegisterKey } from "@/utils/types";
 import { REGISTER_OPTIONS } from "@/utils/types";

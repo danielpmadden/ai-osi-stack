@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Canonical Rebuild Plan — AI OSI Stack v5
 Status Codes: D=Draft, R=Rewritten, V=Validated
 

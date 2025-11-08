@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 17 — Meta Audit and Self Accountability Audit
 
 ## Strengths

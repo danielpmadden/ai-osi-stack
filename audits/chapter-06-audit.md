@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 06 — Layer 3 Model Development Audit
 
 ## Strengths

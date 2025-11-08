@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Artifact helpers bridging schemas and protocol metadata."""
 from __future__ import annotations
 

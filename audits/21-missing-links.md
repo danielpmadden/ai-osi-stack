@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Missing Links
 - `chapter-00-introduction-and-purpose`: Custodians SHALL map introductory assertions to \texttt{schemas/aeip/aeip-frame-schema.json} so that AEIP records tie narrative claims to enforceable controls.
 - `chapter-00-introduction-and-purpose`: Stewards SHALL catalogue adoption rationales using \texttt{schemas/aeip-template.yaml} to preserve provenance for external auditors.
