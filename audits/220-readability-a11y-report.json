@@ -1,0 +1,74 @@
+{
+  "scope": {
+    "target": "dashboard/",
+    "sources": [
+      "dashboard/README.md",
+      "dashboard/docs/accessibility-checklist.md",
+      "dashboard/docs/component-map.md",
+      "dashboard/src/pages/About.tsx",
+      "dashboard/src/components",
+      "dashboard/src/data/glossary.json",
+      "dashboard/src/utils/accessibility.ts"
+    ],
+    "methods": [
+      "Flesch-Kincaid readability calculation",
+      "average sentence length",
+      "manual ARIA review",
+      "glossary coverage cross-check"
+    ]
+  },
+  "readability": {
+    "files": {
+      "dashboard/README.md": {
+        "sentences": 28,
+        "words": 400,
+        "avg_sentence_length": 14.29,
+        "flesch_kincaid_grade": 13.11
+      },
+      "dashboard/docs/accessibility-checklist.md": {
+        "sentences": 17,
+        "words": 247,
+        "avg_sentence_length": 14.53,
+        "flesch_kincaid_grade": 15.68
+      },
+      "dashboard/docs/component-map.md": {
+        "sentences": 27,
+        "words": 256,
+        "avg_sentence_length": 9.48,
+        "flesch_kincaid_grade": 12.54
+      }
+    },
+    "aggregate": {
+      "sentences": 72,
+      "words": 903,
+      "avg_sentence_length": 12.54
+    }
+  },
+  "jargon": {
+    "glossary_terms_present": [
+      "AEIP",
+      "Integrity Ledger",
+      "Governance Disclosure Statement",
+      "Persona Brief",
+      "Epistemology by Design"
+    ],
+    "gaps": [
+      "CEFR-B2",
+      "T-SIR",
+      "Update Plan references"
+    ]
+  },
+  "accessibility": {
+    "landmarks": "Skip link and labeled navigation/main landmarks implemented",
+    "modal_issues": "AEIPLogViewer lacks focus trap",
+    "drawer_issues": "GlossaryDrawer leaves tab stops active when aria-hidden",
+    "media_status": "No images present; future media needs alt text/captions"
+  },
+  "recommendations": [
+    "Extend glossary with CEFR-B2, T-SIR, and Update Plan definitions",
+    "Add focus trap/return behavior to AEIP modal",
+    "Disable drawer tab stops until open",
+    "Replace About page TODO bullets with context or relocate",
+    "Document alt-text expectations for future imagery"
+  ]
+}
