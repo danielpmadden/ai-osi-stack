@@ -1,6 +1,8 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """AEIP lifecycle validator utilities and accompanying tests.
 
-The module defines helper functions that validate receipts, signatures, and
+The module defines helper functions that validate receipts, advisory verification blocks, and
 layer paths for AEIP governed artifacts. These utilities support future
 integration with governance pipelines and ensure Update Plan 12 requirements
 remain testable.
@@ -32,12 +34,12 @@ def validate_receipts(receipts: Iterable[dict]) -> bool:
 
 
 def validate_signatures(receipts: Iterable[dict]) -> bool:
-    """Check that every receipt carries a canonical signature block."""
+    """Check that every receipt carries an advisory verification block."""
     for receipt in receipts:
-        signature = receipt.get("signature", {})
-        if not isinstance(signature, dict):
+        verification = receipt.get("verification", {})
+        if not isinstance(verification, dict):
             return False
-        if not signature.get("signer") or not signature.get("hash"):
+        if not verification.get("logger") or not verification.get("checksum_guidance"):
             return False
     return True
 
@@ -59,22 +61,34 @@ def validate_layer_path(layer_path: str) -> bool:
 
 def test_validate_receipts_success():
     receipts = [
-        {"receiptId": "R-001", "signature": {"signer": "custodian", "hash": "abc"}},
-        {"receiptId": "R-002", "signature": {"signer": "auditor", "hash": "def"}},
+        {
+            "receiptId": "R-001",
+            "verification": {"logger": "custodian", "checksum_guidance": "Record SHA-512 locally"},
+        },
+        {
+            "receiptId": "R-002",
+            "verification": {"logger": "auditor", "checksum_guidance": "Record SHA-512 locally"},
+        },
     ]
     assert validate_receipts(receipts) is True
 
 
 def test_validate_receipts_failure():
     receipts = [
-        {"receiptId": "", "signature": {"signer": "custodian", "hash": "abc"}},
+        {
+            "receiptId": "",
+            "verification": {"logger": "custodian", "checksum_guidance": "Record SHA-512 locally"},
+        },
     ]
     assert validate_receipts(receipts) is False
 
 
 def test_validate_signatures_success():
     receipts = [
-        {"receiptId": "R-001", "signature": {"signer": "custodian", "hash": "abc"}}
+        {
+            "receiptId": "R-001",
+            "verification": {"logger": "custodian", "checksum_guidance": "Record SHA-512 locally"},
+        }
     ]
     assert validate_signatures(receipts) is True
 
@@ -85,7 +99,12 @@ def test_validate_signatures_failure_missing_block():
 
 
 def test_validate_signatures_failure_empty_fields():
-    receipts = [{"receiptId": "R-001", "signature": {"signer": "", "hash": ""}}]
+    receipts = [
+        {
+            "receiptId": "R-001",
+            "verification": {"logger": "", "checksum_guidance": ""},
+        }
+    ]
     assert validate_signatures(receipts) is False
 
 

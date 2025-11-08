@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import React from "react";
 import type { UpdatePlan } from "@/utils/types";
 import { t } from "@/i18n";

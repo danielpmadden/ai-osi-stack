@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import React, { useMemo } from "react";
 import type { Artifact, Layer } from "@/utils/types";
 import { t } from "@/i18n";

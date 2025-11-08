@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import React from "react";
 import layersData from "@/data/layers.json";
 import artifactsData from "@/data/artifacts.json";

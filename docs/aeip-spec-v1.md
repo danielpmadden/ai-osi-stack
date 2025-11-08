@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AEIP v1 Specification (Superseded)
 
 **Status:** This document is retained for archival purposes. The canonical specification is now [AEIP v1.3 — AI Epistemic Infrastructure Protocol](AEIP_Spec_v1_3.md), which replaces all requirements and guidance previously captured here.

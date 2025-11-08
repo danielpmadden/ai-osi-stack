@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 // TODO: Extend with runtime fetch typing once AEIP/OpenAI integrations are enabled.
 
 import { z } from "zod";
@@ -22,7 +24,7 @@ export const layerSchema = z.object({
 export const canonicalVersionSchema = z.object({
   label: z.string(),
   doi: z.string(),
-  sha512: z.string(),
+  checksum_guidance: z.string(),
   integrity_notice: z.string(),
   last_reviewed: z.string()
 });

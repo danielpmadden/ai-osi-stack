@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 08 — Layer 5 Reasoning Exchange Audit
 
 ## Strengths

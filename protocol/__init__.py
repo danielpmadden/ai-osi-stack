@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Protocol helpers for the AI OSI reference stack."""
 
 from __future__ import annotations

@@ -1,5 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Integrity Recap
 
-- Recomputed SHA-512 digests for all files changed during this audit using `sha512sum`.
-- Appended the hashes to `meta/INTEGRITY_NOTICE.md` under an Editorial Coherence Update with the statement "No version change; editorial coherence adjustments only."
-- Integrity tooling was not rerun beyond hash verification; runtime signatures remain as previously recorded.
+- Logged advisory SHA-512 (or equivalent) checksums for files changed during this audit and stored them in a personal register.
+- Documented the checksum log reference in `meta/INTEGRITY_NOTICE.md` under an Editorial Coherence Update noting "No version change; editorial coherence adjustments only."
+- Integrity tooling was not rerun beyond checksum logging; no repository signatures are provided.

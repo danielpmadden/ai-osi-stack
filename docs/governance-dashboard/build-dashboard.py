@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Build the static governance dashboard from manifest files."""
 from __future__ import annotations
 

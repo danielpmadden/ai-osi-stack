@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 Update Plan 3
 (“Interpretive + Continuity Edition” Integration Plan)
 1 · Hermeneutic & Temporal Drift Governance

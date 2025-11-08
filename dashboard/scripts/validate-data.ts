@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import path from "node:path";
 import { promises as fs } from "node:fs";
 import process from "node:process";

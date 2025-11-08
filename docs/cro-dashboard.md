@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # CRO Risk Dashboard
 
 _Metrics_: PCI 100.0%, CVR 50.0%, DDR 0.0%, AES 50.0%, BMC 100.0%, SLGI 50.0%.

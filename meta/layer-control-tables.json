@@ -123,7 +123,7 @@
       "example": {
         "caption": "Reasoning exchange artefact",
         "language": "json",
-        "content": "{\\n  \"transcript\": {\\n    \"hash\": \"sha512-33b1...\",\\n    \"participants\": [\"community_forum\", \"stack_mediator\"]\\n  },\\n  \"semantic_alignment\": {\\n    \"entries\": [\"fair_housing_glossary:v3\"]\\n  },\\n  \"decision_outputs\": [\\n    {\\n      \"reference\": \"GDS-2025-09\"\\n    }\\n  ]\\n}"
+        "content": "{\\n  \"transcript\": {\\n    \"checksum_guidance\": \"Record SHA-512 locally\",\\n    \"participants\": [\"community_forum\", \"stack_mediator\"]\\n  },\\n  \"semantic_alignment\": {\\n    \"entries\": [\"fair_housing_glossary:v3\"]\\n  },\\n  \"decision_outputs\": [\\n    {\\n      \"reference\": \"GDS-2025-09\"\\n    }\\n  ]\\n}"
       }
     },
     {

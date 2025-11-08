@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 Annex IV Crosswalk — AI OSI v4.3 Formal Alignment Draft
 
 File: /docs/Annex IV Crosswalk.md

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 23 — Therapy Tech and Governance of Care Audit
 
 ## Strengths

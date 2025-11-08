@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer 7 — Governance oversight and ledger integration."""
 from __future__ import annotations
 

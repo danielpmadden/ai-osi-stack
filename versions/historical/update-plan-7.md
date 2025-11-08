@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 Update Plan 7 (Custodial Integrity & Adversarial Resilience Edition)
 “The edition that defends itself.”
 1 · Purpose

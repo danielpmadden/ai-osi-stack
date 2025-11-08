@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Custodianship Succession Protocol
 
 1. **Trigger** — custodianship transfer initiated via CRO directive.

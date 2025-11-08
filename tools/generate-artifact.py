@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 """Generate governance artifacts that conform to the published schemas."""
 from __future__ import annotations

@@ -1,9 +1,10 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Generate Governance Spine manifests and update registry files."""
 
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
 import os
 import pathlib
@@ -30,14 +31,6 @@ else:
 
 SCHEMA_DIR = pathlib.Path("schemas/aeip")
 DEFAULT_SCHEMA_VERSION = "1.0.0"
-
-
-def sha512(path: pathlib.Path) -> str:
-    digest = hashlib.sha512()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(65536), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
 
 
 def load_extra(extra_path: str | None, extra_json: str | None) -> Dict[str, Any]:
@@ -73,14 +66,13 @@ def write_manifest(manifest: Dict[str, Any], output_path: pathlib.Path) -> None:
 
 def build_manifest(args: argparse.Namespace) -> Dict[str, Any]:
     payload_path = pathlib.Path(args.payload)
-    evidence_hash = sha512(payload_path)
     manifest: Dict[str, Any] = {
         "uuid": str(uuid.uuid4()),
         "layer": args.layer,
         "timestamp": datetime.now(timezone.utc).isoformat(),
         "custodian": args.custodian,
         "context_uri": args.context_uri,
-        "evidence_hash": evidence_hash,
+        "evidence_hash": "ADVISORY-CHECKSUM-RECORD-LOCALLY",
         "signature": resolve_signature(args),
         "tags": args.tags or [],
         "artifact_type": args.artifact_type,

@@ -8,9 +8,9 @@
     "supersedes_all_prior_metadata": true
   },
   "$comment": "Decision Rationale Record Schema | AEIP-Schema-1.0-2025-11",
-  "$comment:license": "CC BY-NC-ND 4.0",
+  "$comment:license": "CC BY-SA 4.0",
   "$comment:integrity": "Version hash: TBD | Generated: 2025-05-09T00:00:00Z",
-  "$comment:metadata": "Version: 1.0.0 | Timestamp: 2025-05-09T00:00:00Z | Author: Repository Architect | Signature: Pending governance signature.",
+  "$comment:metadata": "Version: 1.0.0 | Timestamp: 2025-05-09T00:00:00Z | Author: Repository Architect | Advisory log: Refer to checksum guidance.",
   "@context": {
     "schema": "https://schema.org/",
     "artifact_type": "schema:Text",

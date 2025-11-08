@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer 1 — Physical Substrate orchestration."""
 from __future__ import annotations
 

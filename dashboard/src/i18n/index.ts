@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import en from "./en.json";
 
 type Messages = typeof en;

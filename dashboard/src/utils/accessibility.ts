@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 // TODO: Integrate automated WCAG validation and T-SIR translation fidelity checks.
 
 import { useEffect, useState } from "react";

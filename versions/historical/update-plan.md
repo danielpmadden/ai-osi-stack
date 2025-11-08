@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 ✅ Final Update Plan — AI OSI Stack v 4.2 (Narrative + Semantic Integrity Edition)
 1 · Structural & Editorial Completion
 
@@ -98,7 +100,7 @@ Link Civic Layers to Contextual Transparency tiers (public interface vs regulato
 
 6 · Policy & Legal Consistency
 
-Reaffirm custodianship under CC BY-NC-ND 4.0.
+Reaffirm custodianship under CC BY-SA 4.0.
 
 State that v 1–v 3 are historical (non-normative).
 
@@ -117,7 +119,7 @@ docs/        narrative briefs + crosswalks
 schemas/     AEIP JSON-LD templates (CER,SIR)
 tests/       schema validation scripts
 versions/    archived PDFs (v1–v4.1)
-LICENSE.txt  CC BY-NC-ND 4.0
+LICENSE.txt  CC BY-SA 4.0
 README.md    summary + Contextual Transparency notice
 meta/INTEGRITY_NOTICE.md  ledger signature + v 4.2 timestamp
 

@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 module.exports = {
   "*.{ts,tsx,js,jsx,css,json,md}": [
     "prettier --write"

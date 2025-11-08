@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer abstractions for the AI OSI reference stack."""
 from __future__ import annotations
 

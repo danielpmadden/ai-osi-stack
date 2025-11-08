@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Governance Metrics Trends
 
 _Generated at 2025-11-05T10:25:24.414978Z_.

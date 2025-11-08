@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 """Create semantic GDS tags for the current quarter."""
 

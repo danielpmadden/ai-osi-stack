@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Auto-generated bridge to governance spine runtime module."""
 
 from __future__ import annotations

@@ -1,9 +1,11 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 <!--
 Title: AEIP Schema Catalogue Overview
 Version: 1.0.0
 Date: 2025-05-09T00:00:00Z
 Author: Repository Architect
-License: CC BY-NC-ND 4.0
+License: CC BY-SA 4.0
 Signature: Pending governance signature
 -->
 
@@ -33,4 +35,4 @@ This catalogue enumerates the AEIP artifact schemas that safeguard interoperabil
 
 ## Citation and Licensing
 
-All schema materials are © 2025 Daniel P. Madden and licensed under CC BY-NC-ND 4.0. Cite as: Madden, D. (2025). *AEIP Artifact Schemas for the AI OSI Stack v4*. Zenodo (forthcoming). Redistribution requires attribution, prohibits commercial use, and disallows derivative works without explicit authorization.
+All schema materials are © 2025 Daniel P. Madden and licensed under CC BY-SA 4.0. Cite as: Madden, D. (2025). *AEIP Artifact Schemas for the AI OSI Stack v4*. Zenodo (forthcoming). Redistribution requires attribution, prohibits commercial use, and disallows derivative works without explicit authorization.

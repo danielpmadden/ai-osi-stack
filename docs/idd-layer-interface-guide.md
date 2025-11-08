@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Interface Definition Document (IDD) Guide
 
 ## Purpose

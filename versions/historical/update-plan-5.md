@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 Update Plan 5 (“Canonical Defense & Continuity Edition”)
 “Proof over persuasion: The version that cannot be rewritten.”
 1 · Purpose
@@ -13,7 +15,7 @@ Makes verification so easy—and forgery so costly—that no derivative can gain
 2 · Legal Anchors
 2.1 License Reaffirmation
 
-Maintain CC BY-NC-ND 4.0 — no commercial use, no derivatives.
+Maintain CC BY-SA 4.0 — no commercial use, no derivatives.
 Add /NOTICE file:
 
 “Only signed releases from the canonical repository are normative.

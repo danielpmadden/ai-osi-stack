@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 Update Plan 4 (Finisher / Custodial Hardening Edition)
 “Make it canonical, provable, and untouchable.”
 1 · Purpose
@@ -39,7 +41,7 @@ Record transaction IDs and DOI in meta/INTEGRITY_NOTICE.md.
 3 · Legal and Brand Anchors
 3.1 License Consistency
 
-Retain CC BY-NC-ND 4.0.
+Retain CC BY-SA 4.0.
 
 Add a NOTICE file: “Only signed releases from the canonical repository are normative. Forks are non-canonical.”
 

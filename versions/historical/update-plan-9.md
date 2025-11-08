@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 Update Plan 9 (“Formal Alignment & Recognition Pathways Edition”)
 “Substance earns trust; structure earns recognition.”
 1 · Purpose
@@ -69,7 +71,7 @@ Add “Alignment & Recognition” chapter to meta/INTEGRITY_NOTICE.md.
 
 Require external crosswalks to preserve Right-to-Opacity from Update 8.
 
-When future CEN/CENELEC harmonization is sought, maintain open-standard licensing (CC BY-NC-ND 4.0).
+When future CEN/CENELEC harmonization is sought, maintain open-standard licensing (CC BY-SA 4.0).
 
 8 · Implementation Timeline
 Phase	Timeline	Output

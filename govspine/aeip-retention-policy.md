@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AEIP Archival Retention Policy
 
 - All AEIP frames must be retained for a minimum of five years.
