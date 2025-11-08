@@ -1,16 +1,42 @@
 % AI OSI Stack v5 — Canonical Edition
-% Appendix K — Civic Transparency Tiers & Contextual Disclosure
+% Appendix K — Transparency & Participation Interface
 \narrative{
-Appendix K organises transparency into contextual tiers that respect privacy and security while empowering citizens. The narrative follows transparency steward Rina as she prepares disclosures for a new AI-enabled public service. She consults the Transparency Matrix, which defines four tiers: Civic Overview, Community Insight, Technical Detail, and Secure Oversight. Each tier targets specific audiences and includes guidance on format, frequency, and safeguards.
-
-Rina begins with the Civic Overview, crafting plain-language summaries for the general public. She collaborates with community artists to illustrate data flows and safeguards. For the Community Insight tier, she hosts listening sessions to surface local concerns and tailors disclosures—translated materials, accessibility options, and contextual explanations. The Technical Detail tier provides documentation for researchers, auditors, and partner organisations, referencing AEIP manifests, crosswalk tables, and persona obligations. Finally, the Secure Oversight tier grants regulators and oversight bodies access to sensitive information under strict controls, ensuring that transparency never compromises safety or privacy.
-
-The appendix narrates how disclosures evolve during incidents. When a service experiences a partial outage, Rina updates each tier: immediate alerts for affected users, detailed incident reports for oversight bodies, and interpretive notes for the hermeneutic ledger. She references Appendices B, E, and M to align messaging with remediation, rights, and adversarial considerations. The story emphasises reciprocity: transparency invites feedback that shapes future disclosures.
+Appendix K reunifies the tiered transparency model of version~5 with the escalation and reporting duties from version~4. Transparency
+steward Rina co-leads a briefing with Layer~7 publishers and Layer~8 participation councils. Together they map every incident stage from
+Appendix~B onto four disclosure tiers: Civic Overview, Community Insight, Technical Detail, and Secure Oversight. Each tier lists who must
+receive information, which AEIP artefacts are shared, and how feedback loops tie into participation ledgers. The appendix reads like a
+civic-technical contract: disclosures are triggered by events, verified by evidence, and measured against participation outcomes.
 }
+
+\narrative{
+When an escalation is invoked, Rina updates the Civic Overview within one hour, publishing mandate context and safety posture. Community
+Insight briefings follow within six hours, highlighting local impact, translation requirements, and restitution options. Technical Detail
+packets align with Layer~7 Governance Publication obligations, distributing hashes, model updates, and remediation tasks. Secure Oversight
+artefacts reach regulators and ombuds within 24~hours through encrypted channels, referencing the AEIP incident bundle and override
+notices. Participation councils in Layer~8 confirm that disclosures answered civic questions; outstanding items become agenda entries for
+open forums. Transparency thus becomes a feedback engine rather than a one-way broadcast.
+}
+
 \normative{
-Transparency programmes SHALL implement tiered disclosures encompassing Civic Overview, Community Insight, Technical Detail, and Secure Oversight. Each tier MUST define audience, content scope, delivery channels, frequency, and safeguards. Disclosures SHALL reference relevant AEIP manifests, appendices, and persona obligations to maintain coherence across the canon.
+Transparency programmes \shall{maintain the four-tier matrix} with explicit mappings to Layer~7 and Layer~8 obligations. Each tier \shall{define
+audience, evidence bundle, disclosure cadence, escalation trigger, and participation feedback path}. Civic Overview releases \shall{publish
+plain-language summaries, rights reminders, and AEIP manifest links}. Community Insight updates \shall{document local impact, translation
+coverage, and contact channels for appeals}. Technical Detail packets \shall{include checksum references, remediation task lists, and
+links to \texttt{schemas/governance-decision-summary.jsonld}}. Secure Oversight transmissions \shall{contain encrypted incident dossiers,
+audit hooks, and override authority memos}. No tier \may{omit evidence references or participation contact details}.
+}
 
-Public disclosures SHALL be accessible, multilingual where necessary, and inclusive of disability accommodations. Secure Oversight disclosures MUST employ encryption, access controls, and audit logging aligned with Appendix I security requirements. Any restriction on disclosure SHALL be justified with documented risk assessments and reviewed periodically.
+\normative{
+During incidents, tier updates \shall{adhere to Appendix~B timing}. Civic Overview \shall{activate within one hour of detection}, Community
+Insight \shall{follow within six hours}, Technical Detail \shall{publish within 12~hours or upon verification}, and Secure Oversight \shall{convene within 24~hours}. Missed windows \shall{trigger automated alerts to Appendix~H custodianship forums}. Oversight chairs \should{issue
+an interim transparency bulletin} logging which tiers were served and which remain pending. Participation leads \may{extend disclosure windows}
+only when oversight actors \shall{publish a justification with revised deadlines and AEIP evidence references}.
+}
 
-Transparency updates during incidents SHALL follow Appendix B timelines, ensuring timely communication while protecting sensitive data. Feedback collected through transparency channels SHALL be recorded in Appendix L interpretive notes and Appendix C change logs when disclosures lead to policy updates. Failure to maintain transparency tiers SHALL trigger meta-audit review and potential custodial corrective actions.
+\normative{
+Feedback captured through any tier \shall{be recorded in Appendix~L hermeneutic ledgers and Appendix~C change logs} when it alters policy or
+implementation. Layer~8 councils \shall{publish participation minutes summarising how disclosures addressed community questions}. If
+disclosures reveal new harms, custodians \shall{open Appendix~B incident workflows}. Transparency metrics—tier activation time, feedback
+resolution rate, and participation satisfaction scores—\shall{be published quarterly in Appendix~N}. Institutions \should{expose dashboards}
+showing live compliance status, and civic observers \may{request audits} when metrics fall below mandate thresholds.
 }

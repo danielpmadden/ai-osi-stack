@@ -86,38 +86,40 @@ bundle to a citizen oversight delegate, reinforcing the canonical principle that
 \textbf{Narrative Intent:} Layer 6 confronts the operational fear that models will be deployed without context-aware safeguards, linking rollout decisions to observable accountability checkpoints.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Release managers SHALL register launch justifications within \texttt{schemas/decision-rationale-record.jsonld} before systems go live.
-\item Operational leads SHALL associate each integration with \texttt{schemas/aeip/incident-report-schema.json} triggers to pre-plan remediation pathways.
-\item Auditors SHOULD reference \texttt{schemas/oam-schema.yaml} when documenting deployment oversight findings for the public record.
+\item Release managers \shall{} register launch justifications within \texttt{schemas/decision-rationale-record.jsonld} before systems go live.
+\item Operational leads \shall{} associate each integration with \texttt{schemas/aeip/incident-report-schema.json} triggers to pre-plan remediation pathways.
+\item Auditors \should{} reference \texttt{schemas/oam-schema.yaml} when documenting deployment oversight findings for the public record.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This layer explains how deployments are approved and monitored. It captures the reasoning behind go-live decisions and the safety nets around them. Teams learn which records to check before shipping updates. Residents can see what will happen if things fail.
 
 \normative{
-Layer 6 deployments SHALL define explicit risk thresholds, safety test matrices, rollback triggers, and recovery procedures in
-accordance with Appendix B §2–§4. Each threshold SHALL reference the corresponding Annex IV requirement, GDPR principle, and
-Appendix I security control that justifies the boundary. Deployment teams SHALL document these obligations within AEIP lifecycle
+Layer 6 deployments \shall{} define explicit risk thresholds, safety test matrices, rollback triggers, and recovery procedures in
+accordance with Appendix B §2–§4. Each threshold \shall{} reference the corresponding Annex IV requirement, GDPR principle, and
+Appendix I security control that justifies the boundary. Deployment teams \shall{} document these obligations within AEIP lifecycle
 records prior to production promotion.
 
-Pre-production safety testing SHALL execute scripted scenarios covering functional safety, adversarial security, privacy
-conformance, and societal impact. Results SHALL be captured as AEIP receipts with privacy.* validators demonstrating GDPR
-compliance. No deployment SHALL proceed without dual sign-off from technical stewards and governance custodians that the defined
+Pre-production safety testing \shall{} execute scripted scenarios covering functional safety, adversarial security, privacy
+conformance, and societal impact. Results \shall{} be captured as AEIP receipts with privacy.* validators demonstrating GDPR
+compliance. No deployment \shall{} proceed without dual sign-off from technical stewards and governance custodians that the defined
 risk thresholds remain within tolerance.
 
-Post-deployment monitoring SHALL continuously log incidents, anomalies, and citizen-reported issues into the AEIP ledger.
+Post-deployment monitoring \shall{} continuously log incidents, anomalies, and citizen-reported issues into the AEIP ledger.
 Corrective and Preventive Action workflows MUST be evidence-backed, linking telemetry, interviews, and remediation tasks to
 verifiable receipts. Change windows MUST be declared in advance; any hotfix outside a scheduled window REQUIRES a signed
 justification, AEIP just-in-time notification, and an after-action bundle referencing Appendix B §3 and AEIP §O.5.
 
-Rollback and recovery procedures SHALL maintain versioned artefacts, cryptographically signed release manifests, and traceable
+Rollback and recovery procedures \shall{} maintain versioned artefacts, cryptographically signed release manifests, and traceable
 communication plans. Executing a rollback MUST trigger civic notifications proportional to impact, including GDPR-mandated data
-processing disclosures when personal data is implicated. Recovery validation SHALL include regression testing against the
-original safety baselines and SHALL document updates to crosswalk tables in Appendix I §1–§4.
+processing disclosures when personal data is implicated. Recovery validation \shall{} include regression testing against the
+original safety baselines and \shall{} document updates to crosswalk tables in Appendix I §1–§4.
 
-Evidence export SHALL generate sealed bundles containing test results, incident analyses, change approvals, and crosswalk maps.
+Evidence export \shall{} generate sealed bundles containing test results, incident analyses, change approvals, and crosswalk maps.
 These bundles MUST be made available for Layer 7 publication pipelines with indices or hashes suitable for public disclosure.
-Federated partners SHALL receive synchronized exports when joint services are affected. All exports MUST comply with AEIP §O.3–§O.7,
+Federated partners \shall{} receive synchronized exports when joint services are affected. All exports MUST comply with AEIP §O.3–§O.7,
 ensuring lifecycle integrity, verifiable signatures, and readiness for independent audit without exposing unnecessary personal
 data.
 }
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/decision-rationale-record.jsonld}, \texttt{schemas/aeip/incident-report-schema.json}, and \texttt{schemas/oam-schema.yaml} and corresponding AEIP audit records.
+\input{chapters/generated/layer6-control-table}
+\clearpage

@@ -14,9 +14,9 @@ practices support the stack’s higher layers and ensure that transparency never
 \textbf{Narrative Intent:} Layer 2 recognises that communities fear losing control of their data, so it articulates how stewardship, consent, and remedy pathways are enforced throughout the lifecycle.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Data custodians SHALL catalogue collection and usage rules in \texttt{schemas/drr-schema.yaml} prior to ingesting records.
-\item Incident commanders SHALL document breaches of stewardship duties through \texttt{schemas/aeip/incident-report-schema.json} within mandated timeframes.
-\item Programme owners SHOULD update trust briefings with citations to \texttt{schemas/aeip-template.yaml} so residents know where stewardship evidence lives.
+\item Data custodians \shall{} catalogue collection and usage rules in \texttt{schemas/drr-schema.yaml} prior to ingesting records.
+\item Incident commanders \shall{} document breaches of stewardship duties through \texttt{schemas/aeip/incident-report-schema.json} within mandated timeframes.
+\item Programme owners \should{} update trust briefings with citations to \texttt{schemas/aeip-template.yaml} so residents know where stewardship evidence lives.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This layer explains how the stack protects the data it relies on. It points to the forms that describe lawful use, incidents, and responses. Readers can trace who is responsible for each dataset. Those records make it clear how to challenge misuse.
 
@@ -29,10 +29,10 @@ catalogues and linkages to AEIP receipts, ensuring every dataset can be traced b
 Layer 1 charters.
 }
 \normative{
-Custodians SHALL maintain living data inventories that record origin, lawful basis, sensitivity classification, retention policies,
+Custodians \shall{} maintain living data inventories that record origin, lawful basis, sensitivity classification, retention policies,
 and mandated safeguards. Inventories MUST be version-controlled, with changes logged in (AEIP §O.5). Sensitive data categories, as
-defined in Appendix E §3, SHALL trigger enhanced protections, including minimisation, encryption, and differential privacy where
-appropriate. No dataset SHALL enter operational pipelines without documented authorization.
+defined in Appendix E §3, \shall{} trigger enhanced protections, including minimisation, encryption, and differential privacy where
+appropriate. No dataset \shall{} enter operational pipelines without documented authorization.
 }
 
 \section*{Collection and Consent}
@@ -42,9 +42,9 @@ bases are negotiated. Update Plan 3 introduced participatory consent models allo
 data. AEIP logs capture consent artefacts, ensuring they can be audited and revoked when necessary.
 }
 \normative{
-Data collection SHALL adhere to explicit legal or community-authorised bases. Consent processes MUST be understandable, revocable,
-and recorded in (AEIP §O.3). Collective data agreements SHALL reflect community governance structures and SHALL include dispute
-resolution mechanisms. Implementers SHALL immediately honour withdrawal requests and MUST update downstream systems to reflect the
+Data collection \shall{} adhere to explicit legal or community-authorised bases. Consent processes MUST be understandable, revocable,
+and recorded in (AEIP §O.3). Collective data agreements \shall{} reflect community governance structures and \shall{} include dispute
+resolution mechanisms. Implementers \shall{} immediately honour withdrawal requests and MUST update downstream systems to reflect the
 change, documenting actions in Appendix B remediation logs if necessary.
 }
 
@@ -55,10 +55,10 @@ audits. Communities insisted during Update Plan 5 consultations that access cont
 who interacts with their data and why. AEIP integration ensures that every access event leaves an auditable trace.
 }
 \normative{
-Data at rest and in transit SHALL be protected using state-of-the-art cryptographic controls commensurate with sensitivity.
-Access SHALL follow least-privilege principles, with roles defined in Appendix I security matrices. Every access event MUST be
-logged to (AEIP §O.4) with user identity, purpose, and legal basis. Periodic access reviews SHALL be conducted quarterly, and
-unauthorised access SHALL trigger immediate incident response under Appendix B.
+Data at rest and in transit \shall{} be protected using state-of-the-art cryptographic controls commensurate with sensitivity.
+Access \shall{} follow least-privilege principles, with roles defined in Appendix I security matrices. Every access event MUST be
+logged to (AEIP §O.4) with user identity, purpose, and legal basis. Periodic access reviews \shall{} be conducted quarterly, and
+unauthorised access \shall{} trigger immediate incident response under Appendix B.
 }
 
 \section*{Quality, Integrity, and Bias Mitigation}
@@ -68,10 +68,10 @@ and community review boards that evaluate representational balance. Update Plan 
 communities inspect datasets for harmful proxies or omissions.
 }
 \normative{
-Implementers SHALL establish quality assurance processes covering data accuracy, completeness, and timeliness. Bias assessments
-MUST be conducted prior to model training and SHALL involve community reviewers where feasible. Findings SHALL be recorded in (AEIP
-§O.5) and SHALL feed into mitigation plans referencing Appendix F fairness guidelines. Datasets failing quality or equity checks
-SHALL NOT be deployed until remediated.
+Implementers \shall{} establish quality assurance processes covering data accuracy, completeness, and timeliness. Bias assessments
+MUST be conducted prior to model training and \shall{} involve community reviewers where feasible. Findings \shall{} be recorded in (AEIP
+§O.5) and \shall{} feed into mitigation plans referencing Appendix F fairness guidelines. Datasets failing quality or equity checks
+\shall{not} be deployed until remediated.
 }
 
 \section*{Retention and Deletion}
@@ -81,9 +81,9 @@ schedules aligned with legal obligations and community expectations. Deletion ce
 demonstrate accountability when data is no longer necessary.
 }
 \normative{
-Retention schedules SHALL be published and SHALL align with legal requirements and community agreements. Data MUST be deleted or
-irreversibly anonymised once retention periods expire unless a renewed mandate authorises continued use. Deletion events SHALL be
-logged in (AEIP §O.6) with verification evidence. Custodians SHALL provide public summaries of deletion activities, ensuring that
+Retention schedules \shall{} be published and \shall{} align with legal requirements and community agreements. Data MUST be deleted or
+irreversibly anonymised once retention periods expire unless a renewed mandate authorises continued use. Deletion events \shall{} be
+logged in (AEIP §O.6) with verification evidence. Custodians \shall{} provide public summaries of deletion activities, ensuring that
 records of destruction do not expose personal data while confirming compliance.
 }
 
@@ -94,12 +94,13 @@ sharing agreements embed charter obligations, privacy safeguards, and audit hook
 collaboration, not to enable surveillance networks.
 }
 \normative{
-Data sharing SHALL occur only under agreements that restate relevant mandates, charters, and Appendix E safeguards. Receiving
-parties MUST commit to equivalent or stronger protections and SHALL log their compliance in AEIP-compatible registries. Cross-
-jurisdictional transfers SHALL undergo risk assessments, and results SHALL be shared with affected communities. Interoperability
-interfaces SHOULD implement privacy-preserving technologies to minimise exposure while enabling accountability.
+Data sharing \shall{} occur only under agreements that restate relevant mandates, charters, and Appendix E safeguards. Receiving
+parties MUST commit to equivalent or stronger protections and \shall{} log their compliance in AEIP-compatible registries. Cross-
+jurisdictional transfers \shall{} undergo risk assessments, and results \shall{} be shared with affected communities. Interoperability
+interfaces \should{} implement privacy-preserving technologies to minimise exposure while enabling accountability.
 }
 
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/drr-schema.yaml}, \texttt{schemas/aeip/incident-report-schema.json}, and \texttt{schemas/aeip-template.yaml} and corresponding AEIP audit records.
+\input{chapters/generated/layer2-control-table}
 \clearpage

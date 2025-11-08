@@ -14,16 +14,20 @@ The chapter illustrates verifiable language governance in action. AEIP bundles r
 \textbf{Narrative Intent:} This chapter tackles semantic drift and rhetorical manipulation, ensuring language across the stack remains faithful to civic intent rather than marketing spin.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Semantic stewards SHALL register contested or novel terms in \texttt{schemas/svc/semantic-registry.jsonld} before publication.
-\item Authors SHALL attach annotated discourse records via \texttt{schemas/interpretive-trace-package.jsonld} to expose persuasive context.
-\item Drafting teams SHOULD log AI-assisted edits through \texttt{schemas/governance/ai-assisted-drafting.jsonld} to disclose machine contributions.
+\item Semantic stewards \shall{} register contested or novel terms in \texttt{schemas/svc/semantic-registry.jsonld} before publication.
+\item Authors \shall{} attach annotated discourse records via \texttt{schemas/interpretive-trace-package.jsonld} to expose persuasive context.
+\item Drafting teams \should{} log AI-assisted edits through \texttt{schemas/governance/ai-assisted-drafting.jsonld} to disclose machine contributions.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This chapter keeps the stack’s language honest. It records definitions, rhetorical context, and AI editing trails. Readers can see how words are chosen and challenged. That clarity protects the public from subtle semantic shifts.
 
 \normative{
-Canonical deployments SHALL maintain semantic registries using verifiable version control, ensuring every normative statement, refusal rationale, and disclosure notice links to immutable provenance records. Updates to rhetorical baselines MUST pass through participatory review with ledger-backed deliberation trails. Custodians SHALL provide multilingual reconciliations and publish diff reports that trace semantic evolution across jurisdictions.
+Canonical deployments \shall{} maintain semantic registries using verifiable version control, ensuring every normative statement, refusal rationale, and disclosure notice links to immutable provenance records. Updates to rhetorical baselines MUST pass through participatory review with ledger-backed deliberation trails. Custodians \shall{} provide multilingual reconciliations and publish diff reports that trace semantic evolution across jurisdictions.
 
-Implementers MUST integrate linguistic integrity checks into release pipelines so that model updates cannot ship with ambiguous or conflicting obligations. External auditors SHALL be granted read access to semantic registries under transparency-with-consent safeguards, enabling independent verification of rhetorical commitments.
+Implementers MUST integrate linguistic integrity checks into release pipelines so that model updates cannot ship with ambiguous or conflicting obligations. External auditors \shall{} be granted read access to semantic registries under transparency-with-consent safeguards, enabling independent verification of rhetorical commitments.
 }
+\begin{quote}
+\textit{Operational Note. Canon 20 aligns with AEIP semantic registry status metadata and Layer~5 reasoning exchange controls, keeping linguistic commitments traceable to registries and dialogue archives.}
+\end{quote}
+
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/svc/semantic-registry.jsonld}, \texttt{schemas/interpretive-trace-package.jsonld}, and \texttt{schemas/governance/ai-assisted-drafting.jsonld} and corresponding AEIP audit records.

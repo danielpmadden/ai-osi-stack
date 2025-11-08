@@ -13,9 +13,9 @@ instruction governance prevents misuse, preserves agency, and enables contestabl
 \textbf{Narrative Intent:} Layer 4 responds to the practical risk that instructions and prompts can quietly override safeguards, mandating a control regime that treats command channels as auditable infrastructure.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Operators SHALL register instructional flows with \texttt{schemas/aeip/instruction-log-schema.json} to expose who issued which commands and why.
-\item Stewards SHALL link contested instruction sessions to \texttt{schemas/interpretive-trace-package.jsonld} artefacts for reconstructing context.
-\item Oversight reviewers SHOULD summarise control efficacy within \texttt{schemas/oversight-audit-memo.jsonld} to capture governance responses.
+\item Operators \shall{} register instructional flows with \texttt{schemas/aeip/instruction-log-schema.json} to expose who issued which commands and why.
+\item Stewards \shall{} link contested instruction sessions to \texttt{schemas/interpretive-trace-package.jsonld} artefacts for reconstructing context.
+\item Oversight reviewers \should{} summarise control efficacy within \texttt{schemas/oversight-audit-memo.jsonld} to capture governance responses.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This layer makes sure every instruction given to an AI system is traceable. It records who said what, how the system responded, and whether the process was safe. When questions arise, investigators can replay the context. Public reviewers also see how control lessons feed back into governance.
 
@@ -27,9 +27,9 @@ Persona Architecture v2 enriches this taxonomy by defining persona roles, author
 explains how Update Plan 8 aligned instruction categories with AEIP evidence requirements to ensure traceability.
 }
 \normative{
-Organizations SHALL define instruction taxonomies covering human-issued prompts, automated routines, and persona-mediated actions.
-Each category MUST include allowed actions, prohibited actions, and escalation procedures. Taxonomies SHALL be recorded in (AEIP
-§O.3) and SHALL be reviewed alongside ethical charters. Implementers SHALL NOT deploy instruction channels lacking taxonomy
+Organizations \shall{} define instruction taxonomies covering human-issued prompts, automated routines, and persona-mediated actions.
+Each category MUST include allowed actions, prohibited actions, and escalation procedures. Taxonomies \shall{} be recorded in (AEIP
+§O.3) and \shall{} be reviewed alongside ethical charters. Implementers \shall{not} deploy instruction channels lacking taxonomy
 coverage.
 }
 
@@ -40,9 +40,9 @@ fallback procedures. The narrative describes how community oversight boards help
 interactions. Layer 4 ensures that control rests with authorised actors and remains contestable.
 }
 \normative{
-Control policies SHALL specify approval requirements, monitoring triggers, and shutoff capabilities. Policies MUST be mapped to
-charter clauses and SHALL be tested before activation. AEIP (AEIP §O.4) SHALL log policy configurations, change histories, and test
-results. Custodians SHALL provide civic auditors with the ability to inspect and simulate control policies without risking live
+Control policies \shall{} specify approval requirements, monitoring triggers, and shutoff capabilities. Policies MUST be mapped to
+charter clauses and \shall{} be tested before activation. AEIP (AEIP §O.4) \shall{} log policy configurations, change histories, and test
+results. Custodians \shall{} provide civic auditors with the ability to inspect and simulate control policies without risking live
 operations.
 }
 
@@ -53,9 +53,9 @@ limits. The narrative illustrates how personas represent civic bodies, deliver p
 constraints during dialogue with AI systems.
 }
 \normative{
-Persona definitions SHALL include authority scope, behavioural guidelines, language profiles, and accountability hooks. Personas
-MUST refuse instructions that violate mandates or charters and SHALL document refusals in (AEIP §O.4). Custodians SHALL train
-personas on community-approved corpora and SHALL monitor for drift or misuse. Community representatives SHALL periodically review
+Persona definitions \shall{} include authority scope, behavioural guidelines, language profiles, and accountability hooks. Personas
+MUST refuse instructions that violate mandates or charters and \shall{} document refusals in (AEIP §O.4). Custodians \shall{} train
+personas on community-approved corpora and \shall{} monitor for drift or misuse. Community representatives \shall{} periodically review
 persona transcripts to ensure fidelity.
 }
 
@@ -66,9 +66,9 @@ exposing sensitive data. The narrative references Appendix G participation right
 shape decisions affecting them.
 }
 \normative{
-Instruction logs SHALL capture prompt metadata, response summaries, decision outcomes, and escalation events. Logs MUST respect
-privacy constraints in Appendix E §3, employing redaction or aggregation where necessary. Access to logs SHALL be role-controlled
-and documented in (AEIP §O.5). When logs reveal misuse or harm, incident workflows SHALL activate immediately.
+Instruction logs \shall{} capture prompt metadata, response summaries, decision outcomes, and escalation events. Logs MUST respect
+privacy constraints in Appendix E §3, employing redaction or aggregation where necessary. Access to logs \shall{} be role-controlled
+and documented in (AEIP §O.5). When logs reveal misuse or harm, incident workflows \shall{} activate immediately.
 }
 
 \section*{Human-in-the-Loop Assurance}
@@ -78,9 +78,9 @@ necessary, and document rationales. Update Plan 5 introduced minimum oversight c
 accountable at critical junctures.
 }
 \normative{
-Systems SHALL maintain human-in-the-loop checkpoints for high-risk actions. Oversight roles MUST have authority to pause or override
-operations. AEIP (AEIP §O.3) SHALL record oversight decisions, including rationale and supporting evidence. Training for oversight
-roles SHALL be documented, and rotations SHOULD prevent fatigue or capture. Delegation to automated monitors SHALL require explicit
+Systems \shall{} maintain human-in-the-loop checkpoints for high-risk actions. Oversight roles MUST have authority to pause or override
+operations. AEIP (AEIP §O.3) \shall{} record oversight decisions, including rationale and supporting evidence. Training for oversight
+roles \shall{} be documented, and rotations \should{} prevent fatigue or capture. Delegation to automated monitors \shall{} require explicit
 charter authorization.
 }
 
@@ -91,11 +91,12 @@ harmful prompts or request review of automated responses. The narrative describe
 contestation accessible.
 }
 \normative{
-Instruction channels SHALL provide appeal mechanisms embedded in user interfaces. Appeals MUST be acknowledged within defined
-service levels and SHALL be tracked in (AEIP §O.7). Custodians SHALL communicate outcomes to appellants and SHALL integrate lessons
-into policy updates. Retaliation against appellants SHALL be prohibited and enforced through Appendix B sanctions.
+Instruction channels \shall{} provide appeal mechanisms embedded in user interfaces. Appeals MUST be acknowledged within defined
+service levels and \shall{} be tracked in (AEIP §O.7). Custodians \shall{} communicate outcomes to appellants and \shall{} integrate lessons
+into policy updates. Retaliation against appellants \shall{} be prohibited and enforced through Appendix B sanctions.
 }
 
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/aeip/instruction-log-schema.json}, \texttt{schemas/interpretive-trace-package.jsonld}, and \texttt{schemas/oversight-audit-memo.jsonld} and corresponding AEIP audit records.
+\input{chapters/generated/layer4-control-table}
 \clearpage

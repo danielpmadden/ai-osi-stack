@@ -20,18 +20,18 @@ The chapter closes with a civic symposium where persona storytellers present the
 \textbf{Narrative Intent:} This chapter addresses the confusion that arises when human and synthetic personas blur, guiding how roles, permissions, and accountability boundaries stay intelligible across systems.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Integrators SHALL map persona capabilities within \texttt{schemas/persona/persona-manifest.jsonld} before exposing them to civic interfaces.
-\item Custodians SHALL register stewardship assignments in \texttt{schemas/persona/registry.jsonld} so role limits are machine-readable.
-\item Auditors SHOULD connect behavioural reviews to \texttt{schemas/interpretive-trace-package.jsonld} artefacts for contextual accountability.
+\item Integrators \shall{} map persona capabilities within \texttt{schemas/persona/persona-manifest.jsonld} before exposing them to civic interfaces.
+\item Custodians \shall{} register stewardship assignments in \texttt{schemas/persona/registry.jsonld} so role limits are machine-readable.
+\item Auditors \should{} connect behavioural reviews to \texttt{schemas/interpretive-trace-package.jsonld} artefacts for contextual accountability.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This chapter explains who is allowed to act on behalf of the stack. It documents what each persona can and cannot do. The records make it clear when a persona changes or is removed. People can check those logs to see whether boundaries are respected.
 
 \normative{
-Persona development SHALL follow a documented interpretive process that includes stakeholder engagement, field observation, and ethical review, with outputs recorded in the hermeneutic ledger per Appendix L. Each persona manifest MUST include narrative context, normative obligations, operational constraints, and AEIP linkage identifiers that bind the persona to Layer 0–Layer 8 artefacts.
+Persona development \shall{} follow a documented interpretive process that includes stakeholder engagement, field observation, and ethical review, with outputs recorded in the hermeneutic ledger per Appendix L. Each persona manifest MUST include narrative context, normative obligations, operational constraints, and AEIP linkage identifiers that bind the persona to Layer 0–Layer 8 artefacts.
 
-Personas guiding frontline or high-risk interactions SHALL encode explicit privacy expectations, consent boundaries, and communication accessibility requirements. System designers MUST verify that interface components, control logic, and audit trails reflect those constraints before deployment. Conflicts between personas SHALL trigger structured deliberation sessions whose outcomes are recorded as interpretive addenda referencing Appendix O.3 provenance clauses.
+Personas guiding frontline or high-risk interactions \shall{} encode explicit privacy expectations, consent boundaries, and communication accessibility requirements. System designers MUST verify that interface components, control logic, and audit trails reflect those constraints before deployment. Conflicts between personas \shall{} trigger structured deliberation sessions whose outcomes are recorded as interpretive addenda referencing Appendix O.3 provenance clauses.
 
-Institutional personas for custodians, policymakers, or procurement officers MUST reference applicable legal frameworks (including Annex IV, GDPR, and EU AI Act obligations), federation agreements (Appendix G), and custodianship protocols (Appendix H). AEIP validators SHALL enforce persona linkage for every major change request, ensuring that evidence bundles cite the relevant persona obligations. Persona updates SHALL be versioned, co-signed by civic representatives, and communicated through public attestation channels described in Appendix N.
+Institutional personas for custodians, policymakers, or procurement officers MUST reference applicable legal frameworks (including Annex IV, GDPR, and EU AI Act obligations), federation agreements (Appendix G), and custodianship protocols (Appendix H). AEIP validators \shall{} enforce persona linkage for every major change request, ensuring that evidence bundles cite the relevant persona obligations. Persona updates \shall{} be versioned, co-signed by civic representatives, and communicated through public attestation channels described in Appendix N.
 }
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/persona/persona-manifest.jsonld}, \texttt{schemas/persona/registry.jsonld}, and \texttt{schemas/interpretive-trace-package.jsonld} and corresponding AEIP audit records.

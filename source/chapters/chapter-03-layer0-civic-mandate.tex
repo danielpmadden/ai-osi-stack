@@ -15,9 +15,9 @@ participatory procedures, and evidence obligations into a single foundational co
 \textbf{Narrative Intent:} Layer 0 responds to the democratic deficit that occurs when AI deployments skip explicit civic authorization, ensuring communities can see and challenge the mandate that permits governance technology.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Custodians SHALL encode mandate terms within \texttt{schemas/aeip/civic-charter-schema.json} before any Layer 0 service is activated.
-\item Oversight teams SHALL log accountability triggers using \texttt{schemas/aeip/incident-report-schema.json} whenever mandate duties are breached.
-\item Civic monitors SHOULD publish summary ledgers referencing \texttt{schemas/integrity-ledger-entry.jsonld} so residents can verify fulfilment of obligations.
+\item Custodians \shall{} encode mandate terms within \texttt{schemas/aeip/civic-charter-schema.json} before any Layer 0 service is activated.
+\item Oversight teams \shall{} log accountability triggers using \texttt{schemas/aeip/incident-report-schema.json} whenever mandate duties are breached.
+\item Civic monitors \should{} publish summary ledgers referencing \texttt{schemas/integrity-ledger-entry.jsonld} so residents can verify fulfilment of obligations.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This layer states that no AI system should operate without a public license to do so. It shows how to record that permission and what happens if the mandate is broken. People can read the logged promises and compare them with reality. If something goes wrong, the records explain who must fix it.
 
@@ -30,10 +30,10 @@ institutional bylaws then formalise the mandate, referencing Appendix C for cons
 proposal, consultation, ratification, and publication.
 }
 \normative{
-Entities deploying the stack SHALL secure a documented civic mandate before any technical implementation. The mandate MUST include
-purpose statements, scope limitations, rights protections, and appeal pathways. Ratification procedures SHALL meet quorum and
-participation thresholds defined in Appendix G. AEIP entries in (AEIP §O.3) SHALL record consultation minutes, voting tallies, and
-ratification evidence. Implementers SHALL NOT commence data collection or model development absent a valid mandate.
+Entities deploying the stack \shall{} secure a documented civic mandate before any technical implementation. The mandate MUST include
+purpose statements, scope limitations, rights protections, and appeal pathways. Ratification procedures \shall{} meet quorum and
+participation thresholds defined in Appendix G. AEIP entries in (AEIP §O.3) \shall{} record consultation minutes, voting tallies, and
+ratification evidence. Implementers \shall{not} commence data collection or model development absent a valid mandate.
 }
 
 \section*{Mandate Maintenance}
@@ -44,9 +44,9 @@ feedback. The narrative recounts how Update Plan 7 introduced adaptive renewal t
 pilot deployments.
 }
 \normative{
-Custodians SHALL schedule mandate reviews at least annually and MUST initiate an extraordinary review when material risks emerge.
-Renewal processes SHALL solicit input from affected groups, including marginalized communities identified in AEIP demographics.
-Any changes SHALL be documented in (AEIP §O.6) amendment logs and SHALL be cross-referenced with Appendix B remediation outcomes.
+Custodians \shall{} schedule mandate reviews at least annually and MUST initiate an extraordinary review when material risks emerge.
+Renewal processes \shall{} solicit input from affected groups, including marginalized communities identified in AEIP demographics.
+Any changes \shall{} be documented in (AEIP §O.6) amendment logs and \shall{} be cross-referenced with Appendix B remediation outcomes.
 If a mandate lapses, operations MUST pause until renewal is completed and published.
 }
 
@@ -57,10 +57,10 @@ mandated purpose. AEIP enables automatic alerts when actions deviate from author
 use dashboards to monitor compliance indicators, ensuring the mandate remains a living guardrail rather than a ceremonial charter.
 }
 \normative{
-Oversight bodies SHALL have real-time access to compliance dashboards and AEIP exception logs. Deviations from mandate scope MUST
-trigger Appendix B remediation workflows within defined service-level windows. Custodians SHALL provide enforcement authorities
-with subpoena-ready evidence packages, including communication trails and decision logs. Implementers SHALL document corrective
-actions in (AEIP §O.5) and SHALL brief the public on resolution outcomes through Governance Publication channels.
+Oversight bodies \shall{} have real-time access to compliance dashboards and AEIP exception logs. Deviations from mandate scope MUST
+trigger Appendix B remediation workflows within defined service-level windows. Custodians \shall{} provide enforcement authorities
+with subpoena-ready evidence packages, including communication trails and decision logs. Implementers \shall{} document corrective
+actions in (AEIP §O.5) and \shall{} brief the public on resolution outcomes through Governance Publication channels.
 }
 
 \section*{Mandate Revocation and Suspension}
@@ -71,9 +71,9 @@ trust erodes. Suspension mechanisms allow temporary halts while investigations p
 substantive.
 }
 \normative{
-Mandates SHALL include explicit revocation and suspension clauses. When triggered, custodians MUST halt affected operations,
-preserve evidence, and notify stakeholders within the timeframe defined in Appendix B. Revocation proceedings SHALL be recorded in
-(AEIP §O.7) communication logs and SHALL invite independent observers. Restoration of operations SHALL require a renewed mandate and
+Mandates \shall{} include explicit revocation and suspension clauses. When triggered, custodians MUST halt affected operations,
+preserve evidence, and notify stakeholders within the timeframe defined in Appendix B. Revocation proceedings \shall{} be recorded in
+(AEIP §O.7) communication logs and \shall{} invite independent observers. Restoration of operations \shall{} require a renewed mandate and
 public attestation of corrective measures.
 }
 
@@ -85,13 +85,14 @@ the commitments without legal training. The narrative highlights how interactive
 track their fulfilment.
 }
 \normative{
-Custodians SHALL maintain publicly accessible mandate registries with machine-readable and human-readable formats. Registries MUST
-include purpose statements, decision logs, renewal dates, and contact points for appeals. Updates SHALL be published within 48
-hours of any change. Privacy considerations SHALL be handled according to Appendix E §3, ensuring sensitive details are protected
-without obscuring accountability. Civic interfaces SHALL comply with accessibility standards and SHOULD support multilingual
+Custodians \shall{} maintain publicly accessible mandate registries with machine-readable and human-readable formats. Registries MUST
+include purpose statements, decision logs, renewal dates, and contact points for appeals. Updates \shall{} be published within 48
+hours of any change. Privacy considerations \shall{} be handled according to Appendix E §3, ensuring sensitive details are protected
+without obscuring accountability. Civic interfaces \shall{} comply with accessibility standards and \should{} support multilingual
 presentations.
 }
 
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/aeip/civic-charter-schema.json}, \texttt{schemas/aeip/incident-report-schema.json}, and \texttt{schemas/integrity-ledger-entry.jsonld} and corresponding AEIP audit records.
+\input{chapters/generated/layer0-control-table}
 \clearpage
