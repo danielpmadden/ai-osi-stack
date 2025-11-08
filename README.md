@@ -1,8 +1,7 @@
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
 # AI OSI Stack v5.0  
-### A Public Architecture for Accountable Artificial Intelligence
-
+### A Governance Blueprint for Scalable and Trusted AI
 ---
 
 ## Overview
