@@ -1,0 +1,145 @@
+{
+  "stages": [
+    {
+      "name": "Emergent",
+      "governance_integration_index": 0.25,
+      "description": "Core custodial roles appointed, baseline AEIP evidence established, and escalation paths rehearsed on paper.",
+      "checkpoints": [
+        {
+          "code": "E1",
+          "metric": "Charter ratification recorded with quorum proof",
+          "aeip_schema": "schemas/aeip/civic-charter-schema.json",
+          "evidence": "civic_mandate.ratification.vote_tally"
+        },
+        {
+          "code": "E2",
+          "metric": "Incident lifecycle drill executed within 90 days",
+          "aeip_schema": "schemas/aeip/incident-report-schema.json",
+          "evidence": "timeline.verification_complete_at"
+        }
+      ]
+    },
+    {
+      "name": "Structured",
+      "governance_integration_index": 0.5,
+      "description": "Layer controls operationalised with automation, transparency tiers activated, and AEIP manifests cross-linked to dashboards.",
+      "checkpoints": [
+        {
+          "code": "S1",
+          "metric": "Control tables generated for Layers 0–8 with evidence references",
+          "aeip_schema": "schemas/aeip/manifest.yaml",
+          "evidence": "control_tables.last_generated_at"
+        },
+        {
+          "code": "S2",
+          "metric": "Governance publications released within statutory windows",
+          "aeip_schema": "schemas/governance-decision-summary.jsonld",
+          "evidence": "publication.window_days"
+        }
+      ]
+    },
+    {
+      "name": "Integrated",
+      "governance_integration_index": 0.75,
+      "description": "Cross-jurisdictional reciprocity established, provenance signatures federated, and participation cycles co-managed with residents.",
+      "checkpoints": [
+        {
+          "code": "I1",
+          "metric": "Custodial signatures verified across two jurisdictions",
+          "aeip_schema": "schemas/aeip/aeip-frame-schema.json",
+          "evidence": "signatures[].witness_chain"
+        },
+        {
+          "code": "I2",
+          "metric": "Participation response memos published within 30 days",
+          "aeip_schema": "schemas/aeip/tecl-schema.json",
+          "evidence": "influence_statements[].response_published_on"
+        }
+      ]
+    },
+    {
+      "name": "Institutionalized",
+      "governance_integration_index": 1.0,
+      "description": "Stack obligations embedded in law, budgeted, independently audited, and continuously certified via AEIP attestations.",
+      "checkpoints": [
+        {
+          "code": "N1",
+          "metric": "Statutory adoption enacted with budget line items",
+          "aeip_schema": "schemas/aeip/civic-charter-schema.json",
+          "evidence": "mandate.statute_reference"
+        },
+        {
+          "code": "N2",
+          "metric": "Annual independent audit attested and published",
+          "aeip_schema": "schemas/oversight-audit-memo.jsonld",
+          "evidence": "attestation_bundle.hash"
+        }
+      ]
+    }
+  ],
+  "transport_grid": [
+    {
+      "layer": "Layer 0 Civic Mandate",
+      "emergent": "Mandate ratified, escalation contacts logged",
+      "structured": "Renewal cadence codified, breach portal live",
+      "integrated": "Reciprocal recognition across partner jurisdictions",
+      "institutionalized": "Mandate embedded in statute with oversight budget"
+    },
+    {
+      "layer": "Layer 1 Ethical Charter",
+      "emergent": "Values enumerated with named custodians",
+      "structured": "Change log automated and published",
+      "integrated": "Cross-institution harmonisation signed",
+      "institutionalized": "Charter recognised in collective bargaining and law"
+    },
+    {
+      "layer": "Layer 2 Data Stewardship",
+      "emergent": "Data inventory completed with lawful basis",
+      "structured": "Incident drills performed and logged",
+      "integrated": "Cross-border transfer controls verified",
+      "institutionalized": "Stewardship obligations audited annually"
+    },
+    {
+      "layer": "Layer 3 Model Development",
+      "emergent": "Model card templates adopted",
+      "structured": "Evaluation evidence published per release",
+      "integrated": "External review seats embedded",
+      "institutionalized": "Certification required before deployment"
+    },
+    {
+      "layer": "Layer 4 Instruction and Control",
+      "emergent": "Instruction sessions logged",
+      "structured": "Anomaly alerts routed to oversight",
+      "integrated": "Cross-layer overrides negotiated",
+      "institutionalized": "Command policy codified in regulation"
+    },
+    {
+      "layer": "Layer 5 Reasoning Exchange",
+      "emergent": "Transcript capture enabled",
+      "structured": "Semantic reconciliation tracked",
+      "integrated": "Community deliberation loops funded",
+      "institutionalized": "Legally mandated dialogue archives"
+    },
+    {
+      "layer": "Layer 6 Deployment and Integration",
+      "emergent": "Deployment checklist completed",
+      "structured": "Rollback readiness rehearsed",
+      "integrated": "Shared service continuity compacts",
+      "institutionalized": "Deployment gating tied to licensing"
+    },
+    {
+      "layer": "Layer 7 Governance Publication",
+      "emergent": "Public notice channel launched",
+      "structured": "Tiered transparency schedules active",
+      "integrated": "Cross-platform syndication agreements",
+      "institutionalized": "Publication SLAs codified in law"
+    },
+    {
+      "layer": "Layer 8 Civic Participation",
+      "emergent": "Participation roster registered",
+      "structured": "Feedback responses published",
+      "integrated": "Co-governance councils empowered",
+      "institutionalized": "Participation rights protected in charter"
+    }
+  ]
+}

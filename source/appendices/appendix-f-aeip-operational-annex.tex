@@ -1,16 +1,68 @@
 % AI OSI Stack v5 — Canonical Edition
-% Appendix F — AEIP Operational Annex
+% Appendix F — AEIP Schema Set (v1.3)
 \narrative{
-Appendix F provides detailed operations guidance for the AI Epistemic Infrastructure Protocol. The narrative follows AEIP operations engineer Lin and civic archivist Priyanka as they maintain the protocol’s pipelines. They oversee ingest services that collect evidence from each layer, validators that enforce schema requirements, and publication channels that share attestations with the public. The annex reads like a day-in-the-life chronicle: morning checks of signature chains, mid-day integrations of new manifests, and evening reconciliations with federated partners.
-
-Lin demonstrates how AEIP manifests flow from creation to publication. When a Layer 6 deployment produces a test report, the report is hashed, annotated with persona references, and queued for validation. Priyanka reviews hermeneutic notes to ensure interpretive context accompanies the technical artefacts. The narrative describes resilience features—redundant storage, tamper-evident logs, and failover validators—that protect integrity. It also highlights collaboration: federation partners submit manifests for co-signing, while civic observers monitor public indices for anomalies.
-
-The annex explores advanced topics, including schema evolution management, privacy-preserving analytics on ledger data, and integration with Appendix N attestation portals. Lin and Priyanka show how version negotiation occurs when partners use different AEIP revisions. They maintain compatibility bridges that translate manifests while preserving canonical semantics. The narrative emphasises care: AEIP is not an inert tool but a stewardship practice requiring attention, ethics, and technical excellence.
+Appendix F presents the Assurance Evidence Integration Protocol (AEIP) as the canonical evidence spine for the Stack. The narrative
+returns to operations engineer Lin and civic archivist Priyanka, now walking through the schema registry room restored from
+version~4. They trace how every "\shall{}" clause binds to a specific schema, how custodial signatures seal each record, and how the
+manifest orchestrates deterministic field ordering. The annex emphasises that AEIP is not a library of templates but a living
+protocol: manifests, instruction logs, model cards, civic charters, and participation receipts form an interoperable chain that can
+be re-verified from first principles.
 }
+
+\narrative{
+Lin demonstrates the AEIP Frame outline. Field order is fixed—\texttt{canonical\_metadata}, \texttt{subject}, \texttt{temporal\_seal},
+\texttt{witnesses}, \texttt{evidence\_hashes}, and \texttt{custodian\_signatures}. Priyanka highlights the hash algorithm (SHA-512) and the
+signing suite (Ed25519 canonical keys). When a new artefact enters the stack, custodians instantiate the AEIP Frame, map the
+specialised payload (e.g., modelcard or incident report), and sign the bundle. Appendix~F publishes the full schemas, the registry
+table with checksums, and an illustrative deterministic ordering snippet so practitioners can script the same validation sequence.
+}
+
 \normative{
-AEIP operations SHALL maintain continuous monitoring of manifest ingestion, validation, storage, and publication pipelines. Monitoring MUST include integrity checks, privacy validator status, performance metrics, and anomaly detection alerts. Operational runbooks SHALL document response procedures for failures, referencing Appendices B, I, and M.
+AEIP custodians \shall{use the canonical field order defined in \texttt{schemas/aeip/aeip-frame-schema.json}}. Hashes \shall{be computed
+with SHA-512 over UTF-8 normalised bytes}, recorded in \texttt{evidence\_hashes[*].value}, and validated against manifest entries.
+Witnesses \shall{include role, jurisdiction, and verification channel}, ensuring that Appendix~O provenance audits can confirm custodial
+continuity. Deviations \shall{be documented in Appendix~L ledgers with remediation deadlines}. No artefact \may{enter production without a
+complete AEIP Frame accompanied by signed custody metadata}.
+}
 
-Schema updates SHALL follow a controlled process that includes compatibility analysis, stakeholder consultation, regression testing, and custodial approval. New versions MUST provide migration guidance, fallback strategies, and updated documentation. AEIP operators SHALL retain backward compatibility for a defined sunset period, during which manifests from prior versions can be translated without data loss or semantic ambiguity.
+\normative{
+Schema evolution \shall{follow the registry workflow captured below}. Release managers \shall{bump manifest entries, regenerate the
+schema registry table, and publish new checksums in Appendix~N}. Operations teams \should{run regression validators against every
+schema listed in this appendix before ratifying a revision}. Civic observers \may{reproduce the verification procedure} by fetching the
+manifest, running the deterministic ordering script, and comparing published hashes with locally computed values.
+}
 
-Public attestation endpoints SHALL expose manifest indices, signature verification instructions, and retrieval APIs consistent with Appendix N. Access controls MUST balance transparency with privacy, ensuring sensitive details remain protected. All operational activities, including maintenance windows, incidents, and partner integrations, SHALL be recorded in AEIP manifests and shared with federated custodians through Appendix G governance channels.
+\begin{quote}
+\textbf{Deterministic Ordering Example.} AEIP frame ordering is preserved by serialising YAML keys exactly as shown below. Scripts
+that alter key order or introduce additional whitespace invalidate signatures and \shall{trigger rejection alerts}.\end{quote}
+
+\begin{lstlisting}[language=yaml,caption={AEIP Frame deterministic order example}]
+canonical_metadata:
+  aeip_version: "1.3"
+  canonical_version: "AI OSI Stack v5"
+subject:
+  schema: "aeip/modelcard"
+  reference_id: "MC-2025-0041"
+temporal_seal:
+  created_at: "2025-11-04T18:03:12Z"
+  jurisdiction: "Ward 7"
+witnesses:
+  - role: "custodian"
+    name: "Lin Okafor"
+    verification_channel: "https://records.example.gov/aeip"
+evidence_hashes:
+  - algorithm: "sha512"
+    value: "<hex-digest>"
+custodian_signatures:
+  - signer: "stack-custodian-ed25519"
+    signature: "<base64>"
+\end{lstlisting}
+
+\input{appendices/generated/appendix-f-schema-registry}
+
+\normative{
+AEIP schema listings \shall{be treated as normative artefacts}. Any institution claiming conformance \shall{reference the exact checksum}
+from the registry table. Custodians \shall{store verification logs demonstrating checksum validation at release time}. Oversight actors
+\should{sample schema listings during audits} and \may{publish independent hashes to Appendix~N}. Implementation guides \shall{note the
+schema path, version, and validation command} for every operational playbook.
 }

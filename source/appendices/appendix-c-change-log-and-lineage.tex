@@ -1,16 +1,45 @@
 % AI OSI Stack v5 — Canonical Edition
-% Appendix C — Change Log & Lineage
+% Appendix C — Governance Transport and Maturity Ladders
 \narrative{
-Appendix C tells the story of evolution. It guides readers through the lineage of the Stack, documenting how each version emerged from debates, experiments, and collective learning. The narrative unfolds as a guided tour of the Canonical Lineage Gallery, where timelines, ledger excerpts, and oral histories are displayed side by side. A curator named Elena narrates how v1 focused on establishing civic mandate, how v3 introduced federated governance pilots, and how v5 consolidates appendices, ledgers, and AEIP integration into a cohesive canon.
-
-Visitors witness pivotal moments. The gallery showcases annotated AEIP manifests from crisis responses, persona revisions that reshaped service design, and international endorsements that expanded the Stack’s jurisdictional reach. Elena emphasises that lineage is not merely chronology but interpretation. Each exhibit includes commentary from citizens who experienced the policies, engineers who implemented controls, and custodians who navigated legal frameworks. The hermeneutic ledger provides audio transcripts of deliberations, preserving nuance that static documents cannot.
-
-The appendix also recounts how the non-revocable principle was reaffirmed. After a contentious debate about surveillance technologies, the Stack codified safeguards that centre consent and proportionality. That decision is presented as a lineage milestone, linking Appendices E, K, and O. The narrative concludes by inviting readers to contribute to future lineage entries through public attestation channels, reinforcing that the canon’s history is co-authored by the community.
+Appendix C translates the Stack’s maturity expectations into a transportable protocol. Where prior editions emphasised historical
+lineage, version~5 couples that heritage with the ladder used to ratify civic deployments: Emergent \textrightarrow{} Structured
+\textrightarrow{} Integrated \textrightarrow{} Institutionalized. Each rung measures how obligations, evidence, and community
+custodianship travel between institutions. The appendix explains how Governance Integration Index scores attach to layers,
+mirroring AEIP v1.3 manifest fields so auditors can verify readiness without guesswork.
 }
+
+\narrative{
+The ladder originates in v4’s practitioner toolkit. This edition restores it by binding every checkpoint to AEIP evidence. Readers
+see how ratification bundles capture quorum, how transport packages document cross-jurisdiction reciprocity, and how institutional
+embeddedness depends on statutory budgeting. The generated tables in this appendix are produced by
+\texttt{scripts/generate-tex-tables.py}; they remain authoritative whenever custodians regenerate the edition. Governance teams can
+therefore compare their posture against the canonical ladder and publish deltas as part of Appendix~N public attestations.
+}
+
 \normative{
-All canonical changes SHALL be recorded in the change log with version identifiers, effective dates, responsible custodians, and references to affected chapters or appendices. Entries MUST include narrative summaries, normative rationale, and AEIP manifest identifiers that capture evidence of deliberation and approval. Change records SHALL be cross-linked to Appendix L interpretive notes and Appendix O provenance signatures.
+Governance stewards \shall{calibrate each deployment against the maturity ladder} prior to ratification. Emergent adoption \shall{record
+quorum proofs and incident drills} in AEIP civic charter and incident schemas. Structured adoption \shall{evidence control-table
+generation events and publication windows}, drawing from manifest metadata. Integrated adoption \shall{demonstrate cross-jurisdiction
+signature reciprocity and participatory response timeliness}. Institutionalized adoption \shall{document statutory enshrinement and
+independent audit attestations}. Deviations \shall{be published as governance debt in Appendix~L hermeneutic ledgers} until resolved.
+}
 
-Lineage updates SHALL be published in accessible formats, including interactive timelines and machine-readable datasets. Any alteration to canonical principles, governance structures, or obligations MUST undergo public consultation via Appendix N channels and receive custodial quorum approval per Appendix H. Rejected proposals SHALL also be logged, with rationale preserved for future reference.
+\normative{
+When transporting the Stack between custodial homes, transition leads \shall{use the Governance Transport Grid} to certify which
+layers are delegation-ready. Each row in the grid \shall{map to AEIP transport packages} whose checksums appear in the Integrity
+Manifest appendix. Receiving institutions \should{acknowledge outstanding criteria and publish remediation timelines} before
+assuming control. Any attempt to transfer responsibilities without satisfying the Structured stage for layers~0–4 \shall{trigger an
+escalation to Appendix~B incident workflows} and \shall{pause deployment until governance debt is cleared}.
+}
 
-Annual lineage reviews SHALL evaluate whether change logs remain comprehensive, accurate, and comprehensible to civic audiences. Reviews MUST document gaps, corrective actions, and recommendations for archive enhancement. Preservation plans SHALL ensure redundant storage of lineage records across custodial jurisdictions, safeguarding them against tampering or loss.
+\begin{quote}
+\textbf{Practitioner Note.} The data driving these tables lives in \texttt{meta/v5-maturity.json}. Regenerating this appendix with
+\texttt{scripts/generate-tex-tables.py} keeps narrative claims aligned with evidence structures.\end{quote}
+
+\input{appendices/generated/appendix-c-maturity-tables}
+
+\normative{
+Custodians \shall{update the Governance Integration Index} whenever maturity checkpoints shift due to regulation, treaty, or
+community mandate. Updates \shall{include AEIP manifest references and signature bundles} appended to Appendix~O. Oversight actors
+\should{audit maturity declarations annually} and \may{issue public advisories} when institutions lag behind expected stages.
 }
