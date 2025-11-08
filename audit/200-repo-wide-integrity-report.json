@@ -1,0 +1,119 @@
+{
+  "version": "5.0",
+  "generated_at": "2025-11-07T00:00:00Z",
+  "authorship_statement": "Created and maintained by Daniel P. Madden as a self-funded, independent author. No institutional, corporate, or governmental affiliation or endorsement.",
+  "ai_assistance_disclosure": "Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.",
+  "findings": [
+    {
+      "category": "Authorship & Provenance",
+      "severity": "critical",
+      "locations": [
+        "dashboard/index.html",
+        "schemas/aeip/aeip-frame-schema.json"
+      ],
+      "summary": "Canonical authorship statement absent from multiple distributed assets, risking provenance drift.",
+      "recommendation": "Inject canonical provenance metadata during asset generation and enforce via linting."
+    },
+    {
+      "category": "Legal & Licensing",
+      "severity": "major",
+      "locations": [
+        "meta/license.txt"
+      ],
+      "summary": "Dual-license obligations unmet; Apache-2.0 text and SPDX metadata missing for numerous assets.",
+      "recommendation": "Publish Apache-2.0 license file and extend build scripts to embed license metadata in schemas."
+    },
+    {
+      "category": "Standards & Policy Alignment",
+      "severity": "major",
+      "locations": [
+        "docs/standards-alignment-brief.md",
+        "README.md"
+      ],
+      "summary": "Standards references omit clause numbers and rely on \"implied\" descriptors, hindering verifiability.",
+      "recommendation": "Annotate each standard reference with explicit clause numbers and supporting citations."
+    },
+    {
+      "category": "Reproducibility & Manifest Integrity",
+      "severity": "major",
+      "locations": [
+        "meta/v5-manifest.yaml",
+        "meta/INTEGRITY_NOTICE.md"
+      ],
+      "summary": "Manifest and integrity notice lack concrete hash records, preventing deterministic verification.",
+      "recommendation": "Record SHA-512 hashes and release commit ID for canonical artifacts."
+    },
+    {
+      "category": "Terminology & Normative Consistency",
+      "severity": "major",
+      "locations": [
+        "source/appendices/appendix-o-canonical-provenance-and-signature-metadata.tex"
+      ],
+      "summary": "Malformed macros break normative sections, undermining ISO-2119 compliance and LaTeX builds.",
+      "recommendation": "Repair macros, re-run linting, and cross-reference Appendix A definitions."
+    },
+    {
+      "category": "Ethics, Data, and Privacy",
+      "severity": "minor",
+      "locations": [
+        "meta/layer-control-tables.json"
+      ],
+      "summary": "Layer 2 obligations do not cite Appendix E safeguards directly, reducing traceability.",
+      "recommendation": "Embed Appendix E clause references in control tables and AEIP schemas."
+    },
+    {
+      "category": "Security & Cryptography",
+      "severity": "major",
+      "locations": [
+        "tools/verify-aeip-signatures.py"
+      ],
+      "summary": "Signature verification tooling replaced with advisory notice, leaving no reproducible key workflow.",
+      "recommendation": "Restore documented signing procedure or supply stubbed key lifecycle instructions."
+    },
+    {
+      "category": "Accessibility & Interface Compliance",
+      "severity": "minor",
+      "locations": [
+        "docs/"
+      ],
+      "summary": "WCAG checklist deliverable missing despite automated axe tests in dashboard package.",
+      "recommendation": "Add `docs/accessibility-checklist.md` summarising findings and manual verifications."
+    },
+    {
+      "category": "Academic & Research Readiness",
+      "severity": "minor",
+      "locations": [
+        "README.md"
+      ],
+      "summary": "Originality claims not mapped to update plans or prior releases, limiting scholarly traceability.",
+      "recommendation": "Link claims to historical releases and documented change proposals."
+    },
+    {
+      "category": "Governance & Civic Oversight",
+      "severity": "major",
+      "locations": [
+        "source/appendices/appendix-o-canonical-provenance-and-signature-metadata.tex"
+      ],
+      "summary": "Custodianship appendix corruption disrupts linkage to AEIP evidence requirements.",
+      "recommendation": "Repair appendix and document AEIP succession schema usage."
+    },
+    {
+      "category": "Commercial & Community Readiness",
+      "severity": "minor",
+      "locations": [
+        "README.md"
+      ],
+      "summary": "README lacks required audit completion changelog entry highlighting commercial path with disclaimer.",
+      "recommendation": "Add changelog bullet referencing audit completion and independent status."
+    },
+    {
+      "category": "Security of Language / Hallucination Control",
+      "severity": "minor",
+      "locations": [
+        "source/appendices/appendix-o-canonical-provenance-and-signature-metadata.tex"
+      ],
+      "summary": "Typographical errors degrade clarity of normative language, risking misinterpretation.",
+      "recommendation": "Perform editorial review focusing on modal verb integrity."
+    }
+  ]
+}

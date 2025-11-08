@@ -259,3 +259,7 @@ Large-language-model tools were used under author supervision; all final content
 The AI OSI Stack transforms governance from paperwork into protocol, ensuring that every intelligent system remains intelligible to the society it serves.
 
 To engage the author for implementation or verification, see [`commercial/`](commercial/).
+
+## Changelog
+
+- **v5.0 Full Repository Audit — All Integrity Checks Passed** — Comprehensive repository-wide integrity review recorded in [`audit/200-repo-wide-integrity-report.md`](audit/200-repo-wide-integrity-report.md); results confirm independent authorship status and advisory checksum posture.
