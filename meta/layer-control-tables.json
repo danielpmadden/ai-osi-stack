@@ -1,0 +1,193 @@
+{
+  "layers": [
+    {
+      "chapter": "source/chapters/chapter-03-layer0-civic-mandate.tex",
+      "slug": "layer0",
+      "purpose": "Anchor civic authorisation for all stack operations through community ratification and renewal checkpoints.",
+      "obligations": [
+        "Layer stewards \\shall{record ratification outcomes and quorum data} within the civic charter manifest.",
+        "Custodians \\shall{publish renewal schedules and escalation triggers} aligned with Appendix~B timelines.",
+        "Oversight councils \\should{link breach notices to public remediation briefings} in Appendix~K portals."
+      ],
+      "verification_artefact": "AEIP Civic Charter dossier, including consultation minutes and ratification seals.",
+      "aeip_schema": "\\texttt{schemas/aeip/civic-charter-schema.json}",
+      "evidence_fields": [
+        "\\texttt{civic_mandate.purpose_statement}",
+        "\\texttt{ratification.quorum_evidence}",
+        "\\texttt{revocation.triggers[]}"],
+      "example": {
+        "caption": "Civic charter excerpt",
+        "language": "json",
+        "content": "{\\n  \"civic_mandate\": {\\n    \"purpose_statement\": \"Safeguard equitable housing allocation\",\\n    \"affected_population\": \"Ward 7 applicants\"\\n  },\\n  \"ratification\": {\\n    \"vote_tally\": {\\n      \"affirm\": 4821,\\n      \"oppose\": 317\\n    },\\n    \"quorum_evidence\": \"https://records.example.gov/ward7-vote\"\\n  },\\n  \"revocation\": {\\n    \"triggers\": [\"material bias finding\", \"non-compliant outreach\"]\\n  }\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-04-layer1-ethical-charter.tex",
+      "slug": "layer1",
+      "purpose": "Translate institutional values into enforceable, testable commitments for development teams.",
+      "obligations": [
+        "Charter custodians \\shall{encode each value as a control clause} with measurable acceptance criteria.",
+        "Compliance leads \\shall{log amendments within seven days} of approval in the charter change ledger.",
+        "Narrative editors \\should{synchronise terminology with the semantic registry} to avoid drift."
+      ],
+      "verification_artefact": "Ethical charter ledger with amendment diff, approval signatures, and semantic crosswalk.",
+      "aeip_schema": "\\texttt{schemas/aeip/ccm-schema.json}",
+      "evidence_fields": [
+        "\\texttt{charter_values[].control_clause}",
+        "\\texttt{amendments[].effective_on}",
+        "\\texttt{glossary.references[]}"],
+      "example": {
+        "caption": "Ethical charter clause",
+        "language": "json",
+        "content": "{\\n  \"charter_values\": [\\n    {\\n      \"name\": \"Due Process\",\\n      \"control_clause\": \"Appeal routes maintained for all automated denials\",\\n      \"evidence\": \"appendix-k/tier-3\"\\n    }\\n  ],\\n  \"amendments\": [\\n    {\\n      \"change_id\": \"ETH-2025-11-01\",\\n      \"effective_on\": \"2025-11-15\",\\n      \"approved_by\": [\"custodian\", \"community_review\"]\\n    }\\n  ]\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-05-layer2-data-stewardship.tex",
+      "slug": "layer2",
+      "purpose": "Govern lifecycle stewardship of civic data, ensuring lawful collection, minimised retention, and restitution paths.",
+      "obligations": [
+        "Data custodians \\shall{publish lawful basis statements} for every dataset prior to ingestion.",
+        "Privacy officers \\shall{open an incident ticket within 24 hours} of discovering exposure or misuse.",
+        "Programme owners \\should{issue stewardship summaries to affected communities} with remediation progress."
+      ],
+      "verification_artefact": "Data stewardship register including consent proofs, minimisation checks, and incident references.",
+      "aeip_schema": "\\texttt{schemas/drr-schema.yaml}",
+      "evidence_fields": [
+        "\\texttt{datasets[].lawful_basis}",
+        "\\texttt{retention.minimum_duration_days}",
+        "\\texttt{incidents[].reference_id}"],
+      "example": {
+        "caption": "Stewardship register entry",
+        "language": "json",
+        "content": "{\\n  \"datasets\": [\\n    {\\n      \"name\": \"housing_applications\",\\n      \"lawful_basis\": \"Municipal Housing Act 2022 §14\",\\n      \"retention\": \"365\"\\n    }\\n  ],\\n  \"incidents\": [\\n    {\\n      \"reference_id\": \"INC-2025-0042\",\\n      \"status\": \"remediated\"\\n    }\\n  ]\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-06-layer3-model-development.tex",
+      "slug": "layer3",
+      "purpose": "Document model design, testing, and release evidence so iterative changes remain accountable.",
+      "obligations": [
+        "Engineering leads \\shall{complete model cards before promotion} to production environments.",
+        "Product owners \\shall{link evaluation datasets and risks} to each release decision.",
+        "Safety reviewers \\should{flag residual hazards with mitigation timelines} and accountable owners."
+      ],
+      "verification_artefact": "Model development package containing model card, evaluation matrix, and mitigation ledger.",
+      "aeip_schema": "\\texttt{schemas/aeip/modelcard-schema.json}",
+      "evidence_fields": [
+        "\\texttt{model_overview.version}",
+        "\\texttt{evaluation.metrics[]}",
+        "\\texttt{risk_register.entries[]}"],
+      "example": {
+        "caption": "Model card synopsis",
+        "language": "json",
+        "content": "{\\n  \"model_overview\": {\\n    \"version\": \"5.2.1\",\\n    \"objective\": \"Rank applicants by composite readiness\"\\n  },\\n  \"evaluation\": {\\n    \"metrics\": [\\n      {\\n        \"name\": \"equalized_odds\",\\n        \"value\": 0.93\\n      }\\n    ]\\n  }\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-07-layer4-instruction-and-control.tex",
+      "slug": "layer4",
+      "purpose": "Maintain auditable command channels so human directives cannot silently override safeguards.",
+      "obligations": [
+        "Operators \\shall{log every instruction session with participant identity and purpose} before execution.",
+        "Control stewards \\shall{bind contested instructions to interpretive trace packages} for review context.",
+        "Oversight reviewers \\should{summarise anomalies and corrective steps} for publication in Layer~7 reports."
+      ],
+      "verification_artefact": "Instruction control dossier including session transcripts, access approvals, and remediation notes.",
+      "aeip_schema": "\\texttt{schemas/aeip/instruction-log-schema.json}",
+      "evidence_fields": [
+        "\\texttt{session.participants[]}",
+        "\\texttt{command.intent}",
+        "\\texttt{mitigations[].action_taken}"],
+      "example": {
+        "caption": "Instruction log snippet",
+        "language": "json",
+        "content": "{\\n  \"session\": {\\n    \"identifier\": \"IL-2025-118\",\\n    \"participants\": [\"ops_lead\", \"ombuds\"]\\n  },\\n  \"command\": {\\n    \"intent\": \"override refusal for emergency shelter routing\",\\n    \"justification\": \"Appendix-B fast track\"\\n  }\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-08-layer5-reasoning-exchange.tex",
+      "slug": "layer5",
+      "purpose": "Preserve contestable reasoning trails between humans and systems to surface persuasion risks and civic impacts.",
+      "obligations": [
+        "Dialogue stewards \\shall{archive transcripts and semantic diff reports} for significant deliberations.",
+        "Facilitators \\shall{document vocabulary reconciliations} before publishing policy effects.",
+        "Governance publishers \\should{link debate outcomes to decision summaries} accessible to the public."
+      ],
+      "verification_artefact": "Reasoning exchange bundle with transcript hashes, semantic registry pointers, and decision outputs.",
+      "aeip_schema": "\\texttt{schemas/interpretive-trace-package.jsonld}",
+      "evidence_fields": [
+        "\\texttt{transcript.hash}",
+        "\\texttt{semantic_alignment.entries[]}",
+        "\\texttt{decision_outputs[].reference}"],
+      "example": {
+        "caption": "Reasoning exchange artefact",
+        "language": "json",
+        "content": "{\\n  \"transcript\": {\\n    \"hash\": \"sha512-33b1...\",\\n    \"participants\": [\"community_forum\", \"stack_mediator\"]\\n  },\\n  \"semantic_alignment\": {\\n    \"entries\": [\"fair_housing_glossary:v3\"]\\n  },\\n  \"decision_outputs\": [\\n    {\\n      \"reference\": \"GDS-2025-09\"\\n    }\\n  ]\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-09-layer6-deployment-and-integration.tex",
+      "slug": "layer6",
+      "purpose": "Control deployment approvals, rollback readiness, and integration guardrails across operational environments.",
+      "obligations": [
+        "Release managers \\shall{attach decision rationale records} to every go-live authorisation.",
+        "Integration leads \\shall{pre-register incident pathways} mapped to remediation teams.",
+        "Auditors \\should{record oversight verdicts and risk acceptances} tied to the Governance Integration Index."
+      ],
+      "verification_artefact": "Deployment dossier with rollout decision memo, integration checklist, and pre-authorised fallbacks.",
+      "aeip_schema": "\\texttt{schemas/decision-rationale-record.jsonld}",
+      "evidence_fields": [
+        "\\texttt{decision.summary}",
+        "\\texttt{risk_acceptance.conditions[]}",
+        "\\texttt{integration_checks[].owner}"],
+      "example": {
+        "caption": "Deployment decision record",
+        "language": "json",
+        "content": "{\\n  \"decision\": {\\n    \"summary\": \"Launch housing-advisor v2 in pilot wards\",\\n    \"approver\": \"custodian_council\"\\n  },\\n  \"risk_acceptance\": {\\n    \"conditions\": [\"complete Appendix-B drill\", \"publish Layer-7 notice\"]\\n  }\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-10-layer7-governance-publication.tex",
+      "slug": "layer7",
+      "purpose": "Guarantee timely, accessible publication of governance artefacts, audit findings, and civic responses.",
+      "obligations": [
+        "Governance offices \\shall{release decision summaries within statutory windows} using canonical templates.",
+        "Oversight chairs \\shall{file audit coverage statements} aligned with transparency tiers.",
+        "Communications teams \\should{cross-link public notices to evidence bundles} for reproducibility."
+      ],
+      "verification_artefact": "Governance publication packet including summaries, audit extracts, and cross-layer references.",
+      "aeip_schema": "\\texttt{schemas/governance-decision-summary.jsonld}",
+      "evidence_fields": [
+        "\\texttt{publication.window_days}",
+        "\\texttt{evidence_links[]}",
+        "\\texttt{audience_profiles[]}"],
+      "example": {
+        "caption": "Governance publication note",
+        "language": "json",
+        "content": "{\\n  \"publication\": {\\n    \"window_days\": 14,\\n    \"channels\": [\"civic_portal\", \"open_data_feed\"]\\n  },\\n  \"evidence_links\": [\\n    \"https://records.example.gov/gds-2025-09\"\\n  ]\\n}"
+      }
+    },
+    {
+      "chapter": "source/chapters/chapter-11-layer8-civic-participation.tex",
+      "slug": "layer8",
+      "purpose": "Sustain authentic civic participation with traceable inputs, feedback loops, and shared custodianship.",
+      "obligations": [
+        "Custodians \\shall{register participation events with attendance, consent, and influence statements}.",
+        "Engagement leads \\shall{publish response memos within 30 days} showing how feedback changed obligations.",
+        "Facilitators \\should{refresh accessible glossaries and onboarding materials} for new participants."
+      ],
+      "verification_artefact": "Participation ledger with session manifests, consent receipts, and response commitments.",
+      "aeip_schema": "\\texttt{schemas/aeip/tecl-schema.json}",
+      "evidence_fields": [
+        "\\texttt{session.summary}",
+        "\\texttt{consent.attestations[]}",
+        "\\texttt{influence_statements[]}"],
+      "example": {
+        "caption": "Participation session record",
+        "language": "json",
+        "content": "{\\n  \"session\": {\\n    \"identifier\": \"CIV-2025-44\",\\n    \"summary\": \"Ward 7 housing forum\"\\n  },\\n  \"consent\": {\\n    \"attestations\": [\\n      \"community_member: signed\"\\n    ]\\n  },\\n  \"influence_statements\": [\\n    \"Mandate renewal interval shortened to 9 months\"\\n  ]\\n}"
+      }
+    }
+  ]
+}

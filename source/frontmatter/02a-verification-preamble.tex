@@ -1,0 +1,41 @@
+% AI OSI Stack v5 — Verification Preamble
+\section*{Verification Preamble}
+\narrative{
+Version 5 of the AI OSI Stack treats every constitutional clause as executable code. This preamble explains how each normative
+"\shall{}" duty is bound to verifiable artefacts in the Assurance Evidence Integration Protocol (AEIP) registry. Implementers
+and reviewers operate on the same manifest: the schema manifest (\texttt{schemas/aeip/manifest.yaml}) enumerates all required
+records, the runtime witnesses supply signatures, and the civic public reads the trail without a proprietary viewer. The
+preamble is therefore a bridge between narrative tone and operational protocol. It assures readers that every obligation is
+paired with a deterministic check described in AEIP version 1.3 (\texttt{aeip\_version=1.3}).
+}
+
+\normative{
+Each clause in this constitution \shall{map to a declared AEIP schema entry}. Chapter editors \shall{cite the schema identifier}
+following each obligation, creating the linkage that allows scripts to resolve duties into records. Custodians \shall{sign the
+schema manifest using canonical release keys}, producing an attestation bundle whose checksum is published in
+\texttt{INTEGRITY\_NOTICE.md}. Auditors \should{trace the binding by referencing the AEIP Schema Set in Appendix~F}, verifying that
+fields, hash order, and custodial witnesses are unchanged from the canonical definition. Civic observers \may{verify any claim by
+running the manifest commands documented in Appendix~N}. No "\shall{}" is aspirational; each points to a concrete evidence field,
+its validation rule, and the responsible signer.
+}
+
+\narrative{
+The verification workflow operates in three steps. First, the layer author cites the schema manifest key (for example,
+\texttt{aeip/civic-charter}) in the margin. Second, operational teams file the referenced AEIP document, capturing signature
+metadata, temporal seals, and custodial witnesses. Third, the verification automation (see
+\texttt{scripts/generate-tex-tables.py}) renders a control table that lists purpose, obligations, artefacts, and evidence fields
+for each layer. This workflow keeps prose and protocol synchronised: if an obligation changes, the manifest update and control
+table refresh expose the delta. Readers can therefore treat the constitution as an executable specification aligned with
+AEIP~v1.3.
+}
+
+\normative{
+Layer custodians \shall{review the Verification Preamble during each release cycle} to ensure that schema references, hash
+algorithms, and signature suites remain current. When AEIP introduces new field constraints or signing mechanisms, custodians
+\shall{update the manifest and regenerate tables} before ratifying the edition. Public release managers \should{publish a
+verification bulletin summarising any schema changes}, including the diff of evidence fields and the expected migration plan.
+Citizens and oversight bodies \may{subscribe to manifest notifications} to receive immediate alerts when verification pathways
+evolve. Compliance with this preamble is a prerequisite for ratification; omissions invalidate the edition until corrected.
+}
+
+\clearpage

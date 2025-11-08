@@ -1,16 +1,68 @@
 % AI OSI Stack v5 — Canonical Edition
-% Appendix B — Remediation & Response Procedures
+% Appendix B — Incident Lifecycle and Escalation (ILE)
 \narrative{
-Appendix B guides the Stack through moments of crisis. The narrative situates readers inside the Remediation Coordination Centre, where incident commanders, community liaisons, legal advisors, and technologists rehearse responses to algorithmic failures, data breaches, and civic harms. A coordinator named Malik narrates the choreography of remediation: triage teams classify incidents, communication stewards prepare layered notices, and custodians activate AEIP workflows to preserve evidence.
-
-The appendix illustrates three archetypal incidents. First, an unexpected bias in a housing allocation model triggers urgent review. Malik walks through the investigation: persona obligations highlight harm to marginalised applicants, AEIP manifests provide decision trails, and interpretive records capture community testimony. The narrative shows how corrective actions combine technical fixes with reparative measures such as outreach, restitution, and policy updates. Second, a data exposure event requires privacy-centric response. Privacy leads coordinate with human rights advocates to ensure notifications respect dignity and do not exacerbate surveillance. Third, a governance breach—failure to convene a promised civic forum—demonstrates that remediation can be procedural as well as technical. The Stack responds by hosting an open assembly, publishing accountability notes, and renegotiating timelines with public consent.
-
-Throughout the narrative, Malik emphasises preparation. The centre conducts quarterly drills, integrates lessons into Appendix M adversarial playbooks, and maintains readiness checklists for each custodial team. AEIP integration ensures that every remediation step is logged, signed, and reviewable. The appendix closes with a reflection: remediation is not damage control but a civic duty to repair trust.
+Appendix B restores the Incident Lifecycle and Escalation sequence from version~4. Malik, the remediation coordinator, walks the
+reader through the command floor as detection alerts arrive, verification teams assemble, escalation authorities convene, oversight
+witnesses observe, and closure artefacts are published. The choreography is precise: each stage emits an AEIP record, carries a time
+expectation, and references the custodial roles capable of invoking overrides. The appendix is designed as an executable playbook;
+any jurisdiction can adopt the ILE and immediately map obligations to their command structure.
 }
+
+\narrative{
+Detection begins when telemetry, civic reports, or custodial audits signal anomalous behaviour. Within 60~minutes, verification teams
+pull the relevant AEIP manifests, confirm integrity, and classify severity. Escalation teams convene if the incident meets predefined
+thresholds—public harm indicators, rights infringements, or mandate breaches. Oversight actors join within 24~hours, logging their
+attendance in \texttt{schemas/aeip/incident-report-schema.json}. Closure occurs only after remediation actions are executed, evidence is
+published, and civic communications acknowledge outcomes. Timelines are transparent and testable because each transition is linked to
+an AEIP evidence field.
+}
+
+\begin{center}
+\begin{tikzpicture}[node distance=2.6cm, every node/.style={rectangle, rounded corners, draw=black, thick, align=center, text width=4.3cm}]
+  \node (detect) {\textbf{Detection}\\Trigger: AEIP telemetry, civic report, or audit flag\\Timing: within 15 min log entry\\AEIP: \texttt{incident.timeline.detected_at}};
+  \node (verify) [right=of detect] {\textbf{Verification}\\Trigger: Duty officer assignment\\Timing: assessment within 60 min\\AEIP: \texttt{incident.timeline.verified_at}};
+  \node (escalate) [right=of verify] {\textbf{Escalation}\\Trigger: Severity \textgreater{}= Level 3\\Timing: convene within 6 h\\AEIP: \texttt{incident.escalation.invoked_at}};
+  \node (oversight) [right=of escalate] {\textbf{Oversight}\\Trigger: Civic/ombuds quorum\\Timing: observers join \textless{} 24 h\\AEIP: \texttt{incident.oversight.attendance[]}};
+  \node (closure) [right=of oversight] {\textbf{Closure}\\Trigger: Remediation verified\\Timing: publish \textless{} 14 days\\AEIP: \texttt{incident.closure.attested_at}};
+  \draw[->, line width=1pt] (detect) -- node[above]{AEIP Notification} (verify);
+  \draw[->, line width=1pt] (verify) -- node[above]{Severity Packet} (escalate);
+  \draw[->, line width=1pt] (escalate) -- node[above]{Override Authority Memo} (oversight);
+  \draw[->, line width=1pt] (oversight) -- node[above]{Public Briefing + AEIP bundle} (closure);
+\end{tikzpicture}
+\end{center}
+
 \normative{
-All Stack operators SHALL maintain remediation procedures covering triage, containment, investigation, communication, recovery, and post-incident learning. Procedures MUST be documented in AEIP manifests with references to Appendix E human rights safeguards, Appendix I security controls, and Appendix K transparency tiers. Incident commanders SHALL ensure that response teams include technical leads, legal counsel, community representatives, and custodial decision-makers.
+Custodians \shall{log detection events} in \texttt{schemas/aeip/incident-report-schema.json} within 15~minutes of confirmation. Detection
+logs \shall{include source system, mandate reference, affected population, and immediate safeguards}. Duty officers \shall{notify verification
+teams} through \texttt{schemas/aeip/instruction-log-schema.json} entries so every investigative command is auditable. Civic reporters \may{receive
+automated acknowledgement receipts} referencing the incident identifier and expected verification window.
+}
 
-Incidents involving harm to individuals or communities SHALL trigger notification workflows that deliver layered communications: immediate alerts to affected parties, public summaries for civic oversight, and detailed technical reports for regulators. Notifications MUST honour privacy obligations and SHALL reference AEIP §O.3–§O.7 to prove provenance. Corrective actions SHALL address root causes, reparative measures, and governance improvements, with deadlines tracked in the meta-audit ledger.
+\normative{
+Verification leads \shall{complete triage within 60~minutes}. They \shall{capture severity ratings, impacted layers, and provisional
+harm assessments} inside \texttt{incident.assessment}. If severity reaches Level~3 or higher, escalation coordinators \shall{issue an Override
+Authority notice} using \texttt{schemas/decision-rationale-record.jsonld}. Notices \shall{enumerate which custodians may suspend services and
+what rollback procedures apply}. Failure to escalate within the window \shall{trigger an automated reminder and report to Appendix~H
+custodial succession forums}.
+}
 
-Remediation drills SHALL be conducted at least quarterly, incorporating adversarial scenarios and cross-jurisdictional coordination where applicable. Lessons learned MUST feed into Appendices C, L, and M, updating change logs, interpretive records, and playbooks. Failure to execute remediation procedures within defined timelines SHALL escalate to custodial succession review per Appendix H.
+\normative{
+Oversight participation \shall{commence within 24~hours}. Ombuds, community witnesses, and regulators \shall{register attendance and
+conflict-of-interest attestations} through \texttt{incident.oversight.attendance}. Oversight chairs \should{issue an interim transparency
+statement} mapped to Appendix~K tiers, clarifying what information \may{be disclosed immediately}. All oversight deliberations \shall{produce
+AEIP witness notes} linked to Appendix~L hermeneutic ledgers.
+}
+
+\normative{
+Closure \shall{occur within 14~days} unless remediation complexity is documented and approved by oversight participants. Closure packets
+\shall{include remediation steps, restitution offers, model updates, and publication references}. Custodians \shall{update Layer~7 governance
+notices and Layer~6 deployment checklists} with the resolution details. Incidents \may{remain open beyond 14~days} only if oversight actors
+\shall{publish a delay justification} with revised milestones and evidence requirements.
+}
+
+\normative{
+All incident records \shall{feed Appendix~C maturity tracking}. Institutions \shall{publish quarterly ILE performance metrics}, including detection
+mean time, verification completion rate, escalation compliance, and closure punctuality. Metrics \should{be included in Appendix~N attestations}
+and \may{be embedded in Layer~0 mandate renewals}. Persistent non-compliance \shall{escalate to Appendix~O provenance reviews} and \shall{trigger
+public accountability hearings} in Layer~8 participation forums.
 }

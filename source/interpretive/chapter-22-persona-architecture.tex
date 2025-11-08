@@ -14,16 +14,20 @@ The chapter details governance patterns for persona lifecycle management. Stakeh
 \textbf{Narrative Intent:} This chapter focuses on maintaining persona governance as the stack evolves, giving institutions tools to track duties, rights, and constraints attached to each role.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Persona stewards SHALL update role inventories within \texttt{schemas/persona/persona-manifest.jsonld} whenever responsibilities shift.
-\item Custodians SHALL ensure persona approvals align with \texttt{schemas/persona/registry.jsonld} entries before activation.
-\item Governance councils SHOULD verify cross-layer coverage against \texttt{schemas/aeip/aeip-frame-schema.json} when introducing new personas.
+\item Persona stewards \shall{} update role inventories within \texttt{schemas/persona/persona-manifest.jsonld} whenever responsibilities shift.
+\item Custodians \shall{} ensure persona approvals align with \texttt{schemas/persona/registry.jsonld} entries before activation.
+\item Governance councils \should{} verify cross-layer coverage against \texttt{schemas/aeip/aeip-frame-schema.json} when introducing new personas.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This chapter keeps persona management disciplined. It shows how to update role manifests and check approvals. New personas are tested against the entire stack. People can trust that no role appears without review.
 
 \normative{
-Implementers SHALL define persona manifests that specify mandate, scope, escalation procedures, and alignment evidence. Each persona MUST reference relevant schemas, including semantic registries, AEIP controls, and care obligations. Custodians SHALL publish persona registries with versioned change logs and deprecation notices so communities can verify authority boundaries.
+Implementers \shall{} define persona manifests that specify mandate, scope, escalation procedures, and alignment evidence. Each persona MUST reference relevant schemas, including semantic registries, AEIP controls, and care obligations. Custodians \shall{} publish persona registries with versioned change logs and deprecation notices so communities can verify authority boundaries.
 
-Persona deployment pipelines MUST include pre-release conformity checks against canonical obligations, with results published to hermeneutic ledgers. When personas intersect with sensitive domains—safety, education, health—institutions SHALL convene participatory reviews to validate cultural competence, accessibility, and duty-of-care commitments before activation.
+Persona deployment pipelines MUST include pre-release conformity checks against canonical obligations, with results published to hermeneutic ledgers. When personas intersect with sensitive domains—safety, education, health—institutions \shall{} convene participatory reviews to validate cultural competence, accessibility, and duty-of-care commitments before activation.
 }
+\begin{quote}
+\textit{Operational Note. Canon 22 connects to AEIP persona manifest status records and Layer~3 development dossiers, keeping persona capabilities bounded and auditable.}
+\end{quote}
+
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/persona/persona-manifest.jsonld}, \texttt{schemas/persona/registry.jsonld}, and \texttt{schemas/aeip/aeip-frame-schema.json} and corresponding AEIP audit records.

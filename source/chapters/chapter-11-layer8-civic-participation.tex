@@ -78,36 +78,38 @@ consent, collective responsibility, and the shared duty to keep civic interfaces
 \textbf{Narrative Intent:} Layer 8 addresses the exclusion residents feel when AI governance proceeds without their input, specifying how participatory mechanisms must be recorded and honoured.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Custodians SHALL register participation sessions via \texttt{schemas/aeip/tecl-schema.json} to show who was invited and how feedback shaped obligations.
-\item Engagement leads SHALL attach dialogue archives within \texttt{schemas/interpretive-trace-package.jsonld} for public review.
-\item Facilitators SHOULD refresh participation glossaries through \texttt{schemas/svc/semantic-registry.jsonld} so residents understand procedural terms.
+\item Custodians \shall{} register participation sessions via \texttt{schemas/aeip/tecl-schema.json} to show who was invited and how feedback shaped obligations.
+\item Engagement leads \shall{} attach dialogue archives within \texttt{schemas/interpretive-trace-package.jsonld} for public review.
+\item Facilitators \should{} refresh participation glossaries through \texttt{schemas/svc/semantic-registry.jsonld} so residents understand procedural terms.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This layer guarantees that community voices are not symbolic. It records meetings, attendance, and how ideas change the stack. People can see whether their feedback mattered. The language is kept clear so newcomers can engage.
 
 \normative{
-Implementations of Layer 8 SHALL provide accessible civic portals, APIs, and documentation that allow citizens to inspect
-operations, review evidence summaries, and understand rights. Interfaces SHALL meet accessibility standards, support
+Implementations of Layer 8 \shall{} provide accessible civic portals, APIs, and documentation that allow citizens to inspect
+operations, review evidence summaries, and understand rights. Interfaces \shall{} meet accessibility standards, support
 multilingual communication, and present AEIP references for every published artifact. Personal data MUST remain redacted unless
 a justified exception is documented with privacy.* validators and citizen consent where applicable.
 
-Appeal and feedback channels SHALL be available through digital, telephonic, and in-person modalities. Every submission SHALL
+Appeal and feedback channels \shall{} be available through digital, telephonic, and in-person modalities. Every submission \shall{}
 produce an AEIP Civic Feedback receipt capturing timestamps, routing custodians, and expected resolution windows. Institutions
-SHALL publish service-level targets for grievance handling and MUST escalate unresolved cases according to Appendix B
-remediation tiers. Outcomes SHALL be communicated with evidence references and, when corrective actions occur, SHALL update Layer
+\shall{} publish service-level targets for grievance handling and MUST escalate unresolved cases according to Appendix B
+remediation tiers. Outcomes \shall{} be communicated with evidence references and, when corrective actions occur, \shall{} update Layer
 6 deployment and Layer 7 publication records.
 
-At least one external oversight actor SHALL provide cryptographic attestations of civic engagement processes each renewal cycle.
-Attestations MUST reference AEIP bundles covering appeals, privacy controls, and federated obligations, and SHALL be signed in
-accordance with AEIP §O.5. Oversight actors SHALL publish their own accountability statements and MUST confirm adherence to human-
+At least one external oversight actor \shall{} provide cryptographic attestations of civic engagement processes each renewal cycle.
+Attestations MUST reference AEIP bundles covering appeals, privacy controls, and federated obligations, and \shall{} be signed in
+accordance with AEIP §O.5. Oversight actors \shall{} publish their own accountability statements and MUST confirm adherence to human-
 rights safeguards outlined in Appendix E §1–§6.
 
-Transparency tiers SHALL be defined, published, and enforced. Tier upgrades MUST require documented justification, reciprocity
-agreements, and AEIP receipts. Restricted access SHALL include custodial obligations, audit hooks, and proportional data minimisation. Any access involving personal data MUST pass privacy.* validator checks and SHALL respect Right-to-Opacity limitations.
+Transparency tiers \shall{} be defined, published, and enforced. Tier upgrades MUST require documented justification, reciprocity
+agreements, and AEIP receipts. Restricted access \shall{} include custodial obligations, audit hooks, and proportional data minimisation. Any access involving personal data MUST pass privacy.* validator checks and \shall{} respect Right-to-Opacity limitations.
 
-Federated partners participating in Layer 8 interfaces SHALL meet custodial criteria from Appendix G §1–§3 and SHALL honour
+Federated partners participating in Layer 8 interfaces \shall{} meet custodial criteria from Appendix G §1–§3 and \shall{} honour
 non-fragmentation clauses from Appendix H §2. Shared governance sessions MUST exchange AEIP packages that summarise deployment
-status, civic feedback trends, and oversight attestations. Disputes SHALL trigger mediation workflows referencing Appendix E
+status, civic feedback trends, and oversight attestations. Disputes \shall{} trigger mediation workflows referencing Appendix E
 safeguards and MUST conclude with documented resolutions accessible through the civic portal.
 }
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/aeip/tecl-schema.json}, \texttt{schemas/interpretive-trace-package.jsonld}, and \texttt{schemas/svc/semantic-registry.jsonld} and corresponding AEIP audit records.
+\input{chapters/generated/layer8-control-table}
+\clearpage

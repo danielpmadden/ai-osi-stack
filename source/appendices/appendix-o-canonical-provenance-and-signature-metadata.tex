@@ -1,16 +1,85 @@
 % AI OSI Stack v5 — Canonical Edition
-% Appendix O — Canonical Provenance & Signature Metadata
+% Appendix O — Provenance and Custodianship Protocol
 \narrative{
-Appendix O chronicles how the canonical edition is sealed. The narrative follows provenance engineer Lior and legal custodian Amara as they assemble the signature metadata that anchors the canon’s legitimacy. They begin by consolidating evidence: AEIP manifests, integrity ledgers, and signed attestations from custodial quorums. Each artefact is hashed, timestamped, and linked to the master provenance statement.
-
-Lior demonstrates the cryptographic workflow. Keys are generated, stored in hardware security modules, and rotated according to Appendix H protocols. Signatures are applied to the master PDF, ledger snapshots, and appendices. Amara ensures that legal notices reflect licensing terms (CC BY-NC-ND 4.0) and that signature ceremonies comply with jurisdictional requirements. Civic witnesses observe and co-sign, ensuring that provenance is not solely a technical exercise but a communal affirmation.
-
-The appendix details metadata schemas capturing signer identities, roles, key fingerprints, signature algorithms, and validity periods. It explains how provenance data integrates with Appendix N verification guides, enabling citizens to confirm authenticity. The narrative concludes with archival practices: signed artefacts are deposited in redundant repositories, and periodic re-signing ceremonies renew trust for future generations.
+Appendix O merges version~5 custodianship guidance with the witness requirements first codified in version~4. Provenance engineer
+Lior and legal custodian Amara prepare the canonical release ceremony: AEIP witnesses assemble, custodial quorums present their keys,
+and civic observers verify every signature in real time. The provenance room is treated as both archive and forum—each artefact is
+hashed, sealed, and explained so that transparency never slips into surveillance. The appendix documents not only the cryptographic
+mechanics but also the civic rituals that legitimise them.
 }
+
+\narrative{
+The workflow starts with the AEIP Frame witness bundle. Every canonical artefact—PDF, manifest, ledger snapshot, schema registry,
+and integrity notice—receives a deterministic hash, is embedded in \texttt{schemas/aeip/aeip-frame-schema.json}, and is signed by the
+custodian quorum. Witnesses from the public roster co-sign to guarantee plural oversight. The narrative enumerates how provenance
+entries link to Appendix~B incident timelines, Appendix~C maturity stages, and Appendix~N verification commands. Readers leave with a
+complete picture of how to reproduce the signing ceremony in their own jurisdiction.
+}
+
 \normative{
-Canonical artefacts—including PDFs, AEIP manifests, ledger snapshots, and appendices—SHALL be signed using cryptographic algorithms that meet or exceed NIST-recommended security levels. Signature metadata MUST include signer identity, custodial role, key fingerprint, timestamp, algorithm, validity period, and reference hashes. Metadata SHALL be published in machine-readable formats accessible to public verification tools.
+Canonical artefacts \shall{be signed with Ed25519 keys stored in hardware security modules}. Signature metadata \shall{capture signer
+identity, custodial role, key fingerprint, temporal seal, algorithm, validity window, and hash manifest reference}. Metadata \shall{be
+published in \texttt{schemas/aeip/aeip-frame-schema.json}} and \shall{be mirrored in Appendix~N}. Civic witnesses \shall{co-sign witness
+statements} recorded in \texttt{witnesses[*]} fields, listing jurisdiction, oversight mandate, and verification channel. No release \may{be
+ratified without at least two independent witness signatures}.
+}
 
-Key management SHALL follow Appendix H custodianship protocols, including generation within secure modules, multi-person control for activation, and scheduled rotation. Compromise or suspicion of compromise SHALL trigger immediate key revocation, re-signing of affected artefacts, and public notification via Appendix N channels. Signature ceremonies SHALL involve civic witnesses and be documented in Appendix L interpretive records.
+\normative{
+Key management \shall{follow Appendix~H protocols}. Generation \shall{occur inside certified modules}, multi-person control \shall{be enforced
+for activation}, and rotation \shall{occur annually or upon custody change}. Suspected compromise \shall{trigger immediate revocation},
+re-signing of affected artefacts, Appendix~N notification, and publication of a remediation log in Appendix~L. Custodians \should{maintain a
+witness roster} with contact channels and jurisdictional authorities so audits \may{verify witness independence}.
+}
 
-Provenance archives SHALL maintain redundant storage, periodic integrity checks, and disaster recovery plans. Re-signing reviews SHALL occur at least every two years or upon major custodial transitions. All provenance activities SHALL be recorded in AEIP manifests and cross-referenced in Appendix C change logs to preserve traceability.
+\begin{quote}
+\textbf{Signature Metadata Example.} The snippet below demonstrates how AEIP witness and custodian entries are captured in the frame.
+Every release \shall{publish a comparable listing}.\end{quote}
+
+\begin{lstlisting}[language=json,caption={AEIP provenance frame excerpt}]
+{
+  "canonical_metadata": {
+    "aeip_version": "1.3",
+    "canonical_version": "AI OSI Stack v5",
+    "release_hash": "sha512-<pdf-digest>"
+  },
+  "witnesses": [
+    {
+      "role": "civic_witness",
+      "jurisdiction": "Ward 7",
+      "verification_channel": "https://records.example.gov/witness"
+    }
+  ],
+  "custodian_signatures": [
+    {
+      "signer": "stack-custodian-ed25519",
+      "fingerprint": "12ab:45cd:89ef",
+      "signed_at": "2025-11-07T20:11:42Z",
+      "signature": "<base64>"
+    }
+  ]
+}
+\end{lstlisting}
+
+\normative{
+Signature ceremonies \shall{be documented with video, transcript, and AEIP manifest references}. Documentation \shall{be archived in
+Appendix~L} and \shall{be accessible for Layer~8 civic review.} Release managers \should{issue a public provenance bulletin} summarising
+who signed, when, and which artefacts were sealed. Civilians \may{verify authenticity} using the commands listed below.
+}
+
+\begin{lstlisting}[language=bash,caption={Signature verification commands}]
+# Verify manifest checksum
+shasum -a 512 meta/v5-manifest.yaml
+
+# Verify PDF signature bundle
+openssl dgst -sha512 -verify keys/custodian.pub -signature releases/ai-osi-stack-v5.sig ai-osi-stack-v5.pdf
+
+# Validate AEIP frame integrity
+yq '.custodian_signatures[].signature' schemas/aeip/aeip-frame-schema.json
+\end{lstlisting}
+
+\normative{
+Provenance archives \shall{maintain redundant storage, periodic integrity checks, and disaster recovery plans}. Re-signing reviews \shall{occur
+at least every two years or upon custodial transition}. All provenance activities \shall{be recorded in AEIP manifests and cross-referenced in
+Appendix~C maturity logs}. Institutions \should{append witness attestations to Appendix~N Integrity Notices} so the public can confirm
+continuity between releases.
 }
