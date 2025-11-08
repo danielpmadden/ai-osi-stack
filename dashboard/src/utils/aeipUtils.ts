@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 // TODO: Replace static stubs with AEIP client once protocol bindings are available.
 
 import type { Layer, UpdatePlan } from "./types";

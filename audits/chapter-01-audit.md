@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 01 — Historical and Technical Lineage Audit
 
 ## Strengths

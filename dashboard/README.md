@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AI OSI Stack Dashboard
 
 This Vite + React + TypeScript workspace renders the canonical AI OSI Stack governance dashboard with offline civic data scaffolds and accessibility-first controls.

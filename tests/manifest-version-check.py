@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Manifest metadata regression tests.
 
 The module ensures canonical metadata remains stable across updates and

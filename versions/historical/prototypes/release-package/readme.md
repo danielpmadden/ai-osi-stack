@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # The AI OSI Stack: Version 4 (Expanded)
 ## A Governance Blueprint for Scalable and Trusted AI
 - **Author:** Daniel P. Madden  
@@ -46,7 +48,7 @@ This blueprint is an **offline-first reference implementation**. It demonstrates
 > “This blueprint exists to demonstrate that governance itself can be executable — that reasoning, provenance, and accountability can move through a stack with the same rigor as data.”
 
 ## Project Status and Contribution Policy
-The AI OSI Stack is maintained by a single independent researcher and released for reference, study, and future standardization. No active APIs, databases, or live network services are deployed. Forks, translations, and policy adaptations are welcome under the CC BY-NC-ND 4.0 license provided attribution and non-derivative requirements are preserved. This integration is tagged **`v4-protocol-blueprint`** to signal continuity with prior canonical releases and the addition of the executable reference build.
+The AI OSI Stack is maintained by a single independent researcher and released for reference, study, and future standardization. No active APIs, databases, or live network services are deployed. Forks, translations, and policy adaptations are welcome under the CC BY-SA 4.0 license provided attribution and non-derivative requirements are preserved. This integration is tagged **`v4-protocol-blueprint`** to signal continuity with prior canonical releases and the addition of the executable reference build.
 
 ## Repository Structure
 ```text
@@ -65,7 +67,7 @@ versions/  – Historical tags and integrity manifests
 > Zenodo. DOI: [placeholder]
 
 ## License
-This repository, including the canonical documents and blueprint implementation, is licensed under the [Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/). Redistribution MUST preserve the original author’s attribution, SHALL NOT introduce derivative works without explicit consent, and MAY be used for non-commercial study, oversight preparation, and regulatory harmonization.
+This repository, including the canonical documents and blueprint implementation, is licensed under the [Creative Commons Attribution-ShareAlike 4.0 International License](https://creativecommons.org/licenses/by-nc-nd/4.0/). Redistribution MUST preserve the original author’s attribution, SHALL NOT introduce derivative works without explicit consent, and MAY be used for non-commercial study, oversight preparation, and regulatory harmonization.
 
 ---
 

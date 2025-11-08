@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import React from "react";
 import { Dashboard } from "./pages/Dashboard";
 import { SkipLink } from "./utils/accessibility";

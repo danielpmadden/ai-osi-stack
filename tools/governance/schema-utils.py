@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Utilities for loading and validating governance schemas."""
 
 from __future__ import annotations

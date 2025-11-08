@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 09 — Layer 6 Deployment and Integration Audit
 
 ## Strengths

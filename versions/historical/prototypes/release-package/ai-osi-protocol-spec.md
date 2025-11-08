@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AI OSI Protocol Reference (AI_OSI-00)
 
 **Status:** Draft for Implementation Guidance  
@@ -72,4 +74,4 @@ Updates to this specification MUST be captured as GDS and DRR artifacts, anchore
 
 ---
 
-*This living document is published under CC BY-NC-ND 4.0 and inherits the Normative Language Notice from meta/INTEGRITY_NOTICE.md.*
+*This living document is published under CC BY-SA 4.0 and inherits the Normative Language Notice from meta/INTEGRITY_NOTICE.md.*

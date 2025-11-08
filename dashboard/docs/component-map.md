@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AI OSI Stack Dashboard Component Map
 
 | Component | Purpose | Data Source | Key Props / State | Accessibility Notes |

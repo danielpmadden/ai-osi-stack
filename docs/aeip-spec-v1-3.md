@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AEIP v1.3 — AI Epistemic Infrastructure Protocol
 
 ## 1. Abstract

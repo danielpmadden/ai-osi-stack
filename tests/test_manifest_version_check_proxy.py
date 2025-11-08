@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Pytest bridge for manifest-version-check module."""
 
 from __future__ import annotations

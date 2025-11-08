@@ -1,0 +1,42 @@
+% SPDX-License-Identifier: CC-BY-SA-4.0
+
+% AI OSI Stack v5 — Canonical Edition
+% Appendix P — Advisory Integrity Workflow
+\narrative{
+Appendix P documents the advisory integrity workflow for AI OSI Stack v5. Instead of prescriptive signing ceremonies, custodians maintain
+transparency by sharing the recommended steps for independent checksum capture. The manifest in \texttt{meta/v5-manifest.yaml} and the
+Integrity Notice describe how to reproduce the canonical PDF and accompanying artefacts while acknowledging the absence of authoritative
+cryptographic proofs. This appendix keeps those instructions inside the canon so readers understand how provenance is maintained in practice.
+}
+
+\narrative{
+Integrity steward Imani walks practitioners through the advisory steps:
+\begin{enumerate}
+  \item Collect the canonical artefacts (PDF, manifest, AEIP schemas) from the repository or a trusted mirror.
+  \item Generate local checksums using tooling such as \texttt{sha512sum} or \texttt{shasum -a 512}.
+  \item Record the values in a personal or institutional log alongside timestamps and the active commit hash.
+  \item Preserve the log with the artefacts and Integrity Notice to support future audits or archival retrieval.
+\end{enumerate}
+The workflow emphasises reproducibility and traceability rather than centralized attestation.
+}
+
+\begin{lstlisting}[language=yaml,caption={Advisory checksum log template}]
+artefacts:
+  - name: ai-osi-stack-v5.pdf
+    path: versions/ai-osi-stack-v5.pdf
+    sha512_recorded_by_verifier: "<your computed value>"
+    recorded_at: "<ISO 8601 timestamp>"
+    notes: "Captured by release engineer prior to archival upload."
+  - name: manifest
+    path: meta/v5-manifest.yaml
+    sha512_recorded_by_verifier: "<your computed value>"
+    recorded_at: "<ISO 8601 timestamp>"
+    notes: "Stored with PDF and Integrity Notice."
+\end{lstlisting}
+
+\normative{
+Custodians \shall{publish the advisory workflow} and \shall{encourage downstream users to maintain their own checksum logs}. Oversight bodies
+\should{document the tools and timestamps used during verification}. Practitioners \may{supplement the workflow with additional controls}, but
+they \shall{avoid representing the repository as cryptographically signed or formally certified}. Any detected divergence in recorded
+checksums \shall{trigger a review of mirrors and storage locations before continued distribution}.
+}

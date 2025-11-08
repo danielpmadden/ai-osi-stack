@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Governance Spine Evidence Store
 
 This directory tree captures signed evidence manifests that correspond to each

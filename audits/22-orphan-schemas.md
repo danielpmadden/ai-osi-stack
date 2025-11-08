@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Orphan Schemas
 
 Schemas not referenced in chapters:

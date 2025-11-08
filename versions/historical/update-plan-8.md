@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 AI OSI Stack v 4.2 — Update Plan 8 (“Anti-Authoritarian & Human-Rights Safeguard Edition”)
 “Transparency must never become surveillance.”
 1 · Purpose

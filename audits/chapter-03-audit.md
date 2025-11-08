@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 03 — Layer 0 Civic Mandate Audit
 
 ## Strengths

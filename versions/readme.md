@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 ---
 canonical_version: "AI OSI Stack v5"
 canonical_date: "2025-11-07"

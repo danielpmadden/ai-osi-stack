@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Governance Control Tower — Scaffold
 
 The Control Tower pairs a FastAPI back-end with a React dashboard to register governance spine assets, manage AEIP manifests, and visualise compliance metrics.

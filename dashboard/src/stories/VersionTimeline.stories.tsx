@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import type { Meta, StoryObj } from "@storybook/react";
 import updatePlansData from "@/data/update_plans.json";
 import { VersionTimeline } from "@/components/VersionTimeline";

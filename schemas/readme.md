@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Schema Cross-Reference
 
 | Schema | Purpose | Implemented In (govspine) | Tested By | Referenced In |

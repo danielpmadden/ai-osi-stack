@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AI OSI Stack v5 Unified LaTeX Build Summary
 
 - Sections merged: 47 (26 frontmatter/chapters/interpretive, 15 appendices, 6 backmatter)

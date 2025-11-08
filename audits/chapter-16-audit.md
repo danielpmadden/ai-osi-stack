@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 16 — Strategic Resilience and Risk Mitigation Audit
 
 ## Strengths

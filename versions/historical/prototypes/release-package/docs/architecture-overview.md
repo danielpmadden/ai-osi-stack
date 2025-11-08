@@ -1,5 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 © 2025 Daniel P. Madden  
-**License:** CC BY-NC-ND 4.0
+**License:** CC BY-SA 4.0
 
 # AI OSI Stack — Architecture Overview
 **Author:** Daniel P. Madden  

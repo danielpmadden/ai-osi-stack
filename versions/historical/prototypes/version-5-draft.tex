@@ -1,3 +1,5 @@
+% SPDX-License-Identifier: CC-BY-SA-4.0
+
 % =====================================================================
 % The AI OSI Stack v5 — Canonical 
 % Canonical Triple-Register Build (Narrative → Normative → Plain)
@@ -114,7 +116,7 @@
 {\Large Daniel P. Madden}\\[0.5em]
 November 2025\\[1em]
 \rule{0.75\textwidth}{0.4pt}\\[0.75em]
-\textit{Licensed under Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0)}\\[0.75em]
+\textit{Licensed under Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-SA 4.0)}\\[0.75em]
 \url{https://github.com/danielpmadden/ai-osi-stack}\\[0.75em]
 \rule{0.75\textwidth}{0.4pt}
 \vfill
@@ -638,7 +640,7 @@ rupture.
 All future revisions SHALL include a changelog detailing the
 semantic and procedural differences from prior versions.  
 No unpublished or undocumented variant MAY claim conformity.  
-Custodians SHALL maintain version hashes within the AEIP integrity
+Custodians SHALL maintain version checksums within the AEIP integrity
 ledger so that the lineage of governance remains cryptographically
 verifiable.
 \end{normative}
@@ -791,7 +793,7 @@ and renewal obligations.
 \textbf{Accountability Records.}
 Every custodial action affecting governance state (e.g.,
 approvals, renewals, incident reports) SHALL generate an AEIP
-record with verifiable signature and timestamp.  
+record with verifiable advisory log and timestamp.  
 Failure to maintain or update custodial data SHALL be treated as a
 breach of trust under this specification.
 \end{normative}
@@ -912,7 +914,7 @@ or environmental outcomes.
   \item \textbf{Traceability.}  
         Every version of the Charter and Intent statement SHALL be
         recorded in the AEIP ledger with version identifiers and
-        custodian signatures.
+        custodian advisory logs.
   \item \textbf{Public Access.}  
         Institutions SHALL ensure free public access to both the
         Charter and Intent records for review and commentary.
@@ -938,7 +940,7 @@ That statement is called an \textbf{Ethical Charter}.
 It lists goals, limits, and possible downsides.  
 It must be written both in official rule language and in simple
 words everyone can understand.  
-Each version gets saved with a date and signature so people can
+Each version gets saved with a date and advisory log so people can
 see how the plan changes over time.  
 If a system hides its purpose or changes it without notice, it
 breaks the rules.
@@ -1117,9 +1119,9 @@ transform, or validate knowledge claims that influence outcomes.
   \item \textbf{Evidence Traceability.}  
         All referenced evidence sources SHALL be version-controlled
         and accessible for independent verification.
-  \item \textbf{Counter-Signatures.}  
+  \item \textbf{Counter-Advisory logs.}  
         Each justification artifact SHALL bear at least one
-        custodian or peer signature confirming review and
+        custodian or peer advisory log confirming review and
         reasonableness.
 \end{enumerate}
 
@@ -1468,7 +1470,7 @@ never becomes obscurity.
 \textbf{Change Protocol.}
 Each modification to data, models, or governance parameters SHALL
 generate a Change Record containing previous and new version IDs,
-custodian signatures, and rationale for change.  
+custodian advisory logs, and rationale for change.  
 These records SHALL be linked within the AEIP integrity ledger and
 referenced in the GDS.
 
@@ -2340,7 +2342,7 @@ that can differ in purpose yet remain compatible in principle.
 \normative
 \textbf{Scope.}
 Layer 7 governs all inter-system and inter-institutional
-interactions involving AI systems compliant with this
+interactions involving AI systems aligned with this
 specification, including data exchange, governance handshakes, and
 ethical equivalency mapping.
 
@@ -2512,7 +2514,7 @@ governance itself traveled safely with it.
 \normative
 \textbf{Mutual Attestation.}
 All cross-system transactions SHALL include reciprocal digital
-signatures asserting compliance with agreed governance clauses.  
+advisory logs asserting compliance with agreed governance clauses.  
 Both sender and receiver SHALL log the exchange as AEIP
 Interoperability Artifacts.
 

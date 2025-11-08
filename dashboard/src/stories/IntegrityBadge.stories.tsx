@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import type { Meta, StoryObj } from "@storybook/react";
 import layersData from "@/data/layers.json";
 import { IntegrityBadge } from "@/components/IntegrityBadge";

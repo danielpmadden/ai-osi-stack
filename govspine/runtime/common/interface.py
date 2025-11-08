@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Interface contract definitions across the AI OSI stack."""
 from __future__ import annotations
 
