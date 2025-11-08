@@ -240,7 +240,7 @@ Repository: https://github.com/danielpmadden/ai-osi-stack
 
 Suggested citation:
 
-> Madden, Daniel P. (2025). *AI OSI Stack v5.0: A Layered Framework for Accountable Artificial Intelligence*. Zenodo DOI TBD.
+> Madden, Daniel P. (2025). *The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI*. Zenodo DOI TBD.
 
 ---
 
@@ -252,7 +252,7 @@ Source code (Python, TypeScript, automation scripts) is released under the **Apa
 
 Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
 
-Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.
+Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden. Mistakes will happen. I'm only one human.
 
 “Accountability is infrastructure.”
 The AI OSI Stack transforms governance from paperwork into protocol, ensuring that every intelligent system remains intelligible to the society it serves.
