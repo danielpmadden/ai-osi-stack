@@ -4,7 +4,7 @@
 Both. The Stack combines enforceable policy obligations with the technical schemas and lifecycle controls needed to prove adoption. Each chapter cites AEIP artefacts, making it possible to satisfy regulatory requirements while implementing operational safeguards.
 
 **2. Who maintains the Stack?**  
-The Stack is stewarded by the Civic Stack Collective, an open consortium of public sector technologists, civic advocates, and academic partners. Governance changes are logged through the integrity ledger and announced via Appendix C and Appendix G procedures.
+The Stack is stewarded by Daniel Madden.
 
 **3. How can enterprises adopt it?**  
 Enterprises map their existing governance assets onto the Stack’s layers, then populate AEIP templates, persona registries, and semantic ledgers. The fact sheet and AEIP chapter provide onboarding checklists and transfer guidance for complex portfolios.
