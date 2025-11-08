@@ -265,3 +265,8 @@ To engage the author for implementation or verification, see [`commercial/`](com
 ## Changelog
 
 - **v5.0 Full Repository Audit — All Integrity Checks Passed** — Comprehensive repository-wide integrity review recorded in [`audit/200-repo-wide-integrity-report.md`](audit/200-repo-wide-integrity-report.md); results confirm independent authorship status and advisory checksum posture.
+
+🧭 Demo:
+Explore the AI OSI Stack Compliance Portal prototype — a visual demonstration of the governance layers and evidence artefacts.
+Run locally via:
+cd dashboard/demo-portal && npm install && npm run dev
