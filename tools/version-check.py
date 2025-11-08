@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 """Verify that schema versions and documentation references are aligned."""
 from __future__ import annotations

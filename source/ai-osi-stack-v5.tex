@@ -1,10 +1,20 @@
+% SPDX-License-Identifier: CC-BY-SA-4.0
 
 \documentclass[11pt]{article}
 \usepackage{geometry,hyperref,xcolor,booktabs,longtable,array,listings,caption}
+\usepackage{fancyhdr}
 \usepackage{tikz}
 \usetikzlibrary{arrows.meta, positioning, shapes.misc}
 \geometry{margin=1in}
 \lstset{basicstyle=\ttfamily\small,breaklines=true,columns=fullflexible,frame=single}
+\newcommand{\gitCommitHashDefault}{UNKNOWN}
+\newcommand{\gitCommitHash}{\gitCommitHashDefault}
+\IfFileExists{../meta/git-commit.txt}{\renewcommand{\gitCommitHash}{\input{../meta/git-commit.txt}}}{}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot[C]{Canonical version: v5.0 -- built from commit \texttt{\gitCommitHash}}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 \newcommand{\shall}[1][]{\textbf{SHALL}\if\relax\detokenize{#1}\relax\else~#1\fi}
 \newcommand{\should}[1][]{\textbf{SHOULD}\if\relax\detokenize{#1}\relax\else~#1\fi}
 \newcommand{\may}[1][]{\textbf{MAY}\if\relax\detokenize{#1}\relax\else~#1\fi}
@@ -58,7 +68,7 @@
 \input{appendices/appendix-m-adversarial-playbook-and-response-strategy}
 \input{appendices/appendix-n-public-verification-and-attestation-guide}
 \input{appendices/appendix-o-canonical-provenance-and-signature-metadata}
-\input{appendices/appendix-p-integrity-manifest}
+\input{appendices/appendix-p-advisory-integrity-workflow}
 
 \input{backmatter/license-reaffirmation}
 \input{backmatter/references}

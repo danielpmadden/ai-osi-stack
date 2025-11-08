@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import React, { useMemo, useState } from "react";
 import type { AEIPReceipt } from "@/utils/types";
 import { usePrefersReducedMotion } from "@/utils/accessibility";

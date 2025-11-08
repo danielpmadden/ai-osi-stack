@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer 3 — Training and adaptation orchestration."""
 from __future__ import annotations
 

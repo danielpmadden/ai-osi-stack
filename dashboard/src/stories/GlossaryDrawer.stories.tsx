@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import type { Meta, StoryObj } from "@storybook/react";
 import glossaryData from "@/data/glossary.json";
 import { GlossaryDrawer } from "@/components/GlossaryDrawer";

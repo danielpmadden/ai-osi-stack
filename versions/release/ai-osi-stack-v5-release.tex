@@ -1,3 +1,4 @@
+% SPDX-License-Identifier: CC-BY-SA-4.0
 
 \documentclass[11pt]{article}
 \usepackage{geometry,hyperref,xcolor}
@@ -23,7 +24,7 @@
 {\normalsize Domain of Record: \texttt{https://danielpmadden.com}}\\[2pt]
 {\normalsize Repository of Record: \texttt{https://github.com/danielpmadden/ai-osi-stack}}\\[2pt]
 {\normalsize License: Creative Commons BY-NC-ND 4.0}\\[12pt]
-{\small Canonical signature bundles and release hashes: \texttt{INTEGRITY\_NOTICE.md}}\\[2pt]
+{\small Canonical advisory log bundles and release checksums: \texttt{INTEGRITY\_NOTICE.md}}\\[2pt]
 {\small Version lineage and historical attestations: \texttt{docs/}}\\[12pt]
 {\footnotesize Website: \texttt{https://danielpmadden.com}}\\[2pt]
 \vfill
@@ -54,10 +55,10 @@ The canonical AI OSI Stack remains a civic work entrusted to public scrutiny. Th
 guarding against derivative dilution that could obscure obligations negotiated with communities. Historical releases archived in
 \texttt{versions/historical/} show how each edition clarified rights and safeguards; Version 5 binds those histories into a
 non-revocable commitment to transparency without surveillance. Citizens, policymakers, implementers, and academics are invited to
-study, teach, and debate the stack, provided they respect the custodial provenance recorded in the signature bundles.
+study, teach, and debate the stack, provided they respect the custodial provenance recorded in the advisory log bundles.
 }
 \normative{
-This work IS released under Creative Commons Attribution--NonCommercial--NoDerivatives 4.0 International (CC BY-NC-ND 4.0).
+This work IS released under Creative Commons Attribution--NonCommercial--NoDerivatives 4.0 International (CC BY-SA 4.0).
 Redistributors SHALL credit the author and SHALL link to the canonical domain. They SHALL NOT sell or commercialise this text,
 nor SHALL they publish modified derivatives representing themselves as canonical. Implementers SHALL consult the latest
 \texttt{INTEGRITY\_NOTICE.md} manifest prior to deployment. Any translation, excerpt, or commentary MUST clearly state that it is
@@ -85,7 +86,7 @@ Adopting jurisdictions SHALL implement Layers 0 through 5 alongside the companio
 Compliance assertions SHALL be recorded as AEIP evidence artifacts referencing (AEIP §§O.3–O.7). Custodians SHALL maintain
 publicly accessible registries of commitments, appeal channels, and remediation workflows, citing Appendix E §3 for privacy and
 redress safeguards. Stakeholders MAY utilise the stack for education or policy harmonisation provided they reference this edition
-as the canonical text and maintain provenance hashes across derivative workspaces.
+as the canonical text and maintain provenance checksums across derivative workspaces.
 }
 \clearpage
 %---------------------------------------------------------
@@ -155,7 +156,7 @@ review under Appendix H.
 Custodianship resides with Daniel P. Madden, who compiled, signed, and published this edition following the deepbuild window of
 3–5 November 2025. The historical ledger in \texttt{versions/historical/} captures every prior stewardship decision, including
 public comment roundups, integrity notices, and update plan reconciliations. Custodianship is not a private prerogative but a
-civic duty executed in the open: signatures, release hashes, and AEIP evidence records ensure that citizens can verify custodial
+civic duty executed in the open: advisory logs, release checksums, and AEIP evidence records ensure that citizens can verify custodial
 claims without deference to institutional gatekeepers.
 }
 \normative{
@@ -206,7 +207,7 @@ placeholders, but Version 5 standardises the workflow: the ToC emerges from the 
 \normative{
 Publication pipelines SHALL compile the table of contents directly from the source tree. They SHALL NOT substitute truncated or
 handcrafted indices. When distributing derivative formats, custodians SHALL ensure the generated ToC aligns with the canonical
-chapter ordering and SHALL document the compilation hash in (AEIP §O.5) records. Automated builds MAY insert additional lists of
+chapter ordering and SHALL document the compilation checksum in (AEIP §O.5) records. Automated builds MAY insert additional lists of
 figures or tables provided they do not omit mandated entries.
 }
 \clearpage
@@ -217,7 +218,7 @@ figures or tables provided they do not omit mandated entries.
 %---------------------------------------------------------
 % BEGIN CHAPTER 00 – Introduction And Purpose
 %---------------------------------------------------------
-% Implements: tools/verify-aeip-signatures.py
+% Implements: tools/verify-aeip-advisory logs.py
 % AI OSI Stack v5 — Canonical Deepbuild
 % Chapter 00 — Introduction and Purpose
 % Sources: Version 5 Draft, AEIP v1, Update Plans 1–10, Persona Architecture v2
@@ -962,11 +963,11 @@ significant changes and MUST log revisions in (AEIP §O.6).
 \narrative{
 Before models enter operations, release management ensures readiness. The narrative describes readiness reviews involving civic
 mandates, ethical charters, and data stewardship verifications. Governance Publication teams prepare announcements, and AEIP
-registries capture version hashes and attestation signatures.
+registries capture version checksums and attestation advisory logs.
 }
 \normative{
 Release decisions SHALL require sign-off from custodians, oversight councils, and community reviewers. Approval packages MUST
-include design specifications, training logs, evaluation reports, and risk mitigations. Release hashes SHALL be published in
+include design specifications, training logs, evaluation reports, and risk mitigations. Release checksums SHALL be published in
 \texttt{INTEGRITY\_NOTICE.md} and recorded in (AEIP §O.5). Deployments SHALL NOT proceed without completed release documentation and
 public notification through Layer 7 channels.
 }
@@ -1244,7 +1245,7 @@ definitions of acceptable behaviour and updating Annex IV crosswalk tables that 
 \subsection*{Incident Handling}
 Despite preparation, incidents happen. The narrative introduces the Incident Hermeneutic Room—a virtual war room instrumented
 with AEIP lifecycle hooks. When a deviation occurs, Layer 6 operators convene with legal observers, federated custodians, and
-citizen liaisons. Incident data is ingested under strict privacy rules, hashed into AEIP receipts, and logged into the civic ledger.
+citizen liaisons. Incident data is ingested under strict privacy rules, checksumed into AEIP receipts, and logged into the civic ledger.
 The story describes a simulated service outage cascading from a cloud dependency. Operators consult Appendix B §2–§4 to follow
 remediation scripts: triage, containment, eradication, and recovery. They document every hypothesis, decision, and communication,
 knowing that post-incident transparency is owed to the public.
@@ -1273,7 +1274,7 @@ Deployment concludes with evidence export, turning operational diligence into ve
 collect test results, incident logs, recovery attestations, and crosswalk mappings to Annex IV and Appendix I. These bundles are
 signed, timestamped, and prepared for external audit in line with AEIP §O.3–§O.7. The narrative follows the documentation team
 as they curate dual-register summaries: technical appendices for expert reviewers and accessible narratives for civic audiences.
-They coordinate with Layer 7 custodians to publish indices and hashes that prove authenticity without revealing sensitive data.
+They coordinate with Layer 7 custodians to publish indices and checksums that prove authenticity without revealing sensitive data.
 
 Evidence export also powers international interoperability. Federated partners request proofs to reconcile their own compliance
 obligations. Through shared schemas and privacy-preserving exchange protocols, Layer 6 turns deployment into a shared civic
@@ -1313,9 +1314,9 @@ processing disclosures when personal data is implicated. Recovery validation SHA
 original safety baselines and SHALL document updates to crosswalk tables in Appendix I §1–§4.
 
 Evidence export SHALL generate sealed bundles containing test results, incident analyses, change approvals, and crosswalk maps.
-These bundles MUST be made available for Layer 7 publication pipelines with indices or hashes suitable for public disclosure.
+These bundles MUST be made available for Layer 7 publication pipelines with indices or checksums suitable for public disclosure.
 Federated partners SHALL receive synchronized exports when joint services are affected. All exports MUST comply with AEIP §O.3–§O.7,
-ensuring lifecycle integrity, verifiable signatures, and readiness for independent audit without exposing unnecessary personal
+ensuring lifecycle integrity, verifiable advisory logs, and readiness for independent audit without exposing unnecessary personal
 data.
 }
 \n\subsection*{Verification and Enforcement}
@@ -1352,19 +1353,19 @@ how data moves, and appendices that point to AEIP evidence without duplicating s
 The storyline follows a GDS release day. Custodians rehearse the disclosure with oversight councils, ensuring that obligations
 under Appendix N §1 (public verification and attestation guide) are satisfied. Legal advisors double-check that no privacy
 constraints are breached while still providing enough detail for audit. Engineers contribute architecture diagrams, while civic
-liaisons craft plain-language summaries. By the time the GDS is published, every claim is backed by a receipt hash and cross-
+liaisons craft plain-language summaries. By the time the GDS is published, every claim is backed by a receipt checksum and cross-
 referenced to operational logs.
 
-\subsection*{Indices and Hashes}
-Publication does not dump raw logs; it offers verifiable indices. Archivists curate cryptographic hash registries that correspond
+\subsection*{Indices and Checksums}
+Publication does not dump raw logs; it offers verifiable indices. Archivists curate cryptographic checksum registries that correspond
 to AEIP receipts, model versions, and policy statements. The narrative shows how these indices let auditors request specific
 evidence without guesswork. Citizens can confirm that what they are shown matches what operators recorded. The stack’s dual-
 transparency principle ensures that requesting access to sensitive data triggers reciprocal disclosures, preventing asymmetric
 power.
 
 During the narrative’s audit drill, a civil society group asks for proof that a high-risk change passed privacy validation. The
-publication team points to the index entry, which includes a receipt hash, a timestamp, and a reference to Appendix I §3
-crosswalk tables. Auditors submit the hash through a public verification service aligned with Appendix N §1, receiving an
+publication team points to the index entry, which includes a receipt checksum, a timestamp, and a reference to Appendix I §3
+crosswalk tables. Auditors submit the checksum through a public verification service aligned with Appendix N §1, receiving an
 attestation that the evidence remains intact. The process is transparent yet protective: personal data stays sequestered, but the
 public can confirm integrity without blind trust.
 
@@ -1372,7 +1373,7 @@ public can confirm integrity without blind trust.
 Governance publication is cyclical. Renewal schedules and performance metrics are plotted into public calendars so that no system
 quietly drifts into opacity. The narrative follows the renewal sprint where custodians evaluate impact indicators, privacy
 complaints, fairness metrics, and service availability. Each metric is linked to AEIP evidence paths, ensuring that numbers are
-not cherry-picked. Renewal packages explain whether the system remains compliant with Annex IV obligations, whether any GDPR
+not cherry-picked. Renewal packages explain whether the system remains aligned with Annex IV obligations, whether any GDPR
 Article 30 records need updating, and how mitigation plans from Appendix B have progressed.
 
 Metrics are treated as storytelling tools. Charts show response times for civic grievances, adherence to change windows, and the
@@ -1384,7 +1385,7 @@ record thus becomes an early-warning system for governance fatigue.
 Change management has its own publication cadence. Substantive API or behavioural changes trigger formal notices that are
 attested, timestamped, and archived alongside prior versions. The story describes a hotfix scenario where a bias mitigation
 algorithm is adjusted. Because the change modifies system behaviour, custodians prepare a Change Notice referencing the risk
-thresholds defined in Layer 6. The notice summarises the rationale, evidence, and impacts. It attaches signatures from technical
+thresholds defined in Layer 6. The notice summarises the rationale, evidence, and impacts. It attaches advisory logs from technical
 leads and governance custodians, aligning with the Dual-Transparency Rule: invoking audit powers requires reciprocal artifacts
 (Appendix E §3).
 
@@ -1418,16 +1419,16 @@ recordkeeper that keeps democratic control alive between deployments.
 
 \normative{
 Institutions operating at Layer 7 SHALL publish Governance Disclosure Statements that summarise purpose, risk models, control
-mappings, and civic obligations. Each GDS SHALL include indices of non-sensitive AEIP receipts or corresponding hashes, enabling
+mappings, and civic obligations. Each GDS SHALL include indices of non-sensitive AEIP receipts or corresponding checksums, enabling
 stakeholders to request evidence through Appendix N §1 verification flows. Narrative explanations SHALL coexist with technical
 details so that the dual-register standard is preserved for varied audiences.
 
 Publication pipelines SHALL maintain cryptographic indices referencing Annex IV crosswalk tables, Appendix I §3 conformance
 status, and GDPR accountability records. Indices MUST be updated with every substantive change and SHALL expose query interfaces
 that allow auditors to confirm receipt integrity without revealing personal data. Any removal or redaction of entries MUST be
-recorded with justification and AEIP signatures.
+recorded with justification and AEIP advisory logs.
 
-Renewal schedules and performance metrics SHALL be published alongside their data sources, timestamps, and AEIP receipt hashes.
+Renewal schedules and performance metrics SHALL be published alongside their data sources, timestamps, and AEIP receipt checksums.
 Metrics MUST cover risk thresholds, grievance response times, CAPA closure rates, and privacy conformance outcomes. Where metrics
 fall outside declared tolerances, institutions SHALL publish remediation plans referencing Appendix B actions and SHALL provide
 progress updates until closure.
@@ -1497,7 +1498,7 @@ codes of conduct. The storyline follows an annual public audit where the oversig
 appeals were processed, privacy limits respected, and federated obligations maintained.
 
 Attestations are also social rituals. Public ceremonies allow oversight actors to present findings, answer questions, and reaffirm
-commitments. Citizens witness signatures being applied in real time, and they can verify the attestations through public ledgers.
+commitments. Citizens witness advisory logs being applied in real time, and they can verify the attestations through public ledgers.
 This shared witnessing strengthens legitimacy while respecting Right-to-Opacity: sensitive case details remain shielded, yet the
 fact of oversight is undeniable.
 
@@ -1773,7 +1774,7 @@ Workshops explore how recursion alters power dynamics. Stewards delineate decisi
 \textbf{Plain-Speak Summary:} This chapter makes sure AI help does not replace accountable governance. It documents where machines assist, how conflicts are reviewed, and who signs off. Readers can track the debate from draft to decision. That transparency keeps power grounded in human responsibility.
 
 \normative{
-Governance drafting processes SHALL disclose machine assistance, including prompt archives, persona manifests, and provenance hashes linked to Appendices N and O. Custodians MUST maintain AI-assisted drafting schemas that capture authorship roles, review checkpoints, and human ratification events. Recursively generated text SHALL remain subject to civic challenge, with expedited amendment pathways when communities contest outcomes.
+Governance drafting processes SHALL disclose machine assistance, including prompt archives, persona manifests, and provenance checksums linked to Appendices N and O. Custodians MUST maintain AI-assisted drafting schemas that capture authorship roles, review checkpoints, and human ratification events. Recursively generated text SHALL remain subject to civic challenge, with expedited amendment pathways when communities contest outcomes.
 
 Institutions leveraging AI in governance creation MUST uphold human veto power, document interpretive rationales, and preserve audit-ready transcripts. Public ledgers SHALL publish summary attestations describing machine contributions, ensuring governance remains traceable, contestable, and anchored in human accountability.
 }
@@ -1844,7 +1845,7 @@ Visitors witness pivotal moments. The gallery showcases annotated AEIP manifests
 The appendix also recounts how the non-revocable principle was reaffirmed. After a contentious debate about surveillance technologies, the Stack codified safeguards that centre consent and proportionality. That decision is presented as a lineage milestone, linking Appendices E, K, and O. The narrative concludes by inviting readers to contribute to future lineage entries through public attestation channels, reinforcing that the canon’s history is co-authored by the community.
 }
 \normative{
-All canonical changes SHALL be recorded in the change log with version identifiers, effective dates, responsible custodians, and references to affected chapters or appendices. Entries MUST include narrative summaries, normative rationale, and AEIP manifest identifiers that capture evidence of deliberation and approval. Change records SHALL be cross-linked to Appendix L interpretive notes and Appendix O provenance signatures.
+All canonical changes SHALL be recorded in the change log with version identifiers, effective dates, responsible custodians, and references to affected chapters or appendices. Entries MUST include narrative summaries, normative rationale, and AEIP manifest identifiers that capture evidence of deliberation and approval. Change records SHALL be cross-linked to Appendix L interpretive notes and Appendix O provenance advisory logs.
 
 Lineage updates SHALL be published in accessible formats, including interactive timelines and machine-readable datasets. Any alteration to canonical principles, governance structures, or obligations MUST undergo public consultation via Appendix N channels and receive custodial quorum approval per Appendix H. Rejected proposals SHALL also be logged, with rationale preserved for future reference.
 
@@ -1906,9 +1907,9 @@ Human rights audits SHALL occur annually and after major incidents. Audit outcom
 % AI OSI Stack v5 — Canonical Edition
 % Appendix F — AEIP Operational Annex
 \narrative{
-Appendix F provides detailed operations guidance for the AI Epistemic Infrastructure Protocol. The narrative follows AEIP operations engineer Lin and civic archivist Priyanka as they maintain the protocol’s pipelines. They oversee ingest services that collect evidence from each layer, validators that enforce schema requirements, and publication channels that share attestations with the public. The annex reads like a day-in-the-life chronicle: morning checks of signature chains, mid-day integrations of new manifests, and evening reconciliations with federated partners.
+Appendix F provides detailed operations guidance for the AI Epistemic Infrastructure Protocol. The narrative follows AEIP operations engineer Lin and civic archivist Priyanka as they maintain the protocol’s pipelines. They oversee ingest services that collect evidence from each layer, validators that enforce schema requirements, and publication channels that share attestations with the public. The annex reads like a day-in-the-life chronicle: morning checks of advisory log chains, mid-day integrations of new manifests, and evening reconciliations with federated partners.
 
-Lin demonstrates how AEIP manifests flow from creation to publication. When a Layer 6 deployment produces a test report, the report is hashed, annotated with persona references, and queued for validation. Priyanka reviews hermeneutic notes to ensure interpretive context accompanies the technical artefacts. The narrative describes resilience features—redundant storage, tamper-evident logs, and failover validators—that protect integrity. It also highlights collaboration: federation partners submit manifests for co-signing, while civic observers monitor public indices for anomalies.
+Lin demonstrates how AEIP manifests flow from creation to publication. When a Layer 6 deployment produces a test report, the report is checksumed, annotated with persona references, and queued for validation. Priyanka reviews hermeneutic notes to ensure interpretive context accompanies the technical artefacts. The narrative describes resilience features—redundant storage, tamper-evident logs, and failover validators—that protect integrity. It also highlights collaboration: federation partners submit manifests for co-signing, while civic observers monitor public indices for anomalies.
 
 The annex explores advanced topics, including schema evolution management, privacy-preserving analytics on ledger data, and integration with Appendix N attestation portals. Lin and Priyanka show how version negotiation occurs when partners use different AEIP revisions. They maintain compatibility bridges that translate manifests while preserving canonical semantics. The narrative emphasises care: AEIP is not an inert tool but a stewardship practice requiring attention, ethics, and technical excellence.
 }
@@ -1917,7 +1918,7 @@ AEIP operations SHALL maintain continuous monitoring of manifest ingestion, vali
 
 Schema updates SHALL follow a controlled process that includes compatibility analysis, stakeholder consultation, regression testing, and custodial approval. New versions MUST provide migration guidance, fallback strategies, and updated documentation. AEIP operators SHALL retain backward compatibility for a defined sunset period, during which manifests from prior versions can be translated without data loss or semantic ambiguity.
 
-Public attestation endpoints SHALL expose manifest indices, signature verification instructions, and retrieval APIs consistent with Appendix N. Access controls MUST balance transparency with privacy, ensuring sensitive details remain protected. All operational activities, including maintenance windows, incidents, and partner integrations, SHALL be recorded in AEIP manifests and shared with federated custodians through Appendix G governance channels.
+Public attestation endpoints SHALL expose manifest indices, advisory log verification instructions, and retrieval APIs consistent with Appendix N. Access controls MUST balance transparency with privacy, ensuring sensitive details remain protected. All operational activities, including maintenance windows, incidents, and partner integrations, SHALL be recorded in AEIP manifests and shared with federated custodians through Appendix G governance channels.
 }
 %---------------------------------------------------------
 % END APPENDIX F – AEIP Operational Annex
@@ -1963,7 +1964,7 @@ The appendix also covers contingency plans. It narrates a scenario where a custo
 Training and mentorship are highlighted. Prospective custodians complete apprenticeships, participate in meta-audits, and lead resilience exercises. Appendices E, F, and N feature prominently in their curriculum. The narrative emphasises that custodianship is a service role, not a seat of power; authority flows from community consent and adherence to the canon.
 }
 \normative{
-Custodians SHALL be selected through transparent, participatory processes that include civic nominations, eligibility vetting, and public deliberation. Appointments MUST be ratified by a Custodial Assembly and recorded in AEIP succession manifests with provenance signatures referencing Appendix O. Terms of service SHALL be defined, with renewal contingent on performance reviews documented in the meta-audit ledger.
+Custodians SHALL be selected through transparent, participatory processes that include civic nominations, eligibility vetting, and public deliberation. Appointments MUST be ratified by a Custodial Assembly and recorded in AEIP succession manifests with provenance advisory logs referencing Appendix O. Terms of service SHALL be defined, with renewal contingent on performance reviews documented in the meta-audit ledger.
 
 Succession events, whether planned or emergent, SHALL include key rotation, asset inventory, continuity briefings, and public attestation per Appendix N. Outgoing custodians MUST provide comprehensive dossiers covering decisions, open risks, and compliance status. Incoming custodians MUST acknowledge obligations and commit to uphold the non-revocable principle, human rights safeguards, and transparency requirements.
 
@@ -2096,14 +2097,14 @@ Threat intelligence sharing with federated partners SHALL follow Appendix G agre
 % AI OSI Stack v5 — Canonical Edition
 % Appendix N — Public Verification & Attestation Guide
 \narrative{
-Appendix N invites citizens to verify the canon. The narrative follows librarian-activist Tarek as he hosts a public verification workshop at the Civic Technology Lab. Participants receive laptops, printed guides, and access to the integrity ledger. Tarek walks them through the attestation process: downloading the canonical PDF, checking SHA-512 hashes, verifying GPG signatures, and cross-referencing AEIP manifest indices. He emphasises that verification is a civic ritual, not a technical chore.
+Appendix N invites citizens to verify the canon. The narrative follows librarian-activist Tarek as he hosts a public verification workshop at the Civic Technology Lab. Participants receive laptops, printed guides, and access to the integrity ledger. Tarek walks them through the attestation process: downloading the canonical PDF, checking SHA-512 checksums, verifying GPG advisory logs, and cross-referencing AEIP manifest indices. He emphasises that verification is a civic ritual, not a technical chore.
 
 Workshop attendees share experiences. A community health worker verifies that remediation reports are authentic before discussing them with colleagues. A journalist confirms that appendices referenced in a news article are genuine. Students explore interpretive records and add annotations to the hermeneutic ledger. The narrative showcases accessibility features—screen-reader friendly instructions, multilingual support, and public kiosks for those without personal devices.
 
 The appendix also covers escalation pathways. If a verification fails, Tarek explains how to report anomalies through the Attestation Service Desk. The desk coordinates with custodians, federated partners, and law enforcement if tampering is suspected. Transparency remains central: any incident triggers public notices and follow-up reports in Appendix C change logs. The story concludes with Tarek encouraging participants to become attestation mentors, expanding civic capacity for oversight.
 }
 \normative{
-Public verification guides SHALL include step-by-step instructions for obtaining canonical materials, verifying hashes, checking signatures, and cross-referencing AEIP manifests. Guides MUST be accessible, multilingual, and available in both digital and physical formats. Verification instructions SHALL reference Appendices O (provenance), F (AEIP operations), and K (transparency tiers).
+Public verification guides SHALL include step-by-step instructions for obtaining canonical materials, verifying checksums, checking advisory logs, and cross-referencing AEIP manifests. Guides MUST be accessible, multilingual, and available in both digital and physical formats. Verification instructions SHALL reference Appendices O (provenance), F (AEIP operations), and K (transparency tiers).
 
 Attestation services SHALL maintain support channels for reporting anomalies, including online forms, hotlines, and in-person assistance. Reports MUST be acknowledged within 24 hours and investigated promptly. Outcomes, including confirmation of authenticity or remediation actions, SHALL be published through Appendix N transparency updates and recorded in AEIP manifests.
 
@@ -2114,26 +2115,26 @@ Custodians SHALL host periodic public workshops, at least twice per year, to tra
 %---------------------------------------------------------
 
 %---------------------------------------------------------
-% BEGIN APPENDIX O – Canonical Provenance And Signature Metadata
+% BEGIN APPENDIX O – Canonical Provenance And Advisory log Metadata
 %---------------------------------------------------------
 % AI OSI Stack v5 — Canonical Edition
-% Appendix O — Canonical Provenance & Signature Metadata
+% Appendix O — Canonical Provenance & Advisory log Metadata
 \narrative{
-Appendix O chronicles how the canonical edition is sealed. The narrative follows provenance engineer Lior and legal custodian Amara as they assemble the signature metadata that anchors the canon’s legitimacy. They begin by consolidating evidence: AEIP manifests, integrity ledgers, and signed attestations from custodial quorums. Each artefact is hashed, timestamped, and linked to the master provenance statement.
+Appendix O chronicles how the canonical edition is sealed. The narrative follows provenance engineer Lior and legal custodian Amara as they assemble the advisory log metadata that anchors the canon’s legitimacy. They begin by consolidating evidence: AEIP manifests, integrity ledgers, and signed attestations from custodial quorums. Each artefact is checksumed, timestamped, and linked to the master provenance statement.
 
-Lior demonstrates the cryptographic workflow. Keys are generated, stored in hardware security modules, and rotated according to Appendix H protocols. Signatures are applied to the master PDF, ledger snapshots, and appendices. Amara ensures that legal notices reflect licensing terms (CC BY-NC-ND 4.0) and that signature ceremonies comply with jurisdictional requirements. Civic witnesses observe and co-sign, ensuring that provenance is not solely a technical exercise but a communal affirmation.
+Lior demonstrates the cryptographic workflow. Keys are generated, stored in hardware security modules, and rotated according to Appendix H protocols. Advisory logs are applied to the master PDF, ledger snapshots, and appendices. Amara ensures that legal notices reflect licensing terms (CC BY-SA 4.0) and that advisory log ceremonies comply with jurisdictional requirements. Civic witnesses observe and co-sign, ensuring that provenance is not solely a technical exercise but a communal affirmation.
 
-The appendix details metadata schemas capturing signer identities, roles, key fingerprints, signature algorithms, and validity periods. It explains how provenance data integrates with Appendix N verification guides, enabling citizens to confirm authenticity. The narrative concludes with archival practices: signed artefacts are deposited in redundant repositories, and periodic re-signing ceremonies renew trust for future generations.
+The appendix details metadata schemas capturing signer identities, roles, key fingerprints, advisory log algorithms, and validity periods. It explains how provenance data integrates with Appendix N verification guides, enabling citizens to confirm authenticity. The narrative concludes with archival practices: signed artefacts are deposited in redundant repositories, and periodic re-signing ceremonies renew trust for future generations.
 }
 \normative{
-Canonical artefacts—including PDFs, AEIP manifests, ledger snapshots, and appendices—SHALL be signed using cryptographic algorithms that meet or exceed NIST-recommended security levels. Signature metadata MUST include signer identity, custodial role, key fingerprint, timestamp, algorithm, validity period, and reference hashes. Metadata SHALL be published in machine-readable formats accessible to public verification tools.
+Canonical artefacts—including PDFs, AEIP manifests, ledger snapshots, and appendices—SHALL be signed using cryptographic algorithms that meet or exceed NIST-recommended security levels. Advisory log metadata MUST include signer identity, custodial role, key fingerprint, timestamp, algorithm, validity period, and reference checksums. Metadata SHALL be published in machine-readable formats accessible to public verification tools.
 
-Key management SHALL follow Appendix H custodianship protocols, including generation within secure modules, multi-person control for activation, and scheduled rotation. Compromise or suspicion of compromise SHALL trigger immediate key revocation, re-signing of affected artefacts, and public notification via Appendix N channels. Signature ceremonies SHALL involve civic witnesses and be documented in Appendix L interpretive records.
+Key management SHALL follow Appendix H custodianship protocols, including generation within secure modules, multi-person control for activation, and scheduled rotation. Compromise or suspicion of compromise SHALL trigger immediate key revocation, re-signing of affected artefacts, and public notification via Appendix N channels. Advisory log ceremonies SHALL involve civic witnesses and be documented in Appendix L interpretive records.
 
 Provenance archives SHALL maintain redundant storage, periodic integrity checks, and disaster recovery plans. Re-signing reviews SHALL occur at least every two years or upon major custodial transitions. All provenance activities SHALL be recorded in AEIP manifests and cross-referenced in Appendix C change logs to preserve traceability.
 }
 %---------------------------------------------------------
-% END APPENDIX O – Canonical Provenance And Signature Metadata
+% END APPENDIX O – Canonical Provenance And Advisory log Metadata
 %---------------------------------------------------------
 
 %---------------------------------------------------------
@@ -2151,24 +2152,24 @@ Provenance archives SHALL maintain redundant storage, periodic integrity checks,
 %---------------------------------------------------------
 
 %---------------------------------------------------------
-% BEGIN BACKMATTER – Doi And Hash Manifest
+% BEGIN BACKMATTER – Doi And Checksum Manifest
 %---------------------------------------------------------
-% Backmatter — DOI and Hash Manifest
+% Backmatter — DOI and Checksum Manifest
 \narrative{
-The DOI and hash manifest lists canonical identifiers for AI OSI Stack v5 artifacts. It explains the process for assigning digital object identifiers, generating cryptographic hashes, and publishing the manifest on danielpmadden.com for public verification. Narrative sections provide context on how these identifiers support provenance and tamper detection.
+The DOI and checksum manifest lists canonical identifiers for AI OSI Stack v5 artifacts. It explains the process for assigning digital object identifiers, generating cryptographic checksums, and publishing the manifest on danielpmadden.com for public verification. Narrative sections provide context on how these identifiers support provenance and tamper detection.
 }
 \normative{
-Each canonical artifact SHALL include a DOI, hash value, issuance timestamp, and custodial signer reference. Hash algorithms MUST meet current cryptographic standards and SHALL be rotated according to security guidance in Appendix I. Manifests SHALL be updated upon publication of new artifacts and MUST retain historical entries for auditability. Verification instructions SHALL reference Appendix N resources.
+Each canonical artifact SHALL include a DOI, checksum value, issuance timestamp, and custodial signer reference. Checksum algorithms MUST meet current cryptographic standards and SHALL be rotated according to security guidance in Appendix I. Manifests SHALL be updated upon publication of new artifacts and MUST retain historical entries for auditability. Verification instructions SHALL reference Appendix N resources.
 }
 %---------------------------------------------------------
-% END BACKMATTER – Doi And Hash Manifest
+% END BACKMATTER – Doi And Checksum Manifest
 %---------------------------------------------------------
 
 %---------------------------------------------------------
-% BEGIN BACKMATTER – Signature Page
+% BEGIN BACKMATTER – Advisory log Page
 %---------------------------------------------------------
 %---------------------------------------------------------
-% END BACKMATTER – Signature Page
+% END BACKMATTER – Advisory log Page
 %---------------------------------------------------------
 
 %---------------------------------------------------------

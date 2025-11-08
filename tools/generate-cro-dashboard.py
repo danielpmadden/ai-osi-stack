@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 """Synthesize CRO dashboard from metrics and registries."""
 

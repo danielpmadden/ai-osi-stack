@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Media Asset Placeholders
 
 - `logo-placeholder.txt` – specify location of the official AI OSI Stack wordmark or emblem.

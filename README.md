@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AI OSI Stack v5.0  
 ### A Public Architecture for Accountable Artificial Intelligence
 
@@ -5,11 +7,19 @@
 
 ## Overview
 
+> **Not legal advice / jurisdiction-neutral.** The Stack supplies governance architecture and advisory patterns; it does not substitute for legal counsel in any jurisdiction.
+
 The **AI OSI Stack** is a complete open-standard framework for governing artificial-intelligence systems from civic intent to technical implementation. It provides a **layered architecture**—analogous to the Internet’s OSI model—where every layer of an AI system carries explicit duties, evidence records, and public-interest safeguards.
 
 v5.0 represents the **canonical edition** of the Stack: fully audited for conceptual coherence, continuity, clarity, and intent. It unifies technical, ethical, legal, and civic disciplines into a single verifiable structure for **AI accountability by design**.
 
 The Stack translates civic mandates and ethical commitments into operational controls, making every stage of intelligent system design and deployment legible, testable, and auditable. It binds social contracts, organizational practice, and technical enforcement so oversight bodies can shape system behavior in real time. The repository is structured so practitioners can regenerate official publications, execute validation suites, and confirm provenance from local environments.
+
+### Authorship & Provenance
+
+Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
+
+Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.
 
 ---
 
@@ -21,7 +31,7 @@ Its benefits:
 
 * **Transparency with proof.** Every decision, dataset, and model step is tied to an evidence artefact (AEIP).
 * **Accountability without surveillance.** Auditability is achieved through registries and provenance, not human tracking.
-* **Interoperability.** Layers align with ISO 42001, IEEE 7000-series, NIST AI RMF, and EU AI Act Annex IV requirements.
+* **Interoperability.** Layers are aligned with ISO 42001, IEEE 7000-series, NIST AI RMF, and EU AI Act Annex IV requirements.
 * **Civic legitimacy.** Governance begins at Layer 0—the public mandate—not at deployment.
 
 The Stack turns “AI ethics” from aspiration into infrastructure.
@@ -89,7 +99,7 @@ Each artefact is machine-verifiable through JSON-LD/YAML schemas in [`schemas/`]
 
 - **Canonical PDF:** [`versions/ai-osi-stack-v5.pdf`](versions/ai-osi-stack-v5.pdf)
 - **Provenance Record:** [Zenodo DOI record](https://zenodo.org/records/17517241)
-- **Integrity Manifest:** [`v5-manifest.yaml`](v5-manifest.yaml)
+- **Integrity Manifest:** [`meta/v5-manifest.yaml`](meta/v5-manifest.yaml)
 
 ---
 
@@ -111,7 +121,7 @@ policy = ControlPolicy.load("schemas/aeip/instruction-log-schema.json")
 policy.verify()
 ```
 
-Install the runtime locally with `pip install -e .` and execute `pytest` from the repository root to validate AEIP schemas and layer contracts. `tools/` contains additional automation such as `tools/generate-artifact.py` for AEIP-compliant payloads and `tools/verify-aeip-signatures.py` for manifest integrity checks.
+Install the runtime locally with `pip install -e .` and execute `pytest` from the repository root to validate AEIP schemas and layer contracts. `tools/` contains additional automation such as `tools/generate-artifact.py` for AEIP-aligned payloads and the legacy `tools/verify-aeip-signatures.py`, which now emits advisory checksum guidance.
 
 ---
 
@@ -126,13 +136,13 @@ All source chapters and schemas have been audited for:
 
 Audit reports live in [`audits/`](audits/); `audits/99-conceptual-coherence-summary.md` provides the executive overview.
 
-To independently verify the repository:
+To independently review repository integrity (advisory model):
 
-1. Review [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md) for SHA-512 checksums and verification workflow.
-2. Confirm [`v5-manifest.yaml`](v5-manifest.yaml) matches the checksums and includes the active commit hash.
-3. Run `python tools/verify-aeip-signatures.py --manifest v5-manifest.yaml` to validate signatures and ledger continuity.
+1. Review [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md) for recommended checksum practices and advisory workflow guidance.
+2. Confirm [`meta/v5-manifest.yaml`](meta/v5-manifest.yaml) follows the advisory integrity structure and references the current canonical metadata.
+3. Optionally record SHA-512 or equivalent hashes locally for archival reproducibility; compare them against personal logs when revisiting the release.
 
-Verification artefacts are non-negotiable: if an archive lacks the manifest, integrity notice, or matching checksums, treat it as non-canonical.
+Checksum verification is advisory: this repository does not publish authoritative hashes or cryptographic signatures.
 
 ---
 
@@ -208,9 +218,9 @@ For review without LaTeX, open [`audits/ai-osi-stack-v5-plaintext.txt`](audits/a
 
 ## Status and Integrity Notice
 
-Canonical version: **5.0.0**  
-Purpose: conceptual and academic review.  
-Integrity hashes recorded in [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md) are for reference only; no formal signing or cryptographic commitment is implied.
+Canonical version: **5.0.0**
+Purpose: conceptual and academic review.
+Integrity review is advisory. [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md) describes how to perform independent checksum capture for archival reproducibility; no formal signing or cryptographic commitment is provided.
 
 Canonical metadata:
 
@@ -237,8 +247,15 @@ Suggested citation:
 
 ## License
 
-Released under the **Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0)**.  
-Use, modify, and build upon the work with attribution and share-alike distribution.
+Documentation (Markdown, LaTeX, and narrative assets) is released under **Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)**.
 
-“Accountability is infrastructure.”  
+Source code (Python, TypeScript, automation scripts) is released under the **Apache License 2.0**.
+
+Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
+
+Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.
+
+“Accountability is infrastructure.”
 The AI OSI Stack transforms governance from paperwork into protocol, ensuring that every intelligent system remains intelligible to the society it serves.
+
+To engage the author for implementation or verification, see [`commercial/`](commercial/).

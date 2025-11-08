@@ -1,3 +1,6 @@
+# SPDX-License-Identifier: Apache-2.0
+
+# SPDX-License-Identifier: Apache-2.0
 #!/usr/bin/env python3
 """Ensure datasets and models carry required governance artifacts."""
 

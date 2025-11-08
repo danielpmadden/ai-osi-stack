@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Triple Register Audit
 
 ## chapter-00-introduction-and-purpose (Preface) — Pass

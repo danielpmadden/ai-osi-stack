@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Structure Validation — Govspine Merge
 
 - Command: `python -c "import govspine; print('govspine import OK')"`

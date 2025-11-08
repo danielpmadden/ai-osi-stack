@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Layer 5 — Interface orchestration bridging AEIP transport."""
 from __future__ import annotations
 

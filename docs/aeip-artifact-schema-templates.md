@@ -1,5 +1,7 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 © 2025 Daniel P. Madden
-Licensed under Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
+Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 
 > ## Normative Language Notice
 > This specification uses normative language consistent with ISO/IEC 42010 and NIST conventions.
@@ -311,5 +313,5 @@ integrityLedger:
 Daniel P. Madden retains moral and intellectual authorship of this framework.  
 This work SHALL NOT be modified, translated, or reissued under altered terminology without written consent.  
 Derived works or alternative semantic renderings that could misrepresent intent SHALL be considered  
-non-conformant and unauthorized under the CC BY-NC-ND 4.0 License.
+non-conformant and unauthorized under the CC BY-SA 4.0 License.
 

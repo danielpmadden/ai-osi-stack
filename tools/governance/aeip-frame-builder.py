@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Build AEIP frame manifests by aggregating existing governance artifacts."""
 
 from __future__ import annotations

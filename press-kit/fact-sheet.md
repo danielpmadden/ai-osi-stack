@@ -1,8 +1,10 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AI OSI Stack v5.0 Fact Sheet
 
 ## What is the AI OSI Stack?
 - A layered, open governance architecture that binds civic mandates, engineering practice, and legal accountability for automated systems.
-- Built to satisfy EU AI Act, ISO/IEC 42001, OECD AI Principles, and allied regulatory frameworks through verifiable artefacts.
+- Built to remain aligned with EU AI Act, ISO/IEC 42001, OECD AI Principles, and allied regulatory frameworks through verifiable artefacts.
 - Delivered as a public reference implementation with schemas, audits, and operational guidance.
 
 ## Layers 0–8 Overview
@@ -33,7 +35,13 @@
 - **Therapy-Tech Safeguards:** Credential verification, incident reporting, and care-specific oversight protocols.
 - **Meta-Governance:** Strategic resilience, meta-audit procedures, and temporal continuity to ensure the Stack remains a living constitution.
 
-## How to Verify Adoption
-- Review the current [Integrity Notice](../meta/INTEGRITY_NOTICE.md) for SHA-512 attestations and manifest references.
-- Inspect `meta/v5-manifest.yaml` and AEIP templates for system-level evidence bundles.
+## How to Verify Adoption (Advisory)
+- Review the current [Integrity Notice](../meta/INTEGRITY_NOTICE.md) for checksum guidance and advisory provenance workflow notes.
+- Inspect `meta/v5-manifest.yaml` and AEIP templates for system-level evidence bundles; record independent SHA-512 or equivalent checksums if archival reproducibility is required.
+
+## Authorship & Provenance
+
+Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
+
+Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.
 - Re-run `tools/integrity-check.py` and compare output with published hashes to confirm provenance.

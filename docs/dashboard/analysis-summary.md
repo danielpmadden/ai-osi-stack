@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # AI OSI Stack Repository Analysis — Dashboard Readiness
 
 ## 1. Layered Governance Landscape

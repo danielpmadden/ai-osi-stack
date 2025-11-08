@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Chapter 05 — Layer 2 Data Stewardship Audit
 
 ## Strengths

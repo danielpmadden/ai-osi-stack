@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
 # Custodian Roster
 
 | Layer | Role | Holder | Key ID | Last Rotation |

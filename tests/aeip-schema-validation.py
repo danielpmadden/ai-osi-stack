@@ -1,10 +1,12 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 """
 Title: AEIP Schema Validation Examples
 Version: 1.0.1
 Date: 2025-05-09T00:00:00Z
 Author: Repository Architect
-License: CC BY-NC-ND 4.0
+License: CC BY-SA 4.0
 Signature: Pending governance signature
 """
 
@@ -13,7 +15,6 @@ from __future__ import annotations
 import json
 import re
 from datetime import datetime, timezone
-from hashlib import sha512
 from pathlib import Path
 from typing import Any, Dict, Iterable, List
 from urllib.parse import urlparse
@@ -173,11 +174,9 @@ def demonstrate_integrity_linkage() -> None:
 
 
 def compute_sha512(path: Path) -> str:
-    digest = sha512()
-    with path.open("rb") as handle:
-        for chunk in iter(lambda: handle.read(8192), b""):
-            digest.update(chunk)
-    return digest.hexdigest()
+    """Return an advisory placeholder instead of computing a real checksum."""
+    _ = path
+    return "ADVISORY-CHECKSUM"
 
 
 def format_timestamp(now: datetime) -> str:
@@ -186,15 +185,15 @@ def format_timestamp(now: datetime) -> str:
 
 def append_verified_hashes(records: Iterable[Dict[str, str]]) -> None:
     notice_path = REPO_ROOT / "ledger" / "integrity" / "notices" / "integrity-notice.md"
-    heading = "## Verified Hashes and Temporal Seal Set v2"
+    heading = "## Advisory Checksum Log"
     custodian_heading = "### Custodianship and Authorship"
     text = notice_path.read_text(encoding="utf-8")
     new_entries = []
     for record in records:
         new_entries.append(
             "- **Path:** `{path}`\n"
-            "  - **SHA-512:** `{hash}`\n"
-            "  - **Verified:** `{timestamp}`\n"
+            "  - **Checksum guidance:** `{hash}`\n"
+            "  - **Logged:** `{timestamp}`\n"
             "  - **Signer:** {signer}\n".format(**record)
         )
     entries_block = "\n".join(new_entries).rstrip() + "\n"

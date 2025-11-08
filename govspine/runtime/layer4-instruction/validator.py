@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 """Validation helpers for Layer 4 payloads."""
 from __future__ import annotations
 

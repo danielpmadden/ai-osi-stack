@@ -1,3 +1,5 @@
+// SPDX-License-Identifier: Apache-2.0
+
 import React, { useEffect, useMemo, useState } from "react";
 import type { GlossaryTerm } from "@/utils/types";
 import { t } from "@/i18n";
