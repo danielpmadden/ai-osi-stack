@@ -1,0 +1,54 @@
+AI OSI Stack Dashboard — Component Layout (Low-Fidelity ASCII)
+
++--------------------------------------------------------------------------------------+
+| Top Bar: Canonical Version Banner                                                     |
+|  - Left: Logo + "AI OSI Stack v5"                                                     |
+|  - Center: Version Hash • DOI • Timestamp (from versions/ + ledger notices)           |
+|  - Right: Integrity Badge (dignityCompliance summary) + Right-to-Opacity toggle       |
++--------------------------------------------------------------------------------------+
+| Sidebar Navigation                                                                    |
+|  - Overview                                                                           |
+|  - Governance Map                                                                     |
+|  - Layers 0–8                                                                         |
+|  - AEIP Log Viewer                                                                    |
+|  - Artifact Gallery                                                                   |
+|  - Version Timeline                                                                   |
+|  - Governance Artifacts (Charter, Model Card, etc.)                                   |
++--------------------------------------------------------------------------------------+
+| Main Content Area                                                                     |
+|  +----------------------------+  +--------------------------------------------------+ |
+|  | Layer Index Column         |  | Layer Detail Workspace                           | |
+|  | - Layer filter chips       |  |                                                  | |
+|  | - Search (persona, risk)   |  |  [Layer Card Stack — scrollable]                 | |
+|  | - Integrity Badge summary  |  |   ┌────────────────────────────────────────────┐ | |
+|  |                            |  |   | Layer Header: Name • Steward Personas       | |
+|  +----------------------------+  |   | Purpose & Rationale (from docs/...)         | |
+|                                  |   | Risks & Governance Levers                   | |
+|                                  |   | Evidence Artifacts (ledger paths)          | |
+|                                  |   | AEIP Hooks (future integration notes)      | |
+|                                  |   | Contextual Transparency controls           | |
+|                                  |   └────────────────────────────────────────────┘ | |
+|                                  |                                                  | |
+|                                  |  [AEIP Log Viewer Drawer (bottom overlay)]       | |
+|                                  |   ┌────────────────────────────────────────────┐ | |
+|                                  |   | Timeline scrubber • Handshake stage chips  | |
+|                                  |   | Log table (Intent→Update)                  | |
+|                                  |   | Export buttons (future AEIP CLI/OpenAI)    | |
+|                                  |   └────────────────────────────────────────────┘ | |
+|                                  |                                                  | |
+|                                  |  [Artifact Gallery Grid (modal)]                 | |
+|                                  |   ┌────────────────────────────────────────────┐ | |
+|                                  |   | Cards for GDS, DRR, ITP, etc.              | |
+|                                  |   | Hash, seal, dignity icons                  | |
+|                                  |   └────────────────────────────────────────────┘ | |
++--------------------------------------------------------------------------------------+
+| Footer: Contextual transparency notice • License • Governance contact                 |
++--------------------------------------------------------------------------------------+
+
+Component Data Sources:
+- Top Bar: versions/readme.md, ledger/integrity/notices/*.txt, versions/historical/*.md/.txt
+- Sidebar: docs/architecture-overview.md, docs/governance-map.md
+- Layer Cards: docs/risk-taxonomy.md, docs/governance-map.md, docs/aeip-crosswalk-matrix.md, ledger/*.json
+- AEIP Log Viewer: ledger/ile.json, schemas/aeip-1-3.jsonld
+- Artifact Gallery: ledger/*.json, docs/aeip-artifact-schema-templates.md
+- Version Timeline: versions/historical/update-plan-*.md/txt, ledger/integrity/notices/

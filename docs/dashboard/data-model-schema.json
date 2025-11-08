@@ -1,0 +1,161 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://ai-osi-stack/dashboard/data-model.schema.json",
+  "title": "AI OSI Stack Dashboard Composite Schema",
+  "type": "object",
+  "properties": {
+    "layers": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/layer" }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/artifact" }
+    },
+    "actors": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/actor" }
+    },
+    "risks": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/risk" }
+    },
+    "evidence": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/evidence" }
+    },
+    "standards": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/standard" }
+    },
+    "aeipLogs": {
+      "type": "array",
+      "items": { "$ref": "#/definitions/aeipLog" }
+    }
+  },
+  "required": ["layers", "artifacts", "risks"],
+  "additionalProperties": false,
+  "definitions": {
+    "layer": {
+      "type": "object",
+      "required": ["id", "name", "purpose", "obligations", "primaryArtifacts"],
+      "properties": {
+        "id": { "type": "string", "pattern": "^L[0-8]$" },
+        "name": { "type": "string" },
+        "purpose": { "type": "string" },
+        "obligations": { "type": "array", "items": { "type": "string" } },
+        "risks": { "type": "array", "items": { "type": "string" } },
+        "governanceLevers": { "type": "array", "items": { "type": "string" } },
+        "primaryArtifacts": { "type": "array", "items": { "type": "string" } },
+        "personaStewards": { "type": "array", "items": { "type": "string" } },
+        "evidenceRefs": { "type": "array", "items": { "$ref": "#/definitions/evidenceRef" } },
+        "aeipHooks": { "type": "array", "items": { "$ref": "#/definitions/aeipHook" } },
+        "maturityScore": { "type": "number", "minimum": 0, "maximum": 5 },
+        "contextualTransparency": {
+          "type": "object",
+          "properties": {
+            "public": { "type": "boolean" },
+            "notes": { "type": "string" }
+          }
+        }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "required": ["id", "type", "layer", "hash"],
+      "properties": {
+        "id": { "type": "string" },
+        "type": { "type": "string", "enum": ["Charter", "ITP", "DRR", "GDS", "ILE", "OAM", "ClarityPackage", "ModelCard", "SolomonBrief", "AEIPReceipt"] },
+        "layer": { "type": "string" },
+        "title": { "type": "string" },
+        "hash": { "type": "string" },
+        "temporalSeal": { "type": "string" },
+        "dignityCompliance": { "type": "boolean" },
+        "sourcePath": { "type": "string" },
+        "lastUpdated": { "type": "string", "format": "date-time" },
+        "governanceScope": { "type": "string" },
+        "linkedStandards": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "actor": {
+      "type": "object",
+      "required": ["personaId", "role"],
+      "properties": {
+        "personaId": { "type": "string" },
+        "role": { "type": "string", "enum": ["Custodian", "Auditor", "CivicPartner", "GovernanceCouncil", "Persona"] },
+        "affiliation": { "type": "string" },
+        "contact": { "type": "string" },
+        "obligations": { "type": "array", "items": { "type": "string" } },
+        "aeipCredentials": { "type": "object", "properties": { "nodeId": { "type": "string" }, "aeipVersion": { "type": "string" } } }
+      }
+    },
+    "risk": {
+      "type": "object",
+      "required": ["riskId", "layer", "description"],
+      "properties": {
+        "riskId": { "type": "string" },
+        "layer": { "type": "string" },
+        "description": { "type": "string" },
+        "sentinelIndicators": { "type": "array", "items": { "type": "string" } },
+        "controls": { "type": "array", "items": { "type": "string" } },
+        "residualRisk": { "type": "string" },
+        "relatedArtifacts": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "required": ["evidenceId", "artifactRef", "status"],
+      "properties": {
+        "evidenceId": { "type": "string" },
+        "artifactRef": { "type": "string" },
+        "status": { "type": "string", "enum": ["verified", "pending", "flagged"] },
+        "reviewerPersona": { "type": "string" },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "notes": { "type": "string" }
+      }
+    },
+    "standard": {
+      "type": "object",
+      "required": ["standardId", "framework", "clauses"],
+      "properties": {
+        "standardId": { "type": "string" },
+        "framework": { "type": "string" },
+        "clauses": { "type": "array", "items": { "type": "string" } },
+        "mappedLayers": { "type": "array", "items": { "type": "string" } },
+        "evidenceRefs": { "type": "array", "items": { "$ref": "#/definitions/evidenceRef" } }
+      }
+    },
+    "aeipLog": {
+      "type": "object",
+      "required": ["logId", "layer", "handshakeStage", "timestamp"],
+      "properties": {
+        "logId": { "type": "string" },
+        "layer": { "type": "string" },
+        "handshakeStage": { "type": "string", "enum": ["Intent", "Justify", "CounterSign", "Commit", "Update"] },
+        "timestamp": { "type": "string", "format": "date-time" },
+        "temporalSeal": { "type": "string" },
+        "personaSignature": { "type": "string" },
+        "integrityHash": { "type": "string" },
+        "notes": { "type": "string" }
+      }
+    },
+    "evidenceRef": {
+      "type": "object",
+      "required": ["artifactId"],
+      "properties": {
+        "artifactId": { "type": "string" },
+        "summary": { "type": "string" }
+      }
+    },
+    "aeipHook": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "description": { "type": "string" },
+        "integrationPoint": { "type": "string" },
+        "futureAPI": { "type": "string", "enum": ["AEIP", "OpenAI", "Custom"] }
+      }
+    }
+  }
+}
