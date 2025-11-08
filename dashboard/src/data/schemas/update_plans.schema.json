@@ -1,0 +1,30 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI OSI Stack Update Plans",
+  "type": "object",
+  "required": ["_meta", "plans"],
+  "properties": {
+    "_meta": { "$ref": "layers.schema.json#/definitions/meta" },
+    "plans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["version", "theme", "type", "date", "summary", "related_layers", "aeip_reference"],
+        "properties": {
+          "version": { "type": "string" },
+          "theme": { "type": "string" },
+          "type": { "type": "string", "enum": ["structural", "custodial", "interpretive"] },
+          "date": { "type": "string", "format": "date" },
+          "summary": { "type": "string" },
+          "related_layers": {
+            "type": "array",
+            "items": { "type": "string", "pattern": "^(L[0-8]|AEIP)$" }
+          },
+          "aeip_reference": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

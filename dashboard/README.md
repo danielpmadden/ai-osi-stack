@@ -1,52 +1,79 @@
-# AI OSI Stack Dashboard Blueprint
+# AI OSI Stack Dashboard
 
-This directory scaffolds a static React/Tailwind/Shadcn prototype for visualizing the AI OSI Stack governance layers.
+This Vite + React + TypeScript workspace renders the canonical AI OSI Stack governance dashboard with offline civic data scaffolds and accessibility-first controls.
 
-## Folder Structure
-```
-dashboard/
-  ├── Dockerfile              # Container scaffold for future static build serving
-  ├── README.md               # This file
-  └── src/
-      ├── components/
-      │   └── Dashboard.tsx   # Primary dashboard component with mock data bindings
-      └── data/
-          └── layers.json     # Placeholder canonical data for layers, artifacts, and version banner
+## Quickstart
+
+```bash
+cd dashboard
+npm install
+npm run validate:data
+npm run dev
 ```
 
-Additional directories to add during implementation:
-- `src/components/layers/` for reusable LayerCard, RiskList, AEIPHookBadge.
-- `src/components/layout/` for Sidebar, TopBar, IntegrityBadge.
-- `src/data/` modules (`ledger.ts`, `timeline.ts`) to parse repository artifacts.
-- `src/lib/` for context providers and mock API adapters.
-- `public/` for static assets (logos, accessibility icons).
+- `npm run validate:data` — checks JSON payloads against AJV schemas.
+- `npm run typecheck` — runs TypeScript in strict mode without emitting files.
+- `npm run test` — executes Vitest (unit + axe-based accessibility checks).
+- `npm run storybook` — launches Storybook with Accessibility and Interactions addons.
+- `npm run build` — generates the static site in `dist/`.
+- `npm run preview` — previews the production build locally.
 
-## Mock Data & Static Content
-- `layers.json` aggregates layer metadata, evidence pointers, and AEIP hooks.
-- Update Plan references are embedded as narrative rationale for future linking to timeline component.
-- Artifact gallery preview references ledger hashes to prepare for integrity badge rollups.
+## Data Model References
 
-## Next Implementation Steps
-1. **Set up Tooling**
-   - Initialize Vite + React + TypeScript + Tailwind + Shadcn UI.
-   - Configure ESLint/Prettier with repository style guide.
-2. **Build Core Layout**
-   - Implement Sidebar, TopBar, and LayerCard components using Tailwind tokens respecting WCAG AA.
-   - Wire React Context to manage selected layer, persona filters, and transparency toggle.
-3. **Data Integration**
-   - Create parsing utilities that transform `/ledger/*.json` and `/docs/*.md` into typed records.
-   - Implement static generation script to hydrate `layers.json` before build.
-4. **Governance Features**
-   - Add Integrity Badge aggregator reading dignityCompliance fields.
-   - Implement Right-to-Opacity controls masking sensitive fields on demand.
-   - Provide AEIP Log Viewer timeline stub using sample events extracted from `ledger/ile.json`.
-5. **Future Integrations**
-   - Introduce AEIP CLI client for live handshake ingestion (feature flagged).
-   - Integrate OpenAI API for contextual narratives (with governance disclosure logging).
-   - Expand Dockerfile to run build & serve steps with environment variable gates for live APIs.
+Structured data lives under `src/data/` with schemas in `src/data/schemas/`.
 
-## Notes on Ethics & Transparency
-- Embed comments referencing Update Plan clauses (e.g., Update Plan 8 for transparency safeguards).
-- Include accessible descriptions for integrity indicators and ensure focus management for modals.
-- Maintain offline-first operation per repository blueprint until governance council ratifies production deployment.
+- `layers.json` — layer registry + canonical version metadata.
+- `artifacts.json` — governance artifact catalogue.
+- `personas.json` — persona manifest with stewardship registers.
+- `update_plans.json` — structural, custodial, and interpretive roadmap.
+- `glossary.json` — civic glossary with provenance links.
+- `data/aeip/*.jsonld` — mock AEIP v1.3 receipts powering the log viewer.
 
+Validate all payloads via `npm run validate:data` or inside Husky pre-commit hooks.
+
+## Testing & Accessibility
+
+Tests live in `src/components/__tests__/` and `src/__tests__/`.
+
+- Unit coverage for LayerCard, AEIPLogViewer, and GlossaryDrawer.
+- Accessibility assertions powered by `vitest-axe`.
+- Global i18n utilities and accessibility helpers live in `src/i18n/` and `src/utils/accessibility.ts`.
+
+## Storybook
+
+Storybook stories for each dashboard component are located in `src/stories/`. Use them to demo states without running the full app:
+
+```bash
+npm run storybook
+```
+
+Build the static Storybook output with:
+
+```bash
+npm run build-storybook
+```
+
+## Docker & Static Preview
+
+Build and run the static container locally:
+
+```bash
+docker compose -f dashboard/docker-compose.yml up --build
+```
+
+The image uses a Node build stage and serves static assets via `nginx:alpine` with gzip and far-future caching.
+
+## Continuous Integration
+
+GitHub Actions workflows under `.github/workflows/` run data validation, linting, tests, Storybook builds, and Docker image builds on every push and pull request. A dedicated `preview.yml` workflow publishes the static build to GitHub Pages when enabled.
+
+## Civic Accessibility Notes
+
+Implemented per Update Plans 2–3:
+
+- Skip links, keyboard-visible focus outlines, and reduced-motion awareness.
+- Triple-register toggle (Narrative · Normative · Plain) across layer narratives.
+- Glossary search drawer with keyboard focus targets and CEFR-B2 placeholders.
+- AEIP log modal exposing privacy, countersignature, and hash context for each receipt.
+
+// TODO: integrate live AEIP, persona, and governance APIs when ratified by the stewardship council.

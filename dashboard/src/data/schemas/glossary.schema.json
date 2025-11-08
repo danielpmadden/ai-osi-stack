@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI OSI Stack Glossary",
+  "type": "object",
+  "required": ["_meta", "terms"],
+  "properties": {
+    "_meta": { "$ref": "layers.schema.json#/definitions/meta" },
+    "terms": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "definition", "source"],
+        "properties": {
+          "term": { "type": "string" },
+          "definition": { "type": "string" },
+          "source": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

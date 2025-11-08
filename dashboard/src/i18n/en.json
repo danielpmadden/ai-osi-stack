@@ -1,0 +1,36 @@
+{
+  "layout": {
+    "title": "AI OSI Stack Dashboard",
+    "subtitle": "Architecture is Accountability",
+    "shellLabel": "AI OSI Stack governance dashboard shell"
+  },
+  "navigation": {
+    "layers": "Layer navigation",
+    "primary": "Primary navigation",
+    "personaCount": "Stewardship roles: {count}",
+    "openGlossary": "Open civic glossary",
+    "closeGlossary": "Close glossary"
+  },
+  "content": {
+    "snapshotHeading": "Canonical Governance Snapshot",
+    "snapshotSubheading": "All registers harmonized with Epistemology by Design constraints.",
+    "mainSection": "Layer governance content",
+    "secondaryPanels": "Supplemental governance panels",
+    "aeipLogTitle": "AEIP Reasoning Receipts",
+    "aeipSearchPlaceholder": "Filter receipts",
+    "aeipModalClose": "Close AEIP receipt dialog",
+    "aeipModalIntent": "Intent",
+    "aeipModalJustification": "Justification",
+    "aeipModalCountersignature": "Countersignature",
+    "aeipModalPrivacy": "Privacy",
+    "aeipModalHash": "Hash",
+    "aeipModalLedger": "Ledger reference",
+    "aeipModalAttachments": "Attachments",
+    "artifactGallery": "Artifact gallery",
+    "glossaryTitle": "Civic Glossary",
+    "glossarySearch": "Search terms",
+    "glossaryPlaceholder": "Search civic terms",
+    "glossaryEmpty": "No terms match \"{query}\".",
+    "versionTimeline": "Update plan history"
+  }
+}

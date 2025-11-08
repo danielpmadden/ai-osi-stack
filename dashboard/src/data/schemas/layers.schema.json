@@ -1,0 +1,64 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI OSI Stack Layers",
+  "type": "object",
+  "required": ["_meta", "canonical_version", "layers"],
+  "properties": {
+    "_meta": { "$ref": "#/definitions/meta" },
+    "canonical_version": {
+      "type": "object",
+      "required": ["label", "doi", "sha512", "integrity_notice", "last_reviewed"],
+      "properties": {
+        "label": { "type": "string" },
+        "doi": { "type": "string" },
+        "sha512": { "type": "string", "pattern": "^[a-f0-9]{128}$" },
+        "integrity_notice": { "type": "string" },
+        "last_reviewed": { "type": "string", "format": "date" }
+      },
+      "additionalProperties": false
+    },
+    "layers": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "description", "risks", "artifacts", "standards", "personas", "aeip_hooks"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^(L[0-8]|AEIP)$" },
+          "name": { "type": "string" },
+          "description": {
+            "type": "object",
+            "required": ["narrative", "normative", "plain"],
+            "properties": {
+              "narrative": { "type": "string" },
+              "normative": { "type": "string" },
+              "plain": { "type": "string" }
+            },
+            "additionalProperties": false
+          },
+          "risks": { "type": "array", "items": { "type": "string" } },
+          "artifacts": { "type": "array", "items": { "type": "string" } },
+          "standards": { "type": "array", "items": { "type": "string" } },
+          "personas": { "type": "array", "items": { "type": "string" } },
+          "aeip_hooks": { "type": "array", "items": { "type": "string" } }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false,
+  "definitions": {
+    "meta": {
+      "type": "object",
+      "required": ["source", "repository", "license", "generated"],
+      "properties": {
+        "source": { "type": "string" },
+        "repository": { "type": "string", "format": "uri" },
+        "license": { "type": "string" },
+        "generated": { "type": "string" },
+        "notes": { "type": "string" }
+      },
+      "additionalProperties": false
+    }
+  }
+}
