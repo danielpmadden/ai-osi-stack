@@ -30,6 +30,13 @@ Users may record SHA-512 or equivalent checksums independently for provenance.
 
 Use the template as a reference; expand it to cover any additional files required for your archival process.
 
+## Verified Hashes
+
+| Artifact | Path | SHA-512 | Commit Reference |
+| --- | --- | --- | --- |
+| Canonical PDF | `versions/ai-osi-stack-v5.pdf` | 87d0414872ab29393ee46e585c7dd49bf30c7c13bcf2637ff2bd52078c558b4b6a4598c0b3ffbebfe87588c391f9a002cac4f636efa392df04275266fee08156 | TO_BE_DETERMINED |
+| Integrity Notice | `meta/INTEGRITY_NOTICE.md` | b55e9e460ccfb595bbf10ed187d0d8ce2f28e3884a337c8a47bf27335d0756255eab362bcf9d7f0677ef75bfb9f177a64b6caf6e9f30283f9d4e78e7a2693d92 | TO_BE_DETERMINED |
+
 ## Related References
 - [`meta/v5-manifest.yaml`](v5-manifest.yaml)
 - [`README.md`](../README.md)
