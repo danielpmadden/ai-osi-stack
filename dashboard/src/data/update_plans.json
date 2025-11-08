@@ -1,0 +1,65 @@
+{
+  "_meta": {
+    "source": "AI OSI Stack v5",
+    "repository": "https://github.com/danielpmadden/ai-osi-stack",
+    "license": "CC BY-NC-ND 4.0",
+    "generated": "2025-02-21",
+    "notes": "Timeline of structural, custodial, and interpretive update plans."
+  },
+  "plans": [
+    {
+      "version": "UP-01",
+      "theme": "Civic Charter Renewal",
+      "type": "structural",
+      "date": "2024-03-15",
+      "summary": "Established Civic Charter ratification quorum and community consent cadence.",
+      "related_layers": ["L0", "L7"],
+      "aeip_reference": "civicMandateReceipt"
+    },
+    {
+      "version": "UP-04",
+      "theme": "Secure Foundations",
+      "type": "structural",
+      "date": "2024-06-10",
+      "summary": "Codified facility custody attestations and model evaluation harness requirements.",
+      "related_layers": ["L1", "L3"],
+      "aeip_reference": "facilityAttestation"
+    },
+    {
+      "version": "UP-07",
+      "theme": "Data Consent Reinforcement",
+      "type": "custodial",
+      "date": "2024-08-22",
+      "summary": "Expanded consent registries, lineage ledger hooks, and participatory audits.",
+      "related_layers": ["L2"],
+      "aeip_reference": "lineageLedger"
+    },
+    {
+      "version": "UP-08",
+      "theme": "Persona Dignity Safeguards",
+      "type": "interpretive",
+      "date": "2024-09-30",
+      "summary": "Introduced refusal protections, empathy boundaries, and persona briefing cadence.",
+      "related_layers": ["L4"],
+      "aeip_reference": "intentPacket"
+    },
+    {
+      "version": "UP-09",
+      "theme": "Transparency Cadence",
+      "type": "custodial",
+      "date": "2024-11-03",
+      "summary": "Aligned publication schedule with Governance Disclosure Statements and AEIP notices.",
+      "related_layers": ["L5", "L7"],
+      "aeip_reference": "publicationNotice"
+    },
+    {
+      "version": "UP-13",
+      "theme": "Federation Charter",
+      "type": "structural",
+      "date": "2025-01-12",
+      "summary": "Defined reciprocity rules for federation partners and jurisdiction overlays.",
+      "related_layers": ["L8"],
+      "aeip_reference": "federationSync"
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI OSI Stack Personas",
+  "type": "object",
+  "required": ["_meta", "personas"],
+  "properties": {
+    "_meta": { "$ref": "layers.schema.json#/definitions/meta" },
+    "personas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "mandate", "layer_bindings", "register"],
+        "properties": {
+          "id": { "type": "string" },
+          "name": { "type": "string" },
+          "mandate": { "type": "string" },
+          "layer_bindings": {
+            "type": "array",
+            "minItems": 1,
+            "items": { "type": "string", "pattern": "^(L[0-8]|AEIP)$" }
+          },
+          "register": {
+            "type": "object",
+            "required": ["narrative", "normative", "plain"],
+            "properties": {
+              "narrative": { "type": "string" },
+              "normative": { "type": "string" },
+              "plain": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

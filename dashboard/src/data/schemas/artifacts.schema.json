@@ -1,0 +1,26 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AI OSI Stack Artifacts",
+  "type": "object",
+  "required": ["_meta", "artifacts"],
+  "properties": {
+    "_meta": { "$ref": "layers.schema.json#/definitions/meta" },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "type", "layer", "description", "schema_path", "canonical"],
+        "properties": {
+          "id": { "type": "string" },
+          "type": { "type": "string" },
+          "layer": { "type": "string", "pattern": "^(L[0-8]|AEIP)$" },
+          "description": { "type": "string" },
+          "schema_path": { "type": "string" },
+          "canonical": { "type": "boolean" }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}

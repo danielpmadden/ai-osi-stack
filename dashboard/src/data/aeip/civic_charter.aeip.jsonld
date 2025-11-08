@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "https://w3id.org/aeip/v1.3/context.jsonld",
+    {
+      "@vocab": "https://w3id.org/aeip/v1.3/core#"
+    }
+  ],
+  "id": "urn:aeip:receipt:civic-charter:2025-02-19",
+  "type": ["AEIPReceipt", "CivicCharterAlignment"],
+  "issuanceDate": "2025-02-19T10:15:00Z",
+  "layer": "L2",
+  "hook": "civicCharterAttestation",
+  "intent": "Attest that civic charter clauses were upheld during participatory dataset onboarding.",
+  "justification": "Community delegates provided double-consent for knowledge stewardship and risk mitigation.",
+  "countersignature": {
+    "persona": "Consent Custodian",
+    "mandate": "Civic Accountability",
+    "timestamp": "2025-02-19T10:25:00Z"
+  },
+  "privacy": {
+    "scope": "community-consented",
+    "consent": "documented"
+  },
+  "integrity": {
+    "hashAlgorithm": "SHA512",
+    "hashValue": "9d7f8c6b5a4e3d2c1b0a9f8e7d6c5b4a392817161514131211109f8e7d6c5b4a3",
+    "ledgerReference": "ledger://aeip/mainnet/entries/2025-02-19-0012"
+  },
+  "attachments": [
+    {
+      "type": "GovernanceDisclosureStatement",
+      "summary": "Dataset lineage ledger updated with community ratification note."
+    }
+  ]
+}

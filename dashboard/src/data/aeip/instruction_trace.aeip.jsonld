@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "https://w3id.org/aeip/v1.3/context.jsonld",
+    {
+      "@vocab": "https://w3id.org/aeip/v1.3/core#"
+    }
+  ],
+  "id": "urn:aeip:receipt:instruction-trace:2025-03-01",
+  "type": ["AEIPReceipt", "InstructionTrace"],
+  "issuanceDate": "2025-03-01T08:30:00Z",
+  "layer": "L3",
+  "hook": "instructionTrace",
+  "intent": "Record human-in-the-loop instruction refinement for cooperative agents.",
+  "justification": "Persona mediators confirmed no autonomy breaches and preserved stewardship guardrails.",
+  "countersignature": {
+    "persona": "Instruction Mediator",
+    "mandate": "Human-Loop Assurance",
+    "timestamp": "2025-03-01T08:45:00Z"
+  },
+  "privacy": {
+    "scope": "training-confidential",
+    "consent": "persona-consent-ledger"
+  },
+  "integrity": {
+    "hashAlgorithm": "SHA512",
+    "hashValue": "7a6b5c4d3e2f1908a7b6c5d4e3f291807162534241302918a7b6c5d4e3f29180",
+    "ledgerReference": "ledger://aeip/mainnet/entries/2025-03-01-0007"
+  },
+  "attachments": [
+    {
+      "type": "SolomonBrief",
+      "summary": "Instruction evaluation metrics logged with fairness deltas."
+    }
+  ]
+}
