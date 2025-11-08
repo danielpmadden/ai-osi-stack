@@ -35,6 +35,9 @@ Its benefits:
 
 The Stack turns “AI ethics” from aspiration into infrastructure.
 
+📘 For legal, policy, and compliance professionals, see:  
+[`/docs/LEGAL-AND-POLICY-BRIEF.md`](docs/LEGAL-AND-POLICY-BRIEF.md)
+
 ---
 
 ## Architecture at a Glance
