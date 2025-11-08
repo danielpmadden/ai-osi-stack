@@ -1,0 +1,35 @@
+{
+  "@context": [
+    "https://w3id.org/aeip/v1.3/context.jsonld",
+    {
+      "@vocab": "https://w3id.org/aeip/v1.3/core#"
+    }
+  ],
+  "id": "urn:aeip:receipt:governance-publication:2025-03-08",
+  "type": ["AEIPReceipt", "GovernancePublication"],
+  "issuanceDate": "2025-03-08T13:05:00Z",
+  "layer": "L7",
+  "hook": "governancePublication",
+  "intent": "Confirm dissemination of governance disclosure statement to civic oversight forum.",
+  "justification": "Transparency cadence met publication SLA and synchronized with AEIP ledger anchor.",
+  "countersignature": {
+    "persona": "Public Correspondent",
+    "mandate": "Transparency and Disclosures",
+    "timestamp": "2025-03-08T13:06:30Z"
+  },
+  "privacy": {
+    "scope": "public",
+    "consent": "not-applicable"
+  },
+  "integrity": {
+    "hashAlgorithm": "SHA512",
+    "hashValue": "3e4f5a6b7c8d9e0f1a2b3c4d5e6f7081928374655647382910f1e2d3c4b5a697",
+    "ledgerReference": "ledger://aeip/mainnet/entries/2025-03-08-0021"
+  },
+  "attachments": [
+    {
+      "type": "GovernanceDisclosureStatement",
+      "summary": "Quarterly transparency notice published with DOI registration."
+    }
+  ]
+}

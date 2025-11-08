@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  push:
+    branches: ["main", "work", "develop", "master"]
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 18
+          cache: npm
+          cache-dependency-path: dashboard/package-lock.json
+
+      - name: Install dependencies
+        working-directory: dashboard
+        run: npm install
+
+      - name: Validate data
+        working-directory: dashboard
+        run: npm run validate:data
+
+      - name: Type check
+        working-directory: dashboard
+        run: npm run typecheck
+
+      - name: Lint
+        working-directory: dashboard
+        run: npm run lint
+
+      - name: Run tests
+        working-directory: dashboard
+        run: npm test
+
+      - name: Build
+        working-directory: dashboard
+        run: npm run build
+
+      - name: Build Storybook
+        working-directory: dashboard
+        run: npm run build-storybook
+
+      - name: Upload Storybook artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: storybook-static
+          path: dashboard/storybook-static
+
+      - name: Build Docker image
+        working-directory: dashboard
+        run: docker build -t ai-osi-stack-dashboard:ci .
+        env:
+          DOCKER_BUILDKIT: 1
