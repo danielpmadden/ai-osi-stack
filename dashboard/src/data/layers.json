@@ -1,0 +1,115 @@
+{
+  "canonicalVersion": {
+    "label": "AI OSI Stack v5",
+    "hash": "sha3-512:TODO",
+    "doi": "10.5281/zenodo.todo",
+    "timestamp": "2025-11-21T00:00:00Z"
+  },
+  "layers": [
+    {
+      "id": "L0",
+      "name": "Civic Mandate",
+      "purpose": "Anchor legitimacy through community ratified charters and consent frameworks.",
+      "rationale": "Update Plans 1, 4, and 7 emphasize shared civic governance and adaptive renewal.",
+      "risks": ["Legitimacy erosion", "Opaque amendments"],
+      "governanceLevers": ["Civic Charter", "Community review councils"],
+      "evidenceArtifacts": ["docs/charter/charter.md"],
+      "aeipHooks": ["civicMandateReceipt"],
+      "contextualTransparency": {"public": true, "notes": "Summaries only; redact deliberative transcripts."}
+    },
+    {
+      "id": "L1",
+      "name": "Physical Substrate",
+      "purpose": "Safeguard compute facilities, energy stewardship, and supply-chain provenance.",
+      "rationale": "Architecture overview highlights secure compute foundations and facility provenance.",
+      "risks": ["Hardware tampering", "Resilience failure"],
+      "governanceLevers": ["Facility audits", "Tamper-evident custody"],
+      "evidenceArtifacts": ["ledger/gds.json", "ledger/drr.json"],
+      "aeipHooks": ["facilityAttestation"],
+      "contextualTransparency": {"public": false, "notes": "Share aggregate metrics only."}
+    },
+    {
+      "id": "L2",
+      "name": "Data Stewardship",
+      "purpose": "Maintain provenance, consent, and epistemic hygiene across all data assets.",
+      "rationale": "Risk taxonomy stresses consent traceability ledgers and participatory audits.",
+      "risks": ["Consent erosion", "Data poisoning"],
+      "governanceLevers": ["Consent registries", "Dataset review boards"],
+      "evidenceArtifacts": ["ledger/drr.json", "ledger/itp.json"],
+      "aeipHooks": ["lineageLedger"],
+      "contextualTransparency": {"public": false, "notes": "Expose consent counts, hide identities."}
+    },
+    {
+      "id": "L3",
+      "name": "Model Development",
+      "purpose": "Ensure training rigor and evaluation transparency across models.",
+      "rationale": "Update Plans 4 and 7 add specification templates and adversarial coverage.",
+      "risks": ["Bias amplification", "Evaluation blind spots"],
+      "governanceLevers": ["Composite evaluation harnesses", "Persona-aligned regression"],
+      "evidenceArtifacts": ["ledger/oam.json"],
+      "aeipHooks": ["evaluationReceipt"],
+      "contextualTransparency": {"public": true, "notes": "Share metrics with percentile privacy."}
+    },
+    {
+      "id": "L4",
+      "name": "Instruction & Control",
+      "purpose": "Govern personas, refusal logic, and AEIP intents with dignity safeguards.",
+      "rationale": "Update Plan 8 codifies Right-to-Opacity and refusal protections.",
+      "risks": ["Prompt injection", "Persona drift"],
+      "governanceLevers": ["Persona briefs", "Affect boundary audits"],
+      "evidenceArtifacts": ["ledger/itp.json", "ledger/gds.json"],
+      "aeipHooks": ["intentPacket"],
+      "contextualTransparency": {"public": true, "notes": "Provide refusal stats; hide sensitive prompts."}
+    },
+    {
+      "id": "L5",
+      "name": "Reasoning Exchange",
+      "purpose": "Execute AEIP handshakes with temporal integrity and counter-signature assurance.",
+      "rationale": "AEIP protocol spec mandates five-stage handshake with ledger anchoring.",
+      "risks": ["Packet replay", "Ledger desynchronization"],
+      "governanceLevers": ["AEIP validation", "Deterministic replay checkpoints"],
+      "evidenceArtifacts": ["ledger/ile.json"],
+      "aeipHooks": ["aeipHandshake"],
+      "contextualTransparency": {"public": true, "notes": "Publish aggregated handshake success rates."}
+    },
+    {
+      "id": "L6",
+      "name": "Deployment & Integration",
+      "purpose": "Enforce runtime change control, incident transparency, and assurance cadences.",
+      "rationale": "Risk taxonomy links runtime drift mitigation to change gating and incident rehearsal.",
+      "risks": ["Runtime drift", "Incident opacity"],
+      "governanceLevers": ["Change approvals", "Incident rehearsal"],
+      "evidenceArtifacts": ["ledger/oam.json", "ledger/local-log.json"],
+      "aeipHooks": ["changeApproval"],
+      "contextualTransparency": {"public": false, "notes": "Redact sensitive deployment metadata."}
+    },
+    {
+      "id": "L7",
+      "name": "Governance Publication",
+      "purpose": "Coordinate external transparency, civic accountability, and disclosure cadence.",
+      "rationale": "Governance map lists publication controls; Update Plan 9 aligns with external standards.",
+      "risks": ["Delayed disclosure", "Accountability gaps"],
+      "governanceLevers": ["Public disclosure schedules", "Multistakeholder review"],
+      "evidenceArtifacts": ["ledger/gds.json", "versions/historical/update-plan-9.md"],
+      "aeipHooks": ["publicationNotice"],
+      "contextualTransparency": {"public": true, "notes": "Expose schedule, gate sensitive annexes."}
+    },
+    {
+      "id": "L8",
+      "name": "Policy & Federation",
+      "purpose": "Support civic partnerships, federation agreements, and policy overlays.",
+      "rationale": "Update Plan 13 outlines federation charter requirements and partner registry obligations.",
+      "risks": ["Partnership drift", "Jurisdiction conflicts"],
+      "governanceLevers": ["Federation validator", "Policy charter"],
+      "evidenceArtifacts": ["versions/historical/update-plan-13.txt"],
+      "aeipHooks": ["federationSync"],
+      "contextualTransparency": {"public": true, "notes": "Display partner list with contact opt-outs."}
+    }
+  ],
+  "artifactGallery": [
+    {"id": "charter-2025", "type": "Charter", "layer": "L0", "hash": "todo", "sourcePath": "docs/charter/charter.md"},
+    {"id": "gds-2025-11-03", "type": "GDS", "layer": "L7", "hash": "4ca996c8...", "sourcePath": "ledger/gds.json"},
+    {"id": "drr-2025-11-03", "type": "DRR", "layer": "L6", "hash": "b1d305b6...", "sourcePath": "ledger/drr.json"},
+    {"id": "itp-2025-11-03", "type": "ITP", "layer": "L4", "hash": "ccb80203...", "sourcePath": "ledger/itp.json"}
+  ]
+}
