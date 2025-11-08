@@ -1,0 +1,20 @@
+{
+  "4": {
+    "aeip_version": "1.3",
+    "schema": "schemas/aeip/instruction-log-schema.json",
+    "artifact_id": "L4-demo-001",
+    "description": "Sample Instruction & Control AEIP Artefact",
+    "custodian": "demo@aiosi.org",
+    "timestamp": "2025-11-08T12:00:00Z",
+    "verification": "verified"
+  },
+  "7": {
+    "aeip_version": "1.3",
+    "schema": "schemas/aeip/gds-schema.json",
+    "artifact_id": "L7-demo-001",
+    "description": "Governance Publication Example Record",
+    "custodian": "demo@aiosi.org",
+    "timestamp": "2025-11-08T12:00:00Z",
+    "verification": "pending"
+  }
+}

@@ -1,0 +1,11 @@
+[
+  {"id":0,"name":"Civic Mandate","purpose":"Defines who authorizes an AI system and under what social license.","status":"verified"},
+  {"id":1,"name":"Ethical Charter","purpose":"Converts civic values into enforceable ethical clauses and review cycles.","status":"verified"},
+  {"id":2,"name":"Data Stewardship","purpose":"Ensures rights-respecting data collection and consent.","status":"pending"},
+  {"id":3,"name":"Model Development","purpose":"Documents training, evaluation, and lineage of models.","status":"verified"},
+  {"id":4,"name":"Instruction & Control","purpose":"Governs prompts, personas, and operational guardrails.","status":"verified"},
+  {"id":5,"name":"Reasoning Exchange","purpose":"Keeps AI reasoning interpretable and contestable.","status":"unverified"},
+  {"id":6,"name":"Deployment & Integration","purpose":"Manages monitoring and rollback procedures.","status":"verified"},
+  {"id":7,"name":"Governance Publication","purpose":"Publishes oversight and audit records.","status":"pending"},
+  {"id":8,"name":"Civic Participation","purpose":"Enables public feedback and appeals.","status":"verified"}
+]
