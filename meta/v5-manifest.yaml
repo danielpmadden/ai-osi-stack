@@ -62,3 +62,9 @@ moves:
   - moved_from: .github/
     moved_to: ops/.github/
     rationale: operational tooling organization
+hashes:
+  versions/ai-osi-stack-v5.pdf:
+    sha512: 87d0414872ab29393ee46e585c7dd49bf30c7c13bcf2637ff2bd52078c558b4b6a4598c0b3ffbebfe87588c391f9a002cac4f636efa392df04275266fee08156
+  meta/INTEGRITY_NOTICE.md:
+    sha512: b55e9e460ccfb595bbf10ed187d0d8ce2f28e3884a337c8a47bf27335d0756255eab362bcf9d7f0677ef75bfb9f177a64b6caf6e9f30283f9d4e78e7a2693d92
+release_commit: TO_BE_DETERMINED
