@@ -14,9 +14,9 @@ accountable models.
 \textbf{Narrative Intent:} Layer 3 addresses the opacity of model engineering by prescribing transparent development records that align safety, accountability, and iterative improvement.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Engineers SHALL document architectural choices in \texttt{schemas/aeip/modelcard-schema.json} before models exit sandbox testing.
-\item Product owners SHALL supplement release packages with \texttt{schemas/modelcard-template.yaml} attachments so evaluators can reuse evidence structures.
-\item Risk reviewers SHOULD link mitigation decisions to \texttt{schemas/decision-rationale-record.jsonld} entries for traceability across layers.
+\item Engineers \shall{} document architectural choices in \texttt{schemas/aeip/modelcard-schema.json} before models exit sandbox testing.
+\item Product owners \shall{} supplement release packages with \texttt{schemas/modelcard-template.yaml} attachments so evaluators can reuse evidence structures.
+\item Risk reviewers \should{} link mitigation decisions to \texttt{schemas/decision-rationale-record.jsonld} entries for traceability across layers.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This layer makes model building legible to outsiders. It requires structured model cards and decision logs before release. Teams learn which forms to use so audits are repeatable. The process keeps technical improvements tied to governance expectations.
 
@@ -28,9 +28,9 @@ Update Plan 4 introduced specification templates that tie objectives to measurab
 community representatives to ensure that success criteria reflect societal goals rather than mere technical performance.
 }
 \normative{
-Every model SHALL have a documented design specification referencing relevant mandates, charters, and appendices. Specifications
+Every model \shall{} have a documented design specification referencing relevant mandates, charters, and appendices. Specifications
 MUST include intended use, prohibited uses, performance thresholds, fairness targets, interpretability requirements, and fallback
-procedures. Documents SHALL be logged in (AEIP §O.3) and SHALL undergo community review before development begins.
+procedures. Documents \shall{} be logged in (AEIP §O.3) and \shall{} undergo community review before development begins.
 }
 
 \section*{Training Data Governance}
@@ -40,9 +40,9 @@ how data is curated, labelled, and partitioned with community oversight. Persona
 validation sets to test behaviour under diverse perspectives.
 }
 \normative{
-Training datasets SHALL be sourced exclusively from inventories approved under Layer 2. Data preparation workflows MUST document
-transformations, labelling procedures, and quality checks in (AEIP §O.4). Any synthetic data generation SHALL disclose methods and
-risk analyses. Community reviewers SHALL have opportunities to audit dataset composition and MUST approve usage for high-risk
+Training datasets \shall{} be sourced exclusively from inventories approved under Layer 2. Data preparation workflows MUST document
+transformations, labelling procedures, and quality checks in (AEIP §O.4). Any synthetic data generation \shall{} disclose methods and
+risk analyses. Community reviewers \shall{} have opportunities to audit dataset composition and MUST approve usage for high-risk
 applications.
 }
 
@@ -53,10 +53,10 @@ resource usage. The narrative shows how AEIP receipts capture each experiment, e
 Update Plan 7 emphasised controlled experimentation to prevent unapproved models from drifting into production.
 }
 \normative{
-All training runs SHALL be registered in (AEIP §O.4) with configuration files, dataset references, and responsible personnel.
-Experimentation environments MUST enforce access controls and SHALL prevent exporting models without authorization. When high-risk
-changes occur, oversight councils SHALL review experiment logs before approving progression to evaluation. Untracked experiments
-SHALL be considered non-compliant and MUST be quarantined.
+All training runs \shall{} be registered in (AEIP §O.4) with configuration files, dataset references, and responsible personnel.
+Experimentation environments MUST enforce access controls and \shall{} prevent exporting models without authorization. When high-risk
+changes occur, oversight councils \shall{} review experiment logs before approving progression to evaluation. Untracked experiments
+\shall{} be considered non-compliant and MUST be quarantined.
 }
 
 \section*{Evaluation and Validation}
@@ -66,10 +66,10 @@ qualitative reviews. The narrative references Appendix F fairness metrics and co
 whether a model is ready for governance publication and operational integration.
 }
 \normative{
-Evaluation protocols SHALL cover quantitative and qualitative metrics aligned with charter commitments. Results MUST be documented
-in (AEIP §O.5) including methodology, datasets, statistical significance, and reviewer notes. Models SHALL NOT advance if they fail
-to meet fairness or safety thresholds. Validation teams SHALL include community observers for sensitive applications. Exceptions
-MAY be granted under Appendix B emergency procedures but SHALL undergo retrospective review.
+Evaluation protocols \shall{} cover quantitative and qualitative metrics aligned with charter commitments. Results MUST be documented
+in (AEIP §O.5) including methodology, datasets, statistical significance, and reviewer notes. Models \shall{not} advance if they fail
+to meet fairness or safety thresholds. Validation teams \shall{} include community observers for sensitive applications. Exceptions
+\may{} be granted under Appendix B emergency procedures but \shall{} undergo retrospective review.
 }
 
 \section*{Documentation and Explainability}
@@ -79,9 +79,9 @@ explanations accessible to civic audiences. Persona Architecture v2 helps tailor
 highlights how transparent documentation builds trust and facilitates oversight.
 }
 \normative{
-Each model SHALL ship with documentation packages, including model cards, decision traces, and limitations. Explanations MUST be
-available in technical and civic formats and SHALL reference charter clauses. Documentation SHALL be stored in public registers
-unless restricted by privacy constraints; in such cases, summaries SHALL be provided. Implementers SHALL update documentation after
+Each model \shall{} ship with documentation packages, including model cards, decision traces, and limitations. Explanations MUST be
+available in technical and civic formats and \shall{} reference charter clauses. Documentation \shall{} be stored in public registers
+unless restricted by privacy constraints; in such cases, summaries \shall{} be provided. Implementers \shall{} update documentation after
 significant changes and MUST log revisions in (AEIP §O.6).
 }
 
@@ -92,12 +92,13 @@ mandates, ethical charters, and data stewardship verifications. Governance Publi
 registries capture version hashes and attestation signatures.
 }
 \normative{
-Release decisions SHALL require sign-off from custodians, oversight councils, and community reviewers. Approval packages MUST
-include design specifications, training logs, evaluation reports, and risk mitigations. Release hashes SHALL be published in
-\texttt{INTEGRITY\_NOTICE.md} and recorded in (AEIP §O.5). Deployments SHALL NOT proceed without completed release documentation and
+Release decisions \shall{} require sign-off from custodians, oversight councils, and community reviewers. Approval packages MUST
+include design specifications, training logs, evaluation reports, and risk mitigations. Release hashes \shall{} be published in
+\texttt{INTEGRITY\_NOTICE.md} and recorded in (AEIP §O.5). Deployments \shall{not} proceed without completed release documentation and
 public notification through Layer 7 channels.
 }
 
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/aeip/modelcard-schema.json}, \texttt{schemas/modelcard-template.yaml}, and \texttt{schemas/decision-rationale-record.jsonld} and corresponding AEIP audit records.
+\input{chapters/generated/layer3-control-table}
 \clearpage

@@ -81,36 +81,38 @@ recordkeeper that keeps democratic control alive between deployments.
 \textbf{Narrative Intent:} Layer 7 responds to the common opacity of governance outputs by detailing how deliberations, approvals, and remediation reports must be published in accessible formats.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Governance offices SHALL release canonical summaries using \texttt{schemas/governance-decision-summary.jsonld} within statutory publication windows.
-\item Oversight chairs SHALL lodge review conclusions through \texttt{schemas/oam-schema.yaml} whenever audits touch multiple layers.
-\item Communications teams SHOULD cross-link civic briefings to \texttt{schemas/oversight-audit-memo.jsonld} artefacts to preserve interpretive transparency.
+\item Governance offices \shall{} release canonical summaries using \texttt{schemas/governance-decision-summary.jsonld} within statutory publication windows.
+\item Oversight chairs \shall{} lodge review conclusions through \texttt{schemas/oam-schema.yaml} whenever audits touch multiple layers.
+\item Communications teams \should{} cross-link civic briefings to \texttt{schemas/oversight-audit-memo.jsonld} artefacts to preserve interpretive transparency.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This chapter tells institutions how to publish their decisions. It ensures the same templates are used so people know where to look. It also keeps audit findings tied to official releases. Readers get a predictable path to the evidence behind announcements.
 
 \normative{
-Institutions operating at Layer 7 SHALL publish Governance Disclosure Statements that summarise purpose, risk models, control
-mappings, and civic obligations. Each GDS SHALL include indices of non-sensitive AEIP receipts or corresponding hashes, enabling
-stakeholders to request evidence through Appendix N §1 verification flows. Narrative explanations SHALL coexist with technical
+Institutions operating at Layer 7 \shall{} publish Governance Disclosure Statements that summarise purpose, risk models, control
+mappings, and civic obligations. Each GDS \shall{} include indices of non-sensitive AEIP receipts or corresponding hashes, enabling
+stakeholders to request evidence through Appendix N §1 verification flows. Narrative explanations \shall{} coexist with technical
 details so that the dual-register standard is preserved for varied audiences.
 
-Publication pipelines SHALL maintain cryptographic indices referencing Annex IV crosswalk tables, Appendix I §3 conformance
-status, and GDPR accountability records. Indices MUST be updated with every substantive change and SHALL expose query interfaces
+Publication pipelines \shall{} maintain cryptographic indices referencing Annex IV crosswalk tables, Appendix I §3 conformance
+status, and GDPR accountability records. Indices MUST be updated with every substantive change and \shall{} expose query interfaces
 that allow auditors to confirm receipt integrity without revealing personal data. Any removal or redaction of entries MUST be
 recorded with justification and AEIP signatures.
 
-Renewal schedules and performance metrics SHALL be published alongside their data sources, timestamps, and AEIP receipt hashes.
+Renewal schedules and performance metrics \shall{} be published alongside their data sources, timestamps, and AEIP receipt hashes.
 Metrics MUST cover risk thresholds, grievance response times, CAPA closure rates, and privacy conformance outcomes. Where metrics
-fall outside declared tolerances, institutions SHALL publish remediation plans referencing Appendix B actions and SHALL provide
+fall outside declared tolerances, institutions \shall{} publish remediation plans referencing Appendix B actions and \shall{} provide
 progress updates until closure.
 
-Substantive API or behavioural changes MUST be attested, timestamped, and recorded in Change Notices. Prior versions SHALL remain
-publicly referencable, with diff annotations and links to supporting evidence. Emergency hotfixes MAY proceed within declared
+Substantive API or behavioural changes MUST be attested, timestamped, and recorded in Change Notices. Prior versions \shall{} remain
+publicly referencable, with diff annotations and links to supporting evidence. Emergency hotfixes \may{} proceed within declared
 change windows only if accompanied by a signed justification and an after-action AEIP bundle released through Layer 7 channels.
 
-When invoking audit powers or requesting privileged evidence, oversight actors SHALL reciprocate by publishing their governance
-artifacts, including legal authorities, handling safeguards, and accountability contacts (Appendix E §3). Dual-Transparency SHALL
+When invoking audit powers or requesting privileged evidence, oversight actors \shall{} reciprocate by publishing their governance
+artifacts, including legal authorities, handling safeguards, and accountability contacts (Appendix E §3). Dual-Transparency \shall{}
 apply to all federated exchanges: any request for deeper access MUST be matched with an attested statement of oversight duties
-and AEIP verification tokens. Failure to reciprocate SHALL pause evidence transfer until obligations are met.
+and AEIP verification tokens. Failure to reciprocate \shall{} pause evidence transfer until obligations are met.
 }
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/governance-decision-summary.jsonld}, \texttt{schemas/oam-schema.yaml}, and \texttt{schemas/oversight-audit-memo.jsonld} and corresponding AEIP audit records.
+\input{chapters/generated/layer7-control-table}
+\clearpage

@@ -14,9 +14,9 @@ revised.
 \textbf{Narrative Intent:} Layer 5 is designed for the human problem of inscrutable AI deliberations, forcing conversation trails to be legible, contestable, and aligned with civic norms.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Dialogue stewards SHALL preserve exchange transcripts within \texttt{schemas/interpretive-trace-package.jsonld} to capture context and participants.
-\item Facilitators SHALL reconcile vocabulary conflicts using \texttt{schemas/svc/semantic-registry.jsonld} before approving automated reasoning policies.
-\item Governance publishers SHOULD summarise debate outcomes through \texttt{schemas/governance-decision-summary.jsonld} so civic readers see the implications.
+\item Dialogue stewards \shall{} preserve exchange transcripts within \texttt{schemas/interpretive-trace-package.jsonld} to capture context and participants.
+\item Facilitators \shall{} reconcile vocabulary conflicts using \texttt{schemas/svc/semantic-registry.jsonld} before approving automated reasoning policies.
+\item Governance publishers \should{} summarise debate outcomes through \texttt{schemas/governance-decision-summary.jsonld} so civic readers see the implications.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This layer keeps AI-human conversations accountable. It stores dialogue, checks language, and reports what decisions came out of the exchange. People can replay the reasoning trail without special tools. That visibility protects against hidden persuasion or bias.
 
@@ -28,9 +28,9 @@ v1, protocols include turn-taking rules, evidence citation formats, and escalati
 that dialogues remain inclusive and accessible, supporting multilingual and multimodal communication.
 }
 \normative{
-Organizations SHALL formalise reasoning dialogue protocols, specifying participant roles, evidence requirements, and escalation
-paths. Protocols MUST be published and SHALL reference relevant appendices, including Appendix G participation safeguards.
-Implementation details SHALL be documented in (AEIP §O.3). Systems SHALL NOT engage in high-stakes reasoning without an approved
+Organizations \shall{} formalise reasoning dialogue protocols, specifying participant roles, evidence requirements, and escalation
+paths. Protocols MUST be published and \shall{} reference relevant appendices, including Appendix G participation safeguards.
+Implementation details \shall{} be documented in (AEIP §O.3). Systems \shall{not} engage in high-stakes reasoning without an approved
 protocol.
 }
 
@@ -41,9 +41,9 @@ invoked, and dissent raised. The narrative explains how logs enable retrospectiv
 it aligned with the civic mandate. Logs also provide material for future training, audits, and amendments.
 }
 \normative{
-Reasoning exchanges SHALL generate hermeneutic logs stored in (AEIP §O.4). Logs MUST include timestamps, participants, evidence
-references, and decision outcomes. Sensitive content SHALL be redacted in accordance with Appendix E §3, with access controls noted
-in AEIP metadata. Custodians SHALL ensure logs are discoverable for oversight and SHALL provide summaries for public review when
+Reasoning exchanges \shall{} generate hermeneutic logs stored in (AEIP §O.4). Logs MUST include timestamps, participants, evidence
+references, and decision outcomes. Sensitive content \shall{} be redacted in accordance with Appendix E §3, with access controls noted
+in AEIP metadata. Custodians \shall{} ensure logs are discoverable for oversight and \shall{} provide summaries for public review when
 full disclosure would compromise privacy.
 }
 
@@ -54,10 +54,10 @@ details for engineers, legal rationales for policymakers, and accessible narrati
 context-aware explanations tailored to community norms.
 }
 \normative{
-Explanation interfaces SHALL present consistent information across audiences while adapting depth and language. Interfaces MUST
-reference charter clauses, mandate obligations, and AEIP evidence IDs. Updates to reasoning or outcomes SHALL trigger interface
+Explanation interfaces \shall{} present consistent information across audiences while adapting depth and language. Interfaces MUST
+reference charter clauses, mandate obligations, and AEIP evidence IDs. Updates to reasoning or outcomes \shall{} trigger interface
 refreshes within defined service windows. Accessibility standards, including support for assistive technologies and multilingual
-content, SHALL be met.
+content, \shall{} be met.
 }
 
 \section*{Deliberative Review}
@@ -67,9 +67,9 @@ whether decisions reflected values, evidence, and rights commitments. The narrat
 Update Plan 10, where participants debated trade-offs and recommended adjustments to charters and mandates.
 }
 \normative{
-Deliberative reviews SHALL occur at scheduled intervals and after major incidents. Reviews MUST include diverse stakeholders and
-SHALL be documented in (AEIP §O.6) with agendas, minutes, and outcomes. Recommendations SHALL receive formal responses from
-custodians within 60 days. Failure to conduct reviews SHALL trigger audits under Appendix H oversight provisions.
+Deliberative reviews \shall{} occur at scheduled intervals and after major incidents. Reviews MUST include diverse stakeholders and
+\shall{} be documented in (AEIP §O.6) with agendas, minutes, and outcomes. Recommendations \shall{} receive formal responses from
+custodians within 60 days. Failure to conduct reviews \shall{} trigger audits under Appendix H oversight provisions.
 }
 
 \section*{Conflict Resolution and Mediation}
@@ -78,9 +78,9 @@ Reasoning exchange includes structured mediation when disputes arise. Mediators 
 values, or obligations. The narrative discusses mediation frameworks that respect community autonomy and preserve rights.
 }
 \normative{
-Mediation protocols SHALL be established in alignment with Appendix B remediation processes. Mediators MUST be impartial, trained,
-and recorded in (AEIP §O.5). Mediation outcomes SHALL specify whether charters, mandates, or operational policies require updates.
-Parties SHALL receive written summaries, and unresolved disputes MAY escalate to mandate review.
+Mediation protocols \shall{} be established in alignment with Appendix B remediation processes. Mediators MUST be impartial, trained,
+and recorded in (AEIP §O.5). Mediation outcomes \shall{} specify whether charters, mandates, or operational policies require updates.
+Parties \shall{} receive written summaries, and unresolved disputes \may{} escalate to mandate review.
 }
 
 \section*{Continuous Learning}
@@ -90,12 +90,13 @@ data stewardship, and model design. The narrative emphasises iterative learning,
 in later chapters.
 }
 \normative{
-Insights derived from reasoning exchanges SHALL be synthesised into learning reports stored in (AEIP §O.7). Reports MUST highlight
-implications for each preceding layer and SHALL recommend actions or amendments. Custodians SHALL track implementation of learning
-recommendations and SHALL report progress through Governance Publication channels. Neglecting continuous learning SHALL be treated
+Insights derived from reasoning exchanges \shall{} be synthesised into learning reports stored in (AEIP §O.7). Reports MUST highlight
+implications for each preceding layer and \shall{} recommend actions or amendments. Custodians \shall{} track implementation of learning
+recommendations and \shall{} report progress through Governance Publication channels. Neglecting continuous learning \shall{} be treated
 as a governance deficiency subject to oversight intervention.
 }
 
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/interpretive-trace-package.jsonld}, \texttt{schemas/svc/semantic-registry.jsonld}, and \texttt{schemas/governance-decision-summary.jsonld} and corresponding AEIP audit records.
+\input{chapters/generated/layer5-control-table}
 \clearpage

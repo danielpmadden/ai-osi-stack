@@ -14,16 +14,20 @@ Stories highlight how care teams use persona manifests to separate supportive co
 \textbf{Narrative Intent:} This chapter responds to concerns that AI therapy tools could harm patients by clarifying credentialing, incident response, and persona responsibilities in clinical settings.
 \textbf{Normative Clauses:}
 \begin{itemize}
-\item Clinical operators SHALL verify practitioner status through \texttt{schemas/therapy/credential-verification.jsonld} before AI-assisted care begins.
-\item Custodians SHALL report adverse events using \texttt{schemas/aeip/incident-report-schema.json} within mandated health timelines.
-\item Care designers SHOULD align therapeutic personas with \texttt{schemas/persona/persona-manifest.jsonld} to delineate authority and escalation paths.
+\item Clinical operators \shall{} verify practitioner status through \texttt{schemas/therapy/credential-verification.jsonld} before AI-assisted care begins.
+\item Custodians \shall{} report adverse events using \texttt{schemas/aeip/incident-report-schema.json} within mandated health timelines.
+\item Care designers \should{} align therapeutic personas with \texttt{schemas/persona/persona-manifest.jsonld} to delineate authority and escalation paths.
 \end{itemize}
 \textbf{Plain-Speak Summary:} This chapter protects people who rely on AI-assisted therapy. It checks clinician credentials, tracks incidents, and clarifies roles. Patients can see which professionals are accountable. If harm occurs, the response steps are already mapped.
 
 \normative{
-Therapy-aligned deployments SHALL implement credential-verification schemas, human oversight loops, and crisis escalation playbooks mapped to Appendices B, E, and F. Platforms MUST document consent scopes, data minimisation practices, and cross-border safeguarding obligations in AEIP-accessible ledgers. Any automation of therapeutic guidance SHALL remain subordinate to licensed professionals, with clear handoff procedures and auditable transcripts.
+Therapy-aligned deployments \shall{} implement credential-verification schemas, human oversight loops, and crisis escalation playbooks mapped to Appendices B, E, and F. Platforms MUST document consent scopes, data minimisation practices, and cross-border safeguarding obligations in AEIP-accessible ledgers. Any automation of therapeutic guidance \shall{} remain subordinate to licensed professionals, with clear handoff procedures and auditable transcripts.
 
-Custodians MUST provide community reporting channels, cultural-competence reviews, and grievance remediation pathways for therapy-tech services. Federated partners SHALL harmonise duty-of-care obligations through shared governance councils, publishing public attestation of compliance and remedial actions when standards lapse.
+Custodians MUST provide community reporting channels, cultural-competence reviews, and grievance remediation pathways for therapy-tech services. Federated partners \shall{} harmonise duty-of-care obligations through shared governance councils, publishing public attestation of compliance and remedial actions when standards lapse.
 }
+\begin{quote}
+\textit{Operational Note. Canon 23 is anchored to AEIP incident report timelines and data stewardship tags so therapeutic deployments follow documented consent and escalation paths.}
+\end{quote}
+
 \n\subsection*{Verification and Enforcement}
 Conformance is evidenced through artefacts \texttt{schemas/therapy/credential-verification.jsonld}, \texttt{schemas/aeip/incident-report-schema.json}, and \texttt{schemas/persona/persona-manifest.jsonld} and corresponding AEIP audit records.
