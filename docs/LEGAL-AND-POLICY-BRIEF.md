@@ -4,7 +4,7 @@
 
 **Author:** Daniel P. Madden  
 **Version:** v5.0  
-**Repository:** [github.com/ai-osi/ai-osi-stack](https://github.com/ai-osi/ai-osi-stack)
+**Repository:** [github.com/danielpmadden/ai-osi-stack](https://github.com/danielpmadden/ai-osi-stack)
 **Domain:** [aiosi.org](https://aiosi.org)  
 **DOI:** [10.5281/zenodo.17517241](https://doi.org/10.5281/zenodo.17517241)  
 **License:** CC BY-SA 4.0 (Docs) / Apache 2.0 (Code)
@@ -84,7 +84,7 @@ All examples are synthetic; all standards references are alignment guides, not l
 ## Contact
 
 - Website: [danielpmadden.com](https://danielpmadden.com)  
-- Repository: [github.com/ai-osi/ai-osi-stack](https://github.com/ai-osi/ai-osi-stack)
+- Repository: [github.com/danielpmadden/ai-osi-stack](https://github.com/danielpmadden/ai-osi-stack)
 - DOI Record: [10.5281/zenodo.17517241](https://doi.org/10.5281/zenodo.17517241)  
 - Domain: [aiosi.org](https://aiosi.org)
 

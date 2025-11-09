@@ -1,5 +1,3 @@
 # SPDX-License-Identifier: Apache-2.0
 
-schemas/**        @ai-osi/governance-review
-ops/**            @ai-osi/platform-security
-docs/**           @ai-osi/editorial
+* @danielpmadden

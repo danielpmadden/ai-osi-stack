@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+title: "AI OSI Stack"
+type: software
+abstract: "Canonical governance blueprint for accountable AI operations authored and maintained solely by Daniel P. Madden."
+version: "v5.0-rc"
+date-released: 2025-11-09
+repository-code: "https://github.com/danielpmadden/ai-osi-stack"
+authors:
+  - name: "Daniel P. Madden"
+    family-names: "Madden"
+    given-names: "Daniel P."
+    email: "44127480+danielpmadden@users.noreply.github.com"
+    affiliation: "Independent, self-funded project"

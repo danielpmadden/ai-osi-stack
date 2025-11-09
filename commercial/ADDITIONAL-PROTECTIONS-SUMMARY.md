@@ -3,7 +3,7 @@
 
 **Canonical Version:** AI OSI Stack v5.0  \
 **Author:** Daniel P. Madden  \
-**Repository:** https://github.com/ai-osi/ai-osi-stack  \
+**Repository:** https://github.com/danielpmadden/ai-osi-stack  \
 **Licensing:** Documentation released under CC BY-SA 4.0; associated code under Apache-2.0.  \
 **Jurisdiction:** United States (jurisdiction-neutral; informational only; not legal advice).
 

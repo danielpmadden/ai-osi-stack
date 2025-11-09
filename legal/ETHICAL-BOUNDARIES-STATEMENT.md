@@ -4,7 +4,7 @@
 # AI OSI Stack v5.0 Ethical Boundaries Statement
 
 1. Purpose. This statement codifies the ethical boundaries governing AI OSI Stack v5.0 usage and stewardship.
-2. Canonical References. Official materials reside at https://github.com/ai-osi/ai-osi-stack and https://aiosi.org.
+2. Canonical References. Official materials reside at https://github.com/danielpmadden/ai-osi-stack and https://aiosi.org.
 3. Creation Timeline. Ethical directives were established during AI OSI Stack v0 development on [DATE PLACEHOLDER: 2021-01-15] and reaffirmed throughout v5.0 completion on [DATE PLACEHOLDER: 2024-12-15].
 4. Funding Disclosure. Ethical governance activities are self-funded with no institutional sponsorship.
 5. Ethical Commitments.
