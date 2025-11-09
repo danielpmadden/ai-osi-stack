@@ -4,15 +4,23 @@
 ### A Governance Blueprint for Scalable and Trusted AI
 ---
 
-[![GitHub Repository](https://img.shields.io/badge/Repository-Verified%20Custodial-blue?logo=github)](https://github.com/danielpmadden/ai-osi-stack)
+#### Custodianship & Identity 
+[![GitHub Repository](https://img.shields.io/badge/Repository-Verified%20Custodial-blue?logo=github)](https://github.com/danielpmadden/ai-osi-stack) 
 [![ORCID – Daniel P. Madden](https://img.shields.io/badge/ORCID-0009--0004--3024--1347-A6CE39?logo=orcid&logoColor=white)](https://orcid.org/0009-0004-3024-1347)
 
+#### Archival & Provenance Records
 [![Zenodo Archive](https://img.shields.io/badge/Zenodo-Minted%20Record-blue)](https://zenodo.org/records/17566796)
+[![DataCite Registered](https://img.shields.io/badge/DataCite-Registered-success?logo=datacite)](https://commons.datacite.org/)
+[![FAIR Data Principles](https://img.shields.io/badge/FAIR-Data%20Compliant-009688.svg)](https://www.go-fair.org/fair-principles/)
+
 [![DOI – AI OSI Stack v4 (Master Edition)](https://zenodo.org/badge/DOI/10.5281/zenodo.17517241.svg)](https://doi.org/10.5281/zenodo.17517241)
 [![DOI – AI OSI Stack v5 Release Candidate (Deepbuild Draft)](https://zenodo.org/badge/DOI/10.5281/zenodo.17566796.svg)](https://doi.org/10.5281/zenodo.17566796)
 [![DOI – Citation Corpus / Collected References](https://zenodo.org/badge/DOI/10.5281/zenodo.17490086.svg)](https://doi.org/10.5281/zenodo.17490086)
 
+#### Licensing & Lifecycle
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-nd/4.0/)
+[![Version](https://img.shields.io/badge/SemVer-v5.0--RC-blue)](https://semver.org/)
+[![Governance Status](https://img.shields.io/badge/Governance-Release%20Candidate-orange)](https://doi.org/10.5281/zenodo.17566796)
 
 ## Overview
 
