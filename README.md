@@ -16,7 +16,11 @@ The Stack translates civic mandates and ethical commitments into operational con
 
 ### Authorship & Provenance
 
-Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
+> **Authorship & Provenance**  
+> The AI OSI Stack was conceived, authored, and maintained solely by **Daniel P. Madden**  
+> under GitHub identity `44127480+danielpmadden@users.noreply.github.com`.  
+> There is no institutional, corporate, or governmental backing. Unauthorized contributor
+> entries have been removed.
 
 Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.
 
@@ -229,7 +233,7 @@ Canonical metadata:
 - `canonical_version = "AI OSI Stack v5.0.0"`
 - `canonical_date = "2025-11-09"`
 - `aeip_version = "1.3"`
-- `repository_of_record = "https://github.com/ai-osi/ai-osi-stack"`
+- `repository_of_record = "https://github.com/danielpmadden/ai-osi-stack"`
 - `domain_of_record = "https://aiosi.org"`
 - `supersedes_all_prior_metadata = true`
 
@@ -239,7 +243,7 @@ Canonical metadata:
 
 Author: Daniel P. Madden  
 Website: https://danielpmadden.com
-Repository: https://github.com/ai-osi/ai-osi-stack
+Repository: https://github.com/danielpmadden/ai-osi-stack
 
 Suggested citation:
 
@@ -253,7 +257,11 @@ Documentation (Markdown, LaTeX, and narrative assets) is released under **Creati
 
 Source code (Python, TypeScript, automation scripts) is released under the **Apache License 2.0**.
 
-Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
+> **Authorship & Provenance**  
+> The AI OSI Stack was conceived, authored, and maintained solely by **Daniel P. Madden**  
+> under GitHub identity `44127480+danielpmadden@users.noreply.github.com`.  
+> There is no institutional, corporate, or governmental backing. Unauthorized contributor
+> entries have been removed.
 
 Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden. Mistakes will happen. I'm only one human.
 

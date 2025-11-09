@@ -3,7 +3,7 @@
 # AI Hallucination & Slop Audit — v5-RC Pre-Publication
 
 ## Executive Summary
-The repository was re-baselined against the metadata alignment checklist. All canonical references now cite version 5.0.0, the canonical date 2025-11-09, and the repository of record at https://github.com/ai-osi/ai-osi-stack. Integrity collateral was rewritten to mark hashes, signatures, and key fingerprints as pending until the sealing ceremony, eliminating prior fabricated assurance language. AEIP schemas and reference receipts now expose the governance-layer fields called for in the v1.3 specification while flagging deferred privacy and immutable-hash commitments.
+The repository was re-baselined against the metadata alignment checklist. All canonical references now cite version 5.0.0, the canonical date 2025-11-09, and the repository of record at https://github.com/danielpmadden/ai-osi-stack. Integrity collateral was rewritten to mark hashes, signatures, and key fingerprints as pending until the sealing ceremony, eliminating prior fabricated assurance language. AEIP schemas and reference receipts now expose the governance-layer fields called for in the v1.3 specification while flagging deferred privacy and immutable-hash commitments.
 
 All previously identified critical and high-severity findings have been remediated or archived. Legacy v4 collateral and audit narratives were migrated into `archive/v4/` to preserve history without polluting the v5 release candidate. The outstanding work for publication sealing is limited to publishing final hashes, detached signatures, and downstream key material when the ceremony occurs.
 

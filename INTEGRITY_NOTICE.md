@@ -4,7 +4,7 @@
 
 **Canonical version:** v5.0.0 (established 2025-11-09)
 
-This repository (`https://github.com/ai-osi/ai-osi-stack`) and domain of record (`https://aiosi.org`) are the sole canonical sources for the AI OSI Stack and affiliated AEIP specifications. Only artifacts signed by the release maintainers and recorded in this notice are normative.
+This repository (`https://github.com/danielpmadden/ai-osi-stack`) and domain of record (`https://aiosi.org`) are the sole canonical sources for the AI OSI Stack and affiliated AEIP specifications. Only artifacts signed by Daniel P. Madden and recorded in this notice are normative.
 
 ## Signed Artifacts (SHA-512)
 
@@ -16,11 +16,11 @@ This repository (`https://github.com/ai-osi/ai-osi-stack`) and domain of record 
 
 Signing and hash publication will occur once the v5 release is sealed; until then, placeholders remain for visibility only.
 
-Hashes must be updated immediately after a new canonical release. Every update should be signed using the maintainers' detached signatures stored alongside the artifacts once the signing ceremony is complete.
+Hashes must be updated immediately after a new canonical release. Every update should be signed using Daniel P. Madden's detached signatures stored alongside the artifacts once the signing ceremony is complete.
 
 ## Repository-of-Record & Domain-of-Record
 
-- **Repository:** https://github.com/ai-osi/ai-osi-stack (mirror: https://gitlab.com/ai-osi/ai-osi-stack)
+- **Repository:** https://github.com/danielpmadden/ai-osi-stack
 - **Domain:** https://aiosi.org
 - **Supersedes:** v4.x advisory publications (archived in `/versions/legacy/`)
 
@@ -45,4 +45,4 @@ Hashes must be updated immediately after a new canonical release. Every update s
 - Compare SHA-512 hashes recorded above with locally generated values.
 - Confirm release tags are signed and protected via branch protection rules.
 
-The maintainers reserve the right to revoke non-canonical mirrors. Forks are informational only and cannot claim canonical status without signed delegation.
+Daniel P. Madden reserves the right to revoke non-canonical mirrors. Forks are informational only and cannot claim canonical status without signed delegation.
