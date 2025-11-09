@@ -404,4 +404,4 @@ specification drift.
 - `version`: 1.3.0
 - `date`: 2024-06-19
 - `license`: AI OSI Stack Documentation License 1.0
-- `repository_of_record`: https://github.com/ai-osi/ai-osi-stack
+- `repository_of_record`: https://github.com/danielpmadden/ai-osi-stack

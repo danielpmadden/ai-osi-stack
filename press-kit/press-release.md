@@ -14,7 +14,7 @@ Highlights include:
 
 The release also ships with an advisory integrity workflow, updated schema cross-references, audits for every chapter, and a readability export for accessibility reviews. The new press kit supplies a fact sheet, FAQs, and media placeholders to help governments and enterprises brief their stakeholders quickly. All materials honour the Stack’s principle: civic legitimacy, technical precision, and legal accountability must move together.
 
-Version 5.0 is preserved on [Zenodo](https://zenodo.org/record/placeholder) and maintained in the open-source repository at [github.com/civicstack/ai-osi-stack](https://github.com/civicstack/ai-osi-stack). Media and partnership enquiries can be directed to [press@ai-osi.org](mailto:press@ai-osi.org).
+Version 5.0 is preserved on [Zenodo](https://zenodo.org/record/placeholder) and maintained in the open-source repository at [github.com/danielpmadden/ai-osi-stack](https://github.com/danielpmadden/ai-osi-stack). Media and partnership enquiries can be directed to [44127480+danielpmadden@users.noreply.github.com](mailto:44127480+danielpmadden@users.noreply.github.com).
 
 ---
 

@@ -4,7 +4,7 @@
 # AI OSI Stack v5.0 Copyright and License Map
 
 1. Overview. This map consolidates copyright ownership and licensing allocations for AI OSI Stack v5.0.
-2. Canonical References. Repository: https://github.com/ai-osi/ai-osi-stack. Domain: https://aiosi.org. All license notices incorporated herein align with the canonical sources.
+2. Canonical References. Repository: https://github.com/danielpmadden/ai-osi-stack. Domain: https://aiosi.org. All license notices incorporated herein align with the canonical sources.
 3. Creation Timeline. Baseline copyright established at v0 on [DATE PLACEHOLDER: 2021-01-15]; latest revision cycle culminating in v5.0 completed on [DATE PLACEHOLDER: 2024-12-15].
 4. Funding Disclosure. Development and maintenance remain self-funded with no institutional backing.
 5. Licensing Split.

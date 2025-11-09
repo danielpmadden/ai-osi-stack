@@ -4,7 +4,9 @@
 
 ## Reporting Vulnerabilities
 
-Email **security@aiosi.org** with the subject `AI OSI Stack Security Disclosure`. If you require encryption, use the project PGP key:
+SECURITY_CONTACT: 44127480+danielpmadden@users.noreply.github.com
+
+Email **44127480+danielpmadden@users.noreply.github.com** with the subject `AI OSI Stack Security Disclosure`. If you require encryption, use the project PGP key:
 
 ```
 Fingerprint: [pending release fingerprint]

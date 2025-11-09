@@ -4,7 +4,7 @@
 # AI OSI Stack v5.0 Succession and Custodianship Note
 
 1. Purpose. This note documents succession planning and custodianship directives for AI OSI Stack v5.0 assets.
-2. Canonical References. Authoritative resources are the repository at https://github.com/ai-osi/ai-osi-stack and the domain https://aiosi.org.
+2. Canonical References. Authoritative resources are the repository at https://github.com/danielpmadden/ai-osi-stack and the domain https://aiosi.org.
 3. Creation Timeline. Succession considerations originated during AI OSI Stack v2 governance planning on [DATE PLACEHOLDER: 2022-09-01] and were updated for v5.0 on [DATE PLACEHOLDER: 2024-12-15].
 4. Funding Disclosure. Planning and documentation remain self-funded by Daniel P. Madden.
 5. Current Custodian. Daniel P. Madden retains full custodianship over source materials, domain assets, and publication infrastructure.

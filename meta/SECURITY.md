@@ -12,7 +12,7 @@ AI OSI Stack v5 treats security as governance infrastructure. The primary threat
 Controls are layered: advisory checksum guidance supports provenance tracking, AEIP records bind payloads to custodians, and governance ledgers expose every change for public audit.
 
 ## Coordinated Disclosure Process
-Report suspected vulnerabilities or integrity failures to **security@aiosi.org (test example)** with the subject line “AI OSI Stack v5 Security Disclosure.” Include:
+Report suspected vulnerabilities or integrity failures to **44127480+danielpmadden@users.noreply.github.com** with the subject line “AI OSI Stack v5 Security Disclosure.” Include:
 1. A detailed description of the issue and reproduction steps.
 2. Potential impact across AEIP layers or governance operations.
 3. Any proof-of-concept materials.
