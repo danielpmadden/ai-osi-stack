@@ -12,7 +12,7 @@ COPY schemas schemas
 COPY tests tests
 COPY requirements.txt requirements.txt
 
-FROM python:3.12-alpine AS python_deps
+FROM python:3.14-alpine AS python_deps
 WORKDIR /wheel
 COPY requirements.txt ./
 RUN pip wheel --wheel-dir=/wheel -r requirements.txt
