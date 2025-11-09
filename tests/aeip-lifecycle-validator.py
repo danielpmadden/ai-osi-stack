@@ -1,57 +1,92 @@
 # SPDX-License-Identifier: Apache-2.0
-
-"""AEIP lifecycle validator utilities and accompanying tests.
-
-The module defines helper functions that validate receipts, advisory verification blocks, and
-layer paths for AEIP governed artifacts. These utilities support future
-integration with governance pipelines and ensure Update Plan 12 requirements
-remain testable.
-"""
+"""Lifecycle validation helpers for AEIP receipts."""
 
 from __future__ import annotations
 
-from typing import Iterable
+import json
+from pathlib import Path
+from typing import Iterable, List, Sequence
 
-VALID_LAYERS = {
-    "L0",
-    "L1",
-    "L2",
-    "L3",
-    "L4",
-    "L5",
-    "L6",
-    "L7",
-    "L8",
-}
+REPO_ROOT = Path(__file__).resolve().parents[1]
+EXAMPLE_DIR = REPO_ROOT / "examples" / "aeip"
+EXPECTED_SEQUENCE: Sequence[str] = ("Intent", "Justify", "CounterSign", "Commit", "Update")
 
 
-def validate_receipts(receipts: Iterable[dict]) -> bool:
-    """Ensure at least one receipt exists and every receipt has an identifier."""
-    receipts = list(receipts)
-    if not receipts:
-        return False
-    return all("receiptId" in receipt and receipt["receiptId"] for receipt in receipts)
+class LifecycleError(RuntimeError):
+    """Raised when AEIP lifecycle transitions are invalid."""
 
 
-def validate_signatures(receipts: Iterable[dict]) -> bool:
-    """Check that every receipt carries an advisory verification block."""
-    for receipt in receipts:
-        verification = receipt.get("verification", {})
-        if not isinstance(verification, dict):
-            return False
-        if not verification.get("logger") or not verification.get("checksum_guidance"):
-            return False
-    return True
+def load_receipts() -> List[dict]:
+    receipts: List[dict] = []
+    for path in sorted(EXAMPLE_DIR.glob("*.jsonld")):
+        with path.open("r", encoding="utf-8") as handle:
+            receipts.append(json.load(handle))
+    return receipts
 
 
-def validate_layer_path(layer_path: str) -> bool:
-    """Validate an AEIP layer path of the form L{n}[.subdomain]."""
-    if not layer_path:
-        return False
-    segments = layer_path.split(".")
-    if segments[0] not in VALID_LAYERS:
-        return False
-    return all(segment.isalnum() for segment in segments[1:])
+def validate_privacy_block(receipt: dict) -> None:
+    privacy = receipt.get("privacy", {})
+    scope = privacy.get("scope")
+    if scope not in {"public", "restricted", "deidentified", "internal"}:
+        raise LifecycleError(f"{receipt['id']} invalid privacy scope: {scope}")
+    if not privacy.get("notes"):
+        raise LifecycleError(f"{receipt['id']} missing privacy notes")
+
+
+def validate_provenance_block(receipt: dict) -> None:
+    provenance = receipt.get("provenance", {})
+    if not provenance.get("source"):
+        raise LifecycleError(f"{receipt['id']} missing provenance.source")
+    if not provenance.get("method"):
+        raise LifecycleError(f"{receipt['id']} missing provenance.method")
+
+
+def validate_uncertainty(receipt: dict) -> None:
+    uncertainty = receipt.get("uncertainty", {})
+    score = uncertainty.get("score")
+    if not isinstance(score, (int, float)) or not 0 <= score <= 1:
+        raise LifecycleError(f"{receipt['id']} uncertainty.score must be between 0 and 1")
+
+
+def validate_signatures(receipt: dict) -> None:
+    signatures = receipt.get("signatures", [])
+    if not signatures:
+        raise LifecycleError(f"{receipt['id']} missing signatures")
+    for signature in signatures:
+        value = signature.get("value", "")
+        if "[redacted" not in value:
+            raise LifecycleError(f"{receipt['id']} signature value must be redacted placeholder")
+
+
+def validate_lifecycle_chain(receipts: Iterable[dict]) -> None:
+    ordering = {receipt["lifecycle"]["current"]: receipt for receipt in receipts}
+    missing = [stage for stage in EXPECTED_SEQUENCE if stage not in ordering]
+    if missing:
+        raise LifecycleError(f"Missing lifecycle stages: {', '.join(missing)}")
+    for index, stage in enumerate(EXPECTED_SEQUENCE):
+        current = ordering[stage]
+        lifecycle = current["lifecycle"]
+        if lifecycle["current"] != stage:
+            raise LifecycleError(f"Receipt {current['id']} mislabels stage {stage}")
+        if index < len(EXPECTED_SEQUENCE) - 1:
+            expected_next = EXPECTED_SEQUENCE[index + 1]
+            if lifecycle.get("next") != expected_next:
+                raise LifecycleError(
+                    f"{current['id']} should advance to {expected_next} not {lifecycle.get('next')}"
+                )
+        if index > 0:
+            expected_prev = EXPECTED_SEQUENCE[index - 1]
+            if lifecycle.get("previous") not in {expected_prev, EXPECTED_SEQUENCE[index - 1]}:
+                raise LifecycleError(
+                    f"{current['id']} previous stage should be {expected_prev}"
+                )
+
+
+def validate_receipt(receipt: dict) -> None:
+    validate_privacy_block(receipt)
+    validate_provenance_block(receipt)
+    validate_uncertainty(receipt)
+    validate_signatures(receipt)
 
 
 # -------------------
@@ -59,62 +94,38 @@ def validate_layer_path(layer_path: str) -> bool:
 # -------------------
 
 
-def test_validate_receipts_success():
-    receipts = [
-        {
-            "receiptId": "R-001",
-            "verification": {"logger": "custodian", "checksum_guidance": "Record SHA-512 locally"},
-        },
-        {
-            "receiptId": "R-002",
-            "verification": {"logger": "auditor", "checksum_guidance": "Record SHA-512 locally"},
-        },
-    ]
-    assert validate_receipts(receipts) is True
+def test_examples_pass_validators() -> None:
+    receipts = load_receipts()
+    for receipt in receipts:
+        validate_receipt(receipt)
+    validate_lifecycle_chain(receipts)
 
 
-def test_validate_receipts_failure():
-    receipts = [
-        {
-            "receiptId": "",
-            "verification": {"logger": "custodian", "checksum_guidance": "Record SHA-512 locally"},
-        },
-    ]
-    assert validate_receipts(receipts) is False
+def test_invalid_uncertainty() -> None:
+    receipt = load_receipts()[0].copy()
+    receipt["uncertainty"] = {"score": 1.5}
+    try:
+        validate_uncertainty(receipt)
+    except LifecycleError:
+        return
+    raise AssertionError("Expected LifecycleError when uncertainty score exceeds range")
 
 
-def test_validate_signatures_success():
-    receipts = [
-        {
-            "receiptId": "R-001",
-            "verification": {"logger": "custodian", "checksum_guidance": "Record SHA-512 locally"},
-        }
-    ]
-    assert validate_signatures(receipts) is True
+def test_missing_signatures() -> None:
+    receipt = load_receipts()[0].copy()
+    receipt["signatures"] = []
+    try:
+        validate_signatures(receipt)
+    except LifecycleError:
+        return
+    raise AssertionError("Expected LifecycleError when signatures missing")
 
 
-def test_validate_signatures_failure_missing_block():
-    receipts = [{"receiptId": "R-001"}]
-    assert validate_signatures(receipts) is False
-
-
-def test_validate_signatures_failure_empty_fields():
-    receipts = [
-        {
-            "receiptId": "R-001",
-            "verification": {"logger": "", "checksum_guidance": ""},
-        }
-    ]
-    assert validate_signatures(receipts) is False
-
-
-def test_validate_layer_path_success():
-    assert validate_layer_path("L5.Reasoning.Exchange") is True
-
-
-def test_validate_layer_path_failure_unknown_layer():
-    assert validate_layer_path("L9.Unknown") is False
-
-
-def test_validate_layer_path_failure_invalid_segment():
-    assert validate_layer_path("L5.Reasoning-Exchange") is False
+def test_lifecycle_sequence_enforced() -> None:
+    receipts = load_receipts()
+    receipts[0]["lifecycle"]["next"] = "Commit"
+    try:
+        validate_lifecycle_chain(receipts)
+    except LifecycleError:
+        return
+    raise AssertionError("Expected LifecycleError when lifecycle chain is broken")

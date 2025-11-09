@@ -6,6 +6,11 @@
 
 ## Overview
 
+
+## Commercialization Note
+
+The AI OSI Stack is published as a free and open civic protocol. Governance registries, signature escrow, and compliance concierge services are available through the AI OSI Cooperative (contact: commercialization@aiosi.org). Service engagements follow the Rick-Adams model: canonical specifications remain libre, while hosted verification and accreditation offerings are commercial.
+
 > **Not legal advice / jurisdiction-neutral.** The Stack supplies governance architecture and advisory patterns; it does not substitute for legal counsel in any jurisdiction.
 
 The **AI OSI Stack** is a complete open-standard framework for governing artificial-intelligence systems from civic intent to technical implementation. It provides a **layered architecture**—analogous to the Internet’s OSI model—where every layer of an AI system carries explicit duties, evidence records, and public-interest safeguards.
