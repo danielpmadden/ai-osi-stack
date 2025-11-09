@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "source": "AI OSI Stack v5",
-    "repository": "https://github.com/danielpmadden/ai-osi-stack",
+    "source": "AI OSI Stack v5.0.0",
+    "repository": "https://github.com/ai-osi/ai-osi-stack",
     "license": "CC BY-SA 4.0",
     "generated": "2025-02-21",
     "notes": "Glossary snippet aligning civic vocabulary with Epistemology by Design."

@@ -16,7 +16,10 @@
   "summary": "Deployment plan finalized with rollback path and audit hooks enabled.",
   "privacy": {
     "scope": "public",
-    "notes": "Contains configuration references only; no personal data."
+    "notes": "Contains configuration references only; no personal data.",
+    "consent": { "deferred": true, "note": "Pending v5 sealing" },
+    "justification": { "deferred": true, "note": "Pending v5 sealing" },
+    "redaction": { "deferred": true, "note": "Pending v5 sealing" }
   },
   "provenance": {
     "source": "Deployment Orchestrator",
@@ -42,6 +45,7 @@
   "hashes": {
     "sha512": "d1c244d4a72dc7799eea07011e8532e66eb40bc03a44a1454563783bcb3f50c934b5f3ab8cf3905ef83ad475466ac7a8cf5aef28b372db3f87570488f7be6c66"
   },
+  "immutableHash": { "deferred": true, "note": "Pending v5 sealing" },
   "linked_artifacts": [
     "urn:uuid:33333333-3333-4333-8333-333333333333"
   ],

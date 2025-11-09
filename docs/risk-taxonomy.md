@@ -5,7 +5,7 @@
 
 # AI OSI Stack — Condensed Risk Taxonomy
 **Author:** Daniel P. Madden  
-**Version:** v4 – Blueprint Integration  
+**Version:** v5 – Ready for Publication Sealing  
 **Date:** November 2025
 
 > ## Normative Language Notice

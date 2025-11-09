@@ -55,7 +55,58 @@
       "required": ["scope", "notes"],
       "properties": {
         "scope": {"enum": ["public", "restricted", "deidentified", "internal"]},
-        "notes": {"type": "string"}
+        "notes": {"type": "string"},
+        "consent": {
+          "deferred": true,
+          "$comment": "To be added post-publication sealing",
+          "anyOf": [
+            {"type": "string"},
+            {"type": "null"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["deferred"],
+              "properties": {
+                "deferred": {"const": true},
+                "note": {"type": "string"}
+              }
+            }
+          ]
+        },
+        "justification": {
+          "deferred": true,
+          "$comment": "To be added post-publication sealing",
+          "anyOf": [
+            {"type": "string"},
+            {"type": "null"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["deferred"],
+              "properties": {
+                "deferred": {"const": true},
+                "note": {"type": "string"}
+              }
+            }
+          ]
+        },
+        "redaction": {
+          "deferred": true,
+          "$comment": "To be added post-publication sealing",
+          "anyOf": [
+            {"type": "boolean"},
+            {"type": "null"},
+            {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["deferred"],
+              "properties": {
+                "deferred": {"const": true},
+                "note": {"type": "string"}
+              }
+            }
+          ]
+        }
       }
     },
     "provenance": {
@@ -98,6 +149,23 @@
       "properties": {
         "sha512": {"type": "string", "pattern": "^[0-9a-fA-F]{128}$"}
       }
+    },
+    "immutableHash": {
+      "deferred": true,
+      "$comment": "To be added post-publication sealing",
+      "anyOf": [
+        {"type": "string"},
+        {"type": "null"},
+        {
+          "type": "object",
+          "additionalProperties": false,
+          "required": ["deferred"],
+          "properties": {
+            "deferred": {"const": true},
+            "note": {"type": "string"}
+          }
+        }
+      ]
     },
     "linked_artifacts": {
       "type": "array",

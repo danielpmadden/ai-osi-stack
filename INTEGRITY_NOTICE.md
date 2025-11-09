@@ -11,10 +11,12 @@ This repository (`https://github.com/ai-osi/ai-osi-stack`) and domain of record 
 | Artifact | SHA-512 | Notes |
 | --- | --- | --- |
 | `versions/ai-osi-stack-v5.pdf` | `87d0414872ab29393ee46e585c7dd49bf30c7c13bcf2637ff2bd52078c558b4b6a4598c0b3ffbebfe87588c391f9a002cac4f636efa392df04275266fee08156` | Canonical PDF reference edition |
-| `dist/ai-osi-stack-v5.0.0.tar.gz` | `TBD_AFTER_RELEASE` | Deterministic source bundle produced via `ops/release/mk-dist.sh` |
-| Additional notarized PDF annexes | `TBD_AFTER_RELEASE` | Record hash and OpenTimestamps proof when available |
+| `dist/ai-osi-stack-v5.0.0.tar.gz` | `[pending canonical publication – hashes will be issued in v5 release]` | Deterministic source bundle produced via `ops/release/mk-dist.sh` |
+| Additional notarized PDF annexes | `[pending canonical publication – hashes will be issued in v5 release]` | Record hash and OpenTimestamps proof when available |
 
-Hashes must be updated immediately after a new canonical release. Every update should be signed using the maintainers' detached signatures stored alongside the artifacts.
+Signing and hash publication will occur once the v5 release is sealed; until then, placeholders remain for visibility only.
+
+Hashes must be updated immediately after a new canonical release. Every update should be signed using the maintainers' detached signatures stored alongside the artifacts once the signing ceremony is complete.
 
 ## Repository-of-Record & Domain-of-Record
 
@@ -24,10 +26,12 @@ Hashes must be updated immediately after a new canonical release. Every update s
 
 ## Update Workflow
 
-1. Run `./ops/release/mk-dist.sh <version>` to create the deterministic archive under `dist/`.
-2. Execute `./ops/release/sign.sh dist/ai-osi-stack-<version>.tar.gz versions/ai-osi-stack-<version>.pdf` to create detached signatures and refresh this notice.
+1. `# Real signing deferred until v5 final release`
+   Run `./ops/release/mk-dist.sh <version>` to create the deterministic archive under `dist/` once sealing begins.
+2. `# Real signing deferred until v5 final release`
+   Execute `./ops/release/sign.sh dist/ai-osi-stack-<version>.tar.gz versions/ai-osi-stack-<version>.pdf` to create detached signatures and refresh this notice.
 3. Commit the updated hashes and `.asc` signature files.
-4. Notarize resulting hashes using the OpenTimestamps guidance in `ops/release/open-timestamps.md` and append the proof references below.
+4. Notarize resulting hashes using the OpenTimestamps guidance in `ops/release/open-timestamps.md` and append the proof references below when available.
 
 ## Timestamp Proofs
 

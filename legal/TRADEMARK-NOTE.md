@@ -4,7 +4,7 @@
 # AI OSI Stack v5.0 Trademark Note
 
 1. Purpose. This note documents the current status of brand identifiers associated with AI OSI Stack v5.0.
-2. Canonical References. Official materials reside at https://github.com/danielpmadden/ai-osi-stack and https://aiosi.org.
+2. Canonical References. Official materials reside at https://github.com/ai-osi/ai-osi-stack and https://aiosi.org.
 3. Marks in Use. "AI OSI Stack" and "AI OSI Stack v5.0" are used as source-identifying marks by Daniel P. Madden in connection with governance frameworks, documentation, and supporting services.
 4. Creation Timeline. Branding has been used continuously since AI OSI Stack v0 on [DATE PLACEHOLDER: 2021-01-15] and continues through the current v5.0 release on [DATE PLACEHOLDER: 2024-12-15].
 5. Funding Disclosure. Brand development and maintenance are self-funded; no third-party sponsorship or partnership claims are asserted.

@@ -16,7 +16,10 @@
   "summary": "City council authorizes pilot of AI OSI Stack governance spine.",
   "privacy": {
     "scope": "public",
-    "notes": "Civic hearing minutes and public charter references only."
+    "notes": "Civic hearing minutes and public charter references only.",
+    "consent": { "deferred": true, "note": "Pending v5 sealing" },
+    "justification": { "deferred": true, "note": "Pending v5 sealing" },
+    "redaction": { "deferred": true, "note": "Pending v5 sealing" }
   },
   "provenance": {
     "source": "City Governance Record System",
@@ -37,6 +40,7 @@
   "hashes": {
     "sha512": "3d84f7791bdb3f6ef8d0c6b0f0e1f3b77bcbfc3e4b476c5b11f6aa097c1c49771bb14f06c0f029a4a5c090323a1bf9f8d25504ef7524ab8098e4595c283d59d1"
   },
+  "immutableHash": { "deferred": true, "note": "Pending v5 sealing" },
   "linked_artifacts": [
     "https://aiosi.org/records/2025/civic-hearing"
   ],
