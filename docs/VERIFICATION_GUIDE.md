@@ -7,7 +7,7 @@ This guide explains how to independently verify canonical releases, signatures, 
 ## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/ai-osi/ai-osi-stack.git
+git clone https://github.com/danielpmadden/ai-osi-stack.git
 cd ai-osi-stack
 ```
 

@@ -4,7 +4,7 @@
 canonical_version: "AI OSI Stack v5.0.0"
 canonical_date: "2025-11-09"
 aeip_version: "1.3"
-repository_of_record: "https://github.com/ai-osi/ai-osi-stack"
+repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
 domain_of_record: "https://aiosi.org"
 supersedes_all_prior_metadata: true
 ---

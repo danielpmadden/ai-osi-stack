@@ -44,7 +44,7 @@ Record signature hash + OpenTimestamps txid + Zenodo DOI.
 
 Embed in README:
 
-curl -O https://github.com/ai-osi/ai-osi-stack/releases/download/v4.2/AI_OSI_Stack_v4.2.pdf
+curl -O https://github.com/danielpmadden/ai-osi-stack/releases/download/v4.2/AI_OSI_Stack_v4.2.pdf
 sha512sum AI_OSI_Stack_v4.2.pdf
 gpg --verify meta/INTEGRITY_NOTICE.md.sig meta/INTEGRITY_NOTICE.md
 

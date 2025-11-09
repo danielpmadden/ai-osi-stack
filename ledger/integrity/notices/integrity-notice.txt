@@ -7,13 +7,13 @@ Date    Event   Description
 September 9, 2025       Initial publication of the AI OSI Stack essay outlining the layered governance model.
 October 30–31, 2025     Version 3 release with persona integration, risk geometry, and governance mapping.
 November 2, 2025        Version 5 canonical specification finalised with interpretive canon updates.
-November 9, 2025        Repository of record established at https://github.com/ai-osi/ai-osi-stack.
+November 9, 2025        Repository of record established at https://github.com/danielpmadden/ai-osi-stack.
 November 9, 2025        Domain https://aiosi.org configured to host canonical releases and advisory notices.
 
 2. Canonical Authority Declaration
 Canonical Version: AI OSI Stack v5.0.0 (Canonical Edition)
 Canonical Publication Date: 2025-11-09
-Repository of Record: https://github.com/ai-osi/ai-osi-stack
+Repository of Record: https://github.com/danielpmadden/ai-osi-stack
 Domain of Record: https://aiosi.org
 Author: Daniel P. Madden
 Documentation License: CC BY-SA 4.0
@@ -25,7 +25,7 @@ Checksum verification is recommended for archival reproducibility. Formal crypto
 4. Machine-Readable Anchor
 canonical_version: "AI OSI Stack v5.0.0"
 canonical_date: "2025-11-09"
-repository_of_record: "https://github.com/ai-osi/ai-osi-stack"
+repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
 domain_of_record: "https://aiosi.org"
 supersedes_all_prior_metadata: true
 checksum_guidance: "Record SHA-512 locally and store with meta/INTEGRITY_NOTICE.md"
