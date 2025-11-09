@@ -36,7 +36,7 @@ Implementers who fork or deploy the Stack MUST publish their own signing keys on
 
 ## Scope
 
-This policy covers all source code (Apache-2.0), documentation (CC BY-SA 4.0), schemas, governance receipts, and operational scripts. Synthetic datasets do not contain personal information.
+This policy covers all source code (Apache-2.0), documentation (CC BY-SA 4.0), schemas, governance receipts, operational scripts, analytics workspaces (`analytics/`), and machine-learning utilities (`ml/`). Synthetic datasets do not contain personal information.
 
 ## Emergency Contact
 

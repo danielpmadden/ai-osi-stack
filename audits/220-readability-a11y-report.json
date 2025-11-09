@@ -2,13 +2,13 @@
   "scope": {
     "target": "dashboard/",
     "sources": [
-      "dashboard/README.md",
-      "dashboard/docs/accessibility-checklist.md",
-      "dashboard/docs/component-map.md",
-      "dashboard/src/pages/About.tsx",
-      "dashboard/src/components",
-      "dashboard/src/data/glossary.json",
-      "dashboard/src/utils/accessibility.ts"
+      "analytics/dashboard/README.md",
+      "analytics/dashboard/docs/accessibility-checklist.md",
+      "analytics/dashboard/docs/component-map.md",
+      "analytics/dashboard/src/pages/About.tsx",
+      "analytics/dashboard/src/components",
+      "analytics/dashboard/src/data/glossary.json",
+      "analytics/dashboard/src/utils/accessibility.ts"
     ],
     "methods": [
       "Flesch-Kincaid readability calculation",
@@ -19,19 +19,19 @@
   },
   "readability": {
     "files": {
-      "dashboard/README.md": {
+      "analytics/dashboard/README.md": {
         "sentences": 28,
         "words": 400,
         "avg_sentence_length": 14.29,
         "flesch_kincaid_grade": 13.11
       },
-      "dashboard/docs/accessibility-checklist.md": {
+      "analytics/dashboard/docs/accessibility-checklist.md": {
         "sentences": 17,
         "words": 247,
         "avg_sentence_length": 14.53,
         "flesch_kincaid_grade": 15.68
       },
-      "dashboard/docs/component-map.md": {
+      "analytics/dashboard/docs/component-map.md": {
         "sentences": 27,
         "words": 256,
         "avg_sentence_length": 9.48,

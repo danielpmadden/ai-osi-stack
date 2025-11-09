@@ -71,12 +71,12 @@
 | docs/persona-architecture-v2.pdf | COMMUNICATION | Documentation asset |
 | docs/public-disclosures/gds-summary-template.md | COMMUNICATION | Documentation asset |
 | docs/public-disclosures/incident-template.md | COMMUNICATION | Documentation asset |
-| docs/public-keys.json | COMMUNICATION | Documentation asset |
+| protocol/public-keys.json | COMMUNICATION | Documentation asset |
 | docs/readme.md | COMMUNICATION | Documentation asset |
 | docs/risk-taxonomy.md | COMMUNICATION | Documentation asset |
 | docs/test-results.md | COMMUNICATION | Documentation asset |
 | docs/verify/readme.md | COMMUNICATION | Documentation asset |
-| docs/zenodo-metadata.yaml | COMMUNICATION | Documentation asset |
+| meta/zenodo-metadata.yaml | COMMUNICATION | Documentation asset |
 | govspine/aeip/.gitkeep | IMPLEMENTATION | Legacy governance spine asset |
 | govspine/aeip/frame-payload.json | IMPLEMENTATION | Legacy governance spine asset |
 | govspine/aeip/manifest.json | IMPLEMENTATION | Legacy governance spine asset |
@@ -218,13 +218,13 @@
 | schemas/readme.md | INTERFACE | Schema definition |
 | schemas/svc/semantic-registry.jsonld | INTERFACE | Schema definition |
 | schemas/therapy/credential-verification.jsonld | INTERFACE | Schema definition |
-| scripts/__init__.py | IMPLEMENTATION | Repository maintenance script |
-| scripts/audit_data.py | IMPLEMENTATION | Repository maintenance script |
-| scripts/generate_audits.py | IMPLEMENTATION | Repository maintenance script |
-| scripts/generate_plaintext.py | IMPLEMENTATION | Repository maintenance script |
-| scripts/generate_schema_readme.py | IMPLEMENTATION | Repository maintenance script |
-| scripts/triple_register_data.py | IMPLEMENTATION | Repository maintenance script |
-| scripts/update_chapters.py | IMPLEMENTATION | Repository maintenance script |
+| ops/scripts/__init__.py | IMPLEMENTATION | Repository maintenance script |
+| ops/scripts/audit_data.py | IMPLEMENTATION | Repository maintenance script |
+| ops/scripts/generate_audits.py | IMPLEMENTATION | Repository maintenance script |
+| ops/scripts/generate_plaintext.py | IMPLEMENTATION | Repository maintenance script |
+| ops/scripts/generate_schema_readme.py | IMPLEMENTATION | Repository maintenance script |
+| ops/scripts/triple_register_data.py | IMPLEMENTATION | Repository maintenance script |
+| ops/scripts/update_chapters.py | IMPLEMENTATION | Repository maintenance script |
 | source/ai-osi-stack-v5.tex | CONCEPTUAL | Source composition file |
 | source/appendices/appendix-a-normative-vocabulary-and-modal-definitions.tex | CONCEPTUAL | Appendix (LaTeX) |
 | source/appendices/appendix-b-remediation-and-response-procedures.tex | CONCEPTUAL | Appendix (LaTeX) |
