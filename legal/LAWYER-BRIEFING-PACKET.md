@@ -4,7 +4,7 @@
 # AI OSI Stack v5.0 Lawyer Briefing Packet
 
 1. Executive Summary.
-   1.1. Work Description. AI OSI Stack v5.0 is a governance-first operating stack for AI systems, comprising documentation, schemas, dashboards, and tooling maintained in the canonical repository at https://github.com/danielpmadden/ai-osi-stack and mirrored through https://aiosi.org.
+   1.1. Work Description. AI OSI Stack v5.0 is a governance-first operating stack for AI systems, comprising documentation, schemas, dashboards, and tooling maintained in the canonical repository at https://github.com/ai-osi/ai-osi-stack and mirrored through https://aiosi.org.
    1.2. Ownership. Daniel P. Madden is the sole author and owner of all AI OSI Stack v5.0 intellectual property; no assignments or encumbrances exist.
    1.3. Funding. The project is self-funded with no institutional backing.
 
@@ -17,7 +17,7 @@
    2.6. v5.0 (Current release) — [DATE PLACEHOLDER: 2024-12-15]; consolidated governance, ethical boundaries, and publication artifacts captured in this fact pack.
 
 3. Current Legal Posture.
-   3.1. Repository Governance. Public GitHub repository (https://github.com/danielpmadden/ai-osi-stack) with transparent commit history and release tagging.
+   3.1. Repository Governance. Public GitHub repository (https://github.com/ai-osi/ai-osi-stack) with transparent commit history and release tagging.
    3.2. Licensing. Documentation under CC BY-SA 4.0; source code under Apache-2.0; third-party materials retain original licenses.
    3.3. Domain. https://aiosi.org registered and administered by Daniel P. Madden; content mirrors repository licensing split.
    3.4. Entity Status. Operated as a sole-proprietor initiative; no LLC or corporation formed to date.

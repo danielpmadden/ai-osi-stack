@@ -3,7 +3,7 @@
 
 # AI OSI Stack v5.0 IP Ownership Statement
 
-1. Owner Identification. Daniel P. Madden is the sole owner of intellectual property generated for AI OSI Stack v5.0, including documentation, specifications, schematics, and tooling scripts resident in the canonical repository at https://github.com/danielpmadden/ai-osi-stack.
+1. Owner Identification. Daniel P. Madden is the sole owner of intellectual property generated for AI OSI Stack v5.0, including documentation, specifications, schematics, and tooling scripts resident in the canonical repository at https://github.com/ai-osi/ai-osi-stack.
 2. Domain Association. The domain https://aiosi.org is registered and administered to serve as the official publication venue for AI OSI Stack resources; no transfer or encumbrance has been granted.
 3. Creation Timeline. Ownership traces to the inception of AI OSI Stack v0 on [DATE PLACEHOLDER: 2021-01-15], with continuous control retained through v5.0 completion on [DATE PLACEHOLDER: 2024-12-15].
 4. Funding Disclosure. The project remains self-funded; no institutional capital, grants, or venture equity has been accepted.

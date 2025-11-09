@@ -3,7 +3,7 @@
 
 **Canonical Version:** AI OSI Stack v5.0  
 **Author:** Daniel P. Madden  
-**Repository:** https://github.com/danielpmadden/ai-osi-stack  
+**Repository:** https://github.com/ai-osi/ai-osi-stack  
 **Licensing:** Documentation released under CC BY-SA 4.0; associated code under Apache-2.0.  
 **Jurisdiction:** United States (jurisdiction-neutral; informational only; not legal advice).
 
@@ -89,7 +89,7 @@ All notices under this Agreement must be in writing and delivered to the address
 
 ## 16. Additional Protections
 16.1 Client (or applicable counterparty) may not fork, repackage, or modify AI OSI Stack materials for resale, sublicensing, or derivative distribution without written permission from Daniel P. Madden.
-16.2 Any derivative or adapted implementation must retain visible credit to Daniel P. Madden and reference to the canonical repository (https://github.com/danielpmadden/ai-osi-stack).
+16.2 Any derivative or adapted implementation must retain visible credit to Daniel P. Madden and reference to the canonical repository (https://github.com/ai-osi/ai-osi-stack).
 16.3 Author retains the right to reference completed work for portfolio, academic, or demonstration purposes, unless marked confidential in writing.
 16.4 All services are delivered remotely unless travel is explicitly approved and funded by Client (or applicable counterparty) in advance.
 16.5 No client or counterparty may request or transmit personally identifiable or confidential third-party data. All examples and artefacts shall remain synthetic.

@@ -4,7 +4,7 @@
 # AI OSI Stack v5.0 Legal Fact Summary
 
 1. Purpose. This summary records canonical authorship, ownership, and IP provenance facts for the AI OSI Stack v5.0 project.
-2. Canonical References. The authoritative repository is https://github.com/danielpmadden/ai-osi-stack and the canonical domain is https://aiosi.org. All citations in this fact pack defer to these resources.
+2. Canonical References. The authoritative repository is https://github.com/ai-osi/ai-osi-stack and the canonical domain is https://aiosi.org. All citations in this fact pack defer to these resources.
 3. Creation Timeline. Concept initiated as AI OSI Stack v0 on [DATE PLACEHOLDER: 2021-01-15]; iterative releases through v4 concluded on [DATE PLACEHOLDER: 2024-06-30]; current v5.0 baseline finalized on [DATE PLACEHOLDER: 2024-12-15].
 4. Funding Disclosure. The project is self-funded with no institutional, corporate, or governmental backing; all expenses have been borne personally by Daniel P. Madden.
 5. Authorship. Daniel P. Madden is the sole author, editor, and maintainer of the documentation, specifications, and operational playbooks comprising AI OSI Stack v5.0.

@@ -16,7 +16,10 @@
   "summary": "Initial deployment telemetry published with no material incidents.",
   "privacy": {
     "scope": "restricted",
-    "notes": "Aggregated telemetry with synthetic edge cases."
+    "notes": "Aggregated telemetry with synthetic edge cases.",
+    "consent": { "deferred": true, "note": "Pending v5 sealing" },
+    "justification": { "deferred": true, "note": "Pending v5 sealing" },
+    "redaction": { "deferred": true, "note": "Pending v5 sealing" }
   },
   "provenance": {
     "source": "Governance Publication Service",
@@ -37,6 +40,7 @@
   "hashes": {
     "sha512": "13f8018a7323ad5148447a6f5c63f18136d3fda56b025d7fbd5fc4417063f8b6b0c81dc28bb7c73112b87fe0285d09dae42b1ff07d3c1ed7379bcc96d30a4ff6"
   },
+  "immutableHash": { "deferred": true, "note": "Pending v5 sealing" },
   "linked_artifacts": [
     "urn:uuid:44444444-4444-4444-8444-444444444444",
     "https://aiosi.org/ledger/entries/2025/initial-release"

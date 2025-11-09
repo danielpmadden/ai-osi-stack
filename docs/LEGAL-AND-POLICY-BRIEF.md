@@ -4,10 +4,11 @@
 
 **Author:** Daniel P. Madden  
 **Version:** v5.0  
-**Repository:** [github.com/danielpmadden/ai-osi-stack](https://github.com/danielpmadden/ai-osi-stack)  
+**Repository:** [github.com/ai-osi/ai-osi-stack](https://github.com/ai-osi/ai-osi-stack)
 **Domain:** [aiosi.org](https://aiosi.org)  
 **DOI:** [10.5281/zenodo.17517241](https://doi.org/10.5281/zenodo.17517241)  
 **License:** CC BY-SA 4.0 (Docs) / Apache 2.0 (Code)
+**Integrity Status:** Integrity verification pending v5 sealing; signing artifacts will publish at release.
 
 ---
 
@@ -28,8 +29,8 @@ Most AI frameworks are declarations of intent.
 The Stack expresses those intents as testable duties, written in “SHALL / SHOULD / MAY” legal grammar, with direct links to machine-verifiable artefacts (AEIP schemas).  
 It is **governance you can audit.**
 
-### 2. It Provides an Evidentiary Chain of Custody  
-Every decision, dataset, and model output is bound to a signed evidence record.  
+### 2. It Provides an Evidentiary Chain of Custody
+Every decision, dataset, and model output is designed to be bound to a signed evidence record once the v5 sealing ceremony is complete.
 This enables legal teams to reconstruct the provenance of any AI action — a requirement for liability, oversight, and redress.
 
 ### 3. It Makes Compliance Modular  
@@ -83,7 +84,7 @@ All examples are synthetic; all standards references are alignment guides, not l
 ## Contact
 
 - Website: [danielpmadden.com](https://danielpmadden.com)  
-- Repository: [github.com/danielpmadden/ai-osi-stack](https://github.com/danielpmadden/ai-osi-stack)  
+- Repository: [github.com/ai-osi/ai-osi-stack](https://github.com/ai-osi/ai-osi-stack)
 - DOI Record: [10.5281/zenodo.17517241](https://doi.org/10.5281/zenodo.17517241)  
 - Domain: [aiosi.org](https://aiosi.org)
 

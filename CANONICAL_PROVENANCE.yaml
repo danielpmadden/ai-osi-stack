@@ -6,7 +6,7 @@ domain_of_record: "https://aiosi.org"
 supersedes:
   - "4.2.0"
   - "4.1.0"
-signing_key_fingerprint: "TODO: PUBLISH FINGERPRINT AFTER KEY CEREMONY"
+signing_key_fingerprint: "[pending release fingerprint]"
 release_contact:
   name: "AI OSI Stack Release Steward"
   email: "release@aiosi.org"

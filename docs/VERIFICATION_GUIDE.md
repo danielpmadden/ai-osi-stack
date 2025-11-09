@@ -20,17 +20,13 @@ jq '.files | length' ops/inventory/file-inventory.json
 
 Compare with the published inventory from the release notes. Differences should be reviewed.
 
-## 3. Validate Signatures
+## 3. Validate Signatures (Deferred Until v5 Sealing)
 
-1. Import the release PGP key (fingerprint in `CANONICAL_PROVENANCE.yaml`).
-2. Download the tarball and signatures from the GitHub Release.
-3. Run:
-
-```bash
-./ops/release/verify.sh dist/ai-osi-stack-v5.0.0.tar.gz versions/ai-osi-stack-v5.pdf
-```
-
-4. Ensure hashes in `INTEGRITY_NOTICE.md` match the computed output.
+1. Import the release PGP key (fingerprint in `CANONICAL_PROVENANCE.yaml`) once published.
+2. Download the tarball and signatures from the GitHub Release after the sealing ceremony.
+3. `# Real signing deferred until v5 final release`
+   Run `./ops/release/verify.sh dist/ai-osi-stack-v5.0.0.tar.gz versions/ai-osi-stack-v5.pdf` when signatures are available.
+4. Ensure hashes in `INTEGRITY_NOTICE.md` match the computed output after publication.
 
 ## 4. Validate AEIP Receipts
 
