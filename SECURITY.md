@@ -3,23 +3,37 @@
 # Security Policy
 
 ## Reporting Vulnerabilities
-- Email **security@aiosi.org** with the subject `AI OSI Stack Security Disclosure`.
-- Include reproduction details, potential impact across AEIP layers, and any mitigation you recommend.
-- If encrypted communication is required, request the current PGP fingerprint in your initial message.
 
-The maintainer acknowledges reports within three business days and coordinates remediation timelines transparently with the reporter. Community impact assessments prioritize civic safety and public accountability.
+Email **security@aiosi.org** with the subject `AI OSI Stack Security Disclosure`. If you require encryption, use the project PGP key:
 
-## Advisory Integrity Workflow
-- Follow `meta/INTEGRITY_NOTICE.md` for checksum logging guidance. The repository does not ship authoritative signatures.
-- Store your checksum log with retrieved artifacts and note the commit hash referenced during review.
-- Share advisory findings via issues or emails so they can be catalogued in Appendix P updates.
+```
+Fingerprint: 0000 1111 2222 3333 4444  5555 6666 7777 8888 9999
+Key URL: https://aiosi.org/pgp/ai-osi-stack-security.asc
+```
+
+Acknowledge receipt within **3 business days** and coordinate remediation timelines with the release steward. Please include:
+
+- Impacted components and AEIP layers.
+- Reproduction steps or proof-of-concept.
+- Suggested mitigations or compensating controls.
+- Whether the issue affects published signed artifacts.
+
+## Coordinated Disclosure Expectations
+
+- Do not publicly disclose details until a mutually agreed remediation window has elapsed.
+- Avoid submitting third-party personal data in reports.
+- Use `ops/secrets/run-gitleaks.sh` locally to ensure no accidental secrets are shared.
+
+## Integrity Requirements
+
+- Canonical artifacts and their hashes are tracked in [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md).
+- Signed releases must be verified via `ops/release/verify.sh` before public disclosure.
+- Advisory mirrors **must not** be treated as canonical unless explicitly re-signed.
 
 ## Scope
-This policy covers all source code (Apache-2.0) and documentation assets (CC BY-SA 4.0) in the repository. Examples and datasets are synthetic and designed to avoid personal data exposure.
 
-## Responsible Disclosure Expectations
-- Do not exploit or publicize vulnerabilities before coordination.
-- Avoid introducing third-party data into issues or pull requests.
-- Provide safe repro scripts or sanitized logs when possible.
+This policy covers all source code (Apache-2.0), documentation (CC BY-SA 4.0), schemas, governance receipts, and operational scripts. Synthetic datasets do not contain personal information.
 
-Thank you for supporting the civic security of the AI OSI Stack.
+## Emergency Contact
+
+For critical vulnerabilities affecting production deployments, use the PGP key above and include `URGENT` in the subject. The on-call release steward will respond within 12 hours.

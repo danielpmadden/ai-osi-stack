@@ -1,0 +1,58 @@
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+
+# Verification Guide
+
+This guide explains how to independently verify canonical releases, signatures, and governance receipts for the AI OSI Stack.
+
+## 1. Clone the Repository
+
+```bash
+git clone https://github.com/ai-osi/ai-osi-stack.git
+cd ai-osi-stack
+```
+
+## 2. Verify Inventory
+
+```bash
+./ops/inventory/inventory.sh
+jq '.files | length' ops/inventory/file-inventory.json
+```
+
+Compare with the published inventory from the release notes. Differences should be reviewed.
+
+## 3. Validate Signatures
+
+1. Import the release PGP key (fingerprint in `CANONICAL_PROVENANCE.yaml`).
+2. Download the tarball and signatures from the GitHub Release.
+3. Run:
+
+```bash
+./ops/release/verify.sh dist/ai-osi-stack-v5.0.0.tar.gz versions/ai-osi-stack-v5.pdf
+```
+
+4. Ensure hashes in `INTEGRITY_NOTICE.md` match the computed output.
+
+## 4. Validate AEIP Receipts
+
+```bash
+npm ci
+npm run validate:aeip
+npm run validate:governance
+```
+
+All receipts should pass without error; governance validator may emit warnings if no civic charter receipts are present.
+
+## 5. Review SBOM and Vulnerability Scans
+
+```bash
+./ops/sbom/syft-sbom.sh
+./ops/sbom/trivy-scan.sh
+```
+
+Inspect `ops/sbom/trivy-fs.txt` and `ops/sbom/trivy-sbom.txt` for high or critical vulnerabilities.
+
+## 6. Optional: OpenTimestamps Proof
+
+Follow `ops/release/open-timestamps.md` to verify that timestamp proofs match the recorded hashes.
+
+By completing these steps you can confirm the provenance of the AI OSI Stack and rely on the canonical release for civic governance operations.
