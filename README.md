@@ -3,6 +3,9 @@
 # AI OSI Stack v5.0  
 ### A Governance Blueprint for Scalable and Trusted AI
 ---
+[![DOI – AI OSI Stack v4 (Master Edition)](https://zenodo.org/badge/DOI/10.5281/zenodo.17517241.svg)](https://doi.org/10.5281/zenodo.17517241)
+[![DOI – AI OSI Stack v5 Release Candidate (Deepbuild Draft)](https://zenodo.org/badge/DOI/10.5281/zenodo.17566796.svg)](https://doi.org/10.5281/zenodo.17566796)
+[![DOI – Citation Corpus / Collected References](https://zenodo.org/badge/DOI/10.5281/zenodo.17490086.svg)](https://doi.org/10.5281/zenodo.17490086)
 
 ## Overview
 
