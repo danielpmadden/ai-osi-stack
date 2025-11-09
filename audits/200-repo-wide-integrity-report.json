@@ -8,7 +8,7 @@
       "category": "Authorship & Provenance",
       "severity": "critical",
       "locations": [
-        "dashboard/index.html",
+        "analytics/dashboard/index.html",
         "schemas/aeip/aeip-frame-schema.json"
       ],
       "summary": "Canonical authorship statement absent from multiple distributed assets, risking provenance drift.",

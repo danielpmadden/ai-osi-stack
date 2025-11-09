@@ -1,8 +1,8 @@
 // SPDX-License-Identifier: Apache-2.0
 
 import type { Preview } from "@storybook/react";
-import "../dashboard/src/styles/tokens.css";
-import "../dashboard/src/styles/global.css";
+import "../analytics/dashboard/src/styles/tokens.css";
+import "../analytics/dashboard/src/styles/global.css";
 
 const preview: Preview = {
   parameters: {

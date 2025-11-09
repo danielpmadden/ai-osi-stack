@@ -6,14 +6,14 @@
 
 | Category | Severity | Key Issues |
 | --- | --- | --- |
-| Authorship & Provenance | Critical | Canonical authorship statement missing from numerous distributed assets (HTML, JSON, YAML) such as `dashboard/index.html` and AEIP schemas, risking provenance drift.【F:dashboard/index.html†L1-L12】【F:schemas/aeip/aeip-frame-schema.json†L1-L10】 |
+| Authorship & Provenance | Critical | Canonical authorship statement missing from numerous distributed assets (HTML, JSON, YAML) such as `analytics/dashboard/index.html` and AEIP schemas, risking provenance drift.【F:analytics/dashboard/index.html†L1-L12】【F:schemas/aeip/aeip-frame-schema.json†L1-L10】 |
 | Legal & Licensing | Major | Dual-license requirement is not fully met—`meta/license.txt` only carries CC BY-SA 4.0 text, and many non-commentable assets lack SPDX metadata or alternative license declaration channels.【F:meta/license.txt†L1-L14】 |
 | Standards & Policy Alignment | Major | Standards references state alignment without clause numbers and overuse "implied" designations, reducing verifiability (e.g., ISO 42001 references in standards brief and README).【F:docs/standards-alignment-brief.md†L5-L37】【F:README.md†L32-L35】 |
 | Reproducibility & Manifest Integrity | Major | `meta/v5-manifest.yaml` omits cryptographic hashes for canonical artifacts; `meta/INTEGRITY_NOTICE.md` provides advisory guidance but no concrete values, preventing deterministic verification.【F:meta/v5-manifest.yaml†L1-L36】【F:meta/INTEGRITY_NOTICE.md†L1-L46】 |
 | Terminology & Normative Consistency | Major | Appendix O contains malformed macros (e.g., `arrative{`, `ormative{`) that break ISO-2119 modal clarity and risk LaTeX build failures, undermining the normative vocabulary bridge.【F:source/appendices/appendix-o-canonical-provenance-and-signature-metadata.tex†L1-L80】 |
 | Ethics, Data, and Privacy | Minor | High-level data ethics commitments exist, but Layer 2 control tables and obligation summaries do not cite Appendix E safeguards directly, weakening traceability between privacy duties and canonical safeguards.【F:DATA-ETHICS.md†L1-L11】【F:meta/layer-control-tables.json†L1-L60】 |
 | Security & Cryptography | Major | AEIP signing guidance reduced to advisory notice without replacement key-generation/verification procedures, leaving ledger integrity unverifiable.【F:tools/verify-aeip-signatures.py†L1-L20】 |
-| Accessibility & Interface Compliance | Minor | vitest-axe tests exist for App and glossary, yet repository lacks the mandated `docs/accessibility-checklist.md` deliverable enumerating WCAG findings.【F:dashboard/src/__tests__/a11y.spec.tsx†L1-L22】【d29b9e†L1-L1】 |
+| Accessibility & Interface Compliance | Minor | vitest-axe tests exist for App and glossary, yet repository lacks the mandated `docs/accessibility-checklist.md` deliverable enumerating WCAG findings.【F:analytics/dashboard/src/__tests__/a11y.spec.tsx†L1-L22】【d29b9e†L1-L1】 |
 | Academic & Research Readiness | Minor | References bibliography is present, but repository does not map originality claims to version history or change plans beyond historical notes, leaving methodology traceability incomplete.【F:source/backmatter/references.bib†L1-L20】【F:README.md†L16-L18】 |
 | Governance & Civic Oversight | Major | Generated control tables exist, yet Appendix O’s corruption and lack of explicit AEIP schema linkage for custodianship evidence jeopardise continuity across Appendices H, O, and P.【F:source/chapters/generated/layer1-control-table.tex†L1-L23】【F:source/appendices/appendix-o-canonical-provenance-and-signature-metadata.tex†L1-L80】 |
 | Commercial & Community Readiness | Minor | Required commercial documents exist, but README lacks the mandated audit completion note linking to offerings with explicit non-endorsement language.【F:commercial/OFFERINGS.md†L1-L40】【F:README.md†L200-L238】 |
@@ -32,7 +32,7 @@
 ## Detailed Findings & Recommendations
 
 ### 1. Authorship & Provenance (Critical)
-- **Observation:** Numerous assets (HTML, JSON, YAML) lack the canonical authorship statement, breaching provenance requirements and enabling misattribution.【F:dashboard/index.html†L1-L12】【F:schemas/aeip/aeip-frame-schema.json†L1-L10】 
+- **Observation:** Numerous assets (HTML, JSON, YAML) lack the canonical authorship statement, breaching provenance requirements and enabling misattribution.【F:analytics/dashboard/index.html†L1-L12】【F:schemas/aeip/aeip-frame-schema.json†L1-L10】 
 - **Recommendation:** Embed a machine-readable provenance block (e.g., JSON metadata or HTML comment) at build time for non-comment formats; extend linting to fail when assets omit the canonical text.
 - **Automated Patch Note:** Introduce a pre-commit hook that injects/validates the authorship snippet during asset generation.
 
@@ -62,7 +62,7 @@
 - **Recommendation:** Provide stubbed scripts or documentation for key lifecycle, even if advisory, and describe ledger verification processes.
 
 ### 8. Accessibility & Interface Compliance (Minor)
-- **Observation:** Automated accessibility tests exist, yet mandated accessibility checklist document is missing from `docs/` tree.【F:dashboard/src/__tests__/a11y.spec.tsx†L1-L22】【d29b9e†L1-L1】 
+- **Observation:** Automated accessibility tests exist, yet mandated accessibility checklist document is missing from `docs/` tree.【F:analytics/dashboard/src/__tests__/a11y.spec.tsx†L1-L22】【d29b9e†L1-L1】 
 - **Recommendation:** Publish `docs/accessibility-checklist.md` summarizing WCAG 2.1 AA test results and manual review notes.
 
 ### 9. Academic & Research Readiness (Minor)

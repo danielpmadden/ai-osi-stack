@@ -10,10 +10,12 @@ Thank you for supporting the AI OSI Stack. This project coordinates civic govern
 2. Run the baseline checks before submitting a pull request:
    - `npm ci && npm run lint`
    - `npm test`
+   - `(cd analytics/dashboard && npm ci && npm run lint && npm test)`
    - `pytest`
    - `./ops/inventory/inventory.sh`
    - `./ops/sbom/syft-sbom.sh`
    - `./ops/secrets/run-gitleaks.sh`
+   - _Optional_: `pip install -r ml/requirements.txt && python ml/report_generator.py --output audits/schema-coherence-report.md`
 3. Update `INTEGRITY_NOTICE.md` whenever a normative artifact (PDF, tarball, ledger entry) changes. Include updated hashes and signature references.
 4. Attach SBOM and inventory artifacts to release pull requests.
 
