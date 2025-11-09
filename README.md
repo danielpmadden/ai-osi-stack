@@ -15,8 +15,7 @@ v5.0 represents the **canonical edition** of the Stack: fully audited for concep
 The Stack translates civic mandates and ethical commitments into operational controls, making every stage of intelligent system design and deployment legible, testable, and auditable. It binds social contracts, organizational practice, and technical enforcement so oversight bodies can shape system behavior in real time. The repository is structured so practitioners can regenerate official publications, execute validation suites, and confirm provenance from local environments.
 
 ### Authorship & Provenance
-
-> **Authorship & Provenance**  
+ 
 > The AI OSI Stack was conceived, authored, and maintained solely by **Daniel P. Madden**  
 > under GitHub identity `44127480+danielpmadden@users.noreply.github.com`.  
 > There is no institutional, corporate, or governmental backing. Unauthorized contributor
