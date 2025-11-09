@@ -7,7 +7,7 @@
 Email **security@aiosi.org** with the subject `AI OSI Stack Security Disclosure`. If you require encryption, use the project PGP key:
 
 ```
-Fingerprint: 0000 1111 2222 3333 4444  5555 6666 7777 8888 9999
+Fingerprint: [pending release fingerprint]
 Key URL: https://aiosi.org/pgp/ai-osi-stack-security.asc
 ```
 
@@ -29,6 +29,8 @@ Acknowledge receipt within **3 business days** and coordinate remediation timeli
 - Canonical artifacts and their hashes are tracked in [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md).
 - Signed releases must be verified via `ops/release/verify.sh` before public disclosure.
 - Advisory mirrors **must not** be treated as canonical unless explicitly re-signed.
+
+Implementers who fork or deploy the Stack MUST publish their own signing keys once v5 is sealed and renew fingerprints for each derivative release.
 
 ## Scope
 

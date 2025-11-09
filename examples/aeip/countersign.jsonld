@@ -16,7 +16,10 @@
   "summary": "Oversight council reviews readiness checklist and countersigns deployment plan.",
   "privacy": {
     "scope": "restricted",
-    "notes": "Contains limited operational risk scenarios; no personal data."
+    "notes": "Contains limited operational risk scenarios; no personal data.",
+    "consent": { "deferred": true, "note": "Pending v5 sealing" },
+    "justification": { "deferred": true, "note": "Pending v5 sealing" },
+    "redaction": { "deferred": true, "note": "Pending v5 sealing" }
   },
   "provenance": {
     "source": "Oversight Council Ledger",
@@ -42,6 +45,7 @@
   "hashes": {
     "sha512": "7ec3991df0fdc6bdd7bba5b2183f55a837f795f757749c96b7c9d2e05598b486b31d6afdd035c2fd0f2647cb89c3bf430f70f1654d4556dd8b99b7cd3cb7637f"
   },
+  "immutableHash": { "deferred": true, "note": "Pending v5 sealing" },
   "linked_artifacts": [
     "urn:uuid:22222222-2222-4222-8222-222222222222"
   ],
