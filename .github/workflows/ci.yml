@@ -69,7 +69,7 @@ jobs:
         run: ./ops/license/scan-licenses.sh
 
       - name: Upload artifacts
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: security-artifacts
           path: |
@@ -83,7 +83,7 @@ jobs:
 
       - name: Upload coverage
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v5
         with:
           name: vitest-coverage
           path: coverage
