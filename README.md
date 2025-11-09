@@ -10,9 +10,11 @@
 
 #### Archival & Provenance Records
 [![Zenodo Archive](https://img.shields.io/badge/Zenodo-Minted%20Record-blue)](https://zenodo.org/records/17566796)
+
 [![DOI – AI OSI Stack v4 (Master Edition)](https://zenodo.org/badge/DOI/10.5281/zenodo.17517241.svg)](https://doi.org/10.5281/zenodo.17517241)
 [![DOI – AI OSI Stack v5 Release Candidate (Deepbuild Draft)](https://zenodo.org/badge/DOI/10.5281/zenodo.17566796.svg)](https://doi.org/10.5281/zenodo.17566796)
 [![DOI – Citation Corpus / Collected References](https://zenodo.org/badge/DOI/10.5281/zenodo.17490086.svg)](https://doi.org/10.5281/zenodo.17490086)
+
 [![DataCite Registered](https://img.shields.io/badge/DataCite-Registered-success?logo=datacite)](https://commons.datacite.org/)
 [![FAIR Data Principles](https://img.shields.io/badge/FAIR-Data%20Compliant-009688.svg)](https://www.go-fair.org/fair-principles/)
 
