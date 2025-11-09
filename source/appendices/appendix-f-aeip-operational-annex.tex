@@ -19,12 +19,15 @@ specialised payload (e.g., modelcard or incident report), and sign the bundle. A
 table with checksums, and an illustrative deterministic ordering snippet so practitioners can script the same validation sequence.
 }
 
+% Rationale: Make cryptographic handling optional-but-recommended while preserving provenance duties.
+% [SYNTHESIZED v5 PH1+]
 \normative{
-AEIP custodians \shall{use the canonical field order defined in \texttt{schemas/aeip/aeip-frame-schema.json}}. Hashes \shall{be computed
-with SHA-512 over UTF-8 normalised bytes}, recorded in \texttt{evidence\_hashes[*].value}, and validated against manifest entries.
-Witnesses \shall{include role, jurisdiction, and verification channel}, ensuring that Appendix~O provenance audits can confirm custodial
-continuity. Deviations \shall{be documented in Appendix~L ledgers with remediation deadlines}. No artefact \may{enter production without a
-complete AEIP Frame accompanied by signed custody metadata}.
+AEIP custodians \shall{use the canonical field order defined in \texttt{schemas/aeip/aeip-frame-schema.json}}. Hashes \should{be computed
+with SHA-512 over UTF-8 normalised bytes as the recommended verification pathway}, recorded in \texttt{evidence\_hashes[*].value}, and
+validated against manifest entries when produced. Witnesses \shall{include role, jurisdiction, and verification channel}, ensuring that
+Appendix~O provenance audits can confirm custodial continuity. Deviations \shall{be documented in Appendix~L ledgers with remediation
+deadlines}. No artefact \may{enter production without a complete AEIP Frame accompanied by signed custody metadata}; signature generation is
+optional but recommended for public attestations and \should{follow the canonical key guidance when used}.
 }
 
 \normative{
@@ -38,6 +41,8 @@ manifest, running the deterministic ordering script, and comparing published has
 \textbf{Deterministic Ordering Example.} AEIP frame ordering is preserved by serialising YAML keys exactly as shown below. Scripts
 that alter key order or introduce additional whitespace invalidate signatures and \shall{trigger rejection alerts}.\end{quote}
 
+% Rationale: Provide an illustrative AEIP Frame ordering snippet for verification tooling.
+% [SYNTHESIZED v5 PH1+]
 \begin{lstlisting}[language=yaml,caption={AEIP Frame deterministic order example}]
 canonical_metadata:
   aeip_version: "1.3"
@@ -62,9 +67,12 @@ custodian_signatures:
 
 \input{appendices/generated/appendix-f-schema-registry}
 
+% Rationale: Clarify that checksum validation remains optional yet traceable for verifiers.
+% [SYNTHESIZED v5 PH1+]
 \normative{
-AEIP schema listings \shall{be treated as normative artefacts}. Any institution claiming conformance \shall{reference the exact checksum}
-from the registry table. Custodians \shall{store verification logs demonstrating checksum validation at release time}. Oversight actors
-\should{sample schema listings during audits} and \may{publish independent hashes to Appendix~N}. Implementation guides \shall{note the
-schema path, version, and validation command} for every operational playbook.
+AEIP schema listings \shall{be treated as normative artefacts}. Any institution claiming conformance \should{reference the published checksum}
+from the registry table as an optional verification aid. Custodians \should{store verification logs documenting checksum validation when
+performed}. Oversight actors \should{sample schema listings during audits} and \may{publish independent hashes to Appendix~N}. Implementation
+guides \shall{note the schema path, version, and validation command} for every operational playbook so optional verification remains
+reproducible.
 }
