@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "validate:data": "ts-node ./scripts/validate-data.ts",
+    "validate:data": "ts-node ./ops/scripts/validate-data.ts",
     "typecheck": "tsc --noEmit",
     "lint": "eslint 'src/**/*.{ts,tsx}'",
     "format": "prettier -w .",

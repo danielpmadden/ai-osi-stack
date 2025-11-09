@@ -7,7 +7,7 @@ This Vite + React + TypeScript workspace renders the canonical AI OSI Stack gove
 ## Quickstart
 
 ```bash
-cd dashboard
+cd analytics/dashboard
 npm install
 npm run validate:data
 npm run dev
@@ -60,7 +60,7 @@ npm run build-storybook
 Build and run the static container locally:
 
 ```bash
-docker compose -f dashboard/docker-compose.yml up --build
+docker compose -f analytics/analytics/dashboard/docker-compose.yml up --build
 ```
 
 The image uses a Node build stage and serves static assets via `nginx:alpine` with gzip and far-future caching.

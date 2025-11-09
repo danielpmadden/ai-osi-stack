@@ -140,7 +140,7 @@ All source chapters and schemas have been audited for:
 * **Clarity** – complete Triple Registers with plain-language sections.
 * **Intent traceability** – every “shall” clause maps to an AEIP artefact.
 
-Audit reports live in [`audits/`](audits/); `audits/200-repo-wide-integrity-report.md` summarizes the latest repository-wide findings.
+Audit reports live in [`audits/`](audits/); `audits/200-repo-wide-integrity-report.md` summarizes the latest repository-wide findings. Lightweight machine-learning utilities in [`ml/`](ml/) generate supporting analytics such as modality drift checks and schema coherence clustering.
 
 To independently review repository integrity (advisory model):
 
@@ -193,17 +193,25 @@ The Stack is modular—organizations can adopt one layer at a time and still gai
 ## Repository Layout
 
 ```
-source/                → LaTeX source for canonical specification
-source/interpretive/   → Chapters 19A–24 (Interpretive Canon)
+analytics/             → Dashboards and governance analytics (e.g., civic portal)
+archive/               → Historical and superseded materials (read-only)
+audits/                → Coherence, integrity, and structural review reports
+commercial/            → Civic-aligned contracting and engagement templates
+docs/                  → Canonical governance documentation and briefs
+examples/              → Illustrative AEIP receipts and governance scenarios
 govspine/              → Python runtime package (implementation spine)
-protocol/              → AEIP reference operations
-schemas/               → JSON-LD and YAML schemas for artefacts
-tools/                 → Governance automation utilities
-tests/                 → Verification suite
-audits/                → Coherence and continuity reports
-press-kit/             → Public release materials
-docs/                  → Standards alignment and build guides
-versions/              → Canonical release artefacts and historical packages
+ledger/                → Canonical governance ledger artefacts (GDS, DRR, ITP, ILE)
+legal/                 → Rights analyses and legal interpretations
+meta/                  → Repository-level manifests and provenance descriptors
+ml/                    → Machine-learning utilities for governance analytics
+ops/                   → Build, release, inventory, and stewardship scripts
+press-kit/             → Public release materials and messaging
+protocol/              → AEIP reference operations and handshake specifications
+schemas/               → JSON/JSON-LD definitions for governance artefacts
+source/                → LaTeX manuscripts for canonical publications
+tests/                 → Pytest, Vitest, and validation suites
+tools/                 → Reusable utilities supporting governance workflows
+versions/              → Release manifests, update plans, and canonical PDFs
 ```
 
 ---
@@ -277,4 +285,4 @@ To engage the author for implementation or verification, see [`commercial/`](com
 🧭 Demo:
 Explore the AI OSI Stack Compliance Portal prototype — a visual demonstration of the governance layers and evidence artefacts.
 Run locally via:
-cd dashboard/demo-portal && npm install && npm run dev
+cd analytics/analytics/dashboard/demo-portal && npm install && npm run dev
