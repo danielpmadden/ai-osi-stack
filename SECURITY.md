@@ -1,4 +1,4 @@
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
 
 # Security Policy
 
@@ -28,7 +28,7 @@ Acknowledge receipt within **3 business days** and coordinate remediation timeli
 
 ## Integrity Requirements
 
-- Canonical artifacts and their hashes are tracked in [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md).
+- Canonical artifacts, verification notes, and advisory hashes are tracked in [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md). Follow its instructions to confirm provenance and validate signed releases.
 - Signed releases must be verified via `ops/release/verify.sh` before public disclosure.
 - Advisory mirrors **must not** be treated as canonical unless explicitly re-signed.
 
@@ -36,7 +36,11 @@ Implementers who fork or deploy the Stack MUST publish their own signing keys on
 
 ## Scope
 
-This policy covers all source code (Apache-2.0), documentation (CC BY-SA 4.0), schemas, governance receipts, operational scripts, analytics workspaces (`analytics/`), and machine-learning utilities (`ml/`). Synthetic datasets do not contain personal information.
+This policy covers all source materials, documentation, schemas, governance receipts, operational scripts, analytics workspaces (`analytics/`), and machine-learning utilities (`ml/`) distributed with the repository under the custodial **Creative Commons BY-NC-ND 4.0** license.
+
+## Non-Liability and Good-Faith Cooperation
+
+The maintainer is not responsible for any damages, misuse, or derivative actions by third parties. Security researchers and implementers engaging with the Stack agree to act in good faith, respect the custodial mission, and coordinate remediation transparently.
 
 ## Emergency Contact
 

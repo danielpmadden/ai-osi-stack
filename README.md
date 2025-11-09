@@ -286,3 +286,9 @@ To engage the author for implementation or verification, see [`commercial/`](com
 Explore the AI OSI Stack Compliance Portal prototype — a visual demonstration of the governance layers and evidence artefacts.
 Run locally via:
 cd analytics/analytics/dashboard/demo-portal && npm install && npm run dev
+
+---
+### Ethics, License, and Governance
+This project is released under a custodial, non-commercial license.
+Please read [LICENSE](LICENSE), [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before any reuse.  
+Use this work responsibly, credit the author, and respect the civic mission that underlies the AI OSI Stack.
