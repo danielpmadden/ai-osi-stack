@@ -1,0 +1,16 @@
+# SPDX-License-Identifier: CC-BY-SA-4.0
+canonical_version: "5.0.0"
+canonical_date: "2025-11-09"
+repository_of_record: "https://github.com/ai-osi/ai-osi-stack"
+domain_of_record: "https://aiosi.org"
+supersedes:
+  - "4.2.0"
+  - "4.1.0"
+signing_key_fingerprint: "TODO: PUBLISH FINGERPRINT AFTER KEY CEREMONY"
+release_contact:
+  name: "AI OSI Stack Release Steward"
+  email: "release@aiosi.org"
+  pgp_key_url: "https://aiosi.org/pgp/ai-osi-stack-release.asc"
+ledger:
+  integrity_notice: "INTEGRITY_NOTICE.md"
+  open_timestamps_plan: "ops/release/open-timestamps.md"

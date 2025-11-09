@@ -1,0 +1,14 @@
+# SPDX-License-Identifier: Apache-2.0
+version: "3.9"
+services:
+  validator:
+    build: .
+    image: ai-osi-stack/validator:local
+    command: []
+    read_only: true
+    tmpfs:
+      - /tmp
+    volumes:
+      - ./dist:/opt/app/dist
+    security_opt:
+      - no-new-privileges:true

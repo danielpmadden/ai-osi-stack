@@ -1,0 +1,117 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "AEIP Countersignature Receipt",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "@context",
+    "id",
+    "artifact_type",
+    "schema_ref",
+    "layer",
+    "lifecycle",
+    "summary",
+    "privacy",
+    "provenance",
+    "uncertainty",
+    "signatures",
+    "hashes",
+    "linked_artifacts",
+    "evidence"
+  ],
+  "properties": {
+    "@context": {
+      "type": "array",
+      "items": {"type": "string"}
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^urn:uuid:[0-9a-fA-F-]+$"
+    },
+    "artifact_type": {
+      "const": "oversight-countersignature"
+    },
+    "schema_ref": {
+      "const": "aeip-countersign.schema.json"
+    },
+    "layer": {
+      "const": "L5"
+    },
+    "lifecycle": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current", "previous", "next", "timestamp"],
+      "properties": {
+        "current": {"const": "CounterSign"},
+        "previous": {"type": "string"},
+        "next": {"type": "string"},
+        "timestamp": {"type": "string", "format": "date-time"}
+      }
+    },
+    "summary": {"type": "string"},
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["scope", "notes"],
+      "properties": {
+        "scope": {"enum": ["public", "restricted", "deidentified", "internal"]},
+        "notes": {"type": "string"}
+      }
+    },
+    "provenance": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["source", "method", "jurisdiction"],
+      "properties": {
+        "source": {"type": "string"},
+        "method": {"type": "string"},
+        "jurisdiction": {"type": "string"}
+      }
+    },
+    "uncertainty": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["score", "description"],
+      "properties": {
+        "score": {"type": "number", "minimum": 0, "maximum": 1},
+        "description": {"type": "string"}
+      }
+    },
+    "signatures": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["role", "actor", "value"],
+        "properties": {
+          "role": {"type": "string"},
+          "actor": {"type": "string"},
+          "value": {"type": "string"}
+        }
+      }
+    },
+    "hashes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["sha512"],
+      "properties": {
+        "sha512": {"type": "string", "pattern": "^[0-9a-fA-F]{128}$"}
+      }
+    },
+    "linked_artifacts": {
+      "type": "array",
+      "minItems": 1,
+      "items": {"type": "string"}
+    },
+    "evidence": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["payload_uri", "reporting_period"],
+      "properties": {
+        "payload_uri": {"type": "string"},
+        "reporting_period": {"type": "string"}
+      }
+    }
+  }
+}
