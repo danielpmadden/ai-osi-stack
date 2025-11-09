@@ -1,7 +1,7 @@
 # syntax=docker/dockerfile:1.6
 # SPDX-License-Identifier: Apache-2.0
 
-FROM node:20-alpine AS node_deps
+FROM node:25-alpine AS node_deps
 WORKDIR /opt/app
 COPY package.json package-lock.json ./
 RUN npm ci --audit=false --fund=false
@@ -17,7 +17,7 @@ WORKDIR /wheel
 COPY requirements.txt ./
 RUN pip wheel --wheel-dir=/wheel -r requirements.txt
 
-FROM node:20-alpine AS runtime
+FROM node:25-alpine AS runtime
 WORKDIR /opt/app
 RUN addgroup -S aiops && adduser -S aiops -G aiops
 ENV NODE_ENV=production \
