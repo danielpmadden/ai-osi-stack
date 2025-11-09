@@ -1,60 +1,89 @@
-name: CI
+name: Secure CI
 
 on:
   push:
-    branches: ["main", "work", "develop", "master"]
+    branches: ["main", "develop", "work", "master"]
   pull_request:
+
+permissions:
+  contents: read
+  security-events: write
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      PYTHONUNBUFFERED: "1"
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 18
+          node-version: 20
           cache: npm
-          cache-dependency-path: dashboard/package-lock.json
 
-      - name: Install dependencies
-        working-directory: dashboard
-        run: npm install
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
 
-      - name: Validate data
-        working-directory: dashboard
-        run: npm run validate:data
+      - name: Install Node dependencies
+        run: npm ci
 
-      - name: Type check
-        working-directory: dashboard
-        run: npm run typecheck
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
 
-      - name: Lint
-        working-directory: dashboard
+      - name: Generate inventory
+        run: ./ops/inventory/inventory.sh
+
+      - name: Lint TypeScript
         run: npm run lint
 
-      - name: Run tests
-        working-directory: dashboard
-        run: npm test
+      - name: Run Vitest
+        run: npm test -- --run
 
-      - name: Build
-        working-directory: dashboard
-        run: npm run build
+      - name: Run Pytest
+        run: pytest --maxfail=1 --disable-warnings -q
 
-      - name: Build Storybook
-        working-directory: dashboard
-        run: npm run build-storybook
+      - name: Validate AEIP receipts
+        run: |
+          npm run validate:aeip
+          npm run validate:governance
 
-      - name: Upload Storybook artifact
+      - name: Generate SBOM
+        run: ./ops/sbom/syft-sbom.sh
+
+      - name: Trivy scans
+        run: ./ops/sbom/trivy-scan.sh
+
+      - name: Secret scanning
+        run: ./ops/secrets/run-gitleaks.sh
+
+      - name: License audit
+        run: ./ops/license/scan-licenses.sh
+
+      - name: Upload artifacts
         uses: actions/upload-artifact@v4
         with:
-          name: storybook-static
-          path: dashboard/storybook-static
+          name: security-artifacts
+          path: |
+            ops/inventory/file-inventory.json
+            ops/inventory/source-index.csv
+            ops/sbom/spdx.json
+            ops/sbom/cyclonedx.json
+            ops/sbom/trivy-fs.txt
+            ops/sbom/trivy-sbom.txt
+            ops/license/dependency-licenses.csv
 
-      - name: Build Docker image
-        working-directory: dashboard
-        run: docker build -t ai-osi-stack-dashboard:ci .
-        env:
-          DOCKER_BUILDKIT: 1
+      - name: Upload coverage
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: vitest-coverage
+          path: coverage
