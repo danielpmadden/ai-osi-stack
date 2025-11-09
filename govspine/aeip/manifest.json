@@ -3,7 +3,7 @@
   "layer": "L6",
   "timestamp": "2025-11-05T10:40:30.745624+00:00",
   "custodian": "governance-office",
-  "context_uri": "https://github.com/danielpmadden/ai-osi-stack",
+  "context_uri": "https://github.com/ai-osi/ai-osi-stack",
   "evidence_hash": "1f483659a3828ef3a34e370676ed59b2c416d48a48e072ab0cd1eac3158971f21a4eff998709ea8b7936a8bf7db4f84c26f3c3f80b5d0a189dd379e098f1006c",
   "signature": "UNSIGNED",
   "tags": [
@@ -13,7 +13,7 @@
   ],
   "artifact_type": "aeip-frame",
   "schema_version": "1.0.0",
-  "payload_uri": "s3://govspine/danielpmadden/ai-osi-stack/aeip/frame_payload.json",
+  "payload_uri": "s3://govspine/ai-osi/ai-osi-stack/aeip/frame_payload.json",
   "schema_ref": "aeip_frame.schema.json",
   "artifacts": [
     {

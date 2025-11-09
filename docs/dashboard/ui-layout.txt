@@ -2,7 +2,7 @@ AI OSI Stack Dashboard — Component Layout (Low-Fidelity ASCII)
 
 +--------------------------------------------------------------------------------------+
 | Top Bar: Canonical Version Banner                                                     |
-|  - Left: Logo + "AI OSI Stack v5"                                                     |
+|  - Left: Logo + "AI OSI Stack v5.0.0"                                                     |
 |  - Center: Version Hash • DOI • Timestamp (from versions/ + ledger notices)           |
 |  - Right: Integrity Badge (dignityCompliance summary) + Right-to-Opacity toggle       |
 +--------------------------------------------------------------------------------------+

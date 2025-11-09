@@ -141,7 +141,7 @@ All source chapters and schemas have been audited for:
 * **Clarity** – complete Triple Registers with plain-language sections.
 * **Intent traceability** – every “shall” clause maps to an AEIP artefact.
 
-Audit reports live in [`audits/`](audits/); `audits/99-conceptual-coherence-summary.md` provides the executive overview.
+Audit reports live in [`audits/`](audits/); `audits/200-repo-wide-integrity-report.md` summarizes the latest repository-wide findings.
 
 To independently review repository integrity (advisory model):
 
@@ -231,10 +231,10 @@ Integrity review is advisory. [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md) descr
 
 Canonical metadata:
 
-- `canonical_version = "AI OSI Stack v5"`
-- `canonical_date = "2025-11-07"`
+- `canonical_version = "AI OSI Stack v5.0.0"`
+- `canonical_date = "2025-11-09"`
 - `aeip_version = "1.3"`
-- `repository_of_record = "https://github.com/danielpmadden/ai-osi-stack"`
+- `repository_of_record = "https://github.com/ai-osi/ai-osi-stack"`
 - `domain_of_record = "https://aiosi.org"`
 - `supersedes_all_prior_metadata = true`
 
@@ -244,7 +244,7 @@ Canonical metadata:
 
 Author: Daniel P. Madden  
 Website: https://danielpmadden.com
-Repository: https://github.com/danielpmadden/ai-osi-stack
+Repository: https://github.com/ai-osi/ai-osi-stack
 
 Suggested citation:
 
@@ -269,7 +269,7 @@ To engage the author for implementation or verification, see [`commercial/`](com
 
 ## Changelog
 
-- **v5.0 Full Repository Audit — All Integrity Checks Passed** — Comprehensive repository-wide integrity review recorded in [`audit/200-repo-wide-integrity-report.md`](audit/200-repo-wide-integrity-report.md); results confirm independent authorship status and advisory checksum posture.
+- **v5.0 Full Repository Audit — Integrity verification pending v5 sealing.** — Comprehensive repository-wide integrity review recorded in [`audits/200-repo-wide-integrity-report.md`](audits/200-repo-wide-integrity-report.md); results confirm independent authorship status and advisory checksum posture.
 
 🧭 Demo:
 Explore the AI OSI Stack Compliance Portal prototype — a visual demonstration of the governance layers and evidence artefacts.

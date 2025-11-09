@@ -1,13 +1,13 @@
 {
   "_meta": {
-    "source": "AI OSI Stack v5",
-    "repository": "https://github.com/danielpmadden/ai-osi-stack",
+    "source": "AI OSI Stack v5.0.0",
+    "repository": "https://github.com/ai-osi/ai-osi-stack",
     "license": "CC BY-SA 4.0 / Apache-2.0",
     "generated": "2025-02-21",
     "notes": "Derived from canonical audit summary and governance mappings."
   },
   "canonical_version": {
-    "label": "AI OSI Stack v5",
+    "label": "AI OSI Stack v5.0.0",
     "doi": "10.5281/zenodo.9999999",
     "checksum_guidance": "Record SHA-512 (or equivalent) locally and store with meta/INTEGRITY_NOTICE.md",
     "integrity_notice": "docs/integrity/notice.md",
