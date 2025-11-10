@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
+Unauthorized reproductions or derivatives are not recognized custodial works.
+Refer to CANONICAL_PROVENANCE.yaml for official verification.
 # Repository Audit: Open-Core IP Boundary Alignment
 
 **Date:** 2025-11-09  

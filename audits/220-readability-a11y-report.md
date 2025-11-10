@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
+Unauthorized reproductions or derivatives are not recognized custodial works.
+Refer to CANONICAL_PROVENANCE.yaml for official verification.
 # Dashboard Readability & Accessibility Audit
 
 > **Historical Reference Notice:** Findings reference the private Governance Control Tower™ dashboard implementation (formerly `analytics/dashboard/`). Artefacts are retained here for archival transparency only.

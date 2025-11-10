@@ -1,6 +1,11 @@
 AI OSI Stack Open-Core Licensing Notice
 ======================================
 
+**Custodial Notice**  
+This repository is the canonical open-core publication of the AI OSI Stack™ (v5.0).  
+No runtime or monetizable code is included.  
+Unauthorized reuse or modification of proprietary implementations is strictly prohibited.
+
 This repository constitutes the civic, open-core distribution of the AI OSI Stack.
 Unless a file carries a more specific notice, content is available under one of the
 following licenses:

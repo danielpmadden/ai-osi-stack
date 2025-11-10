@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
+Unauthorized reproductions or derivatives are not recognized custodial works.
+Refer to CANONICAL_PROVENANCE.yaml for official verification.
 # Layer 0–8 Purpose/Obligation/Verification Consistency Audit
 
 > **Historical Reference Notice:** Dashboard dataset citations (e.g., `analytics/dashboard/…`) refer to private Governance Control Tower™ assets retained for archival transparency and are not part of the open-core repository.
