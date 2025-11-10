@@ -1,11 +1,3 @@
-Layer/Theme: contributing_guidelines
-Version: v5.0-open-core
-Purpose: Describe civic contribution process for AI OSI v5.
-
-# Contributing to AI OSI v5
-
-Contributions SHALL reinforce the civic commitments of AI OSI v5.0-open-core. Community members, institutions, and individuals are welcome when acting in the public interest.
-
 ## Participation Steps
 
 1. Review the repository foundation and relevant layers before drafting a proposal.
