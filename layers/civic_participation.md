@@ -30,9 +30,9 @@ Layer 8 empowers communities to shape, question, and co-govern the AI OSI Stack.
 
 ## Interfaces
 
-- Provides continuous input to [L0 Civic Mandate](L0_Civic_Mandate.md) and [L1 Ethical Charter](L1_Ethical_Charter.md).
-- Informs testing adaptations via [../20_GUIDES/Testing_Framework.md](../20_GUIDES/Testing_Framework.md).
-- Supplies insights to [../30_REFERENCE/Roadmap.md](../30_REFERENCE/Roadmap.md) for future planning.
+- Provides continuous input to [L0 Civic Mandate](civic_mandate.md) and [L1 Ethical Charter](ethical_charter.md).
+- Informs testing adaptations via [../guides/testing_framework.md](../guides/testing_framework.md).
+- Supplies insights to [../reference/roadmap.md](../reference/roadmap.md) for future planning.
 
 ## Accountability Checklist
 

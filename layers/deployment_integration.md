@@ -30,9 +30,9 @@ Layer 6 aligns operational processes, infrastructure, and human support systems 
 
 ## Interfaces
 
-- Receives insights from [L5 Reasoning Exchange](L5_Reasoning_Exchange.md).
-- Coordinates publication with [L7 Governance Publication](L7_Governance_Publication.md).
-- Informs participation activities in [L8 Civic Participation](L8_Civic_Participation.md).
+- Receives insights from [L5 Reasoning Exchange](reasoning_exchange.md).
+- Coordinates publication with [L7 Governance Publication](governance_publication.md).
+- Informs participation activities in [L8 Civic Participation](civic_participation.md).
 
 ## Accountability Checklist
 

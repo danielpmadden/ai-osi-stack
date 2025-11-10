@@ -26,7 +26,7 @@ Layer 0 establishes why the intelligence effort exists, whom it serves, and what
 
 1. Convene an open forum to draft or revise the mandate.
 2. Document deliberation notes in the Transparency Record.
-3. Publish a Public Attestation Step confirming mandate approval before proceeding to [L1 Ethical Charter](L1_Ethical_Charter.md) development.
+3. Publish a Public Attestation Step confirming mandate approval before proceeding to [L1 Ethical Charter](ethical_charter.md) development.
 
 ## Outputs
 
@@ -36,8 +36,8 @@ Layer 0 establishes why the intelligence effort exists, whom it serves, and what
 
 ## Interfaces
 
-- Receives participation feedback from [L8 Civic Participation](L8_Civic_Participation.md).
-- Provides direction to [L1 Ethical Charter](L1_Ethical_Charter.md) and [../20_GUIDES/Implementation_Guide.md](../20_GUIDES/Implementation_Guide.md).
+- Receives participation feedback from [L8 Civic Participation](civic_participation.md).
+- Provides direction to [L1 Ethical Charter](ethical_charter.md) and [../guides/implementation_guide.md](../guides/implementation_guide.md).
 
 ## Accountability Checklist
 

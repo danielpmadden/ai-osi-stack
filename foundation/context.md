@@ -21,7 +21,7 @@ The AI OSI Stack originated as an attempt to map artificial intelligence governa
 
 ## Relationship to Existing Standards
 
-This framework complements, but does not replicate, public sector AI guidelines, open data charters, or academic ethics protocols. It translates those traditions into a layered reference model that can be iterated locally. For comparative insights, consult [../30_REFERENCE/Comparative_Models.md](../30_REFERENCE/Comparative_Models.md).
+This framework complements, but does not replicate, public sector AI guidelines, open data charters, or academic ethics protocols. It translates those traditions into a layered reference model that can be iterated locally. For comparative insights, consult [../reference/comparative_models.md](../reference/comparative_models.md).
 
 ## Stakeholders
 
@@ -33,5 +33,5 @@ This framework complements, but does not replicate, public sector AI guidelines,
 ## Maintaining Alignment
 
 - Layer custodians SHALL host regular open briefings and invite questions.
-- Civic Oversight Interface practices SHALL be documented in [../10_LAYERS/L7_Governance_Publication.md](../10_LAYERS/L7_Governance_Publication.md).
+- Civic Oversight Interface practices SHALL be documented in [../layers/governance_publication.md](../layers/governance_publication.md).
 - The Open Evidence Interface SHALL use plain-language templates and provide source references wherever possible.

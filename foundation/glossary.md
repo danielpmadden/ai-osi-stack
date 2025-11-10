@@ -21,4 +21,4 @@ status: draft
 | **Community Briefing** | An open session where custodians share updates and receive questions or concerns. |
 | **Risk Ledger** | *Deprecated.* Replaced by narrative risk reporting inside the Transparency Record. |
 
-Additional terms appear within the layer documents and are cross-referenced in the [../30_REFERENCE/Crosswalk_Index.md](../30_REFERENCE/Crosswalk_Index.md).
+Additional terms appear within the layer documents and are cross-referenced in the [../reference/crosswalk_index.md](../reference/crosswalk_index.md).

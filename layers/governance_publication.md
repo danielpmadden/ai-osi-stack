@@ -30,9 +30,9 @@ Layer 7 defines how information about the AI OSI Stack is shared publicly. It SH
 
 ## Interfaces
 
-- Publishes findings from [L6 Deployment Integration](L6_Deployment_Integration.md).
-- Provides accountability feedback to [L0 Civic Mandate](L0_Civic_Mandate.md) and [L1 Ethical Charter](L1_Ethical_Charter.md).
-- Supports [../30_REFERENCE/FAQ.md](../30_REFERENCE/FAQ.md) with updated information.
+- Publishes findings from [L6 Deployment Integration](deployment_integration.md).
+- Provides accountability feedback to [L0 Civic Mandate](civic_mandate.md) and [L1 Ethical Charter](ethical_charter.md).
+- Supports [../reference/faq.md](../reference/faq.md) with updated information.
 
 ## Accountability Checklist
 

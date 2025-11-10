@@ -20,7 +20,7 @@ status: draft
 1. **Mandate First.** Decisions SHALL trace back to the civic mandate before resource allocation or deployment.
 2. **Ethics Everywhere.** Ethical commitments SHALL appear in every layer, not only in codes of conduct.
 3. **Data Care.** Communities SHALL minimize data collection and ensure consent is informed, revocable, and honored.
-4. **Iterative Validation.** Testing SHOULD occur at multiple layers, using open methods described in [../20_GUIDES/Testing_Framework.md](../20_GUIDES/Testing_Framework.md).
+4. **Iterative Validation.** Testing SHOULD occur at multiple layers, using open methods described in [../guides/testing_framework.md](../guides/testing_framework.md).
 5. **Public Accountability.** Reports, deliberations, and remediation steps SHALL be recorded through the Civic Oversight Interface.
 6. **Inclusive Participation.** Layer custodians SHALL design participation mechanisms that support access needs and language diversity.
 7. **Temporal Awareness.** Decisions SHOULD include review dates, allowing communities to revisit assumptions over time.

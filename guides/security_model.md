@@ -23,13 +23,13 @@ This model outlines non-proprietary security practices that protect people, data
 
 | Domain | Description | Linked Layers |
 | --- | --- | --- |
-| **Governance Controls** | Policies and oversight mechanisms that enforce mandates and charters. | [L0](../10_LAYERS/L0_Civic_Mandate.md), [L1](../10_LAYERS/L1_Ethical_Charter.md) |
-| **Data Protections** | Access management, encryption-at-rest, and minimization strategies. | [L2](../10_LAYERS/L2_Data_Stewardship.md) |
-| **Model Integrity** | Safeguards against tampering, backdoors, or unapproved updates. | [L3](../10_LAYERS/L3_Model_Development.md) |
-| **Instruction Safety** | Controls to prevent malicious or unsafe prompts. | [L4](../10_LAYERS/L4_Instruction_Control.md) |
-| **Operational Resilience** | Backup, incident response, and continuity planning. | [L6](../10_LAYERS/L6_Deployment_Integration.md) |
-| **Transparency Assurance** | Measures ensuring publication accuracy and accessibility. | [L7](../10_LAYERS/L7_Governance_Publication.md) |
-| **Participation Safeguards** | Protecting participants from retaliation or harm. | [L8](../10_LAYERS/L8_Civic_Participation.md) |
+| **Governance Controls** | Policies and oversight mechanisms that enforce mandates and charters. | [L0](../layers/civic_mandate.md), [L1](../layers/ethical_charter.md) |
+| **Data Protections** | Access management, encryption-at-rest, and minimization strategies. | [L2](../layers/data_stewardship.md) |
+| **Model Integrity** | Safeguards against tampering, backdoors, or unapproved updates. | [L3](../layers/model_development.md) |
+| **Instruction Safety** | Controls to prevent malicious or unsafe prompts. | [L4](../layers/instruction_control.md) |
+| **Operational Resilience** | Backup, incident response, and continuity planning. | [L6](../layers/deployment_integration.md) |
+| **Transparency Assurance** | Measures ensuring publication accuracy and accessibility. | [L7](../layers/governance_publication.md) |
+| **Participation Safeguards** | Protecting participants from retaliation or harm. | [L8](../layers/civic_participation.md) |
 
 ## Incident Response Workflow
 

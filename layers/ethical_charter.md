@@ -26,7 +26,7 @@ Layer 1 translates the mandate into binding commitments, obligations, and safegu
 
 1. Map each commitment to the civic mandate and document the linkage.
 2. Establish training resources for staff and volunteers.
-3. Coordinate with [L2 Data Stewardship](L2_Data_Stewardship.md) to ensure data practices respect charter obligations.
+3. Coordinate with [L2 Data Stewardship](data_stewardship.md) to ensure data practices respect charter obligations.
 
 ## Oversight
 
@@ -36,5 +36,5 @@ Layer 1 translates the mandate into binding commitments, obligations, and safegu
 
 ## Interface Summary
 
-- Informs testing protocols in [../20_GUIDES/Testing_Framework.md](../20_GUIDES/Testing_Framework.md).
-- Provides ethical constraints to [L3 Model Development](L3_Model_Development.md) and [L4 Instruction Control](L4_Instruction_Control.md).
+- Informs testing protocols in [../guides/testing_framework.md](../guides/testing_framework.md).
+- Provides ethical constraints to [L3 Model Development](model_development.md) and [L4 Instruction Control](instruction_control.md).

@@ -30,9 +30,9 @@ Layer 4 governs how instructions, prompts, and interventions are crafted and mod
 
 ## Interfaces
 
-- Receives model specifications from [L3 Model Development](L3_Model_Development.md).
-- Supplies usage data and issues to [L5 Reasoning Exchange](L5_Reasoning_Exchange.md).
-- Coordinates with [../20_GUIDES/Implementation_Guide.md](../20_GUIDES/Implementation_Guide.md) for deployment training.
+- Receives model specifications from [L3 Model Development](model_development.md).
+- Supplies usage data and issues to [L5 Reasoning Exchange](reasoning_exchange.md).
+- Coordinates with [../guides/implementation_guide.md](../guides/implementation_guide.md) for deployment training.
 
 ## Accountability Checklist
 

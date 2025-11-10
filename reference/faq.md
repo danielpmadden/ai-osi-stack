@@ -18,7 +18,7 @@ No. This civic edition contains human-readable Markdown guidance only. Communiti
 
 ## How does the Open Evidence Interface work?
 
-It replaces closed APIs with shared documentation templates. Custodians publish evidence, decisions, and verification steps in accessible formats. See [../10_LAYERS/L5_Reasoning_Exchange.md](../10_LAYERS/L5_Reasoning_Exchange.md) for usage guidance.
+It replaces closed APIs with shared documentation templates. Custodians publish evidence, decisions, and verification steps in accessible formats. See [../layers/reasoning_exchange.md](../layers/reasoning_exchange.md) for usage guidance.
 
 ## Who maintains the layers?
 
@@ -26,7 +26,7 @@ Layer custodians are appointed by the Stewardship Circle formed during implement
 
 ## How often should the mandate be reviewed?
 
-At least annually, and whenever significant community feedback or policy changes arise. Review cycles are defined in [../10_LAYERS/L0_Civic_Mandate.md](../10_LAYERS/L0_Civic_Mandate.md).
+At least annually, and whenever significant community feedback or policy changes arise. Review cycles are defined in [../layers/civic_mandate.md](../layers/civic_mandate.md).
 
 ## What license applies?
 
@@ -34,8 +34,8 @@ This edition is intended for non-commercial use under a Creative Commons Attribu
 
 ## How are grievances addressed?
 
-Through the participation mechanisms described in [../10_LAYERS/L8_Civic_Participation.md](../10_LAYERS/L8_Civic_Participation.md) and published via [../10_LAYERS/L7_Governance_Publication.md](../10_LAYERS/L7_Governance_Publication.md).
+Through the participation mechanisms described in [../layers/civic_participation.md](../layers/civic_participation.md) and published via [../layers/governance_publication.md](../layers/governance_publication.md).
 
 ## Can we adapt the stack?
 
-Yes. Adaptations SHALL remain non-commercial, document changes transparently, and maintain civic commitments outlined in [../00_FOUNDATION/03_Design_Principles.md](../00_FOUNDATION/03_Design_Principles.md).
+Yes. Adaptations SHALL remain non-commercial, document changes transparently, and maintain civic commitments outlined in [../foundation/03_Design_Principles.md](../foundation/03_Design_Principles.md).
