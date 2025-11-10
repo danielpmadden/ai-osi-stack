@@ -1,7 +1,3 @@
-Layer/Theme: code_of_conduct
-Version: v5.0-open-core
-Purpose: Establish community standards for AI OSI v5 participation.
-
 # Code of Conduct
 
 All participants SHALL foster a respectful, inclusive environment aligned with civic values.
