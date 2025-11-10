@@ -1,13 +1,26 @@
+% SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Layer 3 — Model Lifecycle}
 \section{Narrative Intent}
-% <<< write content here >>>
+Layer 3 complements Layer 03 by ensuring that post-development activities—deployment, monitoring,
+retirement, and archival—are governed with the same rigor. It emphasizes continuity between
+laboratory validation and real-world operation, drawing on the Version 4 lifecycle expectations while
+integrating resilience and escalation pathways introduced across Layers 06 and 12.
 
 \section{Normative Clauses}
 \begin{enumerate}
-  \item ...
+  \item \textbf{Deployment Authorization.} No model SHALL enter production without documented confirmation
+        that its ethical, civic, and technical controls remain valid for the intended environment.
+  \item \textbf{Runtime Monitoring.} Custodians SHALL maintain monitoring dashboards that track performance,
+        safety indicators, and civic impact metrics, escalating anomalies via Appendix B procedures.
+  \item \textbf{Lifecycle Reviews.} Scheduled reviews SHALL evaluate whether models still fulfill their civic
+        purpose, with decisions captured in Appendix C change logs and Appendix D audit artifacts.
+  \item \textbf{Retirement and Archival.} When models are decommissioned, stewards SHALL preserve sufficient
+        artifacts to reproduce outcomes while revoking access to live data paths.
 \end{enumerate}
 
 \section{Plain-Speak Summary}
-% <<< summary text here >>>
+Once a model ships, the work is not over. This layer requires teams to keep watching how it behaves,
+log what they find, and retire it responsibly when it no longer meets expectations. The public should be
+able to trace every major decision from launch to sunset.
 
 \cleardoublepage

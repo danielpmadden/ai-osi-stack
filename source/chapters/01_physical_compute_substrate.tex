@@ -1,18 +1,30 @@
+% SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Layer 01 — Physical Compute Substrate}
 \section{Narrative Intent}
 \subsection*{Overview}
-This section outlines the normative controls and requirements for physical compute substrate. Detailed clauses will be developed in alignment with Version 5 governance directives.
+Layer 01 translates the civic mandate into tangible obligations for the physical infrastructure that
+hosts AI workloads. It expands the Version 4 hardware resilience requirements with supply-chain
+provenance metadata and lifecycle maintenance checkpoints. The narrative goal is to guarantee that
+all compute assets remain trustworthy, resilient, and ready for audit at any time.
 
 \section{Normative Clauses}
-\subsection*{Key Objectives}
-\begin{itemize}
-  \item Establish measurable obligations.
-  \item Maintain alignment with the civic mandate.
-  \item Provide traceability to the v4→v5 crosswalk.
-\end{itemize}
+\subsection*{Infrastructure Controls}
+\begin{enumerate}
+  \item \textbf{Provenance Tracking.} Operators SHALL maintain verifiable provenance metadata for every
+        compute asset, including component origin, custody chain, and firmware attestation status.
+  \item \textbf{Resilience Benchmarks.} Facilities SHALL implement redundancy and failover criteria sized to
+        civic service levels, ensuring continuity for mandated public interfaces.
+  \item \textbf{Lifecycle Maintenance.} Custodians SHALL document inspection intervals, remediation actions,
+        and retirement procedures, linking each to accountable personnel and civic risk assessments.
+  \item \textbf{Tamper Evidence.} All hardware hosting AEIP workloads SHALL use tamper-evident seals or
+        equivalent controls, with incident response triggers when integrity is questioned.
+\end{enumerate}
 
 \section{Plain-Speak Summary}
-Focus areas include: establish measurable obligations, maintain alignment with the civic mandate, and provide traceability to the v4→v5 crosswalk.
+This layer makes sure the machines running the system are sourced responsibly, hardened against
+failure, and checked on a disciplined schedule. If something goes wrong or a component is swapped,
+there must be records that show what happened, who approved it, and how the public’s risk was kept
+within agreed bounds.
 
 \emph{License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.}
 

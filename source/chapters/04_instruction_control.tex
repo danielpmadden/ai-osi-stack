@@ -1,18 +1,28 @@
+% SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Layer 04 — Instruction Control}
 \section{Narrative Intent}
 \subsection*{Overview}
-This section outlines the normative controls and requirements for instruction control. Detailed clauses will be developed in alignment with Version 5 governance directives.
+Layer 04 updates the instructional interface guidance from Version 4, introducing instruction
+traceability and civic override hooks. Its purpose is to ensure that prompts, directives, and
+configuration adjustments remain auditable and can be overridden when civic risk thresholds are met.
 
 \section{Normative Clauses}
-\subsection*{Key Objectives}
-\begin{itemize}
-  \item Establish measurable obligations.
-  \item Maintain alignment with the civic mandate.
-  \item Provide traceability to the v4→v5 crosswalk.
-\end{itemize}
+\subsection*{Control Obligations}
+\begin{enumerate}
+  \item \textbf{Instruction Logging.} All operator- and system-level instructions SHALL be logged with
+        contextual metadata, including requester identity, civic justification, and resulting state changes.
+  \item \textbf{Override Mechanisms.} Custodians SHALL implement civic override hooks that allow designated
+        stewards to halt or redirect instructions when harm indicators are detected.
+  \item \textbf{Traceability Assurance.} Instruction histories SHALL be linked to downstream outputs so auditors
+        can reconstruct how responses were produced and whether deviations occurred.
+  \item \textbf{Access Governance.} Role-based access controls SHALL govern who may issue instructions, with
+        periodic reviews to confirm necessity and proportionality.
+\end{enumerate}
 
 \section{Plain-Speak Summary}
-Focus areas include: establish measurable obligations, maintain alignment with the civic mandate, and provide traceability to the v4→v5 crosswalk.
+This layer makes sure every instruction the system receives is captured, justified, and reversible. If
+an instruction looks risky, there are tools to stop it. People allowed to send commands must prove they
+need that power, and auditors can follow the trail from instruction to outcome.
 
 \emph{License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.}
 

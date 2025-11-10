@@ -1,18 +1,29 @@
+% SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Layer 03 — Model Development}
 \section{Narrative Intent}
 \subsection*{Overview}
-This section outlines the normative controls and requirements for model development. Detailed clauses will be developed in alignment with Version 5 governance directives.
+Layer 03 defines the controls governing model design, training, evaluation, and release preparation. It
+clarifies lifecycle gating and creates explicit links to Layer 11 verification activities, ensuring that
+models cannot progress without satisfying both ethical and civic checkpoints. The narrative situates
+model development within a transparent pipeline that remains open to public scrutiny.
 
 \section{Normative Clauses}
-\subsection*{Key Objectives}
-\begin{itemize}
-  \item Establish measurable obligations.
-  \item Maintain alignment with the civic mandate.
-  \item Provide traceability to the v4→v5 crosswalk.
-\end{itemize}
+\subsection*{Development Controls}
+\begin{enumerate}
+  \item \textbf{Lifecycle Gates.} Custodians SHALL document and enforce decision gates for data readiness,
+        architecture approval, training launch, and evaluation sign-off, each tied to accountable stewards.
+  \item \textbf{Evaluation Protocols.} Evaluation plans SHALL include bias detection, robustness testing, and
+        civic impact scenarios, with results archived for Appendix D audit traceability.
+  \item \textbf{Traceable Artifacts.} Source code, training scripts, and configuration files SHALL be versioned
+        and cross-referenced to the civic accountability charter for reproducibility.
+  \item \textbf{Change Control.} Material deviations from approved designs SHALL trigger Appendix C change log
+        entries and require explicit ethical debt evaluation before resuming development.
+\end{enumerate}
 
 \section{Plain-Speak Summary}
-Focus areas include: establish measurable obligations, maintain alignment with the civic mandate, and provide traceability to the v4→v5 crosswalk.
+Model work cannot be ad hoc. This layer insists on clear checkpoints, documented tests, and stored
+artifacts so anyone can retrace how a model came to be. If the team changes course, it must explain the
+impact and get approval before moving ahead.
 
 \emph{License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.}
 
