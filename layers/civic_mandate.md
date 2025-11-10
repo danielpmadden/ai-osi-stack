@@ -1,47 +1,57 @@
----
-title: L0 Civic Mandate
-title_id: layer0-civic-mandate
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: layer_civic_mandate
+Version: v5.0-open-core
+Purpose: Define the public mandate that anchors AI OSI v5.
 
 # L0 Civic Mandate
 
-## Purpose
-
-Layer 0 establishes why the intelligence effort exists, whom it serves, and what boundaries cannot be crossed. The mandate SHALL be renewed through regular public deliberation.
+The civic mandate SHALL articulate the community need, intended benefits, and red lines for the intelligence service. Renewal SHALL occur through open deliberation with affected parties.
 
 ## Required Elements
 
-| Element | Description |
-| --- | --- |
-| **Mission Statement** | One paragraph describing the civic problem or opportunity. |
-| **Constituent Analysis** | Summary of who is affected and how they participated in drafting the mandate. |
-| **Authority and Limits** | Legal, policy, or community directives that authorize action and define limits. |
-| **Success Measures** | Qualitative and quantitative indicators tied to wellbeing, not profit. |
-| **Review Cycle** | Frequency and process for mandate review, including public notice requirements. |
+- A mission statement written in plain language.
+- Documented participation from impacted communities.
+- Authorities and limits grounded in law, policy, or community agreements.
+- Wellbeing-oriented success measures with review cadence.
 
 ## Stewardship Actions
 
-1. Convene an open forum to draft or revise the mandate.
-2. Document deliberation notes in the Transparency Record.
-3. Publish a Public Attestation Step confirming mandate approval before proceeding to [L1 Ethical Charter](ethical_charter.md) development.
-
-## Outputs
-
-- Mandate summary posted in accessible formats.
-- Contact information for mandate custodians.
-- Link to the most recent community briefing.
+1. Convene an open forum with published agenda and accessible materials.
+2. Record deliberation outcomes and opposing views in the Transparency Record.
+3. Issue a Public Attestation Step confirming readiness to proceed to the ethical charter.
 
 ## Interfaces
 
-- Receives participation feedback from [L8 Civic Participation](civic_participation.md).
-- Provides direction to [L1 Ethical Charter](ethical_charter.md) and [../guides/implementation_guide.md](../guides/implementation_guide.md).
+- Feeds governing intent to [L1 Ethical Charter](ethical_charter.md) and [L2 Data Stewardship](data_stewardship.md).
+- Receives feedback cycles from [L8 Civic Participation](civic_participation.md).
+- Informs mandate-specific tasks in [../guides/implementation_guide.md](../guides/implementation_guide.md).
 
-## Accountability Checklist
+## What Good Looks Like
 
-- [ ] Mission statement written in plain language.
-- [ ] Constituents informed and invited to deliberate.
-- [ ] Authority documents cited and shared publicly.
-- [ ] Review cycle scheduled with dates and responsible parties.
+- Communities recognize their priorities in the mandate language.
+- Review dates are published with responsible stewards named.
+- Transparency Records show consensus and dissent side by side.
+
+## Common Failure Modes
+
+- Mandates written without direct input from impacted communities.
+- Unclear authority boundaries leading to unchecked expansion.
+- Missing renewal timelines or undocumented review outcomes.
+
+## Worked Example
+
+A municipal data office drafts a civic intelligence service. Stewards run neighborhood assemblies, translate materials, and publish deliberation notes. The resulting mandate states the service SHALL support housing stability metrics, prohibits surveillance uses, and sets a six-month review schedule aligned with council hearings.
+
+Traceability
+
+Keys: Layer=L0, Mandate_Record=CM-2024
+Open Civic Artefacts
+
+- Transparency Record: Civic Mandate Forum Minutes
+- Transparency Record: Mandate Renewal Attestation
+
+```sql
+-- Copy code
+SELECT artefact_id, renewal_date
+FROM transparency_registry
+WHERE layer = 'L0';
+```

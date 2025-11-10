@@ -1,45 +1,46 @@
----
-title: Philosophy and Ethics
-title_id: guide-philosophy-ethics
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: guide_philosophy_ethics
+Version: v5.0-open-core
+Purpose: Articulate civic philosophy and ethics for AI OSI v5.
 
-# Philosophy and Ethics
+# Philosophy and Ethics Guide
 
-## Purpose
+This guide SHALL anchor AI OSI v5.0-open-core in civic ethics rooted in dignity, refusal, and responsible use.
 
-This guide articulates the philosophical grounding of the AI OSI Stack, emphasizing civic care, epistemic humility, and ethical responsibility.
+## Refusal Logic
 
-## Philosophical Foundations
+- Systems SHALL refuse requests that violate the civic mandate, ethical charter, or human rights norms.
+- Refusals SHOULD provide clear explanations and direct users to appeals or human assistance.
+- Stewards SHALL document refusal scenarios and outcomes in Transparency Records for accountability.
 
-- **Civic Humanism.** Intelligence serves communal flourishing, not extraction.
-- **Pluralism.** Multiple forms of knowledge and experience SHALL inform stewardship.
-- **Temporal Responsibility.** Decisions recognize long-term effects, future generations, and historical context.
-- **Care Ethics.** Relationships, trust, and mutual support are central to governance.
+## Dignity-by-Design
 
-## Ethical Commitments
+- User interactions SHALL respect autonomy, avoiding manipulation or coercion.
+- Content SHALL be accessible, inclusive, and free from demeaning language.
+- Feedback loops SHOULD proactively invite marginalized voices to refine dignified interactions.
 
-1. **Transparency as a Practice.** Disclosure is ongoing, participatory, and accessible.
-2. **Accountability with Teeth.** Consequences for harm SHALL be meaningful, restorative, and timely.
-3. **Participation as Power.** Communities SHALL influence decisions, not merely observe them.
-4. **Learning over Control.** The stack favors adaptive learning over rigid command structures.
+## Responsible Usage Examples
 
-## Reflection Activities
+- **Community Hotlines**: Systems SHOULD triage inquiries while ensuring immediate handoff to trained responders for crisis cases.
+- **Public Benefits Advising**: Automated guidance SHALL highlight rights, deadlines, and appeal options without pressuring acceptance.
+- **Civic Education Tools**: Educational modules SHALL cite sources, avoid partisan framing, and encourage participation in oversight.
 
-- Host community salons to discuss ethical dilemmas using real scenarios.
-- Maintain a living anthology of civic essays, testimonies, and research that inform layer updates.
-- Encourage custodians to write reflection memos after major decisions, noting uncertainties and future inquiries.
+## Stewardship Practices
 
-## Linkages
+- Regularly review ethical commitments with community councils.
+- Update guidance when refusal patterns reveal new harms or needs.
+- Publish reflections on ethical dilemmas and resolutions in accessible formats.
 
-- Supports the ethical framing in [../layers/ethical_charter.md](../layers/ethical_charter.md).
-- Informs interpretive practices in [../layers/reasoning_exchange.md](../layers/reasoning_exchange.md).
-- Provides context for participation efforts in [../layers/civic_participation.md](../layers/civic_participation.md).
+Traceability
 
-## Further Reading
+Keys: Guide=PhilosophyEthics-v5, Review_Cycle=biannual
+Open Civic Artefacts
 
-- Public-interest technology toolkits and community accountability frameworks.
-- Oral histories and local narratives that reveal how technology impacts civic life.
-- Scholarship on open governance, democratic innovation, and mutual aid.
+- Transparency Record: Ethics Council Minutes
+- Transparency Record: Refusal Logic Update Log
+
+```sql
+-- Copy code
+SELECT artefact_id, reflection_date
+FROM transparency_registry
+WHERE guide = 'philosophy_ethics';
+```

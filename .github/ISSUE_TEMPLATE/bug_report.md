@@ -1,37 +1,32 @@
-© 2025 Daniel P. Madden — Custodial Author
-AI OSI Stack v5.0-open-core (Civic Standard Edition)
+Layer/Theme: issue_template_bug
+Version: v5.0-open-core
+Purpose: Collect civic bug reports for AI OSI v5.
 
-© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
-Unauthorized reproductions or derivatives are not recognized custodial works.
-Refer to CANONICAL_PROVENANCE.yaml for official verification.
----
-name: Bug Report
-description: Report a defect impacting the AI OSI Stack
-labels: [bug]
----
+# Bug Report
 
 ## Summary
+Describe the issue, impacted communities, and affected layers or guides.
 
-Describe the bug and the affected AEIP layers.
+## Reproduction Steps
+List steps to reproduce, including links to relevant artefacts.
 
-## Steps to Reproduce
+## Expected vs Actual Behavior
+Explain what SHOULD happen and what currently occurs.
 
-1. 
-2. 
-3. 
+## Transparency Records
+Reference existing records or propose new ones to document the issue.
 
-## Expected Behavior
+Traceability
 
-## Actual Behavior
+Keys: Doc=BugTemplate-v5, Review_Cycle=on_change
+Open Civic Artefacts
 
-## Evidence
+- Transparency Record: Bug Intake Log
+- Transparency Record: Remediation Assignment Register
 
-- Logs, screenshots, or ledger references
-- Hashes or commit IDs involved
-
-## Security Impact
-
-- [ ] No security impact
-- [ ] Potential integrity/provenance concern (explain below)
-
-## Additional Context
+```sql
+-- Copy code
+SELECT artefact_id, bug_id
+FROM transparency_registry
+WHERE document = 'bug_template';
+```

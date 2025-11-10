@@ -1,26 +1,43 @@
-# Contributing to the AI OSI Stack
+Layer/Theme: contributing_guidelines
+Version: v5.0-open-core
+Purpose: Describe civic contribution process for AI OSI v5.
 
-The AI OSI Stack is a civic commons project. Contributions are welcome from public servants, community stewards, researchers, and technologists who support transparent, accountable AI governance.
+# Contributing to AI OSI v5
 
-## Principles
+Contributions SHALL reinforce the civic commitments of AI OSI v5.0-open-core. Community members, institutions, and individuals are welcome when acting in the public interest.
 
-- **Civic alignment.** Proposals must reinforce public interest goals and uphold the design principles in `foundation/design_principles.md`.
-- **Open documentation.** All substantive changes require plain-language summaries, rationale, and references to supporting evidence.
-- **Non-commercial intent.** Contributions must avoid monetization, proprietary lock-in, or cryptographic payloads.
+## Participation Steps
 
-## Ways to Contribute
+1. Review the repository foundation and relevant layers before drafting a proposal.
+2. Open an issue outlining the change, public benefit, potential risks, and required Transparency Records.
+3. Engage in discussion until consensus or recorded dissent is reached.
+4. Submit a pull request referencing issue numbers and linked artefacts.
+5. Remain available for follow-up questions during review and after merge.
 
-1. **Issue reports.** Use GitHub issues to flag gaps, propose improvements, or document local adaptations.
-2. **Pull requests.** Submit focused PRs with clear summaries, updated links, and changelog entries when relevant.
-3. **Community feedback.** Share civic deliberation notes, participation metrics, or testing outcomes in discussions or reference documents.
+## Expectations
 
-## Submission Checklist
+- Use plain civic language and reference the appropriate layer or guide.
+- Document impacts on transparency, participation, or accountability.
+- Provide translations or accessible formats when introducing new artefacts.
+- Record Public Attestation Steps if the change alters governance or security posture.
 
-- [ ] Follow the [Code of Conduct](CODE_OF_CONDUCT.md).
-- [ ] Reference impacted documents and update cross-links.
-- [ ] Include public rationale in the PR description and update `CHANGELOG.md` for notable releases.
-- [ ] Confirm that new or modified files use lowercase names without numeric prefixes.
+## Community Agreements
 
-## Review Process
+- Act with respect toward all participants, centering impacted communities.
+- Surface conflicts openly and document resolutions or outstanding concerns.
+- Avoid introducing proprietary dependencies or closed processes.
 
-Maintainers review contributions for civic impact, clarity, and adherence to licensing. Expect collaborative feedback and requests for additional documentation. Decisions are recorded transparently to maintain public trust.
+Traceability
+
+Keys: Doc=ContributingGuidelines-v5, Review_Cycle=onboarding
+Open Civic Artefacts
+
+- Transparency Record: Contribution Log
+- Transparency Record: Participation Agreement Updates
+
+```sql
+-- Copy code
+SELECT artefact_id, contributor
+FROM transparency_registry
+WHERE document = 'contributing_guidelines';
+```

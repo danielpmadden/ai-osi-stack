@@ -1,41 +1,37 @@
----
-title: Design Principles
-title_id: foundation-design-principles
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: foundation_design_principles
+Version: v5.0-open-core
+Purpose: Codify civic design principles for AI OSI v5.
 
 # Design Principles
 
-## Rick Adams Philosophy
+These principles SHALL guide every layer and artefact in AI OSI v5.0-open-core. They exist to uphold dignity, transparency, and democratic oversight.
 
-- **Clarity.** Each requirement SHALL be written in plain language, with examples where necessary.
-- **Sufficiency.** The stack states only what communities need to make informed decisions, avoiding speculative features.
-- **Humility.** Layers SHALL acknowledge uncertainty and invite critique rather than asserting false certainty.
-- **Reproducibility.** Evidence and reasoning SHOULD be documented so independent reviewers can replicate findings.
+## Principles
 
-## Civic Stewardship Norms
+1. **Public Benefit First** — All decisions SHALL demonstrate measurable public value.
+2. **Explainable by Default** — Documentation SHALL be understandable by non-specialists.
+3. **Participation over Convenience** — Processes SHOULD err on the side of inclusive deliberation rather than speed.
+4. **Reparability** — Stewards SHALL plan for remediation and retroactive correction of harms.
+5. **Data Minimization** — Only necessary data SHALL be collected, retained, and explained.
+6. **Accessibility** — Materials SHOULD be accessible to people with varying abilities and languages.
 
-1. **Mandate First.** Decisions SHALL trace back to the civic mandate before resource allocation or deployment.
-2. **Ethics Everywhere.** Ethical commitments SHALL appear in every layer, not only in codes of conduct.
-3. **Data Care.** Communities SHALL minimize data collection and ensure consent is informed, revocable, and honored.
-4. **Iterative Validation.** Testing SHOULD occur at multiple layers, using open methods described in [../guides/testing_framework.md](../guides/testing_framework.md).
-5. **Public Accountability.** Reports, deliberations, and remediation steps SHALL be recorded through the Civic Oversight Interface.
-6. **Inclusive Participation.** Layer custodians SHALL design participation mechanisms that support access needs and language diversity.
-7. **Temporal Awareness.** Decisions SHOULD include review dates, allowing communities to revisit assumptions over time.
+## Applying the Principles
 
-## Implementation Guidance
+- Reference these principles when evaluating new tools or processes.
+- Reject proposals that fail to meet public benefit or reparability requirements.
+- Document any deviations in the Transparency Record with justification and mitigation steps.
 
-- Templates SHOULD reference the Open Evidence Interface rather than proprietary services.
-- Diagrams, if used, SHALL be shared as open formats and accompanied by textual descriptions for accessibility.
-- Historical artifacts MAY be referenced for learning, but they SHALL be contextualized to avoid reinstating monetized controls.
+Traceability
 
-## Measuring Success
+Keys: Principle_Set=DP-v5, Enforcement_Status=active
+Open Civic Artefacts
 
-Success is measured not by product velocity but by civic trust. Communities SHOULD evaluate:
+- Transparency Record: Principle Review Outcomes
+- Transparency Record: Deviation Log Entries
 
-- Whether people understand the mandate and how to engage.
-- Whether documentation is accessible in multiple formats.
-- Whether grievances result in timely, documented remediation.
-- Whether the stack remains adaptable to new contexts without sacrificing public commitments.
+```sql
+-- Copy code
+SELECT artefact_id, deviation_approved
+FROM transparency_registry
+WHERE component = 'foundation_design_principles';
+```

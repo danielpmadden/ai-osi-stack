@@ -1,20 +1,30 @@
-© 2025 Daniel P. Madden — Custodial Author
-AI OSI Stack v5.0-open-core (Civic Standard Edition)
+Layer/Theme: pr_template
+Version: v5.0-open-core
+Purpose: Guide civic pull request submissions.
 
-© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
-Unauthorized reproductions or derivatives are not recognized custodial works.
-Refer to CANONICAL_PROVENANCE.yaml for official verification.
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
+# Pull Request Template
 
 ## Summary
-- [ ] Inventory regenerated (`ops/inventory/inventory.sh`)
-- [ ] SBOM refreshed (`ops/sbom/syft-sbom.sh`)
-- [ ] AEIP validators executed (`npm run validate:aeip`, `npm run validate:governance`)
-- [ ] Tests executed (`npm test`, `pytest`)
-- [ ] Integrity hashes updated when canonical artifacts changed
+- Describe the public benefit and layers or guides affected.
+- Link relevant Transparency Records.
 
-## Testing Evidence
-Paste relevant command outputs or attach CI artifacts.
+## Testing
+- Detail verification steps performed and who witnessed them.
 
-## Governance Notes
-Identify impacted AEIP layers, provenance adjustments, or ledger updates. Confirm whether `INTEGRITY_NOTICE.md` requires changes.
+## Participation
+- Note community feedback gathered or scheduled follow-up sessions.
+
+Traceability
+
+Keys: Doc=PRTemplate-v5, Review_Cycle=on_change
+Open Civic Artefacts
+
+- Transparency Record: Contribution Workflow Log
+- Transparency Record: PR Template Review Notes
+
+```sql
+-- Copy code
+SELECT artefact_id, template_version
+FROM transparency_registry
+WHERE document = 'pr_template';
+```

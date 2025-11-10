@@ -1,46 +1,78 @@
----
-title: Implementation Guide
-title_id: guide-implementation
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: guide_implementation
+Version: v5.0-open-core
+Purpose: Provide an eight-step civic implementation cookbook.
 
-# Implementation Guide
+# Civic Implementation Cookbook
 
-## Purpose
+This cookbook SHALL guide stewards from mandate formation through participation. Each step includes a checklist to confirm readiness before advancing.
 
-This guide supports communities as they adopt the AI OSI Stack. It focuses on planning, facilitation, and documentation rather than software deployment.
+## Step 1: Mandate Alignment
 
-## Preparation Steps
+Checklist:
+- [ ] Convene community partners to review mandate language.
+- [ ] Confirm Transparency Record entries for deliberation.
+- [ ] Identify stewards accountable for renewals.
 
-1. **Form a Stewardship Circle.** Assemble a diverse group of custodians representing policy, ethics, technology, and community perspectives.
-2. **Review Foundational Materials.** Study the documents in [../foundation/](../foundation/) together, noting questions and local adaptations.
-3. **Define Scope and Timeline.** Align expectations, resource availability, and review cycles with [../layers/civic_mandate.md](../layers/civic_mandate.md).
+## Step 2: Ethical Charter Confirmation
 
-## Layer Activation Process
+Checklist:
+- [ ] Map mandate values to enforceable obligations.
+- [ ] Publish prohibited uses and remediation promises.
+- [ ] Record a Public Attestation Step for charter adoption.
 
-| Step | Action | Evidence |
-| --- | --- | --- |
-| **Mandate Confirmation** | Complete L0 deliverables with public input. | Mandate summary, forum notes |
-| **Ethical Chartering** | Draft and attest to L1 commitments. | Charter, training plans |
-| **Data Readiness** | Inventory data and consent processes per L2. | Data inventory, risk narratives |
-| **Model Planning** | Document L3 development approach. | Model cards, change logs |
-| **Instruction Design** | Prepare prompts and oversight plans per L4. | Prompt catalogue |
-| **Reasoning Exchange** | Establish interpretability practices per L5. | Dialogue logs |
-| **Deployment Readiness** | Finalize integration plans per L6. | Deployment plan |
-| **Publication Workflow** | Set reporting cadence per L7. | Publication calendar |
-| **Participation Program** | Launch engagement strategy per L8. | Engagement plan |
+## Step 3: Data Stewardship Setup
 
-## Adoption Tips
+Checklist:
+- [ ] Inventory datasets with consent, retention, and minimization notes.
+- [ ] Provide public notices in required languages.
+- [ ] Schedule audits with community observers.
 
-- Start with pilot projects that have clear civic benefits and measurable outcomes.
-- Pair technical staff with community liaisons to ensure mutual understanding.
-- Translate key documents into community languages and provide summaries for quick reference.
-- Document lessons learned in the Transparency Record after each milestone.
+## Step 4: Model Development Planning
 
-## Sustaining the Stack
+Checklist:
+- [ ] Define civic problem statements and evaluation metrics with stakeholders.
+- [ ] Document training experiments and rationale.
+- [ ] Share evaluation plans for public comment.
 
-- Schedule semi-annual retrospectives to evaluate progress across all layers.
-- Update the [../reference/roadmap.md](../reference/roadmap.md) with new priorities informed by participation feedback.
-- Ensure leadership transitions include handover notes for each layer custodian.
+## Step 5: Instruction Control Preparation
+
+Checklist:
+- [ ] Draft instructions referencing ethical commitments.
+- [ ] Co-test prompts with impacted communities.
+- [ ] Publish change management procedures.
+
+## Step 6: Deployment Integration Readiness
+
+Checklist:
+- [ ] Develop rollout and rollback plans with staff and residents.
+- [ ] Prepare accessibility resources and contact channels.
+- [ ] Document pilot criteria and review cadence.
+
+## Step 7: Reasoning Exchange Enablement
+
+Checklist:
+- [ ] Configure decision logs and explanation templates.
+- [ ] Establish appeals workflow with response timelines.
+- [ ] Train staff to facilitate public clinics.
+
+## Step 8: Participation Loop Activation
+
+Checklist:
+- [ ] Publish participation calendar and recruitment plan.
+- [ ] Provide support and compensation guidelines.
+- [ ] Document how feedback will inform future revisions.
+
+Traceability
+
+Keys: Guide=ImplementationCookbook-v5, Cycle=annual
+Open Civic Artefacts
+
+- Transparency Record: Implementation Cookbook Updates
+- Transparency Record: Step Completion Attestations
+
+```sql
+-- Copy code
+SELECT artefact_id, step_status
+FROM transparency_registry
+WHERE guide = 'implementation_cookbook';
+```

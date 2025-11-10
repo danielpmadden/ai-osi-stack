@@ -1,42 +1,57 @@
----
-title: L3 Model Development
-title_id: layer3-model-development
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: layer_model_development
+Version: v5.0-open-core
+Purpose: Direct model creation under civic obligations.
 
 # L3 Model Development
 
-## Purpose
+Model development SHALL adhere to the mandate, ethical charter, and data stewardship commitments. Experimentation, selection, and deployment readiness SHALL be documented for public review.
 
-Layer 3 guides the creation, adaptation, or selection of models to meet civic needs. It SHALL emphasize transparency, reproducibility, and alignment with community values.
+## Development Expectations
 
-## Development Practices
+- Define the civic problem statement and target outcomes prior to experimentation.
+- Document training configurations, evaluation metrics, and human oversight roles.
+- Engage community reviewers to assess fairness, accessibility, and unintended effects.
+- Publish evaluation summaries, including limitations and mitigations.
 
-- **Open Documentation.** Maintain research logs, dataset references, and parameter settings.
-- **Civic Fit Testing.** Evaluate whether models serve the mandate without reinforcing inequities.
-- **Collaborative Review.** Invite interdisciplinary reviewers, including community representatives.
-- **Iterative Refinement.** Document changes, rationale, and expected impacts before implementation.
+## Stewardship Actions
 
-## Required Records
-
-| Record | Requirement |
-| --- | --- |
-| **Model Cards** | Include purpose, limitations, evaluation metrics, and civic considerations. |
-| **Training Protocols** | Describe data preprocessing, training steps, and validation methods. |
-| **Change Logs** | Track updates, experiments, and decisions along with OEI references. |
-| **Impact Assessments** | Summaries of anticipated societal effects with mitigation plans. |
+1. Conduct design reviews with stakeholders before finalizing model architecture.
+2. Test models against scenarios surfaced by impacted communities.
+3. Secure a Public Attestation Step confirming charter compliance before integration.
 
 ## Interfaces
 
-- Receives ethical guidance from [L1 Ethical Charter](ethical_charter.md).
-- Depends on data practices from [L2 Data Stewardship](data_stewardship.md).
-- Supplies information to [L4 Instruction Control](instruction_control.md) and [../guides/testing_framework.md](../guides/testing_framework.md).
+- Consumes approved datasets from [L2 Data Stewardship](data_stewardship.md).
+- Provides technical documentation to [L4 Instruction Control](instruction_control.md) and [../guides/testing_framework.md](../guides/testing_framework.md).
+- Receives governance directives from [L6 Governance Publication](governance_publication.md).
 
-## Accountability Checklist
+## What Good Looks Like
 
-- [ ] Model documentation published with clear licenses.
-- [ ] Evaluation metrics include civic impact indicators.
-- [ ] Community reviewers participated and their feedback recorded.
-- [ ] Public Attestation Step completed before moving to deployment planning.
+- Transparent documentation showing why specific models were selected or rejected.
+- Evidence of co-designed evaluation metrics with community representatives.
+- Clear articulation of model limits and fallback procedures.
+
+## Common Failure Modes
+
+- Choosing models solely for performance without civic justification.
+- Poor documentation preventing public understanding of trade-offs.
+- Neglecting community-defined scenarios during testing.
+
+## Worked Example
+
+A civic benefits office designs an eligibility triage model. Stewards document the training data review, involve beneficiary advocates in setting fairness thresholds, and publish evaluation notebooks with plain language summaries. A Public Attestation Step confirms that manual review remains available for contested decisions.
+
+Traceability
+
+Keys: Layer=L3, Model_Record=MD-2024
+Open Civic Artefacts
+
+- Transparency Record: Model Review Docket
+- Transparency Record: Evaluation Summary Publication
+
+```sql
+-- Copy code
+SELECT artefact_id, evaluation_date
+FROM transparency_registry
+WHERE layer = 'L3';
+```

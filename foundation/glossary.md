@@ -1,24 +1,34 @@
----
-title: Glossary
-title_id: foundation-glossary
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: foundation_glossary
+Version: v5.0-open-core
+Purpose: Maintain shared civic terminology for AI OSI v5.
 
 # Glossary
 
-| Term | Definition |
-| --- | --- |
-| **AI OSI Stack** | A nine-layer civic framework for stewarding artificial intelligence initiatives. |
-| **Civic Oversight Interface** | The transparent set of practices and forums used to publish reports, invite feedback, and log decisions. |
-| **Open Evidence Interface (OEI)** | A neutral documentation process for exchanging evidence, rationale, and verification results without monetized APIs. |
-| **Transparency Record** | A publicly accessible log describing decisions, data sources, model changes, and community inputs. |
-| **Public Attestation Step** | A documented commitment made before deployment, confirming that requirements have been met. |
-| **Mandate Review** | A periodic evaluation of whether the civic mandate remains valid and representative. |
-| **Layer Custodian** | The person or team responsible for maintaining a specific layer and coordinating with others. |
-| **Stewardship Cycle** | The recurring sequence of planning, implementation, publication, and participation across all layers. |
-| **Community Briefing** | An open session where custodians share updates and receive questions or concerns. |
-| **Risk Ledger** | *Deprecated.* Replaced by narrative risk reporting inside the Transparency Record. |
+This glossary SHALL ensure plain language definitions for recurring civic terms.
 
-Additional terms appear within the layer documents and are cross-referenced in the [../reference/crosswalk_index.md](../reference/crosswalk_index.md).
+## Terms
+
+- **Transparency Record**: A publicly accessible log of deliberations, decisions, and follow-up actions.
+- **Public Attestation Step**: A formal statement confirming compliance with required safeguards before advancing.
+- **Open Civic Artefact**: Any document, dataset, or tool released for community oversight under the open-core commitment.
+- **Steward**: A person or group responsible for maintaining a layer, guide, or artefact.
+- **Participation Loop**: The recurring process of inviting, recording, and responding to public input.
+
+## Maintenance Guidance
+
+Stewards SHOULD update definitions when new civic concepts emerge, ensuring prior records remain interpretable. Any retired term SHALL retain its definition with a sunset note to preserve auditability.
+
+Traceability
+
+Keys: Glossary_Version=v5-open-core, Editorial_Cycle=quarterly
+Open Civic Artefacts
+
+- Transparency Record: Glossary Change Log
+- Transparency Record: Terminology Review Sessions
+
+```sql
+-- Copy code
+SELECT artefact_id, revision_note
+FROM transparency_registry
+WHERE component = 'foundation_glossary';
+```
