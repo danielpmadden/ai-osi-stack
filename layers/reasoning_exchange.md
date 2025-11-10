@@ -30,9 +30,9 @@ Layer 5 manages how insights move between humans and intelligent systems. It SHA
 
 ## Interfaces
 
-- Informs [L6 Deployment Integration](L6_Deployment_Integration.md) about operational changes.
-- Provides community insights to [L0 Civic Mandate](L0_Civic_Mandate.md) and [L8 Civic Participation](L8_Civic_Participation.md).
-- Coordinates with [../20_GUIDES/Philosophy_Ethics.md](../20_GUIDES/Philosophy_Ethics.md) to reflect interpretive principles.
+- Informs [L6 Deployment Integration](deployment_integration.md) about operational changes.
+- Provides community insights to [L0 Civic Mandate](civic_mandate.md) and [L8 Civic Participation](civic_participation.md).
+- Coordinates with [../guides/philosophy_ethics.md](../guides/philosophy_ethics.md) to reflect interpretive principles.
 
 ## Accountability Checklist
 

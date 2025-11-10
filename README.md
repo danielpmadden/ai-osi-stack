@@ -1,55 +1,28 @@
----
-title: AI OSI Stack — Civic Edition
-title_id: readme-root
-edition: civic
-version: 1.0
-status: draft
----
+# AI OSI Stack (Open Core)
 
-# AI OSI Stack — Civic Edition
-
-## Purpose
-
-The AI OSI Stack is a civic operating system for intelligence stewardship. This public-interest edition presents the stack as a fully human-readable framework with no proprietary code, monetized services, or cryptographic payloads. It is designed for governments, community organizations, educators, and researchers who seek transparent, accountable approaches to artificial intelligence.
+The AI OSI Stack is an open civic governance framework for responsible AI stewardship. It adapts the classic networking OSI model into nine interdependent civic layers that help public institutions, community networks, and researchers document mandates, ethics, data practices, model development, operational deployment, and community participation. This repository provides the open-core documentation needed to adopt, localize, and iterate on the stack.
 
 ## Repository Structure
 
-```
-ai-osi/
-  00_FOUNDATION/
-  10_LAYERS/
-  20_GUIDES/
-  30_REFERENCE/
-README.md
-```
+- `foundation/` – Core context, glossary, and design principles that describe the civic mandate behind the stack.
+- `layers/` – Nine-layer civic feedback loop that defines responsibilities from mandate formation through participation.
+- `guides/` – Implementation playbooks, testing frameworks, security practices, and ethics primers to adapt the layers.
+- `reference/` – Roadmaps, comparative studies, FAQs, and index crosswalks that support ongoing stewardship.
+- `.github/` and tooling configs – Community standards and automation defaults for collaboration.
 
-- **00_FOUNDATION** introduces the stack's context, glossary, and design principles.
-- **10_LAYERS** documents each of the nine civic layers, adapted from the OSI model.
-- **20_GUIDES** offers implementation, testing, security, and philosophical guidance.
-- **30_REFERENCE** provides comparative models, roadmap planning, FAQs, and a crosswalk index.
+## Getting Started
 
-## How to Use This Repository
+1. **Read the foundation.** Begin with `foundation/overview.md`, `foundation/context.md`, `foundation/glossary.md`, and `foundation/design_principles.md` to understand intent, terminology, and civic norms.
+2. **Work through the layers.** Review each document in `layers/` to capture mandates, ethics, data care, model development, instruction controls, reasoning exchange, deployment integration, publication, and participation practices.
+3. **Apply the guides.** Use `guides/implementation_guide.md`, `guides/testing_framework.md`, `guides/security_model.md`, and `guides/philosophy_ethics.md` to tailor the stack for your community.
+4. **Consult the references.** Track milestones, answer common questions, and compare models using the resources in `reference/`.
 
-1. Begin with [ai-osi/00_FOUNDATION/00_Overview.md](ai-osi/00_FOUNDATION/00_Overview.md) to understand the civic feedback loop.
-2. Work through the layer documents in [ai-osi/10_LAYERS/](ai-osi/10_LAYERS/) to establish mandates, ethics, data care, development, instruction, reasoning, deployment, publication, and participation practices.
-3. Apply the guides in [ai-osi/20_GUIDES/](ai-osi/20_GUIDES/) to tailor processes, evaluate progress, and maintain security.
-4. Reference [ai-osi/30_REFERENCE/](ai-osi/30_REFERENCE/) for context, planning, and quick answers.
+## Usage
 
-## Contribution Norms
+- All materials are provided under a Creative Commons Attribution-ShareAlike 4.0 (CC-BY-SA 4.0) license. See `LICENSE` for details.
+- Derivative works must remain transparent, acknowledge civic contributors, and preserve open access to documentation.
+- Contributions are welcome from civic technologists, public servants, researchers, and community stewards following the guidelines in `CONTRIBUTING.md` and the standards in `CODE_OF_CONDUCT.md`.
 
-- Contributions SHALL remain non-commercial, transparent, and aligned with civic stewardship.
-- Proposed changes SHOULD include a summary, rationale, and references to affected layers.
-- Discussions SHALL be respectful, inclusive, and grounded in public-interest values.
-- Documentation updates SHOULD cite relevant participation feedback or oversight findings.
+## Support & Feedback
 
-## License
-
-This civic edition is offered under a Creative Commons Attribution-ShareAlike (CC-BY-SA) license. Contributors agree to keep derivative works open, acknowledge sources, and share improvements under the same terms.
-
-## Code of Conduct
-
-Participants SHALL adhere to community norms rooted in dignity, inclusion, and mutual accountability. Harassment, exclusion, or retaliation violates the Ethical Charter and will not be tolerated.
-
-## Questions
-
-Consult the [FAQ](ai-osi/30_REFERENCE/FAQ.md) or open a public discussion with your stewardship circle. For guidance on implementation, review the [Implementation Guide](ai-osi/20_GUIDES/Implementation_Guide.md).
+Open an issue or discussion to propose changes, report inconsistencies, or share adaptations. Major structural updates should be recorded in `CHANGELOG.md` and accompanied by public rationale to maintain civic accountability.

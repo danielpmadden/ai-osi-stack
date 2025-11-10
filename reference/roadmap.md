@@ -35,6 +35,6 @@ The roadmap helps communities plan incremental improvements while honoring civic
 
 ## Iteration Guidance
 
-- Update this roadmap after each stewardship report in [../10_LAYERS/L7_Governance_Publication.md](../10_LAYERS/L7_Governance_Publication.md).
-- Incorporate insights from [../10_LAYERS/L8_Civic_Participation.md](../10_LAYERS/L8_Civic_Participation.md) to reprioritize milestones.
+- Update this roadmap after each stewardship report in [../layers/governance_publication.md](../layers/governance_publication.md).
+- Incorporate insights from [../layers/civic_participation.md](../layers/civic_participation.md) to reprioritize milestones.
 - Archive previous versions to show learning over time.

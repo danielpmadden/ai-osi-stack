@@ -15,8 +15,8 @@ This guide supports communities as they adopt the AI OSI Stack. It focuses on pl
 ## Preparation Steps
 
 1. **Form a Stewardship Circle.** Assemble a diverse group of custodians representing policy, ethics, technology, and community perspectives.
-2. **Review Foundational Materials.** Study the documents in [../00_FOUNDATION/](../00_FOUNDATION/) together, noting questions and local adaptations.
-3. **Define Scope and Timeline.** Align expectations, resource availability, and review cycles with [../10_LAYERS/L0_Civic_Mandate.md](../10_LAYERS/L0_Civic_Mandate.md).
+2. **Review Foundational Materials.** Study the documents in [../foundation/](../foundation/) together, noting questions and local adaptations.
+3. **Define Scope and Timeline.** Align expectations, resource availability, and review cycles with [../layers/civic_mandate.md](../layers/civic_mandate.md).
 
 ## Layer Activation Process
 
@@ -42,5 +42,5 @@ This guide supports communities as they adopt the AI OSI Stack. It focuses on pl
 ## Sustaining the Stack
 
 - Schedule semi-annual retrospectives to evaluate progress across all layers.
-- Update the [../30_REFERENCE/Roadmap.md](../30_REFERENCE/Roadmap.md) with new priorities informed by participation feedback.
+- Update the [../reference/roadmap.md](../reference/roadmap.md) with new priorities informed by participation feedback.
 - Ensure leadership transitions include handover notes for each layer custodian.

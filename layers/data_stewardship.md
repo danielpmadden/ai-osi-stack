@@ -31,9 +31,9 @@ Layer 2 ensures data is collected, curated, and retired in ways that respect hum
 
 ## Coordination
 
-- Collaborate with [L3 Model Development](L3_Model_Development.md) to ensure data suitability.
-- Provide documentation to [L5 Reasoning Exchange](L5_Reasoning_Exchange.md) for explainability efforts.
-- Share security practices with [../20_GUIDES/Security_Model.md](../20_GUIDES/Security_Model.md).
+- Collaborate with [L3 Model Development](model_development.md) to ensure data suitability.
+- Provide documentation to [L5 Reasoning Exchange](reasoning_exchange.md) for explainability efforts.
+- Share security practices with [../guides/security_model.md](../guides/security_model.md).
 
 ## Accountability Checklist
 

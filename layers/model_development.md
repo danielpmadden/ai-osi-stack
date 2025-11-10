@@ -30,9 +30,9 @@ Layer 3 guides the creation, adaptation, or selection of models to meet civic ne
 
 ## Interfaces
 
-- Receives ethical guidance from [L1 Ethical Charter](L1_Ethical_Charter.md).
-- Depends on data practices from [L2 Data Stewardship](L2_Data_Stewardship.md).
-- Supplies information to [L4 Instruction Control](L4_Instruction_Control.md) and [../20_GUIDES/Testing_Framework.md](../20_GUIDES/Testing_Framework.md).
+- Receives ethical guidance from [L1 Ethical Charter](ethical_charter.md).
+- Depends on data practices from [L2 Data Stewardship](data_stewardship.md).
+- Supplies information to [L4 Instruction Control](instruction_control.md) and [../guides/testing_framework.md](../guides/testing_framework.md).
 
 ## Accountability Checklist
 

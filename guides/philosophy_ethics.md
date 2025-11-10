@@ -34,9 +34,9 @@ This guide articulates the philosophical grounding of the AI OSI Stack, emphasiz
 
 ## Linkages
 
-- Supports the ethical framing in [../10_LAYERS/L1_Ethical_Charter.md](../10_LAYERS/L1_Ethical_Charter.md).
-- Informs interpretive practices in [../10_LAYERS/L5_Reasoning_Exchange.md](../10_LAYERS/L5_Reasoning_Exchange.md).
-- Provides context for participation efforts in [../10_LAYERS/L8_Civic_Participation.md](../10_LAYERS/L8_Civic_Participation.md).
+- Supports the ethical framing in [../layers/ethical_charter.md](../layers/ethical_charter.md).
+- Informs interpretive practices in [../layers/reasoning_exchange.md](../layers/reasoning_exchange.md).
+- Provides context for participation efforts in [../layers/civic_participation.md](../layers/civic_participation.md).
 
 ## Further Reading
 

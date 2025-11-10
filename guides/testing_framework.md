@@ -23,15 +23,15 @@ This framework provides a civic alternative to proprietary testing suites. It en
 
 | Category | Description | Linked Layers |
 | --- | --- | --- |
-| **Mandate Alignment** | Confirms services fulfill the civic mandate. | [L0 Civic Mandate](../10_LAYERS/L0_Civic_Mandate.md) |
-| **Ethics Compliance** | Checks safeguards and prohibitions. | [L1 Ethical Charter](../10_LAYERS/L1_Ethical_Charter.md) |
-| **Data Integrity** | Validates consent, quality, and minimization practices. | [L2 Data Stewardship](../10_LAYERS/L2_Data_Stewardship.md) |
-| **Model Performance** | Evaluates accuracy, bias, and robustness. | [L3 Model Development](../10_LAYERS/L3_Model_Development.md) |
-| **Instruction Safety** | Assesses prompt handling and override procedures. | [L4 Instruction Control](../10_LAYERS/L4_Instruction_Control.md) |
-| **Reasoning Quality** | Reviews interpretability and contestation responses. | [L5 Reasoning Exchange](../10_LAYERS/L5_Reasoning_Exchange.md) |
-| **Operational Readiness** | Tests deployment resilience and support systems. | [L6 Deployment Integration](../10_LAYERS/L6_Deployment_Integration.md) |
-| **Publication Accuracy** | Ensures reports reflect current status. | [L7 Governance Publication](../10_LAYERS/L7_Governance_Publication.md) |
-| **Participation Health** | Measures engagement, grievance resolution, and trust. | [L8 Civic Participation](../10_LAYERS/L8_Civic_Participation.md) |
+| **Mandate Alignment** | Confirms services fulfill the civic mandate. | [L0 Civic Mandate](../layers/civic_mandate.md) |
+| **Ethics Compliance** | Checks safeguards and prohibitions. | [L1 Ethical Charter](../layers/ethical_charter.md) |
+| **Data Integrity** | Validates consent, quality, and minimization practices. | [L2 Data Stewardship](../layers/data_stewardship.md) |
+| **Model Performance** | Evaluates accuracy, bias, and robustness. | [L3 Model Development](../layers/model_development.md) |
+| **Instruction Safety** | Assesses prompt handling and override procedures. | [L4 Instruction Control](../layers/instruction_control.md) |
+| **Reasoning Quality** | Reviews interpretability and contestation responses. | [L5 Reasoning Exchange](../layers/reasoning_exchange.md) |
+| **Operational Readiness** | Tests deployment resilience and support systems. | [L6 Deployment Integration](../layers/deployment_integration.md) |
+| **Publication Accuracy** | Ensures reports reflect current status. | [L7 Governance Publication](../layers/governance_publication.md) |
+| **Participation Health** | Measures engagement, grievance resolution, and trust. | [L8 Civic Participation](../layers/civic_participation.md) |
 
 ## Testing Process
 
