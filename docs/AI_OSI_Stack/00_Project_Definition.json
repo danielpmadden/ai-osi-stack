@@ -1,0 +1,118 @@
+{
+  "core_identity": {
+    "summary": "The AI OSI Stack is an open-standard governance blueprint that translates civic intent and ethical mandates into a layered architecture so every stage of an AI system carries duties, evidence records, and safeguards, mirroring the networking OSI model to keep deployments auditable and trustworthy.",
+    "problem_solved": "It replaces fragmented AI oversight—disconnected model cards, privacy reviews, and ad hoc boards—with a reproducible governance spine that binds social mandates to operational controls and machine-verifiable artefacts so institutions can prove what an AI system did, why, and under whose authority.",
+    "osi_analogy": "Like the networking OSI model, the Stack sequences layers from Civic Mandate through Civic Participation (0–8), with each layer exposing defined interfaces and artefacts that hand off responsibilities and evidence to the next, while AEIP functions like the protocol suite transporting proofs across the stack."
+  },
+  "layer_structure": {
+    "layers": [
+      {
+        "name": "Layer 0 – Civic Mandate",
+        "function": "Establishes democratic legitimacy, authorization scope, and community consent before any technical work begins.",
+        "dependencies": "Feeds ethical clauses and renewal triggers into Layer 1 charters and downstream AEIP context."
+      },
+      {
+        "name": "Layer 1 – Ethical Charter",
+        "function": "Translates civic values into enforceable obligations, red lines, and review cycles.",
+        "dependencies": "References Layer 0 mandate identifiers and informs persona, data, and risk registries in Layers 2–4."
+      },
+      {
+        "name": "Layer 2 – Data Stewardship",
+        "function": "Governs data provenance, consent, retention, and fiduciary handling.",
+        "dependencies": "Consumes charter duties, emits consent ledgers and risk scenarios used by model and operations layers."
+      },
+      {
+        "name": "Layer 3 – Model Development",
+        "function": "Documents training assets, evaluations, interpretability safeguards, and persona segregation.",
+        "dependencies": "Depends on data governance artefacts and supplies model lineage, bills of materials, and refusal hooks to instruction controls."
+      },
+      {
+        "name": "Layer 4 – Instruction & Control",
+        "function": "Manages prompts, control policies, persona briefs, and AEIP intent preparation for runtime governance.",
+        "dependencies": "Uses model outputs, persona architectures, and emits instruction logs for reasoning exchange."
+      },
+      {
+        "name": "Layer 5 – Reasoning Exchange",
+        "function": "Executes AEIP handshakes, keeps reasoning interpretable, and propagates signatures across participants.",
+        "dependencies": "Relies on instruction payloads, produces Integrity Ledger Entries that deployment and governance layers ingest."
+      },
+      {
+        "name": "Layer 6 – Deployment & Integration",
+        "function": "Controls release, monitoring, incident response, and change management.",
+        "dependencies": "Consumes AEIP receipts, publishes assurance manifests, and coordinates rollback with governance publication."
+      },
+      {
+        "name": "Layer 7 – Governance Publication",
+        "function": "Transforms internal evidence into public disclosures, oversight reports, and registry updates.",
+        "dependencies": "Requires sealed manifests from Layer 6 and ledger references to inform civic participation."
+      },
+      {
+        "name": "Layer 8 – Civic Participation",
+        "function": "Maintains participatory feedback, appeal mechanisms, and renewal processes with affected communities.",
+        "dependencies": "Draws on published artefacts and feeds renewal directives back to civic mandates."
+      }
+    ],
+    "extensions": {
+      "optional_layers": [
+        "Policy / Layer 8 in the protocol spec is flagged as optional for some deployments but recommended for full civic overlays.",
+        "Interpretive and Applied Canon chapters (19A–24) extend the stack into semantics, persona design, therapy governance, and meta-oversight beyond the core operational layers."
+      ]
+    }
+  },
+  "design_principles": {
+    "principles": [
+      "Dignity by design, epistemic integrity, and accountable stewardship are binding constraints for every layer and artefact.",
+      "Design now, instantiate later: the repository is an offline-first rehearsal environment with deterministic schemas, hashes, and provenance, not a live production system.",
+      "Transparency with proof: every obligation maps to AEIP artefacts so governance remains testable and auditable across disciplines."
+    ],
+    "non_goals": [
+      "Does not ship live network services, production keys, or authoritative signatures until the deferred sealing ceremony concludes.",
+      "Avoids handling real personal or confidential data; all datasets and personas are synthetic placeholders for governance demonstrations.",
+      "Provides advisory governance blueprints but is not a substitute for jurisdiction-specific legal counsel."
+    ]
+  },
+  "intended_users": {
+    "audiences": [
+      "Policy teams, compliance officers, civic technologists, and AI governance engineers who need an auditable spine for AI accountability.",
+      "Executives, regulators, and investors leveraging briefing materials to align fiduciary duty, regulatory posture, and pilot planning."
+    ],
+    "technical_background": "Readers are expected to be comfortable bridging legal, civic, and technical terminology, with teams able to run Python/TypeScript tooling, schema validators, and governance dashboards."
+  },
+  "technology_base": {
+    "languages_frameworks": [
+      "Python runtime in `govspine/` with pytest and jsonschema for AEIP and layer validation.",
+      "TypeScript/Node toolchain using AJV, Vitest, and Vite for AEIP validators and dashboard builds.",
+      "FastAPI + SQLModel back-end paired with a React dashboard for the Governance Control Tower scaffold."
+    ],
+    "dependencies": [
+      "Python packages: pytest, jsonschema.",
+      "Node dependencies: ajv, ajv-formats, @typescript-eslint tooling, prettier, vitest, tsx, typescript.",
+      "Operational CLIs: Syft, Trivy, Gitleaks, jq, Docker for reproducible validation."
+    ],
+    "integration_points": [
+      "AEIP handshake pipelines that enforce Intent→Justify→CounterSign→Commit→Update flows across layers and ledgers.",
+      "Governance Control Tower API endpoints for asset registries, manifest ingestion, and audit telemetry syncing with `govspine/` artefacts.",
+      "Dashboard visualizations and registry exports that align AEIP manifests with standards crosswalks for regulators and auditors."
+    ]
+  },
+  "philosophy_ethics": {
+    "values": [
+      "Human dignity, semantic integrity, and civic legitimacy anchor every decision, reflected in persona refusal logic and interpretive canon safeguards.",
+      "Transparency and contestability ensure communities can inspect reasoning traces and appeal outcomes.",
+      "Custodial stewardship maintains sole authorship and deferred signing to preserve provenance."
+    ],
+    "responsible_usage": "Responsible AI usage is enforced through AEIP artefacts, temporal seals, persona credential checks, and explicit prohibitions on surveillance or discriminatory applications, with data ethics policies requiring localized impact assessments before real deployments."
+  },
+  "documentation_goals": {
+    "style_tone": "Future documentation should adopt a plain-technical voice that combines narrative context with normative SHALL/SHOULD clauses, mirroring the dual-register approach and Triple Register summaries used across the canon.",
+    "examples_references": [
+      "Reference AEIP validator notebooks and Control Tower dashboards to illustrate evidence flows.",
+      "Highlight sector pilots in finance, healthcare, and public-sector oversight to show adoption pathways.",
+      "Include standards crosswalks and deferred-signing workflows so readers can map artefacts to ISO 42001, NIST AI RMF, and EU AI Act requirements."
+    ]
+  },
+  "future_vision": {
+    "roadmap": "Near-term milestones focus on launching a managed Verification API, delivering finance and healthcare pilots, establishing a governance federation, and executing the deferred-signing ceremony before scaling dashboards and public-sector onboarding.",
+    "versioning_guidance": "Treat v5.0-rc as the canonical reference under semver, note that signatures remain advisory until sealing completes, and expect roadmap updates to be captured via Integrity Ledger Entries and Governance Decision Summaries."
+  }
+}
