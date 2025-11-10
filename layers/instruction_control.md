@@ -1,42 +1,57 @@
----
-title: L4 Instruction Control
-title_id: layer4-instruction-control
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: layer_instruction_control
+Version: v5.0-open-core
+Purpose: Regulate prompts and human guidance for AI OSI v5 services.
 
 # L4 Instruction Control
 
-## Purpose
+Instruction control SHALL ensure that system prompts, workflows, and human oversight guard against misuse. All instructions SHALL remain transparent and adjustable through civic feedback.
 
-Layer 4 governs how instructions, prompts, and interventions are crafted and moderated. It SHALL maintain alignment between human intentions and model behavior.
+## Control Components
 
-## Control Measures
+- Documented instruction sets with rationale tied to the ethical charter.
+- Guardrails preventing harmful or discriminatory outputs.
+- Escalation procedures for ambiguous or high-risk requests.
+- Public change log capturing updates to prompts or workflows.
 
-- **Instruction Libraries.** Maintain open repositories of approved prompts, decision trees, and facilitation guides.
-- **Context Windows.** Define what background information may be provided to models and who approves it.
-- **Feedback Loops.** Collect user and staff feedback on instruction effectiveness and risks.
-- **Override Protocols.** Provide manual interruption procedures when model outputs deviate from mandate or charter requirements.
+## Stewardship Actions
 
-## Documentation
-
-| Document | Description |
-| --- | --- |
-| **Prompt Catalogue** | Versioned set of prompts with intended use, risk notes, and escalation contacts. |
-| **Instruction Playbooks** | Scenario-based guides for frontline teams. |
-| **Monitoring Logs** | Records of interventions, overrides, and lessons learned. |
-| **Accessibility Notes** | Adaptations for different languages, abilities, and contexts. |
+1. Review instructions with community observers to confirm clarity and fairness.
+2. Test instructions using diverse scenarios, especially edge cases raised by impacted people.
+3. Publish a Public Attestation Step before rolling out significant instruction updates.
 
 ## Interfaces
 
-- Receives model specifications from [L3 Model Development](model_development.md).
-- Supplies usage data and issues to [L5 Reasoning Exchange](reasoning_exchange.md).
-- Coordinates with [../guides/implementation_guide.md](../guides/implementation_guide.md) for deployment training.
+- Receives model capabilities from [L3 Model Development](model_development.md).
+- Coordinates with [../guides/philosophy_ethics.md](../guides/philosophy_ethics.md) for refusal logic and dignity guidelines.
+- Provides operational context to [L5 Deployment Integration](deployment_integration.md).
 
-## Accountability Checklist
+## What Good Looks Like
 
-- [ ] Prompt catalogue published with civic licensing.
-- [ ] Override protocol tested and documented.
-- [ ] Feedback loop includes community participants.
-- [ ] Accessibility requirements verified through Public Attestation Steps.
+- Instructions explicitly cite civic principles and intended user protections.
+- Feedback loops exist for users to report confusing or harmful behaviors.
+- Updates are versioned with timestamps and steward endorsements recorded in public logs.
+
+## Common Failure Modes
+
+- Hidden instruction changes without public notice.
+- Instructions focusing on efficiency over civic safeguards.
+- Lack of human review for escalated or sensitive scenarios.
+
+## Worked Example
+
+A social services chatbot maintains a library of prompts that require empathy, multilingual support, and automatic referral to human caseworkers for crisis situations. Stewards test instructions with advocacy groups quarterly and publish revisions with rationale.
+
+Traceability
+
+Keys: Layer=L4, Instruction_Record=IC-2024
+Open Civic Artefacts
+
+- Transparency Record: Instruction Review Minutes
+- Transparency Record: Instruction Update Attestations
+
+```sql
+-- Copy code
+SELECT artefact_id, version_tag
+FROM transparency_registry
+WHERE layer = 'L4';
+```

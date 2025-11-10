@@ -1,37 +1,38 @@
----
-title: Context
-title_id: foundation-context
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: foundation_context
+Version: v5.0-open-core
+Purpose: Provide civic context for AI OSI v5.
 
-# Context
+# Civic Context
 
-## Origins
+AI OSI v5.0-open-core emerges from public demand for transparent, accountable intelligence services. Communities SHALL know how decisions affecting them are made, what data informs those decisions, and how to contest harms. This context establishes that civic legitimacy depends on continual dialogue rather than one-time approvals.
 
-The AI OSI Stack originated as an attempt to map artificial intelligence governance to the familiar Open Systems Interconnection model. Earlier versions included proprietary integrations and complex control structures. This civic edition removes those dependencies and distills the lessons learned into a public-interest framework that communities can adopt without commercial entanglements.
+## Civic Drivers
 
-## Civic Imperatives
+- Public participation SHALL guide mandate creation, review, and sunsetting.
+- Impacted communities SHOULD have resourced channels to raise concerns.
+- Institutions SHALL publish evaluation findings in accessible formats.
 
-- **Stewardship over extraction.** Intelligence systems SHALL support community-defined goals rather than profit-seeking metrics.
-- **Transparency over opacity.** Every decision SHOULD be recorded in a Transparency Record that is readable by non-specialists.
-- **Education over mystification.** The stack SHALL remain understandable to students, public servants, and community advocates.
-- **Care over speed.** Public Attestation Steps SHALL be completed before any deployment affecting people.
+## Operating Conditions
 
-## Relationship to Existing Standards
+1. Public value outweighs private optimization.
+2. Documentation SHALL be maintained in plain language and translated where necessary.
+3. Disagreements SHOULD be logged with outcomes, even when unresolved.
 
-This framework complements, but does not replicate, public sector AI guidelines, open data charters, or academic ethics protocols. It translates those traditions into a layered reference model that can be iterated locally. For comparative insights, consult [../reference/comparative_models.md](../reference/comparative_models.md).
+## Accountability Expectations
 
-## Stakeholders
+Stewards SHALL uphold openness in deliberation, publish attestation steps before deployment, and maintain recoverable archives of decisions. Any shift in mission or scope SHALL trigger review through the civic participation layer.
 
-- **Public administrators** who need a shared language to steward AI programs.
-- **Community reviewers** who provide accountability and raise concerns.
-- **Researchers and educators** who translate technical work into civic literacy.
-- **Residents and service users** whose lived experience guides mandate updates.
+Traceability
 
-## Maintaining Alignment
+Keys: Context_Record=CTX-v5, Civic_Cycle=2024
+Open Civic Artefacts
 
-- Layer custodians SHALL host regular open briefings and invite questions.
-- Civic Oversight Interface practices SHALL be documented in [../layers/governance_publication.md](../layers/governance_publication.md).
-- The Open Evidence Interface SHALL use plain-language templates and provide source references wherever possible.
+- Transparency Record: Civic Context Hearing Notes
+- Transparency Record: Impacted Community Feedback Log
+
+```sql
+-- Copy code
+SELECT artefact_id, status
+FROM transparency_registry
+WHERE component = 'foundation_context';
+```

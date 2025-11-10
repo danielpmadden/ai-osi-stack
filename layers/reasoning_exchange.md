@@ -1,42 +1,57 @@
----
-title: L5 Reasoning Exchange
-title_id: layer5-reasoning-exchange
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: layer_reasoning_exchange
+Version: v5.0-open-core
+Purpose: Facilitate transparent reasoning between humans and systems.
 
-# L5 Reasoning Exchange
+# L7 Reasoning Exchange
 
-## Purpose
+Reasoning exchange SHALL maintain clarity about how decisions are reached and contested. It SHALL make system reasoning, human oversight, and appeals processes visible to the public.
 
-Layer 5 manages how insights move between humans and intelligent systems. It SHALL ensure that reasoning processes remain interpretable, contestable, and responsive to civic needs.
+## Exchange Elements
 
-## Exchange Principles
+- Traceable decision logs showing inputs, deliberation steps, and outcomes.
+- Accessible explanations suitable for non-technical audiences.
+- Appeals workflows with guaranteed human review and response timelines.
+- Feedback incorporation routines linked back to relevant layers.
 
-- **Mutual Legibility.** Explanations SHALL be understandable to affected communities.
-- **Bidirectional Learning.** Feedback from people SHALL inform model improvements and vice versa.
-- **Traceability.** Every reasoning exchange SHOULD be linked to data sources, model versions, and instruction sets.
-- **Responsiveness.** Concerns raised during exchanges SHALL receive timely responses and remediation plans.
+## Stewardship Actions
 
-## Required Records
-
-| Record | Description |
-| --- | --- |
-| **Dialogue Logs** | Summaries of significant interactions, with privacy safeguards. |
-| **Interpretability Notes** | Documentation of explanation techniques and limitations. |
-| **Contestation Register** | List of challenges raised, responses provided, and outcomes. |
-| **Learning Updates** | Reports describing how feedback changed models, prompts, or policies. |
+1. Publish exemplar decisions illustrating typical and edge scenarios.
+2. Host public clinics where residents can practice using appeals tools.
+3. Issue a Public Attestation Step confirming that reasoning artefacts remain current.
 
 ## Interfaces
 
-- Informs [L6 Deployment Integration](deployment_integration.md) about operational changes.
-- Provides community insights to [L0 Civic Mandate](civic_mandate.md) and [L8 Civic Participation](civic_participation.md).
-- Coordinates with [../guides/philosophy_ethics.md](../guides/philosophy_ethics.md) to reflect interpretive principles.
+- Consumes operational data from [L5 Deployment Integration](deployment_integration.md).
+- Supplies lessons learned to [L3 Model Development](model_development.md) and [L4 Instruction Control](instruction_control.md).
+- Feeds participation loops documented in [L8 Civic Participation](civic_participation.md).
 
-## Accountability Checklist
+## What Good Looks Like
 
-- [ ] Dialogue logs maintained with privacy-respecting transparency.
-- [ ] Contestation register published with remediation status.
-- [ ] Interpretability methods evaluated for accessibility.
-- [ ] Learning updates issued at agreed intervals and logged in the Transparency Record.
+- Decision explanations cite the mandate, ethical charter, and data sources.
+- Appeals receive timely, substantive responses logged for audit.
+- Residents report improved understanding of system behavior and rights.
+
+## Common Failure Modes
+
+- Explanations relying on technical jargon without translation.
+- Appeals queues without service-level commitments.
+- Failure to loop learning back into model or instruction updates.
+
+## Worked Example
+
+A regional benefits program publishes anonymized decision walkthroughs, showing eligibility criteria, human reviewer notes, and final determinations. Community workshops teach applicants how to appeal, and quarterly summaries document how appeals changed policies.
+
+Traceability
+
+Keys: Layer=L7, Reasoning_Record=RE-2024
+Open Civic Artefacts
+
+- Transparency Record: Reasoning Exchange Publication Log
+- Transparency Record: Appeals Outcome Register
+
+```sql
+-- Copy code
+SELECT artefact_id, last_updated
+FROM transparency_registry
+WHERE layer = 'L7';
+```

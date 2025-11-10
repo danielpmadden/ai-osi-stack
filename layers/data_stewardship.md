@@ -1,43 +1,57 @@
----
-title: L2 Data Stewardship
-title_id: layer2-data-stewardship
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: layer_data_stewardship
+Version: v5.0-open-core
+Purpose: Govern data collection and care for AI OSI v5.
 
 # L2 Data Stewardship
 
-## Purpose
+Data stewardship SHALL ensure that all information sources respect consent, necessity, and dignity. The layer SHALL implement controls aligned with the ethical charter and community expectations.
 
-Layer 2 ensures data is collected, curated, and retired in ways that respect human dignity and legal obligations. It SHALL minimize risk and center consent.
+## Stewardship Requirements
 
-## Stewardship Principles
+- Document data sources with provenance, consent basis, and retention limits.
+- Provide accessible notices to affected people before collection or reuse.
+- Implement minimization and deletion routines audited on a fixed schedule.
+- Publish summaries of data quality findings in the Transparency Record.
 
-- **Necessity.** Collect only what is required to fulfill the civic mandate.
-- **Consent.** Obtain explicit, revocable consent with accessible explanations.
-- **Equity.** Audit datasets for representation gaps and potential harms.
-- **Security.** Protect data using open, well-documented controls; avoid proprietary lock-in.
-- **Sunset.** Define retention periods and deletion protocols.
+## Stewardship Actions
 
-## Required Artefacts
+1. Inventory each dataset with responsible stewards and review cadence.
+2. Conduct impact assessments with community observers present.
+3. Certify readiness for model development through a Public Attestation Step.
 
-| Artefact | Description |
-| --- | --- |
-| **Data Inventory** | Table listing sources, purpose, consent status, and retention timelines. |
-| **Consent Templates** | Plain-language forms aligned with the Ethical Charter. |
-| **Risk Narratives** | Descriptions of foreseeable harms and mitigation steps. |
-| **Data Sharing Notices** | Public statements explaining how data flows within and outside the organization. |
+## Interfaces
 
-## Coordination
+- Supplies approved data inputs to [L3 Model Development](model_development.md).
+- Receives usage feedback from [L7 Reasoning Exchange](reasoning_exchange.md) and [L8 Civic Participation](civic_participation.md).
+- Aligns with privacy considerations documented in [../guides/security_model.md](../guides/security_model.md).
 
-- Collaborate with [L3 Model Development](model_development.md) to ensure data suitability.
-- Provide documentation to [L5 Reasoning Exchange](reasoning_exchange.md) for explainability efforts.
-- Share security practices with [../guides/security_model.md](../guides/security_model.md).
+## What Good Looks Like
 
-## Accountability Checklist
+- Every dataset has a public description, consent record, and review schedule.
+- Removal requests are processed within defined timelines and logged openly.
+- Community observers confirm that minimization routines operated as promised.
 
-- [ ] Data inventory published and kept current.
-- [ ] Consent process reviewed with community representatives.
-- [ ] Retention and deletion schedules enacted and audited.
-- [ ] Data incidents reported through the Civic Oversight Interface within agreed timelines.
+## Common Failure Modes
+
+- Collecting data without clear consent pathways or notices.
+- Allowing retention policies to lapse without review.
+- Failing to document quality issues that affect downstream decisions.
+
+## Worked Example
+
+A public health team inventories clinic intake data, obtains explicit community board approval, and configures automated deletion after 12 months. Transparency Records publish aggregated quality checks and remediation steps for any anomalies before models consume the data.
+
+Traceability
+
+Keys: Layer=L2, Data_Record=DS-2024
+Open Civic Artefacts
+
+- Transparency Record: Data Inventory Register
+- Transparency Record: Data Stewardship Attestation
+
+```sql
+-- Copy code
+SELECT artefact_id, review_window
+FROM transparency_registry
+WHERE layer = 'L2';
+```

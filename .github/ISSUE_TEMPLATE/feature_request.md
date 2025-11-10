@@ -1,30 +1,32 @@
-© 2025 Daniel P. Madden — Custodial Author
-AI OSI Stack v5.0-open-core (Civic Standard Edition)
+Layer/Theme: issue_template_feature
+Version: v5.0-open-core
+Purpose: Gather civic feature proposals for AI OSI v5.
 
-© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
-Unauthorized reproductions or derivatives are not recognized custodial works.
-Refer to CANONICAL_PROVENANCE.yaml for official verification.
----
-name: Governance Enhancement
-description: Propose a new feature or AEIP governance control
-labels: [enhancement]
----
+# Feature Request
 
 ## Summary
-
-Describe the enhancement and the AEIP layers it touches.
+Outline the proposed change, public benefit, and impacted layers or guides.
 
 ## Motivation
+Describe why the change is needed and who requested it.
 
-Why is the change needed for civic, legal, or technical governance?
+## Proposed Approach
+Share initial ideas, required Transparency Records, and attestation needs.
 
-## Proposed Changes
+## Participation Plan
+List engagement steps with affected communities and how feedback will be recorded.
 
-## Integrity Considerations
+Traceability
 
-- New signed artifacts required?
-- Updates to `INTEGRITY_NOTICE.md` or `CANONICAL_PROVENANCE.yaml`?
+Keys: Doc=FeatureTemplate-v5, Review_Cycle=on_change
+Open Civic Artefacts
 
-## Testing Plan
+- Transparency Record: Feature Intake Log
+- Transparency Record: Participation Planning Register
 
-List scripts, validators, or simulations that confirm the change.
+```sql
+-- Copy code
+SELECT artefact_id, feature_id
+FROM transparency_registry
+WHERE document = 'feature_template';
+```

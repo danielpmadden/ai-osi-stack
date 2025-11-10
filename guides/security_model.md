@@ -1,47 +1,46 @@
----
-title: Security Model
-title_id: guide-security
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: guide_security_model
+Version: v5.0-open-core
+Purpose: Describe civic security expectations for AI OSI v5.
 
-# Security Model
+# Civic Security Model
 
-## Purpose
+Security SHALL be treated as a civic guarantee, not a proprietary control. This guide outlines the Public Attestation Step, role separation, and incident disclosure template required for v5.0-open-core.
 
-This model outlines non-proprietary security practices that protect people, data, and infrastructure while honoring transparency commitments.
+## Public Attestation Step
 
-## Security Principles
+Stewards SHALL complete the following before major changes or releases:
+- Document risk assessments covering confidentiality, integrity, and civic harm.
+- Publish mitigations and fallback actions in plain language.
+- Secure endorsements from operational, legal, and community stewards on a shared attestation form.
 
-- **Proportionality.** Security controls SHALL match the sensitivity of services and data.
-- **Openness.** Document controls in plain language; avoid secrecy that prevents accountability.
-- **Shared Responsibility.** Security is a collective practice across all layers.
-- **Community Assurance.** Residents SHOULD understand and influence security decisions.
+## Role Separation
 
-## Control Domains
+- **Operational Stewards** SHALL manage day-to-day security operations and document actions.
+- **Oversight Stewards** SHALL audit operational work, maintain separation of duties, and hold pause authority.
+- **Community Stewards** SHOULD review attestation evidence, request clarifications, and confirm that remedies respect lived experience.
 
-| Domain | Description | Linked Layers |
-| --- | --- | --- |
-| **Governance Controls** | Policies and oversight mechanisms that enforce mandates and charters. | [L0](../layers/civic_mandate.md), [L1](../layers/ethical_charter.md) |
-| **Data Protections** | Access management, encryption-at-rest, and minimization strategies. | [L2](../layers/data_stewardship.md) |
-| **Model Integrity** | Safeguards against tampering, backdoors, or unapproved updates. | [L3](../layers/model_development.md) |
-| **Instruction Safety** | Controls to prevent malicious or unsafe prompts. | [L4](../layers/instruction_control.md) |
-| **Operational Resilience** | Backup, incident response, and continuity planning. | [L6](../layers/deployment_integration.md) |
-| **Transparency Assurance** | Measures ensuring publication accuracy and accessibility. | [L7](../layers/governance_publication.md) |
-| **Participation Safeguards** | Protecting participants from retaliation or harm. | [L8](../layers/civic_participation.md) |
+## Incident Disclosure Template
 
-## Incident Response Workflow
+When incidents occur, stewards SHALL issue a disclosure containing:
+1. Summary of the event, affected populations, and detection method.
+2. Immediate containment steps, including any service pauses.
+3. Interim support provided to impacted people.
+4. Long-term remediation commitments with timelines.
+5. Contact information for further questions and appeals.
 
-1. **Detection.** Identify potential incidents through monitoring, community reports, or audits.
-2. **Assessment.** Evaluate impact, affected layers, and immediate risks.
-3. **Notification.** Inform stakeholders via the Civic Oversight Interface within predetermined timeframes.
-4. **Remediation.** Execute corrective actions, documenting steps and responsible parties.
-5. **Review.** Conduct a public debrief, update policies, and log outcomes in the Transparency Record.
+The disclosure SHALL be published within a defined timeframe (recommended 72 hours) and updated until closure.
 
-## Tools and Practices
+Traceability
 
-- Use open-source security checklists and share them publicly.
-- Conduct tabletop exercises with community observers.
-- Publish security posture summaries alongside annual stewardship reports.
-- Avoid jargon; explain trade-offs and invite questions.
+Keys: Guide=SecurityModel-v5, Cycle=continuous
+Open Civic Artefacts
+
+- Transparency Record: Security Attestation Archive
+- Transparency Record: Incident Disclosure Register
+
+```sql
+-- Copy code
+SELECT artefact_id, incident_status
+FROM transparency_registry
+WHERE guide = 'security_model';
+```

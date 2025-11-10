@@ -1,38 +1,59 @@
----
-title: Crosswalk Index
-title_id: reference-crosswalk-index
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: reference_crosswalk_index
+Version: v5.0-open-core
+Purpose: Provide navigation links across the lowercase schema.
 
 # Crosswalk Index
 
-## Purpose
+This index SHALL help readers locate artefacts within the flattened, lowercase directory structure.
 
-The crosswalk index helps readers find related requirements, artefacts, and responsibilities across the stack.
+## Foundation
 
-## Layer to Guide Mapping
+- [foundation/overview.md](../foundation/overview.md)
+- [foundation/context.md](../foundation/context.md)
+- [foundation/design_principles.md](../foundation/design_principles.md)
+- [foundation/glossary.md](../foundation/glossary.md)
 
-| Layer | Key Artefacts | Supporting Guides |
-| --- | --- | --- |
-| [L0 Civic Mandate](../layers/civic_mandate.md) | Mission statement, constituent analysis, review schedule | [Implementation Guide](../guides/implementation_guide.md) |
-| [L1 Ethical Charter](../layers/ethical_charter.md) | Values statement, safeguards, prohibited practices | [Philosophy and Ethics](../guides/philosophy_ethics.md) |
-| [L2 Data Stewardship](../layers/data_stewardship.md) | Data inventory, consent templates, risk narratives | [Security Model](../guides/security_model.md) |
-| [L3 Model Development](../layers/model_development.md) | Model cards, training protocols, impact assessments | [Testing Framework](../guides/testing_framework.md) |
-| [L4 Instruction Control](../layers/instruction_control.md) | Prompt catalogue, monitoring logs, accessibility notes | [Implementation Guide](../guides/implementation_guide.md) |
-| [L5 Reasoning Exchange](../layers/reasoning_exchange.md) | Dialogue logs, contestation register, learning updates | [Philosophy and Ethics](../guides/philosophy_ethics.md) |
-| [L6 Deployment Integration](../layers/deployment_integration.md) | Deployment plan, training modules, risk register | [Security Model](../guides/security_model.md) |
-| [L7 Governance Publication](../layers/governance_publication.md) | Stewardship report, issue tracker, budget statement | [Implementation Guide](../guides/implementation_guide.md) |
-| [L8 Civic Participation](../layers/civic_participation.md) | Engagement plan, participation metrics, response ledger | [Philosophy and Ethics](../guides/philosophy_ethics.md) |
+## Layers
 
-## Additional Cross-References
+- [layers/civic_mandate.md](../layers/civic_mandate.md)
+- [layers/ethical_charter.md](../layers/ethical_charter.md)
+- [layers/data_stewardship.md](../layers/data_stewardship.md)
+- [layers/model_development.md](../layers/model_development.md)
+- [layers/instruction_control.md](../layers/instruction_control.md)
+- [layers/deployment_integration.md](../layers/deployment_integration.md)
+- [layers/governance_publication.md](../layers/governance_publication.md)
+- [layers/reasoning_exchange.md](../layers/reasoning_exchange.md)
+- [layers/civic_participation.md](../layers/civic_participation.md)
 
-- [FAQ](faq.md) lists common entry points for new participants.
-- [Comparative Models](comparative_models.md) contextualizes civic commitments.
-- [Roadmap](roadmap.md) tracks progress milestones across layers.
+## Guides
 
-## Usage Notes
+- [guides/implementation_guide.md](../guides/implementation_guide.md)
+- [guides/philosophy_ethics.md](../guides/philosophy_ethics.md)
+- [guides/security_model.md](../guides/security_model.md)
+- [guides/testing_framework.md](../guides/testing_framework.md)
 
-- Update this index whenever new artefacts or guides are added.
-- Provide crosswalk annotations in stewardship reports to help readers navigate updates.
+## Reference
+
+- [reference/comparative_models.md](comparative_models.md)
+- [reference/faq.md](faq.md)
+- [reference/roadmap.md](roadmap.md)
+- [reference/crosswalk_index.md](crosswalk_index.md)
+
+## Tools
+
+- [tools/civic_verification.md](../tools/civic_verification.md)
+
+Traceability
+
+Keys: Reference=CrosswalkIndex-v5, Review_Cycle=on_change
+Open Civic Artefacts
+
+- Transparency Record: Crosswalk Maintenance Log
+- Transparency Record: Navigation Feedback Register
+
+```sql
+-- Copy code
+SELECT artefact_id, link_status
+FROM transparency_registry
+WHERE reference = 'crosswalk_index';
+```

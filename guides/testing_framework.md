@@ -1,48 +1,52 @@
----
-title: Testing Framework
-title_id: guide-testing
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: guide_testing_framework
+Version: v5.0-open-core
+Purpose: Define manual Transparency Record checks for AI OSI v5.
 
-# Testing Framework
+# Transparency Record Testing Framework
 
-## Purpose
+This framework SHALL equip community members to verify compliance without specialized tooling. Each check produces evidence stored in Transparency Records.
 
-This framework provides a civic alternative to proprietary testing suites. It ensures that evaluation activities align with mandate, ethics, and participation requirements.
+## Check 1: Mandate Integrity Review
 
-## Testing Principles
+- Confirm the civic mandate is current and publicly accessible.
+- Note whether renewal dates and responsible stewards are documented.
 
-1. **Civic Relevance.** Tests SHALL measure outcomes that matter to the public, not solely technical performance.
-2. **Transparency.** Methods, data, and results SHALL be documented through the Open Evidence Interface.
-3. **Inclusivity.** Community members SHOULD co-design test scenarios, especially those reflecting lived experience.
-4. **Iterative Learning.** Testing SHALL inform future improvements and be repeated after major changes.
+## Check 2: Ethical Charter Alignment
 
-## Test Categories
+- Verify prohibited uses and remediation paths remain unchanged or publicly justified.
+- Ensure a recent Public Attestation Step exists for the charter.
 
-| Category | Description | Linked Layers |
-| --- | --- | --- |
-| **Mandate Alignment** | Confirms services fulfill the civic mandate. | [L0 Civic Mandate](../layers/civic_mandate.md) |
-| **Ethics Compliance** | Checks safeguards and prohibitions. | [L1 Ethical Charter](../layers/ethical_charter.md) |
-| **Data Integrity** | Validates consent, quality, and minimization practices. | [L2 Data Stewardship](../layers/data_stewardship.md) |
-| **Model Performance** | Evaluates accuracy, bias, and robustness. | [L3 Model Development](../layers/model_development.md) |
-| **Instruction Safety** | Assesses prompt handling and override procedures. | [L4 Instruction Control](../layers/instruction_control.md) |
-| **Reasoning Quality** | Reviews interpretability and contestation responses. | [L5 Reasoning Exchange](../layers/reasoning_exchange.md) |
-| **Operational Readiness** | Tests deployment resilience and support systems. | [L6 Deployment Integration](../layers/deployment_integration.md) |
-| **Publication Accuracy** | Ensures reports reflect current status. | [L7 Governance Publication](../layers/governance_publication.md) |
-| **Participation Health** | Measures engagement, grievance resolution, and trust. | [L8 Civic Participation](../layers/civic_participation.md) |
+## Check 3: Data Stewardship Audit
 
-## Testing Process
+- Inspect dataset inventories for consent basis, retention limits, and deletion proofs.
+- Record any missing notices or accessibility barriers.
 
-1. **Plan.** Define objectives, participants, and evaluation metrics using the Implementation Guide.
-2. **Collect Evidence.** Use open forms, interviews, and community observations to capture results.
-3. **Analyze.** Synthesize findings with attention to equity and accessibility impacts.
-4. **Publish.** Share results through the Civic Oversight Interface, including remediation plans.
-5. **Follow Up.** Track remediation progress and document completion in the Transparency Record.
+## Check 4: Model Evaluation Transparency
 
-## Tools and Templates
+- Review evaluation summaries for clarity on metrics, limitations, and community input.
+- Confirm that decisions referencing models cite relevant Transparency Records.
 
-- Use spreadsheets or open-source documentation tools to track results.
-- Provide audio or visual summaries for communities with varied access needs.
-- Archive test artifacts in accessible repositories with clear versioning.
+## Check 5: Deployment Accountability
+
+- Validate that rollout schedules, rollback triggers, and contact channels are up to date.
+- Confirm training materials for frontline staff remain accessible.
+
+## Check 6: Participation Responsiveness
+
+- Compare recent community feedback with documented responses.
+- Note whether participation support commitments (stipends, accessibility) were fulfilled.
+
+Traceability
+
+Keys: Guide=TestingFramework-v5, Cycle=semiannual
+Open Civic Artefacts
+
+- Transparency Record: Transparency Check Logs
+- Transparency Record: Community Verification Reports
+
+```sql
+-- Copy code
+SELECT artefact_id, check_type
+FROM transparency_registry
+WHERE guide = 'testing_framework';
+```

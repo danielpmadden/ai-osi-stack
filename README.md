@@ -1,28 +1,53 @@
-# AI OSI Stack (Open Core)
+Layer/Theme: repository_overview
+Version: v5.0-open-core
+Purpose: Describe the AI OSI v5 open-core structure and contributor guidance.
 
-The AI OSI Stack is an open civic governance framework for responsible AI stewardship. It adapts the classic networking OSI model into nine interdependent civic layers that help public institutions, community networks, and researchers document mandates, ethics, data practices, model development, operational deployment, and community participation. This repository provides the open-core documentation needed to adopt, localize, and iterate on the stack.
+# AI OSI v5 Open-Core Repository
 
-## Repository Structure
+AI OSI v5.0-open-core is a public, civic, non-commercial knowledge base for operating accountable intelligence services. "Open-core" means the materials herein SHALL remain freely accessible for civic use, while specialized extensions MAY be developed elsewhere if they uphold the same public commitments. The repository prioritizes transparency, shared stewardship, and accountability to affected communities rather than proprietary advantage.
 
-- `foundation/` – Core context, glossary, and design principles that describe the civic mandate behind the stack.
-- `layers/` – Nine-layer civic feedback loop that defines responsibilities from mandate formation through participation.
-- `guides/` – Implementation playbooks, testing frameworks, security practices, and ethics primers to adapt the layers.
-- `reference/` – Roadmaps, comparative studies, FAQs, and index crosswalks that support ongoing stewardship.
-- `.github/` and tooling configs – Community standards and automation defaults for collaboration.
+## Intended Audience
 
-## Getting Started
+The contents SHALL serve civic technologists, public interest researchers, community advocates, and institutional stewards charged with evaluating or operating high-impact AI services. Contributors SHOULD approach every change with a duty of care to end users and to the broader public record.
 
-1. **Read the foundation.** Begin with `foundation/overview.md`, `foundation/context.md`, `foundation/glossary.md`, and `foundation/design_principles.md` to understand intent, terminology, and civic norms.
-2. **Work through the layers.** Review each document in `layers/` to capture mandates, ethics, data care, model development, instruction controls, reasoning exchange, deployment integration, publication, and participation practices.
-3. **Apply the guides.** Use `guides/implementation_guide.md`, `guides/testing_framework.md`, `guides/security_model.md`, and `guides/philosophy_ethics.md` to tailor the stack for your community.
-4. **Consult the references.** Track milestones, answer common questions, and compare models using the resources in `reference/`.
+## How to Contribute
 
-## Usage
+1. Review [CONTRIBUTING.md](CONTRIBUTING.md) for submission expectations and civic style requirements.
+2. Open an issue describing the proposal, explicitly noting public benefit and any foreseeable risks.
+3. Submit a pull request referencing Transparency Records or creating new ones when appropriate.
+4. Stay available for public discussion until the change is merged and logged.
 
-- All materials are provided under a Creative Commons Attribution-ShareAlike 4.0 (CC-BY-SA 4.0) license. See `LICENSE` for details.
-- Derivative works must remain transparent, acknowledge civic contributors, and preserve open access to documentation.
-- Contributions are welcome from civic technologists, public servants, researchers, and community stewards following the guidelines in `CONTRIBUTING.md` and the standards in `CODE_OF_CONDUCT.md`.
+## Running the Civic Verification Routine
 
-## Support & Feedback
+The `/tools` directory contains human-readable procedures. To verify repository alignment:
 
-Open an issue or discussion to propose changes, report inconsistencies, or share adaptations. Major structural updates should be recorded in `CHANGELOG.md` and accompanied by public rationale to maintain civic accountability.
+1. Open [`tools/civic_verification.md`](tools/civic_verification.md).
+2. Follow each procedural step, marking observations and deviations.
+3. Record findings in the Transparency Record for traceability and remediation.
+
+## Directory Overview
+
+- `foundation/` SHALL hold context, glossary, and design principles for the civic operating system.
+- `layers/` enumerates the nine stacked civic layers from Mandate through Participation.
+- `guides/` offers practical instructions, security expectations, ethics framing, and evaluation playbooks.
+- `reference/` collates comparative standards, frequently asked questions, crosswalks, and roadmap commitments.
+- `tools/` provides verification routines supporting public oversight.
+
+## Maintenance Expectations
+
+Stewards SHALL update this README whenever governance structures, verification routines, or participation pathways change. Every release SHALL cite new Transparency Records and uphold the v5.0-open-core version semantics documented in `reference/roadmap.md`.
+
+Traceability
+
+Keys: Repository_ID=AI-OSI-v5-open-core, Release_Line=main
+Open Civic Artefacts
+
+- Transparency Record: Repository Overview Maintenance Log
+- Transparency Record: Civic Verification Procedure Updates
+
+```sql
+-- Copy code
+SELECT artefact_id, last_reviewed
+FROM transparency_registry
+WHERE component = 'repository_overview';
+```

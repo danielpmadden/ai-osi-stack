@@ -1,40 +1,42 @@
----
-title: Roadmap
-title_id: reference-roadmap
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: reference_roadmap
+Version: v5.0-open-core
+Purpose: Define roadmap milestones and versioning policy for AI OSI v5.
 
-# Roadmap
+# Roadmap and Versioning Policy
 
-## Purpose
+The roadmap SHALL guide progression toward general availability (GA) and future releases while honoring civic commitments.
 
-The roadmap helps communities plan incremental improvements while honoring civic accountability.
+## Criteria for v5 GA
 
-## Planning Horizons
+- **Transparency**: All nine layers SHALL include current Traceability keys and linked Transparency Records.
+- **Participation**: Civic participation metrics SHOULD show diverse engagement with documented responses.
+- **Verification**: The civic verification routine SHALL run without critical findings across banned terms, links, metadata, and layer counts.
+- **Attestations**: Public Attestation Steps SHALL cover mandate renewal, charter validation, data stewardship audits, and deployment readiness.
+- **Accessibility**: Core artefacts SHALL be available in at least two languages or formats meeting accessibility standards.
 
-| Horizon | Timeframe | Focus |
-| --- | --- | --- |
-| **Immediate (0-3 months)** | Establish mandate, charter, and data stewardship baselines. |
-| **Near Term (3-9 months)** | Develop models, instruction controls, and reasoning exchange protocols. |
-| **Mid Term (9-18 months)** | Complete deployment integration, publication workflows, and participation programs. |
-| **Long Term (18+ months)** | Iterate based on community feedback, expand educational resources, and refine governance linkages. |
+## Release Cadence
 
-## Milestone Checklist
+- Minor updates (v5.x) SHALL bundle incremental improvements validated through participation loops.
+- Patch updates (v5.x.y) SHALL address urgent fixes such as link corrections or incident disclosures.
+- Major updates (v6.0 or beyond) SHALL undergo public consultation and new GA criteria approval before work begins.
 
-- [ ] Mandate ratified with documented Public Attestation Step.
-- [ ] Ethical charter training completed.
-- [ ] Data inventory and consent registry published.
-- [ ] Model documentation and impact assessment shared.
-- [ ] Instruction control overrides tested.
-- [ ] Reasoning exchange contestation register active.
-- [ ] Deployment plan and resilience drills completed.
-- [ ] Governance publication schedule operational.
-- [ ] Participation response ledger active.
+## Versioning Policy
 
-## Iteration Guidance
+- Version numbers SHALL appear in metadata headers across all markdown files.
+- Release notes SHALL summarize changes, cite Transparency Records, and outline participation outcomes.
+- Deprecated content SHOULD remain accessible with clear sunset dates and replacement references.
 
-- Update this roadmap after each stewardship report in [../layers/governance_publication.md](../layers/governance_publication.md).
-- Incorporate insights from [../layers/civic_participation.md](../layers/civic_participation.md) to reprioritize milestones.
-- Archive previous versions to show learning over time.
+Traceability
+
+Keys: Reference=Roadmap-v5, Review_Cycle=biannual
+Open Civic Artefacts
+
+- Transparency Record: Roadmap Review Minutes
+- Transparency Record: Version Policy Attestations
+
+```sql
+-- Copy code
+SELECT artefact_id, milestone
+FROM transparency_registry
+WHERE reference = 'roadmap';
+```

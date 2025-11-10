@@ -1,35 +1,46 @@
----
-title: Comparative Models
-title_id: reference-comparative-models
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: reference_comparative_models
+Version: v5.0-open-core
+Purpose: Crosswalk AI OSI v5 with major governance frameworks.
 
-# Comparative Models
+# Comparative Models Crosswalk
 
-## Purpose
+This reference SHALL help stewards align AI OSI v5.0-open-core with other governance frameworks.
 
-This reference situates the AI OSI Stack among related civic, academic, and public-sector frameworks. It helps communities draw lessons while maintaining the stack's civic commitments.
+## ISO/IEC 42001 Alignment
 
-## Comparison Table
+| AI OSI v5 Layer | ISO/IEC 42001 Clause | Civic Notes |
+| --- | --- | --- |
+| L0 Civic Mandate | 5.2 Policy | Mandate SHALL function as the AI policy with public participation evidence. |
+| L2 Data Stewardship | 7.4 Resource Management | Data controls SHALL document consent, retention, and transparency obligations. |
+| L5 Deployment Integration | 8.2 Operational Planning | Deployment plans SHALL include rollback and community notice procedures. |
 
-| Framework | Origin | Key Focus | Alignment Notes |
-| --- | --- | --- | --- |
-| Montreal Declaration for Responsible AI | Academic-Civic | Ethical principles for AI development | Reinforces L1 Ethical Charter values. |
-| OECD AI Principles | Intergovernmental | Inclusive growth, human-centered values, transparency | Supports L0 mandate formation and L7 publication norms. |
-| EU AI Act (draft) | Regional Regulation | Risk-based governance of AI systems | Offers regulatory benchmarks for L6 deployment planning. |
-| Data Feminism | Academic | Power-aware data practices | Inspires L2 consent and equity approaches. |
-| Participatory Budgeting Playbooks | Civic Practice | Community decision-making processes | Provides strategies for L8 civic participation. |
+## NIST AI RMF Alignment
 
-## How to Use
+| AI OSI v5 Component | NIST AI RMF Function | Civic Notes |
+| --- | --- | --- |
+| Ethical Charter | Govern | Charter SHALL operationalize risk management priorities with public oversight. |
+| Testing Framework | Map/Measure | Checks SHOULD document context, data, and performance for civic review. |
+| Security Model | Manage | Public Attestation Step SHALL demonstrate mitigations and accountability roles. |
 
-- Identify shared principles that strengthen local documentation.
-- Note divergences where additional community safeguards are required.
-- Reference these frameworks during Public Attestation Steps to demonstrate due diligence.
+## EU AI Act Alignment
 
-## Additional Resources
+| AI OSI v5 Artefact | EU AI Act Article | Civic Notes |
+| --- | --- | --- |
+| Reasoning Exchange | Art. 13 Transparency | Explanations SHALL meet transparency duties and appeals expectations. |
+| Governance Publication | Art. 62 Record-Keeping | Publications SHALL maintain audit-ready documentation. |
+| Civic Participation | Art. 29 Human Oversight | Participation SHALL ensure human oversight remains meaningful and resourced. |
 
-- Local data governance charters.
-- Public-interest technology networks and toolkits.
-- Civic science initiatives focused on transparency and accountability.
+Traceability
+
+Keys: Reference=ComparativeModels-v5, Review_Cycle=annual
+Open Civic Artefacts
+
+- Transparency Record: Comparative Crosswalk Review
+- Transparency Record: External Standards Mapping Log
+
+```sql
+-- Copy code
+SELECT artefact_id, framework
+FROM transparency_registry
+WHERE reference = 'comparative_models';
+```

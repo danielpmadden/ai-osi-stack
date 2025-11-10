@@ -1,42 +1,57 @@
----
-title: L7 Governance Publication
-title_id: layer7-governance-publication
-edition: civic
-version: 1.0
-status: draft
----
+Layer/Theme: layer_governance_publication
+Version: v5.0-open-core
+Purpose: Publish governance decisions and oversight artefacts.
 
-# L7 Governance Publication
+# L6 Governance Publication
 
-## Purpose
+Governance publication SHALL ensure that all oversight decisions, audits, and community findings remain accessible. It SHALL maintain living records that demonstrate compliance and invite scrutiny.
 
-Layer 7 defines how information about the AI OSI Stack is shared publicly. It SHALL ensure regular, accessible reporting through the Civic Oversight Interface.
+## Publication Responsibilities
 
-## Publication Practices
+- Maintain a schedule for releasing meeting minutes, audit summaries, and attestation steps.
+- Provide translation and accessibility accommodations for all published materials.
+- Cross-reference artefacts with layers and guides for straightforward navigation.
+- Document dissenting opinions alongside majority decisions.
 
-- **Regular Reports.** Issue periodic summaries covering mandate status, ethical compliance, data practices, and deployment outcomes.
-- **Open Meetings.** Schedule public briefings with accessible materials and translation support.
-- **Transparency Record Maintenance.** Keep records searchable, versioned, and archived responsibly.
-- **Responsive Communication.** Acknowledge and respond to public inquiries within defined timeframes.
+## Stewardship Actions
 
-## Required Outputs
-
-| Output | Description |
-| --- | --- |
-| **Stewardship Report** | Consolidated overview of activities across all layers. |
-| **Issue Tracker** | Public list of open issues, remediation steps, and timelines. |
-| **Budget Statement** | Plain-language accounting of resources used for stewardship. |
-| **Participation Summary** | Highlights of community input and resulting actions. |
+1. Consolidate artefacts into a public index updated after every governance session.
+2. Verify that each publication links to relevant Transparency Records and contact channels.
+3. Issue a Public Attestation Step confirming completeness of the release package.
 
 ## Interfaces
 
-- Publishes findings from [L6 Deployment Integration](deployment_integration.md).
-- Provides accountability feedback to [L0 Civic Mandate](civic_mandate.md) and [L1 Ethical Charter](ethical_charter.md).
-- Supports [../reference/faq.md](../reference/faq.md) with updated information.
+- Receives operational updates from [L5 Deployment Integration](deployment_integration.md) and [L7 Reasoning Exchange](reasoning_exchange.md).
+- Supplies artefact references to [../reference/crosswalk_index.md](../reference/crosswalk_index.md) and [../reference/roadmap.md](../reference/roadmap.md).
+- Informs civic feedback loops documented in [L8 Civic Participation](civic_participation.md).
 
-## Accountability Checklist
+## What Good Looks Like
 
-- [ ] Publication schedule posted and adhered to.
-- [ ] Reports available in accessible formats (HTML, PDF, audio, plain text).
-- [ ] Issue tracker updated at least monthly.
-- [ ] Public inquiries logged and resolved with documented follow-up.
+- Timely publication of decisions with contextual summaries and supporting data.
+- Clear indexing that helps residents trace a topic across layers.
+- Inclusion of remediation status for previously identified issues.
+
+## Common Failure Modes
+
+- Publishing partial updates without cross-links.
+- Allowing accessibility gaps that exclude impacted communities.
+- Omitting dissent or remediation progress from public records.
+
+## Worked Example
+
+A national oversight body maintains a public portal where every meeting packet, vote tally, and attestation is published within five working days. Artefacts reference relevant layers and include remediation trackers so residents can monitor follow-up actions.
+
+Traceability
+
+Keys: Layer=L6, Governance_Record=GP-2024
+Open Civic Artefacts
+
+- Transparency Record: Governance Publication Log
+- Transparency Record: Oversight Attestation Archive
+
+```sql
+-- Copy code
+SELECT artefact_id, publication_date
+FROM transparency_registry
+WHERE layer = 'L6';
+```

@@ -1,52 +1,44 @@
-# Contributor Covenant Code of Conduct v2.1
+Layer/Theme: code_of_conduct
+Version: v5.0-open-core
+Purpose: Establish community standards for AI OSI v5 participation.
 
-## Our Pledge
+# Code of Conduct
 
-We as members, contributors, and leaders pledge to make participation in the AI OSI Stack community a harassment-free experience for everyone, regardless of age, body size, visible or invisible disability, ethnicity, sex characteristics, gender identity and expression, level of experience, education, socio-economic status, nationality, personal appearance, race, caste, color, religion, or sexual identity and orientation.
+All participants SHALL foster a respectful, inclusive environment aligned with civic values.
 
-## Our Standards
+## Expected Behavior
 
-Examples of behavior that contributes to a positive environment include:
+- Treat every contributor with dignity, especially those from impacted communities.
+- Use inclusive language and provide context for decisions.
+- Respect participation processes and respond to questions promptly.
 
-- Demonstrating empathy and kindness toward other people.
-- Respecting differing opinions, viewpoints, and experiences.
-- Giving and gracefully accepting constructive feedback.
-- Accepting responsibility and apologizing to those affected by mistakes, and learning from the experience.
-- Focusing on what is best for the community.
+## Unacceptable Behavior
 
-Examples of unacceptable behavior include:
+- Harassment, discrimination, or intimidation in any form.
+- Dismissing or suppressing concerns raised by affected people.
+- Introducing proprietary barriers that limit public oversight.
 
-- The use of sexualized language or imagery, and sexual attention or advances of any kind.
-- Trolling, insulting or derogatory comments, and personal or political attacks.
-- Public or private harassment.
-- Publishing others' private information without explicit permission.
-- Other conduct which could reasonably be considered inappropriate in a professional setting.
+## Reporting
 
-## Enforcement Responsibilities
-
-Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior they deem inappropriate, threatening, offensive, or harmful.
-
-## Scope
-
-This Code of Conduct applies within all community spaces and also applies when an individual is officially representing the community in public spaces.
+- Report issues by emailing the steward list or opening a public issue when safe.
+- Stewards SHALL acknowledge reports within five working days and outline next steps.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the maintainers at `civic-maintainers@ai-osi.example`. All complaints will be reviewed and investigated promptly and fairly. All maintainers are obligated to respect the privacy and security of the reporter of any incident.
+- Violations SHALL be documented in Transparency Records with remediation plans.
+- Repeat offenders MAY be removed from participation spaces subject to steward consensus.
 
-## Enforcement Guidelines
+Traceability
 
-Community leaders will follow these Community Impact Guidelines in determining the consequences for any action they deem in violation of this Code of Conduct:
+Keys: Doc=CodeOfConduct-v5, Review_Cycle=annual
+Open Civic Artefacts
 
-1. **Correction.** Community impact: Use of inappropriate language or other behavior deemed unprofessional or unwelcome. Consequence: A private, written warning, providing clarity around the nature of the violation and an explanation of why the behavior was inappropriate.
-2. **Warning.** Community impact: A violation through a single incident or series of actions. Consequence: A warning with consequences for continued behavior.
-3. **Temporary Ban.** Community impact: A serious violation of community standards, including sustained inappropriate behavior. Consequence: A temporary ban from any sort of interaction or public communication with the community.
-4. **Permanent Ban.** Community impact: Demonstrating a pattern of violation of community standards, including sustained inappropriate behavior, harassment of an individual, or aggression toward or disparagement of classes of individuals. Consequence: A permanent ban from any sort of public interaction within the community.
+- Transparency Record: Conduct Report Log
+- Transparency Record: Remediation Outcome Register
 
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.1, available at https://www.contributor-covenant.org/version/2/1/code_of_conduct.html.
-
-Community Impact Guidelines were inspired by [Mozilla's code of conduct enforcement ladder](https://github.com/mozilla/diversity).
-
-For answers to common questions about this code of conduct, see the [Contributor Covenant FAQ](https://www.contributor-covenant.org/faq). Translations are available at the [Contributor Covenant translations page](https://www.contributor-covenant.org/translations).
+```sql
+-- Copy code
+SELECT artefact_id, action_taken
+FROM transparency_registry
+WHERE document = 'code_of_conduct';
+```
