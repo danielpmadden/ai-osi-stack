@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -9,7 +12,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Issues found:**
   - Residual references to private `govspine`, `ops`, and `analytics` runtimes in
     README copy, audit dossiers, historical prototypes, and build scripts.
-  - Root `LICENSE` previously listed CC BY-NC-ND; replaced with Apache-2.0 /
+  - Root `LICENSE` previously listed the prior restricted license (non-commercial, no-derivative); replaced with Apache-2.0 /
     CC BY-SA split aligned with custodial policy.
   - `_open_tools/` utilities lacked SPDX headers and functional validation logic.
   - Provenance metadata (`CANONICAL_PROVENANCE.yaml`) still reported v5.0-rc.

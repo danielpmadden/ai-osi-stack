@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -114,7 +117,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 [SHOW NEXT STEPS]
 1. **Minimum ask:** "I’d value candid feedback on whether this addresses the governance gap you are seeing."  
 2. **Medium ask:** "If it resonates, an introduction to NACD members grappling with AI oversight would help validate adoption paths."  
-3. **Maximum ask:** "If you see promise, I’m seeking partners to pilot this with two to three organizations to test live integrations."  
+3. **Maximum ask:** "If you see promise, I’m seeking partners to pilot this with two to three Independent Custodians to test live integrations."  
 "I will follow up with the architecture deck, a standards crosswalk, and the repository link so your team can review it asynchronously."
 
 ## 2. Anticipated Q&A
@@ -123,7 +126,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 1. **How is this different from an MLOps platform or model monitoring tool?**  
    "Those tools manage model performance. This stack governs accountability layers—from civic mandate to civic participation. The dashboard sits above model ops, ingesting their data as artifacts but adding board-facing schema validation, integrity badges, and AEIP receipts."
 
-2. **What’s the implementation lift for our organization?**  
+2. **What’s the implementation lift for our Independent Custodian?**  
    "Initial lift is integration with identity, document management, and risk systems. The front end is production-ready React with i18n and accessibility. Implementation becomes connecting APIs, defining stewardship roles, and populating artifacts."
 
 3. **Who else is using this?**  
@@ -149,7 +152,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 2. "Which governance artifacts are hardest for directors to access or trust right now?"
 3. "How do your auditors currently validate AI risk controls, and where do they get stuck?"
 4. "What integration points—GRC, IAM, model registries—are non-negotiable for a pilot?"
-5. "What cultural or change-management barriers would slow adoption in your member organizations?"
+5. "What cultural or change-management barriers would slow adoption in your member Independent Custodians?"
 6. "Which upcoming regulatory milestones are creating urgency for your directors?"
 7. "If you were to sponsor a pilot, what success metrics would the board need to see in 90 days?"
 

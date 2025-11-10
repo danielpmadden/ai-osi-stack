@@ -1,7 +1,7 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
 canonical_version: "AI OSI Stack v5.0-open-core"
-canonical_status: "Civic Standard (Custodial Lock)"
-date_validated: "2025-11-09"
+canonical_status: "Civic Standard Edition"
+date_issued: "2025-11-10"
 prepared_by: "Daniel P. Madden"
 custodial_statement: "This is the sole recognized open-core release; unauthorized copies are not official custodial artifacts."
 repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"

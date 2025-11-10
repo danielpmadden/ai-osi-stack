@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -29,6 +32,6 @@ Field names are vectorised with TF-IDF character n-grams when the scikit-learn s
 | 2 | defin, tions | 235 | definitions; definitions.aeip:artifactId; definitions.aeip:artifactId.description; definitions.aeip:version; definitions.aeip:version.description; definitions.aeip:lifecycleStage; definitions.aeip:lifecycleStage.description; definitions.aeip:layerPath; definitions.aeip:layerPath.description; definitions.aeip:receipts … |
 | 3 | schem, chema | 144 | schema; schema.type; schema.required; schema.properties; schema.properties.id; schema.properties.id.type; schema.properties.version; schema.properties.version.type; schema.properties.source; schema.properties.source.type … |
 | 4 | canon, adata | 126 | canonicalMetadata; canonicalMetadata.canonical_version; canonicalMetadata.canonical_date; canonicalMetadata.aeip_version; canonicalMetadata.repository_of_record; canonicalMetadata.domain_of_record; canonicalMetadata.supersedes_all_prior_metadata; canonicalMetadata; canonicalMetadata.canonical_version; canonicalMetadata.canonical_date … |
-| 5 | examp, es[0] | 111 | examples[0].artifact_type; examples[0].version; examples[0].uuid; examples[0].timestamp; examples[0].layer; examples[0].issuer; examples[0].issuer.name; examples[0].issuer.role; examples[0].issuer.organization; examples[0].issuer.contact … |
+| 5 | examp, es[0] | 111 | examples[0].artifact_type; examples[0].version; examples[0].uuid; examples[0].timestamp; examples[0].layer; examples[0].issuer; examples[0].issuer.name; examples[0].issuer.role; examples[0].issuer.Independent Custodian; examples[0].issuer.contact … |
 | 6 | title, title | 24 | title; title; title; title; title; title; title; title; title; title … |
 | 7 | requi, uired | 21 | required; required; required; required; required; required; required; required; required; required … |

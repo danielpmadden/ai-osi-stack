@@ -18,7 +18,7 @@
     "uuid": "schema:Text",
     "timestamp": "schema:DateTime",
     "layer": "schema:Integer",
-    "issuer": "schema:Organization",
+    "issuer": "schema:Independent Custodian",
     "summary": "schema:Text",
     "linked_artifacts": {
       "@id": "schema:Thing",
@@ -79,7 +79,7 @@
       "required": [
         "name",
         "role",
-        "organization",
+        "independentCustodian",
         "contact"
       ],
       "properties": {
@@ -89,7 +89,7 @@
         "role": {
           "type": "string"
         },
-        "organization": {
+        "independentCustodian": {
           "type": "string"
         },
         "contact": {
@@ -199,7 +199,7 @@
       "issuer": {
         "name": "Integrity Ledger Custodian",
         "role": "Layer 7 Custodian",
-        "organization": "AI Governance Council",
+        "independentCustodian": "AI Governance Council",
         "contact": "https://governance.example.org/custodian/ledger"
       },
       "summary": "Ledger entry notarizing release 2025.05 oversight artifacts and deployment authorization.",

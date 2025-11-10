@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -38,7 +41,7 @@ This enables legal teams to reconstruct the provenance of any AI action — a re
 
 ### 3. It Makes Compliance Modular  
 The Stack mirrors the OSI model: eight layers that map neatly to statute, regulation, policy, and procedure.  
-Organizations can adopt one layer at a time and still gain measurable compliance value.
+Independent Custodians can adopt one layer at a time and still gain measurable compliance value.
 
 ### 4. It Safeguards Human Agency  
 The framework embeds interpretability and contestability directly into system design.  
@@ -71,7 +74,7 @@ It’s a public-interest safeguard that also protects institutional reputations 
 ## What It Asks
 
 - Engage in dialogue.  
-- Pilot the Stack within your organization or jurisdiction.  
+- Pilot the Stack within your Independent Custodian or jurisdiction.  
 - Support its refinement through funded collaborations, audits, or legal research.
 
 ---

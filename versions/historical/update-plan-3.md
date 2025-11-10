@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -149,7 +152,7 @@ Cryptographic resilience and disaster recovery for truth.
 8 · Psychological & Cultural Safety
 Problem
 
-Auditors and contributors may experience ethical fatigue or exposure to distressing material.
+Auditors and Independent Custodians may experience ethical fatigue or exposure to distressing material.
 
 Solution
 

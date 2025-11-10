@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -90,7 +93,7 @@ Create /appendices/Appendix-E-Layer8-Operationalization.md, defining:
 
 Community review cycles (quarterly)
 
-Contributor application process
+Independent Custodian application process
 
 Diversity & inclusion guidelines
 
@@ -100,7 +103,7 @@ Public changelog transparency for feedback incorporation
 
 6.2 Diversity & Inclusion Checklist
 
-Add a checklist to /CONTRIBUTING.md requiring contributors to review proposed changes for:
+Add a checklist to /CONTRIBUTING.md requiring Independent Custodians to review proposed changes for:
 
 Accessibility
 

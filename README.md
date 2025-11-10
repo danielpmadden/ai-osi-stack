@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -18,7 +21,7 @@ All civic documentation, schema definitions, and layer structures are © 2025 Da
 Any other repository, fork, or derivative claiming authorship or affiliation is **unauthorized and unofficial**.  
 Commercial and runtime implementations (AEIP™, Governance Control Tower™) remain proprietary to the author.
 
-## What’s Included
+## What’s Open vs. What’s Private
 
 | Scope | Status | Notes |
 | --- | --- | --- |
@@ -60,4 +63,12 @@ The maintainer can be reached via GitHub identity `44127480+danielpmadden@users.
 > **IP Boundary Excerpt**  
 > AEIP runtime, Governance Control Tower, ledger engines, and analytics dashboards are proprietary and excluded from this repository.  
 > © 2025 Daniel P. Madden. All rights reserved. See `LICENSE` and `LEGAL/TRADEMARK-NOTE.md` for usage guidance.
+
+## Custodianship & Provenance Summary
+
+- Custodial Author: Daniel P. Madden (sole Independent Custodian).
+- Canonical Version: `AI OSI Stack v5.0-open-core (Civic Standard Edition)` as recorded in `CANONICAL_PROVENANCE.yaml`.
+- Licensing: Documentation under CC BY-SA 4.0; code artifacts under Apache-2.0.
+- Verification: See `_ip_review/REPO_FINAL_AUDIT_v5.0-open-core.md` and `meta/v5-open-core-sha512-manifest.txt` for integrity confirmations.
+- Trademarks: Refer to `LEGAL/TRADEMARK-NOTE.md` and `LEGAL/VALIDATION-NOTICE.md` for custodial use guidance.
 

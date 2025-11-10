@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -42,5 +45,5 @@ The stack’s structure codifies Daniel P. Madden’s ethical triad:
 This reference implementation is intentionally **offline-first**. All utilities, schemas, and example ledgers SHALL operate without network dependencies to guarantee reproducible review, audit rehearsals, and archival resilience. Deployment, live registries, and production key material are **out of scope**. Stakeholders SHALL treat this repository as a normative blueprint: design decisions are finalized, but instantiation in live infrastructure remains deferred until governance coalitions ratify operational requirements.
 
 ## 5. Integration Roadmap Considerations
-Organizations adopting the AI OSI Stack SHALL first internalize the seven-layer obligations, map existing controls to artifact expectations, and stage AEIP nodes in sandbox form. Only after governance councils approve contextual adaptations SHOULD production roll-out proceed. Continuous maturation follows the Implementation Maturity Model described in the canonical specification, ensuring every escalation preserves the ethical foundations summarized above.
+Independent Custodians adopting the AI OSI Stack SHALL first internalize the seven-layer obligations, map existing controls to artifact expectations, and stage AEIP nodes in sandbox form. Only after governance councils approve contextual adaptations SHOULD production roll-out proceed. Continuous maturation follows the Implementation Maturity Model described in the canonical specification, ensuring every escalation preserves the ethical foundations summarized above.
 

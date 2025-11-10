@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -55,7 +58,7 @@ The AI OSI Stack SHALL never be implemented to monitor individuals, suppress exp
 Add to /schemas/aeip-1.3.jsonld:
 
 Field	Type	Description
-privacy.scope	enum (`organizational	systemic
+privacy.scope	enum (`Custodial	systemic
 privacy.consent	enum (`explicit	implicit
 privacy.redaction	boolean	Whether personal data was redacted prior to publication.
 privacy.justification	string	Reason for including any personal data.
@@ -70,7 +73,7 @@ Layer	Change
 2 – Data Stewardship	Necessity & Proportionality checklist for personal data.
 4 – Instruction & Control	Ensure human override visibility; forbid autonomous coercion.
 7 – Governance Publication	Mandate de-identification and disclosure of privacy scope.
-8 – Civic Participation	Add Civic Oversight Interface: a cryptographically verifiable channel for civil-society organizations to attest that audits occurred without exposing personal data.
+8 – Civic Participation	Add Civic Oversight Interface: a cryptographically verifiable channel for civil-society Independent Custodians to attest that audits occurred without exposing personal data.
 6 · Custodial & Documentation Updates
 
 Add Appendix N – Human Rights Safeguards (as normative).

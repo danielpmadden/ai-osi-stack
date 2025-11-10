@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -6,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 # Authorship Purity Remediation Report — AI OSI Stack
 
 ## Executive Summary
-Daniel P. Madden conducted an authorship purity remediation on branch `authorship-remediation`, beginning from baseline commit `d562e49eadcc79155ff1d408c0f26e14810eb7ea`. The sweep replaced every residual organizational credential with the verified GitHub identity `44127480+danielpmadden@users.noreply.github.com`, updated canonical provenance metadata, and rewired documentation, schemas, and press collateral to cite the sole author. Security contacts and CODEOWNERS now point exclusively to Daniel, LaTeX frontmatter carries the verified address, and the README embeds the mandated provenance block. Ninety-nine unauthorized references—including legacy GitHub organizations, obsolete inboxes, and press aliases—were removed or rewritten. All edits were completed with DRY_RUN=false and REWRITE_HISTORY=false, preserving commit history while locking canonical metadata to the verified author.
+Daniel P. Madden conducted an authorship purity remediation on branch `authorship-remediation`, beginning from baseline commit `d562e49eadcc79155ff1d408c0f26e14810eb7ea`. The sweep replaced every residual Custodial credential with the verified GitHub identity `44127480+danielpmadden@users.noreply.github.com`, updated canonical provenance metadata, and rewired documentation, schemas, and press collateral to cite the sole author. Security contacts and CODEOWNERS now point exclusively to Daniel, LaTeX frontmatter carries the verified address, and the README embeds the mandated provenance block. Ninety-nine unauthorized references—including legacy GitHub Independent Custodians, obsolete inboxes, and press aliases—were removed or rewritten. All edits were completed with DRY_RUN=false and REWRITE_HISTORY=false, preserving commit history while locking canonical metadata to the verified author.
 
 ## Findings
 ```csv

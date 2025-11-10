@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -18,7 +21,7 @@ ai-osi-stack/
 ├── audits/ (canonical) – primary repository audits and integrity reports
 ├── commercial/ (canonical) – contracting templates and commercial policy artefacts
 ├── dashboard/ (canonical) – React governance dashboard implementation
-│   ├── .husky/ (generated) – local git hooks for dashboard contributors
+│   ├── .husky/ (generated) – local git hooks for dashboard Independent Custodians
 │   ├── docs/ (review) – dashboard-local notes overlapping with /docs/dashboard/
 │   ├── ops/scripts/ (canonical) – dashboard validation and tooling utilities
 │   └── src/ (canonical) – frontend source (components, data, stories, styles, utils)
@@ -124,4 +127,4 @@ ai-osi-stack/
 ## Section 6 — Status Declaration
 The AI OSI Stack v5.0 repository remains under active development and structural refinement.  
 Redundant and legacy directories (e.g., /audit/, /meta/) are being consolidated for clarity.  
-This audit report documents the current state and provides canonical guidance for repository reorganization before final v5.0 release.
+This audit report documents the current state and provides canonical guidance for repository reIndependent Custodian before final v5.0 release.

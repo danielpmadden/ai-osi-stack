@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -9,7 +12,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 ### Who
 - **Primary steward:** Daniel P. Madden maintains authorship, provenance, and release duties; canonical provenance files, manifest metadata, and README reiterate sole authorship and absence of institutional backing.【F:CANONICAL_PROVENANCE.yaml†L1-L10】【F:README.md†L1-L24】【F:meta/README.md†L1-L40】
 - **Intended users:** Policy teams, compliance officers, civic technologists, and AI governance engineers seeking an auditable governance spine for AI systems, with documentation oriented to professionals comfortable with legal, civic, and technical terminology.【F:docs/LEGAL-AND-POLICY-BRIEF.md†L1-L57】【F:README.md†L25-L87】
-- **Contributors & maintainers:** Contributions are tightly controlled, requiring DCO sign-off, SBOM regeneration, and integrity updates; the project anticipates highly disciplined maintainers familiar with both Python and TypeScript tooling.【F:CONTRIBUTING.md†L5-L44】
+- **Independent Custodians & maintainers:** Contributions are tightly controlled, requiring DCO sign-off, SBOM regeneration, and integrity updates; the project anticipates highly disciplined maintainers familiar with both Python and TypeScript tooling.【F:CONTRIBUTING.md†L5-L44】
 
 ### What
 - **Repository purpose:** Implements the AI OSI governance stack as both documentation and executable reference, covering layered governance models, AEIP schemas, runtime validators, dashboards, and audits.【F:README.md†L25-L125】【F:govspine/readme.md†L1-L18】
@@ -82,7 +85,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 │   └── verify-aeip-signatures.py – Deprecated signing helper (advisory notice).
 ├── ops/
 │   ├── aeip/, inventory/, sbom/, secrets/ – Operational scripts and workflows.
-│   └── .github/ – CI workflows relocated for organization.
+│   └── .github/ – CI workflows relocated for Independent Custodian.
 └── versions/
     └── ai-osi-stack-v5.pdf – Canonical compiled publication.
 ```
@@ -150,7 +153,7 @@ Governance Publication (Layer 7) → Civic Participation (Layer 8)
 - **Accessibility documentation gap:** Required accessibility checklist absent despite automated tests.【F:audits/200-repo-wide-integrity-report.md†L60-L70】
 
 ## 6. Code Quality Analysis
-- **Structure & organization:** Clear separation between runtime, schemas, documentation, dashboard, and ops tooling promotes modular governance flows.【F:govspine/readme.md†L1-L18】【F:docs/LEGAL-AND-POLICY-BRIEF.md†L58-L71】
+- **Structure & Independent Custodian:** Clear separation between runtime, schemas, documentation, dashboard, and ops tooling promotes modular governance flows.【F:govspine/readme.md†L1-L18】【F:docs/LEGAL-AND-POLICY-BRIEF.md†L58-L71】
 - **Naming & clarity:** Layer modules and schema files use explicit OSI-aligned naming (`Layer5Interface`, `governance-decision-summary`), aiding readability.【F:govspine/runtime/layer5-interface/__init__.py†L1-L40】
 - **Reusability & abstraction:** `BaseLayer`, `InterfaceContract`, and `Artifact` abstractions provide extensible hooks for future governance logic; dynamic module bridges keep runtime code centralized.【F:govspine/runtime/common/layer.py†L1-L44】【F:govspine/common/layer.py†L1-L27】
 - **Coupling/cohesion:** Layer modules depend on shared schema/crypto utilities, maintaining cohesion around AEIP contracts while minimizing duplication.【F:govspine/runtime/common/schema.py†L1-L78】

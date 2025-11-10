@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -87,7 +90,7 @@ Date: 2025-11-08
 - Checklist:
   - [ ] Fill all date placeholders in FACT-SUMMARY.md
   - [ ] Confirm all SPDX headers present
-  - [ ] Replace “AIOSI organization” with “AI OSI Stack (independent project)”
+  - [ ] Replace “AIOSI Independent Custodian” with “AI OSI Stack (independent project)”
   - [ ] Add author date to all frontmatter
   - [ ] Run LaTeX build to confirm updated metadata
 
