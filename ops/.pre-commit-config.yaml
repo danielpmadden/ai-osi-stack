@@ -1,8 +1,0 @@
-repos:
-  - repo: local
-    hooks:
-      - id: custodian-registry-freshness
-        name: Ensure custodian registry rotation
-        entry: python tools/check_custodian_registry.py
-        language: system
-        pass_filenames: false

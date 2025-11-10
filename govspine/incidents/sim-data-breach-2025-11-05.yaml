@@ -1,6 +1,0 @@
-incident_id: SIM-DATA_BREACH-2025-11-05
-date: 2025-11-05
-scenario: data_breach
-summary: Unauthorized access detected in partner dataset bucket.
-time_to_containment_minutes: 64
-time_to_transparency_minutes: 84

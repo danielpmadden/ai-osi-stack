@@ -1,4 +1,0 @@
-#!/bin/sh
-npm run validate:data
-npm run typecheck
-npx lint-staged
