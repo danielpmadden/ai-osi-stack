@@ -1,0 +1,9 @@
+AI OSI Stack – Governance Control Tower (v5.0-MVP)
+=================================================
+
+1. Bootstrap the frontend at `analytics/dashboard` (React 18 + TypeScript + Vite) and the FastAPI backend at `backend`.
+2. The frontend reads canonical terminology from `/docs/AI_OSI_Stack/00_Project_Definition.json` and falls back to local JSON if API calls fail.
+3. Core UX features: Layer Map cards, AEIP handshake simulator, Integrity Ledger, Artifact Gallery, Version Timeline, Glossary, and Civic Feedback portal.
+4. Run `npm run storybook` to preview LayerCard and AEIPReceiptCard stories.
+5. Backend endpoints: `/api/aeip/receipts`, `/api/ledger/entries`, `/api/feedback`.
+6. Tests: `npm run test` (frontend) and `pytest` (backend).

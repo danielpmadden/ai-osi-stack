@@ -1,23 +1,22 @@
-// SPDX-License-Identifier: Apache-2.0
-
-import type { Meta, StoryObj } from "@storybook/react";
-import layersData from "@/data/layers.json";
-import { IntegrityBadge } from "@/components/IntegrityBadge";
-import { layerPayloadSchema, parseDataOrThrow } from "@/utils/types";
-
-const { canonical_version } = parseDataOrThrow(layerPayloadSchema, layersData, "layers.json");
+import type { Meta, StoryObj } from '@storybook/react';
+import IntegrityBadge from '../components/IntegrityBadge';
 
 const meta: Meta<typeof IntegrityBadge> = {
-  title: "Components/IntegrityBadge",
-  component: IntegrityBadge
+  title: 'Dashboard/IntegrityBadge',
+  component: IntegrityBadge,
+  args: {
+    status: 'verified',
+    updatedAt: '2024-05-10'
+  }
 };
 
 export default meta;
 
 type Story = StoryObj<typeof IntegrityBadge>;
 
-export const Default: Story = {
+export const Verified: Story = {};
+export const Draft: Story = {
   args: {
-    canonical: canonical_version
+    status: 'draft'
   }
 };

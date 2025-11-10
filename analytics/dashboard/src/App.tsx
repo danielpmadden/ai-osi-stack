@@ -1,19 +1,40 @@
-// SPDX-License-Identifier: Apache-2.0
+import { Outlet } from 'react-router-dom';
+import Routes from './routes';
+import { ThemeProvider } from './context/ThemeContext';
+import { JSONProvider } from './context/JSONProvider';
+import { AEIPProvider } from './context/AEIPContext';
+import { LedgerProvider } from './context/LedgerContext';
+import HeaderBar from './components/HeaderBar';
+import FooterBar from './components/FooterBar';
+import SideNav from './components/SideNav';
+import { useFocusOutline } from './hooks/useFocusOutline';
 
-import React from "react";
-import { Dashboard } from "./pages/Dashboard";
-import { SkipLink } from "./utils/accessibility";
-import { useFocusOutline } from "./utils/accessibility";
-
-export const App: React.FC = () => {
+function AppLayout() {
   useFocusOutline();
-
   return (
-    <>
-      <SkipLink href="#main-content" />
-      <Dashboard />
-    </>
+    <div className="app-shell" data-testid="app-shell">
+      <HeaderBar />
+      <div className="app-shell__body">
+        <SideNav />
+        <main id="main" className="app-shell__main" tabIndex={-1}>
+          <Outlet />
+        </main>
+      </div>
+      <FooterBar />
+    </div>
   );
-};
+}
 
-export default App;
+export default function App() {
+  return (
+    <ThemeProvider>
+      <JSONProvider>
+        <AEIPProvider>
+          <LedgerProvider>
+            <Routes layout={<AppLayout />} />
+          </LedgerProvider>
+        </AEIPProvider>
+      </JSONProvider>
+    </ThemeProvider>
+  );
+}

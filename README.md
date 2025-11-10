@@ -310,3 +310,36 @@ cd analytics/analytics/dashboard/demo-portal && npm install && npm run dev
 This project is released under a custodial, non-commercial license.
 Please read [LICENSE](LICENSE), [CONTRIBUTING.md](CONTRIBUTING.md), [SECURITY.md](SECURITY.md), and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md) before any reuse.  
 Use this work responsibly, credit the author, and respect the civic mission that underlies the AI OSI Stack.
+
+## Governance Control Tower (v5.0-MVP)
+
+The `analytics/dashboard` workspace hosts a React + TypeScript interface for the Governance Control Tower. The `backend` directory provides a FastAPI service that mirrors the same placeholder data exposed to the UI.
+
+### Prerequisites
+- Node.js 20+
+- Python 3.11+
+
+### Frontend
+```bash
+cd analytics/dashboard
+npm install
+npm run dev
+```
+The app boots at <http://localhost:5173>. If the API is offline, the UI automatically falls back to the JSON bundles in `src/data` and `docs/AI_OSI_Stack`.
+
+Run tests and Storybook:
+```bash
+npm run test
+npm run storybook
+```
+
+### Backend
+```bash
+cd backend
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn backend.main:app --reload
+```
+The API serves CORS-enabled endpoints under `/api`, including `/api/aeip/receipts`, `/api/ledger/entries`, and `/api/feedback`.
+
+Run backend tests with `pytest`.

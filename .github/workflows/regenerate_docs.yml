@@ -1,0 +1,16 @@
+name: Validate Docs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 9 * * 1'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate canonical JSON
+        run: |
+          chmod +x scripts/generate_docs.sh
+          ./scripts/generate_docs.sh

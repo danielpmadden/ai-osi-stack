@@ -1,13 +1,15 @@
-// SPDX-License-Identifier: Apache-2.0
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import App from './App';
+import './styles/tokens.css';
+import './styles/theme.css';
+import './styles/global.css';
 
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-import "./styles/tokens.css";
-import "./styles/global.css";
-
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );

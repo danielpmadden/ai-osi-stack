@@ -1,83 +1,14 @@
-{
-  "_meta": {
-    "source": "AI OSI Stack v5.0.0",
-    "repository": "https://github.com/danielpmadden/ai-osi-stack",
-    "license": "CC BY-SA 4.0",
-    "generated": "2025-02-21",
-    "notes": "Canonical governance artifact registry excerpt."
+[
+  {
+    "id": "artifact-1",
+    "name": "Civic Intake Workbook",
+    "summary": "Aggregates requests and observations from civic monitors.",
+    "updatedAt": "2024-05-01"
   },
-  "artifacts": [
-    {
-      "id": "civic-charter",
-      "type": "Civic Charter",
-      "layer": "L0",
-      "description": "Ratified community mandate establishing legitimacy obligations and renewal cadence.",
-      "schema_path": "schemas/artifacts/civic-charter.schema.json",
-      "canonical": true
-    },
-    {
-      "id": "solomon-brief-2024",
-      "type": "Solomon Brief",
-      "layer": "L0",
-      "description": "Ethical synthesis outlining dignity constraints for mandate renewal.",
-      "schema_path": "schemas/artifacts/solomon-brief.schema.json",
-      "canonical": true
-    },
-    {
-      "id": "integrity-ledger-entry-221",
-      "type": "Integrity Ledger Entry",
-      "layer": "L1",
-      "description": "Tamper-evident custody log for physical facility audit trail.",
-      "schema_path": "schemas/ledger/integrity-ledger-entry.schema.json",
-      "canonical": true
-    },
-    {
-      "id": "decision-card-ds-17",
-      "type": "Decision Card",
-      "layer": "L2",
-      "description": "Data onboarding decision with consent validation references.",
-      "schema_path": "schemas/governance/decision-card.schema.json",
-      "canonical": true
-    },
-    {
-      "id": "persona-brief-guardian",
-      "type": "Persona Brief",
-      "layer": "L4",
-      "description": "Instruction persona manifest enumerating refusal logic per Update Plan 8.",
-      "schema_path": "schemas/persona/persona-brief.schema.json",
-      "canonical": true
-    },
-    {
-      "id": "aeip-receipt-2025-02-17",
-      "type": "AEIP Receipt",
-      "layer": "L5",
-      "description": "Reasoning exchange receipt anchoring multi-party deliberation trail.",
-      "schema_path": "schemas/aeip/aeip-receipt.schema.json",
-      "canonical": true
-    },
-    {
-      "id": "deployment-ledger-2025Q1",
-      "type": "Change Log",
-      "layer": "L6",
-      "description": "Quarterly deployment register with rollback rehearsal confirmations.",
-      "schema_path": "schemas/runtime/deployment-ledger.schema.json",
-      "canonical": false
-    },
-    {
-      "id": "gds-nov-2024",
-      "type": "Governance Disclosure Statement",
-      "layer": "L7",
-      "description": "Public disclosure packet detailing transparency obligations and release cadence.",
-      "schema_path": "schemas/governance/gds.schema.json",
-      "canonical": true
-    },
-    {
-      "id": "federation-docket-2025",
-      "type": "Federation Docket",
-      "layer": "L8",
-      "description": "Partner reciprocity agreements and jurisdictional overlays summary.",
-      "schema_path": "schemas/policy/federation-docket.schema.json",
-      "canonical": false
-    }
-  ]
-}
+  {
+    "id": "artifact-2",
+    "name": "Federation Charter Draft",
+    "summary": "Draft policy alignment for agency handshake.",
+    "updatedAt": "2024-04-20"
+  }
+]

@@ -1,18 +1,16 @@
-// SPDX-License-Identifier: Apache-2.0
+import { aeipReceiptListSchema, type AEIPReceipt } from './schema';
+import receipts from './receipts.sample.json';
+import { fetchJSON } from '../../utils/fetcher';
 
-import reasoningTrace from "./reasoning_trace.aeip.jsonld";
-import civicCharter from "./civic_charter.aeip.jsonld";
-import instructionTrace from "./instruction_trace.aeip.jsonld";
-import governancePublication from "./governance_publication.aeip.jsonld";
-import { aeipReceiptSchema, parseDataOrThrow, type AEIPReceipt } from "@/utils/types";
+const ENDPOINT = '/api/aeip/receipts';
 
-const receipts = [
-  { data: reasoningTrace, label: "reasoning_trace.aeip.jsonld" },
-  { data: civicCharter, label: "civic_charter.aeip.jsonld" },
-  { data: instructionTrace, label: "instruction_trace.aeip.jsonld" },
-  { data: governancePublication, label: "governance_publication.aeip.jsonld" }
-] as const;
-
-export const aeipReceipts: AEIPReceipt[] = receipts.map(({ data, label }) =>
-  parseDataOrThrow(aeipReceiptSchema, data, label)
-);
+export async function getAEIPReceipts(): Promise<AEIPReceipt[]> {
+  try {
+    const remote = await fetchJSON<unknown>(ENDPOINT);
+    const parsed = aeipReceiptListSchema.parse(remote);
+    return parsed;
+  } catch (error) {
+    console.warn('Falling back to local AEIP receipts', error);
+    return aeipReceiptListSchema.parse(receipts);
+  }
+}

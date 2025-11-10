@@ -1,36 +1,10 @@
-{
-  "_meta": {
-    "source": "AI OSI Stack v5.0.0",
-    "repository": "https://github.com/danielpmadden/ai-osi-stack",
-    "license": "CC BY-SA 4.0",
-    "generated": "2025-02-21",
-    "notes": "Glossary snippet aligning civic vocabulary with Epistemology by Design."
+[
+  {
+    "term": "AEIP",
+    "definition": "Agency Exchange Integration Protocol"
   },
-  "terms": [
-    {
-      "term": "AEIP",
-      "definition": "Accountable Event Interface Protocol ensuring bidirectional reasoning receipts.",
-      "source": "protocol/aeip/README.md"
-    },
-    {
-      "term": "Integrity Ledger",
-      "definition": "Tamper-evident register anchoring custody events, updates, and AEIP receipts.",
-      "source": "ledger/README.md"
-    },
-    {
-      "term": "Governance Disclosure Statement",
-      "definition": "Public-facing transparency digest describing obligations, safeguards, and release cadence.",
-      "source": "ledger/gds.json"
-    },
-    {
-      "term": "Persona Brief",
-      "definition": "Interpretive guide describing persona mandates, empathy bounds, and refusal triggers.",
-      "source": "personas/README.md"
-    },
-    {
-      "term": "Epistemology by Design",
-      "definition": "Framework articulating interpretive duties, dignity constraints, and knowledge integrity.",
-      "source": "docs/epistemology/overview.md"
-    }
-  ]
-}
+  {
+    "term": "Ledger",
+    "definition": "Immutable record of civic commitments"
+  }
+]

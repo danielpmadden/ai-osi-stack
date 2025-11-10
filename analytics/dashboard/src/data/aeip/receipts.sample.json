@@ -1,0 +1,24 @@
+[
+  {
+    "id": "aeip-001",
+    "layerId": "layer-1",
+    "issuedAt": "2024-05-16T10:00:00Z",
+    "status": "complete",
+    "summary": "Handshake with Civic Signals confirmed",
+    "handshake": {
+      "counterpart": "City Data Office",
+      "nextAction": "Deliver weekly brief"
+    }
+  },
+  {
+    "id": "aeip-099",
+    "layerId": "layer-8",
+    "issuedAt": "2024-05-18T08:30:00Z",
+    "status": "pending",
+    "summary": "Awaiting sign-off from Policy & Federation",
+    "handshake": {
+      "counterpart": "Federal Liaison",
+      "nextAction": "Schedule review"
+    }
+  }
+]
