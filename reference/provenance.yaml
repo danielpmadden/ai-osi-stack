@@ -1,9 +1,3 @@
-canonical_version: "AI OSI Stack v5.0.0"
-canonical_date: "2025-11-10"
-lineage:
-  - "/reference/v1"
-  - "/reference/v2"
-  - "/reference/v3"
-  - "/reference/v4"
-aeip_status: "Referenced only"
-repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
+sources:
+  - path: foundation/
+  - path: meta/v5-manifest.yaml
