@@ -1,7 +1,3 @@
-Layer/Theme: repository_overview
-Version: v5.0-open-core
-Purpose: Describe the AI OSI v5 open-core structure and contributor guidance.
-
 # AI OSI v5 Open-Core Repository
 
 AI OSI v5.0-open-core is a public, civic, non-commercial knowledge base for operating accountable intelligence services. "Open-core" means the materials herein SHALL remain freely accessible for civic use, while specialized extensions MAY be developed elsewhere if they uphold the same public commitments. The repository prioritizes transparency, shared stewardship, and accountability to affected communities rather than proprietary advantage.
