@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 ---
 Title: 00_README.md
 Version: v4.1-draft
@@ -54,3 +56,7 @@ Institutions SHOULD adapt the Stack to match their oversight mandates while pres
 - [01_Executive_Brief.md](./01_Executive_Brief.md)
 - [02_Architecture_Summary.md](./02_Architecture_Summary.md)
 - [09_License_and_Disclaimers.md](./09_License_and_Disclaimers.md)
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

@@ -15,3 +15,7 @@
 > Authored and maintained solely by Daniel P. Madden (custodial).  
 > This is a non-operational, publication-grade governance artifact.  
 > No AEIP runtime specs or machine-readable schemas are included.
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

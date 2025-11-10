@@ -18,10 +18,10 @@
 | 1:15–1:20 | Action Items & Metrics | Board Chair | What metrics indicate progress before next meeting? | Assign owners and timelines for follow-ups. |
 
 ## Pre-Reads
-- `docs/regulatory/BOARD_BRIEF_NACD_SEC_Nasdaq.md`
+- `docs/regulatory/BOARD_BRIEF_GOVERNANCE_ALIGNMENT.md`
 - `docs/regulatory/AI_Risk_Register.md`
 - `docs/regulatory/Controls_Catalog_by_Layer.md`
-- `docs/regulatory/SEC_Disclosure_Playbook.md`
+- `docs/regulatory/Public_Risk_Disclosure_Playbook.md`
 - `docs/regulatory/Incident_Response_and_Materiality_Guide.md`
 - `docs/regulatory/ThirdParty_and_ModelSupplyChain.md`
 - `docs/regulatory/Disclosure_Language_Safe_Harbor_Samples.md`
@@ -40,6 +40,6 @@
 - Schedule quarterly refreshers focusing on evolving regulatory requirements.
 - Report progress in board watchlist section of quarterly governance packet.
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

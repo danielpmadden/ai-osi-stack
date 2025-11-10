@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 ---
 Title: 07_Maturity_and_Metrics.md
 Version: v4.1-draft
@@ -42,3 +44,7 @@ Institutions SHOULD perform maturity assessments at least annually and MUST docu
 - [03_Layer_Overview.md](./03_Layer_Overview.md)
 - [06_Implementation_Guide.md](./06_Implementation_Guide.md)
 - [08_Terminology_Glossary.md](./08_Terminology_Glossary.md)
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

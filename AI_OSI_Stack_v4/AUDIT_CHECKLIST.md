@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 # AI OSI Stack v4 Audit Checklist
 
 | File | Language Neutral | Scope Aligned | Terms Consistent | Proprietary Refs Marked | Notes |
@@ -18,3 +20,7 @@
 - Terminology verified against v4 Master Edition
 - No external organization names present
 - README includes “What It Is / Is Not” section
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
-# AI OSI Stack v5 Board Briefing: NACD / SEC / Nasdaq Alignment
+# AI OSI Stack v5 Board Briefing: Global Governance Alignment
 
 ## Executive Summary
 - AI OSI Stack v5 is a custodial, non-operational governance framework capturing the controls, documentation, and oversight scaffolding for responsible AI adoption without exposing live runtime code or schemas.
@@ -63,14 +63,14 @@
 - **Heatmap Narrative**: Data rights and third-party supply chain risks currently sit at high inherent risk but medium residual risk due to layered controls and contractual guardrails. Prompt injection and hallucination harms remain medium inherent/medium residual given evolving threat intelligence. Shadow AI is high inherent with medium-high residual due to ongoing education requirements.
 
 ## Disclosure Posture Summary
-- Materiality assessments follow the SEC Disclosure Playbook, combining qualitative factors (stakeholder harm, strategic disruption) and quantitative triggers (financial thresholds, regulatory penalties).
+- Materiality assessments follow the public risk disclosure playbook, combining qualitative factors (stakeholder harm, strategic disruption) and quantitative triggers (financial thresholds, regulatory penalties).
 - The Audit & Risk Committee reviews potential disclosures, while the board chair and CRO jointly approve final language before filing.
 - Triggers include confirmed incidents affecting confidentiality, integrity, or availability of AI-enabled services; discovery of significant model bias impacting protected classes; or regulatory inquiries.
 - Disclosure artifacts originate here, but final filings are coordinated with corporate counsel and maintained in the Control Tower.
 
 ## What the Board Should Watch Next
 1. Track completion of quarterly AI risk dashboards and assurance updates.
-2. Confirm alignment of enterprise disclosure controls with SEC Item 106 narratives.
+2. Confirm alignment of enterprise disclosure controls with statutory risk disclosure narratives.
 3. Oversee third-party model certifications and contractual indemnities.
 4. Monitor incident response rehearsals and after-action reports.
 5. Validate integration of AI risk metrics into enterprise risk appetite statements.
@@ -80,6 +80,6 @@
 9. Scrutinize cross-functional coordination between ARC and TEC on overlapping topics.
 10. Assess whether stakeholder feedback loops are influencing governance adjustments.
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

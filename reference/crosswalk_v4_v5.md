@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 # Crosswalk — AI OSI Stack v4 to v5
 
 | V4 Clause ID | Title | Mapped V5 File | Summary of Transformation |
@@ -27,3 +29,7 @@
 
 ---
 *License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.*
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 # Version Lineage — AI OSI Stack v4 to v5
 
 > “Version 5 (Open-Core) consolidates and supersedes Version 4 (2025).
@@ -16,3 +18,7 @@ The authoritative Version 4 source is preserved as `foundation/ai_osi_v4_source/
 
 ---
 *License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.*
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

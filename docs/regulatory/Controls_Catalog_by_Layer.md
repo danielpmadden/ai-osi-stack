@@ -7,7 +7,7 @@
   - Annual board review of AI strategy and mandate documentation.
   - Custodian updates to governance briefs following major initiatives.
   - ERM integration of AI risk appetite statements.
-- **Evidence Examples**: Board minutes, `BOARD_BRIEF_NACD_SEC_Nasdaq.md`, risk appetite memos.
+- **Evidence Examples**: Board minutes, `BOARD_BRIEF_GOVERNANCE_ALIGNMENT.md`, risk appetite memos.
 - **Validation Approach**: Annual charter compliance review and cross-check against strategic plans.
 - **Dependencies**: Provides foundation for all other layers; informs ethics and policy decisions.
 
@@ -37,7 +37,7 @@
   - Independent validation of models prior to deployment.
   - Bias and robustness testing with documented thresholds.
   - Periodic re-evaluation aligned with vendor updates.
-- **Evidence Examples**: Validation narratives, evaluation reports, Nasdaq oversight mapping.
+- **Evidence Examples**: Validation narratives, evaluation reports, listed governance oversight mapping.
 - **Validation Approach**: Quarterly validation memos reviewed by Technology & Ethics Committee.
 - **Dependencies**: Draws on data controls; informs instruction and reasoning layers.
 
@@ -91,6 +91,6 @@
 - **Validation Approach**: Annual stakeholder engagement review.
 - **Dependencies**: Informed by all preceding layers; influences mandate refresh cycles.
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

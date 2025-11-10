@@ -1,3 +1,5 @@
+# SPDX-License-Identifier: Apache-2.0
+
 #!/usr/bin/env python3
 """Validate that crosswalk mappings reference existing Version 5 files."""
 from __future__ import annotations
@@ -58,3 +60,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+# Authored and maintained solely by the Custodial Editorial Committee.
+# This script is provided for non-operational, reproducibility support.
+# No AEIP runtime logic is exposed or executed here.

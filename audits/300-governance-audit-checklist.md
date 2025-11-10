@@ -1,12 +1,12 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
-# NACD / SEC / Nasdaq Audit Checklist (300-Series)
+# Global Governance Audit Checklist (300-Series)
 
 ## Governance & Oversight
 - [ ] Board charter addendum approved and current.
 - [ ] Audit & Risk Committee minutes reflect AI oversight discussions.
 - [ ] Technology & Ethics Committee agenda includes AI topics.
 - [ ] Custodian maintains version log in CHANGELOG.md.
-- [ ] Director education plan executed per `Nasdaq_Gov_Alignment.md`.
+- [ ] Director education plan executed per `Listed_Governance_Alignment.md`.
 
 ## Policy & Standards Alignment
 - [ ] Controls catalog references NIST AI RMF and ISO/IEC 42001 concepts (narrative alignment).
@@ -19,7 +19,7 @@
 - [ ] Business impact and likelihood ratings documented.
 - [ ] Controls mapped to OSI layers.
 - [ ] Early warning indicators and escalation paths present.
-- [ ] Disclosure considerations cross-referenced to SEC playbook.
+- [ ] Disclosure considerations cross-referenced to public risk disclosure playbook guidance.
 
 ## Incident Playbook Adequacy
 - [ ] Definitions for incidents and material incidents provided.
@@ -31,7 +31,7 @@
 ## Disclosure Playbook Completeness
 - [ ] Materiality framework includes qualitative and quantitative factors.
 - [ ] Decision flow includes approvals and filings.
-- [ ] Reg S-K mapping table references Item 106 topics.
+- [ ] Public risk disclosure mapping table references board oversight, management responsibilities, and reporting cadence.
 - [ ] Boilerplate language samples available with disclaimers.
 - [ ] Controls and records inventory differentiates public vs. Control Tower evidence.
 
@@ -47,15 +47,15 @@
 - [ ] Cross-links to training and disclosure documents verified.
 
 ## Evidence References (This Repo)
-- Board Brief: `docs/regulatory/BOARD_BRIEF_NACD_SEC_Nasdaq.md`
+- Board Brief: `docs/regulatory/BOARD_BRIEF_GOVERNANCE_ALIGNMENT.md`
 - Risk Register: `docs/regulatory/AI_Risk_Register.md`
 - Incident Guide: `docs/regulatory/Incident_Response_and_Materiality_Guide.md`
-- Disclosure Playbook: `docs/regulatory/SEC_Disclosure_Playbook.md`
+- Disclosure Playbook: `docs/regulatory/Public_Risk_Disclosure_Playbook.md`
 - Controls Catalog: `docs/regulatory/Controls_Catalog_by_Layer.md`
 - Third-Party Oversight: `docs/regulatory/ThirdParty_and_ModelSupplyChain.md`
 - FAQs: `docs/regulatory/FAQs_for_Regulators_and_Investors.md`
 - Training Agenda: `docs/regulatory/Training_and_Awareness_for_Board_and_Execs.md`
-- Mapping Tables: `reference/Mapping_Table_SEC_RegS-K_Item106.md`, `reference/Mapping_Table_NACD_Core_Principles.md`, `reference/Mapping_Table_Nasdaq_Gov.md`
+- Mapping Tables: `reference/Mapping_Table_Public_Risk_Disclosure.md`, `reference/Mapping_Table_Board_Oversight_Principles.md`, `reference/Mapping_Table_Listed_Governance.md`
 
 ## Findings Log
 | ID | Date | Area | Observation | Severity | Owner | Due Date | Status |
@@ -69,6 +69,6 @@
 - **Target Completion Date**:
 - **Progress Updates**:
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

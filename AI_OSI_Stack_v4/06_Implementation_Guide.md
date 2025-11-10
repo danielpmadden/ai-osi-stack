@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 ---
 Title: 06_Implementation_Guide.md
 Version: v4.1-draft
@@ -40,3 +42,7 @@ Implementation practices are issued as normative recommendations. Institutions M
 - [02_Architecture_Summary.md](./02_Architecture_Summary.md)
 - [03_Layer_Overview.md](./03_Layer_Overview.md)
 - [07_Maturity_and_Metrics.md](./07_Maturity_and_Metrics.md)
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

@@ -16,7 +16,7 @@
 ## Information Rights & Cadence
 - Receive quarterly AI governance packets including risk register updates, control effectiveness narratives, and incident response outcomes.
 - Obtain immediate notification of potential material AI incidents with day 1, day 3, and day 7 updates.
-- Access mapping documents linking board oversight to SEC, NACD, and Nasdaq expectations.
+- Access mapping documents linking board oversight to global governance expectations.
 - Request ad hoc briefings from the custodian, CRO, or AI Risk Council as needed.
 
 ## Delegations to Management
@@ -30,12 +30,12 @@
 3. Did directors receive timely and decision-useful AI governance information?
 4. Were incident responses executed according to the 72-hour protocol?
 5. Did third-party oversight identify and mitigate emerging supply chain risks?
-6. Were disclosure decisions aligned with SEC expectations and materiality thresholds?
+6. Were disclosure decisions aligned with public risk disclosure expectations and materiality thresholds?
 7. Did director education sessions address current regulatory and ethical issues?
 8. Were stakeholder concerns appropriately captured and addressed in governance updates?
 9. Did the Board challenge management on residual AI risks and remediation plans?
 10. Are enhancements to controls, metrics, or reporting required for the upcoming year?
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

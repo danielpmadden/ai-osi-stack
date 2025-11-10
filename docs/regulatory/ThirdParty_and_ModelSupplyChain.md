@@ -18,7 +18,7 @@
 - Service level agreements defining uptime, response times, and remediation commitments.
 - Audit and assessment rights enabling on-site or documentary reviews.
 - Indemnity clauses covering data breaches, IP infringement, and regulatory penalties.
-- Mandatory incident notification windows aligned with SEC disclosure timelines.
+- Mandatory incident notification windows aligned with public risk disclosure timelines.
 - Requirements for vendor participation in joint tabletop exercises and risk assessments.
 - Termination clauses triggered by material non-compliance or sustained control failures.
 
@@ -34,6 +34,6 @@
 - Violations trigger disciplinary action, incident reporting, and potential disclosure considerations if data exposure occurs.
 - Training sessions emphasize recognition of shadow AI risks and highlight approved alternatives.
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

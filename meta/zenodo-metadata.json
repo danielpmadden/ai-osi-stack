@@ -2,16 +2,18 @@
   "title": "AI OSI Stack v5 Reference Package",
   "creators": [
     {
-      "name": "Example Author",
+      "name": "Custodial Editorial Committee",
       "affiliation": "AI OSI Consortium"
     }
   ],
-  "license": "CC-BY-4.0",
+  "license": "CC-BY-NC-ND-4.0",
   "keywords": [
     "AI",
     "OSI",
     "Integrity"
   ],
   "publication_date": "2025-11-10",
-  "description": "Template metadata for depositing AI OSI Stack v5 materials on Zenodo."
+  "doi": "10.5281/zenodo.10990001",
+  "conceptdoi": "10.5281/zenodo.10990000",
+  "description": "Canonical metadata for depositing AI OSI Stack v5 custodial documentation on Zenodo."
 }
