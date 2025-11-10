@@ -4,6 +4,8 @@ File: audits/metadata-gap-report.md
 Version: AI OSI Stack v5.0 Metadata Audit
 Date: 2025-11-08
 
+> **Historical Reference Notice:** Findings referencing `analytics/dashboard/…` describe private Governance Control Tower™ assets retained for archival transparency and are not part of the open-core distribution.
+
 # 1. Summary Overview
 - Total files scanned: 545
 - Total issues or placeholders found: 56

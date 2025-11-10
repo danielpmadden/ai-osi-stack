@@ -1,4 +1,4 @@
-<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
 # Security Policy
 
@@ -24,19 +24,19 @@ Acknowledge receipt within **3 business days** and coordinate remediation timeli
 
 - Do not publicly disclose details until a mutually agreed remediation window has elapsed.
 - Avoid submitting third-party personal data in reports.
-- Use `ops/secrets/run-gitleaks.sh` locally to ensure no accidental secrets are shared.
+- Use local secret-scanning tools (e.g., gitleaks) before submitting reports to avoid leaking credentials.
 
 ## Integrity Requirements
 
 - Canonical artifacts, verification notes, and advisory hashes are tracked in [`INTEGRITY_NOTICE.md`](INTEGRITY_NOTICE.md). Follow its instructions to confirm provenance and validate signed releases.
-- Signed releases must be verified via `ops/release/verify.sh` before public disclosure.
+- Signed releases must be verified using custodial release scripts before public disclosure.
 - Advisory mirrors **must not** be treated as canonical unless explicitly re-signed.
 
 Implementers who fork or deploy the Stack MUST publish their own signing keys once v5 is sealed and renew fingerprints for each derivative release.
 
 ## Scope
 
-This policy covers all source materials, documentation, schemas, governance receipts, operational scripts, analytics workspaces (`analytics/`), and machine-learning utilities (`ml/`) distributed with the repository under the custodial **Creative Commons BY-NC-ND 4.0** license.
+This policy covers all source materials, documentation, schemas, governance receipts, and validator-lite utilities distributed with the repository under Apache-2.0 (code) and CC BY-SA 4.0 (documentation). Proprietary runtimes—including Governance Control Tower™, AEIP runtime services, ledger engines, analytics dashboards, and related operational tooling—are out of scope and remain private.
 
 ## Non-Liability and Good-Faith Cooperation
 

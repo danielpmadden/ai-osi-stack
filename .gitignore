@@ -10,4 +10,16 @@ dist/
 coverage/
 reports/
 
+# Private and proprietary workspaces remain outside the open-core tree
+analytics/
+backend/
+govspine/
+protocol/
+ml/
+ops/
+tools/
+tests/
+commercial/
+briefing/
+
 analytics/dashboard/node_modules/

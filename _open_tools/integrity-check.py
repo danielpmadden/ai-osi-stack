@@ -8,10 +8,16 @@ from pathlib import Path
 def main() -> None:
     root = Path(__file__).resolve().parents[1]
     private_markers = [
-        root / "govspine",
-        root / "ops",
         root / "analytics",
         root / "backend",
+        root / "briefing",
+        root / "commercial",
+        root / "govspine",
+        root / "ml",
+        root / "ops",
+        root / "protocol",
+        root / "tests",
+        root / "tools",
     ]
     missing = [str(path) for path in private_markers if path.exists()]
     if missing:

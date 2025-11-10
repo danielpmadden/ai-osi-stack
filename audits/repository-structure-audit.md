@@ -3,6 +3,8 @@ Author: Daniel P. Madden
 Title: Repository Structure & Continuity Audit (AI OSI Stack v5.0)
 Date: 2025-11-08
 
+> **Historical Reference Notice:** This audit captures the pre-open-core structure and therefore references private directories (e.g., analytics, govspine, ops). Those paths now reside exclusively inside proprietary repositories and are retained here for archival transparency.
+
 ## Section 1 — Canonical Tree Overview
 ```
 ai-osi-stack/
