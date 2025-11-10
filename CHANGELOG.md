@@ -1,26 +1,9 @@
-Layer/Theme: changelog
-Version: v5.0-open-core
-Purpose: Record notable changes to AI OSI v5.
+# Changelog — AI OSI Stack v5 Canonical Edition
 
-# Changelog
+## 2026-03-31 — Version 5 (Open-Core) Canonical Release
+- Ratified civic mandate restructuring across layers 00–12.
+- Archived Version 4 manuscript under `foundation/ai_osi_v4_source/` with provenance notice.
+- Established deterministic repository scaffold and CC BY-NC-ND 4.0 licensing.
 
-## v5.0-open-core (Initial Civic Expansion)
-
-- Established open-core framing and updated repository structure.
-- Added metadata headers, civic tone, and traceability footers to all markdown files.
-- Expanded layers, guides, and references with interfaces, examples, and verification routines.
-
-Traceability
-
-Keys: Doc=Changelog-v5, Review_Cycle=per_release
-Open Civic Artefacts
-
-- Transparency Record: Release Notes Archive
-- Transparency Record: Change Approval Log
-
-```sql
--- Copy code
-SELECT artefact_id, release_version
-FROM transparency_registry
-WHERE document = 'changelog';
-```
+---
+*License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.*
