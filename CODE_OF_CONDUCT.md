@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -27,7 +30,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 
 ## Alignment and Collaboration
 
-All collaboration must align with the project’s moral mission and civic goals. Prospective contributors should review [`CONTRIBUTING.md`](CONTRIBUTING.md) and initiate contact only if they can demonstrate shared values and ethical intent.
+All collaboration must align with the project’s moral mission and civic goals. Prospective Independent Custodians should review [`CONTRIBUTING.md`](CONTRIBUTING.md) and initiate contact only if they can demonstrate shared values and ethical intent.
 
 ## Reporting
 

@@ -30,7 +30,7 @@
     "privacyScope": {
       "type": "string",
       "enum": [
-        "organizational",
+        "independentCustodian",
         "systemic"
       ]
     },
@@ -250,10 +250,10 @@
               "signedAt": "2024-05-01T12:05:00Z"
             }
           ],
-          "privacy.scope": "organizational",
+          "privacy.scope": "independentCustodian",
           "privacy.consent": "explicit",
           "privacy.redaction": false,
-          "privacy.justification": "Contains only organizationally approved rationale.",
+          "privacy.justification": "Contains only Custodially approved rationale.",
           "decisionContext": "Mitigation strategy for model drift in credit scoring pipeline.",
           "rationale": "Aligns risk posture with updated regulatory safeguards.",
           "assumptions": [
@@ -368,7 +368,7 @@
               "signedAt": "2024-05-02T09:35:00Z"
             }
           ],
-          "privacy.scope": "organizational",
+          "privacy.scope": "independentCustodian",
           "privacy.consent": "explicit",
           "privacy.redaction": true,
           "privacy.justification": "Redacted financial partner identifiers for limited audience.",
@@ -591,10 +591,10 @@
               "signedAt": "2024-05-04T18:12:00Z"
             }
           ],
-          "privacy.scope": "organizational",
+          "privacy.scope": "independentCustodian",
           "privacy.consent": "explicit",
           "privacy.redaction": false,
-          "privacy.justification": "Oversight narrative cleared for organizational review.",
+          "privacy.justification": "Oversight narrative cleared for Custodial review.",
           "oversightNarrative": "Reviewed mitigation implementation and confirmed adherence to consent terms.",
           "dignityAssessment": "Transparency obligations met without introducing surveillance risk.",
           "actions": [

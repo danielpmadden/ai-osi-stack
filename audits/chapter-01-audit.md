@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -13,7 +16,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 ## Gaps
 - Policy: Needs clearer linkage to national archival mandates when referencing integrity ledger obligations.
 - Enterprise: Does not quantify resourcing needed to maintain longitudinal interpretive packets.
-- Legal/Ethical: Could address how rights of contributors are maintained when migrating history into new platforms.
+- Legal/Ethical: Could address how rights of Independent Custodians are maintained when migrating history into new platforms.
 
 ## Recommended clarifications or additional clauses
 - Add subsection note on how often lineage packets are reviewed for completeness.

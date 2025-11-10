@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -9,13 +12,13 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 AEIP v1.3 provides a canonical transport, representation, and governance envelope for high-integrity reasoning exchanges across distributed AI systems aligned with the AI OSI Stack v5. The protocol binds temporal commitments, provenance, and consent-aware privacy controls to every epistemic artifact, enabling shared interpretability without compromising dignity or autonomy. Version 1.3 extends prior releases with richer privacy metadata, a clarified six-layer architecture (plus optional reflection), strengthened signature binding, and harmonized artifact schemas (Solomon Brief, Decision Card, Clarity Package, Guardian Note). The specification prescribes semantic versioning, immutable content hashes, and ledger-oriented audit hooks to ensure that each reasoning event remains traceable, contestable, and governed from intent declaration through archival reflection. Stakeholders can enforce contextual consent via scoped privacy declarations, reconcile multi-party justifications through Epistemic Handshake operations, and negotiate drift responsibly under the AI OSI Stack umbrella. AEIP v1.3 is intentionally human-auditable and machine-actionable, embedding the core clause: “Transparency must never become surveillance.”
 
 ## 2. Purpose & Motivation
-The AI Epistemic Infrastructure Protocol emerged to address fragmentation between reasoning engines, oversight services, and institutional ledgers. As organizations deploy composite AI systems, they require a shared grammar for intent, justification, and evidence exchange that honors both operational agility and normative constraints. AEIP v1.3 clarifies this grammar. It supplies a canonical interface for reasoning artifacts, empowers auditors to reconstruct decisions, and offers implementers a blueprint for integrating governance-in-the-loop. The specification is motivated by three converging forces: the demand for verifiable AI behaviour, the rise of cross-organizational collaboration, and the necessity of explicit dignity safeguards. Prior standards focused on data lineage or model governance in isolation; AEIP v1.3 unifies these concerns into a layered epistemic stack that treats reasoning as a first-class asset.
+The AI Epistemic Infrastructure Protocol emerged to address fragmentation between reasoning engines, oversight services, and institutional ledgers. As Independent Custodians deploy composite AI systems, they require a shared grammar for intent, justification, and evidence exchange that honors both operational agility and normative constraints. AEIP v1.3 clarifies this grammar. It supplies a canonical interface for reasoning artifacts, empowers auditors to reconstruct decisions, and offers implementers a blueprint for integrating governance-in-the-loop. The specification is motivated by three converging forces: the demand for verifiable AI behaviour, the rise of cross-Custodial collaboration, and the necessity of explicit dignity safeguards. Prior standards focused on data lineage or model governance in isolation; AEIP v1.3 unifies these concerns into a layered epistemic stack that treats reasoning as a first-class asset.
 
 AEIP v1.3 also responds to feedback from implementers who required better tooling around consent management, selective redaction, and cross-ledger synchronization. By introducing privacy scope, consent, redaction flags, and justification fields, the protocol acknowledges that not all reasoning can be shared equally. The specification codifies how to signal these constraints without undermining downstream auditability. Furthermore, v1.3 rearticulates the Epistemic Handshake to support multi-party negotiation and delineates a structured flow for drift detection and mitigation. The result is a protocol that balances rigor with pragmatism, enabling teams to iterate rapidly while maintaining a defensible chain of epistemic custody.
 
-The motivation extends beyond compliance checklists. Organizations adopting AEIP are striving to build trustworthy AI ecosystems in which human overseers, automated agents, and regulatory observers can interact transparently. AEIP v1.3 encourages an ecosystem mindset: one where artifacts are portable, signatures are verifiable, and governance directives are portable across deployments. The protocol is designed to be extensible; it invites domain-specific adaptations so long as core invariants—temporal integrity, provenance binding, privacy respect, and audit readiness—are preserved. In this way, AEIP aims to evolve with the community while retaining a stable anchor for accountability.
+The motivation extends beyond compliance checklists. Independent Custodians adopting AEIP are striving to build trustworthy AI ecosystems in which human overseers, automated agents, and regulatory observers can interact transparently. AEIP v1.3 encourages an ecosystem mindset: one where artifacts are portable, signatures are verifiable, and governance directives are portable across deployments. The protocol is designed to be extensible; it invites domain-specific adaptations so long as core invariants—temporal integrity, provenance binding, privacy respect, and audit readiness—are preserved. In this way, AEIP aims to evolve with the community while retaining a stable anchor for accountability.
 
-In tandem with these motivations, AEIP v1.3 documents a migration pathway for organizations still operating legacy reasoning
+In tandem with these motivations, AEIP v1.3 documents a migration pathway for Independent Custodians still operating legacy reasoning
 transports. Transitional adapters allow systems to emit both AEIP v1.2 and v1.3 payloads during staged rollouts, with governance
 councils overseeing parity testing. This specification includes detailed interoperability notes so that auditors can verify that
 legacy artifacts remain interpretable even as new privacy metadata becomes mandatory. By foregrounding upgrade ergonomics, AEIP
@@ -29,7 +32,7 @@ reasoning artifacts simplify vendor assessments and streamline merger integratio
 
 Finally, the protocol is motivated by ecological sustainability considerations. By standardizing the way reasoning is recorded and
 queried, AEIP encourages reuse of analytical artifacts instead of recomputing expensive evaluations. The specification recommends
-cache-aware ledger architectures and reflection analytics that surface redundant computation. Organizations can thus reduce the
+cache-aware ledger architectures and reflection analytics that surface redundant computation. Independent Custodians can thus reduce the
 resource cost of maintaining transparency, demonstrating that accountability and sustainability can advance together.
 
 ## 3. Design Goals
@@ -43,7 +46,7 @@ The protocol embodies seven design goals that guide every requirement and recomm
 6. **Resilient Drift Management:** Provide mechanisms for detecting, negotiating, and resolving epistemic drift (model behaviour shifts, policy updates) while preserving historical commitments.
 7. **Human Dignity Safeguards:** Enforce the clause “Transparency must never become surveillance.” by ensuring that protocol usage preserves contextual dignity, limits forced disclosure, and records justification for any privacy incursions.
 
-These goals align AEIP with AI OSI Stack v5, ensuring the protocol can serve as a reliable substrate for layered epistemic infrastructure across organizations, jurisdictions, and oversight regimes.
+These goals align AEIP with AI OSI Stack v5, ensuring the protocol can serve as a reliable substrate for layered epistemic infrastructure across Independent Custodians, jurisdictions, and oversight regimes.
 
 #### Goal 1: Integrity First
 Integrity encompasses more than cryptography—it spans operational discipline. AEIP-compliant systems must maintain hardware
@@ -105,7 +108,7 @@ once reconnected. Temporal disputes are resolved by comparing chronology proofs 
 recommends double-entry recording so both initiator and responder maintain redundant evidence.
 
 ### 4.2 Provenance Layer
-Provenance binds artifacts to personas, organizations, and computational processes. Every AEIP message carries a `personaId` referencing a registered identity and includes `lineageChain` references that enumerate antecedent artifacts. The `sourceDigest` captures the hash of the originating content, while `signatureSet` holds one or more signatures covering the canonical form. Provenance metadata MUST travel intact through transformations; downstream systems may append but never remove entries. Cross-organization exchanges SHOULD include trust anchors (e.g., X.509 or decentralized identifiers) and maintain compatibility with the AI OSI Stack identity plane.
+Provenance binds artifacts to personas, Independent Custodians, and computational processes. Every AEIP message carries a `personaId` referencing a registered identity and includes `lineageChain` references that enumerate antecedent artifacts. The `sourceDigest` captures the hash of the originating content, while `signatureSet` holds one or more signatures covering the canonical form. Provenance metadata MUST travel intact through transformations; downstream systems may append but never remove entries. Cross-Independent Custodian exchanges SHOULD include trust anchors (e.g., X.509 or decentralized identifiers) and maintain compatibility with the AI OSI Stack identity plane.
 
 Provenance management extends to computational lineage, requiring systems to log container hashes, dataset versions, and
 model signatures. AEIP supports provenance compression through Merkleized chains, allowing large-scale deployments to verify
@@ -129,7 +132,7 @@ procedures, requiring Guardian Notes that explain delays or potential risks. For
 supports multi-channel replication so that separate infrastructure zones can assume responsibility without breaking integrity.
 
 ### 4.5 Governance Layer
-Governance coordinates policy, consent, and oversight. Fields such as `governanceScope` specify the operational context (`pilot`, `production`, `audit-only`). Privacy controls are embedded here: `privacy.scope` (organizational or systemic), `privacy.consent` (explicit or implicit), `privacy.redaction` (boolean), and `privacy.justification` (narrative). `dignityCompliance` flags confirm adherence to human-rights baselines and ensures the guiding clause—“Transparency must never become surveillance.”—is respected. Governance metadata also encodes obligations like notification requirements, oversight checkpoints, and escalation paths.
+Governance coordinates policy, consent, and oversight. Fields such as `governanceScope` specify the operational context (`pilot`, `production`, `audit-only`). Privacy controls are embedded here: `privacy.scope` (Custodial or systemic), `privacy.consent` (explicit or implicit), `privacy.redaction` (boolean), and `privacy.justification` (narrative). `dignityCompliance` flags confirm adherence to human-rights baselines and ensures the guiding clause—“Transparency must never become surveillance.”—is respected. Governance metadata also encodes obligations like notification requirements, oversight checkpoints, and escalation paths.
 
 Governance metadata further captures accountability roles such as `responsibleOfficer`, `oversightReviewer`, and
 `communityLiaison`. These roles ensure that decision-making includes stakeholder representation. Policies may declare minimum
@@ -149,7 +152,7 @@ entries describing the rationale and affected hashes.
 Reflection captures post-commit analysis without modifying prior layers. It enables teams to surface `postCommitInsights`, reference `updateProposalId` artifacts that propose schema or policy adjustments, and document `reflectionSummary` observations. Reflection remains optional to maintain agility, yet its disciplined use fosters continual improvement. Implementations may couple reflection entries with learning systems that recalibrate model oversight thresholds or review human feedback loops.
 
 Reflection practices include retrospective workshops, statistical analyses of drift incidents, and knowledge-base updates.
-Organizations may publish anonymized reflection digests to foster community learning while preserving confidentiality. Reflection
+Independent Custodians may publish anonymized reflection digests to foster community learning while preserving confidentiality. Reflection
 entries are versioned, ensuring that lessons remain linked to the exact governance era in which they were learned.
 
 ## 5. Protocol Operations
@@ -270,15 +273,15 @@ access patterns, AEIP prescribes escalation to incident response protocols. Guar
 and audit ledgers capture tamper-proof evidence for forensic review.
 
 ### 6.5 Privacy and Consent Metadata
-Privacy metadata informs every layer. `privacy.scope` delineates whether privacy commitments apply within an organization or across systemic boundaries. Systemic scope requires cross-organization consent tracking and mutual recognition of redaction rules. `privacy.consent` indicates the consent modality, with `explicit` requiring durable proof (e.g., signed forms) and `implicit` requiring policy citations. `privacy.justification` records the rationale for any access or redaction decisions, ensuring that oversight reviewers can examine the ethical calculus. Implementations must treat privacy metadata as immutable once the handshake reaches Temporal Commit, barring additional commitments through subsequent handshakes.
+Privacy metadata informs every layer. `privacy.scope` delineates whether privacy commitments apply within an Independent Custodian or across systemic boundaries. Systemic scope requires cross-Independent Custodian consent tracking and mutual recognition of redaction rules. `privacy.consent` indicates the consent modality, with `explicit` requiring durable proof (e.g., signed forms) and `implicit` requiring policy citations. `privacy.justification` records the rationale for any access or redaction decisions, ensuring that oversight reviewers can examine the ethical calculus. Implementations must treat privacy metadata as immutable once the handshake reaches Temporal Commit, barring additional commitments through subsequent handshakes.
 
 Privacy metadata interfaces with consent registries managed by governance bodies. AEIP recommends decentralized identity
 solutions so individuals can inspect and revoke consent using interoperable credentials. When privacy scope shifts from
-organizational to systemic, systems must re-run risk assessments and update oversight boards, ensuring that expanded sharing is
+Custodial to systemic, systems must re-run risk assessments and update oversight boards, ensuring that expanded sharing is
 justified and documented.
 
 ### 6.6 Governance Enforcement
-Governance enforcement ensures that obligations translate into action. Decision Cards include policy references, escalation contacts, and response timelines. Oversight nodes monitor compliance by subscribing to Governance layer updates and verifying that ledger entries align with policy commitments. Violations trigger Guardian Notes and may initiate remediation handshakes. Governance updates must include pointers to applicable legal frameworks, internal policies, and accountability roles to maintain clarity across organizations.
+Governance enforcement ensures that obligations translate into action. Decision Cards include policy references, escalation contacts, and response timelines. Oversight nodes monitor compliance by subscribing to Governance layer updates and verifying that ledger entries align with policy commitments. Violations trigger Guardian Notes and may initiate remediation handshakes. Governance updates must include pointers to applicable legal frameworks, internal policies, and accountability roles to maintain clarity across Independent Custodians.
 
 Enforcement workflows include automated policy checks integrated into CI/CD pipelines. Prior to deploying new models,
 AEIP artifacts are scanned for compliance with internal policy codices. Non-compliant artifacts trigger blocking conditions,
@@ -340,7 +343,7 @@ handshake = Handshake(
         "objective": "Deploy updated risk model",
         "artifactType": "SolomonBrief",
         "privacy": {
-            "scope": "organizational",
+            "scope": "Custodial",
             "consent": "explicit",
             "redaction": False,
             "justification": "Stakeholder consent recorded in governance portal"
@@ -389,7 +392,7 @@ Brief. This ensures oversight narratives remain synchronized with the underlying
 ## 10. Version Governance and Licensing Notice
 AEIP v1.3 adheres to semantic versioning. The `aeipVersion` field follows `MAJOR.MINOR.PATCH`, where MAJOR increments indicate breaking changes, MINOR increments add backward-compatible features, and PATCH increments address clarifications or fixes. All artifacts carry immutable hashes; any modification requires a new version identifier and append-only ledger entry referencing the prior hash. Version governance responsibilities reside with the AEIP Stewardship Council, which evaluates proposals documented in Reflection layer artifacts and publishes change logs in the repository of record. Implementers must track supported versions, deprecate incompatible features with sufficient notice, and provide migration guidance.
 
-Licensing aligns with the AI OSI Stack open documentation license. Redistribution must preserve the dignity clause and include privacy metadata requirements. Contributors MUST sign governance attestations affirming compliance with human-rights baselines. Any derivative specifications should cite AEIP v1.3 as the canonical reference and link to updated change histories.
+Licensing aligns with the AI OSI Stack open documentation license. Redistribution must preserve the dignity clause and include privacy metadata requirements. Independent Custodians MUST sign governance attestations affirming compliance with human-rights baselines. Any derivative specifications should cite AEIP v1.3 as the canonical reference and link to updated change histories.
 
 Version governance processes include public consultation windows. Proposed changes circulate as Reflection artifacts with
 comment periods, during which stakeholders submit feedback via Decision Cards. The Stewardship Council aggregates responses,

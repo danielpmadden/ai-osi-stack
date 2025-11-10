@@ -14,7 +14,7 @@ pdf: versions/ai-osi-stack-v5.pdf
 provenance: https://zenodo.org/records/17517241
 notes: "Canonical AI OSI Stack v5 compiled release."
 authorship_provenance_statement: >-
-  Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to organizations, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
+  Authorship & Provenance — The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded project. There is no institutional, corporate, or governmental backing. Any references to Independent Custodians, domains, or future bodies are aspirational placeholders for a community that does not yet exist.
 ai_assistance_disclosure: >-
   Large-language-model tools were used under author supervision; all final content reviewed and approved by Daniel P. Madden.
 integrity_notice:
@@ -24,7 +24,7 @@ integrity_notice:
 authorship:
   author: "Daniel P. Madden"
   backing: "None (self-funded)"
-  disclaimer: "Any institutional or organizational references are placeholders; no such body currently exists."
+  disclaimer: "Any institutional or Custodial references are placeholders; no such body currently exists."
 moves:
   - moved_from: governance-spine/
     moved_to: govspine/
@@ -52,16 +52,16 @@ moves:
     rationale: repository metadata consolidation
   - moved_from: makefile
     moved_to: ops/makefile
-    rationale: operational tooling organization
+    rationale: operational tooling Independent Custodian
   - moved_from: .pre-commit-config.yaml
     moved_to: ops/.pre-commit-config.yaml
-    rationale: operational tooling organization
+    rationale: operational tooling Independent Custodian
   - moved_from: .gitignore
     moved_to: ops/.gitignore
-    rationale: operational tooling organization
+    rationale: operational tooling Independent Custodian
   - moved_from: .github/
     moved_to: ops/.github/
-    rationale: operational tooling organization
+    rationale: operational tooling Independent Custodian
 hashes:
   versions/ai-osi-stack-v5.pdf:
     sha512: 87d0414872ab29393ee46e585c7dd49bf30c7c13bcf2637ff2bd52078c558b4b6a4598c0b3ffbebfe87588c391f9a002cac4f636efa392df04275266fee08156

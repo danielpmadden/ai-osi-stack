@@ -18,7 +18,7 @@
     "uuid": "schema:Text",
     "timestamp": "schema:DateTime",
     "layer": "schema:Integer",
-    "issuer": "schema:Organization",
+    "issuer": "schema:Independent Custodian",
     "rationale": "schema:Text",
     "decision_reference": "schema:Text",
     "linked_artifacts": {
@@ -77,7 +77,7 @@
       "required": [
         "name",
         "role",
-        "organization",
+        "independentCustodian",
         "contact"
       ],
       "properties": {
@@ -87,7 +87,7 @@
         "role": {
           "type": "string"
         },
-        "organization": {
+        "independentCustodian": {
           "type": "string"
         },
         "contact": {
@@ -180,7 +180,7 @@
       "issuer": {
         "name": "Risk Governance Chair",
         "role": "Layer 4 Council Lead",
-        "organization": "AI Governance Council",
+        "independentCustodian": "AI Governance Council",
         "contact": "https://governance.example.org/council/risk"
       },
       "rationale": "The council approved conditional deployment with mandatory interpretive refresh intervals every 14 days.",

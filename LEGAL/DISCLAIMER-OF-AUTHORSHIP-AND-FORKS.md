@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -9,7 +12,7 @@ Unauthorized reuse or modification of proprietary implementations is strictly pr
 
 # Disclaimer of Authorship and Forks
 
-The AI OSI Stack™ (v5.0-open-core) published here is the sole civic edition authored and maintained by Daniel P. Madden. Any fork, mirror, or derivative repository that claims authorship, canonical authority, or affiliated custodial status is unauthorized and unofficial. External distributions must retain this notice and may not imply stewardship, certification, or endorsement by the author.
+The AI OSI Stack™ (v5.0-open-core) published here is the sole civic edition authored and maintained by Daniel P. Madden. Any fork, mirror, or derivative repository that claims authorship, canonical authority, or affiliated custodial status is unauthorized, unofficial, and **not authorized or endorsed** by the Custodial Author. External distributions must retain this notice and may not imply stewardship, certification, or endorsement by the author.
 
 Custodial legitimacy is bound to the provenance assertions in `CANONICAL_PROVENANCE.yaml` and the audit series stored under `_ip_review/`. Entities that redistribute this work must:
 

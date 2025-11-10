@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -13,7 +16,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 ## Gaps
 - Policy: Could add requirement to consult labour councils when charters affect workforce obligations.
 - Enterprise: Missing metrics for evaluating how charter updates impact training programmes.
-- Legal/Ethical: Needs note on preserving contributor attribution when charters are redrafted.
+- Legal/Ethical: Needs note on preserving Independent Custodian attribution when charters are redrafted.
 
 ## Recommended clarifications or additional clauses
 - Clarify whether ethical change logs must be disclosed publicly or can remain internal.

@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -6,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 Update Plan 5 (“Canonical Defense & Continuity Edition”)
 “Proof over persuasion: The version that cannot be rewritten.”
 
-> **License Update Notice:** Any CC BY-NC-ND references in this historical plan are superseded. Open-core releases observe Apache-2.0 (code) and CC BY-SA 4.0 (documentation).
+> **License Update Notice:** Any the prior restricted license (non-commercial, no-derivative) references in this historical plan are superseded. Open-core releases observe Apache-2.0 (code) and CC BY-SA 4.0 (documentation).
 1 · Purpose
 
 To consolidate all preceding update plans into a defensive framework that:
@@ -105,7 +108,7 @@ Domain + trademark watch services.
 
 Clarify Publicly – Post signed Verification Notice showing canonical hash.
 
-Private Legal Notice – Issue Cease-and-Desist (former CC BY-NC-ND violation).
+Private Legal Notice – Issue Cease-and-Desist (former the prior restricted license (non-commercial, no-derivative) violation).
 
 DMCA / Takedown – Use registered copyright to remove copies.
 
@@ -117,7 +120,7 @@ Ledger Entry – Log incident and resolution in /ledger/meta-audit/.
 Potential Exploit	v 4.2 Defense	Operational Action
 Rebrand drafts as commercial standard	Signed canonical release + trademark	Publish verification badge and DOI
 Soften norms in whitepapers	HIL + Narrative Preservation Directive	Cite intent entries in rebuttals
-Paid “compliance suite”	former CC BY-NC-ND + AEIP validator	Public statement + license enforcement
+Paid “compliance suite”	former the prior restricted license (non-commercial, no-derivative) + AEIP validator	Public statement + license enforcement
 Regulatory lobbying with altered text	DOI + Integrity Ledger proof	Send canonical brief to regulators
 Translations with drift	Translation Integrity Protocol (T-SIR)	Certify only verified translations
 Trademark hijack	Filed mark + prior use proof	Trademark watch & opposition

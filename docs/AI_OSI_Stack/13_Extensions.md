@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden — Custodial Author
+AI OSI Stack v5.0-open-core (Civic Standard Edition)
+
 © 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
 Unauthorized reproductions or derivatives are not recognized custodial works.
 Refer to CANONICAL_PROVENANCE.yaml for official verification.
@@ -9,7 +12,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Last Generated:** 2025-11-10T00:00:49Z
 
 ## Optional Layers
-The protocol spec flags certain components—particularly Policy / Layer 8—for optional adoption in constrained deployments. Organizations SHALL document rationale when omitting civic participation and SHOULD define compensating controls referencing [Layer 7 – Governance Publication](./11_Layer_7_Governance_Publication.md).
+The protocol spec flags certain components—particularly Policy / Layer 8—for optional adoption in constrained deployments. Independent Custodians SHALL document rationale when omitting civic participation and SHOULD define compensating controls referencing [Layer 7 – Governance Publication](./11_Layer_7_Governance_Publication.md).
 
 ## Interpretive & Applied Canon (19A–24)
 These chapters extend semantics, persona design, therapy governance, and meta-oversight. They SHOULD be treated as advisory modules enhancing the core nine-layer stack.
