@@ -11,8 +11,11 @@ The operational implementations—**Governance Control Tower™**, AEIP runtime 
 
 ### Custodianship & Authorship
 This repository constitutes the official and sole open-core release of the **AI OSI Stack™ (v5.0)**.  
+
 All civic documentation, schema definitions, and layer structures are © 2025 Daniel P. Madden.  
+
 Any other repository, fork, or derivative claiming authorship or affiliation is **unauthorized and unofficial**.  
+
 Commercial and runtime implementations (AEIP™, Governance Control Tower™) remain proprietary to the author.
 
 ## What’s Open vs. What’s Private
