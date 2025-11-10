@@ -2,6 +2,8 @@
 
 Update Plan 4 (Finisher / Custodial Hardening Edition)
 “Make it canonical, provable, and untouchable.”
+
+> **License Update Notice:** References to CC BY-NC-ND within this historical plan are superseded by the open-core licensing scheme (Apache-2.0 for code, CC BY-SA 4.0 for documentation).
 1 · Purpose
 
 To finalize v 4.2 by embedding custodial continuity, anti-exploitation, and canonical verification infrastructure so that no derivative (v 1–v 3, rogue v 4, or external fork) can gain legitimacy without your signature.
@@ -111,7 +113,7 @@ Brand/domain watch for typo-squats.
 
 Publish a signed Verification Notice showing canonical hash.
 
-Contact host or publisher with CC BY-NC-ND violation notice.
+Contact host or publisher with former CC BY-NC-ND violation notice.
 
 If commercial, issue DMCA / Cease-and-Desist (using pre-approved template).
 
@@ -155,7 +157,7 @@ Established monitoring and response playbook, trademark preparation, and success
 After Update Plan 4, The AI OSI Stack v 4.2 becomes:
 
 Attribute	Result
-Legally anchored	CC BY-NC-ND + copyright + trademark readiness
+Legally anchored	former CC BY-NC-ND + copyright + trademark readiness
 Cryptographically verifiable	GPG signatures + SHA512 + OpenTimestamps
 Operationally secure	CI validators + branch protection + HIL entries
 Socially recognized	DOI + badge + public verification UX

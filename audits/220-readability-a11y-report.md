@@ -1,5 +1,7 @@
 # Dashboard Readability & Accessibility Audit
 
+> **Historical Reference Notice:** Findings reference the private Governance Control Tower™ dashboard implementation (formerly `analytics/dashboard/`). Artefacts are retained here for archival transparency only.
+
 ## Scope & Method
 - **Target**: `dashboard/` documentation, static copy, and UI implementations (React components, JSON data).
 - **Approach**: Parsed Markdown sources for readability metrics, inspected React components for semantic/ARIA coverage, and reviewed glossary payloads for jargon coverage. Scripts computed Flesch–Kincaid grade levels and average sentence length.

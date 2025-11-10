@@ -1,10 +1,8 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
-canonical_version: "v5.1-open-core"
-canonical_date: "2025-11-15"
-authorship:
-  author: "Daniel P. Madden"
-  verified_email: "44127480+danielpmadden@users.noreply.github.com"
-  affiliation: "Independent, self-funded project"
-  note: "All prior unauthorized metadata removed; canonical identity locked."
+canonical_version: "AI OSI Stack v1.1-open-core"
+canonical_status: "Civic Standard (Pre-v5 Governance Lock)"
+date_issued: "2025-11-09"
+prepared_by: "Daniel P. Madden"
+supersedes: "v5.0-open-core"
 repository_of_record: "https://github.com/danielpmadden/ai-osi-stack"
 domain_of_record: "https://aiosi.org"

@@ -6,20 +6,20 @@
 | Component | Description | Primary Data Sources | Future Integrations |
 | --- | --- | --- | --- |
 | **Sidebar Navigation** | Persistent left rail with global navigation, persona-aware filters, and contextual transparency toggle. | `docs/architecture-overview.md`, `docs/governance-map.md` | AEIP persona registry lookup (AEIP CLI), role-based access control via OpenAI auth proxy. |
-| **Top Bar / Canonical Banner** | Displays version label, hash, DOI, timestamp, and integrity badge summarizing dignity compliance. | `versions/readme.md`, `ledger/integrity/notices/*.txt`, `analytics/analytics/dashboard/src/data/layers.json` | Automated hash refresh from AEIP receipts; OpenAI API for context-aware announcements. |
-| **Layer View** | Scrollable stack of cards for Layers 0–8, each showing purpose, risks, evidence, AEIP hooks, and transparency controls. | `docs/risk-taxonomy.md`, `docs/governance-map.md`, `ledger/*.json`, `analytics/analytics/dashboard/src/data/layers.json` | Live maturity scores via AEIP node metrics; optional OpenAI summarization for persona rationales. |
+| **Top Bar / Canonical Banner** | Displays version label, hash, DOI, timestamp, and integrity badge summarizing dignity compliance. | `versions/readme.md`, `ledger/integrity/notices/*.txt`, private Governance Control Tower™ layer catalogue | Automated hash refresh from AEIP receipts; OpenAI API for context-aware announcements. |
+| **Layer View** | Scrollable stack of cards for Layers 0–8, each showing purpose, risks, evidence, AEIP hooks, and transparency controls. | `docs/risk-taxonomy.md`, `docs/governance-map.md`, `ledger/*.json`, private Governance Control Tower™ layer catalogue | Live maturity scores via AEIP node metrics; optional OpenAI summarization for persona rationales. |
 | **Governance Map Panel** | Matrix visualization of risks vs. controls with sentinel indicators. | `docs/governance-map.md`, `docs/risk-taxonomy.md` | Ingest periodic CSV exports from risk tooling; AEIP risk streaming endpoint. |
-| **Artifact Gallery** | Modal/grid view listing artifacts (GDS, DRR, ITP, Model Card, Solomon Brief, Clarity Package) with hashes and seals. | `/ledger/*.json`, `docs/aeip-artifact-schema-templates.md`, `protocol/*` | Integrate AEIP receipt verification CLI; optional OpenAI Q&A summarizing artifacts. |
+| **Artifact Gallery** | Modal/grid view listing artifacts (GDS, DRR, ITP, Model Card, Solomon Brief, Clarity Package) with hashes and seals. | `/ledger/*.json`, `docs/aeip-artifact-schema-templates.md`, private protocol bindings | Integrate AEIP receipt verification CLI; optional OpenAI Q&A summarizing artifacts. |
 | **AEIP Log Viewer** | Timeline drawer visualizing Intent→Update handshake events with filter chips. | `ledger/ile.json`, `schemas/aeip-1-3.jsonld`, `docs/ai-osi-protocol-spec.md` | Streaming AEIP node logs; WebSocket bridge to CLI; optional Dockerized AEIP simulator. |
 | **Integrity Badge Widget** | Aggregates dignityCompliance flags and temporal seals into layered badge. | `ledger/gds.json`, `ledger/drr.json`, `ledger/itp.json` | Live badge signing via AEIP node; OpenAI endpoint for anomaly narratives. |
 | **Version Timeline** | Horizontal timeline aligning Update Plans, ledger notices, and release tags. | `versions/historical/update-plan-*.md`, `ledger/integrity/notices/*.txt`, `versions/ai-osi-stack-v5.pdf` metadata | Automated ingestion of future release manifests; governance CLI for milestone creation. |
 
 ## Data Flow & Mock APIs
-1. **Static Data Loader:** `analytics/analytics/dashboard/src/data/layers.json` seeds initial state for React context (`LayerDataProvider`).
-2. **Ledger Adapter:** Utility functions in `analytics/analytics/dashboard/src/data/ledger.ts` (to be created) parse `/ledger/*.json` for artifact cards and integrity badge.
-3. **Update Plan Indexer:** Parser module reads `/versions/historical/*.md` to populate version timeline; preprocessed via script `ops/scripts/build-timeline.py` (future).
+1. **Static Data Loader:** Private Governance Control Tower™ dataset seeds initial state for React context (`LayerDataProvider`).
+2. **Ledger Adapter:** Utility functions parse `/ledger/*.json` for artifact cards and integrity badge within the private runtime.
+3. **Update Plan Indexer:** Parser module reads `/versions/historical/*.md` to populate version timeline; preprocessed via custodial scripting in the private operations toolchain.
 4. **Mock API Endpoints:**
-   - `GET /api/mock/layers` → returns contents of `analytics/analytics/dashboard/src/data/layers.json`.
+   - `GET /api/mock/layers` → returns a civic-safe export of the private layer catalogue.
    - `GET /api/mock/aeip/logs` → returns truncated `ledger/ile.json` handshake events.
    - `GET /api/mock/artifacts` → aggregated list of artifacts with hash + seal data.
    - `GET /api/mock/version-timeline` → synthetic list of Update Plan milestones.

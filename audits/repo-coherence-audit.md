@@ -2,6 +2,8 @@
 
 # Repository Coherence Audit — v5-RC
 
+> **Historical Reference Notice:** This audit describes the pre-open-core repository layout. Mentions of directories such as `analytics/`, `ops/`, `ml/`, and `protocol/` refer to private Governance Control Tower™ workspaces and are retained for archival context only.
+
 ## A) Executive Summary
 The v5 release-candidate tree now mirrors the civic governance workflow: analytics assets live under `analytics/`, operational tooling under `ops/`, and canonical documentation under `docs/`. We added lightweight READMEs to every top-level directory so maintainers can quickly confirm stewardship scope. Misplaced assets—including dashboard schemas, signing keys, and Zenodo metadata—now reside with their canonical peers, reducing duplicate linkage across handbooks. References throughout the documentation set were refreshed to acknowledge the new layout and the centralization of automation scripts inside `ops/scripts`. Remaining convergence work focuses on collapsing legacy dashboard planning notes and ensuring upcoming ML audit utilities slot cleanly into the new `/ml` namespace.
 

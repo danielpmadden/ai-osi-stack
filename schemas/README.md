@@ -2,4 +2,4 @@
 
 # Schemas
 
-JSON and JSON-LD definitions reside here to ensure structural coherence across AEIP, ledger, and analytics data. Schema updates must maintain backward compatibility and include provenance notes.
+JSON and JSON-LD definitions reside here to ensure structural coherence across AEIP artefacts, exemplar ledgers, and governance documentation. Schema updates must maintain backward compatibility and include provenance notes.
