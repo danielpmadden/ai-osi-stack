@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Release, Monitoring, and Change Management
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[6]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 6 controls release, monitoring, incident response, and change management for AI services. It SHALL ensure that runtime behavior remains consistent with the evidence chain established in preceding layers.
@@ -31,8 +31,14 @@ Deployment teams must reference model artefacts, instruction logs, and reasoning
 - Releases SHALL be blocked if assurance manifests lack countersignatures from governance custodians.
 - Monitoring digests SHOULD be fed into the Governance Control Tower and cross-referenced with roadmap milestones in [Roadmap](./22_Roadmap.md).
 
+## AEIP Schema Alignment
+- **Commit Receipt:** [`schemas/aeip/aeip-commit.schema.json`](../../schemas/aeip/aeip-commit.schema.json) MUST authorize deployments before runtime activation.
+- **Governance Decision Summary:** [`schemas/aeip/gds-schema.json`](../../schemas/aeip/gds-schema.json) SHALL capture operational approvals and public disclosure intents.
+- **Incident Report:** [`schemas/aeip/incident-report-schema.json`](../../schemas/aeip/incident-report-schema.json) SHALL document anomalies, mitigations, and rollback triggers.
+- **AEIP Frame:** [`schemas/aeip/aeip-frame-schema.json`](../../schemas/aeip/aeip-frame-schema.json) MAY encapsulate deployment evidence bundles requiring multi-layer routing.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[6].name`, `layer_structure.layers[6].function`, `layer_structure.layers[6].dependencies`
-- AEIP Artefacts: Deployment Assurance Manifest, Incident Response Playbook, Monitoring Telemetry Digest
+- AEIP Artefacts & Schemas: Deployment Assurance Manifest, Incident Response Playbook, Monitoring Telemetry Digest; governed via [`schemas/aeip/aeip-commit.schema.json`](../../schemas/aeip/aeip-commit.schema.json), [`schemas/aeip/gds-schema.json`](../../schemas/aeip/gds-schema.json), and [`schemas/aeip/incident-report-schema.json`](../../schemas/aeip/incident-report-schema.json)
 ---

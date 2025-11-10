@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Community Feedback and Renewal
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[8]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 8 maintains participatory feedback, appeal mechanisms, and renewal processes with affected communities. It SHALL safeguard civic legitimacy by ensuring public input influences ongoing operations.
@@ -31,8 +31,12 @@ This layer draws on published artefacts and feeds renewal directives upstream. A
 - Civic participation sessions SHALL be scheduled in alignment with charter review cycles.
 - Renewal directives SHOULD be hashed and linked to Governance Decision Summaries for auditability.
 
+## AEIP Schema Alignment
+- **Update Receipt:** [`schemas/aeip/aeip-update.schema.json`](../../schemas/aeip/aeip-update.schema.json) SHALL capture civic feedback acknowledgements and renewal directives before they recycle to Layer 0.
+- **Integrity Ledger Entry:** [`schemas/integrity-ledger-entry.jsonld`](../../schemas/integrity-ledger-entry.jsonld) MUST notarize participation events and evidence the hand-off back to Civic Mandate custodians.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[8].name`, `layer_structure.layers[8].function`, `layer_structure.layers[8].dependencies`
-- AEIP Artefacts: Participation Record Ledger, Appeals Resolution Log, Renewal Directive Packet
+- AEIP Artefacts & Schemas: Participation Record Ledger, Appeals Resolution Log, Renewal Directive Packet; recorded through [`schemas/aeip/aeip-update.schema.json`](../../schemas/aeip/aeip-update.schema.json) and [`schemas/integrity-ledger-entry.jsonld`](../../schemas/integrity-ledger-entry.jsonld)
 ---

@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Provenance and Fiduciary Data Handling
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[2]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 2 governs data provenance, consent, retention, and fiduciary handling. It SHALL verify that inputs respect the obligations codified in [Layer 1](./05_Layer_1_Ethical_Charter.md) and the mandates established in [Layer 0](./04_Layer_0_Civic_Mandate.md).
@@ -31,8 +31,11 @@ Data stewardship consumes charter duties and outputs consent artefacts. AEIP SHA
 - Deferred signing scripts SHALL prevent release of sensitive datasets without Civic Mandate validation.
 - Privacy impact assessments SHOULD be cross-referenced with synthetic dataset proofs before deployment.
 
+## AEIP Schema Alignment
+- **Curated Consent Manifest (CCM):** [`schemas/aeip/ccm-schema.json`](../../schemas/aeip/ccm-schema.json) SHALL validate consent ledgers, retention controls, and fiduciary disclosures before data assets progress to Layer 3.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[2].name`, `layer_structure.layers[2].function`, `layer_structure.layers[2].dependencies`
-- AEIP Artefacts: Consent Ledger, Data Provenance Manifest, Risk Scenario Register
+- AEIP Artefacts & Schemas: Consent Ledger, Data Provenance Manifest, Risk Scenario Register; enforced through [`schemas/aeip/ccm-schema.json`](../../schemas/aeip/ccm-schema.json)
 ---

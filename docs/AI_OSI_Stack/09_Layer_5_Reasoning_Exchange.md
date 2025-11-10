@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** AEIP Execution and Interpretability
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[5]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 5 executes AEIP handshakes, maintains interpretable reasoning traces, and propagates signatures across participants. It SHALL provide a tamper-evident record of how instructions were interpreted and decisions reached.
@@ -31,8 +31,12 @@ Relies on instruction payloads, persona briefs, and model evaluation proofs. AEI
 - Any reasoning exchange lacking countersignatures SHALL be rejected.
 - Interpretability artefacts SHOULD be accessible to auditors via the Governance Control Tower with redactions governed by [Layer 2](./06_Layer_2_Data_Stewardship.md).
 
+## AEIP Schema Alignment
+- **Countersignature Receipt:** [`schemas/aeip/aeip-countersign.schema.json`](../../schemas/aeip/aeip-countersign.schema.json) SHALL ensure multi-party approvals and privacy scopes are recorded before commitments are issued.
+- **AEIP Frame:** [`schemas/aeip/aeip-frame-schema.json`](../../schemas/aeip/aeip-frame-schema.json) MAY encapsulate multi-hop reasoning packets to maintain traceability across participants.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[5].name`, `layer_structure.layers[5].function`, `layer_structure.layers[5].dependencies`
-- AEIP Artefacts: Reasoning Trace Bundle, AEIP Receipt Pack, Interpretability Ledger
+- AEIP Artefacts & Schemas: Reasoning Trace Bundle, AEIP Receipt Pack, Interpretability Ledger; anchored to [`schemas/aeip/aeip-countersign.schema.json`](../../schemas/aeip/aeip-countersign.schema.json) with optional framing via [`schemas/aeip/aeip-frame-schema.json`](../../schemas/aeip/aeip-frame-schema.json)
 ---

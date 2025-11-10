@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Prompt Governance and Intent Management
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[4]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 4 manages prompts, control policies, persona briefs, and AEIP intent preparation for runtime governance. It SHALL ensure that all instructions align with ethical constraints and are logged for downstream reasoning audits.
@@ -31,8 +31,12 @@ This layer relies on model outputs and persona architectures, producing artefact
 - Control policies SHALL reject prompts that violate charter prohibitions or data restrictions.
 - Instruction logs SHOULD be hashed and shared with [Layer 6](./10_Layer_6_Deployment_Integration.md) for monitoring alignment.
 
+## AEIP Schema Alignment
+- **Instruction Log Ledger:** [`schemas/aeip/instruction-log-schema.json`](../../schemas/aeip/instruction-log-schema.json) SHALL capture prompt fingerprints, persona bindings, and policy outcomes for every execution request.
+- **AEIP Frame:** [`schemas/aeip/aeip-frame-schema.json`](../../schemas/aeip/aeip-frame-schema.json) MAY wrap instruction payloads when multi-layer routing or deferred countersignature is required.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[4].name`, `layer_structure.layers[4].function`, `layer_structure.layers[4].dependencies`
-- AEIP Artefacts: Instruction Control Policy, Persona Briefs, Instruction Log Ledger
+- AEIP Artefacts & Schemas: Instruction Control Policy, Persona Briefs, Instruction Log Ledger; enforced via [`schemas/aeip/instruction-log-schema.json`](../../schemas/aeip/instruction-log-schema.json) with optional framing from [`schemas/aeip/aeip-frame-schema.json`](../../schemas/aeip/aeip-frame-schema.json)
 ---

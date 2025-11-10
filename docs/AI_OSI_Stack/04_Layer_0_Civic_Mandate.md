@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Democratic Authorization
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[0]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 0 establishes democratic legitimacy, authorization scope, and community consent. It SHALL record who empowered the AI deployment, what communities were consulted, and which renewal triggers are binding.
@@ -31,8 +31,12 @@ This layer produces identifiers and civic clauses consumed by downstream layers.
 - AEIP SHALL enforce signature checks from designated civic custodians.
 - Integrity Ledger entries SHOULD timestamp each renewal decision before proceeding to Layer 1.
 
+## AEIP Schema Alignment
+- **Intent Receipt:** [`schemas/aeip/aeip-intent.schema.json`](../../schemas/aeip/aeip-intent.schema.json) records civic mandate payloads and SHALL be validated before downstream distribution.
+- **Civic Charter Manifest:** [`schemas/aeip/civic-charter-schema.json`](../../schemas/aeip/civic-charter-schema.json) encodes ratified mandates and MUST anchor all renewal triggers and custodial attestations.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[0].name`, `layer_structure.layers[0].function`, `layer_structure.layers[0].dependencies`
-- AEIP Artefacts: Mandate Resolution Packet, Consent Ledger Entries, Renewal Trigger Matrix
+- AEIP Artefacts & Schemas: Mandate Resolution Packet, Consent Ledger Entries, Renewal Trigger Matrix; validated against [`schemas/aeip/aeip-intent.schema.json`](../../schemas/aeip/aeip-intent.schema.json) and [`schemas/aeip/civic-charter-schema.json`](../../schemas/aeip/civic-charter-schema.json)
 ---

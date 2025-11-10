@@ -45,6 +45,20 @@ Commercial and runtime implementations (AEIP™, Governance Control Tower™) re
 └── _ip_review/      Audit memoranda for the open-core boundary
 ```
 
+## Layer-to-AEIP Schema Summary (v5.0-open-core)
+
+| Layer | Documentation | AEIP Schema References |
+| --- | --- | --- |
+| Layer 0 – Civic Mandate | [04_Layer_0_Civic_Mandate.md](docs/AI_OSI_Stack/04_Layer_0_Civic_Mandate.md) | [`schemas/aeip/aeip-intent.schema.json`](schemas/aeip/aeip-intent.schema.json), [`schemas/aeip/civic-charter-schema.json`](schemas/aeip/civic-charter-schema.json) |
+| Layer 1 – Ethical Charter | [05_Layer_1_Ethical_Charter.md](docs/AI_OSI_Stack/05_Layer_1_Ethical_Charter.md) | [`schemas/aeip/aeip-justify.schema.json`](schemas/aeip/aeip-justify.schema.json), [`schemas/aeip/tecl-schema.json`](schemas/aeip/tecl-schema.json) |
+| Layer 2 – Data Stewardship | [06_Layer_2_Data_Stewardship.md](docs/AI_OSI_Stack/06_Layer_2_Data_Stewardship.md) | [`schemas/aeip/ccm-schema.json`](schemas/aeip/ccm-schema.json) |
+| Layer 3 – Model Development | [07_Layer_3_Model_Development.md](docs/AI_OSI_Stack/07_Layer_3_Model_Development.md) | [`schemas/aeip/modelcard-schema.json`](schemas/aeip/modelcard-schema.json) |
+| Layer 4 – Instruction & Control | [08_Layer_4_Instruction_Control.md](docs/AI_OSI_Stack/08_Layer_4_Instruction_Control.md) | [`schemas/aeip/instruction-log-schema.json`](schemas/aeip/instruction-log-schema.json), [`schemas/aeip/aeip-frame-schema.json`](schemas/aeip/aeip-frame-schema.json) |
+| Layer 5 – Reasoning Exchange | [09_Layer_5_Reasoning_Exchange.md](docs/AI_OSI_Stack/09_Layer_5_Reasoning_Exchange.md) | [`schemas/aeip/aeip-countersign.schema.json`](schemas/aeip/aeip-countersign.schema.json), [`schemas/aeip/aeip-frame-schema.json`](schemas/aeip/aeip-frame-schema.json) |
+| Layer 6 – Deployment & Integration | [10_Layer_6_Deployment_Integration.md](docs/AI_OSI_Stack/10_Layer_6_Deployment_Integration.md) | [`schemas/aeip/aeip-commit.schema.json`](schemas/aeip/aeip-commit.schema.json), [`schemas/aeip/gds-schema.json`](schemas/aeip/gds-schema.json), [`schemas/aeip/incident-report-schema.json`](schemas/aeip/incident-report-schema.json), [`schemas/aeip/aeip-frame-schema.json`](schemas/aeip/aeip-frame-schema.json) |
+| Layer 7 – Governance Publication | [11_Layer_7_Governance_Publication.md](docs/AI_OSI_Stack/11_Layer_7_Governance_Publication.md) | [`schemas/aeip/aeip-update.schema.json`](schemas/aeip/aeip-update.schema.json), [`schemas/aeip/gds-schema.json`](schemas/aeip/gds-schema.json), [`schemas/aeip/aeip-frame-schema.json`](schemas/aeip/aeip-frame-schema.json) |
+| Layer 8 – Civic Participation | [12_Layer_8_Civic_Participation.md](docs/AI_OSI_Stack/12_Layer_8_Civic_Participation.md) | [`schemas/aeip/aeip-update.schema.json`](schemas/aeip/aeip-update.schema.json), [`schemas/integrity-ledger-entry.jsonld`](schemas/integrity-ledger-entry.jsonld) |
+
 ## Stewardship Principles
 
 - **Single authorship.** All materials are authored and curated by Daniel P. Madden; contributions occur only through explicit custodial channels.
