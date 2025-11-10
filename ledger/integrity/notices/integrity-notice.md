@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
+Unauthorized reproductions or derivatives are not recognized custodial works.
+Refer to CANONICAL_PROVENANCE.yaml for official verification.
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
 3714ed04da77f4db5151f21ef8da1be86ef0df45db8d285f56a5571efbf5ae9780f20abc623be7afa56e05b7bfab4ede43e8d0627527afcdb21e48947a144d88  ledger/hermeneutic/sample_interpretive_record.jsonld

@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
+Unauthorized reproductions or derivatives are not recognized custodial works.
+Refer to CANONICAL_PROVENANCE.yaml for official verification.
 # AEIP Receipt Examples
 
 This directory provides synthetic AEIP receipts illustrating the governance lifecycle. Each JSON-LD file includes the required metadata for downstream validators and dashboards.

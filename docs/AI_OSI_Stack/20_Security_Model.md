@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
+Unauthorized reproductions or derivatives are not recognized custodial works.
+Refer to CANONICAL_PROVENANCE.yaml for official verification.
 # Security Model
 
 - **Layer/Theme:** Sealing, Signatures, and Deferred Signing

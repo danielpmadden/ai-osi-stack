@@ -1,3 +1,6 @@
+© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
+Unauthorized reproductions or derivatives are not recognized custodial works.
+Refer to CANONICAL_PROVENANCE.yaml for official verification.
 <!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
 
 # AI OSI Stack — Open-Core Civic Layer
@@ -8,6 +11,12 @@
 - **Next Release:** `v5.0` *(full canonical publication pending integrity review)*
 
 The operational implementations—**Governance Control Tower™**, AEIP runtime services, ledger execution engines, analytics dashboards, and affiliated commercial tooling—remain proprietary. This repository focuses on transparency, civic legitimacy, and reproducible documentation.
+
+### Custodianship & Authorship
+This repository constitutes the official and sole open-core release of the **AI OSI Stack™ (v5.0)**.  
+All civic documentation, schema definitions, and layer structures are © 2025 Daniel P. Madden.  
+Any other repository, fork, or derivative claiming authorship or affiliation is **unauthorized and unofficial**.  
+Commercial and runtime implementations (AEIP™, Governance Control Tower™) remain proprietary to the author.
 
 ## What’s Included
 
