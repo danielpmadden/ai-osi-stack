@@ -1,12 +1,6 @@
-© 2025 Daniel P. Madden — Custodial Author
-AI OSI Stack v5.0-open-core (Civic Standard Edition)
 
-© 2025 Daniel P. Madden. Custodial Edition – AI OSI Stack v5.0-open-core.
-Unauthorized reproductions or derivatives are not recognized custodial works.
-Refer to CANONICAL_PROVENANCE.yaml for official verification.
-<!-- SPDX-License-Identifier: CC-BY-SA-4.0 -->
-
-# AI OSI Stack — Open-Core Civic Layer
+# AI OSI Stack v5.0 (Open-Core)
+## A Governance Blueprint for Scalable and Trusted AI
 
 **AI OSI Stack** is a civic governance and documentation framework authored and maintained by **Daniel P. Madden**. This public repository provides the open-core standards, schemas, exemplar ledgers, and validator-lite tools needed to understand and steward the Stack’s governance model.
 
