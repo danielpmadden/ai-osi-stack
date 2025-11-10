@@ -1,4 +1,28 @@
+% SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Appendix I — Custodial Metadata}
-\section*{Overview}
+\section*{Narrative Intent}
+Appendix I formalizes the metadata schema used to track custodial actions, data lineage, and governance
+changes across the Stack.
 
-\section*{Content Placeholder}
+\section*{Normative Clauses}
+\begin{enumerate}
+  \item \textbf{Schema Compliance.} Custodians SHALL record metadata fields for every significant action,
+        linking to related layers.
+  \item \textbf{Integrity Safeguards.} Metadata repositories SHALL employ access controls and tamper-evident
+        logging to preserve trustworthiness.
+\end{enumerate}
+
+\section*{Metadata Fields}
+\begin{description}
+  \item[Record ID] Unique identifier for the custodial action.
+  \item[Actor] Person or group responsible for the action.
+  \item[Timestamp] Coordinated time of action with timezone reference.
+  \item[Context] Related layer, appendix, or governance artifact.
+  \item[Disposition] Outcome status, including pending, approved, or escalated.
+\end{description}
+
+\section*{Plain-Speak Summary}
+Custodial metadata is the audit trail for every decision. This appendix lists the required fields and the
+protections that keep the record trustworthy.
+
+\cleardoublepage

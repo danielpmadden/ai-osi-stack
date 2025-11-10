@@ -1,18 +1,29 @@
+% SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Layer 06 — Deployment Integration}
 \section{Narrative Intent}
 \subsection*{Overview}
-This section outlines the normative controls and requirements for deployment integration. Detailed clauses will be developed in alignment with Version 5 governance directives.
+Layer 06 preserves the multi-stage integration pipeline while aligning outputs with governance
+publication duties. It defines how tested models enter production, how interfaces are configured, and how
+handoffs occur across operational teams. The narrative highlights collaborative ownership across
+engineering, policy, and civic accountability roles.
 
 \section{Normative Clauses}
-\subsection*{Key Objectives}
-\begin{itemize}
-  \item Establish measurable obligations.
-  \item Maintain alignment with the civic mandate.
-  \item Provide traceability to the v4→v5 crosswalk.
-\end{itemize}
+\subsection*{Integration Controls}
+\begin{enumerate}
+  \item \textbf{Stage Gate Documentation.} Deployment SHALL progress through documented stages—sandbox,
+        staging, limited release, and full release—with explicit exit criteria tied to civic impact assessments.
+  \item \textbf{Operational Readiness.} Integration teams SHALL verify that monitoring, override controls, and
+        escalation pathways are configured before public exposure.
+  \item \textbf{Publication Alignment.} Deployment decisions SHALL be synchronized with governance publication
+        cadences so the public receives timely updates on functionality and safeguards.
+  \item \textbf{Rollback Planning.} Each deployment stage SHALL include rollback scripts and decision triggers,
+        ensuring rapid restoration when controls fail or civic commitments are breached.
+\end{enumerate}
 
 \section{Plain-Speak Summary}
-Focus areas include: establish measurable obligations, maintain alignment with the civic mandate, and provide traceability to the v4→v5 crosswalk.
+Deployments move through clearly defined stages. Each step checks that monitoring works, the public is
+informed, and a rollback is ready if things go wrong. Integration is not done until policy, technical, and
+civic teams agree the system is safe to use.
 
 \emph{License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.}
 

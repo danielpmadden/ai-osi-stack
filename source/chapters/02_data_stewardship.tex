@@ -1,18 +1,29 @@
+% SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Layer 02 — Data Stewardship}
 \section{Narrative Intent}
 \subsection*{Overview}
-This section outlines the normative controls and requirements for data stewardship. Detailed clauses will be developed in alignment with Version 5 governance directives.
+Layer 02 specifies how data entering, residing within, and exiting the Stack is governed. It separates
+consent handling from custodial metadata, reflecting the crosswalk guidance that turned broad data
+obligations into discrete, auditable controls. The intent is to guarantee lawful collection, transparent
+use, and accountable retention strategies for all civic datasets.
 
 \section{Normative Clauses}
-\subsection*{Key Objectives}
-\begin{itemize}
-  \item Establish measurable obligations.
-  \item Maintain alignment with the civic mandate.
-  \item Provide traceability to the v4→v5 crosswalk.
-\end{itemize}
+\subsection*{Governance Requirements}
+\begin{enumerate}
+  \item \textbf{Consent Ledger.} Custodians SHALL maintain a ledger of consent artifacts, capturing purpose
+        limitation, renewal cadence, and withdrawal pathways for each dataset.
+  \item \textbf{Custodial Metadata.} Every dataset SHALL include Appendix I custodial metadata fields so that
+        provenance, access decisions, and policy lineage can be reconstructed.
+  \item \textbf{Data Minimization.} Collection activities SHALL document necessity tests and disposal triggers,
+        ensuring the Stack only retains data essential to the civic services authorized.
+  \item \textbf{Incident Escalation.} Data incidents SHALL invoke Appendix B escalation protocols with public
+        disclosure timelines proportionate to the civic impact.
+\end{enumerate}
 
 \section{Plain-Speak Summary}
-Focus areas include: establish measurable obligations, maintain alignment with the civic mandate, and provide traceability to the v4→v5 crosswalk.
+This layer organizes data rules into precise obligations. People must know why their information is used,
+who touched it, and how long it will stay. If something goes wrong, there is a predetermined plan for
+alerts and fixes. The goal is clear: data is treated as a public trust, not an expendable commodity.
 
 \emph{License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.}
 
