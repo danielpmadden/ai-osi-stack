@@ -1,5 +1,0 @@
-blank_issues_enabled: false
-defaults:
-  - label: governance
-    assignees:
-      - ai-osi/governance-review
