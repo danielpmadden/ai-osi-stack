@@ -1,0 +1,17 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+AI OSI Stack v5 — Checksum Manifest (SHA-512)
+=============================================
+
+This manifest lists canonical SHA-512 hashes for published PDF artefacts.
+Replace `PENDING` with the generated hash after running `python tools/gen-checksums.py`.
+
+- ai-osi-stack-v5.pdf — SHA-512: PENDING
+
+Instructions:
+1. Build artefacts: `bash tools/build-docs.sh`
+2. Generate hashes: `python tools/gen-checksums.py`
+3. Commit the updated manifest with custodial sign-off.
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

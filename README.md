@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 ---
 Title: README.md
 Version: v4.1-draft
@@ -47,3 +49,7 @@ reference/         → Crosswalks, provenance, and supporting materials
 ## References
 - [AI_OSI_Stack_v4/AUDIT_CHECKLIST.md](./AI_OSI_Stack_v4/AUDIT_CHECKLIST.md)
 - [AI_OSI_Stack_v4/09_License_and_Disclaimers.md](./AI_OSI_Stack_v4/09_License_and_Disclaimers.md)
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

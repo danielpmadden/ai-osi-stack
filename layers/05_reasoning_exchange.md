@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 > ✅ Incorporated into LaTeX on 2025-11-10
 
 # Layer 05 — Reasoning Exchange
@@ -12,3 +14,7 @@ This section outlines the normative controls and requirements for reasoning exch
 
 ---
 *License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.*
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

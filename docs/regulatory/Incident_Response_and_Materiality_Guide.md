@@ -3,7 +3,7 @@
 
 ## Definitions
 - **Incident**: Any confirmed or suspected event where AI-enabled systems, models, or processes deviate from expected behavior, compromise data, or trigger governance policy breaches.
-- **Material Incident**: An incident assessed to have a reasonable likelihood of influencing investor decisions, regulatory obligations, or strategic operations, considering qualitative and quantitative factors in the SEC Disclosure Playbook.
+- **Material Incident**: An incident assessed to have a reasonable likelihood of influencing investor decisions, regulatory obligations, or strategic operations, considering qualitative and quantitative factors in the Public Risk Disclosure Playbook.
 - **AI-Caused vs. AI-Assisted**: AI-caused incidents originate from AI model logic, training, or deployment flaws; AI-assisted incidents involve traditional cyber or operational events amplified by AI misuse or support.
 
 ## 72-Hour Clock Narrative
@@ -51,6 +51,6 @@
 - Update risk register entries, control catalog narratives, and board briefing materials to reflect new insights.
 - Record assurance follow-ups (audits, testing) to validate remediation effectiveness.
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

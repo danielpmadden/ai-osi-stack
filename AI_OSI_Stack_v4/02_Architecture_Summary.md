@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 ---
 Title: 02_Architecture_Summary.md
 Version: v4.1-draft
@@ -37,3 +39,7 @@ The architecture remains in open draft while terminology and interfaces stabiliz
 - [03_Layer_Overview.md](./03_Layer_Overview.md)
 - [04_Governance_Principles.md](./04_Governance_Principles.md)
 - [06_Implementation_Guide.md](./06_Implementation_Guide.md)
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

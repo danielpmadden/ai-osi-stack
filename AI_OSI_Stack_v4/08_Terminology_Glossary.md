@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 ---
 Title: 08_Terminology_Glossary.md
 Version: v4.1-draft
@@ -35,3 +37,7 @@ Terminology is stable for v4.1-draft. Future proprietary extensions will add aut
 - [02_Architecture_Summary.md](./02_Architecture_Summary.md)
 - [03_Layer_Overview.md](./03_Layer_Overview.md)
 - [09_License_and_Disclaimers.md](./09_License_and_Disclaimers.md)
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

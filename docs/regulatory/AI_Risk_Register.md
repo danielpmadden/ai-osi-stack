@@ -10,8 +10,8 @@
 - **Controls**: Layer 2 Data controls from `Controls_Catalog_by_Layer.md`; contractual data rights attestations; privacy impact assessments.
 - **Early Warning Indicators**: Vendor audit findings, data subject complaints, anomalies in access logs.
 - **Escalation Path**: Data Steward → CRO → Audit & Risk Committee → Full Board if material.
-- **Disclosure Considerations**: Evaluate against SEC materiality criteria; coordinate with legal for potential Item 106 or 8-K filing.
-- **Cross-References**: Board brief risk snapshot; SEC Disclosure Playbook scope.
+- **Disclosure Considerations**: Evaluate against public risk disclosure criteria; coordinate with legal for potential statutory filings.
+- **Cross-References**: Board brief risk snapshot; Public Risk Disclosure Playbook scope.
 
 ## Model Bias
 - **Description**: Models producing discriminatory or unfair outcomes, impacting protected classes or leading to systemic errors in decision-making.
@@ -22,7 +22,7 @@
 - **Controls**: Layer 3 Model controls; bias testing protocols; independent validation memos.
 - **Early Warning Indicators**: Disparity metrics, customer complaints, audit findings.
 - **Escalation Path**: Model Validation Lead → AIRC → TEC → Board.
-- **Disclosure Considerations**: Potential 10-K risk factor updates; incident triggers for Item 1.05 if systemic harm occurs.
+- **Disclosure Considerations**: Potential annual report risk factor updates; incident triggers for market disclosure obligations if systemic harm occurs.
 - **Cross-References**: Board brief control families; FAQs on model transparency.
 
 ## Prompt Injection
@@ -34,7 +34,7 @@
 - **Controls**: Layer 4 Instruction controls; access management; prompt filtering and monitoring.
 - **Early Warning Indicators**: Spike in blocked prompts, anomaly detection alerts.
 - **Escalation Path**: Prompt Governance Lead → Security Operations → ARC.
-- **Disclosure Considerations**: Assess for material data leakage or service disruption; coordinate with SEC playbook.
+- **Disclosure Considerations**: Assess for material data leakage or service disruption; coordinate with Public Risk Disclosure Playbook guidance.
 - **Cross-References**: Incident Response Guide 72-hour clock; Third-Party oversight for API security.
 
 ## Leakage / Intellectual Property Misuse
@@ -46,7 +46,7 @@
 - **Controls**: Layer 4 and 7 controls; data loss prevention overlays; contractual restrictions with partners.
 - **Early Warning Indicators**: DLP alerts, unusual export activity, whistleblower tips.
 - **Escalation Path**: Security Operations → CRO → ARC → Board.
-- **Disclosure Considerations**: Potential materiality for 8-K; must assess IP valuation impact.
+- **Disclosure Considerations**: Potential materiality for market disclosures; must assess IP valuation impact.
 - **Cross-References**: Board brief risk appetite; Disclosure Safe Harbor samples.
 
 ## Third-Party Model Dependency
@@ -59,7 +59,7 @@
 - **Early Warning Indicators**: Vendor notifications, SLA breaches, adverse media.
 - **Escalation Path**: Vendor Manager → CRO → ARC.
 - **Disclosure Considerations**: Monitor for material dependency shifts; incorporate into risk factors.
-- **Cross-References**: Nasdaq alignment table; SEC playbook scope.
+- **Cross-References**: Listed governance alignment table; Public Risk Disclosure Playbook scope.
 
 ## Toolchain Supply Chain
 - **Description**: Compromise of development or deployment tools (CI/CD, model repositories) leading to malicious code insertion or tampering.
@@ -109,6 +109,6 @@
 - **Disclosure Considerations**: Meta-risk affecting all filings; highlight in disclosure playbook.
 - **Cross-References**: Incident Response Guide communications section; Board brief disclosure summary.
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.

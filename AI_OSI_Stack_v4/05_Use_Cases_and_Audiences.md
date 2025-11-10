@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 ---
 Title: 05_Use_Cases_and_Audiences.md
 Version: v4.1-draft
@@ -32,3 +34,7 @@ Use cases remain indicative. Institutions MAY tailor engagement models while pre
 - [01_Executive_Brief.md](./01_Executive_Brief.md)
 - [03_Layer_Overview.md](./03_Layer_Overview.md)
 - [08_Terminology_Glossary.md](./08_Terminology_Glossary.md)
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

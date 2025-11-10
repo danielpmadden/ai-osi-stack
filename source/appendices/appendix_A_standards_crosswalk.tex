@@ -1,14 +1,13 @@
 % SPDX-License-Identifier: CC-BY-NC-ND-4.0
 \chapter{Appendix A — Standards Crosswalk}
 \section*{Narrative Intent}
-This appendix captures the crosswalk from Version 4 clauses to their Version 5 counterparts. It documents
-how civic obligations were reframed, expanded, or otherwise refined, providing auditors with a clear
-lineage between historical commitments and the current layered architecture.
+This appendix captures the clause-by-clause lineage from Version 4 materials to their Version 5 custodial counterparts.
+Each entry identifies the mapped artefact and the verification routine used to evidence continuity.
 
 \section*{Normative Clauses}
 \begin{enumerate}
   \item \textbf{Traceability.} Custodians SHALL maintain this crosswalk as the authoritative record mapping
-        historical clauses to Version 5 artifacts.
+        historical clauses to Version 5 artefacts.
   \item \textbf{Change Logging.} Updates to the crosswalk SHALL reference Appendix C to preserve transparency
         about revisions and rationale.
   \item \textbf{Public Access.} The crosswalk SHALL be published alongside governance updates to support civic
@@ -16,37 +15,41 @@ lineage between historical commitments and the current layered architecture.
 \end{enumerate}
 
 \section*{Crosswalk Table}
-\begin{longtable}{p{2.5cm}p{3.2cm}p{4cm}p{5.5cm}}
+\begin{longtable}{p{1.6cm}p{2.7cm}p{4cm}p{3.4cm}p{3.7cm}}
 \toprule
-\textbf{V4 Clause ID} & \textbf{Title} & \textbf{Mapped V5 File} & \textbf{Transformation Summary}\\
+\textbf{V4 Clause ID} & \textbf{Title} & \textbf{Mapped V5 File} & \textbf{Supporting Artefact} & \textbf{Verification Method}\\
 \midrule
-V4-00 & Civic Charter \& Mandate & layers/00\_civic\_mandate.md & Reframed civic obligations into layered mandate with explicit public stewardship checkpoints.\\
-V4-01 & Infrastructure Substrate & layers/01\_physical\_compute\_substrate.md & Expanded hardware resilience requirements and added supply-chain provenance metadata.\\
-V4-02 & Data Governance & layers/02\_data\_stewardship.md & Split consent handling and custodial metadata into discrete controls mapped to Appendix I.\\
-V4-03 & Model Lifecycle & layers/03\_model\_development.md & Clarified lifecycle gating and linked to implementation verification in Layer 11.\\
-V4-04 & Instructional Interfaces & layers/04\_instruction\_control.md & Introduced instruction traceability and civic override hooks.\\
-V4-05 & Cognitive Exchange Protocol & layers/05\_reasoning\_exchange.md & Added reasoning session attestation and non-repudiation pathways.\\
-V4-06 & Deployment Integration & layers/06\_deployment\_integration.md & Preserved integration stages and aligned with governance publication outputs.\\
-V4-07 & Publication \& Accountability & layers/07\_governance\_publication.md & Refined publication cadence and mandated open audit artifacts.\\
-V4-08 & Civic Engagement & layers/08\_civic\_participation.md & Elevated participatory metrics and multi-stakeholder review loops.\\
-V4-09 & Epistemic Assurance & layers/09\_epistemic\_infrastructure\_protocol.md & Introduced epistemic health indicators and public evidence registries.\\
-V4-10 & Governance Transport Model & layers/10\_governance\_transport\_maturity\_model.md & Converted maturity checkpoints into tiered transport pathways for policy updates.\\
-V4-11 & Verification \& Audit & layers/11\_implementation\_verification.md & Tightened verification benchmarks and mapped to public civic verification tooling.\\
-V4-12 & Strategic Risk & layers/12\_strategic\_resilience\_risk\_mitigation.md & Integrated resilience stress-testing and escalation playbooks.\\
-V4-App-A & Normative Vocabulary & layers/appendices/appendix\_a\_normative\_vocabulary.md & Updated controlled vocabulary to reference v5 terminology changes.\\
-V4-App-B & Escalation Protocols & layers/appendices/appendix\_b\_escalation\_remediation.md & Added remediation sequencing linked to maturity model tiers.\\
-V4-App-C & Change Log & layers/appendices/appendix\_c\_changelog.md & Preserved historical log while redirecting to canonical v5 changelog.\\
-V4-App-D & Glossary & layers/appendices/appendix\_d\_glossary.md & Reconciled definitions with new civic mandate language.\\
-V4-App-E & Source Register & layers/appendices/appendix\_e\_sources\_provenance.md & Expanded provenance attestations and custodial metadata fields.\\
-V4-App-F & Acknowledgments & layers/appendices/appendix\_f\_acknowledgments.md & Carried forward contributor credits with v5 stewardship notes.\\
-V4-App-G & About the Author & layers/appendices/appendix\_g\_about\_author.md & Updated biography to include v5 custodial role.\\
-V4-App-H & Authorship Statement & layers/appendices/appendix\_h\_authorship\_statement.md & Affirmed canonical authorship with non-derivative licensing terms.\\
-V4-App-I & Custodial Metadata & layers/appendices/appendix\_i\_custodial\_metadata.md & Formalized metadata schema for custodial records.\\
+V4-00 & Civic Charter \& Mandate & layers/00\_civic\_mandate.md & docs/regulatory/BOARD\_BRIEF\_GOVERNANCE\_ALIGNMENT.md & Board brief review with custodial attestation\\
+V4-01 & Infrastructure Substrate & layers/01\_physical\_compute\_substrate.md & source/chapters/01\_physical\_compute\_substrate.tex & Infrastructure checklist signed by custodial engineer\\
+V4-02 & Data Governance & layers/02\_data\_stewardship.md & docs/regulatory/AI\_Risk\_Register.md & Data stewardship evidence package spot-check\\
+V4-03 & Model Lifecycle & layers/03\_model\_development.md & source/chapters/03\_model\_development.tex & Lifecycle gate review recorded in audit log\\
+V4-04 & Instructional Interfaces & layers/04\_instruction\_control.md & docs/regulatory/ThirdParty\_and\_ModelSupplyChain.md & Vendor instruction trace review\\
+V4-05 & Cognitive Exchange Protocol & layers/05\_reasoning\_exchange.md & source/chapters/05\_reasoning\_exchange.tex & Reasoning session attestation check\\
+V4-06 & Deployment Integration & layers/06\_deployment\_integration.md & docs/regulatory/Controls\_Catalog\_by\_Layer.md & Deployment integration control sampling\\
+V4-07 & Publication \& Accountability & layers/07\_governance\_publication.md & docs/regulatory/Public\_Risk\_Disclosure\_Playbook.md & Disclosure cadence verification review\\
+V4-08 & Civic Engagement & layers/08\_civic\_participation.md & docs/regulatory/Training\_and\_Awareness\_for\_Board\_and\_Execs.md & Participation metric reconciliation\\
+V4-09 & Epistemic Assurance & layers/09\_epistemic\_infrastructure\_protocol.md & docs/regulatory/WhoWhatWhenWhyHow\_Matrix.md & Epistemic evidence sampling\\
+V4-10 & Governance Transport Model & layers/10\_governance\_transport\_maturity\_model.md & docs/regulatory/Listed\_Governance\_Alignment.md & Maturity checkpoint validation\\
+V4-11 & Verification \& Audit & layers/11\_implementation\_verification.md & audits/300-governance-audit-checklist.md & Audit checklist walkthrough\\
+V4-12 & Strategic Risk & layers/12\_strategic\_resilience\_risk\_mitigation.md & docs/regulatory/Incident\_Response\_and\_Materiality\_Guide.md & Strategic risk tabletop drill\\
+V4-App-A & Normative Vocabulary & layers/appendices/appendix\_a\_normative\_vocabulary.md & reference/glossary.md & Vocabulary alignment review\\
+V4-App-B & Escalation Protocols & layers/appendices/appendix\_b\_escalation\_remediation.md & docs/regulatory/Incident\_Response\_and\_Materiality\_Guide.md & Escalation drill validation\\
+V4-App-C & Change Log & layers/appendices/appendix\_c\_changelog.md & CHANGELOG.md & Change-log reconciliation\\
+V4-App-D & Glossary & layers/appendices/appendix\_d\_glossary.md & reference/glossary.md & Glossary consistency review\\
+V4-App-E & Source Register & layers/appendices/appendix\_e\_sources\_provenance.md & docs/regulatory/Controls\_Catalog\_by\_Layer.md & Source provenance spot-check\\
+V4-App-F & Acknowledgments & layers/appendices/appendix\_f\_acknowledgments.md & source/appendices/appendix\_F\_acknowledgments.tex & Custodial acknowledgment confirmation\\
+V4-App-G & About the Author & layers/appendices/appendix\_g\_about\_author.md & docs/regulatory/International\_Summary\_Brief.md & Custodial biography validation\\
+V4-App-H & Authorship Statement & layers/appendices/appendix\_h\_authorship\_statement.md & source/appendices/appendix\_H\_authorship\_statement.tex & Authorship attestation review\\
+V4-App-I & Custodial Metadata & layers/appendices/appendix\_i\_custodial\_metadata.md & docs/regulatory/AI\_Risk\_Register.md & Metadata schema compliance check\\
 \bottomrule
 \end{longtable}
 
 \section*{Plain-Speak Summary}
-This appendix explains how Version 4 material maps to Version 5. It lists each old clause, shows where it
-lives now, and summarizes what changed so reviewers can trace commitments over time.
+This appendix explains how Version 4 material maps to Version 5.
+It lists each old clause, shows where it lives now, and summarizes the verification performed so reviewers can trace commitments over time.
 
 \cleardoublepage
+
+% Authored and maintained solely by the Custodial Editorial Committee.
+% This is a non-operational, publication-grade governance artifact.
+% No AEIP runtime specs or machine-readable schemas are included.

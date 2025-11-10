@@ -1,3 +1,5 @@
+<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+
 # AI OSI Stack v4 Source Archive
 The file `ai-osi-stack-v4-master.pdf` is the preserved canonical manuscript for Version 4 of the AI OSI Stack (2025 release). It is retained solely for provenance and crosswalk validation.
 
@@ -8,3 +10,7 @@ The file `ai-osi-stack-v4-master.pdf` is the preserved canonical manuscript for 
 
 ---
 *License: Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International.*
+
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
+> No AEIP runtime specs or machine-readable schemas are included.

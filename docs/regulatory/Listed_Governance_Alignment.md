@@ -1,5 +1,5 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
-# Nasdaq Governance Alignment for AI Oversight
+# Listed Governance Alignment for AI Oversight
 
 ## Audit Committee Responsibilities for AI Risk Oversight
 - Oversee integration of AI risk metrics into enterprise risk management (ERM) dashboards.
@@ -34,10 +34,10 @@
 
 | Segment | Duration | Content | Repo Pre-Reads |
 | --- | --- | --- | --- |
-| Pre-Workshop Study | 45 min | Review board brief and risk register | `docs/regulatory/BOARD_BRIEF_NACD_SEC_Nasdaq.md`, `docs/regulatory/AI_Risk_Register.md` |
+| Pre-Workshop Study | 45 min | Review board brief and risk register | `docs/regulatory/BOARD_BRIEF_GOVERNANCE_ALIGNMENT.md`, `docs/regulatory/AI_Risk_Register.md` |
 | Module 1 | 30 min | Governance structure & committee roles | `docs/regulatory/Board_Charter_Addendum_AI_Oversight.md` |
 | Module 2 | 30 min | Control catalog walk-through | `docs/regulatory/Controls_Catalog_by_Layer.md` |
-| Module 3 | 30 min | Incident response and disclosure alignment | `docs/regulatory/Incident_Response_and_Materiality_Guide.md`, `docs/regulatory/SEC_Disclosure_Playbook.md` |
+| Module 3 | 30 min | Incident response and disclosure alignment | `docs/regulatory/Incident_Response_and_Materiality_Guide.md`, `docs/regulatory/Public_Risk_Disclosure_Playbook.md` |
 | Module 4 | 30 min | Third-party and supply chain oversight | `docs/regulatory/ThirdParty_and_ModelSupplyChain.md` |
 | Module 5 | 30 min | Scenario workshop (prompt injection, shadow AI) | `docs/regulatory/AI_Risk_Register.md`, `docs/regulatory/Training_and_Awareness_for_Board_and_Execs.md` |
 | Wrap-Up | 15 min | Action items, metrics, and next steps | Meeting summary template |
@@ -51,6 +51,6 @@
 - Governance clarity is enhanced by identifying a single point of contact for regulators, directors, and auditors seeking documentary evidence.
 - Management supplements custodial documents with operational reports in the private Control Tower, ensuring comprehensive oversight without commingling sensitive data.
 
-> Authored and maintained solely by Daniel P. Madden (custodial).  
-> This is a non-operational, publication-grade governance artifact.  
+> Authored and maintained solely by the Custodial Editorial Committee.
+> This is a non-operational, publication-grade governance artifact.
 > No AEIP runtime specs or machine-readable schemas are included.
