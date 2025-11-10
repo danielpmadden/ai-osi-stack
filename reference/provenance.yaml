@@ -1,0 +1,3 @@
+sources:
+  - path: foundation/
+  - path: meta/v5-manifest.yaml
