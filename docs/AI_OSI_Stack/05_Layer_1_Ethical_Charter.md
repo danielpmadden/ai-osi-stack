@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Obligations and Red Lines
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[1]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 1 translates civic values into enforceable obligations, red lines, and review cycles. It SHALL operationalize mandates into language consumable by legal, technical, and civic teams.
@@ -31,8 +31,12 @@ This layer references mandate identifiers from [Layer 0](./04_Layer_0_Civic_Mand
 - AEIP payloads SHALL reject instructions violating charter prohibitions.
 - Charter updates SHOULD trigger downstream checks in [Layer 2](./06_Layer_2_Data_Stewardship.md) and [Layer 5 – Reasoning Exchange](./09_Layer_5_Reasoning_Exchange.md).
 
+## AEIP Schema Alignment
+- **Governance Justification Receipt:** [`schemas/aeip/aeip-justify.schema.json`](../../schemas/aeip/aeip-justify.schema.json) SHALL document the rationale for each charter clause before it propagates to dependent layers.
+- **Trusted Ethical Charter Ledger (TECL):** [`schemas/aeip/tecl-schema.json`](../../schemas/aeip/tecl-schema.json) MUST capture signed charter manifests and review cadence metadata for audit replay.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[1].name`, `layer_structure.layers[1].function`, `layer_structure.layers[1].dependencies`
-- AEIP Artefacts: Ethical Charter Manifest, Persona Governance Briefs, Review Cycle Calendar
+- AEIP Artefacts & Schemas: Ethical Charter Manifest, Persona Governance Briefs, Review Cycle Calendar; governed through [`schemas/aeip/aeip-justify.schema.json`](../../schemas/aeip/aeip-justify.schema.json) and [`schemas/aeip/tecl-schema.json`](../../schemas/aeip/tecl-schema.json)
 ---

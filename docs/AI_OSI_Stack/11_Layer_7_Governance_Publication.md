@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Evidence Disclosure and Oversight Reporting
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[7]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 7 transforms internal evidence into public disclosures, oversight reports, and registry updates. It SHALL curate materials that affected communities, regulators, and investors can verify.
@@ -31,8 +31,13 @@ Requires AEIP receipts, assurance manifests, and Integrity Ledger references. Pu
 - Publications SHALL undergo legal and civic review before release.
 - All disclosures SHOULD be versioned and stored in the Governance Control Tower with AEIP verification metadata.
 
+## AEIP Schema Alignment
+- **Update Receipt:** [`schemas/aeip/aeip-update.schema.json`](../../schemas/aeip/aeip-update.schema.json) SHALL attest to the publication lifecycle, including release status and renewal triggers.
+- **Governance Decision Summary:** [`schemas/aeip/gds-schema.json`](../../schemas/aeip/gds-schema.json) MUST accompany public disclosures to show governance approvals and distribution intents.
+- **AEIP Frame:** [`schemas/aeip/aeip-frame-schema.json`](../../schemas/aeip/aeip-frame-schema.json) MAY be used to package multi-document disclosure bundles routed to civic channels.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[7].name`, `layer_structure.layers[7].function`, `layer_structure.layers[7].dependencies`
-- AEIP Artefacts: Public Disclosure Dossier, Standards Crosswalk Table, Oversight Registry Update
+- AEIP Artefacts & Schemas: Public Disclosure Dossier, Standards Crosswalk Table, Oversight Registry Update; sealed using [`schemas/aeip/aeip-update.schema.json`](../../schemas/aeip/aeip-update.schema.json) and [`schemas/aeip/gds-schema.json`](../../schemas/aeip/gds-schema.json)
 ---

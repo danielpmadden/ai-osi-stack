@@ -9,7 +9,7 @@ Refer to CANONICAL_PROVENANCE.yaml for official verification.
 - **Layer/Theme:** Training Integrity and Evaluation
 - **Version:** v5.0-rc
 - **Source Reference:** `layer_structure.layers[3]`
-- **Last Generated:** 2025-11-10T00:00:49Z
+- **Last Generated:** 2025-11-20T00:00:00Z
 
 ## Purpose
 Layer 3 documents training assets, evaluations, interpretability safeguards, and persona segregation. It SHALL convert stewarded data into models that comply with ethical obligations and remain auditable.
@@ -31,8 +31,11 @@ This layer depends on data governance artefacts and informs downstream instructi
 - All training runs SHALL generate deterministic hashes and store them in the Integrity Ledger.
 - Change requests SHOULD trigger re-validation workflows before models progress to deployment.
 
+## AEIP Schema Alignment
+- **Model Card & Lineage Manifest:** [`schemas/aeip/modelcard-schema.json`](../../schemas/aeip/modelcard-schema.json) SHALL encode lineage, evaluation metrics, and persona segregation controls before AEIP exchange events occur.
+
 ---
 Traceability
 - JSON: `layer_structure.layers[3].name`, `layer_structure.layers[3].function`, `layer_structure.layers[3].dependencies`
-- AEIP Artefacts: Model Lineage Manifest, Evaluation Report Pack, Persona Segregation Matrix
+- AEIP Artefacts & Schemas: Model Lineage Manifest, Evaluation Report Pack, Persona Segregation Matrix; governed via [`schemas/aeip/modelcard-schema.json`](../../schemas/aeip/modelcard-schema.json)
 ---
