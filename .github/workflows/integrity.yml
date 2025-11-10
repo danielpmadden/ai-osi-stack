@@ -1,0 +1,20 @@
+name: Integrity Manifest
+on:
+  push:
+    paths:
+      - 'source/**'
+      - 'reference/**'
+      - 'README.md'
+jobs:
+  checksums:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Dependencies
+        run: pip install pyyaml
+      - name: Generate Advisory Checksums
+        run: python3 tools/gen-checksums.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: advisory-manifest
+          path: meta/v5-manifest.yaml

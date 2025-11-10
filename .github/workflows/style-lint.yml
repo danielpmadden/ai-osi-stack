@@ -1,0 +1,17 @@
+name: Spell & Style Check
+on: [push, pull_request]
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: pip install codespell proselint
+      - name: Run Style Lint
+        run: |
+          mkdir -p audits
+          find source -type f \( -name "*.tex" -o -name "*.md" \) | \
+            xargs -n1 -P4 proselint > audits/style.log
+      - uses: actions/upload-artifact@v4
+        with:
+          name: style-report
+          path: audits/style.log
