@@ -1,6 +1,6 @@
 # SPDX-License-Identifier: CC-BY-SA-4.0
-canonical_version: "v5.0-rc"
-canonical_date: "2025-11-09"
+canonical_version: "v5.1-open-core"
+canonical_date: "2025-11-15"
 authorship:
   author: "Daniel P. Madden"
   verified_email: "44127480+danielpmadden@users.noreply.github.com"
