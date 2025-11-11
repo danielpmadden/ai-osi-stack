@@ -1,0 +1,27 @@
+name: Integrity Ledger Update
+
+on:
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 6 * * 1'
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  update-ledger:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Generate Integrity Ledger hashes
+        run: |
+          mkdir -p audits/logs
+          codex run integrity-ledger | tee audits/logs/integrity-ledger-$(date -u +"%Y%m%dT%H%M%SZ").log
+      - name: Upload ledger log
+        uses: actions/upload-artifact@v4
+        with:
+          name: integrity-ledger-logs
+          path: audits/logs/*.log

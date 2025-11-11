@@ -4,9 +4,7 @@
 
 This repository publishes advisory checksums for key reference assets.
 
-Stakeholders should verify each checksum listed in `meta/v5-manifest.yaml` against the
-locally downloaded artifacts before relying on the materials. Any discrepancies should be
-reported to the AI OSI Stack maintainers prior to distribution or citation.
+All authoritative hashes, commit references, and workflow attestations are maintained in [audits/Integrity_Ledger.md](./audits/Integrity_Ledger.md). Stakeholders SHALL verify entries in the ledger and associated logs under `audits/logs/` against locally downloaded artefacts before relying on the materials. Report any discrepancies to the AI OSI Stack maintainers prior to distribution or citation.
 
 > Authored and maintained solely by the Custodial Editorial Committee.
 > This is a non-operational, publication-grade governance artifact.

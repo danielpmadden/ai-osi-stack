@@ -3,14 +3,14 @@
 
 The AI OSI Stack v5 repository separates documentation and tooling licenses to balance open scholarship with custodial safeguards.
 
-## Documentation and LaTeX Assets
+## Normative Text
 - **License:** Creative Commons Attribution–NonCommercial–NoDerivatives 4.0 International (CC BY-NC-ND 4.0)
-- **Scope:** All Markdown, LaTeX, PDF, and narrative assets within the repository.
+- **Scope:** All normative Markdown, LaTeX, PDF, and narrative assets defining the civic standard.
 - **SPDX Example:** `<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->`
 
-## Code and Tooling Scripts
+## Runtime Code and Schema Implementations
 - **License:** Apache License 2.0
-- **Scope:** Utility scripts under `tools/` and automation configuration such as `latexmkrc`.
+- **Scope:** Utility scripts under `tools/`, automation configurations, and machine-readable schema examples.
 - **SPDX Example:** `# SPDX-License-Identifier: Apache-2.0`
 
 ## Custodial Guidance

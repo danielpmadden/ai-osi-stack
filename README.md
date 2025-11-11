@@ -1,55 +1,55 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
 
 ---
-Title: README.md
-Version: v4.1-draft
-Purpose: Provide top-level orientation for the AI OSI Stack v4 repository and reference architecture materials.
+Title: AI OSI Stack v5 – Canonical Civic Architecture
+Version: v5.0.0
+Purpose: Provide top-level orientation for the AI OSI Stack v5 canonical civic-standard repository.
 Status: Public reference (non-commercial)
 ---
 
+## Transition Notice
+v4 materials are archived; v5 introduces constitutional architecture and AEIP governance spine.
+
 ## Purpose
-This README introduces the AI OSI Stack v4 reference architecture, outlines repository contents, and provides guidance for institutional and public users seeking accountable AI governance resources.
+This README introduces the AI OSI Stack v5 canonical civic architecture, outlines repository contents, and provides guidance for civic partners, institutions, and researchers stewarding accountable AI governance.
 
 ## Scope
-The scope covers the AI OSI Stack v4 directory structure, licensing context, and navigation cues. It applies to all open materials within this repository. Proprietary extensions, including the Accountability Evidence Integration Platform (AEIP) and Governance Control Tower, remain outside this release.
+The scope covers the v5 directory structure, governance manifests, and version-control obligations. Operational implementations, including the Accountability Evidence Integration Platform (AEIP) runtime and Governance Control Tower, remain outside this standard and are referenced only as interfaces.
 
 ## Status
-The repository is maintained as an open civic reference. Materials MAY be used with attribution under the stated license. Future drafts SHALL document any updates through Governance Decision Records noted in the audit log.
+The repository is maintained as an open civic reference. Materials MAY be used with attribution under the stated license. Future drafts SHALL document updates through Governance Decision Records recorded in the Integrity Ledger.
 
 ## Key Points
-- The Stack provides a layered governance model spanning civic mandate through civic participation (L0–L8).
+- The Stack provides a layered constitutional model spanning civic mandate through civic participation (L0–L8).
 - Documentation adopts standards-style language (MUST, SHALL, SHOULD) to clarify expectations without implying legal mandates.
-- Proprietary automation and advanced tooling will be described in forthcoming extensions separate from this public reference.
+- AEIP governance spine and Semantic Version Control ensure consistent propagation across civic services.
 - Design principles of Dignity, Integrity, and Stewardship guide every artefact and workflow.
 
 ## Repository Layout
 ```text
-AI_OSI_Stack_v4/   → Canonical Markdown artefacts for v4.1-draft
-foundation/        → Background research and conceptual notes (legacy)
-layers/            → Prior layer specifications (superseded)
-reference/         → Crosswalks, provenance, and supporting materials
+versions/v4_archive/ → Historical v4 materials (read-only)
+foundation/          → Background research and conceptual notes
+layers/              → Layer-specific briefs aligned to the Compass outline
+reference/           → Canonical constitutional specification and provenance records
+meta/                → AEIP schema, Semantic Version Control guidance, and metadata
+governance/          → Governance Manifest and Civic Charter
+audits/              → Integrity Ledger and automation logs
 ```
 
-## What the AI OSI Stack Is
-- A governance reference architecture for accountable AI.
-- A civic-minded framework mapping ethical, technical, and fiduciary controls.
-- Open, modular, and evidence-based; usable without external systems.
-
-## What It Is Not
-- Not a regulatory filing, compliance checklist, or legal instrument.
-- Not affiliated with any government or corporate entity.
-- Not a commercial service or live monitoring system.
-- Proprietary extensions (AEIP / Governance Control Tower) are separate IP.
+## Governance References
+- [Governance Manifest](./governance/Governance_Manifest.md)
+- [Civic Charter](./governance/Civic_Charter.md)
 
 ## Getting Started
-1. Review [AI_OSI_Stack_v4/00_README.md](./AI_OSI_Stack_v4/00_README.md) for detailed orientation.
-2. Consult [AI_OSI_Stack_v4/02_Architecture_Summary.md](./AI_OSI_Stack_v4/02_Architecture_Summary.md) and [AI_OSI_Stack_v4/03_Layer_Overview.md](./AI_OSI_Stack_v4/03_Layer_Overview.md) to understand layer responsibilities.
-3. Use [AI_OSI_Stack_v4/06_Implementation_Guide.md](./AI_OSI_Stack_v4/06_Implementation_Guide.md) to plan adoption across institutional contexts.
+1. Review [reference/AI_OSI_Stack_v5_Core.md](./reference/AI_OSI_Stack_v5_Core.md) for the constitutional Compass outline.
+2. Consult [meta/AEIP_Specification.md](./meta/AEIP_Specification.md) and [meta/Semantic_Version_Control_Guide.md](./meta/Semantic_Version_Control_Guide.md) for governance and versioning requirements.
+3. Use [docs/Repository_Completion_Checklist.md](./docs/Repository_Completion_Checklist.md) to confirm readiness prior to publication.
 
 ## References
-- [AI_OSI_Stack_v4/AUDIT_CHECKLIST.md](./AI_OSI_Stack_v4/AUDIT_CHECKLIST.md)
-- [AI_OSI_Stack_v4/09_License_and_Disclaimers.md](./AI_OSI_Stack_v4/09_License_and_Disclaimers.md)
+- [reference/Provenance_Statement.md](./reference/Provenance_Statement.md)
+- [audits/Integrity_Ledger.md](./audits/Integrity_Ledger.md)
+- [docs/Glossary_of_Terms.md](./docs/Glossary_of_Terms.md)
 
-> Authored and maintained solely by the Custodial Editorial Committee.
+> Authored and maintained by the Custodial Editorial Committee.
 > This is a non-operational, publication-grade governance artifact.
-> No AEIP runtime specs or machine-readable schemas are included.
+> No AEIP runtime specs or machine-readable implementations are included.
