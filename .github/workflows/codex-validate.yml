@@ -1,0 +1,26 @@
+name: Codex AEIP Validation
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+
+defaults:
+  run:
+    shell: bash
+
+jobs:
+  validate-aeip:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run Codex AEIP validation
+        run: |
+          mkdir -p audits/logs
+          codex run validate-aeip | tee audits/logs/codex-validate-$(date -u +"%Y%m%dT%H%M%SZ").log
+      - name: Upload validation log
+        uses: actions/upload-artifact@v4
+        with:
+          name: codex-validate-logs
+          path: audits/logs/*.log
