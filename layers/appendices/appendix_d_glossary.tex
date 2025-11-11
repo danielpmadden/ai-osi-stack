@@ -1,0 +1,105 @@
+Normative Concept
+Glossary
+Scope: Provides authoritative definitions for terms used in this specification. These definitions
+SHALL be treated as binding where referenced in the normative text.
+AI OSI Stack
+The layered governance architecture for artificial-intelligence systems defined by this
+specification. It separates institutional, epistemic, and technical duties into interoperable
+layers with verifiable evidence flows.
+AEIP (AI Epistemic Infrastructure Protocol)
+Canonical transport for governance evidence across layers. Formal message unit: AEIP
+Frame.
+AEIP Frame
+Atomic, signed evidence container including frame identifier, origin-layer tag, timestamp,
+custodian identifier, evidence hash, and attestation signature (see Chapter 12).
+Attestation Chain
+Ordered sequence of AEIP Frames establishing provenance, verification, and time-bound
+integrity for a given artifact or event.
+Attribution Ledger
+Tamper-evident record linking Reasoning Artifacts and governance events to originators,
+models, datasets, and custodians (see Chapter 8).
+Bias Mitigation Coverage (BMC)
+Percentage of outcomes tested against declared bias metrics across relevant populations
+(see Chapter 5).
+Capability Domain
+Thematic area scored in the Maturity Model (see Chapter 13); includes Institutional
+62
+63
+Readiness, Technical Assurance, Ethical Integration, Civic Engagement, and Continuous
+Improvement.
+Change Control Record (CCR)
+Immutable entry documenting a modification to a deployment instance, including rationale,
+scope, and rollback reference (see Chapter 9).
+Civic Charter
+Ratified instrument conferring mandate to operate under this specification; includes
+oversight structure, renewal cadence, and right of redress (see Chapter 3).
+Civic Interface
+Structured channel for public participation, feedback, and deliberation (see Chapter 11).
+Custodian
+Accountable role responsible for implementing controls, maintaining evidence, and re-
+sponding to audits at a given layer.
+Custodial Duty Indicator (CDI)
+Metric family quantifying fulfillment of custodial responsibilities across layers.
+Decommission Protocol
+Procedure for secure retirement of systems, models, and data, including token revocation
+and AEIP updates (see Chapter 9).
+Deployment Instance
+Unique operational instantiation of a model or system, identified by deployment ID and
+configuration hash (see Chapter 9).
+Differential Privacy
+Privacy-preserving technique limiting individual disclosure risk; application SHALL be
+risk-proportional and documented in CCMs (see Chapter 5).
+Drift Detection Rate (DDR)
+Frequency with which epistemic drift is detected and remediated within mandated time
+frames (see Chapter 5).
+EEP (Epistemic Exchange Protocol)
+Standardized interface for exchanging Reasoning Artifacts, including signing, validation,
+and ontology alignment (see Chapter 8).
+Ethical Metrics
+Quantitative indicators of interpretability, robustness, and harm potential tied to declared
+Alignment Criteria (see Chapter 6).
+Governance Disclosure Statement (GDS)
+Periodic publication summarizing conformance, metrics, incident response, and corrective
+actions (see Chapter 10).
+Governance Transport Layer (GTL)
+Institutional interface linking operational systems to AEIP evidence flow and maturity
+measurement (see Chapter 13).
+64 APPENDIX D. APPENDIX D – NORMATIVE CONCEPT GLOSSARY
+Integrity Ledger Entry (ILE)
+Atomic, immutable governance record produced by a control action or event; signed and
+time-sealed.
+Interpretive Envelope
+Contextual metadata attached to Reasoning Artifacts indicating scope, confidence, and
+validity interval (see Chapter 8).
+Institutional Maturity Metric (IMM)
+Composite maturity score derived from capability domains and supporting evidence (see
+Chapter 13).
+Incident Report (IR)
+Structured record describing an anomalous or harmful event, with remediation status and
+cross-layer impact (see Chapter 9).
+Model Card
+Authoritative documentation for a model including purpose, architecture, datasets, evalu-
+ation, limitations, and risks (see Chapter 6).
+Override Authority
+Human role empowered to halt or constrain system operations under declared conditions
+(see Chapter 7).
+PCI (Provenance Completeness Index)
+Ratio of datasets with complete provenance to total active datasets (see Chapter 5).
+Provenance Registry
+Append-only record linking data origin, transformations, consent, and lawful basis to
+current validity state (see Chapter 5).
+Reasoning Artifact
+Structured inference or conclusion emitted for downstream decision-making, signed and
+enveloped per EEP (see Chapter 8).
+Reproducibility Package
+Code, configuration, and documentation necessary to recompute training and evaluation
+(see Chapter 6).
+Service-Level Governance Indicator (SLGI)
+Operational metric mapping reliability and safety thresholds to ethical obligations in
+deployment (see Chapter 9).
+Tamper-Evident Custody Log (TECL)
+Asset-level record linking physical identifiers to cryptographic seals and audit events (see
+Chapter 4).
+Translation Governance Protocol (TGP)
+Process ensuring that translations remain semantically faithful to the English canonical
+text and cross-mapped to normative clauses
