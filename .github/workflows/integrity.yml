@@ -9,7 +9,15 @@ jobs:
   checksums:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-context
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Cache pip downloads
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-pyyaml
       - name: Install Dependencies
         run: pip install pyyaml
       - name: Generate Advisory Checksums

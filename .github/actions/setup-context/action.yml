@@ -1,0 +1,10 @@
+name: Setup Context
+description: Checkout repository and prepare audit logging directory
+runs:
+  using: composite
+  steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+    - name: Prepare audit logs
+      shell: bash
+      run: mkdir -p audits/logs

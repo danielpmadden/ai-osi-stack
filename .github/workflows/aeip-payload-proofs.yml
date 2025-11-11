@@ -1,0 +1,19 @@
+name: AEIP Payload Proofs
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  generate-proofs:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/setup-context
+      - name: Generate AEIP payload proofs
+        run: codex run aeip-payload-proofs --clauses reference/clause_index.yaml | tee audits/logs/aeip-payload-proofs-$(date -u +"%Y%m%dT%H%M%SZ").log
+      - name: Upload proof log
+        uses: actions/upload-artifact@v4
+        with:
+          name: aeip-payload-proofs-log
+          path: audits/logs/aeip-payload-proofs-*.log

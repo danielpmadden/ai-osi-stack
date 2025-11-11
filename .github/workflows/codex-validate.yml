@@ -13,12 +13,9 @@ jobs:
   validate-aeip:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-context
       - name: Run Codex AEIP validation
-        run: |
-          mkdir -p audits/logs
-          codex run validate-aeip | tee audits/logs/codex-validate-$(date -u +"%Y%m%dT%H%M%SZ").log
+        run: codex run validate-aeip | tee audits/logs/codex-validate-$(date -u +"%Y%m%dT%H%M%SZ").log
       - name: Upload validation log
         uses: actions/upload-artifact@v4
         with:

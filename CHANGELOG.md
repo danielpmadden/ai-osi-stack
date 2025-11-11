@@ -2,6 +2,12 @@
 
 # Changelog — AI OSI Stack v5 Canonical Edition
 
+## 2026-11-11 — Version 5.1.0 – Clause Registry and Integrity Sealing
+- Populated Layers 00–12 with normative clauses linked through `reference/clause_index.yaml` and cross-referenced from the Civic Charter and Governance Manifest.
+- Sealed `audits/Integrity_Ledger.md`, added an integrity validation report, and updated the Integrity Notice to reflect sealed status.
+- Published `reference/Heartwood_Core_Spec.md` and three synthesis briefs describing the Civic Nerve Net, Custodial Vascularity, and Commons Resonance Engine narratives.
+- Optimized Codex workflows with reusable setup actions, caching, scoped linting, and new automation for AEIP payload proofs and Clarity summary exports.
+
 ## 2026-04-01 — Version 5.0.0 – Canonical constitutional release
 - Integrates AEIP governance spine, Semantic Version Control, Governance Manifest, and Civic Charter.
 - Establishes Integrity Ledger automation and repository completion checklist.
