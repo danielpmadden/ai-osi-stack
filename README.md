@@ -1,9 +1,9 @@
 <!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
 
 ---
-Title: AI OSI Stack v5 – Canonical Civic Architecture
+AI OSI Stack v5
 Version: v5.0.0
-Purpose: Provide top-level orientation for the AI OSI Stack v5 canonical civic-standard repository.
+Purpose: Provide top-level orientation for the AI OSI Stack v5.
 Status: Public reference (non-commercial)
 ---
 
