@@ -22,7 +22,6 @@ The repository is maintained as an open civic reference. Materials MAY be used w
 ## Key Points
 - The Stack provides a layered constitutional model spanning civic mandate through civic participation (L0–L8).
 - Documentation adopts standards-style language (MUST, SHALL, SHOULD) to clarify expectations without implying legal mandates.
-- AEIP governance spine and Semantic Version Control ensure consistent propagation across civic services.
 - Design principles of Dignity, Integrity, and Stewardship guide every artefact and workflow.
 
 ## Repository Layout
@@ -50,6 +49,3 @@ audits/              → Integrity Ledger and automation logs
 - [audits/Integrity_Ledger.md](./audits/Integrity_Ledger.md)
 - [docs/Glossary_of_Terms.md](./docs/Glossary_of_Terms.md)
 
-> Authored and maintained by the Custodial Editorial Committee.
-> This is a non-operational, publication-grade governance artifact.
-> No AEIP runtime specs or machine-readable implementations are included.
