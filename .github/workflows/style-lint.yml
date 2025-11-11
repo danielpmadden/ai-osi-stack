@@ -4,14 +4,47 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - run: pip install codespell proselint
-      - name: Run Style Lint
+      - uses: ./.github/actions/setup-context
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Cache pip downloads
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: pip-${{ runner.os }}-codespell-proselint
+      - name: Install linting tools
+        run: pip install codespell proselint
+      - name: Determine changed prose files
+        id: changes
         run: |
-          mkdir -p audits
-          find source -type f \( -name "*.tex" -o -name "*.md" \) | \
-            xargs -n1 -P4 proselint > audits/style.log
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            base="${{ github.event.pull_request.base.sha }}"
+          else
+            base="${{ github.event.before }}"
+          fi
+          if [ -z "$base" ]; then
+            base=$(git rev-parse HEAD^ 2>/dev/null || echo "")
+          fi
+          if [ -n "$base" ]; then
+            git diff --name-only "$base" HEAD -- 'source/**/*.tex' '*.md' > changed-files.txt || true
+          else
+            git ls-files 'source/**/*.tex' '*.md' > changed-files.txt
+          fi
+          sed -i '/^$/d' changed-files.txt
+          if [ ! -s changed-files.txt ]; then
+            echo "files=" >> "$GITHUB_OUTPUT"
+          else
+            echo "files=$(tr '\n' ' ' < changed-files.txt)" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Run Style Lint
+        if: steps.changes.outputs.files != ''
+        run: |
+          xargs -a changed-files.txt -n1 -P4 proselint > audits/logs/style-lint.log
+      - name: Skip notice
+        if: steps.changes.outputs.files == ''
+        run: echo "No Markdown or TeX changes detected; skipping style lint." > audits/logs/style-lint.log
       - uses: actions/upload-artifact@v4
         with:
           name: style-report
-          path: audits/style.log
+          path: audits/logs/style-lint.log

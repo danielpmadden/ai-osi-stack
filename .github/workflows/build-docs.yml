@@ -5,7 +5,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: ./.github/actions/setup-context
+      - name: Cache TeX toolchain
+        uses: actions/cache@v4
+        with:
+          path: |
+            /var/cache/apt/archives
+            ~/.texlive
+          key: texlive-${{ runner.os }}-${{ hashFiles('latexmkrc') }}
       - name: Install TeX
         run: sudo apt-get update && sudo apt-get install -y latexmk texlive-full
       - name: Compile Canonical PDF

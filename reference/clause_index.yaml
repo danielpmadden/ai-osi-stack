@@ -1,0 +1,238 @@
+---
+version: 1.0.0
+generated: 2025-11-11T03:10:05Z
+clauses:
+  - id: L00-C001
+    layer: 00_civic_mandate
+    title: Civic Oversight Quorum
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer00.mandate.quorum
+    description: Municipal oversight councils must maintain quorum rosters and log validations.
+  - id: L00-C002
+    layer: 00_civic_mandate
+    title: Transparency Broadcast
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer00.mandate.transparency
+    description: Quarterly transparency briefs must be published with AEIP attestations.
+  - id: L00-C003
+    layer: 00_civic_mandate
+    title: Renewal Notice Period
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer00.mandate.renewalNotice
+    description: Renewal notices must be issued ninety days before charter review.
+  - id: L01-C001
+    layer: 01_physical_compute_substrate
+    title: Sovereign Hardware Inventory
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer01.hardware.inventory
+    description: Maintain auditable inventories of civic compute assets.
+  - id: L01-C002
+    layer: 01_physical_compute_substrate
+    title: Data Center Access Safeguards
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer01.hardware.access
+    description: Enforce multifactor access controls with AEIP logs for incidents.
+  - id: L01-C003
+    layer: 01_physical_compute_substrate
+    title: Sustainability Thresholds
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer01.hardware.sustainability
+    description: Publish sustainability metrics alongside renewal packets.
+  - id: L02-C001
+    layer: 02_data_stewardship
+    title: Civic Data Provenance
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer02.data.provenance
+    description: Attach provenance metadata to civic datasets with AEIP attestations.
+  - id: L02-C002
+    layer: 02_data_stewardship
+    title: Community Consent Renewal
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer02.data.consent
+    description: Renew community consent annually with AEIP notifications.
+  - id: L02-C003
+    layer: 02_data_stewardship
+    title: Stewardship Escalation Window
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer02.data.escalation
+    description: Provide ten-day escalation windows for data handling disputes.
+  - id: L03-C001
+    layer: 03_model_development
+    title: Civic Use Case Register
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer03.model.useCases
+    description: Maintain an approved civic use case register for models.
+  - id: L03-C002
+    layer: 03_model_development
+    title: Participatory Risk Reviews
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer03.model.riskReview
+    description: Conduct participatory risk reviews at each model milestone.
+  - id: L03-C003
+    layer: 03_model_development
+    title: Dataset-to-Model Traceability
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer03.model.traceability
+    description: Link datasets to model checkpoints in deployment attestations.
+  - id: L04-C001
+    layer: 04_instruction_control
+    title: Instruction Policy Registry
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer04.control.policyRegistry
+    description: Ratify instruction policy updates via AEIP logged registry entries.
+  - id: L04-C002
+    layer: 04_instruction_control
+    title: Real-time Safeguard Overrides
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer04.control.safeguardOverride
+    description: Capture override details for protected classes within minutes.
+  - id: L04-C003
+    layer: 04_instruction_control
+    title: Instruction Red Team Feedback
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer04.control.redTeam
+    description: Publish quarterly red team findings through AEIP payloads.
+  - id: L05-C001
+    layer: 05_reasoning_exchange
+    title: Deliberation Transcript Fidelity
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer05.reasoning.transcripts
+    description: Provide verbatim transcripts for civic deliberations.
+  - id: L05-C002
+    layer: 05_reasoning_exchange
+    title: Persona Hand-off Logging
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer05.reasoning.personaHandOff
+    description: Log persona transitions to preserve protections.
+  - id: L05-C003
+    layer: 05_reasoning_exchange
+    title: Reflection Cycle Cadence
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer05.reasoning.reflection
+    description: Share structured reflection outputs after major releases.
+  - id: L06-C001
+    layer: 06_deployment_integration
+    title: Deployment Gate Reviews
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer06.deployment.gateReview
+    description: Require civic observer sign-off at deployment gates.
+  - id: L06-C002
+    layer: 06_deployment_integration
+    title: Rollback Transparency
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer06.deployment.rollback
+    description: Disclose rollback actions affecting public services.
+  - id: L06-C003
+    layer: 06_deployment_integration
+    title: Integration Sandbox Reporting
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer06.deployment.sandbox
+    description: Publish monthly sandbox experiment summaries.
+  - id: L07-C001
+    layer: 07_governance_publication
+    title: Publication Window Guarantees
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer07.publication.window
+    description: Release governance changes fourteen days before enforcement.
+  - id: L07-C002
+    layer: 07_governance_publication
+    title: Accessibility Format Coverage
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer07.publication.accessibility
+    description: Provide accessible formats for all canonical publications.
+  - id: L07-C003
+    layer: 07_governance_publication
+    title: Comment Digest Distribution
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer07.publication.commentDigest
+    description: Summarize and publish public comment digests after review periods.
+  - id: L08-C001
+    layer: 08_civic_participation
+    title: Assembly Scheduling Transparency
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer08.participation.schedule
+    description: Publish agendas and schedules for civic assemblies.
+  - id: L08-C002
+    layer: 08_civic_participation
+    title: Participation Accessibility Support
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer08.participation.accessSupport
+    description: Document accessibility accommodations prior to assemblies.
+  - id: L08-C003
+    layer: 08_civic_participation
+    title: Feedback Incorporation Logs
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer08.participation.feedback
+    description: Publish logs showing how feedback is incorporated.
+  - id: L09-C001
+    layer: 09_epistemic_infrastructure_protocol
+    title: Evidence Graph Publication
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer09.epistemic.evidenceGraph
+    description: Publish evidence graphs within seven days of decisions.
+  - id: L09-C002
+    layer: 09_epistemic_infrastructure_protocol
+    title: Terminology Drift Alerts
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer09.epistemic.drift
+    description: Trigger alerts when semantic drift is detected.
+  - id: L09-C003
+    layer: 09_epistemic_infrastructure_protocol
+    title: Knowledge Steward Escalation
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer09.epistemic.stewardEscalation
+    description: Provide escalation channels for epistemic challenges.
+  - id: L10-C001
+    layer: 10_governance_transport_maturity_model
+    title: Transport Capability Baselines
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer10.transport.baseline
+    description: Benchmark transport capabilities annually.
+  - id: L10-C002
+    layer: 10_governance_transport_maturity_model
+    title: Interchange Safeguard Testing
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer10.transport.safeguards
+    description: Test interchange safeguards quarterly and report results.
+  - id: L10-C003
+    layer: 10_governance_transport_maturity_model
+    title: Civic Partner Onboarding Support
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer10.transport.partnerOnboarding
+    description: Provide onboarding kits documenting transport expectations.
+  - id: L11-C001
+    layer: 11_implementation_verification
+    title: Verification Evidence Bundles
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer11.verification.evidence
+    description: Include evidence bundles in verification reports.
+  - id: L11-C002
+    layer: 11_implementation_verification
+    title: Nonconformity Correction Windows
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer11.verification.corrections
+    description: Correct rights-impacting nonconformities within fifteen days.
+  - id: L11-C003
+    layer: 11_implementation_verification
+    title: Community Verification Briefings
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer11.verification.briefings
+    description: Convene community briefings after major audits.
+  - id: L12-C001
+    layer: 12_strategic_resilience_risk_mitigation
+    title: Resilience Scenario Catalog
+    charter_section: Civic Legitimacy
+    aeip_manifest_pointer: aeip.layer12.resilience.scenarios
+    description: Maintain scenario catalogs documenting civic impacts.
+  - id: L12-C002
+    layer: 12_strategic_resilience_risk_mitigation
+    title: Rapid Response Accountability
+    charter_section: Rights and Protections
+    aeip_manifest_pointer: aeip.layer12.resilience.response
+    description: Record decision timelines and protective measures during emergencies.
+  - id: L12-C003
+    layer: 12_strategic_resilience_risk_mitigation
+    title: Adaptive Learning Cycles
+    charter_section: Participatory Renewal
+    aeip_manifest_pointer: aeip.layer12.resilience.learning
+    description: Publish adaptive learning outputs after each incident.

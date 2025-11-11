@@ -1,0 +1,24 @@
+name: Clarity Summary Export
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  export-clarity:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/setup-context
+      - name: Export Clarity summaries
+        run: codex run clarity-summary --output docs/clarity | tee audits/logs/clarity-summary-$(date -u +"%Y%m%dT%H%M%SZ").log
+      - name: Upload clarity summary log
+        uses: actions/upload-artifact@v4
+        with:
+          name: clarity-summary-log
+          path: audits/logs/clarity-summary-*.log
+      - name: Upload clarity summaries
+        uses: actions/upload-artifact@v4
+        with:
+          name: clarity-summaries
+          path: docs/clarity
