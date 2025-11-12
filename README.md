@@ -1,51 +1,126 @@
-<!-- SPDX-License-Identifier: CC-BY-NC-ND-4.0 -->
+# 🧭 AI OSI Stack v4.0  
+### A Governance Blueprint for Scalable and Trusted AI
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17490086.svg)](https://doi.org/10.5281/zenodo.17490086)
+![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC_BY--NC--ND_4.0-lightgrey.svg)
+![Version 4.0.0](https://img.shields.io/badge/Version-4.0.0-blue)
 
 ---
-AI OSI Stack v5
-Version: v5.0.0
-Purpose: Provide top-level orientation for the AI OSI Stack v5.
-Status: Public reference (non-commercial)
+
+## Overview
+
+> **Jurisdiction-neutral / not legal advice.**  
+> The Stack provides a civic-to-technical governance architecture and advisory pattern, it is not a substitute for legal counsel in any jurisdiction.
+
+The **AI OSI Stack** is an open-standard, nine-layer framework for **governing artificial-intelligence systems** from **civic mandate** through **public accountability**. It defines a *governance spine* that binds policy, ethics, data, and engineering practice into verifiable evidence flows. Each layer produces machine-readable artefacts under the **AEIP (Accountable Evidence Interchange Protocol)** so oversight bodies can trace decisions in real time.
+
+Version 4.0 is the **canonical edition**, audited for conceptual coherence, continuity, and civic intent.
+
 ---
 
-## Transition Notice
-v4 materials are archived; v5 introduces constitutional architecture and AEIP governance spine.
+## Quick Links
 
-## Purpose
-This README introduces the AI OSI Stack v5 canonical civic architecture, outlines repository contents, and provides guidance for civic partners, institutions, and researchers stewarding accountable AI governance.
+| Resource | Location |
+|-----------|-----------|
+| Overview | [`docs/00_Overview.md`](docs/00_Overview.md) |
+| Roadmap | [`22_Roadmap.md`](22_Roadmap.md) |
+| Crosswalk Index | [`docs/references/25_Crosswalk_Index.md`](docs/references/25_Crosswalk_Index.md) |
+| Latest Audit | [`audits/99-conceptual-coherence-summary.md`](audits/99-conceptual-coherence-summary.md) |
+| Zenodo Record | [https://doi.org/10.5281/zenodo.17490086](https://doi.org/10.5281/zenodo.17490086) |
 
-## Scope
-The scope covers the v5 directory structure, governance manifests, and version-control obligations. Operational implementations, including the Accountability Evidence Integration Platform (AEIP) runtime and Governance Control Tower, remain outside this standard and are referenced only as interfaces.
+---
 
-## Status
-The repository is maintained as an open civic reference. Materials MAY be used with attribution under the stated license. Future drafts SHALL document updates through Governance Decision Records recorded in the Integrity Ledger.
+## Layer Summary (0 – 8)
 
-## Key Points
-- The Stack provides a layered constitutional model spanning civic mandate through civic participation (L0–L8).
-- Documentation adopts standards-style language (MUST, SHALL, SHOULD) to clarify expectations without implying legal mandates.
-- Design principles of Dignity, Integrity, and Stewardship guide every artefact and workflow.
+| Layer | Name | Purpose |
+|-------|------|----------|
+| 0 | **Civic Mandate** | Democratic authorization and renewal triggers |
+| 1 | **Ethical Charter** | Enforceable duties, red lines, and review cycles |
+| 2 | **Data Stewardship** | Provenance, consent, and fiduciary data handling |
+| 3 | **Model Development** | Training integrity, evaluation, persona segregation |
+| 4 | **Instruction & Control** | Prompt governance and intent management |
+| 5 | **Reasoning Exchange** | AEIP execution, interpretability, and signatures |
+| 6 | **Deployment & Integration** | Release, monitoring, incident response |
+| 7 | **Governance Publication** | Evidence disclosure and civic transparency |
+| 8 | **Civic Participation** | Community feedback and renewal mechanisms |
 
-## Repository Layout
-```text
-versions/v4_archive/ → Historical v4 materials (read-only)
-foundation/          → Background research and conceptual notes
-layers/              → Layer-specific briefs aligned to the Compass outline
-reference/           → Canonical constitutional specification and provenance records
-meta/                → AEIP schema, Semantic Version Control guidance, and metadata
-governance/          → Governance Manifest and Civic Charter
-audits/              → Integrity Ledger and automation logs
+Additional interpretive chapters (19A–24) extend semantics, persona design, and therapy governance.
+
+---
+
+## Version History and Zenodo Lineage
+
+| Version | DOI | Date | Status |
+|----------|-----|------|--------|
+| **4.0** | [10.5281/zenodo.17517241](https://doi.org/10.5281/zenodo.17517241) | Nov 2 2025 | Latest Canonical |
+| 3.0 | [10.5281/zenodo.17497610](https://doi.org/10.5281/zenodo.17497610) | Oct 31 2025 | Historical |
+| 2.0 | [10.5281/zenodo.17490794](https://doi.org/10.5281/zenodo.17490794) | Sep 9 2025 | Historical |
+| 1.0 | [10.5281/zenodo.17490087](https://doi.org/10.5281/zenodo.17490087) | Sep 9 2025 | Historical |
+| All Versions | [10.5281/zenodo.17490086](https://doi.org/10.5281/zenodo.17490086) | — | Aggregate DOI (latest resolves here) |
+
+---
+
+## Why It Matters
+
+Modern AI evolves faster than governance can adapt.  
+Most oversight remains siloed—model cards here, privacy reviews there—without a shared accountability backbone. The Stack replaces that fragmentation with a **layered, evidence-carrying protocol** that any organization can adopt, audit, and extend.
+
+**Core Benefits**
+- **Transparency with proof** — Every decision and artefact is AEIP-verifiable.  
+- **Accountability without surveillance** — Auditability through registries, not tracking.  
+- **Interoperability** — Aligned with ISO 42001, IEEE 7000, NIST AI RMF, EU AI Act.  
+- **Civic legitimacy** — Governance begins at Layer 0, not deployment.  
+
+---
+
+## Installation & Validation
+
+```bash
+git clone https://github.com/danielpmadden/ai-osi-stack.git
+cd ai-osi-stack
+pip install -e .
+pytest
+Optional:
+
+bash
+Copy code
+cd dashboard/demo-portal
+npm install
+npm run dev
+To validate AEIP schemas or generate artefacts:
+
+bash
+Copy code
+python tools/generate-artifact.py
+Citation
+Madden, Daniel P. (2025). The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI (v5.0). Zenodo. https://doi.org/10.5281/zenodo.17490086
+```
+## BibTeX
+
+```bibtex
+@misc{madden_ai_osi_stack_v5,
+  author       = {Madden, Daniel P.},
+  title        = {The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI},
+  year         = {2025},
+  version      = {5.0},
+  doi          = {10.5281/zenodo.17490086},
+  url          = {https://doi.org/10.5281/zenodo.17490086}
 ```
 
-## Governance References
-- [Governance Manifest](./governance/Governance_Manifest.md)
-- [Civic Charter](./governance/Civic_Charter.md)
+## Authorship & Provenance
+The AI OSI Stack was conceived, authored, and maintained by Daniel P. Madden as an independent, self-funded civic-technology project. 
 
-## Getting Started
-1. Review [reference/AI_OSI_Stack_v5_Core.md](./reference/AI_OSI_Stack_v5_Core.md) for the constitutional Compass outline.
-2. Consult [meta/AEIP_Specification.md](./meta/AEIP_Specification.md) and [meta/Semantic_Version_Control_Guide.md](./meta/Semantic_Version_Control_Guide.md) for governance and versioning requirements.
-3. Use [docs/Repository_Completion_Checklist.md](./docs/Repository_Completion_Checklist.md) to confirm readiness prior to publication.
+There is no institutional, corporate, or governmental sponsorship. 
 
-## References
-- [reference/Provenance_Statement.md](./reference/Provenance_Statement.md)
-- [audits/Integrity_Ledger.md](./audits/Integrity_Ledger.md)
-- [docs/Glossary_of_Terms.md](./docs/Glossary_of_Terms.md)
+Large-language-model tools were used under direct author supervision; all final content was reviewed and approved by the author.
 
+## License
+Documentation and artefacts are released under the Creative Commons Attribution – NonCommercial – NoDerivatives 4.0 International (CC BY-NC-ND 4.0) license.
+
+You may share the work with attribution but may not use it commercially or create derivatives.
+
+See https://creativecommons.org/licenses/by-nc-nd/4.0/ for details.
+
+## Contact
+Author website: https://danielpmadden.com
+Repository: https://github.com/danielpmadden/ai-osi-stack
