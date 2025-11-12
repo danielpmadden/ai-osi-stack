@@ -63,7 +63,8 @@ Additional interpretive chapters (19A–24) extend semantics, persona design, an
 ## Why It Matters
 
 Modern AI evolves faster than governance can adapt.  
-Most oversight remains siloed—model cards here, privacy reviews there—without a shared accountability backbone. The Stack replaces that fragmentation with a **layered, evidence-carrying protocol** that any organization can adopt, audit, and extend.
+
+Most oversight remains siloed—model cards here, privacy reviews there, without a shared accountability backbone. The Stack replaces that fragmentation with a **layered, evidence-carrying protocol** that any organization can adopt, audit, and extend.
 
 **Core Benefits**
 - **Transparency with proof** — Every decision and artefact is AEIP-verifiable.  
