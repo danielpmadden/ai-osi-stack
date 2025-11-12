@@ -1,0 +1,7 @@
+version: "3.9"
+services:
+  ai-osi-stack:
+    build: .
+    ports:
+      - "5175:80"
+    container_name: ai-osi-stack
