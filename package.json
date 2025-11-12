@@ -1,0 +1,30 @@
+{
+  "name": "ai-osi-stack-living-book",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "homepage": "https://YOUR_USERNAME.github.io/ai-osi-stack",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "docker:build": "docker build -t ai-osi-stack .",
+    "docker:run": "docker run -p 5175:80 ai-osi-stack",
+    "docker:up": "docker-compose up --build"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.21",
+    "@types/react-dom": "^18.2.7",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  }
+}
