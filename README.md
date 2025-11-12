@@ -18,18 +18,6 @@ Version 4.0 is the **canonical edition**, audited for conceptual coherence, cont
 
 ---
 
-## Quick Links
-
-| Resource | Location |
-|-----------|-----------|
-| Overview | [`docs/00_Overview.md`](docs/00_Overview.md) |
-| Roadmap | [`22_Roadmap.md`](22_Roadmap.md) |
-| Crosswalk Index | [`docs/references/25_Crosswalk_Index.md`](docs/references/25_Crosswalk_Index.md) |
-| Latest Audit | [`audits/99-conceptual-coherence-summary.md`](audits/99-conceptual-coherence-summary.md) |
-| Zenodo Record | [https://doi.org/10.5281/zenodo.17490086](https://doi.org/10.5281/zenodo.17490086) |
-
----
-
 ## Layer Summary (0 – 8)
 
 | Layer | Name | Purpose |
