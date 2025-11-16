@@ -62,28 +62,6 @@ Most oversight remains siloed—model cards here, privacy reviews there, without
 
 ---
 
-## Installation & Validation
-
-```bash
-git clone https://github.com/danielpmadden/ai-osi-stack.git
-cd ai-osi-stack
-pip install -e .
-pytest
-Optional:
-
-bash
-Copy code
-cd dashboard/demo-portal
-npm install
-npm run dev
-To validate AEIP schemas or generate artefacts:
-
-bash
-Copy code
-python tools/generate-artifact.py
-Citation
-Madden, Daniel P. (2025). The AI OSI Stack: A Governance Blueprint for Scalable and Trusted AI (v5.0). Zenodo. https://doi.org/10.5281/zenodo.17490086
-```
 ## BibTeX
 
 ```bibtex
